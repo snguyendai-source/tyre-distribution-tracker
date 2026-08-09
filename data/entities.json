@@ -1,0 +1,1327 @@
+[
+  {
+    "name": "Reifen Göggel",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Reifen Göggel\" tyre"
+  },
+  {
+    "name": "Best4Tires",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Best4Tires\" tyre"
+  },
+  {
+    "name": "Interpneu",
+    "countries": [
+      "Germany",
+      "Austria"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"Interpneu\" tyre"
+  },
+  {
+    "name": "Pneuhage",
+    "countries": [
+      "Germany",
+      "Switzerland"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Pneuhage\" tyre"
+  },
+  {
+    "name": "Point S Germany",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"Point S Germany\" tyre"
+  },
+  {
+    "name": "Premio",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Premio\" tyre"
+  },
+  {
+    "name": "Vergölst",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"Vergölst\" tyre"
+  },
+  {
+    "name": "Driver Pneumobil",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Driver Pneumobil\" tyre"
+  },
+  {
+    "name": "Euromaster Germany",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"Euromaster Germany\" tyre"
+  },
+  {
+    "name": "Ihle Reifen",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Ihle Reifen\" tyre"
+  },
+  {
+    "name": "Reifen Müller",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Reifen Müller\" tyre"
+  },
+  {
+    "name": "Bosch Car Service Deutschland",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Bosch Car Service Deutschland\" tyre"
+  },
+  {
+    "name": "A.T.U Auto-Teile-Unger",
+    "countries": [
+      "Germany",
+      "Austria"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"A.T.U Auto-Teile-Unger\" tyre"
+  },
+  {
+    "name": "ReifenDirekt",
+    "countries": [
+      "Germany",
+      "Austria",
+      "Switzerland"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"ReifenDirekt\" tyre"
+  },
+  {
+    "name": "Tirendo",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Tirendo\" tyre"
+  },
+  {
+    "name": "Reifen24",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Reifen24\" tyre"
+  },
+  {
+    "name": "Emil Frey",
+    "countries": [
+      "Germany",
+      "Switzerland"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Emil Frey\" tyre"
+  },
+  {
+    "name": "Hedin Group",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Hedin Group\" tyre"
+  },
+  {
+    "name": "Van Mossel Group",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Van Mossel Group\" tyre"
+  },
+  {
+    "name": "Feser-Graf",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Feser-Graf\" tyre"
+  },
+  {
+    "name": "AVAG Holding",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"AVAG Holding\" tyre"
+  },
+  {
+    "name": "Scherer Gruppe",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Scherer Gruppe\" tyre"
+  },
+  {
+    "name": "Lueg AG",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Lueg AG\" tyre"
+  },
+  {
+    "name": "Gottfried Schultz",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Gottfried Schultz\" tyre"
+  },
+  {
+    "name": "First Stop Germany",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "tbr"
+    ],
+    "search_query": "\"First Stop Germany\" tyre"
+  },
+  {
+    "name": "Quick Reifendiscount",
+    "countries": [
+      "Germany"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "tbr"
+    ],
+    "search_query": "\"Quick Reifendiscount\" tyre"
+  },
+  {
+    "name": "Speedy",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Speedy\" tyre"
+  },
+  {
+    "name": "Norauto",
+    "countries": [
+      "France",
+      "Spain",
+      "Italy"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Norauto\" tyre"
+  },
+  {
+    "name": "Midas France",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Midas France\" tyre"
+  },
+  {
+    "name": "Feu Vert",
+    "countries": [
+      "France",
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Feu Vert\" tyre"
+  },
+  {
+    "name": "Roady",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Roady\" tyre"
+  },
+  {
+    "name": "Point S France",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"Point S France\" tyre"
+  },
+  {
+    "name": "Eurogom",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Eurogom\" tyre"
+  },
+  {
+    "name": "Euromaster France",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"Euromaster France\" tyre"
+  },
+  {
+    "name": "First Stop France",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"First Stop France\" tyre"
+  },
+  {
+    "name": "Vulco",
+    "countries": [
+      "France",
+      "Belgium",
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Vulco\" tyre"
+  },
+  {
+    "name": "BestDrive France",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"BestDrive France\" tyre"
+  },
+  {
+    "name": "Profil Plus",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Profil Plus\" tyre"
+  },
+  {
+    "name": "4Fleet",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"4Fleet\" tyre"
+  },
+  {
+    "name": "Allopneus",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Allopneus\" tyre"
+  },
+  {
+    "name": "123pneus",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"123pneus\" tyre"
+  },
+  {
+    "name": "Pneuwyz",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Pneuwyz\" tyre"
+  },
+  {
+    "name": "AD Autodistribution",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"AD Autodistribution\" tyre"
+  },
+  {
+    "name": "Bosch Car Service France",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Bosch Car Service France\" tyre"
+  },
+  {
+    "name": "Euro Repar",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Euro Repar\" tyre"
+  },
+  {
+    "name": "Motrio",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Motrio\" tyre"
+  },
+  {
+    "name": "Eurotyre",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "tbr"
+    ],
+    "search_query": "\"Eurotyre\" tyre"
+  },
+  {
+    "name": "Siligom",
+    "countries": [
+      "France"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "tbr"
+    ],
+    "search_query": "\"Siligom\" tyre"
+  },
+  {
+    "name": "Halfords Autocentres",
+    "countries": [
+      "UK"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Halfords Autocentres\" tyre"
+  },
+  {
+    "name": "Kwik Fit",
+    "countries": [
+      "UK"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Kwik Fit\" tyre"
+  },
+  {
+    "name": "Protyre",
+    "countries": [
+      "UK"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Protyre\" tyre"
+  },
+  {
+    "name": "First Stop UK",
+    "countries": [
+      "UK"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"First Stop UK\" tyre"
+  },
+  {
+    "name": "HiQ Tyres",
+    "countries": [
+      "UK"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"HiQ Tyres\" tyre"
+  },
+  {
+    "name": "Point S UK",
+    "countries": [
+      "UK"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Point S UK\" tyre"
+  },
+  {
+    "name": "Bosch Car Service UK",
+    "countries": [
+      "UK"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Bosch Car Service UK\" tyre"
+  },
+  {
+    "name": "Blackcircles",
+    "countries": [
+      "UK"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Blackcircles\" tyre"
+  },
+  {
+    "name": "Tructyre",
+    "countries": [
+      "UK"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "tbr"
+    ],
+    "search_query": "\"Tructyre\" tyre"
+  },
+  {
+    "name": "Bandvulc",
+    "countries": [
+      "UK"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "tbr"
+    ],
+    "search_query": "\"Bandvulc\" tyre"
+  },
+  {
+    "name": "Profile Tyrecenter",
+    "countries": [
+      "Netherlands",
+      "Belgium"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Profile Tyrecenter\" tyre"
+  },
+  {
+    "name": "Profile Tyrecenter Truck Europe",
+    "countries": [
+      "Netherlands"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "tbr"
+    ],
+    "search_query": "\"Profile Tyrecenter Truck Europe\" tyre"
+  },
+  {
+    "name": "Kwik Fit Nederland",
+    "countries": [
+      "Netherlands"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Kwik Fit Nederland\" tyre"
+  },
+  {
+    "name": "Euromaster Nederland",
+    "countries": [
+      "Netherlands"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Euromaster Nederland\" tyre"
+  },
+  {
+    "name": "Autobandenmarkt",
+    "countries": [
+      "Netherlands"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Autobandenmarkt\" tyre"
+  },
+  {
+    "name": "Bosch Car Service Nederland",
+    "countries": [
+      "Netherlands"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Bosch Car Service Nederland\" tyre"
+  },
+  {
+    "name": "Kargro Lintire",
+    "countries": [
+      "Netherlands"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"Kargro Lintire\" tyre"
+  },
+  {
+    "name": "Bra-Band Recycling",
+    "countries": [
+      "Netherlands"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Bra-Band Recycling\" tyre"
+  },
+  {
+    "name": "Euromaster Belgium",
+    "countries": [
+      "Belgium"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"Euromaster Belgium\" tyre"
+  },
+  {
+    "name": "First Stop Belgium",
+    "countries": [
+      "Belgium"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"First Stop Belgium\" tyre"
+  },
+  {
+    "name": "Point S Belgium",
+    "countries": [
+      "Belgium"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Point S Belgium\" tyre"
+  },
+  {
+    "name": "Bosch Car Service Belgium",
+    "countries": [
+      "Belgium"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Bosch Car Service Belgium\" tyre"
+  },
+  {
+    "name": "D'Ieteren",
+    "countries": [
+      "Belgium"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"D'Ieteren\" tyre"
+  },
+  {
+    "name": "Profile Truck Belgium",
+    "countries": [
+      "Belgium"
+    ],
+    "cluster": "North-West",
+    "segments": [
+      "tbr"
+    ],
+    "search_query": "\"Profile Truck Belgium\" tyre"
+  },
+  {
+    "name": "Confortauto",
+    "countries": [
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Confortauto\" tyre"
+  },
+  {
+    "name": "Euromaster España",
+    "countries": [
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"Euromaster España\" tyre"
+  },
+  {
+    "name": "First Stop Spain",
+    "countries": [
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"First Stop Spain\" tyre"
+  },
+  {
+    "name": "Rodi Motor Services",
+    "countries": [
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Rodi Motor Services\" tyre"
+  },
+  {
+    "name": "Norauto España",
+    "countries": [
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Norauto España\" tyre"
+  },
+  {
+    "name": "Point S España",
+    "countries": [
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Point S España\" tyre"
+  },
+  {
+    "name": "Aurgi",
+    "countries": [
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Aurgi\" tyre"
+  },
+  {
+    "name": "Grupo Andrés",
+    "countries": [
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"Grupo Andrés\" tyre"
+  },
+  {
+    "name": "Recalvi",
+    "countries": [
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Recalvi\" tyre"
+  },
+  {
+    "name": "Top Recambios",
+    "countries": [
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Top Recambios\" tyre"
+  },
+  {
+    "name": "Nex Tyres",
+    "countries": [
+      "Spain"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Nex Tyres\" tyre"
+  },
+  {
+    "name": "Euromaster Italia",
+    "countries": [
+      "Italy"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Euromaster Italia\" tyre"
+  },
+  {
+    "name": "Driver Prometeon",
+    "countries": [
+      "Italy"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Driver Prometeon\" tyre"
+  },
+  {
+    "name": "Pneus Expert",
+    "countries": [
+      "Italy"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Pneus Expert\" tyre"
+  },
+  {
+    "name": "Point S Italia",
+    "countries": [
+      "Italy"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Point S Italia\" tyre"
+  },
+  {
+    "name": "First Stop Italia",
+    "countries": [
+      "Italy"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"First Stop Italia\" tyre"
+  },
+  {
+    "name": "Bosch Car Service Italia",
+    "countries": [
+      "Italy"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Bosch Car Service Italia\" tyre"
+  },
+  {
+    "name": "Fintyre",
+    "countries": [
+      "Italy"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"Fintyre\" tyre"
+  },
+  {
+    "name": "Pneusmarket",
+    "countries": [
+      "Italy"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Pneusmarket\" tyre"
+  },
+  {
+    "name": "Marangoni",
+    "countries": [
+      "Italy"
+    ],
+    "cluster": "South-West",
+    "segments": [
+      "tbr"
+    ],
+    "search_query": "\"Marangoni\" tyre"
+  },
+  {
+    "name": "Forstinger",
+    "countries": [
+      "Austria"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Forstinger\" tyre"
+  },
+  {
+    "name": "Euromaster Austria",
+    "countries": [
+      "Austria"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Euromaster Austria\" tyre"
+  },
+  {
+    "name": "Point S Austria",
+    "countries": [
+      "Austria"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Point S Austria\" tyre"
+  },
+  {
+    "name": "First Stop Austria",
+    "countries": [
+      "Austria"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"First Stop Austria\" tyre"
+  },
+  {
+    "name": "Bosch Car Service Austria",
+    "countries": [
+      "Austria"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Bosch Car Service Austria\" tyre"
+  },
+  {
+    "name": "MARSO",
+    "countries": [
+      "Hungary"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"MARSO\" tyre"
+  },
+  {
+    "name": "Point S Hungary",
+    "countries": [
+      "Hungary"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Point S Hungary\" tyre"
+  },
+  {
+    "name": "First Stop Hungary",
+    "countries": [
+      "Hungary"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"First Stop Hungary\" tyre"
+  },
+  {
+    "name": "Gumi Pont",
+    "countries": [
+      "Hungary"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Gumi Pont\" tyre"
+  },
+  {
+    "name": "Gumik.hu",
+    "countries": [
+      "Hungary"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Gumik.hu\" tyre"
+  },
+  {
+    "name": "Vianor",
+    "countries": [
+      "Hungary",
+      "Denmark"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Vianor\" tyre"
+  },
+  {
+    "name": "Apollo Tyres Hungary Sales",
+    "countries": [
+      "Hungary"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Apollo Tyres Hungary Sales\" tyre"
+  },
+  {
+    "name": "Gumicentrum",
+    "countries": [
+      "Hungary"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Gumicentrum\" tyre"
+  },
+  {
+    "name": "Gumidiszkont",
+    "countries": [
+      "Hungary"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Gumidiszkont\" tyre"
+  },
+  {
+    "name": "MaxiGumi",
+    "countries": [
+      "Hungary"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"MaxiGumi\" tyre"
+  },
+  {
+    "name": "Refit-Abroncs",
+    "countries": [
+      "Hungary"
+    ],
+    "cluster": "South-East",
+    "segments": [
+      "tbr"
+    ],
+    "search_query": "\"Refit-Abroncs\" tyre"
+  },
+  {
+    "name": "Point S Suisse",
+    "countries": [
+      "Switzerland"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Point S Suisse\" tyre"
+  },
+  {
+    "name": "Euromaster Suisse",
+    "countries": [
+      "Switzerland"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Euromaster Suisse\" tyre"
+  },
+  {
+    "name": "First Stop Switzerland",
+    "countries": [
+      "Switzerland"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"First Stop Switzerland\" tyre"
+  },
+  {
+    "name": "Adam Touring",
+    "countries": [
+      "Switzerland"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Adam Touring\" tyre"
+  },
+  {
+    "name": "ESA Switzerland",
+    "countries": [
+      "Switzerland"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"ESA Switzerland\" tyre"
+  },
+  {
+    "name": "Bosch Car Service Switzerland",
+    "countries": [
+      "Switzerland"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Bosch Car Service Switzerland\" tyre"
+  },
+  {
+    "name": "Super Dæk Service",
+    "countries": [
+      "Denmark"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Super Dæk Service\" tyre"
+  },
+  {
+    "name": "Point S Denmark",
+    "countries": [
+      "Denmark"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"Point S Denmark\" tyre"
+  },
+  {
+    "name": "First Stop Denmark",
+    "countries": [
+      "Denmark"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc"
+    ],
+    "search_query": "\"First Stop Denmark\" tyre"
+  },
+  {
+    "name": "Genan Holding",
+    "countries": [
+      "Denmark"
+    ],
+    "cluster": "Central",
+    "segments": [
+      "pc",
+      "tbr"
+    ],
+    "search_query": "\"Genan Holding\" tyre"
+  }
+]

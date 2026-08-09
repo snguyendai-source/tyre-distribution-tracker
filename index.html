@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>European Tyre Distribution — Daily News Tracker</title>
+<style>
+  :root{
+    --bg: #F3F4F7; --panel: #FFFFFF; --ink: #1B2333; --ink-soft: #5B6478; --hairline: #E1E4EA;
+    --navy: #16233A; --navy-ink: #EDEFF3; --teal: #2F6F62; --teal-bg: #DCEEE7; --teal-ink: #1F6350;
+    --slate-bg: #EAECF2; --slate-ink: #3B4863; --amber-bg: #FBE6D2; --amber-ink: #9A5B1E;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; background:var(--bg); color:var(--ink); font-family:var(--sans); }
+  body{ padding-bottom:60px; }
+  header.top{ background:var(--navy); color:var(--navy-ink); padding:22px 28px 18px; }
+  header.top h1{ margin:0; font-size:20px; font-weight:700; }
+  header.top p{ margin:6px 0 0; font-size:13px; color:#AEB8CC; }
+  .built-tag{ display:inline-block; margin-top:10px; font-family:var(--mono); font-size:11px;
+    color:#8FE0C6; background: rgba(47,111,98,0.25); padding:3px 8px; border-radius:4px; }
+  main{ max-width:1080px; margin:0 auto; padding:22px 24px 10px; }
+  .card{ background:var(--panel); border:1px solid var(--hairline); border-radius:10px; padding:18px 20px; margin-bottom:16px; }
+  .card h2{ margin:0 0 10px; font-size:15px; }
+  .toolbar{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom: 6px; }
+  .stat-row{ display:flex; gap:24px; flex-wrap:wrap; margin-bottom: 4px; }
+  .stat{ }
+  .stat .num{ font-family:var(--mono); font-size:22px; font-weight:700; color:var(--teal-ink); }
+  .stat .lbl{ font-size:11px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.4px; }
+  .btn{ appearance:none; border:1px solid var(--teal); background:#fff; color:var(--teal); font-family:var(--sans);
+    font-size:12.5px; font-weight:600; padding:7px 14px; border-radius:6px; cursor:pointer; text-decoration:none; display:inline-block; }
+  .btn:hover{ background:var(--teal-bg); }
+  select, input[type=text]{ font-family:var(--sans); font-size:13px; padding:7px 9px; border:1px solid var(--hairline); border-radius:6px; background:#fff; }
+  table{ width:100%; border-collapse:collapse; font-size:12.5px; }
+  thead th{ text-align:left; padding:9px 10px; background:#F8F9FB; border-bottom:2px solid var(--hairline);
+    color:var(--ink-soft); font-size:11px; text-transform:uppercase; letter-spacing:0.3px; }
+  tbody td{ padding:9px 10px; border-bottom:1px solid var(--hairline); vertical-align:top; }
+  tbody tr:hover{ background:#FAFBFC; }
+  .mono{ font-family:var(--mono); }
+  .nf-entity-block{ margin-bottom:16px; }
+  .nf-entity-block h4{ margin:0 0 6px; font-size:13.5px; }
+  .nf-entity-block ul{ margin:0; padding-left:18px; }
+  .nf-entity-block li{ margin-bottom:4px; }
+  .nf-entity-block a{ color:var(--teal); text-decoration:none; font-weight:600; }
+  .nf-entity-block a:hover{ text-decoration:underline; }
+  .nf-meta{ color:var(--ink-soft); font-size:11.5px; }
+  .badge{ display:inline-block; padding:2px 8px; border-radius:20px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.3px; background:var(--slate-bg); color:var(--slate-ink); }
+  .skeleton{ color:var(--ink-soft); font-size:13px; padding: 8px 0; }
+  .filter-row{ display:flex; gap:10px; flex-wrap:wrap; margin: 10px 0 14px; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <h1>European Tyre Distribution — Daily News Tracker</h1>
+  <p>118 named entities across 11 countries, checked automatically every day.</p>
+  <span class="built-tag" id="built-tag">loading…</span>
+</header>
+
+<main>
+  <div class="card">
+    <div class="toolbar">
+      <h2 style="margin:0;">Latest check</h2>
+      <a class="btn" href="https://github.com/OWNER/REPO/actions/workflows/daily-news-check.yml" id="run-link" target="_blank" rel="noopener">Run manually on GitHub →</a>
+    </div>
+    <div class="stat-row" id="stat-row">
+      <div class="stat"><div class="num" id="stat-lastrun">—</div><div class="lbl">Last checked (UTC)</div></div>
+      <div class="stat"><div class="num" id="stat-new">—</div><div class="lbl">New mentions</div></div>
+      <div class="stat"><div class="num" id="stat-entities">—</div><div class="lbl">Entities with news</div></div>
+      <div class="stat"><div class="num" id="stat-checked">—</div><div class="lbl">Entities checked</div></div>
+    </div>
+    <div class="filter-row">
+      <input type="text" id="f-search" placeholder="Filter by entity or country…" style="flex:1; min-width:200px;">
+    </div>
+    <div id="nf-results"><p class="skeleton">Loading…</p></div>
+  </div>
+
+  <div class="card">
+    <h2>Run history</h2>
+    <table>
+      <thead><tr><th>Run (UTC)</th><th>New mentions</th><th>Entities with news</th></tr></thead>
+      <tbody id="history-tbody"><tr><td colspan="3" class="skeleton">Loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Monitored entities</h2>
+    <p style="font-size:12.5px; color:var(--ink-soft); margin:0 0 10px;">The full list this tracker checks daily. Edit <code>data/entities.json</code> in the repo to add or remove entities — the next scheduled run picks up the change automatically.</p>
+    <div id="entities-list"></div>
+  </div>
+</main>
+
+<script>
+function escapeHtml(str){
+  if(str === null || str === undefined) return '';
+  return String(str).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+async function loadJSON(path){
+  const res = await fetch(path + '?t=' + Date.now()); // cache-bust so Pages doesn't serve a stale copy
+  if(!res.ok) throw new Error('failed to load ' + path);
+  return res.json();
+}
+
+function renderLatestRun(run){
+  document.getElementById('stat-lastrun').textContent = run ? new Date(run.runAt).toLocaleString('en-GB', {timeZone:'UTC'}) + ' UTC' : '—';
+  document.getElementById('stat-new').textContent = run ? run.totalNew : '—';
+  document.getElementById('stat-entities').textContent = run ? run.entitiesWithNews : '—';
+  document.getElementById('stat-checked').textContent = run ? run.entitiesChecked : '—';
+
+  const results = document.getElementById('nf-results');
+  if(!run){
+    results.innerHTML = '<p class="skeleton">No runs yet — the first scheduled run (or a manual trigger via the button above) will populate this.</p>';
+    return;
+  }
+  const entries = Object.entries(run.newItemsByEntity || {});
+  window.__allEntries = entries;
+  renderFilteredResults('');
+}
+
+function renderFilteredResults(filterText){
+  const entries = window.__allEntries || [];
+  const results = document.getElementById('nf-results');
+  const q = filterText.trim().toLowerCase();
+  const filtered = q
+    ? entries.filter(([name, items]) => {
+        const hay = (name + ' ' + items.map(i=>i.country||'').join(' ')).toLowerCase();
+        return hay.includes(q);
+      })
+    : entries;
+
+  results.innerHTML = filtered.length ? filtered.map(([entity, items])=>`
+    <div class="nf-entity-block">
+      <h4>${escapeHtml(entity)} <span class="badge">${escapeHtml(items[0].country || '')}</span></h4>
+      <ul>
+        ${items.map(it=>`<li><a href="${it.link}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a><br><span class="nf-meta">${escapeHtml(it.pubDate||'')}</span></li>`).join('')}
+      </ul>
+    </div>
+  `).join('') : '<p style="color:var(--ink-soft);">No matching entities with new mentions.</p>';
+}
+document.getElementById('f-search').addEventListener('input', (e)=> renderFilteredResults(e.target.value));
+
+function renderHistory(history){
+  const tbody = document.getElementById('history-tbody');
+  if(!history || !history.length){
+    tbody.innerHTML = '<tr><td colspan="3" class="skeleton">No history yet.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = history.map(h => `
+    <tr>
+      <td class="mono">${new Date(h.runAt).toLocaleString('en-GB', {timeZone:'UTC'})} UTC</td>
+      <td class="mono">${h.totalNew}</td>
+      <td class="mono">${h.entitiesWithNews}</td>
+    </tr>
+  `).join('');
+}
+
+function renderEntitiesList(entities){
+  const container = document.getElementById('entities-list');
+  const byCluster = {};
+  entities.forEach(e => {
+    if(!byCluster[e.cluster]) byCluster[e.cluster] = [];
+    byCluster[e.cluster].push(e);
+  });
+  container.innerHTML = Object.entries(byCluster).map(([cluster, list]) => `
+    <div style="margin-bottom:12px;">
+      <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:var(--teal-ink); margin-bottom:6px;">${escapeHtml(cluster)} (${list.length})</div>
+      <div style="display:flex; flex-wrap:wrap; gap:6px;">
+        ${list.map(e => `<span class="badge" style="background:var(--slate-bg); color:var(--slate-ink); text-transform:none; font-weight:600;">${escapeHtml(e.name)}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+async function init(){
+  document.getElementById('built-tag').textContent = 'checked daily via GitHub Actions · data lives in this repo';
+  try{
+    const [latestRun, history, entities] = await Promise.all([
+      loadJSON('data/latest_run.json'),
+      loadJSON('data/history.json'),
+      loadJSON('data/entities.json'),
+    ]);
+    renderLatestRun(latestRun);
+    renderHistory(history);
+    renderEntitiesList(entities);
+  }catch(e){
+    document.getElementById('nf-results').innerHTML = '<p class="skeleton">Could not load data files. If this is right after the first deploy, the first Action run has not completed yet.</p>';
+    console.error(e);
+  }
+}
+init();
+</script>
+</body>
+</html>

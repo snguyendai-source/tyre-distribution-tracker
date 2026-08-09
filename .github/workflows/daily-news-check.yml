@@ -1,0 +1,41 @@
+name: Daily tyre distribution news check
+
+on:
+  schedule:
+    # 06:00 UTC daily. Cron is evaluated in UTC — adjust the hour here if you
+    # want it to land at a different local time.
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}   # adds a manual "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write   # needed so the workflow can commit updated data files back
+
+jobs:
+  check-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run daily news check
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+        run: python scripts/check_news.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "tyre-tracker-bot"
+          git config user.email "actions@github.com"
+          git add data/latest_run.json data/history.json data/seen_links.json
+          git diff --quiet --cached || git commit -m "Daily news check: $(date -u +'%Y-%m-%d')"
+          git push
