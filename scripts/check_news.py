@@ -28,10 +28,12 @@ ENTITIES_PATH = DATA_DIR / "entities.json"
 SEEN_PATH = DATA_DIR / "seen_links.json"
 LATEST_RUN_PATH = DATA_DIR / "latest_run.json"
 HISTORY_PATH = DATA_DIR / "history.json"
+ARCHIVE_PATH = DATA_DIR / "archive.json"
 
 MAX_ITEMS_PER_ENTITY = 8
 MAX_SEEN_LINKS = 8000
 MAX_HISTORY_RUNS = 60
+MAX_ARCHIVE_ITEMS = 5000
 CONCURRENCY = 10
 REQUEST_TIMEOUT = 15
 USER_AGENT = "Mozilla/5.0 (compatible; TyreDistributionTracker/1.0; +daily-check)"
@@ -201,8 +203,27 @@ def main() -> None:
     })
     save_json(HISTORY_PATH, history[:MAX_HISTORY_RUNS])
 
+    # Persistent archive: every article ever found, full detail, so the dashboard
+    # can filter by the article's own published year -- unlike latest_run.json
+    # (overwritten each day) or history.json (counts only), this accumulates.
+    archive = load_json(ARCHIVE_PATH, [])
+    for entity_name, items in new_items_by_entity.items():
+        for it in items:
+            archive.append({
+                "entity": entity_name,
+                "title": it["title"],
+                "link": it["link"],
+                "pubDate": it.get("pubDate", ""),
+                "country": it.get("country", ""),
+                "cluster": it.get("cluster", ""),
+                "foundAt": run_at,
+            })
+    if len(archive) > MAX_ARCHIVE_ITEMS:
+        archive = archive[-MAX_ARCHIVE_ITEMS:]
+    save_json(ARCHIVE_PATH, archive)
+
     print(f"Done: {total_new} new item(s) across {len(new_items_by_entity)} entit(y/ies), "
-          f"{len(entities)} checked.")
+          f"{len(entities)} checked. Archive now holds {len(archive)} article(s).")
 
     html = build_email_html(new_items_by_entity, run_at, len(entities))
     send_digest_email(html, total_new)
