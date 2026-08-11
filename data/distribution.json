@@ -1,0 +1,750 @@
+{
+  "pc": [
+    {
+      "country": "Germany",
+      "meta": "BRV 2024 · passenger car replacement tyres",
+      "total": "41.0M",
+      "totalLabel": "units",
+      "channels": [
+        {
+          "name": "Specialist trade + independent workshops",
+          "share": "71.3%",
+          "volume": "29.2M",
+          "sourceBadge": "none",
+          "source": "Source: BRV 2024  · Named only individual entity shares not available",
+          "entities": [
+            {
+              "name": "Reifen Göggel",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Best4Tires",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Interpneu (Pneuhage)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Pneuhage",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Point S Germany",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Premio",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Vergölst (Continental)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Driver / Pneumobil (Pirelli)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Euromaster Germany (Michelin)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Ihle (Michelin)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Reifen Müller (Hankook)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Bosch Car Service Deutschland",
+              "owner": null,
+              "volume": null
+            }
+          ]
+        },
+        {
+          "name": "Car dealers / brand-tied workshops",
+          "share": "19.8%",
+          "volume": "8.1M",
+          "sourceBadge": "none",
+          "source": "Source: BRV 2024  · Named only largest identifiable dealer-group consolidators — no per-entity volume, and thousands of smaller independent single-brand dealers exist beyond these",
+          "entities": [
+            {
+              "name": "Emil Frey Deutschland",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Hedin Group",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Van Mossel Group",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Feser-Graf",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "AVAG",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Scherer Gruppe",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Lueg",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Gottfried Schultz",
+              "owner": null,
+              "volume": null
+            }
+          ]
+        },
+        {
+          "name": "Fachmärkte",
+          "share": "3.4%",
+          "volume": "1.4M",
+          "sourceBadge": "modeled",
+          "source": "Source: BRV 2024  · Modeled single named chain ≈ full channel",
+          "entities": [
+            {
+              "name": "A.T.U",
+              "owner": "Mobivia Group",
+              "volume": "~1.4M"
+            }
+          ]
+        },
+        {
+          "name": "B2C online",
+          "share": "5.5%",
+          "volume": "2.3M",
+          "sourceBadge": "none",
+          "source": "Source: BRV 2024  · Named only no per-brand split (online has no branch count to model from)",
+          "entities": [
+            {
+              "name": "ReifenDirekt.de (Delticom)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Tirendo (Delticom)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Reifen24",
+              "owner": null,
+              "volume": null
+            }
+          ]
+        }
+      ],
+      "flatEntities": [],
+      "noteBadge": null,
+      "note": null
+    },
+    {
+      "country": "France",
+      "meta": "Syndicat du Pneu / GfK 2024 · sell-out, TC4 tyres",
+      "total": "17.2M",
+      "totalLabel": "units",
+      "channels": [
+        {
+          "name": "Auto-centres & fast-fitters",
+          "share": "27.9%",
+          "volume": "4.80M",
+          "sourceBadge": "modeled",
+          "source": "Source: Syndicat du Pneu / GfK 2024  · Modeled split by branch count (all 5 chains have known counts)",
+          "entities": [
+            {
+              "name": "Speedy",
+              "owner": "Bridgestone · ~466 branches",
+              "volume": "~1.30M"
+            },
+            {
+              "name": "Norauto",
+              "owner": "Mobivia · ~415 branches",
+              "volume": "~1.16M"
+            },
+            {
+              "name": "Midas",
+              "owner": "Mobivia · ~367 branches",
+              "volume": "~1.03M"
+            },
+            {
+              "name": "Feu Vert",
+              "owner": "Groupe Monnoyeur · ~350 branches",
+              "volume": "~0.98M"
+            },
+            {
+              "name": "Roady",
+              "owner": "Independent · ~120 branches",
+              "volume": "~0.34M"
+            }
+          ]
+        },
+        {
+          "name": "Car dealers & independent repairers",
+          "share": "28.0%",
+          "volume": "4.82M",
+          "sourceBadge": "none",
+          "source": "Source: Syndicat du Pneu / GfK 2024  · Named only largest independent-repairer network brands — no per-entity volume; OEM-authorised dealers within this bucket remain unnamed (fragmented by car brand)",
+          "entities": [
+            {
+              "name": "AD / Autodistribution (Parts Holding Europe) — ~3,000-3,600 garages (AD, AD Expert, Carrosseries AD, Autoprimo)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Bosch Car Service France — ~600-700 garages",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Euro Repar (Stellantis-affiliated independent network)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Motrio (Renault Group-affiliated independent network)",
+              "owner": null,
+              "volume": null
+            }
+          ]
+        },
+        {
+          "name": "Tyre specialists (pneumaticiens)",
+          "share": "26.3%",
+          "volume": "4.52M",
+          "sourceBadge": "modeled",
+          "source": "Source: Syndicat du Pneu / GfK 2024  · Modeled split among the 5 of 8 named entities with a known branch count",
+          "entities": [
+            {
+              "name": "Point S",
+              "owner": "Independent cooperative · ~450 branches",
+              "volume": "~1.11M"
+            },
+            {
+              "name": "Eurogom group",
+              "owner": "Siligom / Eurotyre / Côté Route · ~437 branches",
+              "volume": "~1.08M"
+            },
+            {
+              "name": "Euromaster",
+              "owner": "Michelin · ~415 branches",
+              "volume": "~1.02M"
+            },
+            {
+              "name": "First Stop",
+              "owner": "Bridgestone (incl. Métifiot) · ~300 branches",
+              "volume": "~0.74M"
+            },
+            {
+              "name": "Vulco",
+              "owner": "Goodyear-Dunlop backed · ~230 branches",
+              "volume": "~0.57M"
+            },
+            {
+              "name": "BestDrive",
+              "owner": "Continental · branch count n/a",
+              "volume": "folded in above"
+            },
+            {
+              "name": "Profil Plus",
+              "owner": "Independent · branch count n/a",
+              "volume": "folded in above"
+            },
+            {
+              "name": "4Fleet",
+              "owner": "Goodyear/Dunlop · branch count n/a",
+              "volume": "folded in above"
+            }
+          ]
+        },
+        {
+          "name": "Pure-play online",
+          "share": "18.0%",
+          "volume": "3.10M",
+          "sourceBadge": "none",
+          "source": "Source: Syndicat du Pneu / GfK 2024  · Named only no branch count to model from",
+          "entities": [
+            {
+              "name": "Allopneus",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "123pneus.fr (Delticom)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Pneuwyz (~1,300 partner outlets)",
+              "owner": null,
+              "volume": null
+            }
+          ]
+        }
+      ],
+      "flatEntities": [],
+      "noteBadge": null,
+      "note": null
+    },
+    {
+      "country": "United Kingdom",
+      "meta": "GfK / NTDA · car, 4×4 & LCV replacement",
+      "total": "28.4M",
+      "totalLabel": "units",
+      "channels": [],
+      "flatEntities": [
+        "Halfords Autocentres (~650+ branches)",
+        "Kwik Fit (~600, ETEL/Itochu)",
+        "Protyre (186+, Micheldever/Sumitomo)",
+        "First Stop UK (150, Bridgestone — targeting 220)",
+        "HiQ (Goodyear franchise)",
+        "Point S UK (300+ independent centres)",
+        "Bosch Car Service UK",
+        "Blackcircles (Michelin, online)"
+      ],
+      "noteBadge": null,
+      "note": "No published channel-level % split exists for the UK — GfK/Tyrepress rank chains by branch count, not by volume or share, so no channel or entity volume is shown here to avoid implying precision that isn't there."
+    },
+    {
+      "country": "Netherlands",
+      "meta": "VACO · passenger car replacement tyres",
+      "total": "—",
+      "totalLabel": "no unit total published",
+      "channels": [],
+      "flatEntities": [
+        "Profile Tyrecenter (Dutch-origin multi-brand network)",
+        "Kwik Fit Nederland",
+        "Euromaster Nederland (Michelin)",
+        "Autobandenmarkt / Bandenmarkt",
+        "Bosch Car Service Nederland",
+        "ReifenDirekt.nl (Delticom)"
+      ],
+      "noteBadge": "caution",
+      "note": "Gap VACO (the Dutch tyre trade body, ~300 members / ~650 outlets) commissions GfK consumer research but does not publish an annual unit total. No channel-level split exists either."
+    },
+    {
+      "country": "Belgium",
+      "meta": "TechSci · all replacement tyres",
+      "total": "$1,016M",
+      "totalLabel": "value only (2024)",
+      "channels": [],
+      "flatEntities": [
+        "Euromaster Belgium (Michelin)",
+        "First Stop (Bridgestone)",
+        "Point S Belgium",
+        "Profile Tyrecenter Belgium",
+        "Vulco (Goodyear-affiliated)",
+        "Bosch Car Service",
+        "D'Ieteren (dominant VW-group dealer/importer — OE-service channel)"
+      ],
+      "noteBadge": "caution",
+      "note": "Value only No unit total published by Traxio (the mobility federation); the figure above is total market value (all tyres, OE+replacement), not a replacement-only unit count."
+    },
+    {
+      "country": "Spain",
+      "meta": "ADINE / MITECO 2024 · consumer replacement (PC + van + 4×4/SUV)",
+      "total": "~21.1M",
+      "totalLabel": "units",
+      "channels": [],
+      "flatEntities": [
+        "Confortauto",
+        "Euromaster España (Michelin)",
+        "First Stop (Bridgestone)",
+        "Rodi Motor Services",
+        "Norauto España",
+        "Feu Vert",
+        "Point S España",
+        "Vulco (Goodyear)",
+        "Aurgi"
+      ],
+      "noteBadge": "hard",
+      "note": "Hard Spain has the strongest official data of this batch: MITECO's producer register recorded 24,559,740 new replacement tyres in 2024 (+9.6%) , split PC 17,934,194 (73%) + van/4×4/SUV 3,124,549 (12.7%) + truck & bus 1,532,446 (6.2%, see TBR tab) + moto 1,325,375 (5.4%). ADINE's Distripool wholesale panel (PwC-audited) shows the consumer segment up 10.1% in 2024 — but this is a product-segment split (by tyre type), not a retail-channel split; no independent-vs-dealer-vs-online percentage is published."
+    },
+    {
+      "country": "Italy",
+      "meta": "MASE 2024 · all tyres to the replacement market",
+      "total": "421,645t",
+      "totalLabel": "tonnes (2024, +11%)",
+      "channels": [],
+      "flatEntities": [
+        "Euromaster Italia (350+ centres — expanded via ATS Pneusmarket acquisition, 2024)",
+        "Driver (Prometeon/Pirelli-linked franchise)",
+        "Pneus Expert",
+        "Point S Italia",
+        "First Stop (Bridgestone)",
+        "Norauto / Feu Vert",
+        "Bosch Car Service"
+      ],
+      "noteBadge": "caution",
+      "note": "Not units Italy's official figure (Ministry of Environment, MASE) is reported in tonnes, not units — not directly comparable to the unit figures elsewhere on this page without a weight assumption. No clean all-channel unit total is published."
+    },
+    {
+      "country": "Austria",
+      "meta": "passenger car replacement tyres",
+      "total": "$917M",
+      "totalLabel": "value only (2024)",
+      "channels": [],
+      "flatEntities": [
+        "Forstinger (auto-parts/service retailer, tyre workshops)",
+        "A.T.U (German-owned, also present in Austria)",
+        "Euromaster Austria (Michelin)",
+        "Point S Austria",
+        "First Stop (Bridgestone)",
+        "Bosch Car Service",
+        "ReifenDirekt.at / Reifen.at (Delticom)"
+      ],
+      "noteBadge": "caution",
+      "note": "Value only No unit total or channel split is published for Austria. Winter-tyre law (mandatory in winter conditions, Nov-Apr) structurally supports high seasonal/all-season fitment volumes."
+    },
+    {
+      "country": "Hungary",
+      "meta": "HTA (Hungarian Tire Association)",
+      "total": "3.1M",
+      "totalLabel": "units (2018 — outdated)",
+      "channels": [],
+      "flatEntities": [
+        "MARSO Kft. (~30 own locations)",
+        "Point S Hungary (~73-75 franchise shops)",
+        "First Stop (Bridgestone)",
+        "Gumi Pont / Gumi.hu network (150+ service points)",
+        "Gumik.hu (400+ contracted partners)",
+        "Vianor (Nokian)"
+      ],
+      "noteBadge": "caution",
+      "note": "Outdated The last clean HTA unit total is from 2018: 3.1M total tyres (+9.7%), of which PC 2,420,000 (+9%) . HTA has not published a Hungary-specific 2024 figure — recent HTA communications cite European (ETRMA) percentages, not Hungarian units. Do not substitute Germany's 47.5M/+6.8% figure for Hungary. No channel split is published; HTA states online is the fastest-growing channel (qualitative only)."
+    },
+    {
+      "country": "Switzerland",
+      "meta": "passenger car replacement tyres",
+      "total": "—",
+      "totalLabel": "no total published",
+      "channels": [],
+      "flatEntities": [
+        "Point S Suisse",
+        "Euromaster Suisse (Michelin)",
+        "First Stop (Bridgestone)",
+        "Adam Touring",
+        "Pneuhage",
+        "Emil Frey (Switzerland's largest dealer group, HQ Zürich)",
+        "ESA (buying cooperative for Swiss garages)",
+        "Bosch Car Service",
+        "reifen.com / ReifenDirekt.ch (Delticom)"
+      ],
+      "noteBadge": "caution",
+      "note": "Gap No Swiss association unit total or channel split found. Trade data are price/import-oriented (avg. import price ~$62/unit in 2024, down ~30% y/y; Germany supplies ~33% of imports) — import pricing, not a market-size figure."
+    },
+    {
+      "country": "Denmark",
+      "meta": "passenger car replacement tyres",
+      "total": "—",
+      "totalLabel": "no total published",
+      "channels": [],
+      "flatEntities": [
+        "Super Dæk Service (NDI Group) — acquired 9 Euromaster branches, Sept 2023",
+        "Euromaster — exited Denmark end-2023/early-2024",
+        "Point S Denmark",
+        "First Stop (Bridgestone)",
+        "Vianor (Nokian)"
+      ],
+      "noteBadge": "caution",
+      "note": "Gap No Danish unit total or channel split found. Trade data are price/import-oriented (avg. import price ~$49-57/unit 2024; Germany ~49-58% of imports, Sweden ~10%)."
+    }
+  ],
+  "tbr": [
+    {
+      "country": "Germany",
+      "meta": "BRV 2024 · LKW / bus replacement segment",
+      "total": "~2.5M",
+      "totalLabel": "units",
+      "channels": [
+        {
+          "name": "New tyres",
+          "share": "~75%",
+          "volume": "~1.88M",
+          "sourceBadge": "hard",
+          "source": "Source: BRV 2024  · Hard % new-tyre volume grew +3.8% y/y",
+          "entities": []
+        },
+        {
+          "name": "Retreaded tyres",
+          "share": "~25%",
+          "volume": "~0.63M",
+          "sourceBadge": "hard",
+          "source": "Source: BRV 2024  · Hard % retread volume declined -4.8% y/y — roughly 1 in 4 LKW tyres sold is now a retread, continuing a long-run decline",
+          "entities": []
+        }
+      ],
+      "flatEntities": [
+        "Vergölst (Continental, incl. BestDrive-branded tyres)",
+        "Point S Germany",
+        "Euromaster Germany (Michelin)",
+        "First Stop Germany (Bridgestone)",
+        "Quick Reifendiscount",
+        "Reifen Göggel (wholesale)",
+        "Interpneu / Pneuhage (wholesale)"
+      ],
+      "noteBadge": null,
+      "note": null
+    },
+    {
+      "country": "France",
+      "meta": "Syndicat du Pneu 2024 · camions, autobus & autocars",
+      "total": ">1.6M",
+      "totalLabel": "units",
+      "channels": [
+        {
+          "name": "Via pneumaticiens (B2B specialist channel)",
+          "share": "~90%",
+          "volume": "~1.44M",
+          "sourceBadge": "hard",
+          "source": "Source: Syndicat du Pneu  · Hard % — industrial tyres (TBR, civil engineering, agri, handling) sold 90% via pneumaticiens / 10% direct-from-manufacturer",
+          "entities": [
+            {
+              "name": "Eurotyre (Continental)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "BestDrive France (Continental — converting owned centres to franchise)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Siligom (Eurogom)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Point S",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Euromaster France (Michelin)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "First Stop France (Bridgestone)",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Vulco",
+              "owner": null,
+              "volume": null
+            }
+          ]
+        },
+        {
+          "name": "Direct from manufacturer",
+          "share": "~10%",
+          "volume": "~0.16M",
+          "sourceBadge": "hard",
+          "source": "Source: Syndicat du Pneu  · Hard % large fleet / key-account business sold directly, bypassing the specialist channel",
+          "entities": [
+            {
+              "name": "Michelin",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Continental",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Bridgestone",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Goodyear",
+              "owner": null,
+              "volume": null
+            },
+            {
+              "name": "Pirelli",
+              "owner": null,
+              "volume": null
+            }
+          ]
+        },
+        {
+          "name": "New vs. retreaded (cuts across both channels above)",
+          "share": "75 / 25",
+          "volume": "1.2M / 0.4M",
+          "sourceBadge": "hard",
+          "source": "Source: Syndicat du Pneu 2024  · Hard % ~75% new (+1.4% y/y) · ~25% retreaded (+1% y/y, share now stabilising after a decade of decline). Import share (non-EU low-cost) fell from 18% in 2023 to 14% in 2024.",
+          "entities": []
+        }
+      ],
+      "flatEntities": [],
+      "noteBadge": null,
+      "note": null
+    },
+    {
+      "country": "United Kingdom",
+      "meta": "IndexBox 2024 · truck & bus tyre consumption",
+      "total": "~11M",
+      "totalLabel": "units",
+      "channels": [
+        {
+          "name": "New vs. retreaded (separate, smaller base than the ~11M consumption figure above)",
+          "share": "~80/20",
+          "volume": "~1.9-2M / ~0.5M",
+          "sourceBadge": "estimate",
+          "source": "Estimate Michelin/Prometeon industry estimates put new TBR sales at ~1.9-2M units/year with retreads adding a further ~25% on top (~0.5M) — a different, narrower (replacement-only) base than the ~11M IndexBox consumption figure above, so the two should not be summed or compared directly. Hot-cure vs pre-cure retread split runs roughly 60/40 nationally (Bandvulc). RMA/BTMA note retreads historically made up ~45-50% of UK TBR tyres in service and are campaigning to rebuild share after single-life Asian imports eroded it (European retread volume −22% over 2021-24).",
+          "entities": []
+        }
+      ],
+      "flatEntities": [
+        "Tructyre (Euromaster / Michelin's UK commercial truck network)",
+        "Bandvulc (Continental-owned — UK's largest truck tyre retreader, ContiLifeCycle plant, Ivybridge)"
+      ],
+      "noteBadge": "caution",
+      "note": "Caveat This figure is total market consumption (domestic production 7.1M + imports 3.9M − exports), not confirmed as replacement-only — it may include OE fitment on new trucks/buses, unlike the Germany and France figures above. No channel-level split is published. Domestic production fell notably in 2024, with imports (led by Spain, Thailand, China) rising to fill the gap."
+    },
+    {
+      "country": "Netherlands",
+      "meta": "VACO · truck & bus replacement",
+      "total": "—",
+      "totalLabel": "no total published",
+      "channels": [],
+      "flatEntities": [
+        "Profile Tyrecenter Truck Europe (fleet/tyre-management contracts)",
+        "Continental (fleet & retread programmes)",
+        "Kargro / Lintire (retreading & casing trade, VACO-approved)"
+      ],
+      "noteBadge": "hard",
+      "note": "Hard No total unit figure, but VACO's own retread campaign cites the clearest available datapoint: ~20% of Dutch road transport runs on retreaded tyres — lower than Germany (28%) or France (35%), which is why VACO is actively campaigning to lift it."
+    },
+    {
+      "country": "Belgium",
+      "meta": "truck & bus replacement",
+      "total": "—",
+      "totalLabel": "no total published",
+      "channels": [],
+      "flatEntities": [
+        "Euromaster (fleet, Michelin)",
+        "Profile Truck",
+        "Continental (fleet)"
+      ],
+      "noteBadge": "caution",
+      "note": "Gap No Belgian TBR unit total or new/retread split found. One report estimates the retread import market growing at +10.34% CAGR 2020-24 — an import-volume proxy, not a market-size or split figure."
+    },
+    {
+      "country": "Spain",
+      "meta": "MITECO 2024 · truck & bus replacement",
+      "total": "1.53M",
+      "totalLabel": "units (2024)",
+      "channels": [],
+      "flatEntities": [
+        "Grupo Andrés (large TBR distributor/fleet)",
+        "Michelin / Recamic (retread)",
+        "Euromaster fleet",
+        "Confortauto fleet"
+      ],
+      "noteBadge": "hard",
+      "note": "Hard 1,532,446 truck & bus tyres to the Spanish replacement market in 2024 (MITECO, 84,131 tonnes). ADINE's Distripool wholesale panel shows truck volumes down 10.6% in 2024, recovering +7.8% in 2025 — a growth trend, not a retail-channel split. No new-vs-retread split found for Spain specifically."
+    },
+    {
+      "country": "Italy",
+      "meta": "truck & bus replacement",
+      "total": "—",
+      "totalLabel": "not separately published",
+      "channels": [],
+      "flatEntities": [
+        "Fintyre (dominant TBR distributor/importer)",
+        "Marangoni (Italian retreading leader — treads & systems)",
+        "Euromaster / Driver fleet",
+        "Bridgestone / Michelin / Continental (fleet-direct)"
+      ],
+      "noteBadge": "caution",
+      "note": "Gap Italy's TBR volume sits inside the 421,645-tonne all-tyre MASE total (see PC tab) but isn't broken out separately in units. No new-vs-retread split found."
+    },
+    {
+      "country": "Austria",
+      "meta": "truck & bus replacement",
+      "total": "—",
+      "totalLabel": "no total published",
+      "channels": [],
+      "flatEntities": [
+        "Euromaster fleet (Michelin)",
+        "Continental fleet",
+        "Michelin fleet"
+      ],
+      "noteBadge": "caution",
+      "note": "Gap No Austrian TBR unit total, channel split, or new/retread split found."
+    },
+    {
+      "country": "Hungary",
+      "meta": "HTA",
+      "total": "180,000",
+      "totalLabel": "units (2018 — outdated)",
+      "channels": [],
+      "flatEntities": [
+        "Refit-Abroncs Kft. (Dabas — retreading via Michelin RECAMIC cold-retread process)"
+      ],
+      "noteBadge": "caution",
+      "note": "Outdated HTA's last clean truck+bus figure is 2018: 180,000 units (+21%) . No 2024 Hungary-specific figure or new/retread split found."
+    },
+    {
+      "country": "Switzerland",
+      "meta": "truck & bus replacement",
+      "total": "—",
+      "totalLabel": "no total published",
+      "channels": [],
+      "flatEntities": [
+        "Euromaster fleet (Michelin)",
+        "Continental fleet",
+        "Michelin fleet"
+      ],
+      "noteBadge": "caution",
+      "note": "Gap No Swiss TBR unit total, channel split, or new/retread split found."
+    },
+    {
+      "country": "Denmark",
+      "meta": "truck & bus replacement",
+      "total": "—",
+      "totalLabel": "no total published",
+      "channels": [],
+      "flatEntities": [
+        "Vianor / Nokian fleet",
+        "Super Dæk / (pre-2024 Euromaster) fleet",
+        "Continental / Michelin / Bridgestone (fleet-direct)",
+        "Genan (end-of-life tyre recycling)"
+      ],
+      "noteBadge": "caution",
+      "note": "Gap No Danish TBR unit total, channel split, or new/retread split found."
+    }
+  ]
+}
