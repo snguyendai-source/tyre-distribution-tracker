@@ -48,6 +48,63 @@
   .badge{ display:inline-block; padding:2px 8px; border-radius:20px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.3px; background:var(--slate-bg); color:var(--slate-ink); }
   .skeleton{ color:var(--ink-soft); font-size:13px; padding: 8px 0; }
   .filter-row{ display:flex; gap:10px; flex-wrap:wrap; margin: 10px 0 14px; }
+
+  /* top-level + sub segment tabs */
+  nav.toptabs{ display:flex; gap:2px; background:var(--panel); border-bottom:1px solid var(--hairline); padding:0 24px; position:sticky; top:0; z-index:50; }
+  nav.toptabs button{ appearance:none; border:none; background:transparent; font-family:var(--sans); font-size:13.5px; font-weight:700; color:var(--ink-soft); padding:14px 18px; cursor:pointer; border-bottom:3px solid transparent; }
+  nav.toptabs button:hover{ color:var(--ink); }
+  nav.toptabs button.active{ color:var(--teal); border-bottom-color:var(--teal); }
+  .toppanel{ display:none; }
+  .toppanel.active{ display:block; }
+  nav.subtabs{ display:flex; gap:8px; margin-bottom:14px; }
+  nav.subtabs button{ appearance:none; border:1px solid var(--hairline); background:#fff; color:var(--ink-soft); font-family:var(--sans); font-size:12.5px; font-weight:600; padding:6px 14px; border-radius:20px; cursor:pointer; }
+  nav.subtabs button.active{ border-color:var(--teal); color:var(--teal); background:var(--teal-bg); }
+  .subpanel{ display:none; }
+  .subpanel.active{ display:block; }
+
+  /* drill-down: country -> channel -> entity */
+  .badge.hard{ background:var(--teal-bg); color:var(--teal-ink); text-transform:none; }
+  .badge.modeled{ background:var(--amber-bg); color:var(--amber-ink); text-transform:none; }
+  .badge.none{ background:var(--slate-bg); color:var(--slate-ink); text-transform:none; }
+  .badge.estimate{ background:#EDE7F6; color:#5B3E96; text-transform:none; }
+  .badge.caution{ background:#FDE7E7; color:#B42318; text-transform:none; }
+  details.country{ background:var(--panel); border:1px solid var(--hairline); border-radius:10px; margin-bottom:14px; overflow:hidden; }
+  details.country > summary{ list-style:none; cursor:pointer; padding:16px 20px; display:flex; align-items:center; gap:14px; }
+  details.country > summary::-webkit-details-marker{ display:none; }
+  details.country > summary::before{ content:"▸"; color:var(--teal); font-size:13px; transition:transform 0.15s ease; flex:0 0 auto; }
+  details.country[open] > summary::before{ transform:rotate(90deg); }
+  .country-name{ font-size:16px; font-weight:700; color:var(--navy); }
+  .country-meta{ font-size:12px; color:var(--ink-soft); margin-top:2px; }
+  .country-total{ margin-left:auto; text-align:right; }
+  .country-total .num2{ font-family:var(--mono); font-size:18px; font-weight:700; color:var(--teal-ink); }
+  .country-total .lbl2{ font-size:10.5px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.4px; }
+  .country-body{ padding:0 20px 18px 44px; }
+  details.channel{ border:1px solid var(--hairline); border-radius:8px; margin-bottom:10px; background:#FAFBFC; }
+  details.channel > summary{ list-style:none; cursor:pointer; padding:12px 14px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  details.channel > summary::-webkit-details-marker{ display:none; }
+  details.channel > summary::before{ content:"▸"; color:var(--ink-soft); font-size:11px; transition:transform 0.15s ease; flex:0 0 auto; }
+  details.channel[open] > summary::before{ transform:rotate(90deg); }
+  .channel-name{ font-size:13.5px; font-weight:600; flex:1; min-width:160px; }
+  .channel-bar-wrap{ flex:1; min-width:120px; max-width:220px; }
+  .channel-bar-track{ background:var(--hairline); border-radius:20px; height:7px; overflow:hidden; }
+  .channel-bar-fill{ background:var(--teal); height:100%; border-radius:20px; }
+  .channel-share{ font-family:var(--mono); font-size:12px; color:var(--ink-soft); width:44px; text-align:right; }
+  .channel-vol{ font-family:var(--mono); font-size:13.5px; font-weight:700; color:var(--ink); width:80px; text-align:right; }
+  .channel-body{ padding:2px 14px 14px 30px; }
+  .channel-source{ font-size:11px; color:var(--ink-soft); margin:-2px 0 10px; }
+  .entity-row{ display:flex; align-items:center; gap:10px; padding:6px 0; border-bottom:1px solid var(--hairline); flex-wrap:wrap; }
+  .entity-row:last-child{ border-bottom:none; }
+  .entity-name{ font-size:13px; font-weight:600; flex:1; min-width:140px; }
+  .entity-owner{ font-size:11px; color:var(--ink-soft); flex:1; min-width:100px; }
+  .entity-vol{ font-family:var(--mono); font-size:12.5px; font-weight:700; width:72px; text-align:right; }
+  .entity-vol.na{ color:var(--ink-soft); font-weight:500; }
+  .named-list{ display:flex; flex-wrap:wrap; gap:6px; margin-top:2px; }
+  .chip{ display:inline-block; padding:3px 9px; border-radius:20px; font-size:11.5px; background:var(--slate-bg); color:var(--slate-ink); }
+  .note-box{ background:#F3F7F6; border:1px solid var(--teal-bg); border-radius:8px; padding:12px 14px; font-size:12.5px; color:var(--ink); line-height:1.55; margin-bottom:16px; }
+  .dist-toolbar{ display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
+  .legend{ display:flex; gap:14px; flex-wrap:wrap; font-size:11.5px; color:var(--ink-soft); }
+  .legend span{ display:inline-flex; align-items:center; gap:5px; }
+  .swatch{ width:9px; height:9px; border-radius:3px; display:inline-block; }
 </style>
 </head>
 <body>
@@ -58,11 +115,17 @@
   <span class="built-tag" id="built-tag">loading…</span>
 </header>
 
+<nav class="toptabs">
+  <button data-top="news" class="active">News tracker</button>
+  <button data-top="dist">Distribution &amp; sell-out</button>
+</nav>
+
 <main>
+<div class="toppanel active" id="top-news">
   <div class="card">
     <div class="toolbar">
       <h2 style="margin:0;">Latest check</h2>
-      <a class="btn" href="https://github.com/OWNER/REPO/actions/workflows/daily-news-check.yml" id="run-link" target="_blank" rel="noopener">Run manually on GitHub →</a>
+      <a class="btn" href="https://github.com/snguyendai-source/tyre-distribution-tracker/actions/workflows/daily-news-check.yml" id="run-link" target="_blank" rel="noopener">Run manually on GitHub →</a>
     </div>
     <div class="stat-row" id="stat-row">
       <div class="stat"><div class="num" id="stat-lastrun">—</div><div class="lbl">Last checked (UTC)</div></div>
@@ -85,10 +148,42 @@
   </div>
 
   <div class="card">
+    <div class="toolbar">
+      <h2 style="margin:0;">Article archive</h2>
+      <span style="font-size:11.5px; color:var(--ink-soft);" id="archive-count"></span>
+    </div>
+    <p style="font-size:12.5px; color:var(--ink-soft); margin:0 0 10px;">Every article this tracker has ever found, kept permanently (unlike "Latest check" above, which only shows the most recent run). Filter by the article's own published year, or search by entity/country.</p>
+    <div class="filter-row">
+      <select id="archive-year"><option value="">All years</option></select>
+      <input type="text" id="archive-search" placeholder="Filter by entity or country…" style="flex:1; min-width:200px;">
+    </div>
+    <div id="archive-results"><p class="skeleton">Loading…</p></div>
+  </div>
+
+  <div class="card">
     <h2>Monitored entities</h2>
     <p style="font-size:12.5px; color:var(--ink-soft); margin:0 0 10px;">The full list this tracker checks daily. Edit <code>data/entities.json</code> in the repo to add or remove entities — the next scheduled run picks up the change automatically.</p>
     <div id="entities-list"></div>
   </div>
+</div>
+
+<div class="toppanel" id="top-dist">
+  <div class="dist-toolbar">
+    <nav class="subtabs">
+      <button data-sub="pc" class="active">Passenger car</button>
+      <button data-sub="tbr">Truck &amp; bus (TBR)</button>
+    </nav>
+    <div class="legend">
+      <span><span class="swatch" style="background:var(--teal-ink)"></span> Hard % / published</span>
+      <span><span class="swatch" style="background:var(--amber-ink)"></span> Modeled</span>
+      <span><span class="swatch" style="background:#5B3E96"></span> Estimate</span>
+      <span><span class="swatch" style="background:var(--slate-ink)"></span> Named only</span>
+    </div>
+  </div>
+  <div class="note-box">Country → channel → named entity, with estimated sell-out volume where a real source publishes one. Where it doesn't, entities are listed without a forced number — see the color legend above for what's sourced vs. modeled vs. a gap.</div>
+  <div class="subpanel active" id="sub-pc"><p class="skeleton">Loading…</p></div>
+  <div class="subpanel" id="sub-tbr"><p class="skeleton">Loading…</p></div>
+</div>
 </main>
 
 <script>
@@ -188,8 +283,176 @@ async function init(){
     document.getElementById('nf-results').innerHTML = '<p class="skeleton">Could not load data files. If this is right after the first deploy, the first Action run has not completed yet.</p>';
     console.error(e);
   }
+
+  try{
+    const dist = await loadJSON('data/distribution.json');
+    window.__distData = dist;
+    document.getElementById('sub-pc').innerHTML = renderDistSegment(dist.pc);
+    document.getElementById('sub-tbr').innerHTML = renderDistSegment(dist.tbr);
+  }catch(e){
+    document.getElementById('sub-pc').innerHTML = '<p class="skeleton">Could not load distribution data.</p>';
+    console.error(e);
+  }
+
+  try{
+    const archive = await loadJSON('data/archive.json');
+    window.__archiveData = archive || [];
+    populateArchiveYearOptions(window.__archiveData);
+    renderArchive();
+  }catch(e){
+    document.getElementById('archive-results').innerHTML = '<p class="skeleton">Could not load the archive yet — it is created after the first run.</p>';
+    console.error(e);
+  }
 }
 init();
+
+// ---------- article archive: year + entity/country filtering ----------
+function parseArticleYear(pubDate){
+  if(!pubDate) return null;
+  const d = new Date(pubDate);
+  return isNaN(d.getTime()) ? null : d.getFullYear();
+}
+
+function populateArchiveYearOptions(archive){
+  const years = new Set();
+  archive.forEach(a => { const y = parseArticleYear(a.pubDate); if(y) years.add(y); });
+  const sorted = Array.from(years).sort((a,b) => b - a);
+  const sel = document.getElementById('archive-year');
+  sorted.forEach(y => {
+    const opt = document.createElement('option');
+    opt.value = String(y);
+    opt.textContent = String(y);
+    sel.appendChild(opt);
+  });
+}
+
+function renderArchive(){
+  const archive = window.__archiveData || [];
+  const yearFilter = document.getElementById('archive-year').value;
+  const q = document.getElementById('archive-search').value.trim().toLowerCase();
+
+  let filtered = archive;
+  if(yearFilter){
+    filtered = filtered.filter(a => String(parseArticleYear(a.pubDate)) === yearFilter);
+  }
+  if(q){
+    filtered = filtered.filter(a => (a.entity + ' ' + (a.country||'')).toLowerCase().includes(q));
+  }
+  // newest published first; undated articles sort last
+  filtered = [...filtered].sort((a,b) => {
+    const da = new Date(a.pubDate).getTime() || 0;
+    const db = new Date(b.pubDate).getTime() || 0;
+    return db - da;
+  });
+
+  document.getElementById('archive-count').textContent = `${filtered.length} of ${archive.length} article(s)`;
+
+  const results = document.getElementById('archive-results');
+  if(!archive.length){
+    results.innerHTML = '<p class="skeleton">No articles archived yet — this fills in as the daily check finds new mentions.</p>';
+    return;
+  }
+  if(!filtered.length){
+    results.innerHTML = '<p style="color:var(--ink-soft);">No articles match that filter.</p>';
+    return;
+  }
+  // group by entity for readability, same visual pattern as "Latest check"
+  const byEntity = {};
+  filtered.forEach(a => { (byEntity[a.entity] = byEntity[a.entity] || []).push(a); });
+
+  results.innerHTML = Object.entries(byEntity).map(([entity, items]) => `
+    <div class="nf-entity-block">
+      <h4>${escapeHtml(entity)} <span class="badge">${escapeHtml(items[0].country || '')}</span></h4>
+      <ul>
+        ${items.map(it => `<li><a href="${it.link}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a><br><span class="nf-meta">${escapeHtml(it.pubDate||'undated')}</span></li>`).join('')}
+      </ul>
+    </div>
+  `).join('');
+}
+document.getElementById('archive-year').addEventListener('change', renderArchive);
+document.getElementById('archive-search').addEventListener('input', renderArchive);
+
+// ---------- top-level tabs ----------
+document.querySelectorAll('nav.toptabs button').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('nav.toptabs button').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.toppanel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('top-'+btn.dataset.top).classList.add('active');
+  });
+});
+document.querySelectorAll('nav.subtabs button').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('nav.subtabs button').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.subpanel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('sub-'+btn.dataset.sub).classList.add('active');
+  });
+});
+
+// ---------- distribution & sell-out rendering ----------
+function badgeHtml(cls, label){
+  if(!cls) return '';
+  const map = {hard:'Hard %', modeled:'Modeled', estimate:'Estimate', none:'Named only', caution:label||'Note'};
+  return `<span class="badge ${cls}">${escapeHtml(map[cls] || label || cls)}</span>`;
+}
+
+function renderDistSegment(countries){
+  if(!countries || !countries.length) return '<p class="skeleton">No data.</p>';
+  return countries.map((c, ci) => {
+    const totalHtml = c.total
+      ? `<div class="num2">${escapeHtml(c.total)}</div><div class="lbl2">${escapeHtml(c.totalLabel||'')}</div>`
+      : `<div class="num2" style="color:#B42318;">—</div><div class="lbl2">no total published</div>`;
+
+    let bodyHtml = '';
+    if(c.note || (c.flatEntities && c.flatEntities.length)){
+      bodyHtml += `<div class="note-box" style="margin-bottom:10px;">${badgeHtml(c.noteBadge)} ${escapeHtml((c.note||'').replace(/^(Gap|Hard|Value only|Not units|Outdated|Caveat)\s*/,''))}</div>`;
+      if(c.flatEntities && c.flatEntities.length){
+        bodyHtml += `<div class="named-list" style="margin-bottom:14px;">${c.flatEntities.map(n=>`<span class="chip">${escapeHtml(n)}</span>`).join('')}</div>`;
+      }
+    }
+    if(c.channels && c.channels.length){
+      bodyHtml += c.channels.map((ch, chi) => {
+        const shareNum = parseFloat((ch.share||'').replace(/[^0-9.]/g,'')) || 0;
+        const entitiesHtml = (ch.entities||[]).map(e => {
+          if(e.owner === null && e.volume === null){
+            return null; // collected into chip list below instead
+          }
+          return `<div class="entity-row">
+            <div class="entity-name">${escapeHtml(e.name)}</div>
+            <div class="entity-owner">${escapeHtml(e.owner||'')}</div>
+            <div class="entity-vol ${e.volume ? '' : 'na'}">${escapeHtml(e.volume || 'n/a')}</div>
+          </div>`;
+        }).filter(Boolean).join('');
+        const chipEntities = (ch.entities||[]).filter(e => e.owner === null && e.volume === null);
+        const chipsHtml = chipEntities.length
+          ? `<div class="named-list">${chipEntities.map(e=>`<span class="chip">${escapeHtml(e.name)}</span>`).join('')}</div>` : '';
+
+        return `<details class="channel" ${chi===0 && ci<2 ? 'open':''}>
+          <summary>
+            <div class="channel-name">${escapeHtml(ch.name)}</div>
+            <div class="channel-bar-wrap"><div class="channel-bar-track"><div class="channel-bar-fill" style="width:${Math.min(shareNum,100)}%"></div></div></div>
+            <div class="channel-share">${escapeHtml(ch.share||'')}</div>
+            <div class="channel-vol">${escapeHtml(ch.volume||'')}</div>
+          </summary>
+          <div class="channel-body">
+            <div class="channel-source">${badgeHtml(ch.sourceBadge)} ${escapeHtml((ch.source||'').replace(/^(Source:.*?)(Hard %|Modeled|Estimate|Named only|Fragmented)?\s*/,'$1'))}</div>
+            ${entitiesHtml}
+            ${chipsHtml}
+          </div>
+        </details>`;
+      }).join('');
+    }
+
+    return `<details class="country" ${ci<2 ? 'open':''}>
+      <summary>
+        <div><div class="country-name">${escapeHtml(c.country)}</div><div class="country-meta">${escapeHtml(c.meta||'')}</div></div>
+        <div class="country-total">${totalHtml}</div>
+      </summary>
+      <div class="country-body">${bodyHtml}</div>
+    </details>`;
+  }).join('');
+}
 </script>
 </body>
 </html>
