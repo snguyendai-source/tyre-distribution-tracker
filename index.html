@@ -118,6 +118,7 @@
 <nav class="toptabs">
   <button data-top="news" class="active">News tracker</button>
   <button data-top="dist">Distribution &amp; sell-out</button>
+  <button data-top="comp">Competitors</button>
 </nav>
 
 <main>
@@ -184,7 +185,55 @@
   <div class="subpanel active" id="sub-pc"><p class="skeleton">Loading…</p></div>
   <div class="subpanel" id="sub-tbr"><p class="skeleton">Loading…</p></div>
 </div>
+
+<div class="toppanel" id="top-comp">
+  <div class="note-box">Tracks the tyre <b>manufacturers</b> competing for European sell-in — Michelin, Continental, Bridgestone, Goodyear, Pirelli, the major Korean/Japanese/Chinese/Indian makers — checked daily the same way as the distribution entities, kept in a separate archive.</div>
+  <div class="card">
+    <div class="toolbar">
+      <h2 style="margin:0;">Latest check</h2>
+      <a class="btn" href="https://github.com/snguyendai-source/tyre-distribution-tracker/actions/workflows/daily-news-check.yml" target="_blank" rel="noopener">Run manually on GitHub →</a>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="num" id="comp-stat-lastrun">—</div><div class="lbl">Last checked (UTC)</div></div>
+      <div class="stat"><div class="num" id="comp-stat-new">—</div><div class="lbl">New mentions</div></div>
+      <div class="stat"><div class="num" id="comp-stat-entities">—</div><div class="lbl">Makers with news</div></div>
+      <div class="stat"><div class="num" id="comp-stat-checked">—</div><div class="lbl">Makers checked</div></div>
+    </div>
+    <div class="filter-row">
+      <input type="text" id="comp-f-search" placeholder="Filter by maker…" style="flex:1; min-width:200px;">
+    </div>
+    <div id="comp-nf-results"><p class="skeleton">Loading…</p></div>
+  </div>
+
+  <div class="card">
+    <h2>Run history</h2>
+    <table>
+      <thead><tr><th>Run (UTC)</th><th>New mentions</th><th>Makers with news</th></tr></thead>
+      <tbody id="comp-history-tbody"><tr><td colspan="3" class="skeleton">Loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="toolbar">
+      <h2 style="margin:0;">Article archive</h2>
+      <span style="font-size:11.5px; color:var(--ink-soft);" id="comp-archive-count"></span>
+    </div>
+    <p style="font-size:12.5px; color:var(--ink-soft); margin:0 0 10px;">Every competitor article ever found, kept permanently. Filter by the article's own published year, or search by maker/category.</p>
+    <div class="filter-row">
+      <select id="comp-archive-year"><option value="">All years</option></select>
+      <input type="text" id="comp-archive-search" placeholder="Filter by maker or category…" style="flex:1; min-width:200px;">
+    </div>
+    <div id="comp-archive-results"><p class="skeleton">Loading…</p></div>
+  </div>
+
+  <div class="card">
+    <h2>Monitored competitors</h2>
+    <p style="font-size:12.5px; color:var(--ink-soft); margin:0 0 10px;">Edit <code>data/competitors.json</code> in the repo to add or remove makers — the next scheduled run picks up the change automatically.</p>
+    <div id="comp-entities-list"></div>
+  </div>
+</div>
 </main>
+
 
 <script>
 function escapeHtml(str){
@@ -301,6 +350,24 @@ async function init(){
     renderArchive();
   }catch(e){
     document.getElementById('archive-results').innerHTML = '<p class="skeleton">Could not load the archive yet — it is created after the first run.</p>';
+    console.error(e);
+  }
+
+  try{
+    const [compLatest, compHistory, competitors, compArchive] = await Promise.all([
+      loadJSON('data/competitor_latest_run.json'),
+      loadJSON('data/competitor_history.json'),
+      loadJSON('data/competitors.json'),
+      loadJSON('data/competitor_archive.json'),
+    ]);
+    renderCompLatestRun(compLatest);
+    renderCompHistory(compHistory);
+    renderCompEntitiesList(competitors);
+    window.__compArchiveData = compArchive || [];
+    populateCompArchiveYearOptions(window.__compArchiveData);
+    renderCompArchive();
+  }catch(e){
+    document.getElementById('comp-nf-results').innerHTML = '<p class="skeleton">Could not load competitor data. If this is right after the first deploy, the first Action run has not completed yet.</p>';
     console.error(e);
   }
 }
@@ -453,6 +520,127 @@ function renderDistSegment(countries){
     </details>`;
   }).join('');
 }
+
+// ---------- competitors tab (mirrors the news-tracker functions above) ----------
+function renderCompLatestRun(run){
+  document.getElementById('comp-stat-lastrun').textContent = run ? new Date(run.runAt).toLocaleString('en-GB', {timeZone:'UTC'}) + ' UTC' : '—';
+  document.getElementById('comp-stat-new').textContent = run ? run.totalNew : '—';
+  document.getElementById('comp-stat-entities').textContent = run ? run.entitiesWithNews : '—';
+  document.getElementById('comp-stat-checked').textContent = run ? run.entitiesChecked : '—';
+
+  const results = document.getElementById('comp-nf-results');
+  if(!run){
+    results.innerHTML = '<p class="skeleton">No runs yet — the first scheduled run (or a manual trigger) will populate this.</p>';
+    return;
+  }
+  const entries = Object.entries(run.newItemsByEntity || {});
+  window.__compAllEntries = entries;
+  renderCompFilteredResults('');
+}
+
+function renderCompFilteredResults(filterText){
+  const entries = window.__compAllEntries || [];
+  const results = document.getElementById('comp-nf-results');
+  const q = filterText.trim().toLowerCase();
+  const filtered = q
+    ? entries.filter(([name, items]) => (name + ' ' + (items[0].category||'')).toLowerCase().includes(q))
+    : entries;
+
+  results.innerHTML = filtered.length ? filtered.map(([name, items])=>`
+    <div class="nf-entity-block">
+      <h4>${escapeHtml(name)} <span class="badge">${escapeHtml(items[0].category || '')}</span></h4>
+      <ul>
+        ${items.map(it=>`<li><a href="${it.link}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a><br><span class="nf-meta">${escapeHtml(it.pubDate||'')}</span></li>`).join('')}
+      </ul>
+    </div>
+  `).join('') : '<p style="color:var(--ink-soft);">No matching makers with new mentions.</p>';
+}
+document.getElementById('comp-f-search').addEventListener('input', (e)=> renderCompFilteredResults(e.target.value));
+
+function renderCompHistory(history){
+  const tbody = document.getElementById('comp-history-tbody');
+  if(!history || !history.length){
+    tbody.innerHTML = '<tr><td colspan="3" class="skeleton">No history yet.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = history.map(h => `
+    <tr>
+      <td class="mono">${new Date(h.runAt).toLocaleString('en-GB', {timeZone:'UTC'})} UTC</td>
+      <td class="mono">${h.totalNew}</td>
+      <td class="mono">${h.entitiesWithNews}</td>
+    </tr>
+  `).join('');
+}
+
+function renderCompEntitiesList(competitors){
+  const container = document.getElementById('comp-entities-list');
+  const byCategory = {};
+  (competitors||[]).forEach(c => {
+    if(!byCategory[c.category]) byCategory[c.category] = [];
+    byCategory[c.category].push(c);
+  });
+  container.innerHTML = Object.entries(byCategory).map(([category, list]) => `
+    <div style="margin-bottom:12px;">
+      <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:var(--teal-ink); margin-bottom:6px;">${escapeHtml(category)} (${list.length})</div>
+      <div style="display:flex; flex-wrap:wrap; gap:6px;">
+        ${list.map(c => `<span class="badge" style="background:var(--slate-bg); color:var(--slate-ink); text-transform:none; font-weight:600;">${escapeHtml(c.name)}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function populateCompArchiveYearOptions(archive){
+  const years = new Set();
+  archive.forEach(a => { const y = parseArticleYear(a.pubDate); if(y) years.add(y); });
+  const sorted = Array.from(years).sort((a,b) => b - a);
+  const sel = document.getElementById('comp-archive-year');
+  sorted.forEach(y => {
+    const opt = document.createElement('option');
+    opt.value = String(y);
+    opt.textContent = String(y);
+    sel.appendChild(opt);
+  });
+}
+
+function renderCompArchive(){
+  const archive = window.__compArchiveData || [];
+  const yearFilter = document.getElementById('comp-archive-year').value;
+  const q = document.getElementById('comp-archive-search').value.trim().toLowerCase();
+
+  let filtered = archive;
+  if(yearFilter){
+    filtered = filtered.filter(a => String(parseArticleYear(a.pubDate)) === yearFilter);
+  }
+  if(q){
+    filtered = filtered.filter(a => (a.entity + ' ' + (a.category||'')).toLowerCase().includes(q));
+  }
+  filtered = [...filtered].sort((a,b) => (new Date(b.pubDate).getTime()||0) - (new Date(a.pubDate).getTime()||0));
+
+  document.getElementById('comp-archive-count').textContent = `${filtered.length} of ${archive.length} article(s)`;
+
+  const results = document.getElementById('comp-archive-results');
+  if(!archive.length){
+    results.innerHTML = '<p class="skeleton">No articles archived yet — this fills in as the daily check finds new mentions.</p>';
+    return;
+  }
+  if(!filtered.length){
+    results.innerHTML = '<p style="color:var(--ink-soft);">No articles match that filter.</p>';
+    return;
+  }
+  const byEntity = {};
+  filtered.forEach(a => { (byEntity[a.entity] = byEntity[a.entity] || []).push(a); });
+
+  results.innerHTML = Object.entries(byEntity).map(([name, items]) => `
+    <div class="nf-entity-block">
+      <h4>${escapeHtml(name)} <span class="badge">${escapeHtml(items[0].category || '')}</span></h4>
+      <ul>
+        ${items.map(it => `<li><a href="${it.link}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a><br><span class="nf-meta">${escapeHtml(it.pubDate||'undated')}</span></li>`).join('')}
+      </ul>
+    </div>
+  `).join('');
+}
+document.getElementById('comp-archive-year').addEventListener('change', renderCompArchive);
+document.getElementById('comp-archive-search').addEventListener('input', renderCompArchive);
 </script>
 </body>
 </html>
