@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Michelin",
+    "category": "Premium global",
+    "search_query": "\"Michelin\" tyre Europe"
+  },
+  {
+    "name": "Continental",
+    "category": "Premium global",
+    "search_query": "\"Continental\" tyre Europe"
+  },
+  {
+    "name": "Bridgestone",
+    "category": "Premium global",
+    "search_query": "\"Bridgestone\" tyre Europe"
+  },
+  {
+    "name": "Goodyear",
+    "category": "Premium global",
+    "search_query": "\"Goodyear\" tyre Europe"
+  },
+  {
+    "name": "Pirelli",
+    "category": "Premium global",
+    "search_query": "\"Pirelli\" tyre Europe"
+  },
+  {
+    "name": "Hankook",
+    "category": "Korean",
+    "search_query": "\"Hankook\" tyre Europe"
+  },
+  {
+    "name": "Kumho Tire",
+    "category": "Korean",
+    "search_query": "\"Kumho Tire\" tyre Europe"
+  },
+  {
+    "name": "Nexen Tire",
+    "category": "Korean",
+    "search_query": "\"Nexen Tire\" tyre Europe"
+  },
+  {
+    "name": "Yokohama Rubber",
+    "category": "Japanese",
+    "search_query": "\"Yokohama Rubber\" tyre Europe"
+  },
+  {
+    "name": "Toyo Tires",
+    "category": "Japanese",
+    "search_query": "\"Toyo Tires\" tyre Europe"
+  },
+  {
+    "name": "Falken Tyres",
+    "category": "Japanese",
+    "search_query": "\"Falken Tyres\" tyre Europe"
+  },
+  {
+    "name": "Nokian Tyres",
+    "category": "Nordic",
+    "search_query": "\"Nokian Tyres\" tyre Europe"
+  },
+  {
+    "name": "Linglong Tire",
+    "category": "Chinese",
+    "search_query": "\"Linglong Tire\" tyre Europe"
+  },
+  {
+    "name": "Westlake Tire",
+    "category": "Chinese",
+    "search_query": "\"Westlake Tire\" tyre Europe"
+  },
+  {
+    "name": "Triangle Tyre",
+    "category": "Chinese",
+    "search_query": "\"Triangle Tyre\" tyre Europe"
+  },
+  {
+    "name": "Sailun Tire",
+    "category": "Chinese",
+    "search_query": "\"Sailun Tire\" tyre Europe"
+  },
+  {
+    "name": "Giti Tire",
+    "category": "Chinese",
+    "search_query": "\"Giti Tire\" tyre Europe"
+  },
+  {
+    "name": "Double Coin",
+    "category": "Chinese",
+    "search_query": "\"Double Coin\" tyre Europe"
+  },
+  {
+    "name": "Aeolus Tyre",
+    "category": "Chinese",
+    "search_query": "\"Aeolus Tyre\" tyre Europe"
+  },
+  {
+    "name": "Landsail Tyre",
+    "category": "Chinese",
+    "search_query": "\"Landsail Tyre\" tyre Europe"
+  },
+  {
+    "name": "Maxxis Tyres",
+    "category": "Taiwanese",
+    "search_query": "\"Maxxis Tyres\" tyre Europe"
+  },
+  {
+    "name": "Nankang Rubber",
+    "category": "Taiwanese",
+    "search_query": "\"Nankang Rubber\" tyre Europe"
+  },
+  {
+    "name": "Prometeon Tyre Group",
+    "category": "Industrial/TBR",
+    "search_query": "\"Prometeon Tyre Group\" tyre Europe"
+  },
+  {
+    "name": "CEAT",
+    "category": "Indian",
+    "search_query": "\"CEAT\" tyre Europe"
+  },
+  {
+    "name": "MRF Tyres",
+    "category": "Indian",
+    "search_query": "\"MRF Tyres\" tyre Europe"
+  },
+  {
+    "name": "JK Tyre",
+    "category": "Indian",
+    "search_query": "\"JK Tyre\" tyre Europe"
+  }
+]
