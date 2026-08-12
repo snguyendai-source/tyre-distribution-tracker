@@ -1,34 +1,118 @@
 {
-  "runAt": "2026-08-11T14:15:41.080902+00:00",
-  "totalNew": 3,
+  "runAt": "2026-08-12T09:53:59.899067+00:00",
+  "totalNew": 13,
   "entitiesChecked": 118,
-  "entitiesWithNews": 3,
+  "entitiesWithNews": 10,
   "newItemsByEntity": {
-    "Norauto": [
+    "Vergölst": [
       {
-        "title": "MAM integrates Autowave into its Autocat software - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdFoyWXplVnJPSFNwa1JmYjB1SXpLWjJrOHlFRWV0bExDUzNpZVpaNjBXUWE5RGZqNE1OSGRBVkpwZDJ3Uzg1Ri1RRFJMTF9VdFlVVTdZNjFJQXZmdFVuWUdxcVNzOENYczE5a2c3dG4wQzBGX290dC1zekE2Rjg4Sk1sZlFlb0JuaWxXSA?oc=5",
-        "pubDate": "Mon, 04 Mar 2024 08:00:00 GMT",
+        "title": "Continental Subsidiary Vergölst Set to Make Truck Breakdown Service Even More Reliable - Continental AG",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVzhZUU4xQ0ltODBzZVN6Rk9nZGZ3TFk0a1UycDAtVVl2aGszTEFQdUUyUGxtTXpxSVZ3alNlNk93OV9PTlFmV1pWS2xZeG5MVmJ4YmZsOC1hTVJ1TkZhd3ByWVZsbmRqYW1UQUVKdmtGX19Qd3ZwT1RRMXQ1dlluSnhwMWFDR0syYlN5UENhMA?oc=5",
+        "pubDate": "Wed, 01 Jun 2022 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Time to Think About Those Summer Tires - Continental AG",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdHFKaGpZc0FnOElpODc3dFRiUjJIMlV3bHBKOUI1c01oODRaWlZ3Ry0wc0NyOUI0NDR1WVR6R0tNY1dabTUtd0s2Qmd2Z1hCV3p3eW1pbmxyUjZ0X3RWYmlZc0x3TUtVZ0RQQk1nQVQ2VEY4MGprbHBtbXk0cHM5dTd1TEVxakU?oc=5",
+        "pubDate": "Mon, 20 Apr 2020 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Premio": [
+      {
+        "title": "Pirelli confirms 2024 compounds for the Qatar GP - press.pirelli.com",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbF9CeDFQd2JaR0xJVHk3ZDdfaEJTVGJQdzNXbmlKSFA2VFFnUEFCcGoxSjFVMjhKMU9nWmpBN2lQQ2ZMU3JGUWpFTG5wYzEtanNnYV9OT0pPWjhOLWd5TUtQZk5lZmxIRjQyRDQyMUFtOVljblNaalBxQWd3dUs1Sg?oc=5",
+        "pubDate": "Mon, 07 Apr 2025 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Feu Vert": [
+      {
+        "title": "Feu vert à la démolition et à la transformation de la Place Versailles - La Presse",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNeDhXU281dzdNVmt0Yl9tRmpFQjhqSGNjdmJqZnE3U2hzc3FWX0JWTHpIX25zVlJTV0xmUHZKd0FZazVWaW5UdlFscDBMeXpMLU92YllVbHRZQ0tYU1FuS3ZfY09RVGQ0d1NueS0yNmpCSHJYYlloNVhWMndWbG9lc3ZFTDdSRUl3Y2tjYUladHJzWE1tTGZWNkxmNDJGell5ek1aZWJzMi1ZRVA5OTJiZTlNa3dVbVVBVVhmM1pTU2NHemU4SmdIZFRCOFJneUhs?oc=5",
+        "pubDate": "Mon, 12 May 2025 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      },
+      {
+        "title": "Le BAPE ne donnera pas le feu vert au Réseau électrique métropolitain - Radio-Canada",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeUJDaFJTTnhnNW9HXzAyOG5tYTNYcWk5TFFZSF9fVnM4VVRuZGQwS0RhbHh1Ql9vUG5ITDZFUmkydDJXcFFGZWJzLW44TXI0M1gtMndTY1NoaWsySGZDS1NGSHdaQmN5R2xQREhyRGZ2UlpqVEs1Uk1Fdm5VeWxmcXhOb0F4OWgzeDgyMUhjYmc3a3VLR29SLVJfRmgyT1poeGtlcFFR?oc=5",
+        "pubDate": "Fri, 20 Jan 2017 08:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      },
+      {
+        "title": "SÉRIE EP. 16 À Tanger Tech, neuf investisseurs primo-installés pour lancer la zone industrielle - Le Desk",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc0EyLVVlY1Mzb2tMZVV5ZTRyMFY4a3R5RVFTYS0wZGNUZXVabW84V1NneURPdkxPU2F3RTludU5WTUU4d2l5NDhGWjhPRFBDS0lVV01rdmRCRW1nWkU0ZXFpX1VBWU93RnNWdjVBeVA2ZVdxQ1hzWkxGMVVod2lkLXJ3S3lHZlljZVAtTGROU2RIaUZjOEtPUHJ2enZYbHIyQUVZUXNrS3hUSmhQMVE?oc=5",
+        "pubDate": "Wed, 24 Dec 2025 08:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "Bandvulc": [
+    "Protyre": [
       {
-        "title": "Tony Stapleton appointed Head of Fleet Sales | |ndustry Intelligence - Business Motoring",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYzJ3eURTMS00MGxidkxBdHhqS00xTDhrS1ZzVkpqMXVJSHFwMFpMSmhIU1NCeE0weEJBTEliSkZfMTNtaExCYmxNRXowYTlYZ296NVB5c0N5US1qYTE4TmxKRlJFTUpTdXp4QWJydDZESjlOcWFtMmg2M3NIWVppankxUU52MnJCNDNrT3V3ZmFvTVNfRHloT0g3M0ctR0ZWV2xwcQ?oc=5",
-        "pubDate": "Wed, 17 Oct 2018 07:00:00 GMT",
+        "title": "Protyre review - Auto Express",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0yUDBfR0FHelZJbTJpaXhGOEhJTEZnczBodGZxXzdlSTRnN1Bld2RsbjFhRk1YSDlLYUNqaVlPM3RiS3M4LXZmdmZvS0JjbFZXRWFXRkRPcnR3MDA2LWktR0JhUjVwYjZDNmRraWhB?oc=5",
+        "pubDate": "Wed, 08 Aug 2018 22:09:51 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Grupo Andrés": [
+    "Tructyre": [
       {
-        "title": "Matrax gives SUV and car tyres Asian debut, EV tyres coming - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOenltanRxTU11TEY4eHMzR2NGLVFMMmhTMlRneG9jNWh0WW1aMlVBOXBqUU9ZNmdVQm5mbE9abHVQUzZlWHpEeDEzTkpjbkpDQ0dPeUUwNE1NTUZQQmhSa2NNWDJ1TzNsdGNkVWJxYjJrb1NNdnp3WGRsM2l6dnNKVFhTUG1ib1M5bUNubkQ3Y2Y2NjFiSGsxMQ?oc=5",
-        "pubDate": "Thu, 23 Mar 2023 07:00:00 GMT",
-        "country": "Spain",
+        "title": "Tructyre announces new MD - Motor Transport",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPakdTdDlTc1RzcU82RlNmTGgyMFJTUzRnZU9aLWJ3RnBCRmJGOXE0ZVZqVjJvSEhuMDJIenNBWEN6dmR3TW1pMm83RjJreExNaGxiMlRFdHhOUzJia1RtX0pmek0td0swNDlVSHFJYmpJZUEwSGRYY0VyS2lYMGdpYXF0SXFyMHZONmc?oc=5",
+        "pubDate": "Thu, 14 May 2026 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Blackcircles": [
+      {
+        "title": "Tyre entrepreneur Welch launches advice firm - dailybusinessgroup.co.uk",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQR1JlMWdZVVlvUDVHdWVNUEoxRU9uWHhXNEVpT0pCRmdQbUFaeFNoNE1lRXpXRUt3OHFJckZwaFFHVXVvb1NRTDlNZVRIVXc3aUVkYzhMQlQ0M3huNkVSWlRQY19fOTNxZFY3U25YYXZyRERZVVFmYzBHckNnVnFXaXNHZTBjZ0JKRVZacHlROA?oc=5",
+        "pubDate": "Fri, 20 Feb 2026 08:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Point S UK": [
+      {
+        "title": "Executive View: Franchised or not, workshops must cope with a changing tyre fitting sector - AM-online",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeXE2cnZlMUZjYUM0WG8xeTAwSl9oMzlSOUs5QmhsMk9GdXBFdE1BU2hUWC1kNkc0SEpSVFNRWkc3Q2JBUnBCR1pIcmhUMXp2Ym1nLXRrellLX1hMNWY1MlZvNDNSTWVHOUNBVEt2Uzd0VTdRRGZncXdRaFNkV1VwaXZSRFlrVi0yWTEtMU9LMWVUbjU0aFpzYTE5dUUyY1NRWTBnSEVpV2RxeGs?oc=5",
+        "pubDate": "Fri, 02 May 2025 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Kwik Fit": [
+      {
+        "title": "Bridgestone and Kwik Fit announce Camper Calling Festival partnership - Bridgestone EMEA newsroom",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLW0tM2RuaFprUlR2UGtheGNiVzQyTGZYdUN3WThMaXdzTURkcFBWZXhoQ1VMTTIydjlVX1VzVHp6VkJrMWxtQUpQU3poQ1dEdWd6b1NBd19INFUzdG9SU2w3bDg2T0VJZU91bklzcWNFSlhESnJXOGlSRmJfWDhkV3ZDTzEzdGcwWmk0NDN5SjBFZzRlRnkzVVFxOVFUTk9VSVNWcEQ1eTA1Y1hW?oc=5",
+        "pubDate": "Mon, 08 Jun 2026 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Point S Italia": [
+      {
+        "title": "Gomme Service merges with Point S - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5wU01IeG1BSVVScUZIQmlXVWFSYWNoQXJUcmlKZy1WR2dSMWxwaGo2Tk5yTE5BUHJYQ25QTGp0WWltVnpDS3k5c2ZZam54SU9MZDQtQ3VtZTZGbVFWYkFYd082UWlYY2ppUmNNd0dQWGRlT19vcTRN?oc=5",
+        "pubDate": "Wed, 27 Jun 2018 07:00:00 GMT",
+        "country": "Italy",
         "cluster": "South-West"
+      }
+    ],
+    "Vianor": [
+      {
+        "title": "Nokian Tyres announces management changes for North America, Vianor and Nordics - Tire Technology International",
+        "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNV3AyQmYtLWo2ZkJqRnFublI1WTlEaEsxdExxRmx3WE8zRkI1dGttNGl4WjlfNm92eHcyLXFZN25EbE1IQkEtdnQ1SmRDV2t5SG41cUU2a1pHWW9Zbnp1aFEwUnZVTUtINVVIaDhRdGg4OTlZQnQ0Yk1tMjA5dkQwdUJaQmxoOFBCOTJlRzBhVGluRHBVYUg0c2F5WkRlRzBNcWloN05waDlPQW5BMFpKVDRJOG44TDNjT24zZ0R2M01HR0xHMkJVb2JpWXk4V01Gc0tNUzRRWHB0MGVORHBRRWc1eWw?oc=5",
+        "pubDate": "Mon, 28 Jul 2025 07:00:00 GMT",
+        "country": "Hungary",
+        "cluster": "South-East"
       }
     ]
   }
