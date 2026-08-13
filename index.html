@@ -156,6 +156,13 @@
     <p style="font-size:12.5px; color:var(--ink-soft); margin:0 0 10px;">Every article this tracker has ever found, kept permanently (unlike "Latest check" above, which only shows the most recent run). Filter by the article's own published year, or search by entity/country.</p>
     <div class="filter-row">
       <select id="archive-year"><option value="">All years</option></select>
+      <select id="archive-month">
+        <option value="">All months</option>
+        <option value="1">January</option><option value="2">February</option><option value="3">March</option>
+        <option value="4">April</option><option value="5">May</option><option value="6">June</option>
+        <option value="7">July</option><option value="8">August</option><option value="9">September</option>
+        <option value="10">October</option><option value="11">November</option><option value="12">December</option>
+      </select>
       <input type="text" id="archive-search" placeholder="Filter by entity or country…" style="flex:1; min-width:200px;">
     </div>
     <div id="archive-results"><p class="skeleton">Loading…</p></div>
@@ -221,6 +228,13 @@
     <p style="font-size:12.5px; color:var(--ink-soft); margin:0 0 10px;">Every competitor article ever found, kept permanently. Filter by the article's own published year, or search by maker/category.</p>
     <div class="filter-row">
       <select id="comp-archive-year"><option value="">All years</option></select>
+      <select id="comp-archive-month">
+        <option value="">All months</option>
+        <option value="1">January</option><option value="2">February</option><option value="3">March</option>
+        <option value="4">April</option><option value="5">May</option><option value="6">June</option>
+        <option value="7">July</option><option value="8">August</option><option value="9">September</option>
+        <option value="10">October</option><option value="11">November</option><option value="12">December</option>
+      </select>
       <input type="text" id="comp-archive-search" placeholder="Filter by maker or category…" style="flex:1; min-width:200px;">
     </div>
     <div id="comp-archive-results"><p class="skeleton">Loading…</p></div>
@@ -360,9 +374,9 @@ async function init(){
       loadJSON('data/competitors.json'),
       loadJSON('data/competitor_archive.json'),
     ]);
+    renderCompEntitiesList(competitors); // builds window.__compIRLinks -- must run before the calls below
     renderCompLatestRun(compLatest);
     renderCompHistory(compHistory);
-    renderCompEntitiesList(competitors);
     window.__compArchiveData = compArchive || [];
     populateCompArchiveYearOptions(window.__compArchiveData);
     renderCompArchive();
@@ -373,11 +387,17 @@ async function init(){
 }
 init();
 
-// ---------- article archive: year + entity/country filtering ----------
+// ---------- article archive: year + month + entity/country filtering ----------
 function parseArticleYear(pubDate){
   if(!pubDate) return null;
   const d = new Date(pubDate);
   return isNaN(d.getTime()) ? null : d.getFullYear();
+}
+function parseArticleMonth(pubDate){
+  // returns 1-12 (matches the <option value> in the month dropdowns), or null if undated
+  if(!pubDate) return null;
+  const d = new Date(pubDate);
+  return isNaN(d.getTime()) ? null : d.getMonth() + 1;
 }
 
 function populateArchiveYearOptions(archive){
@@ -396,11 +416,15 @@ function populateArchiveYearOptions(archive){
 function renderArchive(){
   const archive = window.__archiveData || [];
   const yearFilter = document.getElementById('archive-year').value;
+  const monthFilter = document.getElementById('archive-month').value;
   const q = document.getElementById('archive-search').value.trim().toLowerCase();
 
   let filtered = archive;
   if(yearFilter){
     filtered = filtered.filter(a => String(parseArticleYear(a.pubDate)) === yearFilter);
+  }
+  if(monthFilter){
+    filtered = filtered.filter(a => String(parseArticleMonth(a.pubDate)) === monthFilter);
   }
   if(q){
     filtered = filtered.filter(a => (a.entity + ' ' + (a.country||'')).toLowerCase().includes(q));
@@ -437,6 +461,7 @@ function renderArchive(){
   `).join('');
 }
 document.getElementById('archive-year').addEventListener('change', renderArchive);
+document.getElementById('archive-month').addEventListener('change', renderArchive);
 document.getElementById('archive-search').addEventListener('input', renderArchive);
 
 // ---------- top-level tabs ----------
@@ -548,7 +573,7 @@ function renderCompFilteredResults(filterText){
 
   results.innerHTML = filtered.length ? filtered.map(([name, items])=>`
     <div class="nf-entity-block">
-      <h4>${escapeHtml(name)} <span class="badge">${escapeHtml(items[0].category || '')}</span></h4>
+      <h4>${escapeHtml(name)} <span class="badge">${escapeHtml(items[0].category || '')}</span>${irLinkHtml(name)}</h4>
       <ul>
         ${items.map(it=>`<li><a href="${it.link}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a><br><span class="nf-meta">${escapeHtml(it.pubDate||'')}</span></li>`).join('')}
       </ul>
@@ -573,6 +598,9 @@ function renderCompHistory(history){
 }
 
 function renderCompEntitiesList(competitors){
+  window.__compIRLinks = {};
+  (competitors||[]).forEach(c => { if(c.investorRelationsUrl) window.__compIRLinks[c.name] = c.investorRelationsUrl; });
+
   const container = document.getElementById('comp-entities-list');
   const byCategory = {};
   (competitors||[]).forEach(c => {
@@ -583,10 +611,15 @@ function renderCompEntitiesList(competitors){
     <div style="margin-bottom:12px;">
       <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:var(--teal-ink); margin-bottom:6px;">${escapeHtml(category)} (${list.length})</div>
       <div style="display:flex; flex-wrap:wrap; gap:6px;">
-        ${list.map(c => `<span class="badge" style="background:var(--slate-bg); color:var(--slate-ink); text-transform:none; font-weight:600;">${escapeHtml(c.name)}</span>`).join('')}
+        ${list.map(c => `<span class="badge" style="background:var(--slate-bg); color:var(--slate-ink); text-transform:none; font-weight:600; display:inline-flex; align-items:center; gap:5px;">${escapeHtml(c.name)}${c.investorRelationsUrl ? ` <a href="${c.investorRelationsUrl}" target="_blank" rel="noopener" title="Investor relations / latest earnings" style="color:var(--teal); text-decoration:none;">📈</a>` : ''}</span>`).join('')}
       </div>
     </div>
   `).join('');
+}
+
+function irLinkHtml(entityName){
+  const url = (window.__compIRLinks || {})[entityName];
+  return url ? ` <a href="${url}" target="_blank" rel="noopener" class="badge" style="background:var(--teal-bg); color:var(--teal-ink); text-decoration:none; text-transform:none; font-weight:600;">📈 Latest earnings</a>` : '';
 }
 
 function populateCompArchiveYearOptions(archive){
@@ -605,11 +638,15 @@ function populateCompArchiveYearOptions(archive){
 function renderCompArchive(){
   const archive = window.__compArchiveData || [];
   const yearFilter = document.getElementById('comp-archive-year').value;
+  const monthFilter = document.getElementById('comp-archive-month').value;
   const q = document.getElementById('comp-archive-search').value.trim().toLowerCase();
 
   let filtered = archive;
   if(yearFilter){
     filtered = filtered.filter(a => String(parseArticleYear(a.pubDate)) === yearFilter);
+  }
+  if(monthFilter){
+    filtered = filtered.filter(a => String(parseArticleMonth(a.pubDate)) === monthFilter);
   }
   if(q){
     filtered = filtered.filter(a => (a.entity + ' ' + (a.category||'')).toLowerCase().includes(q));
@@ -632,7 +669,7 @@ function renderCompArchive(){
 
   results.innerHTML = Object.entries(byEntity).map(([name, items]) => `
     <div class="nf-entity-block">
-      <h4>${escapeHtml(name)} <span class="badge">${escapeHtml(items[0].category || '')}</span></h4>
+      <h4>${escapeHtml(name)} <span class="badge">${escapeHtml(items[0].category || '')}</span>${irLinkHtml(name)}</h4>
       <ul>
         ${items.map(it => `<li><a href="${it.link}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a><br><span class="nf-meta">${escapeHtml(it.pubDate||'undated')}</span></li>`).join('')}
       </ul>
@@ -640,6 +677,7 @@ function renderCompArchive(){
   `).join('');
 }
 document.getElementById('comp-archive-year').addEventListener('change', renderCompArchive);
+document.getElementById('comp-archive-month').addEventListener('change', renderCompArchive);
 document.getElementById('comp-archive-search').addEventListener('input', renderCompArchive);
 </script>
 </body>
