@@ -2,131 +2,157 @@
   {
     "name": "Michelin",
     "category": "Premium global",
-    "search_query": "\"Michelin\" tyre Europe"
+    "search_query": "\"Michelin\" tyre Europe",
+    "investorRelationsUrl": "https://www.michelin.com/en/investors"
   },
   {
     "name": "Continental",
     "category": "Premium global",
-    "search_query": "\"Continental\" tyre Europe"
+    "search_query": "\"Continental\" tyre Europe",
+    "investorRelationsUrl": "https://www.continental.com/en/investors/"
   },
   {
     "name": "Bridgestone",
     "category": "Premium global",
-    "search_query": "\"Bridgestone\" tyre Europe"
+    "search_query": "\"Bridgestone\" tyre Europe",
+    "investorRelationsUrl": "https://www.bridgestone.com/ir/"
   },
   {
     "name": "Goodyear",
     "category": "Premium global",
-    "search_query": "\"Goodyear\" tyre Europe"
+    "search_query": "\"Goodyear\" tyre Europe",
+    "investorRelationsUrl": "https://corporate.goodyear.com/us/en/investors.html"
   },
   {
     "name": "Pirelli",
     "category": "Premium global",
-    "search_query": "\"Pirelli\" tyre Europe"
+    "search_query": "\"Pirelli\" tyre Europe",
+    "investorRelationsUrl": "https://corporate.pirelli.com/corporate/en-ww/investors/investors"
   },
   {
     "name": "Hankook",
     "category": "Korean",
-    "search_query": "\"Hankook\" tyre Europe"
+    "search_query": "\"Hankook\" tyre Europe",
+    "investorRelationsUrl": "https://www.hankooktire.com/global/en/investors/financial-reports/quarterly-reports.html"
   },
   {
     "name": "Kumho Tire",
     "category": "Korean",
-    "search_query": "\"Kumho Tire\" tyre Europe"
+    "search_query": "\"Kumho Tire\" tyre Europe",
+    "investorRelationsUrl": "https://www.kumhotire.com/en/index.do"
   },
   {
     "name": "Nexen Tire",
     "category": "Korean",
-    "search_query": "\"Nexen Tire\" tyre Europe"
+    "search_query": "\"Nexen Tire\" tyre Europe",
+    "investorRelationsUrl": "https://www.nexentire.com/international/investment/ir_information/analyst/index.php"
   },
   {
     "name": "Yokohama Rubber",
     "category": "Japanese",
-    "search_query": "\"Yokohama Rubber\" tyre Europe"
+    "search_query": "\"Yokohama Rubber\" tyre Europe",
+    "investorRelationsUrl": "https://www.y-yokohama.com/global/ir/"
   },
   {
     "name": "Toyo Tires",
     "category": "Japanese",
-    "search_query": "\"Toyo Tires\" tyre Europe"
+    "search_query": "\"Toyo Tires\" tyre Europe",
+    "investorRelationsUrl": "https://www.toyotires-global.com/ir/"
   },
   {
     "name": "Falken Tyres",
     "category": "Japanese",
-    "search_query": "\"Falken Tyres\" tyre Europe"
+    "search_query": "\"Falken Tyres\" tyre Europe",
+    "investorRelationsUrl": "https://www.srigroup.co.jp/english/ir/"
   },
   {
     "name": "Nokian Tyres",
     "category": "Nordic",
-    "search_query": "\"Nokian Tyres\" tyre Europe"
+    "search_query": "\"Nokian Tyres\" tyre Europe",
+    "investorRelationsUrl": "https://company.nokiantyres.com/investors/"
   },
   {
     "name": "Linglong Tire",
     "category": "Chinese",
-    "search_query": "\"Linglong Tire\" tyre Europe"
+    "search_query": "\"Linglong Tire\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "Westlake Tire",
     "category": "Chinese",
-    "search_query": "\"Westlake Tire\" tyre Europe"
+    "search_query": "\"Westlake Tire\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "Triangle Tyre",
     "category": "Chinese",
-    "search_query": "\"Triangle Tyre\" tyre Europe"
+    "search_query": "\"Triangle Tyre\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "Sailun Tire",
     "category": "Chinese",
-    "search_query": "\"Sailun Tire\" tyre Europe"
+    "search_query": "\"Sailun Tire\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "Giti Tire",
     "category": "Chinese",
-    "search_query": "\"Giti Tire\" tyre Europe"
+    "search_query": "\"Giti Tire\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "Double Coin",
     "category": "Chinese",
-    "search_query": "\"Double Coin\" tyre Europe"
+    "search_query": "\"Double Coin\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "Aeolus Tyre",
     "category": "Chinese",
-    "search_query": "\"Aeolus Tyre\" tyre Europe"
+    "search_query": "\"Aeolus Tyre\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "Landsail Tyre",
     "category": "Chinese",
-    "search_query": "\"Landsail Tyre\" tyre Europe"
+    "search_query": "\"Landsail Tyre\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "Maxxis Tyres",
     "category": "Taiwanese",
-    "search_query": "\"Maxxis Tyres\" tyre Europe"
+    "search_query": "\"Maxxis Tyres\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "Nankang Rubber",
     "category": "Taiwanese",
-    "search_query": "\"Nankang Rubber\" tyre Europe"
+    "search_query": "\"Nankang Rubber\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "Prometeon Tyre Group",
     "category": "Industrial/TBR",
-    "search_query": "\"Prometeon Tyre Group\" tyre Europe"
+    "search_query": "\"Prometeon Tyre Group\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "CEAT",
     "category": "Indian",
-    "search_query": "\"CEAT\" tyre Europe"
+    "search_query": "\"CEAT\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "MRF Tyres",
     "category": "Indian",
-    "search_query": "\"MRF Tyres\" tyre Europe"
+    "search_query": "\"MRF Tyres\" tyre Europe",
+    "investorRelationsUrl": null
   },
   {
     "name": "JK Tyre",
     "category": "Indian",
-    "search_query": "\"JK Tyre\" tyre Europe"
+    "search_query": "\"JK Tyre\" tyre Europe",
+    "investorRelationsUrl": null
   }
 ]
