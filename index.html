@@ -67,6 +67,20 @@
   .badge.modeled{ background:var(--amber-bg); color:var(--amber-ink); text-transform:none; }
   .badge.none{ background:var(--slate-bg); color:var(--slate-ink); text-transform:none; }
   .badge.estimate{ background:#EDE7F6; color:#5B3E96; text-transform:none; }
+
+  .comp-category-block{ margin-bottom:20px; }
+  .comp-category-label{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:var(--teal-ink); margin-bottom:8px; }
+  .comp-card-grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap:10px; }
+  .comp-card{ border:1px solid var(--hairline); border-radius:8px; padding:12px 14px; background:#FAFBFC; }
+  .comp-card-name{ font-size:13.5px; font-weight:700; color:var(--ink); margin-bottom:6px; }
+  .comp-card-earnings{ font-size:12px; color:var(--ink); line-height:1.4; }
+  .comp-card-earnings a{ color:var(--teal-ink); text-decoration:none; font-weight:600; }
+  .comp-card-earnings a:hover{ text-decoration:underline; }
+  .comp-card-earnings-date{ display:block; color:var(--ink-soft); font-size:11px; margin-top:2px; }
+  .comp-card-none{ font-size:11.5px; color:var(--ink-soft); font-style:italic; }
+  .comp-card-ir{ margin-top:6px; }
+  .comp-card-ir a{ font-size:11px; color:var(--ink-soft); text-decoration:none; }
+  .comp-card-ir a:hover{ color:var(--teal-ink); text-decoration:underline; }
   .badge.caution{ background:#FDE7E7; color:#B42318; text-transform:none; }
   details.country{ background:var(--panel); border:1px solid var(--hairline); border-radius:10px; margin-bottom:14px; overflow:hidden; }
   details.country > summary{ list-style:none; cursor:pointer; padding:16px 20px; display:flex; align-items:center; gap:14px; }
@@ -368,12 +382,14 @@ async function init(){
   }
 
   try{
-    const [compLatest, compHistory, competitors, compArchive] = await Promise.all([
+    const [compLatest, compHistory, competitors, compArchive, compEarnings] = await Promise.all([
       loadJSON('data/competitor_latest_run.json'),
       loadJSON('data/competitor_history.json'),
       loadJSON('data/competitors.json'),
       loadJSON('data/competitor_archive.json'),
+      loadJSON('data/competitor_earnings.json').catch(() => ({})), // new file, may not exist yet on first load
     ]);
+    window.__compEarnings = compEarnings || {};
     renderCompEntitiesList(competitors); // builds window.__compIRLinks -- must run before the calls below
     renderCompLatestRun(compLatest);
     renderCompHistory(compHistory);
@@ -597,9 +613,16 @@ function renderCompHistory(history){
   `).join('');
 }
 
+function formatEarningsDate(pubDate){
+  const d = new Date(pubDate);
+  if(isNaN(d.getTime())) return '';
+  return d.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
+}
+
 function renderCompEntitiesList(competitors){
   window.__compIRLinks = {};
   (competitors||[]).forEach(c => { if(c.investorRelationsUrl) window.__compIRLinks[c.name] = c.investorRelationsUrl; });
+  const earnings = window.__compEarnings || {};
 
   const container = document.getElementById('comp-entities-list');
   const byCategory = {};
@@ -607,19 +630,45 @@ function renderCompEntitiesList(competitors){
     if(!byCategory[c.category]) byCategory[c.category] = [];
     byCategory[c.category].push(c);
   });
+
   container.innerHTML = Object.entries(byCategory).map(([category, list]) => `
-    <div style="margin-bottom:12px;">
-      <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:var(--teal-ink); margin-bottom:6px;">${escapeHtml(category)} (${list.length})</div>
-      <div style="display:flex; flex-wrap:wrap; gap:6px;">
-        ${list.map(c => `<span class="badge" style="background:var(--slate-bg); color:var(--slate-ink); text-transform:none; font-weight:600; display:inline-flex; align-items:center; gap:5px;">${escapeHtml(c.name)}${c.investorRelationsUrl ? ` <a href="${c.investorRelationsUrl}" target="_blank" rel="noopener" title="Investor relations / latest earnings" style="color:var(--teal); text-decoration:none;">📈</a>` : ''}</span>`).join('')}
+    <div class="comp-category-block">
+      <div class="comp-category-label">${escapeHtml(category)} (${list.length})</div>
+      <div class="comp-card-grid">
+        ${list.map(c => {
+          const mention = earnings[c.name];
+          let earningsHtml;
+          if(mention){
+            const dateStr = formatEarningsDate(mention.pubDate);
+            earningsHtml = `<div class="comp-card-earnings">
+              <a href="${mention.link}" target="_blank" rel="noopener">📈 ${escapeHtml(mention.title)}</a>
+              <span class="comp-card-earnings-date">${dateStr ? 'Published '+dateStr : ''}</span>
+            </div>`;
+          } else {
+            earningsHtml = `<div class="comp-card-none">No dated earnings mention found yet</div>`;
+          }
+          const irHtml = c.investorRelationsUrl
+            ? `<div class="comp-card-ir"><a href="${c.investorRelationsUrl}" target="_blank" rel="noopener">Official investor relations page →</a></div>`
+            : '';
+          return `<div class="comp-card">
+            <div class="comp-card-name">${escapeHtml(c.name)}</div>
+            ${earningsHtml}
+            ${irHtml}
+          </div>`;
+        }).join('')}
       </div>
     </div>
   `).join('');
 }
 
 function irLinkHtml(entityName){
+  const mention = (window.__compEarnings || {})[entityName];
+  if(mention){
+    const dateStr = formatEarningsDate(mention.pubDate);
+    return ` <a href="${mention.link}" target="_blank" rel="noopener" class="badge" style="background:var(--teal-bg); color:var(--teal-ink); text-decoration:none; text-transform:none; font-weight:600;" title="${escapeHtml(mention.title)}">📈 Earnings${dateStr ? ' · '+dateStr : ''}</a>`;
+  }
   const url = (window.__compIRLinks || {})[entityName];
-  return url ? ` <a href="${url}" target="_blank" rel="noopener" class="badge" style="background:var(--teal-bg); color:var(--teal-ink); text-decoration:none; text-transform:none; font-weight:600;">📈 Latest earnings</a>` : '';
+  return url ? ` <a href="${url}" target="_blank" rel="noopener" class="badge" style="background:var(--slate-bg); color:var(--slate-ink); text-decoration:none; text-transform:none; font-weight:600;">Investor relations</a>` : '';
 }
 
 function populateCompArchiveYearOptions(archive){
