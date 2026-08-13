@@ -640,9 +640,10 @@ function renderCompEntitiesList(competitors){
           let earningsHtml;
           if(mention){
             const dateStr = formatEarningsDate(mention.pubDate);
+            const sourceLabel = mention.source === 'official-site' ? 'official source' : 'news coverage';
             earningsHtml = `<div class="comp-card-earnings">
               <a href="${mention.link}" target="_blank" rel="noopener">📈 ${escapeHtml(mention.title)}</a>
-              <span class="comp-card-earnings-date">${dateStr ? 'Published '+dateStr : ''}</span>
+              <span class="comp-card-earnings-date">${dateStr ? 'Published '+dateStr : ''} · ${sourceLabel}</span>
             </div>`;
           } else {
             earningsHtml = `<div class="comp-card-none">No dated earnings mention found yet</div>`;
