@@ -1,35 +1,7 @@
 {
-  "runAt": "2026-08-13T11:38:18.481412+00:00",
-  "totalNew": 3,
+  "runAt": "2026-08-13T11:57:02.297434+00:00",
+  "totalNew": 0,
   "entitiesChecked": 118,
-  "entitiesWithNews": 3,
-  "newItemsByEntity": {
-    "Euro Repar": [
-      {
-        "title": "The multi-brand Euro Repar Car Service network sets up workshop in Turkey - Automotive World",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcWZDRTF0OElqM3NMZXROWm5uYjJUdWZ4ekNjNEQ1bXBvUlNSaWd0NHlJN2loS3RfX1Vva01vRFAzQ0pkWEh1aGwwbU83SmJTSm5XSzViT3h4SXZhUTRtRlozMkd6dElETFJ1R2hxQlNnYnlZQmlwZ2ZTNDZCS2huZzlUR050ZnU0Y0I5bXpvdnVjRXhDNG5OWUpqYm5zT1NBYzlv?oc=5",
-        "pubDate": "Fri, 16 Mar 2018 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      }
-    ],
-    "Blackcircles": [
-      {
-        "title": "Potholes are a significant threat to drivers: Blackcircles names the 10 worst-hit areas in the UK - Highways News",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdDlrVnFrRHVLOHRFdGZSUE1aTzczRDBPa3l5N1BYV3ZmSDBid2prZS1MMkRqS2I4WEJrdzNibnoxSGt6MEVMMVpzaXNMUFdpZUsyU0xGVVBIeFVjal85ZmRHQ1hXanZOeVdsSW1HcEh3XzhDYmtlQ241bi1KSldxZDBhZE1xRHQzdlNDQWFJT2RwZkZfbkZBTE9IZU1jOWFaWGZ3YVZOaXA3VnpzaTNPa0dvblMxbGxXVzFXeWdoTmk?oc=5",
-        "pubDate": "Thu, 13 Aug 2026 10:19:03 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ],
-    "Kwik Fit": [
-      {
-        "title": "ETEL profits soar 7-fold in Q1 2026 - tyrepress.com",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0tbzBBSnB1VWxleHdnWHg5TDROZzlYcDNtLUlILU5iR3pzTkgxQ0pnSVVVeUdZQmJBMnpvMFR4Qy1zZ09XUGJHNzFUWDN4Mi1Jd3JZSGYxZVI3M09ic3d2Q01IUm9BTXBOaW9kN0V6NlhiVEFySVlrZXRn?oc=5",
-        "pubDate": "Thu, 13 Aug 2026 09:58:27 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ]
-  }
+  "entitiesWithNews": 0,
+  "newItemsByEntity": {}
 }
