@@ -1,75 +1,34 @@
 {
-  "runAt": "2026-08-13T09:47:55.265807+00:00",
-  "totalNew": 8,
+  "runAt": "2026-08-13T11:38:18.481412+00:00",
+  "totalNew": 3,
   "entitiesChecked": 118,
-  "entitiesWithNews": 6,
+  "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Euromaster Germany": [
+    "Euro Repar": [
       {
-        "title": "Further loss for Germany’s Top Service Team - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUnQ5SldpZVY2MnNEQlcyb2t0cFNXUHNHUzd6TFlHa2VaLUR5YTY3OXhqSnlXV24wTHRLWUVraVpaYlZYcjVLRUN3cGJBYlExenZlTHNydFBxTHdxaVJialNlcnRsZVlVZTNNTlh6cGRURXA0SVNPaDVBZks1RUd1MnAwUQ?oc=5",
-        "pubDate": "Wed, 23 Jul 2014 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Hedin Group": [
-      {
-        "title": "Hedin Mobility Group’s Year-End Report 2025: A hesitant market amid continued uncertainty - tradingview.com",
-        "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOVzZxVlduVXJScm1mcXV5XzdpeTdxcGZsUTVXcTc0cTBIUDI3UzY5dGs5QTBpaUtLY1BaY3gweWRBTzlRaWk1ZjZhd2ZkbGNzNjVSYjluLUxZZVczUkVOOUhvZklrX1hWODdjQmJLNnlBOWFYY3gzTkx5eWhhMFltb1plMnhLQjhrUmZPeTZkalJHdGx0NnZERlp1ZU0zRXdGSmt3c3BMYUFneVZCSVp0S3RPNFNsZUREQWtaVkRDd2c3amMyOExYblhneHFWWTNPTUJCSDRHVU9SQ3ptVGFuT0E2YnlsVHZjb2c?oc=5",
-        "pubDate": "Thu, 26 Feb 2026 08:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      },
-      {
-        "title": "Hedin Mobility Group recruits Eddy Haesendonck to lead its Benelux operations - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPaU5LQ3NmSUVtQ1BJblF1YlhwMUlXZEQ3bVE1ZmI4YnRDTGN3TjVEM3JpZHhXVmUxOVFjcFFacmpwbjlITTBaS0hJUzRKSE1jYmd5YjJNb0N6cElHWWY1VkNBQ3BXdjk0TGFpYmM2ZjBsN0t6MU9jUERhcU5jbWR6MTVzdnJ3Mm9lOEdGOHRmOEc1NlJoWjNrRFhaSlJPcC04blBKbmgxc0hjWF9adnBwdkxzRlE0V1duV05UcW1tME5KOXIzaHZuTmpxSzdsZFI1LTRLbUFiZDVJWHM?oc=5",
-        "pubDate": "Tue, 12 Jul 2022 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Vulco": [
-      {
-        "title": "Drivers cautioned against use of worn tyres - Ghana News Agency",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5pcUtDZWE0VXlVbTU5UnI0NkFxd2p2SGJkU3BVNDMyM252NDV0eUpWLVdjaDZBb2Y3ZVNCVXd5ZGptY1A1SnY5V1p4R2ZLOXNaNlJMYk1kb29PNXcwYm01aG5wdFZxa25KcUVWZVFCX3pLUXBYZ2VUdVQwTQ?oc=5",
-        "pubDate": "Fri, 25 Apr 2025 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      },
-      {
-        "title": "Tyre issues account for 10% of road crashes - NRSA - Graphic Online",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRkg2dUJVQmNkYmktOE8xNUhvaTlaMmVlNHllQXNWN2FtYTZFRHkzT18tNHVYS3pjcmlMSGpHNDgybkZMNldhazRucGFzdWNrVnh2QWQtU1RVTmJmRnNJRE9LbTFJT2NvdV9tRklyZUc2UjRraktldDUyc3BrWHloOTh4WUFCYmlwbVhfVHZvN2d1OFZWUTVvektzTmpMZw?oc=5",
-        "pubDate": "Sun, 18 Jun 2023 07:00:00 GMT",
+        "title": "The multi-brand Euro Repar Car Service network sets up workshop in Turkey - Automotive World",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcWZDRTF0OElqM3NMZXROWm5uYjJUdWZ4ekNjNEQ1bXBvUlNSaWd0NHlJN2loS3RfX1Vva01vRFAzQ0pkWEh1aGwwbU83SmJTSm5XSzViT3h4SXZhUTRtRlozMkd6dElETFJ1R2hxQlNnYnlZQmlwZ2ZTNDZCS2huZzlUR050ZnU0Y0I5bXpvdnVjRXhDNG5OWUpqYm5zT1NBYzlv?oc=5",
+        "pubDate": "Fri, 16 Mar 2018 07:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "Protyre": [
+    "Blackcircles": [
       {
-        "title": "Protyre keeps it profession­al - PressReader",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZlA2SHo0WXppMkpNTFVGa2E0LWdTYjlsdWFuME90WHJkVHVWbHY4azI0M2ZMRUxuYXhHcjBRcWg2STZEWS1PbGs0MnJOYzdPRUhMUzF3OHZQbDlaWTBDaVZfNVdYdDQ4dmQ3SEdScklqaV9CRFg0cWZkMUlzRTdPUXo2TjA2Nk15RXBmY2JhUkEydzREUEE?oc=5",
-        "pubDate": "Fri, 13 May 2016 07:00:00 GMT",
+        "title": "Potholes are a significant threat to drivers: Blackcircles names the 10 worst-hit areas in the UK - Highways News",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdDlrVnFrRHVLOHRFdGZSUE1aTzczRDBPa3l5N1BYV3ZmSDBid2prZS1MMkRqS2I4WEJrdzNibnoxSGt6MEVMMVpzaXNMUFdpZUsyU0xGVVBIeFVjal85ZmRHQ1hXanZOeVdsSW1HcEh3XzhDYmtlQ241bi1KSldxZDBhZE1xRHQzdlNDQWFJT2RwZkZfbkZBTE9IZU1jOWFaWGZ3YVZOaXA3VnpzaTNPa0dvblMxbGxXVzFXeWdoTmk?oc=5",
+        "pubDate": "Thu, 13 Aug 2026 10:19:03 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Pneusmarket": [
+    "Kwik Fit": [
       {
-        "title": "Marangoni-shuffles-management-team - Rubber News",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRnJ3OElYYXA4azlyb3FhR2Y4SkRVTEVYdF9QNFFkYWVmUHpIeHpYclhKVG1GM1VFbVRfMTZJamkxWDBaZ3cwaHhidTY2WG1vMVliMENsQ1dfQ0NZbTZjaHVXbEZILVU5YnNjVzFGcGYwTFNyUFdCNHJ6Z0pMcnRnWXZrNHZNbEhPc1Bpa01icTcxNGkyallEMVh3?oc=5",
-        "pubDate": "Thu, 23 Feb 2017 08:00:00 GMT",
-        "country": "Italy",
-        "cluster": "South-West"
-      }
-    ],
-    "Marangoni": [
-      {
-        "title": "TRM reaffirms position in the tire retreading market - Tire Technology International",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVJMUlFCblB5dlBDQ0EybTFNeWIzYmZwZWxWaENWUjQ1Qjlfalk0aE5UODM0UEg3ZGR5VmRPM2cwZlBuNHRTbDAxSmtSNHVQOU5IMV9obGxWcU93eXBMNHVWUmJCVnE5Q1pHX2ExdTNLd2g5MHlIdkxWYzlJOEJrQTA0TEZCaW5mRHNhRUlmcE94bHBLdEZMUVhka1NmNlh0dmpVRnR1TWVjazhOUEh0Y0RiNGFsQ0t6?oc=5",
-        "pubDate": "Tue, 09 Jul 2019 07:00:00 GMT",
-        "country": "Italy",
-        "cluster": "South-West"
+        "title": "ETEL profits soar 7-fold in Q1 2026 - tyrepress.com",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0tbzBBSnB1VWxleHdnWHg5TDROZzlYcDNtLUlILU5iR3pzTkgxQ0pnSVVVeUdZQmJBMnpvMFR4Qy1zZ09XUGJHNzFUWDN4Mi1Jd3JZSGYxZVI3M09ic3d2Q01IUm9BTXBOaW9kN0V6NlhiVEFySVlrZXRn?oc=5",
+        "pubDate": "Thu, 13 Aug 2026 09:58:27 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ]
   }
