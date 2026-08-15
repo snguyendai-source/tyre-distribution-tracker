@@ -1,77 +1,156 @@
 {
-  "runAt": "2026-08-14T09:42:28.333586+00:00",
-  "totalNew": 8,
+  "runAt": "2026-08-15T07:43:10.252415+00:00",
+  "totalNew": 17,
   "entitiesChecked": 118,
-  "entitiesWithNews": 7,
+  "entitiesWithNews": 15,
   "newItemsByEntity": {
+    "Interpneu": [
+      {
+        "title": "Westlake to unveil Gen II commercial range at IAA Transportation 2026 - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNeEppR2VZMkNCV0dMa09kOGRYbWZNeVRFdzBzZGwxbkhJZUJQcF9sMUdsLU5aUWdXUWt2NTV2YV9NVlJDYUwzMXFPVElqWEhvUEZqRFpud1hGY2lhX1BicDVCUVVaTS01VHJZQnFKbTd3UjJhQUFneDFmUDV6WGpDTUplUEFLRFdCclVrYkxLNUp1Wkc0bmxWTDVhVnY4b3hseE5TQkJDWQ?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 15:27:44 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Premio": [
+      {
+        "title": "Best bike tyre levers 2026 - cyclist.co.uk",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1VVzN5Nl9qdTl2RWZVOG52NDRPMWtqb1ZEYTZJVEpiSFNtQnlDS2JHNmpOU1dkQVlHeDFJVmxkd3laODVfZ0dvcnctMGNac3VZSzNYQ2lSdi16YXdSa19LdTZTWUl6SGttTHNzeUJR?oc=5",
+        "pubDate": "Fri, 09 Jan 2026 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Euromaster Germany": [
+      {
+        "title": "Euromaster Moving into Germany - Tire Review Magazine",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tMUlGRW15eTkwNjFSOGJ2cURYVGtRams5OGVJZERwbENNeGtrLVhid0UyYkNNanVVREZpN05kQjVES3pIdWhlYzNHckJ1VjVYdGVjZ3lTbl9Panl0TUZuS002UjlPaEVyeVE?oc=5",
+        "pubDate": "Wed, 09 Dec 2009 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "ReifenDirekt": [
+      {
+        "title": "EQS-News: Delticom AG: AGM approves dividend - sharewise.com",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcHUwMlc4eUQtNWgzby05SEEwdGtpNTZNbDh4bllLRlhqSEU3X2tNbnVIU0JESjBPd0FVamtYMHVoSjZPb0c3NzVycXg3UURXY0xpZEZtYXVVMm1STjZoOW1Oc1plZDFDckN2ZmZTcXF3RmR4am5RSXRUS3RHZjVMeFZDWnlDRDZ3MVp0RjRHclZzVE40ZzJaNFg0RGlIdWFOV1g2RWVCSnIwczJNRG80aTBURQ?oc=5",
+        "pubDate": "Tue, 07 Jul 2026 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Emil Frey": [
+      {
+        "title": "Cairoli Wins Race 2 At Lausitzring - dailysportscar.com",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWkdhNlEtczBMdDBJclhsSS1qWkN4ZWVKcGRCOUlRXy16VmdUYzE5OXNsMi1BeFRXWGFGZ2xfdU9tVk4wNVhiTGJveVBaalVGN1B1cjNDaHRYSnQ2ZEh4dFlwSE0zSTJvMk1SQ0N0WGhwdzg5dHlaQnpoZUJCbkozb01HNlJiM0da?oc=5",
+        "pubDate": "Sun, 21 Jun 2026 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
     "Vulco": [
       {
-        "title": "Don’t drive into the new year with expired tyres, your life matters! - Graphic Online",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNU1k1THBpWlI3Z1g4S3Y4OU1TSzh1eldzdjlhUVRzRUZUZ3JrM2otZWhYdHczNTkwWXh1dFhQRFNXLUpZeUtTYk9EZnFFRFR5Sl8tNFB1UDJSaWxGTUVReUlESjVmVXR3dXY5cl80S1BTYy1IZTVab2RaTDZIN0NUd2FJV09tLTR4VFdnV3U2Q2x2am9Vcmpwai1LY0tOSWZVblFBVjAyOTFOc3VJcU4zcDVYSnM?oc=5",
-        "pubDate": "Sun, 26 Nov 2023 08:00:00 GMT",
+        "title": "From Barbie to tyres – new marketing director at Goodyear Dunlop France - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOS1yc2g3RmI2Wi1sV1pseVJzWWN5ZDZjUEtmSWhZX3IzTUdjYmFGVmY0c3JNd0diSTdrZnRoZ2h5MGlGcV9Sa0JJTU5XYkZ3Z09GTHVvOFNOWEN2TDlCMHU0S1o2MTJ6NmlVYUg0XzdZWW5QSEhZcG9sT0ZWNDljeWdTendRQlJva01lWUZwZHhia2FNLWtsb2lteWZ0elhxa0g1UEpEbw?oc=5",
+        "pubDate": "Tue, 25 Aug 2015 07:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
     "Allopneus": [
       {
-        "title": "Winter tyre rules mandatory in French mountain areas from November - The Connexion",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSjJCSE92QVFvYWRGRGQwNEtyVUhKWXExX0pWSjJyODlNQzdQSkNpbC1lYWE0TVF3SlZ6U3BPdnBsc2phdWVRWG1DeHpRTFZTV2ZCV19yd0p5N0t4cXB5STFzdURwdWVOSnF0RE8tbk9qcmFTbTN3d1dBUlowSzQtMkk4NktlalZTVHFKUU5vNTY3c0VrVDFsTVQ4ZGVCeFhPU0x0QVpoYW1WdnpULWFV?oc=5",
-        "pubDate": "Wed, 22 Oct 2025 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      },
-      {
-        "title": "Blackcircles South Africa closed in Autumn 2024 - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOVkVRZ3c4QlJDaDZhQnJTX0poQXdDMDRRakJRbDVRMEN6MUY2WUdjTVFjN1VfeWQ3bk5DZHg1NEl3UUtjT3VKbGszM3ItcDRJZGlhVWVmclpWb0lJUlIzN2Z2ZG10amNoaFp4M3VZMXphX2prUkpYYm9rZ09INGxhZWQzcHY2UmdyVVE?oc=5",
-        "pubDate": "Mon, 28 Jul 2025 07:00:00 GMT",
+        "title": "Michelin buys online tyre giant - CompleteCar.ie",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbF82dUFYXzVrbGV3TUVWdkdyMmx4cjFoVlBwYVFfTjFkakZ1X1FTb3d1QmtaMUFZeGVWaHVUYTNMLW5MMFJZNlNoMDAyWDVzWE9DbWh4X2FCNFB3V1JIUEdjN2ZCT19YenRyZzBDVWR6OGFwQUZBOUdxNFcyN3RUYnpvLTVHbWc?oc=5",
+        "pubDate": "Thu, 14 May 2015 07:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "Halfords Autocentres": [
+    "Protyre": [
       {
-        "title": "Top 10 tyre retailers 2023: Halfords closing in on pole position - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdlBlYXAzN2FQdmVqVEgtcXVFZkdhZmJ3RklfVFQyMU1XTjFmWjR1OFh5V2k2OGtFWk45aW1vT0lDbW1DZDZKejBRNXc1Q184Zm1VRGRERnEtQXQyMjhCT0diY3VISGlTRE9mNGFKaTkzSkswQTVCYTYzdUo1MzAyUDBkYUZOWlpublpjZEtYVVQ4ejQtOVVhd1VRaHUyOXM?oc=5",
-        "pubDate": "Tue, 18 Jul 2023 07:00:00 GMT",
+        "title": "North Northamptonshire drivers urged not to wait for car’s MOT to check tyres - Northamptonshire Telegraph",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOejFJRmlGdXJtZk1ROVhyOHFobUFBOUI5VmlJelNsWVhiUkVwU2Q4VHlHUFBPMlFHb3VMamREaGw4T1RPaENBM1RiN3NFM0VoNWRELTZWelNlRUk3Tmtyc09YZENMM3dYX2xEVUplcV92Q1Zmb3ZhX2V2UWdGQ0tiSllFa0hzNktsb1liSXE0ajA0MFJaeGdFcTZhZ1VQUTJZcEpiVmkzMTBBVkhEQ1pYbU1weUpmaFlFREJmT2lmLS1hSU1hTXFv?oc=5",
+        "pubDate": "Thu, 30 Oct 2025 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "First Stop UK": [
+      {
+        "title": "Bridgestone Retail UK celebrates European Retail Awards - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeHBjM2VSQjBVcElERS1xbTlLSUliTTBocmgtdU1IVTRZdDZrNmpoWnA1MVBxZFhPTk5KTWRnM2Zxa2JaTVlobjl4Q3lXM0R0c1k0R0R3b3loOXpUODllaVJheFhxbUtncG41TE1uQlhCM1NjYVd0bXF4WGw3cHBQRkhDVFRORWxiUFFGeV8wLTBxM1hj?oc=5",
+        "pubDate": "Wed, 19 Jun 2024 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
     "Kwik Fit": [
       {
-        "title": "First master tyre technicians complete Kwik Fit development programme - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOei1tbDhFeHFHaFpKZHNEUWExaGxhNkhJTjduN29MLXozUklKRXpFOEktT3VWOXR4UUkteUZTYktJS0d2WS0wX2ZjQ2piSTNXbENZXzN6MHU3Ty1aLUdBLW4weEltNjdKMi1WOXcxMGZySTJMQXo4OFczeG9JS3MwUV9RNzdfeHgyTEljbmlBZnVRRmpKeUNQaU9RQnVYZDZtSi1VeWtZMA?oc=5",
-        "pubDate": "Thu, 13 Aug 2026 15:22:44 GMT",
+        "title": "Bridgestone and Kwik Fit return to British Motor Show for fifth year - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPczlpdWt0Q3FSRFduMUJUakY5TV9Ga1RkLVI2TF9TWjdYT1JiWWpCcm53cVpETnVaNXJZalFuMmF6eTYtWkJWamUtRV9UdUtDNWF4WGVwcElfdWVhY19Ma2tzX1F5LWMydWhWRG1VWGVOOWhBNjQwbnBMekZvb1NzbGNTOU5RY1ZFNkFwQ0taRFlPNFZaekt5Yko5QVJuWGh2dWpaRGZn?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 16:02:44 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      },
+      {
+        "title": "The UK’s best websites for buying tyres online 2026 - The Car Expert",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5PWWtRVm9wMWpyZnlXcmM5dHhjd0FiaDgwdXN1TzVQM1VXNnJXSmd4RHU3NTM2djl5WTl2NkhBb25lSjFITnFFaGJIcFRBMWFJRkRzQmtvWmNJM09lVlpBYU1sazBVYVpPTkhnUHhpWklZRjE5?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 07:46:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      },
+      {
+        "title": "Kwik Fit demonstrates its 20,000 mile guarantee - Adland.tv",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9tajJwVHNtQlRJRGVnNi1qQWxUVDczVkRLbTYxangzOTlfNTZMR1c1ZFlzT0VZeS1ZTmhkc3JGN0JTbU8yb3dCWGdFQ0ZOTTQ3TlYwdzhxaGk1UkpwRXdrNVpyaWRjNEVHSXhYMjFwSXFtUW8?oc=5",
+        "pubDate": "Wed, 01 Oct 2025 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "HiQ Tyres": [
+      {
+        "title": "HiQ partners HPL Motors - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBtSEljclJfbnNyMHozN1k5bGpteEEzNThLY0xGblN5akhLbENDUGNmRVBRdXFxTmJpSDRuM0dPMjh0VW9mMXkyREVpOXJLUThHdkdQRWR0Q05GZEp0N1c0UVRody1jd3dlSFE?oc=5",
+        "pubDate": "Fri, 19 Dec 2025 08:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
     "Point S UK": [
       {
-        "title": "Point S member Tyrepoint Services reflects on NTDA award - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMVdXN3F2UC1GRXQ0WmtFeVhlUDk2NklQWlNBUmd3TlRCVncxd1ZqdmxEQzJTNnk4Y1NwaC16Q19NbGRub0JLbi1yOGx5QzAyV292al9Yd05zZzRvV21LR05INk1SNmtHNldpSlZwWVFxODlQbkk2VWh3M1daTXlwUVFCbHplRldleF9WYVJsem04Smo4Y3c?oc=5",
-        "pubDate": "Thu, 16 Nov 2023 08:00:00 GMT",
+        "title": "New Point S appointment to strengthen Midlands business - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQc211alVuTGQwSWtwMUlMUkFlVERyX1VMZTFFcl9hNkNGOF8tLXVfUy02eGV1bHAwYWdyV1ZQVlBpRUhmNmRfdERnOFBNSkx4UXZsVW9oV3U2bnVxTU1CNHJ4NktaSGtrcm9BMEc2ZU5JekVUdjU0ZnZGOXM4RllfVkVVcnptRnhSQ0JnM1doMVUtRFlK?oc=5",
+        "pubDate": "Thu, 01 Aug 2024 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Bandvulc": [
+    "Fintyre": [
       {
-        "title": "Continental Acquires Bandvulc - Tyre & Rubber Recycling",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTk1QXy1Vc0hCRUh1QTBLUmdXbm5LTDZ3NXhJaXBpRXFqNUFQbUlzNjhxdXRVdWY2eUZnUzBpaHBIWVBmWTJwbXhoYXVxRmdsR01hcnRvOVhQUmhwZEthZ1J3ZFhaVTE2RGE4SE5DUmhnaURkRm8yUWRSTGZZNFFONW1TNUlFdGJYR0x3?oc=5",
-        "pubDate": "Tue, 05 Jul 2016 07:00:00 GMT",
-        "country": "UK",
-        "cluster": "North-West"
+        "title": "European Tyres Distribution Limited acquires REIFF’s Tyre and Automotive Technology division - Bain Capital",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOXhEMXEwcGUxODhTV2k1SG5WRW5aZTBzejZpUVNLVmtLbVhQU19Uem5HdzFGWVBvNTlRNmFNSzFpVm11WFhISGRIa0JTLVJtem1EVmNkalJCSDdiRV9TTTRWZjZwdmNmS2VlWEt0SDk1SWZ2NVQ1aTF1QkhtUEZITlU5SDc3N1NjRzFicVYySlhhMzBWLXN4SThWQ2tVc1lpaTJDaHFHVnRScFBKZ21HWFN0blJ2dnE3LXY1cy1YaTFEUQ?oc=5",
+        "pubDate": "Mon, 26 Jun 2017 07:00:00 GMT",
+        "country": "Italy",
+        "cluster": "South-West"
       }
     ],
-    "Genan Holding": [
+    "Pneusmarket": [
       {
-        "title": "Tire Recycling Market Size, Industry Share, Trends, Forecast, 2034 - Fortune Business Insights",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5DcUhkMlNfN3BQUWloSEtKcUxEcWM0RWRSa0I4MW8xejVpa0k4R1d6d0wwMFpnZ1VpRmh2M1dHUU0yeUdRWGVrQTF6dmtlSWtrTTZkTWRTbE0zRWxZQlJSUklLM0lhRWdVRE5lMVhPQU1LSXhSMU5n?oc=5",
-        "pubDate": "Mon, 27 Jul 2026 07:00:00 GMT",
-        "country": "Denmark",
-        "cluster": "Central"
+        "title": "Italy’s Fintyre acquires tyre wholesaler Franco Gomme - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQTlpTnFHZ25rc05BdTRNZ295V1pZeGtfSnh2TWxOOTlYTHNDUnpWSnltSHZFb0RycXF4S1BFS1pwWThjbkF3MmZxcDNIWDF0YU9GcG5fdGRqRkVJR2kzVHM5N1NQbnlONUZlcEdGVGdVQTZuYl9qYTRGRVBqaXJPMEFXUDJDajQyOVR1UlJHdkc?oc=5",
+        "pubDate": "Fri, 06 May 2016 07:00:00 GMT",
+        "country": "Italy",
+        "cluster": "South-West"
+      }
+    ],
+    "Vianor": [
+      {
+        "title": "Nokian Renkaat Oyj Financial Statements – OMXHEX:TYRES - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE40YmFYNkxhSGtRWm8zc01CTndMbkE0RS12Tmo1U0s0STNkaE1EQnI3TWZXM0hYWWNHWkZYbG10SDR3a2xtOTN4Zm5uZWZSTnlsOW9ablhnaUNPaWpneDZHNzR2ZGkyRldyT0s5NzFGX3lnMG5sZ0NDSA?oc=5",
+        "pubDate": "Thu, 25 Mar 2021 13:16:14 GMT",
+        "country": "Hungary",
+        "cluster": "South-East"
       }
     ]
   }
