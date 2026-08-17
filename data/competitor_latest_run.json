@@ -1,183 +1,75 @@
 {
-  "runAt": "2026-08-16T07:45:32.296279+00:00",
-  "totalNew": 24,
+  "runAt": "2026-08-17T08:08:36.914749+00:00",
+  "totalNew": 9,
   "entitiesChecked": 26,
-  "entitiesWithNews": 16,
+  "entitiesWithNews": 7,
   "newItemsByEntity": {
-    "Continental": [
+    "Goodyear": [
       {
-        "title": "Continental extends European roadshow programme to 2027 - Automotive World",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeDUtajVyZWEwQ2pCZFRndDFvWjZxckdsZUZRU2dHdDc3TW5YUExydEczbVJ5bG5kbWR5X3NsUTB1Tk1rb1hJXzVITGpfS1lOZ0w2Sk1Qd3NSbG1ndEdHNG96NG9sd0NTRzlybF96WUMtLWgwYTY3WVY1YmU3X0RtSEIyc2dNdXZ2WGxHYlE1MTlYaGRQTjB2Mw?oc=5",
-        "pubDate": "Tue, 07 Jul 2026 07:00:00 GMT",
+        "title": "Goodyear expands Cooper Tires line-up in EMEA - Tire Technology International",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUkNId1dkRzd6OEhGd2RMbWRGcHlmZ1N4SXp0RmNxYnZtV1BuTDc5TjVHOEtDMTFLblBkU3U2SEhYb2ZvT0RJQ0l0S1hXQXRiYXpycVJjS1VUV2h3ZmRWUHNTWGhDUksxUWZKX19pcDNhLVpib053QnVFcEZWMzFkZXV5ZDg2bXd5ekRyVmtSOGFyaTJzalVjaFY2ZmJpRVRhemEwNWJiUFd4X1pT?oc=5",
+        "pubDate": "Mon, 03 Nov 2025 08:00:00 GMT",
         "category": "Premium global"
-      },
-      {
-        "title": "GM recalls 22,914 cars in the US due to Continental tyre issue - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPb01NOWlONlpuYTFsUlNaMzJpc250NzM3TjRCWC1CRkxXcXdyNVJiRXBRWmZwSUoxeVNOQ21leGxkWUg0MW8ycTVaNWVDM2tDTXN1bWRKOXJHR05TdkRBSldOWnNrUklodTQ3Q2hVR2F1bUZHSFV5ZmZIRDVza0VCWmgzQWg4TWZyUGdMdDMzdG5JYlJ1X3NERWU4d1A?oc=5",
-        "pubDate": "Mon, 27 Oct 2025 07:00:00 GMT",
-        "category": "Premium global"
-      }
-    ],
-    "Kumho Tire": [
-      {
-        "title": "EU tariffs push Korean tire makers to reshape supply chains - 매일경제",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5LNVNTeWVFTklMZ0doaGQ4MFFReFJwdFpiOU92eXhSTWM4Skp4RU5fSUhETldRMF9XOWNBZ3RKYXNvRlIzb0xLQVRmS09zaXRFSjRSWGlHMA?oc=5",
-        "pubDate": "Thu, 18 Jun 2026 07:00:00 GMT",
-        "category": "Korean"
-      },
-      {
-        "title": "EU tariffs on Chinese tires reshape South Korea’s market, favoring Hankook - CHOSUNBIZ - biz.chosun.com",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPWTNvcWpZRktCYzFVVVJId1luUmgyaS0xTmptNDBuTW0tQXl3UDhuRHJfQlBjdzhCME9lZEY4YlNoekU0UmRad3hibjk5bWF0MUFRTk1PTkUyRXZrUk5tYS1WbllRNjdIS2d2cWVsMHQ4UGVoMW9FZTRaVFhQMnhFUmNB0gGWAUFVX3lxTFBieU8ta0xucFVnRmhTQXc4dFFlbkF6X3FvRWhFV1B6OFd3a1hfQ0FDRnRtRkkwd1BjSHNvT2pGRldrc3JYWXZFRjVvYnBLNy1yVjFZb0hJT3dKZVRCTVJGMi1UTk5mSXd4d25BRFVzZzVxNWtnOHF6Mk1PVDN2bHdCMGhVXzFCVVhMdC1DeHlWaFpYSTJBdw?oc=5",
-        "pubDate": "Fri, 12 Jun 2026 07:00:00 GMT",
-        "category": "Korean"
       }
     ],
     "Hankook": [
       {
-        "title": "Hankook Supplies Tires For SEAT Ibiza, Arona - Businesskorea",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBPYzFuc2t3VHl2MjlraFVtZS1zQTdnb0xiRXpvS241UTZub0tLOHFreGFPMGdWbkw0WXBrbDk0VlRpZGhVMXdOclBIenhBelN6azRKQ1c0VElYLTloTHAzWFRNSTNrVWs4aDhTOUlMUWJUaG9U?oc=5",
-        "pubDate": "Tue, 02 Jun 2026 07:00:00 GMT",
+        "title": "Hankook Tire Set For Cologne 2026 Expo - businesskorea.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE04Z0xQYVU2TjhJUzNyOWJGMzUwMjdxQ1JXbGFteGFYQkFTa1lxcF9IZFUzZkk5THhzc3RRS2NnYXRiVUtTVkc0Zmt5YUJpa0UySnd2Z1h4T016Zzcwck5tQUZsUk5nR0ZORENlYTV6N2RMbjdW?oc=5",
+        "pubDate": "Tue, 26 May 2026 07:00:00 GMT",
+        "category": "Korean"
+      },
+      {
+        "title": "Hankook Tire outpaces Europe’s best in stringent performance tests - The Korea Times",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVHBmQTBJV2lvWUI5eDZxYWtDb0txT2piVzRlemtwREpVbi13X2pPdGFVSW9xa3hzYW1nSEtoM2JCazZPSHVua1BTMjh6TWd6TjNVZ2JDUzBnX2tHc2NETVFhT3lteGUzTFZlYjl3Sm52ZUQyak81V0VTX0Y4R0trTGRPb3MzZjlzcGV6VDN5Skdwb0l3cWpwbDN2Zi1aS2xPMmlwanEwTzMzajFiUV9BekhB0gG3AUFVX3lxTFBCekZ3Z2FJYXFzR3FTd3RBcklIeHR4bHpacTkyQzJ4b3R6ZWViZlppbi1ocGVfd1RqaGpyWmJNa2NmV2RTWXhqa2FjaGZGZFJwY2VVYTZJMWtqSnM0THpPY1dtMEt4Z1d4M1AwUk42ZUxuU0VVbVJycDZPelh6RGMwUkNFV3RJUW5rRFFlRTBKOXJzWDgzd0ZmdkhYcVpyWkJLRkpTVzVlMjdqXzZpMHl6Skl6WWtjTQ?oc=5",
+        "pubDate": "Tue, 31 Mar 2026 07:00:00 GMT",
         "category": "Korean"
       }
     ],
-    "Toyo Tires": [
+    "Yokohama Rubber": [
       {
-        "title": "Toyo Tires strengthens Serbian ties during presidential visit - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOb3I2Um0tNUpDaFMyLW1wZ2kzZmdjN3ZPaDFycUdWMGloZ0pCYjgwWXZ3ZkhLVDI5OVlyNXYxMlctbVEzSFl2NVpvVmlqOHV1UzdqX0M1aUwtci1PdFBNWTRuRUpNTlBYbUlDZ3puRGVJQkl2UGlnRkVnU29qMm1UNVR4MHN6b3VRSjJhclByeTdyU204eXNJOFZrd1I?oc=5",
-        "pubDate": "Tue, 07 Oct 2025 07:00:00 GMT",
+        "title": "Yokohama launches new all-weather tire - Shots Magazin",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQXzB3VURfMml3NVY3QmVNaDA0NlNIdXVkMXlPNTgwNmdfWXdCMjZ0RFAtSVV6TXpEb1lOa0hsdkRaaTljcWhGa0Rpcmx2ZmpxME9uUlBiT2hiVERUUDVpN3pNOEdxNE4zcUZhOENYS3BhS3k3cnlfRlkwcnJzaGt2NlRsNU1NNUZiQjkwcQ?oc=5",
+        "pubDate": "Fri, 19 Jun 2026 07:00:00 GMT",
         "category": "Japanese"
       }
     ],
     "Falken Tyres": [
       {
-        "title": "Dunlop Tyre Europe launches Blue Response TG summer touring tyre - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNOFVhN3dINWdhQUxzbWN0WkFlU2kxZ1dSZnZ0RnlWVDJBOExLSkl6NjREZzBLblVkYnJDN2t5NEMzSm1OY21fNjRvNXhVWjR5SEx6ZlRVQVdHYU9HZ0xMcVkzS0NKZWF3N1dwWjV5RGMwaU56Z3R1REw4NVFCa09SbVM4YnFLOG5HMGZfNm0xYzhUTDR6SXZyeThRYXhNcUta?oc=5",
-        "pubDate": "Tue, 10 Mar 2026 07:00:00 GMT",
+        "title": "Falken confirms 2015 VLN and Nürburgring campaign - Cision News",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZnFvMlB4RU1oTTNqOHdYV3JYMGEyVkU1NldGUHdLWG5EcHhHZTJheE9VdWt4M0ZxcFhVdm93QTNsX3ZDZk5IbjA4SjZDM1NyWVRXSWpib2FtakMyeDZYNDhfdnV4WWRWeGlEZk9HSkdHVnIyazhNSVZPY012SjdzMFZoci1TQTBjbnlRNEZhQl91ekhuMXhscExsNXhtRFppWjl2VTVjbVI3Zw?oc=5",
+        "pubDate": "Fri, 13 Mar 2015 07:00:00 GMT",
         "category": "Japanese"
-      }
-    ],
-    "Nokian Tyres": [
-      {
-        "title": "Nokian Tyres’ Romania Plant Produces 1 Millionth Tire - AftermarketNews",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE10Z21Nc1RvUGdDblh6VHZsS01weFc5YnVQSnNXUzNMek03ZnUyYnlrN1U0YTZVSFBIT1JiWlB4bUNVVl9RQTcwdE85SzlWdmJQMUVDZm02TVhJcVVpOEYycWw3azQzcC0zTlF5aWZTancxakZHU3ZPU3VkWQ?oc=5",
-        "pubDate": "Tue, 13 Jan 2026 08:00:00 GMT",
-        "category": "Nordic"
-      }
-    ],
-    "Linglong Tire": [
-      {
-        "title": "Linglong's European Factory Has Achieved Mass Production - PR Newswire",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSVRHNjBQZEtJcjVQZzhIYjM0aGg2LUl3eEdZR0RKTDd6V2V6SGMyZWpPVzRycFFmUEJtX2RQLWZDUWxVNmlHcEpuUDJnTzZLTXkyeWVWOTdJVk9TQ0lCcjc2ZjhVc2RkTmNnem1sWHNaYkFCSDYwZXZBUFdGeVhiQUFWZF9sSXJtaUE0cVVYclFfM3VUU0tOWENPV1FpMmR1aXlSNFhnMV82MTBmU1B0ZQ?oc=5",
-        "pubDate": "Thu, 26 Sep 2024 07:00:00 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "Sailun Tire": [
-      {
-        "title": "Sailun recalling close to 85,000 tyres in USA - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQW5URWRXZktTbDhRVFJOclV5eDkyLUNaNURSSWxvODh5RzZVM0RDdURvRlkwZHFOd2xKbEQwSzd6bS1ub1UxelNMZ1JXSjRBaDljYVMzXzlrR0ZZcjRoVnpyQ0tGd0VQRXdBbEtOeVpTWDgtWExxU1JVNEpkWWtCdDRjNGMyZw?oc=5",
-        "pubDate": "Thu, 09 Dec 2021 08:00:00 GMT",
-        "category": "Chinese"
-      },
-      {
-        "title": "Global tire investments increase by $2 billion - Tire Business",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZGNYLVgxcXE4bS1HSmpzckI4V00xVm1ybFpFTHI0cXRxV3JLYjdKTTNrRVdTR1JrZFh1YWQ2R0VQV0xrdFFTeTdHMl9pMFhPMW51X0o3NWlaSDQ4ZU9WcjUzeGxkRFZDNjljOHlMYnR4Z3BDRFhlMVVWQ2xhcDBub2hRZkhsLW9Bemc?oc=5",
-        "pubDate": "Tue, 31 Aug 2021 07:00:00 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "Triangle Tyre": [
-      {
-        "title": "Triangle Tyre to spotlight advanced OTR and TBR innovations at SaMoTer 2026 - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZDVWRFJGWTBwMk5hckhZcjlOUWROOHoxRUFTSEZFU0FYODZFMHpLNWdBVVc3T2NjLU53R0dPczlLeTlfSHJmck9nbzZCNDRhc2luTDh2SWJGSTZGMlpVelYxcHFSeEJ3Zk9SSkdVd1hnNi1Hb1M2WV9tZExEd1hkUS1IWEVJZHptRnMxSjJMS2NvWTlQcWZ6YXBOZ3FNNmxPLXlhU2RBSU1USFhqelNN?oc=5",
-        "pubDate": "Tue, 24 Mar 2026 07:00:00 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "Giti Tire": [
-      {
-        "title": "Giti Tire win first original equipment winter tyre fitment on BMW 1 Series - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcXN0bjlDSEpyQ3VuWWhOMEtxUFNkZkQ2U3I1VlhsZHJZMFpqS2xLbGEzY2dsVU5tbzQ4ZVRVaURtaGZmRTF0dGhrc1NsSFNOeEsxbGtqZWFVUTgwc3RHb3NKS0U5cHFrNHRFR2xwdWZFRUw0Z1JGdmRsVVFwbVM1N29CamV3eGlieTNBOUhtRzRKMzNOUGg0SFVqZ0FlWmpEdXlNT3NheGgzcFI4U3c?oc=5",
-        "pubDate": "Thu, 11 Sep 2025 07:00:00 GMT",
-        "category": "Chinese"
       }
     ],
     "Double Coin": [
       {
-        "title": "Endurica community conference comes to Europe - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNU3pyaUNYX0VEWGdmZVItVV9odThKVUZPbGlHQW81SUYwZXFLY3VoTkpsdy02R2FOTTl0NEJGUWNYNFFrLVJmTVo5UEQ0RzhIaEx6U3BRWWVKWjNMUHFxQTE3em1HaVRPbUx6S0FBTkphZkJzWUVlNG0wcjBCeEozNmRFS3QyREk?oc=5",
-        "pubDate": "Wed, 17 Dec 2025 08:00:00 GMT",
+        "title": "CMA Announces Price Increase for Double Coin - tirereview.com",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE13UnB2MS1JRmg3Mm1kdGlOamU2QUpOeDBIZTByZ3FfeTlwbkZYTnBlTHlLdkdXbGlkc0RjMXVTMExvbm1zbmNsMlhJY09EYmRVa0UxVHlsTzlHMVB1WmhWMzN5RTY2ZElScHpHNFdoT2gzZmxxSUJr?oc=5",
+        "pubDate": "Tue, 25 Dec 2018 09:00:54 GMT",
         "category": "Chinese"
       },
       {
-        "title": "Double Coin TMC 2025: Showcasing its Latest Products - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE83VUZPWjJDWDNhRWhFNkNULTBUX3VHNGV0Z28tenp2b0MtTGJQa2xYN2VfWXJMNVMzZXJuUVVzRERYOHdjcXI1QmVrcXBvR01qWUJXLTQ0dnNFZFB1?oc=5",
-        "pubDate": "Thu, 06 Mar 2025 08:00:00 GMT",
-        "category": "Chinese"
-      },
-      {
-        "title": "Double Coin Management Appointments Announced - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1GY0lTNFJJZS1NVC01Zk5FVGxUNmNxZTh2dHRXM1RGLXo2M1lFakREbmdoUndqZ25mT1NtaEZlb2VVY2ctYzh1bkZFMlpDb0lqczVpelVwR0o3VXVsRlpsbFNMTExnYUowcTM5SjE3a3A?oc=5",
-        "pubDate": "Mon, 17 Mar 2025 07:00:00 GMT",
-        "category": "Chinese"
-      },
-      {
-        "title": "Double Coin Adds New Sizes - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1oNnYzVUZWSUg3NFJXYjZvM2kzSWRFN0ZLaVRkeHl1RnVzZnAyYWU3V1NyVGZkellubTJCMDNVRS1XWUFoVGhoazJ0bmRZNTk1Uk8taDFuY19iTzVYZl9uMFpjODdlTFQ4bm1WeFNuZXJBU3VDM1E?oc=5",
-        "pubDate": "Fri, 27 Oct 2017 07:00:00 GMT",
-        "category": "Chinese"
-      },
-      {
-        "title": "Double Coin Tires Launches OTR, IND and TBR Sales Incentive Programs - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSUc5cG1rQjNuZURIZURPd3NvdEtnal93b1hETWw5TVVqVGMyTW0tY0NzOEdWbjRwSy1rbG85bjdISnRFRHc3Z3MxcWU3cFotSzI0OWJWTTZMZDVBbmw1M0dMQ2tfMk9SX0JJYS1YcktBekpYcEI2SFRzaFJOOTA2MXJfRW9DV0oxdDVyRS0zR2lKSHdWZHc?oc=5",
-        "pubDate": "Tue, 19 Jun 2018 07:00:00 GMT",
+        "title": "Double Coin Completes New Manufacturing Plant in Thailand - tirereview.com",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQNXNhMkM1VnkycWRCclNSaEFNb24wSndlMVIyUWo3SzVzS3doMS05QXg0QzBabmlsM3RDR29xY2JsNjZQb24wcnpNekl2ZXdweE40T09oRVJFQU0zcmNmWnZJV2ZNLXlXb3FBOWtMYmVTS2trcm5VV0poeVUwUGpTOXkyVlB3MkhrX0E?oc=5",
+        "pubDate": "Mon, 24 Jul 2017 07:00:00 GMT",
         "category": "Chinese"
       }
     ],
-    "Maxxis Tyres": [
+    "Aeolus Tyre": [
       {
-        "title": "Karting news: FIA signs Maxxis tyres for several international classes - Speedcafe.com",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdHdFWWhGcExXS0F0LW4yOUZvSlJRNWUxeDhnRzY5WUtKMU1jZ1hjZFBWQUlEUjU5QVVQS1VrWFR4eE1CMmY4VDEtSHJJY1otSENld2lZelNNQXBVTmxYaXY4WlRzMnctS1JuM2dzcWdIcXpGT1pSSXhYWEFYdnZwaUl6eUtjZw?oc=5",
-        "pubDate": "Sat, 23 Dec 2023 08:00:00 GMT",
-        "category": "Taiwanese"
+        "title": "Aeolus a DongFeng Racing Team platinum sponsor - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZXpDTkwwclBjbnp1V0lyWWhiZUxkZE01Tk9IZmZOSlRreXdmdzZvZDI3cWtfeXI5WTkzQjk4ZHpkR0ppRmlmbzFmWkdmdnU3ZTl4blRpb28yeTE2WjE3TWV3d2M1UDRBaXhHd2ZGd29KTXF1emNDQlk4bUl3ZWtCY2NFOElPSGVy?oc=5",
+        "pubDate": "Tue, 01 Jul 2014 07:00:00 GMT",
+        "category": "Chinese"
       }
     ],
     "Prometeon Tyre Group": [
       {
-        "title": "Prometeon joins ETRMA as a full Corporate Member - tiresandparts.net",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQkFINU53aEp1ZGQtMnE0Y1g4cXBrRHZEc1FBYzI2NjhrdE9GZGlPNVprVFl6OU1ZUGJNRXdTRGlPN1B3cnZLLTNHb1NiQ1pEallGb3NIXzRJazNZNEFSLVBSRzdkdVF0MnNvWFhfaFdmZERfX1p2cGtFOHhpbk1QQktzTHMwbTQwNjdWbUVmYw?oc=5",
-        "pubDate": "Wed, 28 Feb 2024 08:00:00 GMT",
+        "title": "ESG – Prometeon Tyre Group signs €350m sustainability-linked credit facilities agreement - Trade Finance Global",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMGMtTmpLWXpOaS1uNFpqMHlJclpWako2QVJzWms0RHZzMkFGLWFiTlZXUk5Za3M5OFRTUUsyY2xmYnlKWkVJYmRIZmZKNTFUdjdCNTRlQkVkOEw1eGt4TG1zdjFrQU9VSmlfZEFYaVlFR1J2YVJ3WmxPZXJiWHRSNUJBN3lRY0M0Y0FQZzNPaS05SlRZMHFESFNOV0t0QkJVTUhRY09xVDNYR3FHU1h1dldEbjY0aWg1cG5JNkJfTTJDOTI2OXlv?oc=5",
+        "pubDate": "Tue, 05 Dec 2023 18:04:30 GMT",
         "category": "Industrial/TBR"
-      }
-    ],
-    "Nankang Rubber": [
-      {
-        "title": "Erikci named Petlas Tire country sales manager USA & Canada - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSGNMN3Bma1lIME55S1RmZExmTnpuLUswYUwtQ3ZNbDhwVlhpNDh6MmxEWktvNkw1cnIwZHB1ejFTb3BRMl9NdEZTSzNLNl9GRHNvcDd5QTM4SjNRQzN5cGJzV1lYN3NNaFg2OW1LVlNacFl2VVRRWmx5NVdtaEk1WjN2Z3ZxTHR5VTdIYmk1ZlVvTDBmT21r?oc=5",
-        "pubDate": "Thu, 19 Mar 2026 07:00:00 GMT",
-        "category": "Taiwanese"
-      }
-    ],
-    "CEAT": [
-      {
-        "title": "Ceat looks to strengthen global play; focuses on developing tyres to suit different markets - The Economic Times",
-        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQRGl4aHRsb01ENnNGU0IwOVRiZTZiX3FuaGNWYkVzdmlBRkJXYXhaRjczMTJNQjFsY3hTWnlXckNFUmM4enVWcTM4MTFERU5oU2UyRDloN3gySjdrQU9aVVhacGNScEZJWFBpWFlqVENKWUxZOWhXOHA4U1hJYlFoY2VKT1VHRk56V0FNd01tZ3MzdXNwUlM0c0wxTk9pQUxPazhOSVNZbHJtQjlsNVYyYmNFX2MxOVdBVUtJY0dvaXN5UXhfemZYVWNKLW9QMng5VUVLZ3g2QUE2eU8xamFZMWFQTHhRYTVleGlnVUxXcTRSeFkxOGs00gH8AUFVX3lxTFBlM2VmOWdxZVUxd2xXOXU1cHB3UXFSaFpWdnluNFZYc2tpN0VMZmxJcVJ2SEJiMzNWUGJralRVQlpSWXNZRkVjU1NLdlNPNXY1WFhZZ0MyaHF6YjdFS3R4YWZBSkFabmJXdTFISTVpNHFWRndKX3V2MFlPZzRqYzRvM0Eycm9zUC1jTS12dFhZVjV0cVBYMnFwVTJOeWFodGV1TGRRdElMVUg3SXpWN0h5OVAxMDdpNnNqTEZFRjM4YmRwRFdvSnpJSDRCNmFTMFdrbzNuMTFaaHFVMEliZm9OZTFydFNWRVctQ0NHX2l5ZU1YV0dMaHdTNUhGbw?oc=5",
-        "pubDate": "Sun, 07 Dec 2025 08:00:00 GMT",
-        "category": "Indian"
-      },
-      {
-        "title": "CEAT Gets Approval to Set Up Subsidiaries in the UK and Germany - scanx.trade",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYy1ZTkNiMzI1NW8tZzlWNmxiZVV4OUdKNm95aFp1d1NxNU1hdE9QamxuR053Q00xanNqSjh0Ni1aSlEtdE54MGkzTnNyc1lJbVBOUFN4d3VIUVE3SW5YMGp5TzhUZk9xcE1yc0E0c3lxZmlJZlFXQ0xpRnBsZTBoY281djFZZ0k5Nnp6VlFhc20zcnVySG5qMEh2YjB5U0pXMHNObTZUREVDeEJuVzFNd0FpOTVZZGlM?oc=5",
-        "pubDate": "Tue, 23 Dec 2025 08:00:00 GMT",
-        "category": "Indian"
-      }
-    ],
-    "MRF Tyres": [
-      {
-        "title": "Sesks to fly the flag for Team MRF Tyres in ERC - FIA European Rally Championship",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNb2I4Rm8tMVNFYVZiZy13Yk9uV2I2RkxTMjdMNERfYklwQUhwNzFJLWF2T1VHTENEX3YwT0JSZU91M0dCeE5lWmV5XzEtUWFNWGc4bF9WclJRTTB5QnQzR2dVckNndEw0RW5ON3RVNXlkV1FpTzlOSnMyZk9GbXB0ZmtXbGo?oc=5",
-        "pubDate": "Tue, 27 Jan 2026 08:00:00 GMT",
-        "category": "Indian"
       }
     ]
   }
