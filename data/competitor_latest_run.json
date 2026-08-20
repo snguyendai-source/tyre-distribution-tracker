@@ -1,55 +1,107 @@
 {
-  "runAt": "2026-08-19T07:58:30.466125+00:00",
-  "totalNew": 6,
+  "runAt": "2026-08-20T08:04:46.866784+00:00",
+  "totalNew": 13,
   "entitiesChecked": 26,
-  "entitiesWithNews": 6,
+  "entitiesWithNews": 11,
   "newItemsByEntity": {
-    "Nexen Tire": [
+    "Bridgestone": [
       {
-        "title": "Nexen Tire reports 10% increase in revenue in Q2, Europe stands out - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVnJBVEtHd1lQZHJlcTZ3THJnWU9SV2VYMXFDSnMzNFl6eU8zM1ZoWk9TYmk5d1BmSWhsQTJIV2tGQVViOThLMUhBQlVka04waDNoVnc0cGp3VmEzX1gxWC1fUFI3dmdQMG0yLXF1anhvM1otdGhfdFNTX0hTeTZsSktrazgxZ3pKMW45UVVXc2diazRYYy1HMHptb2dlM0dXX3c?oc=5",
-        "pubDate": "Wed, 29 Jul 2026 07:00:00 GMT",
+        "title": "Bridgestone Launches Potenza Race R Track Tyre for the 2026 Lamborghini Revuelto SV - Bridgestone EMEA newsroom",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbjVUYW1uZkJCREd0b1ZjUFNzNms0bzRXcGp5UjQzWHI5S2s1Y1d0bHpJM3BNYUpMS0plZV9POUxsdVMyMkxxREw5aTloZ1k4MTV0S0F3TzY2R3VXYTdOVTBfZ1FfN0U3SXM5TnVfVlhGc1RHTm95RGVzLXZNU1hnR0xCYWwwRWluaTUtRE5TUEFYa3Y4UVR5bnNPdzJkcDF3RldrSDFXZjdJOFJyRjJrLXlHQkFaOFY4N25J?oc=5",
+        "pubDate": "Mon, 17 Aug 2026 08:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Goodyear": [
+      {
+        "title": "GOODYEAR INTRODUCES A SUBSCRIPTION-BASED, TIRES-AS-A-SERVICE OFFERING DESIGNED TO REDUCE TOTAL COST OF OWNERSHIP FOR FLEETS - Goodyear",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPT3RkenNrQ1R4WS1pTDFYSGRaN1FxRnhFUDQ3LUZ5VlNNRGx3TDFCcWlZS25qN0h3c3JUODRid0ZEakN2R2tRdVhIQVBHTHd5MDZHS2JjeVhWQ0hwQjZVcjBsNzdxS2NCT09RVVptTk1JV01EMkVXLWU0WWthTnB6WnRRaE9QQlFRcmFzdkU0Q25OdUtkUWhKMnhkc0NaeUpDVUNLYTlmaS16ZlZleHoydnhhWTFYOTl4OWxxdWZKZHhtbVZ0YmRRd1F1OV93aEZ0b2x3YXJKeW9fbWREdDFlXzRIeEd2S2lhaDQwblB3WmdCZw?oc=5",
+        "pubDate": "Mon, 24 Jun 2024 07:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Pirelli": [
+      {
+        "title": "PIRELLI LAUNCHES THIRD GENERATION OF THE SCORPION TYRE, DESIGNED FOR SUVs - Newsroom Pirelli",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQU2R4NUZ3Y3FzLUtQY0I3MFJNLVZrTkZyWjFiR1BncUFPQkpSZFppZnEtcElOMDJJVUZSYl9xWVVrazJVWDlMcHQydkhSYm5IX1g5alJ5RGdRXzQ0UVRvbGk2cUowS3llWW1kN2V2Z3BUTk5HOHZxd1VUaFcyRDYtWUxTY3BsbkpVQkU1b1hXbzh4ZThjR0lhOENWLXFJcWp1?oc=5",
+        "pubDate": "Mon, 26 Jan 2026 08:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Kumho Tire": [
+      {
+        "title": "Korea’s big 3 tiremakers bet big on Europe - The Korea Times",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYXB5UkYxWG1EU0puai1YRG5rNm50XzlOcmlKcFFzMVlDRTZ0QjJkYVJFekdtTFZtNjJ3Uml6MW16QkFwZmlJSUVBZGQzVU5kckRibzFjT3FoOTB6THBJeU14SzNTaXM4TmVDV0RlNlo3OFVqelg4RHNOc2g3ZERKb0ZNQjFjejNHeUdtaloxRDhwb3VJM3dQQTFnU3lFU2fSAaQBQVVfeXFMTVQ4eFd5bFh6VTRfZENKUVVpSU5oRTZxd2M4dXI5SG1Ma1lya0FUODVuZFl3MkdtdGNneDRrcng2SFJSUGVIUUNoYm9jOFpBY0dXR1dkQ1lSdkVhUWdmd3BQVkVFcmEwSlVoWnc0TjV5cHYzSktPaFhWUlZuLTJRdl9vYVliNTBvQWRSV0RHQUpDU0N1cWVuWGNISlNtTVJhNDhyV00?oc=5",
+        "pubDate": "Thu, 18 Dec 2025 08:00:00 GMT",
         "category": "Korean"
       }
     ],
     "Hankook": [
       {
-        "title": "Hankook on a high in ERC Tyre Supplier contest - FIA European Rally Championship",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcHhzZjRVcmlpTjZYVlk5bXkwT3h3Yi0xdzJLYUY4Tlk5Z2w2R0JfS0VVYWpOaVdZVzI1amluREtybWNWMmR6X25KU3pPX2Etemhaa1VvaUtMMmxmOVZXNm92V3dFS0FjNDJPU1R2Y05zS3hkejZobU03TEVjY2dMZTF5QQ?oc=5",
-        "pubDate": "Tue, 18 Aug 2026 07:00:04 GMT",
+        "title": "Hankook joins government-backed sustainable tire materials project - European Rubber Journal",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWDVwNGNZT19pVkxtU2pQZE9sdnROZ0JNaUVENHlHcmMzWWRfN0hOZ29kRDEwR0NLQ0FITE80T09jTlZ2Tm55RDhfWlNQR25UT24yYzh6cldzaXRVd2pDU0Y4aHhrNlBYSnAtMGV5WENNdmtBMTZnamVPLU5sODZCZ2t0N3ZaQllVOUdsR04xQWlpQlhGOGlPeTNUcndNaVZvb1piNGx4YW9qd21JVkRwdWxacDV6eWJNdzh1NzQ0dw?oc=5",
+        "pubDate": "Mon, 15 Jun 2026 07:00:00 GMT",
         "category": "Korean"
       }
     ],
-    "Falken Tyres": [
+    "Triangle Tyre": [
       {
-        "title": "Dunlop bringing Active Tread to Europe - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5sUXIzQTA2NnpQUjJkRUZjWi1vUXR1X295NlhQS1NqVzlweU1obElGaUJyeGNndlF5MWJQNkdWZFVuSVplZHE2UDh5cVlfRUlENWdfX0VnSWJMQnhuNzRfWVpEWHVsS3kwc2xnX0lKTW5jbW5GYjZnVFlyWWxaUQ?oc=5",
-        "pubDate": "Tue, 30 Jun 2026 07:00:00 GMT",
-        "category": "Japanese"
-      }
-    ],
-    "Nokian Tyres": [
+        "title": "Brentford Football Club signs Triangle Tyre as inaugural official tyre partner - Brentford FC",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNa2pIZEtjV01oa1YxbzRNcnk5ZXhBbXhEM2luUktqUXZKVTQ5cERhNXRWSjFITnpoQ0tpRXpLSVk4NWZ5OC16ejBqZFZmRV9DX0hNTUdjVXBoVVRfZXRjbmZBSW5OWHJhTk9Rb3FsTG5KWmdnVmFPenFjV096dGRzQUtQLS1aTWpzM0Y0UnhlMmZMellBZ2RYeHd0NjZyNGJaTlhIcUZxMXh6QVR3YWxiaXluVQ?oc=5",
+        "pubDate": "Wed, 19 Aug 2026 09:00:16 GMT",
+        "category": "Chinese"
+      },
       {
-        "title": "Paolo Pompei to succeed Moisio as Nokian Tyres’ President & CEO - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUy00RFhwU2k2a0E5UXpJR01nZ3M2Y2dPSzRKOWpmY0p3ZHpKSGRHblJTcUlNXzdWM0lCcHctb3dNOHZnVzY1azBOMENXbXd3NGRsb2dkdkxvai11TUJ5a3g5cENxNzF1VHlpSzNYT1Y2Mm1IeGhkeGlhNGpEWkJvWEEtcHVEUGNlQ25kSG1OMm1fSlliS0N6dDRQNA?oc=5",
-        "pubDate": "Mon, 22 Jul 2024 07:00:00 GMT",
-        "category": "Nordic"
+        "title": "Brentford Agree Two-Year Partnership With Triangle Tyre - roundtable.io",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaGV2RkJQU2YtaV9wTDhxVHU2OUpJejdhS3NLbFpYaDFhaTZGdXpXaDB3bF9ReXNKaXh4RS1kMkQ3VlZwNzg2dG11UEg0WC02eDBIT05qREJjZHY4endTbjBybUpPblhVbTBTMlVvc0VSdTB4TkllbHB4YjlQc25WV2dPempEZzdIZDgzcktlWGlwa2FVdHZvdllsZWRPT0VGeVhFTFk0emdBZ282QV9sMmFOTHV6MG5Ed2hvWTlB?oc=5",
+        "pubDate": "Wed, 19 Aug 2026 09:49:38 GMT",
+        "category": "Chinese"
       }
     ],
     "Sailun Tire": [
       {
-        "title": "Sailun to invest $1.1 billion in Egyptian tire plant - Rubber News",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcmtJYm1OaGtQQVFua1gyU1cwZ0h3cy05bjRBTDR4Y0ZNRXhfWGpMeGYycjFkVVE4cFV6ejdWQUVoYWUwQ3g4emJwWHl0SGtXQThrdW5YR1JYdXhkbzVVUnVGODY4dGlDWGVMRDB2ZTJwWDd4RXlKdFdIdElZcHc5OGFxQ2Z4dw?oc=5",
-        "pubDate": "Fri, 19 Jun 2026 07:00:00 GMT",
+        "title": "Sailun buying Vogue Tyre to gain premium segment foothold - European Rubber Journal",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQXzJxclRhQVBCR2pMWWIwZDhobzNnU3NWVTZQdXdOWkZmZTlYaWF4SnpiUXZqMlU3a2pUSFFYTE1CZnlmaVR5T2NsaWY5TlBkNG5ZQ2dnS29OZFpaMk55RkZZMkNjc3pKNHg5OGJyWWd3NjhqVWI4ZG82MWk3ZmdmR3FENnNXbU9yOHBERDBsUEEtTkxEVUd3MS10emx2UmRqOXJXVFZPRDNSLTdyQ1oxX0pHcw?oc=5",
+        "pubDate": "Wed, 24 Sep 2025 07:00:00 GMT",
+        "category": "Chinese"
+      },
+      {
+        "title": "Chinese market boosts global EV tire innovation - Tire Business",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOV2ZrckhLdlRrTHZkcVBtY0dtVkhfQmNPVC1uYzVyS1hOaVRjanMtNnZZbEN0SzRqUTIxNnFqV0RfbGpGVlJ2cEZaemx1OExzN0ViWEV4S0pBR2Q1SHBKMzdVWl9sdWxCcVBNaW4teVI1a0RMVjloWkJUUWViM09SWVpVcGdTTkItVFRRb0l3b1Z4V3JmYlE?oc=5",
+        "pubDate": "Fri, 06 Jun 2025 07:00:00 GMT",
         "category": "Chinese"
       }
     ],
     "Double Coin": [
       {
-        "title": "Gradual recovery and ongoing challenges – the tyre market in July - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcFhlVHpjTDZWNWM1QUpEd2tuLTRNbTdXaWN6TTc5dUkwczBzWUc0TUlSdVEwOFJpREQxcXZTcHBhQXFaUXdfZU1aMUltUnplb1Fvb1J2NzdSVVByaXRKVkhKdm1QYWRhMU9wVE9RNzUzd2Y4ZHluNWVoYXVxLS1aU3ZkQkxKTENfRXllcmR5LWxyajNDOXpBV0pMRGhxNUU?oc=5",
-        "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
+        "title": "Double Coin Names Cara Junkins to New Position - Tire Review Magazine",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5LbTkxbWI3RjdicG1uTThxSzdhTDhDamJ6STJ6M0NlY3VmUW5xejJ4Yl9HMFp0d0xXMHZJWlRPQnJFdzNCX19TRE5xekNsX3Y1VE1ZWEdqOHVjSzlKVEFDdmdR?oc=5",
+        "pubDate": "Mon, 08 Dec 2025 08:00:00 GMT",
         "category": "Chinese"
+      }
+    ],
+    "Aeolus Tyre": [
+      {
+        "title": "Aeolus opens first flagship tyre centre in Italy - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdks1UElienFpc1Q5dUhETktMVmpnTHhBMk03X2xhNGd4dXlhVlNFa01rLS02OFN0clRiUkM4TDVTWGFjRVl6QUJERjFacmlieFZUemFxOG9STkR3MUlKUmhLREhQUVFybW5Ma2hmNXRvcGhBSm50M1VjQjJzMVBjaXJ1UEhfV1RnbDNJ?oc=5",
+        "pubDate": "Tue, 04 Oct 2016 07:00:00 GMT",
+        "category": "Chinese"
+      }
+    ],
+    "Nankang Rubber": [
+      {
+        "title": "Nankang Rubber Tire Corp., Ltd. Revenue Breakdown – TWSE:2101 - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE40QXc3TElNcG5MUU1SUzE1MWpOOEg1QlljYVM1VTdSYjBWSldrU2dvSTdHOG1tVzE4RHZncHQzcUtJYk5NU0tCaTRWVmpycWxRZmxYN00xeDZvb1pyU2pyT2tzUkxlbFV3VzRFWHUzNjJpRW9B?oc=5",
+        "pubDate": "Sun, 26 Jul 2026 08:47:21 GMT",
+        "category": "Taiwanese"
+      }
+    ],
+    "Maxxis Tyres": [
+      {
+        "title": "Maxxis introduces new campervan, caravan tyres - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQV1oxdXVUYlVKSjNqRk5WWDhyOS1TaGdUUFJPY2d2UW1WbDEwR1hTdXo2bXhCN1RTNVBBZkhQN2dQanh4cjFLZ2hta3NvVHFUZFkwMUNTNDI1MFZmeHdOSlFrd243WUZTNEtPWTNkUk5lUWlqclFmMDl1SzYwOGdlTGZIZ19XS2M?oc=5",
+        "pubDate": "Tue, 09 Jul 2019 07:00:00 GMT",
+        "category": "Taiwanese"
       }
     ]
   }

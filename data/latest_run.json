@@ -1,43 +1,61 @@
 {
-  "runAt": "2026-08-19T07:58:30.466125+00:00",
-  "totalNew": 4,
+  "runAt": "2026-08-20T08:04:46.866784+00:00",
+  "totalNew": 6,
   "entitiesChecked": 118,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 6,
   "newItemsByEntity": {
-    "First Stop Germany": [
+    "Speedy": [
       {
-        "title": "TJ13 – July #F1 review in verse - thejudge13.com",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5jaU92Qlc2MFpMdUJiZF81MWQ0U0RCY0VBVlVObmZUZGdDbGpxN042Q19qaG14N3JZWXZoOWhPbmlWcE5OX21xSzB4QndJMUFYbGVGekpXX0pSa0JiekVjQ3hnRlF2Z2RXRU40dA?oc=5",
-        "pubDate": "Sat, 17 Aug 2013 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
+        "title": "DOJ to Probe Entire Memphis PD After Tyre Nichols’ Death - The Daily Beast",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ1lMUkl1WXlRRUVsenZsSGNsU1dJOWVTejk2ODlXcm1rM3lSSG1pYVJjcHNkeWVISjBUXzZLOHNFS3NQd2UwYmNZRWVpaVZLcDNNU0ZfOUh1dVJxOXZEbUZXTXVvR2N5MFc5VmQ4Q1FWblNyMWRnYVQ1b280WUJiZzdFS0M5N3ptd0twMGZlaw?oc=5",
+        "pubDate": "Thu, 27 Jul 2023 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
       }
     ],
-    "Point S UK": [
+    "Roady": [
       {
-        "title": "Point S Rankings Place Network in Top Three - tirereview.com",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9KMUdNNEYwLUFXSzlHWTFPSzQteTNvRUNncEY5NUVXWjh3MjM0ZVp4QkE5ajNDdmpQU3l3b2tQUy1tVG50OXhYbmY4ZGRMbmpCc3dXTVhFaUJXbDNhTkJn?oc=5",
-        "pubDate": "Mon, 17 Aug 2026 14:00:00 GMT",
+        "title": "E-Motion Engineering Builds The World’s Best Cayenne Overlanding Rigs - flatsixes",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRm1obTRUdVhFMVd0S1NtT0Q5YUFwVktWZktrX0pPR0VCT1BDb0RPNTlvZWw5dmtmUHBETXB6Z1RkTmZGVmpvNGdrb1g0ZGZwRWpMQlRMNUVDV19WRm9LNERWMHc4cnlmWTBFeVNfWGM4M2pCRzVCbDNsYWVtUEJfbjFvczhkUG9NWGI5aXBQWVJ4c21yemNQTUZjZWxUZDVpTzkyaFZmZGVPdGRnZnU3bmRR?oc=5",
+        "pubDate": "Wed, 19 May 2021 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
+    "Vulco": [
+      {
+        "title": "Second-hand tyres not road worthy - Modern Ghana",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNdXQ0RzFRQWVWY0NZczM5eHlZN1dWR3ZsLU5XVURRYjFfSUVUNDh0SFFWeXI1OGw3bi01dWw5RU1WRGFyeGRVY3hVYXA0UVY4LTZzd05laVZHRGNvQXhyN1g5ZURkUF9DeEpVNjZBSWR6WXpyU2w1Z2IyLXZRR3VQeUYyM0LSAYMBQVVfeXFMTzdkZUpoTUtUaVoxd1V3cE9IU2F0NFBlMnJiN05WVFFRQUdFQmNGbW83c2ZEaWNnMkNsN21VSENWTFg5MkI0UUlISkRJRV9OaHd2R0tsdm9JUFo3WEs0LTFtVFY2V242cUJuZnRwZFNhdFBTTjAzakN4eEpJV2RjVDN1d1k?oc=5",
+        "pubDate": "Mon, 06 Sep 2010 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
+    "Euro Repar": [
+      {
+        "title": "Team Euro Repar changes from TCR class into SP2T - ADAC RAVENOL Nürburgring Langstrecken-Serie",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTS0tVm1tc3ZPUGd1aHRseTcwUDZqc2NYWnRpaVNnVlZyT2Jkd043eWJBeGdmRlg0Z21waTZGaVdodFZhM2FjaDg2dUpONm1FbmtEcjFabUJzVWVHMG4zYXloUTFma3YtMGZaZkQ3bzRHWlJDbW9UZ0VwNldfTG94TkoyQ3FDaW5rQjhzclhVZ2xPM0RPd05yNjFicjZFWnNiazlQV1I4VXpaMGlYSlBIdmJtbVZkaXAyVmpj?oc=5",
+        "pubDate": "Tue, 19 Jun 2018 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
+    "HiQ Tyres": [
+      {
+        "title": "HiQ data points to Britain’s hardest working vehicles - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbDFlM3ZKYURkSEZ5VTZETHdzVUNZd29aT1VzZUNpOXRaU3NJSkhMb3JObEZOWWVJSDVEVm03YllDVnE3NjZFZHl0MDRuMVdmQkJxZzE3dkxqYTJaT2VRb3gyeUlqM3FZY2JtUldNek1DaWJRUkVGT3h4NUdNQVBnSlBrRG9EV0VVa2F0bktjNHU?oc=5",
+        "pubDate": "Wed, 19 Aug 2026 12:56:15 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Profile Tyrecenter": [
+    "Vianor": [
       {
-        "title": "Follow the Money investigation examines Euromaster pricing and losses - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxON05xVGlncVp5ZnA2UG9yUXRtMkdfVTUwSGtGcWMzTGtHYTNhWXNfYjA5S1E2cmpVSzVwZGFoblIzSTZaR2NIQ1I1eXc4aUpKOFZUTm40ay1DSVcyb29ETzNxYkZnMnRZbzhPMW9YcC1yazNPeXFMRkhFcUt3R2U4QWlxYWc5SlNOZ2p0UkFwWHZqdzFvRmFVSDNIX2R2ZjNBeUJTNTJMTQ?oc=5",
-        "pubDate": "Tue, 18 Aug 2026 12:37:20 GMT",
-        "country": "Netherlands",
-        "cluster": "North-West"
-      }
-    ],
-    "Genan Holding": [
-      {
-        "title": "Tire Derived Fuel Market Size & Share Report, 2026-2033 - Grand View Research",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUzlIVXFhZ3ZucEZHdVh4M2dqSTJVeHhXV3QzV1JqeTlhdnhScHMzVFZaLUlRVVdpaFpDNWh4LWJLT1Zhbm80TTN0cXczM0V0ZXFfaHFmX1BDWTh4VElWdlBzbnhTZjVwMm5ZZWVESGdZZW1nbHdJQllITEl1U2xVQkV5SWZKNEVTOGVZ?oc=5",
-        "pubDate": "Wed, 05 Mar 2025 09:43:23 GMT",
-        "country": "Denmark",
-        "cluster": "Central"
+        "title": "Nokian Vianor Chain Continues Growth - Tire Review Magazine",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9FNlY5eWFsaFVqTEZoMlgzUDRLcUVSbl9pYmtYbXVEUHVVMDhXTl9aUHZlV2pUY014ckRRbTlMV0U2Q01lUFdRUFEtdWpzVkZEMTIxU0NhRmJlUDM1cDNVUnREVWdFR3hfa0NaemJ6cXR0dw?oc=5",
+        "pubDate": "Mon, 20 Mar 2017 01:11:30 GMT",
+        "country": "Hungary",
+        "cluster": "South-East"
       }
     ]
   }
