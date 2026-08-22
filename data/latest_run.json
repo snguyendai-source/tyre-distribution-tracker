@@ -1,113 +1,52 @@
 {
-  "runAt": "2026-08-21T08:05:29.105002+00:00",
-  "totalNew": 12,
+  "runAt": "2026-08-22T07:45:49.795171+00:00",
+  "totalNew": 5,
   "entitiesChecked": 118,
-  "entitiesWithNews": 11,
+  "entitiesWithNews": 5,
   "newItemsByEntity": {
-    "Euromaster Germany": [
+    "Best4Tires": [
       {
-        "title": "Partnership extended: Continental remains a partner of the DFB national team until 2030 - PROFI Werkstatt",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOenRITzVzcUctd1QwMVRHMlpleXNnUmhlOE81TTVjQjhOYW93YjZuVy1hZVV1RmdVcE1WM01uZDM3ZzIyQWhWeGNBWnNrN2pHSzdmYl9ZbjktY1FEemRmUjZLXzdVTThhZEZ1b0JkWUNtSjJWQkJPX1JIX0l0VWNYYUd6WmtVZ2hmUUNXMlQwZ0xCZDJhb1NYNm5uc2dCZC1YM0U5UTRET3oyb28yQ05Ta2lWRFNkYndsVTlSOV9nWVBac3JHWklUVA?oc=5",
-        "pubDate": "Tue, 11 Aug 2026 07:00:00 GMT",
+        "title": "Maxxis International, wholesalers fined €11.9m by German competition watchdog - MLex",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSG5iSi1ZcW1hMUF5dmlVekdKLUE2REFwWUhoZWYxMWxES2lEbVFHMTNURHdHMXpGZWt2NjhfMExqZEJLdzRVb2xZRWZUOExuMFVWWU0xcGVoRlRPNWdZVEt3UmJfVElWRldFWmZTRXJNNEFweHVrN05zald6RS1BTWpLWTJHYUJFcWFOSmVBM3RSQURGNl9WZWVHR2FaSWo2ZzdWMkJoemZuN0hxdEY3elE4QnJ3MWlmLUHSAVpBVV95cUxNeUUyWVVjeVJ1MXJCMU9hRHlJWGlkWkk3SFFuZjdHRVBuVExBMlFNVml0eVNpYVFGU1NzUDNvMU83cTdRODBMUE02MGhiT1hzWmJuM3dPb25LMmc?oc=5",
+        "pubDate": "Tue, 21 Jul 2026 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Norauto": [
+    "A.T.U Auto-Teile-Unger": [
       {
-        "title": "Norauto launches Prevensys 5 - Grande Consumo",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVkRVX3pUdkh0Zm5kYS1pc0lfVnNwZ09HNkZtTklKTVBZQkxtaXBPWFpkMDVMYWJ3ZXhwRGdsREhqRkZ4WWhaaTRxcnFZZWZhOE9DTWZWVHZsaVhUNmhNMVR2a1BPQjgtLVh1cVpTN3dIOGpfbjRNQ1pmUGJLLWdlWXlwQkVETVlaSVk4dmVNSU1RbmFWSmdQVjNxaVdTb3RMTjlyT1p2TlM4dw?oc=5",
-        "pubDate": "Thu, 02 Apr 2026 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
+        "title": "CMS Advises Tyre Manufacturer Michelin on Acquiring Share in Autocentre Operator A.T.U - CMS.law",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRG9icDgxUGwtTjJBaGhQMVNtUDlObWFobGI3WXpxVGZPcjJEeGVUdldLMXh3WUp1MmxMbXJvM0hJdTVVUm5wOXVyS3M0Y21TOTJzMUlPNkRmY0J6M0lWQUc1SzNzRzJFWlpKOTV2aTdKNTA5VjZWUFZpUFJHNTdqUmt5bTJ5OFRLZ2JkNjctRzlYaTFqa3J4OXJ2T29JZFBidVNzRWwwZ19FUnZDQTlOekVGQ09OYUdIMzRGLVRFb0ZUM1Yw?oc=5",
+        "pubDate": "Tue, 20 Feb 2018 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
       }
     ],
-    "Speedy": [
+    "Hedin Group": [
       {
-        "title": "Best mountain bike tubeless sealant: Go puncture-free! - mbr.co.uk",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE01VTl1ZlpjZUFQNTRmU2NqLTNmU2NvVFR3WU5fOF9aaW9PQk5ERGlOSllQRldWeU5tbC1MMnFzaW8tMTFxRFZRWGwtNGlnWUJzWWVfaWszS0NXaTZCV1N4SWhTRlBaemlHRzlnNnJvZlM?oc=5",
-        "pubDate": "Tue, 06 Feb 2024 08:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
+        "title": "Hedin Mobility Group expands in Norway with new Porsche Center - Mynewsdesk",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNU1FJR2hiU29nVEhHTGYxX2hRQzdhMW9fZkZtYmhYb1JDV0VubTZhQWlCa004LXBCSWZlSzMybUc3V05vT21sbHdLUXFwXzFrM1UxNWNYMUZ4M1J1RXlMTUpLeldvLUljMEdLN1hPcGpzMldqdzl3TnBROTJlaTdZOGtVT0J0LW9vaWI3ZXRZaFVGS0N0Z3lpNU9BYkIySFdreGpsM0lUVEFod1p5Mzk4QWNrY0dZbUZEUXVvV3RuZnZCOTY1SWc?oc=5",
+        "pubDate": "Wed, 15 Jun 2022 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
       }
     ],
-    "Allopneus": [
+    "HiQ Tyres": [
       {
-        "title": "Michelin buys Scottish online tyre retailer Blackcircles for £50m - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOLVhIaXpLTkxQM2hxMDZxYVo5ckF1ZldzRmN6Nl85OHpGSzRnNGVkdXVhRC1OSzNZVTdwaVdPTUo0bnhxRlczVEwyNkotRHNhOHVTbzJDYkRXdWJQaHJsM1FjanA4Rk1NWWJZa3R3bTRUY3I1MUNNd1ZoWEdtNXdkUFdxdFE?oc=5",
-        "pubDate": "Wed, 06 May 2015 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      }
-    ],
-    "Halfords Autocentres": [
-      {
-        "title": "Halfords offers ATS employees hope as they face redundancy - Fleet News",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSVIyNFNIZHlMaUpfN2ItVm9CcUtnMlZsU1BDWUNCMXRuX0R2eDNzMnA4YldLSGZ1NjNWVE90YVpDSTl6X1A2WUYwWnMwYk82clVjZlhXZlZUNzRHVFhUdHNfZEpZWVc4bUNKNlpndlNxUlptdUtycndjdUxjOFFyTUIzczhtZXRPTHY2T1Z6V3ZCNTR0TVVvbzQzQkRSejZpLUhQdQ?oc=5",
-        "pubDate": "Wed, 25 Feb 2026 08:00:00 GMT",
+        "title": "Banbury tyre and car service garage celebrates early business success - Banbury Guardian",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbFpjWGpCTHp4ZVVLblVIaHlHem1vNFJLZUZ2RWpfUExRajVuZTF6QjE4UWowYl9ITlRvSEs3ZGFoZDRkWktfTk9EVjZLNzBoN2Rxa0JFUUxFbm9CZl9QeVdXMDdkVWZ2MHRrYUlYU0RmelhEbHZINWZ3TGlqeXI5OTM3ZkEtVGxvY1pEM2FKWWtud1lwaUJYYi1RMEt4WDBpbWlpLVB0S0hCMkxneFBaRjV3Wlc1bm94ZzRTdA?oc=5",
+        "pubDate": "Fri, 12 Jul 2024 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
-      }
-    ],
-    "Protyre": [
-      {
-        "title": "Protyre/TyreSpot integration already showing signs of success - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNzRiUkl3RXpmQ2pVLXk1NERUejZWT0VhWEg5THVxbXJ1d21hd3NpNVRPMXFHenRIYjNneFpoNWJqNDVhT3pENUxMMUpMenZOLTg1WVJXTjFEeFpITkRWTjZvYVRPOHY3TzN4OFBGTDF5YXY3Sktodjh3VWFSUUcxV2lIekNvUzZCRmxCQTduS19ZSWFiZURlVHhaWmg?oc=5",
-        "pubDate": "Thu, 16 Jul 2026 07:00:00 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ],
-    "Grupo Andrés": [
-      {
-        "title": "Stamford Tyres invests in regional wholesale network - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZzVaOXM2WUtNaGl4NTROMlpuOGR1ZXhRSDJEQ0N4aVpxel9CYldFb3c5SnhoeUx3dW02ZzlEeU9fWF9XSzFoeVJ0T2ZZSnIxUUFMU1N1RWhnRmVhMmYxQ2g3b3FOMXVfS2l5NmhTYl9oRW1Odi1uUGh5MlEyc2xCNVlxbXc0NzVSWTcwWS1fNGI?oc=5",
-        "pubDate": "Thu, 20 Aug 2026 14:27:11 GMT",
-        "country": "Spain",
-        "cluster": "South-West"
-      },
-      {
-        "title": "MT Wholesale distributing Envoy Tyres in Ireland - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPV3RaN2hpVVJzdHJ6aXpxQ2lmTHFhOWVjV0JBazZQUFFBOFd2TS1hbFFuYTZSdV92a1FYZmFfUjBuYlE1VS1ZZl9yVGIzNjN4Q25PS2YwUEtBU1lILWJtLWdEZHVwNWQ4N1V4M2NqX283MkRDOFpmTGF5aGFpSm1yekZkVS1FYi1EMHFR?oc=5",
-        "pubDate": "Mon, 01 Sep 2025 07:00:00 GMT",
-        "country": "Spain",
-        "cluster": "South-West"
-      }
-    ],
-    "Fintyre": [
-      {
-        "title": "Fintyre Group’s Reifen Krieg files for bankruptcy - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbzVGdVpnMk1CSUF2MEZBb1JmbVVtc0ExTFVZTjQxbVd5Y0J0WkY4US13cXZSblk5akp4Z25wR1o2aXlpSF8ycElNbzJkX280VHVHRFBMSjZwN3dLYkE0bl9HYTZyeEhkSkxudXlZaDFnVmJZRnBsVW94OHdRaXRrdmtEVmh3X3V4VHA4?oc=5",
-        "pubDate": "Fri, 07 Feb 2020 08:00:00 GMT",
-        "country": "Italy",
-        "cluster": "South-West"
       }
     ],
     "Marangoni": [
       {
-        "title": "High-mileage pattern design launched by Marangoni - Tire Technology International",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM20yNDdrOXJZN2xiaTJNVm8zSHdIR3FxTC05aTA2M3d6R2lFMkgzY21HeXRMNlZWb0pGalJENnZkbV9oeU1QQXJmQmJFeTk4Qk9ZeWxJMkR0MkI3cy1RaDkzdXg3MkNsY2xVWWVqajR6YmJ2T0dPeWN3Q3NhcmtJYzZSTVZJQlNLTFRwOEthVy14QmVLUEtRM3RVYlRNZ1A0M0pFYXNUc0hSUWNZU3RN?oc=5",
-        "pubDate": "Mon, 18 Aug 2025 07:00:00 GMT",
+        "title": "Marangoni Alfa Mito M430: Tuning Version with Special Red Tyres! - The Auto Channel",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9yd184TEU3NGNILTlCS3VKRjNOaU1rQ1FIUGNFTktwMURaZzVpWmpaeE1hUTJxeDFIc0Y1NnlyV2hTc1VLZ1EtRE8xdzdSak12cTJJS2RJN0g5UFNYLUxkakxIM2d3WEpQSWc?oc=5",
+        "pubDate": "Fri, 28 Nov 2008 08:00:00 GMT",
         "country": "Italy",
         "cluster": "South-West"
-      }
-    ],
-    "Vianor": [
-      {
-        "title": "Nokian Tyres’ new quick and hassle-free SnapSkan tyre scanning service aims to improve traffic safety for millions of people - Automotive World",
-        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWC14eF8tMHVpelplSFZuRlYxUUtjLUR4eDF2Q2gtWVVLTE9CNW5IN294WmZmdllsdlNreUpDcm1WSnlWZVB3Qjd4N1d1bS1wTG1HbWVCb3RmTVlLMUgwUHg3UkRIZ1BhOEJCRTlOd01pdXJtejc1eEFsaDZ5clMydkVuVU5vV2VfdGNwNUdZaG5sUUVLaVVUSkJTMkV4SVdUYl9nOEFPQTVTY2dEMGtfSG5oWF9KM2NmMWRCYng0Q1o5cEFob3o2VUhEOGV5REx6QkN2eWh3dEJxZFhHNmVDeA?oc=5",
-        "pubDate": "Tue, 13 Dec 2016 08:00:00 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
-      }
-    ],
-    "Genan Holding": [
-      {
-        "title": "Recycled Elastomers Market Size, Share & Growth Report, 2034 - Global Market Insights Inc.",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1NNlBqOFlkZ05DdTZuU3Z6NDZfLTBrSElzRmctMmpYYVpFTy1EMlJ6MUFnZXpzNkJXSG1SdHE1VnhzaVlmNlhqYWw5OVphMjdtel9yWjg4T0p2SktkazBYNm5ITGJ2M3M5WVBBQ3ZyZFZQcERpQU1maXJjdw?oc=5",
-        "pubDate": "Wed, 25 Jul 2018 08:12:31 GMT",
-        "country": "Denmark",
-        "cluster": "Central"
       }
     ]
   }
