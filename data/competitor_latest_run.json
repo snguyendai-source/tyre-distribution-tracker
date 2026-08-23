@@ -1,46 +1,76 @@
 {
-  "runAt": "2026-08-22T07:45:49.795171+00:00",
-  "totalNew": 5,
+  "runAt": "2026-08-23T07:48:38.632547+00:00",
+  "totalNew": 9,
   "entitiesChecked": 26,
-  "entitiesWithNews": 5,
+  "entitiesWithNews": 8,
   "newItemsByEntity": {
-    "Kumho Tire": [
+    "Continental": [
       {
-        "title": "EU tariffs accelerate Korean tire makers' China exit - The Korea Times",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaXVMU3plbWlKSWlsYWY3dUlVUVNfOS16V1ZHOVQ1bHBKaFR3eTRmX2V5UmxOcDR2Y0NlRVN5R3YxbHdmMkprMDhsdUk4MGE4cTZZSEtrYzBRYXdKbnRnNUhjTE1RLWZMc1ppZE9laHVJaHNVdWJheWdvdml0eVRQQ3dOeUZva2hKTWI2MS1UVV80X2tMS1J5NC1pRkJYYklCSm1Db3dfX2lXdDky0gGyAUFVX3lxTE1LTHkwNW1uTFl3QUUyUjd5MUMxamNQdThpQXMzT1FNSEJsMHJ1dnNFbmd2cGZkZi1PZWlIVEZkZGhBZ0pRbzQ4Y0pmMy1LYWpKZVFYS1NmUkRDalF5SUtuYnplWUI1emdUelJTdG5XejUwRTdVaXFIdmdJNDFyTUswRGp6a3dvYkFlV1JTUEJHQnV2UWVmZmdERWJZdjJwdXlCRWw3dW94YzdLbmlpRHdacmc?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
-        "category": "Korean"
+        "title": "Lower Rolling Resistance, Greater Range: Continental and Renault Group Collaborate - Continental AG",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNERmc0ZnNXk0LWNsSnlZOVBSTkFyYU5iMFUteXowNEthVmxxa096WV9wWUFRcHhoWDhySkVIdF9ickdScmJGaXpYZ0dHbGNwcUprUWRpa2QtN0V1RmdaVGVNQ2ZhUHVhS2tRTmgwNlAtVDRfYVZBLTNkb0JfZFBPZkplVTI?oc=5",
+        "pubDate": "Mon, 15 Jun 2026 07:00:00 GMT",
+        "category": "Premium global"
       }
     ],
-    "Nexen Tire": [
+    "Michelin": [
       {
-        "title": "Nexen tyres OE for Kia Seltos in Europe & North America - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbWNwQS02NHRLaEd0bDRZRWhaWi01ZXJzTV9DdFpUWEVYR29vVUNxVThZb1BmZGprV05KU19MX2NCOUcxR05QU2k2VF9nR3NSTS00SHU5RHpQMWtQOHVmUkNYdFdQeG9pcmV1YlF1d05uMk9aZy1VQlUxeWtCNzhaMEI0SS1pMFJtY20wa1d6ZlNwUQ?oc=5",
-        "pubDate": "Thu, 28 May 2026 07:00:00 GMT",
-        "category": "Korean"
+        "title": "New trailer tire monitoring tool from Michelin - Commercial Carrier Journal",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZkV5X2kxaEROYmNrN2tKMUswRTFVdWZJM3hfOXJLNnM4dlZUMWl4TngwVEl3dmh4SV9PNVNBc0h1SjlFM2NLREtFdHZzRnUzc0pwVndaRUpBVElwR0pBMHpUVnZVaDZ2em80T0d1Q3dRZlcyazlGQXR2RjNmV2tjX29OWjNXaEowdmlpc1pHNE0zZjRMenJqUFpKc0dENFp2QURNZVlLQ0tXb2Z5ZFE?oc=5",
+        "pubDate": "Tue, 17 Mar 2026 07:00:00 GMT",
+        "category": "Premium global"
       }
     ],
-    "Falken Tyres": [
+    "Toyo Tires": [
       {
-        "title": "Porsche selects Falken Azenis FK520 for Cayenne Electric - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdjhicG05QmFlMHNQa1NkMXV3M3lxLUt6RDJ6a2dMcTNVLUJ3MVI0MXZGdmRCemdOWFpZbVNkRmJGS2M1eFhIRlB4RnVDMlppb0hmc0FnYlg5eVZrdS1pY3R0allyaXBmZW1qUXNuNTVxWmo1Z3BuZUVLR09XaVIwUnpmTGU1aXZSU2J0NnYtMlhfdzFrQVE?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 07:00:00 GMT",
+        "title": "Tire Industry CEOs commit to ambitious sustainability workplan - The World Business Council for Sustainable Development (WBCSD)",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZnBCeE9VRTRUWkZrUWtNa0g5dXBldmVYWlh2Nl96UmxIcFZSOV9VX1R4a29xYTFOZ0s2akFJdWt3VmZUMUNmLU1ZN1dDU3V4ckJvX2pSVF9KS1lTQ2dpWU03dlpMUnlaQm9oSzhQa19HYWNmbnFZTzd0TDFVS082d0hVXzctV0MwNzJWVzRLQzNXX0NO?oc=5",
+        "pubDate": "Wed, 01 Nov 2023 07:00:00 GMT",
         "category": "Japanese"
+      }
+    ],
+    "Linglong Tire": [
+      {
+        "title": "Linglong Tire considers Central Europe plant - Global Times",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB4dE1EZ2xFTHBmcEFqQnYxYkFyOUpKV2xhOUVSZlJhcmtkdXpFdm56NWlqTkZfM20yX1ZuTTc4MGF1Z3AwUWZRVlVlaEJsZG5yYUFINEhFWWpkcGJYMmM1Qkpn?oc=5",
+        "pubDate": "Wed, 24 May 2017 07:00:00 GMT",
+        "category": "Chinese"
+      }
+    ],
+    "Triangle Tyre": [
+      {
+        "title": "Brentford signs Triangle Tyre as inaugural official tyre partner - Yahoo Sports",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZmJTZF9uQmRvUTJoZ1cyQ3hDTWRrR0szY3BnQlhxbFp3a0pxeTJYMUdIV0dGQmEzTl96b3JDb1NZeG1rQVpFVVdXbkVoaF9JblJFR1NPMEo2TXFHNUFZaEhXM0VOdXRFaHdWRExMOWlwX3dtOUN2Wlg4aGtCMHgxZ0pZQXZOdnR2OXNXeENnNjBDZw?oc=5",
+        "pubDate": "Wed, 19 Aug 2026 09:00:00 GMT",
+        "category": "Chinese"
       }
     ],
     "Double Coin": [
       {
-        "title": "CMA LLC announces retirement of Senior Vice President Walt Weller - Fleet Equipment Magazine",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBOX3VPZU5lZDNyTWZnZThCUnI1TkNhVE1JaklnTEsyTWZxTzM2MGxWUXVWWGxlQThNTmprdEw0UDFqWUdxOUg4LUlCemI1WGRRSk9aa1RRVENVM0JKem54SGZnMFVrS00xelR3c0FUbzV6NUJEd1I5Mmtn?oc=5",
-        "pubDate": "Fri, 29 Jul 2022 07:00:00 GMT",
+        "title": "Take a tour of the new Double Coin tire manufacturing plant - Tire Technology International",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaDhsdnRmQmpDaXVNZl9kdzFFajhIRmdjTkNrSm4wZU5qdU12UUt0NkgtNGJ0WXhMZWxGVVlVWXFSWnRHbW1EZWc5bFFwZ1l1Q1lPUWlrUTZaN3E2Mk8tR3N3b1Blbnl3cGFpOUlGblNfLUFDWnZpVEU5YmtrbkJWb0Z3ZElWbTNycjdZc1RHcERHWHU1dTdreFlyS1hZeTBHYm42QXN4MVI4RDVaZTJxaVlveVcwQQ?oc=5",
+        "pubDate": "Fri, 09 Nov 2018 08:00:00 GMT",
+        "category": "Chinese"
+      },
+      {
+        "title": "Double Coin pleased with recent ITC ruling - Tire Business",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdmppQk11TjhBNnFTY3NHUDRTSnkyVTlGcUl6SkpTLW9WRF9JRnltWThieGFtbHpQdWtmcnpacGxLU2dpZENGY3ZReTVWVDBndUVjX09nOFc5Vm9iN0l6MEdsOEQ1OFNYM0VjTExmc1UzQzNFNG1IYi1hdHFkUmtMMHZTMTVNaTdKOEs0QWVtczBVRWNK?oc=5",
+        "pubDate": "Tue, 02 Jul 2024 07:00:00 GMT",
         "category": "Chinese"
       }
     ],
-    "JK Tyre": [
+    "Nankang Rubber": [
       {
-        "title": "Apollo Tyres vs JK Tyre: Full Stock Comparison - Univest",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBkVXExNDFxNHQxZnYwbHdIQWhHekFMZGltYVJUWTN1VUtFNk5fczI3YzZjcUx3Ni1qcktzVUh0WC12RmxINThlM3ItMXQ4OVIyTndlazEzM3FfV3N0ZlptV29lYUxWMVQ4b01B?oc=5",
-        "pubDate": "Tue, 28 Jul 2026 07:00:00 GMT",
+        "title": "Nankang provides off-take tyres to Federal, appoints new leadership - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUXV1QWV4MXZzVEI1MWEtQ2hfWHB6Q0RkOVBDMXQ4cHFwdExaY1VFSWtILXFLb2xtTXhKLTdrV3RLWlV3YWRZYmVhQktLcm9xMGRxMlN4cFFHZk0zcFplc2F4WFNfcDkwM21pbTludGNYa1lRNW9VUmE4endhcG5GR3VVZmEzdFY5TzBCTWItVF9zaFZkUHhQMWZyRGhRUHpKWG5n?oc=5",
+        "pubDate": "Thu, 16 Nov 2023 08:00:00 GMT",
+        "category": "Taiwanese"
+      }
+    ],
+    "CEAT": [
+      {
+        "title": "Ceat investing €25m in online tire service company Tyresnmore - European Rubber Journal",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWTNfeWVYcm9Ja1dyeUNoMTdLb0o4M1J3dlA0X1kwZ1ZRbHFjTHJtYUhwZHJQQ1JwZ0RHYUVoVTJQYlJZQ21nb1RXZENhVW5CTlpMaWhEZHdYWDRhMjZCOVJQTHZIcGotck5scjRtYnpzbzh1NVEwbGV3SjZScHYya01vd1kxbmpWMVI5OGRmUEcxSDlRNUFCVGlTTFZWbTl2MS1XajNkMVc1NGJNWUktdWlFNXdhdjA?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
         "category": "Indian"
       }
     ]
