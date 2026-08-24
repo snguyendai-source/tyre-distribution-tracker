@@ -1,77 +1,67 @@
 {
-  "runAt": "2026-08-23T07:48:38.632547+00:00",
-  "totalNew": 9,
+  "runAt": "2026-08-24T08:29:12.343804+00:00",
+  "totalNew": 8,
   "entitiesChecked": 26,
-  "entitiesWithNews": 8,
+  "entitiesWithNews": 6,
   "newItemsByEntity": {
-    "Continental": [
+    "Pirelli": [
       {
-        "title": "Lower Rolling Resistance, Greater Range: Continental and Renault Group Collaborate - Continental AG",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNERmc0ZnNXk0LWNsSnlZOVBSTkFyYU5iMFUteXowNEthVmxxa096WV9wWUFRcHhoWDhySkVIdF9ickdScmJGaXpYZ0dHbGNwcUprUWRpa2QtN0V1RmdaVGVNQ2ZhUHVhS2tRTmgwNlAtVDRfYVZBLTNkb0JfZFBPZkplVTI?oc=5",
-        "pubDate": "Mon, 15 Jun 2026 07:00:00 GMT",
+        "title": "How Pirelli, partners are closing loop on tire circularity - Rubber News",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYVJFclZ3T3lWZDdLRnMxZW9OanZxejc2czNVYzFmOEh3emszcmg2WktJXzhUbVRMOXBsVHdzSTB1VnlJN3dBUmdfSzRpaU5PNDBCMEEtekppeUVUQ0hoUS1obmNMSkV2SlJZMUotcHBaWlFHVXhYVUJUenhyd0dMSWFBUnBtSlUyV2k3UTVOSW1NbmIzOWZXejZqVTdnQnFyN1Jn?oc=5",
+        "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+        "category": "Premium global"
+      },
+      {
+        "title": "Pirelli-led partnership targets 'tire-to-tire' circularity - European Rubber Journal",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbUtFTjhYZ3NRanVaQnBHMUFTVEZhQUdmTkxRTW45cVpEZmJGb0pDMmtCbmpRTkJjWldBUThTaUY1akFLcWg2aFV4N1BydXdnb0QxTmFwNHJsTVJidUVzZGJTdUFDYVg1eDlnekFoeWtES1plRFBVazVBMG5CWEtFMmt0YWtxLWxZWVluNm9fOVFkN0E4YTRMYWdLN21nTWVyb29MMEx4OFdWNTlxRmx3Unl3?oc=5",
+        "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
         "category": "Premium global"
       }
     ],
-    "Michelin": [
+    "Kumho Tire": [
       {
-        "title": "New trailer tire monitoring tool from Michelin - Commercial Carrier Journal",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZkV5X2kxaEROYmNrN2tKMUswRTFVdWZJM3hfOXJLNnM4dlZUMWl4TngwVEl3dmh4SV9PNVNBc0h1SjlFM2NLREtFdHZzRnUzc0pwVndaRUpBVElwR0pBMHpUVnZVaDZ2em80T0d1Q3dRZlcyazlGQXR2RjNmV2tjX29OWjNXaEowdmlpc1pHNE0zZjRMenJqUFpKc0dENFp2QURNZVlLQ0tXb2Z5ZFE?oc=5",
-        "pubDate": "Tue, 17 Mar 2026 07:00:00 GMT",
-        "category": "Premium global"
+        "title": "Kumho selects site for European factory - Rubber News",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5wOC1ucEJFM3YyMm9yazBGZFhvTXN4bmN4NV9IR3dZazhmTldXR212XzdNdEpla3VGSlZ1T05JenRaellQWXdUTVJSbmNHc1RQamZta0NCTU0tWi1mRjhhdUhuLTNjWXhzSUZWVlpEYnVLZzBOUURoSEt1RVY?oc=5",
+        "pubDate": "Wed, 03 Dec 2025 08:00:00 GMT",
+        "category": "Korean"
       }
     ],
     "Toyo Tires": [
       {
-        "title": "Tire Industry CEOs commit to ambitious sustainability workplan - The World Business Council for Sustainable Development (WBCSD)",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZnBCeE9VRTRUWkZrUWtNa0g5dXBldmVYWlh2Nl96UmxIcFZSOV9VX1R4a29xYTFOZ0s2akFJdWt3VmZUMUNmLU1ZN1dDU3V4ckJvX2pSVF9KS1lTQ2dpWU03dlpMUnlaQm9oSzhQa19HYWNmbnFZTzd0TDFVS082d0hVXzctV0MwNzJWVzRLQzNXX0NO?oc=5",
-        "pubDate": "Wed, 01 Nov 2023 07:00:00 GMT",
+        "title": "Toyo Tires Announces Top-Class N24 Assault - Sportscar365",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNXI0MkY5SExzUU1EY1dDVUN6dmh1T3RLaVN0U21US1phd2xtVURXRTI3X2Y3bnlETGNDQjFZLXZYbTRoZUVNMlhFQWpUM0lLVmhSTG5wVzJIODdiMmdneWFMVjg1d0RqTVllcTBUcHVhZ3M2a2NJYzk1TTNaTExxTmFPUVp5QTRmTlk2SmJ3?oc=5",
+        "pubDate": "Tue, 13 Jan 2026 08:00:00 GMT",
         "category": "Japanese"
       }
     ],
     "Linglong Tire": [
       {
-        "title": "Linglong Tire considers Central Europe plant - Global Times",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB4dE1EZ2xFTHBmcEFqQnYxYkFyOUpKV2xhOUVSZlJhcmtkdXpFdm56NWlqTkZfM20yX1ZuTTc4MGF1Z3AwUWZRVlVlaEJsZG5yYUFINEhFWWpkcGJYMmM1Qkpn?oc=5",
-        "pubDate": "Wed, 24 May 2017 07:00:00 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "Triangle Tyre": [
-      {
-        "title": "Brentford signs Triangle Tyre as inaugural official tyre partner - Yahoo Sports",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZmJTZF9uQmRvUTJoZ1cyQ3hDTWRrR0szY3BnQlhxbFp3a0pxeTJYMUdIV0dGQmEzTl96b3JDb1NZeG1rQVpFVVdXbkVoaF9JblJFR1NPMEo2TXFHNUFZaEhXM0VOdXRFaHdWRExMOWlwX3dtOUN2Wlg4aGtCMHgxZ0pZQXZOdnR2OXNXeENnNjBDZw?oc=5",
-        "pubDate": "Wed, 19 Aug 2026 09:00:00 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "Double Coin": [
-      {
-        "title": "Take a tour of the new Double Coin tire manufacturing plant - Tire Technology International",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaDhsdnRmQmpDaXVNZl9kdzFFajhIRmdjTkNrSm4wZU5qdU12UUt0NkgtNGJ0WXhMZWxGVVlVWXFSWnRHbW1EZWc5bFFwZ1l1Q1lPUWlrUTZaN3E2Mk8tR3N3b1Blbnl3cGFpOUlGblNfLUFDWnZpVEU5YmtrbkJWb0Z3ZElWbTNycjdZc1RHcERHWHU1dTdreFlyS1hZeTBHYm42QXN4MVI4RDVaZTJxaVlveVcwQQ?oc=5",
-        "pubDate": "Fri, 09 Nov 2018 08:00:00 GMT",
+        "title": "VW-Owned Firm Halts Chinese Tyre Imports from Serbia Over Exploitation Claims - Balkan Insight",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTldVd0pveDlBZU5kYlR2RVZfZ051SDk0eVdKdWpncllUT2xBcFhhaHhRNnhjZ2NHNTdUNWE1YlN4VTdCeG5EdWJtcWdzRzVWSUJZNHRVbGF3T3FkWnRyWVIxNmRqeEkwNzJKMnBrdUlsM0ZDaFdJeVVfRzNKekhKcHFuTHE1R29YWkVBdGdnbmMxczZ4aWxpNzd2RUd4LXBjMzJXYnFnc0pJdUNRLXp0V20waHpkRExxMmc?oc=5",
+        "pubDate": "Mon, 16 Dec 2024 08:00:00 GMT",
         "category": "Chinese"
       },
       {
-        "title": "Double Coin pleased with recent ITC ruling - Tire Business",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdmppQk11TjhBNnFTY3NHUDRTSnkyVTlGcUl6SkpTLW9WRF9JRnltWThieGFtbHpQdWtmcnpacGxLU2dpZENGY3ZReTVWVDBndUVjX09nOFc5Vm9iN0l6MEdsOEQ1OFNYM0VjTExmc1UzQzNFNG1IYi1hdHFkUmtMMHZTMTVNaTdKOEs0QWVtczBVRWNK?oc=5",
-        "pubDate": "Tue, 02 Jul 2024 07:00:00 GMT",
+        "title": "Linglong Unveils SPORT MASTER 2 at Tire Cologne 2026 - Macau Business",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUWxidVhmYnVDYzlqUDdWMnlEVzNwVkFoX3RXQUE5RHQ1eFVWNThKcmFMSHctSGphVzJ1OGJfUjNfYnlLTHhHNDc4eFhndjBMeEVITW90VzNXV2hFNXJMbWZsVHIxdUdmSWhJUHZEU2tSUWgyY3hFanhBOGx6U0g0SE9lUmMzQQ?oc=5",
+        "pubDate": "Fri, 26 Jun 2026 09:25:46 GMT",
         "category": "Chinese"
       }
     ],
-    "Nankang Rubber": [
+    "Sailun Tire": [
       {
-        "title": "Nankang provides off-take tyres to Federal, appoints new leadership - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUXV1QWV4MXZzVEI1MWEtQ2hfWHB6Q0RkOVBDMXQ4cHFwdExaY1VFSWtILXFLb2xtTXhKLTdrV3RLWlV3YWRZYmVhQktLcm9xMGRxMlN4cFFHZk0zcFplc2F4WFNfcDkwM21pbTludGNYa1lRNW9VUmE4endhcG5GR3VVZmEzdFY5TzBCTWItVF9zaFZkUHhQMWZyRGhRUHpKWG5n?oc=5",
-        "pubDate": "Thu, 16 Nov 2023 08:00:00 GMT",
-        "category": "Taiwanese"
+        "title": "389 Sailun-made tyres recalled in the USA - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNUZJYy04VU0tdTZvXzN1QzE0U05XOHVhNEd0X1E5SUdDNklBbm54QURqUlBlMWs2YUROMllGMkR2aWpJbHJ3cVVIUW9GU2xJeDdyUDYwejZVTDJ0ckxTUmE4akRVd3Z0Mlo2NTFhX3BfclBFc2Y0NGdHQzIyM0hua2xn?oc=5",
+        "pubDate": "Fri, 30 May 2025 07:00:00 GMT",
+        "category": "Chinese"
       }
     ],
-    "CEAT": [
+    "Giti Tire": [
       {
-        "title": "Ceat investing €25m in online tire service company Tyresnmore - European Rubber Journal",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWTNfeWVYcm9Ja1dyeUNoMTdLb0o4M1J3dlA0X1kwZ1ZRbHFjTHJtYUhwZHJQQ1JwZ0RHYUVoVTJQYlJZQ21nb1RXZENhVW5CTlpMaWhEZHdYWDRhMjZCOVJQTHZIcGotck5scjRtYnpzbzh1NVEwbGV3SjZScHYya01vd1kxbmpWMVI5OGRmUEcxSDlRNUFCVGlTTFZWbTl2MS1XajNkMVc1NGJNWUktdWlFNXdhdjA?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
-        "category": "Indian"
+        "title": "Giti Tire boosts GitiSportS2 ‘Powered by Sparco’ range in Europe - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPalhMc3ZCSDVMYjdPSGh0NUZBdUhRZ1MzVEdaZDVXZUtEMkRVQUZaeEh3S19IbUs3SHpnWEQ2Yms1MG1seXgtQWU5ZG90U2dGYnJIUkl6eHVlQVpFVWVMUU80aEpxd1owaDZNOVRicVZ2NFVaSkl5R1VZTVl0VzJiSW9UcGl6YkEyX0NkZVFLcWZ0UF82c0UzWmp1T21UQQ?oc=5",
+        "pubDate": "Tue, 19 Mar 2024 07:00:00 GMT",
+        "category": "Chinese"
       }
     ]
   }
