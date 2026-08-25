@@ -1,57 +1,66 @@
 {
-  "runAt": "2026-08-24T08:29:12.343804+00:00",
-  "totalNew": 6,
+  "runAt": "2026-08-25T08:11:12.986647+00:00",
+  "totalNew": 7,
   "entitiesChecked": 118,
-  "entitiesWithNews": 5,
+  "entitiesWithNews": 6,
   "newItemsByEntity": {
-    "Hedin Group": [
-      {
-        "title": "Carstore, the international chain for used cars starts its operations in Finland - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNZ3lkSVE1ZGZtcjk4MUZiRjBSaHZFMkJzV005TU53TzdZNmV4WTViaDdQcVNJQml2RW1wNEpUNGhPRVBJa05iSVZmaUItNTFmUWhjYkUwdlVRTmdHRVVwYVBDQ0VDRGJCQlRYSFJXdjZHMVJsRVFlell4d2E3MUlyVzFVbDN0MDVkMDJOWE5pTDdyN3VpX1JES1ZlMHJ6ckR2bGFweW9taE5oNHFySU1mekF4aWhyRmdqUzdCYkhYSnU5VE5UckgwY3J0TC1Valk2bjBTbjNBdVJYNkpYOEVB?oc=5",
-        "pubDate": "Fri, 17 May 2024 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
     "Profil Plus": [
       {
-        "title": "Strategic alliance with Profil Plus, France - Mining.com",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9LZDVENUFOS1ZuWWVWV3NBcXRFbnBRQ2ZxRmVMMDlhcGVHQ0lLU2w4ZG9OSTgyaGtRQWN2amE4aFJGbE9qeHVQYTFvMUVxYjhUekMtM2VRMW5yV3F0c2hnZU1YeEtYWV9kZ2ZPRGxQM2ZGVDlfMmFreGJn?oc=5",
-        "pubDate": "Fri, 14 Jun 2019 05:35:30 GMT",
+        "title": "Magna Tyres Group reports ‘strong first quarter’ - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdVZkZGZFdnJMZEJKa2pLMnN2MjdiY1V0YUhTSGNaNlZ1czluUXhuRUhjYTZxQXFMMHY5SjdSVFc1RWN6ME1zbEJQYjFJcGVldkRSTGVGYVRyNzN1eVpSMnFpWVR0OEhBYnlOWGp6U01xV3FEUkF0NUNHa1FqZ3RydWVuOTJ0SlF2?oc=5",
+        "pubDate": "Fri, 10 May 2019 07:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "Point S UK": [
+    "HiQ Tyres": [
       {
-        "title": "Industry jobs: Appointments made at Point S, Myenergi, Shoreham Vehicle Auctions, Right Fuel Card, Gofor, Global Auto Holdings and iVendi - Fleet News",
-        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNVEl4U1lCWXBYZzJMY2Eza1FudnlfOENMazVaUjRBTmdVVkpFVHQ3NDdiaGNlZTBmbU8yMkg2RjEzNFA0QUNKNmFxcklsMmIwSnd2bGw5ZWd2QjFvaGdqQ2RVdUVxenFtdy1UeURLVGVfVVZpVzhjZEdaMndZUG41VEpmMzdyYW8wUEVUR3VQaGZZZGNVODNXQzZnUjAzdDR6YVpkcGVaaE05Z0xrTG9jUVhfRVhKcDh2a3lEblVjOGFTb0VtZXI0WVFtVTkzMnJYaGUwSkNmaXdzYzY2Nllya0NxV3VTUWRMT0pjRHVuWmRRSEZUZEFj?oc=5",
-        "pubDate": "Wed, 29 Jan 2025 08:00:00 GMT",
+        "title": "HiQ garage manager wins national award presented by Goodyear - SussexWorld",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcHRDNm5RSi03WDVyQVI4ekctNmJ2WlNGZ3BGNkozY0I5Mmd6d2VuTHMteWxKM0tjaGliM2tLeHRNNE93cDJrMVhwaXlEdnFaNEVwOHk4QWFWdzc5MHllYXA2Q09pTXZYcnppaHktY2ZGNHZVY3V2NVlkQkRWR3R4ZFM2aWxzU1l1T2M1MzVTMGEwdHZIY2Z0TVBuMUVaVWszV0I5N25rMTFaQ1d2OHc?oc=5",
+        "pubDate": "Thu, 18 Apr 2024 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Kwik Fit": [
+      {
+        "title": "Kwik Fit golf day sets charity record - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAzRm5CWEc3TFFPS1F2VE5EREVTY2s0RWFRc0otX1F6RldEZXllLS1ydGNER2lVNS0yTF94N0RMbUlyRkdZT09KV3V6YjRQWW1zYmx6V1RyYnlQWktkODhDUUhpTHY2OWF4VmZKN3lEUlRsTExsWUJITVF6NVU?oc=5",
+        "pubDate": "Mon, 24 Aug 2026 15:47:04 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Bandvulc": [
+      {
+        "title": "Quarter of the country's reused truck tyres now come from Plymouth firm - Plymouth Live",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSHNpZ1Z2NDNUNWRDejdmdFkzcmRGdmh4TnlaRFJIdzc5bWR5U2FXWnhhX2NZVjl5MUM5MzdtT1V2cFMwS3BCNlhvTHd5T3MwOEtqNk5oVU51TFZrOUkxc2Jka3NfVExRVWZESldraWhNWEV5WTNiNEczcnMtemc1a1JXWVdDMDAzMVBMbFYwWjdfZ9IBlwFBVV95cUxOY3N0Y2RIbUtFVTdOTGFoT0t2T0tRVmNrazJmUktMMFVISEZwX0lkWWoteWtJWlFtYWJhbi1fVGxCY3ZtbFppZzRVeE9NNHJsM3BoNkZlTE9ULW5iUVFkSktKTGNETFZLc0szRDZCZGtFbDFSYUxDQnN2aUk1UVdXZEUxYkI3MS1FVHpLU1lsa2RNN0REY0Jv?oc=5",
+        "pubDate": "Wed, 31 Oct 2018 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      },
+      {
+        "title": "Sponsored: CSG keeps rolling with Bandvulc - Motor Transport",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaV9ZQzh5Q3U4d1czZVFDaDhPZ2M3YUkzS2tTZ2xlanJIVHZzbi1NS3p6emlNcWEzU0dpMDBwVzdTNWYwQXgtQTZxYkNkXzVQSnpsaTdrQXI4eTg2ajJIYllyNzNBNHduTkJFcThaSnluM0dPLVBPMEZveG1PcUhEQnpwYmZBMDJTR1ltaw?oc=5",
+        "pubDate": "Wed, 01 Apr 2020 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
     "Grupo Andrés": [
       {
-        "title": "Doublestar car tyres on-sale in Carrefour Spain - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZDlIa2I4N1E3TU9JVkVmQlBxYmZOOGNlZmpGVXJKSjdEcFJVMmI3bHBxcHRNLVVMYXB3elZNOXA0UGtsUWI0NWpQUW1kaThYcGRKN0w4U3dGdERScDhGbDV6eWJGaVQ5dUFEVk5fcDAzcW1MTFdMQjU4aHFNdHE1RlF3Y2E1ei1ETHc?oc=5",
-        "pubDate": "Thu, 29 Nov 2018 08:00:00 GMT",
+        "title": "Humby expands Venlo tyre logistics capacity - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVERrenM0OGplLUI5Y21iYmM3eHdqNmNrWUVybjlOVGdMZzQwVGxVdjJsOHQzUlllMzdwVWxITFR2MG5GV3J5SHhlUmRNTnU4VzZzVFNtNFhyZUhuLVRwdmFyNzRZM3lVOElnTnhxWHNock5JOTRlRWpvWnBha1FEWDh5TkM?oc=5",
+        "pubDate": "Mon, 24 Aug 2026 08:52:01 GMT",
         "country": "Spain",
         "cluster": "South-West"
       }
     ],
     "Vianor": [
       {
-        "title": "Tyre Retailer Vianor Opens Outlet in Romania, To Start Ops in Serbia - SeeNews",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNd0lpTXFTUllHaDZhZHduOU96eXVwYkt4dGQ2blAtd01GRUtzbmdSR1lwME1pWXhmWGRlR2pJSDVGX1RMUWNIU1N6dTJSMW4xSmR6Ri1CYVRqOFE3dEtqMm1STzBBcDdSUU1CN3QzQ2dNZVVDUEljWVNDMXVEWVRrSVU1c3QwMV95ZC1fN0RzNW1pSGNTV2Y2WFliUFVEdE9n?oc=5",
-        "pubDate": "Tue, 10 Jan 2012 08:00:00 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
-      },
-      {
-        "title": "Nokian Making Truck Tire Push With Vianor Stores - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQR1dPOTBOc2tzYnNhd1pmOERzZkJ2bGthWWJ6Ti1oNnhxSTVILWhRdFAxck9DODEyQ1ROS2ZzUkNwNEQycjJCaEtKdUp2dE1GYXB4RWNwVnpscm9LbE8zeDFhaVczMGxMQmR3cy13cVJaTzFEN004X2RuTFRlSkp1cnRn?oc=5",
-        "pubDate": "Wed, 06 Oct 2010 07:00:00 GMT",
+        "title": "With the October storm and the pandemic, snow tires are in short supply - VTDigger",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOLUx4dWpudElvbks2UWFWNUp0MGNvR0tVOU16VXNja3c3U3NNRTJCTFkwa01RNmd2ekNlQ0ZiUWNncDN1WnEzb0k3bllGeEVXRjZqUGpHd1ExVm1BQmxzVEFucVgtekF3SEppSXRHdTBmZmhhekpmX3Uyd2Z3SFktUWhYbVU3TVlFWndPM1FuZ2YzNWdHcUYzUk1RUDJUMThxcXRQMEZR?oc=5",
+        "pubDate": "Sun, 08 Nov 2020 08:00:00 GMT",
         "country": "Hungary",
         "cluster": "South-East"
       }

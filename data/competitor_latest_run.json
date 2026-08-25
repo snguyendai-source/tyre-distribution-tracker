@@ -1,67 +1,61 @@
 {
-  "runAt": "2026-08-24T08:29:12.343804+00:00",
-  "totalNew": 8,
+  "runAt": "2026-08-25T08:11:12.986647+00:00",
+  "totalNew": 7,
   "entitiesChecked": 26,
   "entitiesWithNews": 6,
   "newItemsByEntity": {
-    "Pirelli": [
+    "Goodyear": [
       {
-        "title": "How Pirelli, partners are closing loop on tire circularity - Rubber News",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYVJFclZ3T3lWZDdLRnMxZW9OanZxejc2czNVYzFmOEh3emszcmg2WktJXzhUbVRMOXBsVHdzSTB1VnlJN3dBUmdfSzRpaU5PNDBCMEEtekppeUVUQ0hoUS1obmNMSkV2SlJZMUotcHBaWlFHVXhYVUJUenhyd0dMSWFBUnBtSlUyV2k3UTVOSW1NbmIzOWZXejZqVTdnQnFyN1Jn?oc=5",
-        "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
-        "category": "Premium global"
-      },
-      {
-        "title": "Pirelli-led partnership targets 'tire-to-tire' circularity - European Rubber Journal",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbUtFTjhYZ3NRanVaQnBHMUFTVEZhQUdmTkxRTW45cVpEZmJGb0pDMmtCbmpRTkJjWldBUThTaUY1akFLcWg2aFV4N1BydXdnb0QxTmFwNHJsTVJidUVzZGJTdUFDYVg1eDlnekFoeWtES1plRFBVazVBMG5CWEtFMmt0YWtxLWxZWVluNm9fOVFkN0E4YTRMYWdLN21nTWVyb29MMEx4OFdWNTlxRmx3Unl3?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "title": "Goodyear EMEA consulting on 600 sales and support jobs - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbjQxcFZQMF9Qa25wblNiZFRWZHpkLVB6ZDZKS2lkUE1vdWhnaEY5aWdqanFaVnIxdE54ZS1McnhqVGpMYXByaGlFQXByVmlLeU9HaEQ0cTE1ZmlxSjk2UlpfblNYTFQweHRBR0h4bFFWOWozUlU1a3dBQWRHeGFZSFBfdjVjUUhva0IzaHVyeVNXZUU?oc=5",
+        "pubDate": "Tue, 17 Mar 2026 07:00:00 GMT",
         "category": "Premium global"
       }
     ],
-    "Kumho Tire": [
+    "Hankook": [
       {
-        "title": "Kumho selects site for European factory - Rubber News",
-        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5wOC1ucEJFM3YyMm9yazBGZFhvTXN4bmN4NV9IR3dZazhmTldXR212XzdNdEpla3VGSlZ1T05JenRaellQWXdUTVJSbmNHc1RQamZta0NCTU0tWi1mRjhhdUhuLTNjWXhzSUZWVlpEYnVLZzBOUURoSEt1RVY?oc=5",
-        "pubDate": "Wed, 03 Dec 2025 08:00:00 GMT",
+        "title": "European Commission Approves Multi-Million Euro Grant for Hankook Expansion - Hungary Today",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMm51SWhlOGlBUmQ0SEFqdG5fYS1rajFyaE80bXlzcDU3Nk53c2FOR19qLWZlbXV1TmE4U0pWTHVVLXhnYklnQmtBb3FPMU1uc01tbjlxWXNGd0VET3lCU3pKUUhvQk4xV1ZQUmlickNWVXR4SVBtdGJjRkRxd1YzTFNqT3Z1NVBhb2V3aUhpc210Y3N2a09mZ2ZmTzdjTTFFbXc?oc=5",
+        "pubDate": "Tue, 28 Apr 2026 10:20:57 GMT",
         "category": "Korean"
-      }
-    ],
-    "Toyo Tires": [
-      {
-        "title": "Toyo Tires Announces Top-Class N24 Assault - Sportscar365",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNXI0MkY5SExzUU1EY1dDVUN6dmh1T3RLaVN0U21US1phd2xtVURXRTI3X2Y3bnlETGNDQjFZLXZYbTRoZUVNMlhFQWpUM0lLVmhSTG5wVzJIODdiMmdneWFMVjg1d0RqTVllcTBUcHVhZ3M2a2NJYzk1TTNaTExxTmFPUVp5QTRmTlk2SmJ3?oc=5",
-        "pubDate": "Tue, 13 Jan 2026 08:00:00 GMT",
-        "category": "Japanese"
-      }
-    ],
-    "Linglong Tire": [
-      {
-        "title": "VW-Owned Firm Halts Chinese Tyre Imports from Serbia Over Exploitation Claims - Balkan Insight",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTldVd0pveDlBZU5kYlR2RVZfZ051SDk0eVdKdWpncllUT2xBcFhhaHhRNnhjZ2NHNTdUNWE1YlN4VTdCeG5EdWJtcWdzRzVWSUJZNHRVbGF3T3FkWnRyWVIxNmRqeEkwNzJKMnBrdUlsM0ZDaFdJeVVfRzNKekhKcHFuTHE1R29YWkVBdGdnbmMxczZ4aWxpNzd2RUd4LXBjMzJXYnFnc0pJdUNRLXp0V20waHpkRExxMmc?oc=5",
-        "pubDate": "Mon, 16 Dec 2024 08:00:00 GMT",
-        "category": "Chinese"
-      },
-      {
-        "title": "Linglong Unveils SPORT MASTER 2 at Tire Cologne 2026 - Macau Business",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUWxidVhmYnVDYzlqUDdWMnlEVzNwVkFoX3RXQUE5RHQ1eFVWNThKcmFMSHctSGphVzJ1OGJfUjNfYnlLTHhHNDc4eFhndjBMeEVITW90VzNXV2hFNXJMbWZsVHIxdUdmSWhJUHZEU2tSUWgyY3hFanhBOGx6U0g0SE9lUmMzQQ?oc=5",
-        "pubDate": "Fri, 26 Jun 2026 09:25:46 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "Sailun Tire": [
-      {
-        "title": "389 Sailun-made tyres recalled in the USA - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNUZJYy04VU0tdTZvXzN1QzE0U05XOHVhNEd0X1E5SUdDNklBbm54QURqUlBlMWs2YUROMllGMkR2aWpJbHJ3cVVIUW9GU2xJeDdyUDYwejZVTDJ0ckxTUmE4akRVd3Z0Mlo2NTFhX3BfclBFc2Y0NGdHQzIyM0hua2xn?oc=5",
-        "pubDate": "Fri, 30 May 2025 07:00:00 GMT",
-        "category": "Chinese"
       }
     ],
     "Giti Tire": [
       {
-        "title": "Giti Tire boosts GitiSportS2 ‘Powered by Sparco’ range in Europe - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPalhMc3ZCSDVMYjdPSGh0NUZBdUhRZ1MzVEdaZDVXZUtEMkRVQUZaeEh3S19IbUs3SHpnWEQ2Yms1MG1seXgtQWU5ZG90U2dGYnJIUkl6eHVlQVpFVWVMUU80aEpxd1owaDZNOVRicVZ2NFVaSkl5R1VZTVl0VzJiSW9UcGl6YkEyX0NkZVFLcWZ0UF82c0UzWmp1T21UQQ?oc=5",
-        "pubDate": "Tue, 19 Mar 2024 07:00:00 GMT",
+        "title": "Giti Tire highlights new & expanded ranges - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNakJaUUlKaUZPRjg3dElxYzkwQUpNc0lWN1ZYSGdOaVE3aWxHYk9EY1ZFbmFhQ3YxdUswc2htU2Z3aWtwTHdtdFB6bk5zeEc3S3JwbjJCTUNvVXpiU0duOG9FUXVHR1dMRGtHeExWUUVmRm56YjhtQnhjMnRYbDB5bQ?oc=5",
+        "pubDate": "Wed, 01 Jun 2022 07:00:00 GMT",
         "category": "Chinese"
+      }
+    ],
+    "Double Coin": [
+      {
+        "title": "CMA adds sizes to Double Coin mixed service portfolio - Rubber News",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTENQRkNoaEppeWljTUxuTmY3Rk9lR1ZuRm1PUGNVUEUxcUJYUE9UYTdiZ2dVQS1jM0JyWk9QdDVrczhjNk13eExXVG5LbWxWYl84RWphYnI3dUtiTU5HOVhIaXhjeEwxTDA5NWhyVVR3Wkg5Y0Y3QnYzb2JMSFZsX3JlZUszTENlZ3J3?oc=5",
+        "pubDate": "Mon, 23 Dec 2019 08:00:00 GMT",
+        "category": "Chinese"
+      },
+      {
+        "title": "Huayi Thailand’s second phase rolls off the first tyre - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQk9QRDlibnhqajFVN1RKM2dSTWhmenF0SS1vcHMyU3ZpSGNVNlhwZnc2LWh2MjNCSzhfWFFucmJFSkY2ZVNTdnRaTXJIVTVPb0R1NW1Td1JkRGQxSi1aOVRLYUxzazZUWkdNbGV1d1hOVDNLX0RBMGlOVnItNE5tc3RpOG1kdE1xTE40cDRSaHF5Zw?oc=5",
+        "pubDate": "Wed, 27 Sep 2023 07:00:00 GMT",
+        "category": "Chinese"
+      }
+    ],
+    "Nankang Rubber": [
+      {
+        "title": "Nankang Opens Motorsport Showroom in Germany - Tire Review Magazine",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBCSWprVzU1QW1zVzJCMXItRHVSbk9nakVmNGpsMnI2NmRPTkprc0RoTGlibnZBeFZDTDRQZTZtSTd0dnBOUmZ3V0dwejJLUUNaWnFHZXBTaFlTemxxY0pGamlOM0x2RW02a1hENUxieDI?oc=5",
+        "pubDate": "Tue, 16 Jun 2020 07:00:00 GMT",
+        "category": "Taiwanese"
+      }
+    ],
+    "JK Tyre": [
+      {
+        "title": "JK Tyre reports 54% growth in net profit in Q2 of FY26 compared to same period last year - The New Indian Express",
+        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVDlrM1FNcjVKSjZoVE5kV3oxaGNYQTJkZEJ6dXVIZjF6cWkteWs0SmhhV01NOUhvcXo0RU94T2Z1aWVzY1IxbnF6WldHT3hJM0NrMHIyQ09yYXE1bG5aRzNETVoxemNYREgzT2hkSElPZE5LWXFKRmZNeWxUOTZ5UnZ3RVprZ1lZdXU1aFhTSlF1Nmh1QW9BSjVzcTBQUFZKVXNsNGRFRW10WUphYjVTSFl0cUxCQURJTG81eWNjNDNmbFBFTWxDLWZHS2tfQjkwOTFHaC0xcGfSAeYBQVVfeXFMUDNDNjJYN0Z3bG5LYnU5bzR5c2Y5aWhWemVYNEkxdHJ3SUNraXJVYUNVYUduc1pIdDZncE1jbkl6bUZtZHVaaDVZaFVZTTdxNVR1Y09IRHVzSS1lRmpManAyUGMxTlhhWUZHMHRwYkJOYmtIamhTX1FmRVgwRUx3NTVkSWFCMnFidUVEeGtDck5BSGhJa3VsSmptVVVtUGowQjFSZV9lQ2Q5VlE3ODNXc3c3eGVfbnZ1YU0wTEdDVVJNVDgzTjhfaVhxZVNPUTc3UUhFa1pOcXg1eTZwX1JveThKTTlyNmc?oc=5",
+        "pubDate": "Mon, 27 Oct 2025 07:00:00 GMT",
+        "category": "Indian"
       }
     ]
   }
