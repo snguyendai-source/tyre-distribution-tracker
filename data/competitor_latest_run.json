@@ -1,60 +1,80 @@
 {
-  "runAt": "2026-08-25T08:11:12.986647+00:00",
-  "totalNew": 7,
+  "runAt": "2026-08-26T08:10:34.833971+00:00",
+  "totalNew": 10,
   "entitiesChecked": 26,
-  "entitiesWithNews": 6,
+  "entitiesWithNews": 7,
   "newItemsByEntity": {
-    "Goodyear": [
+    "Continental": [
       {
-        "title": "Goodyear EMEA consulting on 600 sales and support jobs - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbjQxcFZQMF9Qa25wblNiZFRWZHpkLVB6ZDZKS2lkUE1vdWhnaEY5aWdqanFaVnIxdE54ZS1McnhqVGpMYXByaGlFQXByVmlLeU9HaEQ0cTE1ZmlxSjk2UlpfblNYTFQweHRBR0h4bFFWOWozUlU1a3dBQWRHeGFZSFBfdjVjUUhva0IzaHVyeVNXZUU?oc=5",
-        "pubDate": "Tue, 17 Mar 2026 07:00:00 GMT",
+        "title": "Continental unveils 43% recycled concept tyre under EU ZEvRA project - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQelFzX1EyMzR5TWl1Z1h3WkRXRzdnbG84RGoxd2NUSDVtUzd3bUpOY2FoTjRFYXpJR0NGSS1MM0x6S3g4YU1rU09xWGtYd1RCUVc5aDFQUG9fWURGTjBneXR5ZjJYWFBBZjR1aDFnVEFJM2x1N0c2S0sxV1lTRGJWUEpoWEZSa1NuLWs1d0tfS1VIUGo3UzZIWEdoUjY3NmMzaDBtWQ?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 15:03:56 GMT",
+        "category": "Premium global"
+      },
+      {
+        "title": "Continental's tyre margins hit by Trump's tariffs, weak dollar - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWjFaSC00d2N1RW1IeXQyaVB0Sk5vb2xLaGtmeE85djAwZzN5bVlyZ1pvamYwX21KdExXd29pWXhSeVo2bS1MQVJwUzNYcTBXQ0FYemM5dElTdWZGaWVaekY2VXc4NEw0TlM3am5aWk8yZks3S3lMZmxkVUxSZldFbFBadGI0Wm9zWTFfZV80WFRQVTV1dmJIeEVPRU5sVkk?oc=5",
+        "pubDate": "Tue, 05 Aug 2025 07:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Bridgestone": [
+      {
+        "title": "Bridgestone tyres recalled over risk of failure - IOL",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaHhMSkJsT1ppbTYycHljOWRsZmtsdDJYNW5IQlJ4cjFucHZUVDU3UWtZVkFsT3AwaUNIcjhLNjZIT2NQdTBnVjZNQVV2NzE4RUE2WjNiQnJQNFJVUklTWG04RkR4YkthOHhZXzdqa1NGRjg4TjEtR1dnMVZDdnc5ZHByTEU5REd0djROMG03QQ?oc=5",
+        "pubDate": "Fri, 08 May 2026 07:00:00 GMT",
         "category": "Premium global"
       }
     ],
     "Hankook": [
       {
-        "title": "European Commission Approves Multi-Million Euro Grant for Hankook Expansion - Hungary Today",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMm51SWhlOGlBUmQ0SEFqdG5fYS1rajFyaE80bXlzcDU3Nk53c2FOR19qLWZlbXV1TmE4U0pWTHVVLXhnYklnQmtBb3FPMU1uc01tbjlxWXNGd0VET3lCU3pKUUhvQk4xV1ZQUmlickNWVXR4SVBtdGJjRkRxd1YzTFNqT3Z1NVBhb2V3aUhpc210Y3N2a09mZ2ZmTzdjTTFFbXc?oc=5",
-        "pubDate": "Tue, 28 Apr 2026 10:20:57 GMT",
+        "title": "Hankook Tire–Backed WRC Central European Rally Concludes in Success - autosphere.ca",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTzZSdk0xNlNaYXhmSmZGWW5KU2FGdHVQUXVudjhvSXppWm9DNzhwNkVvMGhkVWlBeGViQzNMSE1rbVQ5dGFIczlTZXRGdnBPOUFhNjFoUEhsX2tUb0x0UzE0M1NsZTRwUWlWYnhNcVpzSDQ2LUg4amt1SHdYejhVTGxxaWhjNGNwU19RQ1g1RDhINVRZb2VRMUtTVlQwQVlrdnljWW9FeXdkOFk?oc=5",
+        "pubDate": "Fri, 24 Oct 2025 07:00:00 GMT",
+        "category": "Korean"
+      },
+      {
+        "title": "European Commission approves ~€72 million state aid for Hankook truck tyre plant - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOM3YxNXcxMUhFeWVCblRIRndWT2NHbkpFbjlqYXVjcEhjelY1enRXeEdjUlAzYldqLTZFOURrZnVIdUpEMVo3NDNfbXNjUXVuN0Y4R2VEVTBXcXNmWWs1cEpFOEcwbFpXSzMwcXptQm8xVXBtY1pDNVpZWmdxU3d4M1EteXZXZi1hZmpHTXo4M00tQUlmSk1mWFFDT1VTUjFzM1E4OWNDQmJjWHJadDZNUzAzcmE?oc=5",
+        "pubDate": "Mon, 27 Apr 2026 07:00:00 GMT",
         "category": "Korean"
       }
     ],
-    "Giti Tire": [
+    "Triangle Tyre": [
       {
-        "title": "Giti Tire highlights new & expanded ranges - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNakJaUUlKaUZPRjg3dElxYzkwQUpNc0lWN1ZYSGdOaVE3aWxHYk9EY1ZFbmFhQ3YxdUswc2htU2Z3aWtwTHdtdFB6bk5zeEc3S3JwbjJCTUNvVXpiU0duOG9FUXVHR1dMRGtHeExWUUVmRm56YjhtQnhjMnRYbDB5bQ?oc=5",
-        "pubDate": "Wed, 01 Jun 2022 07:00:00 GMT",
+        "title": "Triangle becomes Brentford FC Official Tyre Partner - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQk80akJXc2MyXzhsMmFkQUJIenM2OFcwTFcydnlWakNPSmpXcUFybkZnZlRLb3JuUUZnWkF2d01YOWNETlhpR3JfNzNvR3hyTnUzUHNFQ0s2aTliZ0Y1bXRqaXJBenliWEE1cXo5eng4UjE3eExSaE5rU25qWDYxMS1tMjlod3B2UXYtVkRzOA?oc=5",
+        "pubDate": "Wed, 19 Aug 2026 10:31:14 GMT",
         "category": "Chinese"
       }
     ],
-    "Double Coin": [
+    "Linglong Tire": [
       {
-        "title": "CMA adds sizes to Double Coin mixed service portfolio - Rubber News",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTENQRkNoaEppeWljTUxuTmY3Rk9lR1ZuRm1PUGNVUEUxcUJYUE9UYTdiZ2dVQS1jM0JyWk9QdDVrczhjNk13eExXVG5LbWxWYl84RWphYnI3dUtiTU5HOVhIaXhjeEwxTDA5NWhyVVR3Wkg5Y0Y3QnYzb2JMSFZsX3JlZUszTENlZ3J3?oc=5",
-        "pubDate": "Mon, 23 Dec 2019 08:00:00 GMT",
+        "title": "US Bans Chinese Tyres from Company in Serbia Over Forced Labour Claims - Balkan Insight",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRS05VDdOMm9HelNDbEVsSnRSc2VLQmRJUE5naENKTE9JTjdVZGxRb2EteFJSWHkyakdjWVhVaUUxTHhiZ0dzaWdaMDN4Z3RmUGRiTzFIeXZRVDBSU0JKOU1Hd1NualBlQjVXZkF0azQ0a2Q1bGhHMW14cVJWaXBDN2Rsd1dVRHhkUVJHT3E2SGhQcEQxR3ZvMFVTMnpVLVJWN0pBTjVCbFBuY2RnSHhPbg?oc=5",
+        "pubDate": "Fri, 19 Dec 2025 08:00:00 GMT",
         "category": "Chinese"
       },
       {
-        "title": "Huayi Thailand’s second phase rolls off the first tyre - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQk9QRDlibnhqajFVN1RKM2dSTWhmenF0SS1vcHMyU3ZpSGNVNlhwZnc2LWh2MjNCSzhfWFFucmJFSkY2ZVNTdnRaTXJIVTVPb0R1NW1Td1JkRGQxSi1aOVRLYUxzazZUWkdNbGV1d1hOVDNLX0RBMGlOVnItNE5tc3RpOG1kdE1xTE40cDRSaHF5Zw?oc=5",
-        "pubDate": "Wed, 27 Sep 2023 07:00:00 GMT",
+        "title": "Oak Tyres becomes Linglong Tire UK and Ireland distributor - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMkR0SlJYeldLWHNMdjRUeEtSRkttNFVGR0dpWjRzZm1RVmZvd2xENnhVT3BESmpoUHpuSTBfMTNxdExhd3d6OWVWMHlQcWZ2bG5yN1VDRVB2Z3BjZDB4ZjVNZVc2LUxmb3Q5UTVvaG41VEFKbTJiVXZOa2dJZnJkWDR6TnI5T3QweE5wa3NEbEd2MnE5V1J0aQ?oc=5",
+        "pubDate": "Thu, 19 Sep 2024 07:00:00 GMT",
         "category": "Chinese"
       }
     ],
-    "Nankang Rubber": [
+    "MRF Tyres": [
       {
-        "title": "Nankang Opens Motorsport Showroom in Germany - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBCSWprVzU1QW1zVzJCMXItRHVSbk9nakVmNGpsMnI2NmRPTkprc0RoTGlibnZBeFZDTDRQZTZtSTd0dnBOUmZ3V0dwejJLUUNaWnFHZXBTaFlTemxxY0pGamlOM0x2RW02a1hENUxieDI?oc=5",
-        "pubDate": "Tue, 16 Jun 2020 07:00:00 GMT",
-        "category": "Taiwanese"
+        "title": "Sordo gets MRF Tyres ERC seat that was Breen's for Azores - DirtFish",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNkQ3cjc3NFJsclJXblBLMkR6UGdsMm1rdmhjQ3Q0cmRObkhGenRwektTejZWMVh1WXcwbGFIUjJha2FjbG51bzNKOEtUcW50d3dSU0N6TjllR01fLTlNVW1TRkxYWlJJN3hHVWltRV93SXFaU0hNanlMRUhLUTVZRi1CdXJaWGxMT1ZhSGI5NlJldw?oc=5",
+        "pubDate": "Tue, 07 Sep 2021 07:00:00 GMT",
+        "category": "Indian"
       }
     ],
     "JK Tyre": [
       {
-        "title": "JK Tyre reports 54% growth in net profit in Q2 of FY26 compared to same period last year - The New Indian Express",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVDlrM1FNcjVKSjZoVE5kV3oxaGNYQTJkZEJ6dXVIZjF6cWkteWs0SmhhV01NOUhvcXo0RU94T2Z1aWVzY1IxbnF6WldHT3hJM0NrMHIyQ09yYXE1bG5aRzNETVoxemNYREgzT2hkSElPZE5LWXFKRmZNeWxUOTZ5UnZ3RVprZ1lZdXU1aFhTSlF1Nmh1QW9BSjVzcTBQUFZKVXNsNGRFRW10WUphYjVTSFl0cUxCQURJTG81eWNjNDNmbFBFTWxDLWZHS2tfQjkwOTFHaC0xcGfSAeYBQVVfeXFMUDNDNjJYN0Z3bG5LYnU5bzR5c2Y5aWhWemVYNEkxdHJ3SUNraXJVYUNVYUduc1pIdDZncE1jbkl6bUZtZHVaaDVZaFVZTTdxNVR1Y09IRHVzSS1lRmpManAyUGMxTlhhWUZHMHRwYkJOYmtIamhTX1FmRVgwRUx3NTVkSWFCMnFidUVEeGtDck5BSGhJa3VsSmptVVVtUGowQjFSZV9lQ2Q5VlE3ODNXc3c3eGVfbnZ1YU0wTEdDVVJNVDgzTjhfaVhxZVNPUTc3UUhFa1pOcXg1eTZwX1JveThKTTlyNmc?oc=5",
-        "pubDate": "Mon, 27 Oct 2025 07:00:00 GMT",
+        "title": "JK Tyre earnings hit by higher input costs - European Rubber Journal",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPOGlCNkJVdkVXQTBfME0xSUpucWxmOERnQ0szbUdXeGU4cDF0ZzFlR0J2ZGs1dmdtOFI0TlB0T3lVYm5qMXVnUEJUYXRLWmwwVFR0MXhlanhLR3dFNk8tdHQ2RTFSWENkY3pTMGxHSWlldTFiaW50NExvcE1EdER4azB0WW9UdXNXdjBxZ0I2ano0djVXSmVzYTNpN2dYRlhrNWlWLWgtUmFNZDZfWTdQYWdfUlFlUE02b0xFWkp1WWI1VFFOb0FUR3RnSQ?oc=5",
+        "pubDate": "Wed, 26 Aug 2026 04:31:19 GMT",
         "category": "Indian"
       }
     ]

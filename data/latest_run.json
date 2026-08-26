@@ -1,68 +1,59 @@
 {
-  "runAt": "2026-08-25T08:11:12.986647+00:00",
-  "totalNew": 7,
+  "runAt": "2026-08-26T08:10:34.833971+00:00",
+  "totalNew": 6,
   "entitiesChecked": 118,
-  "entitiesWithNews": 6,
+  "entitiesWithNews": 5,
   "newItemsByEntity": {
-    "Profil Plus": [
+    "Reifen Müller": [
       {
-        "title": "Magna Tyres Group reports ‘strong first quarter’ - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdVZkZGZFdnJMZEJKa2pLMnN2MjdiY1V0YUhTSGNaNlZ1czluUXhuRUhjYTZxQXFMMHY5SjdSVFc1RWN6ME1zbEJQYjFJcGVldkRSTGVGYVRyNzN1eVpSMnFpWVR0OEhBYnlOWGp6U01xV3FEUkF0NUNHa1FqZ3RydWVuOTJ0SlF2?oc=5",
-        "pubDate": "Fri, 10 May 2019 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
+        "title": "Hankook producing Alphatread retreads in the DACH market - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTHU4Z0x3Zi1QR25uX3doQmlTTks1NUxWekdPNmhUVlJIbnZYdkJISjI1U0lvTENrZUxjeUNscWxtLTlSdklzd2ZHdjcxNVdoQUt2bzl0XzBENUJ3aGduSWgzTE9QdGhyd3ZBV2dBcllPV2lnT1Y5dG54VFY0Yy02dWJhV09JLUJtcXV5TkxaVldSVWFZQVE?oc=5",
+        "pubDate": "Tue, 06 Oct 2020 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
       }
     ],
-    "HiQ Tyres": [
+    "Hedin Group": [
       {
-        "title": "HiQ garage manager wins national award presented by Goodyear - SussexWorld",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcHRDNm5RSi03WDVyQVI4ekctNmJ2WlNGZ3BGNkozY0I5Mmd6d2VuTHMteWxKM0tjaGliM2tLeHRNNE93cDJrMVhwaXlEdnFaNEVwOHk4QWFWdzc5MHllYXA2Q09pTXZYcnppaHktY2ZGNHZVY3V2NVlkQkRWR3R4ZFM2aWxzU1l1T2M1MzVTMGEwdHZIY2Z0TVBuMUVaVWszV0I5N25rMTFaQ1d2OHc?oc=5",
-        "pubDate": "Thu, 18 Apr 2024 07:00:00 GMT",
+        "title": "Hedin Automotive completes the acquisition of Janssen Kerres - Cision News",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWFd0WHF4ZllGUWN0bUJ3dTJ3cVBQY19HVFdYQWZ1ZkcxcDhJX2lJRngyWldQTjRBQjA4M3JZejBTb0dzdXpfVk1rNFpKdnlIMWpLbWpzazVOY18tTkpYUklHYUEwVUtSbXdNMmQyeHVkOGp1b1U4bWtxMDNBa3hoZUdCVndqTmp3c3lmQkZiSE10YUd2U1hMeks1Q3ZaV3B6WVZvZjhmeTVfNWswZUhLRmVNci1vZnFMUlBEZ0FQXzQ0YWh4?oc=5",
+        "pubDate": "Wed, 04 Oct 2023 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "First Stop UK": [
+      {
+        "title": "First Stop secures 20 prime retail sites for additional tyre retail franchisees - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUUlsbThjNmVKWEg2RndLTWhPbHFXbXJJS2NRcXF2NEpRVG9tdWQ5TUd5YnRLQXgzR3BzZ0Y3QThrY2dHVXF0U0g3a053OGxBaHUxbVJsSDFsY05oV2NDWm5ZbnZkMHJKS3ctT0trdEVUQUNGeFlpM0VzUzBQeXBrM1dtWkpiZmllT1U4aUdPSmhYY3JpZGI0YjYyaWptYjUtUUctWUhWNGRwRDluSGw0MTkxbng?oc=5",
+        "pubDate": "Tue, 22 Jun 2021 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Kwik Fit": [
+    "Blackcircles": [
       {
-        "title": "Kwik Fit golf day sets charity record - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAzRm5CWEc3TFFPS1F2VE5EREVTY2s0RWFRc0otX1F6RldEZXllLS1ydGNER2lVNS0yTF94N0RMbUlyRkdZT09KV3V6YjRQWW1zYmx6V1RyYnlQWktkODhDUUhpTHY2OWF4VmZKN3lEUlRsTExsWUJITVF6NVU?oc=5",
-        "pubDate": "Mon, 24 Aug 2026 15:47:04 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ],
-    "Bandvulc": [
-      {
-        "title": "Quarter of the country's reused truck tyres now come from Plymouth firm - Plymouth Live",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSHNpZ1Z2NDNUNWRDejdmdFkzcmRGdmh4TnlaRFJIdzc5bWR5U2FXWnhhX2NZVjl5MUM5MzdtT1V2cFMwS3BCNlhvTHd5T3MwOEtqNk5oVU51TFZrOUkxc2Jka3NfVExRVWZESldraWhNWEV5WTNiNEczcnMtemc1a1JXWVdDMDAzMVBMbFYwWjdfZ9IBlwFBVV95cUxOY3N0Y2RIbUtFVTdOTGFoT0t2T0tRVmNrazJmUktMMFVISEZwX0lkWWoteWtJWlFtYWJhbi1fVGxCY3ZtbFppZzRVeE9NNHJsM3BoNkZlTE9ULW5iUVFkSktKTGNETFZLc0szRDZCZGtFbDFSYUxDQnN2aUk1UVdXZEUxYkI3MS1FVHpLU1lsa2RNN0REY0Jv?oc=5",
-        "pubDate": "Wed, 31 Oct 2018 07:00:00 GMT",
+        "title": "Basic tyres safety tips for UK drivers after 5,662 convictions for defective tyres in 2025 - Blackcircles - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNNmdXUWlQNmhWYm1CVUUtUUFMdTE5SlgyTl8xOHl6RWpPczJ1MWFzVjU1ZWVHX0FacUk1S1Q2alNmaGo3TEtITU5hNFIySGdSNDVJd3RsTW5MWjB0bHZrTGN3R2YweUI1YjF2NU1kX2lBSVB6ZEZ0MkVoZ2pLaWdFdjNIZWp2WndEbkpwMUdub1dxQTRiemVHbXh1T0g1QkhsenV0VGpILUR4bDF0T1VERUE4eEF4bGVTQnUzaUlXbHUxbUhrSDJkTXN0UWdUTFhhNi1B?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 22:42:18 GMT",
         "country": "UK",
         "cluster": "North-West"
       },
       {
-        "title": "Sponsored: CSG keeps rolling with Bandvulc - Motor Transport",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaV9ZQzh5Q3U4d1czZVFDaDhPZ2M3YUkzS2tTZ2xlanJIVHZzbi1NS3p6emlNcWEzU0dpMDBwVzdTNWYwQXgtQTZxYkNkXzVQSnpsaTdrQXI4eTg2ajJIYllyNzNBNHduTkJFcThaSnluM0dPLVBPMEZveG1PcUhEQnpwYmZBMDJTR1ltaw?oc=5",
-        "pubDate": "Wed, 01 Apr 2020 07:00:00 GMT",
+        "title": "51+% of UK drivers lack tyre knowledge to dangerous degree – Blackcircles study - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPX0I5NmJIM2MycjFOOTlIZ05WM2xrY0NlOUk4b2VhNVNsUWNDU1QwUVBSdS1TR2RxcDlGQm5CZ0x1VEZaS3Zpc3ZqNXEwQVhJUGh6YUJmcmdXS0FYUUpYRTFRNnJXY1BPTTNmVHk1N3FHcEE4Y1JmZS1hVnhJOFlzMy1KYzEtYmlONzlpUUZaU0RxTjdJNzRlOHJ6VFh0eGpKWU0yNE9ITlhXQnlMbklF?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 20:32:17 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Grupo Andrés": [
+    "Genan Holding": [
       {
-        "title": "Humby expands Venlo tyre logistics capacity - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVERrenM0OGplLUI5Y21iYmM3eHdqNmNrWUVybjlOVGdMZzQwVGxVdjJsOHQzUlllMzdwVWxITFR2MG5GV3J5SHhlUmRNTnU4VzZzVFNtNFhyZUhuLVRwdmFyNzRZM3lVOElnTnhxWHNock5JOTRlRWpvWnBha1FEWDh5TkM?oc=5",
-        "pubDate": "Mon, 24 Aug 2026 08:52:01 GMT",
-        "country": "Spain",
-        "cluster": "South-West"
-      }
-    ],
-    "Vianor": [
-      {
-        "title": "With the October storm and the pandemic, snow tires are in short supply - VTDigger",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOLUx4dWpudElvbks2UWFWNUp0MGNvR0tVOU16VXNja3c3U3NNRTJCTFkwa01RNmd2ekNlQ0ZiUWNncDN1WnEzb0k3bllGeEVXRjZqUGpHd1ExVm1BQmxzVEFucVgtekF3SEppSXRHdTBmZmhhekpmX3Uyd2Z3SFktUWhYbVU3TVlFWndPM1FuZ2YzNWdHcUYzUk1RUDJUMThxcXRQMEZR?oc=5",
-        "pubDate": "Sun, 08 Nov 2020 08:00:00 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
+        "title": "Hägglunds equipment drives tire recycler’s operations - Recycling Today",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNb29JbHhLVTU1NnhlaE1TUktkQ0txa3lUVmJxWnNIUGZrRW5aOTJTdGgydXdlam9XVXBYS185ZE1KTUxMeGFMdkRrelNjTDZjc3Nkem1pN19PZjlCR3RSZUpwNkRvVEZ6dFlDc1owOXk1cmpwUkE0QU1jOVpxbUZXVU1NR3dmem1iRDVoZUx1Q2NiWmc?oc=5",
+        "pubDate": "Tue, 28 Jul 2020 07:00:00 GMT",
+        "country": "Denmark",
+        "cluster": "Central"
       }
     ]
   }
