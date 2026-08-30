@@ -1,39 +1,32 @@
 {
-  "runAt": "2026-08-29T06:08:08.746830+00:00",
-  "totalNew": 4,
+  "runAt": "2026-08-30T06:07:44.989272+00:00",
+  "totalNew": 3,
   "entitiesChecked": 118,
   "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Premio": [
-      {
-        "title": "Improved TV graphic to be introduced at the F1 Gran Premio de México 2019 - Formula One World Championship Limited",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVkRzZzJ2Y0VaZFJva0RMN05iUGRkdFlzM3BiT2NiRmJrME1lOEEyLUhJUzVGR0ZmckRsMmp2LXFpald1VnFBLTFzVnZtZVBmalA0TXFiVDFzNHh2Z0t0djNTYk03bWE5RG9ucW96UHQ4bFRsZThrTHlYMWRjX2ZYbC0tRDZjYjV5ZURFMXpMRGJ0YmNnanJqQzBvQ1pNTzV2ZlE?oc=5",
-        "pubDate": "Sun, 27 Oct 2019 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      },
-      {
-        "title": "Top 5 tyres: Take a closer look at Bangladesh’s most popular tyres - The Business Standard",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbmtvaFpGMWFrcmJ6YzVvMXdqZXJpVUpyeXhwMFliLXUxQlZyRTZheWNUaXQzc0hMOE1wMEF5c0hTR1N2YWtULVlMelQ1aXB3bUdtT0thZXE4aDlMWmg3NDVYc3lNVDNIenpkN2VZVk1IY0xxUFppNzdmd1htRFYtYWZuejJfOFg3b3FUc2JHandUUmRTcTNMcHdfQ0hybnhWYWpvWUZaVzV6d9IBrwFBVV95cUxOWmVWZUE4OWJjYlFiSmhzMGtyVUJfLXF3cGFkVG1helBNdnVYaTNBQ3A3ZmpPZTFDWVR0NFNKdTlDSkNfSk41cnJwTDRXSjZTdXBPQUY2Wk5tdHl0ZTE0bWNraEEtUGJ4UjlhaVRFdHlDYnpqZUg3SXR1ZWxUQzhfZkctWGdCLTZsTUZwVmU3c3RScU5aM3ZNMXNFU21iSGROVW55RXJmVUk4QmNKVlYw?oc=5",
-        "pubDate": "Sat, 31 Aug 2024 08:15:37 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "ReifenDirekt": [
-      {
-        "title": "Delticom AG successfully completes share buyback program - TradingView",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORDc2NlJVSXlSb2VEejRIM1hodE9aS29hbW14VUZFNV9wSzRub2M5eWJOVEpvTDRtTTNHZUZGdGR3MjJQX3dRenJlZV9vS1FRZmdwbGh4TlJoQmdTMnczVEZ5Ykt2Y3dzXzRVcEZrWkZINFU4RUxRS2JycVVTQ2VrMmhGbmZCTGF6bTBmWWtRb3F1SFA3TG1XMXBlYTdmVmRaSldFY1RUU1dfMVBiRWc?oc=5",
-        "pubDate": "Fri, 04 Jul 2025 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
     "Protyre": [
       {
-        "title": "Fire services reveal how blaze at Stourbridge car repair centre started - Stourbridge News",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPN1pwR2lUMkg0bDMzZmQwSTdzRVVKYkphamNDT1YtdXVkU2hJSEZyQ08xM3VVX1p6NzhERy1NbHo1dS1VTFk1Q3QxekRXNHNIdC03c0FFbzRLRmh5eTNZbEwtcHF5MVA2c0ZMaEhiWXE2Y1JtLVJzZHlPZG9TMVh2eVJnZHZsOGh6d0JDTFhEQ09sSjktalp0RTNwNlQyYms?oc=5",
-        "pubDate": "Wed, 27 Mar 2024 07:00:00 GMT",
+        "title": "Last chance to win Dutch Supercar Challenge VIP package with Pirelli and Protyre - evo.co.uk",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRlhEYjBEbDlFd2p4QnRENDRzODdvNTRuM0RNcHBUWWFoYzRuWHZCV1U2aWIyRG1XbDBiZEF5aUVpemFwRmhqVUJhTW5WYlFIUmgyYmM3Yy11eE1UV0JwaGl5TVpYRlpqb2ZMdHlxVnk5OGJzcXZFX2laZWQ2ZzFmSnVlbEhkcnpWYlVseDRISjlYbmNJYjFJaDlxb05IZjBOSTF0cTcyS2VGeXF3TE1LSU5WWQ?oc=5",
+        "pubDate": "Mon, 07 Sep 2015 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "HiQ Tyres": [
+      {
+        "title": "HiQ’s ‘Project Pink’ surpasses £150,000 total fundraising - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOENGR2loZGlnaUdtc0pXSWtrRW8zVEpfckNYdUtXUzBHTzd5S015MWRIdnVxa0c3SjVDMzJLSDc1emw5ME4zOWFqNnppbTRubzVwNE95cldnc29wdTRMbFhXV3RnbHpZUDNnRjlsVXAtUTFEZHFUWWhQUHhKRjJHRDdVdENmMzBfMHJCaUZ4YXQ?oc=5",
+        "pubDate": "Thu, 21 Nov 2024 08:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Bandvulc": [
+      {
+        "title": "Uniroyal truck tyres to be distributed exclusively through Bandvulc - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUU1GblhuN0xtNXlaU291bHZuZ0xFeEdGODN6S0hVZmk4Tm9VNGkwNnBPZ3Z0MGpwSWpiQU5qRTlQVUVwaVlPajN3ZmFJcmhCY1hDTnpVaFI3bE1vZ3VSc3FnT1dEeDJxYWRKdTRNVnE5RlYyTkFiSEp5SmRLQ2JPaENOWEtTMlZ5RnVVYUVuUllqWEZ4cjNDSno2MERwY2ZUekxGSg?oc=5",
+        "pubDate": "Mon, 19 Dec 2016 08:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
