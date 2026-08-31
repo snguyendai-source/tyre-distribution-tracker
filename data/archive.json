@@ -1330,5 +1330,23 @@
     "foundAt": "2026-08-30T06:07:44.989272+00:00",
     "country": "UK",
     "cluster": "North-West"
+  },
+  {
+    "entity": "ReifenDirekt",
+    "title": "Delticom AG: AGM approves dividend - TradingView",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdDJQUDRLanRrd2FMX3h5SDdtTmkweTlDQ2hBbFN0RGZlcWxENFA5SE1LdThkY0lVaGFsWElBNHhyS3NNQUlQa20tNHR3Z2dRcjgxazJuSmNCdFloNGw5RE9pT3pNWHVGUlhoYUI0TUVnZi1SRUV3Q1F4Tmx3cElDclljYnB6blY1d0ZheHZwZw?oc=5",
+    "pubDate": "Tue, 07 Jul 2026 07:00:00 GMT",
+    "foundAt": "2026-08-31T06:09:04.109133+00:00",
+    "country": "Germany",
+    "cluster": "Central"
+  },
+  {
+    "entity": "Vianor",
+    "title": "NRE0 Stock Price and Chart — FWB:NRE0 - TradingView",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1hUGJSTHJOb0NQb2hIYjJTZE9paGxLR1JTeGhrYzQ1bW5hUXlWUTRKTXZBc2ZyX3hkVnZDdlFvZ0xIUnhyMjFST1FTVXI2UG5RekQwVXBhYlQ?oc=5",
+    "pubDate": "Wed, 26 Jan 2022 08:00:00 GMT",
+    "foundAt": "2026-08-31T06:09:04.109133+00:00",
+    "country": "Hungary",
+    "cluster": "South-East"
   }
 ]
