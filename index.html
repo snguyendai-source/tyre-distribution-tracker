@@ -114,6 +114,13 @@
   .entity-vol.na{ color:var(--ink-soft); font-weight:500; }
   .named-list{ display:flex; flex-wrap:wrap; gap:6px; margin-top:2px; }
   .chip{ display:inline-block; padding:3px 9px; border-radius:20px; font-size:11.5px; background:var(--slate-bg); color:var(--slate-ink); }
+
+  .entity-model{ display:block; font-size:10px; color:var(--teal-ink); font-weight:600; margin-top:1px; }
+  .model-chip-block{ display:inline-flex; flex-direction:column; padding:5px 10px; border-radius:8px; background:var(--slate-bg); max-width:280px; }
+  .model-chip-block .chip-name{ font-size:11.5px; color:var(--slate-ink); font-weight:600; line-height:1.3; }
+  .model-chip-block .chip-model{ font-size:10px; color:var(--teal-ink); font-weight:600; margin-top:2px; }
+  .market-access-note{ background:#FFF8EC; border:1px solid #F0DDB8; border-radius:8px; padding:10px 14px; margin-bottom:12px; font-size:12.5px; color:var(--ink); line-height:1.5; }
+  .market-access-note .label{ font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:#9A6B1E; display:block; margin-bottom:3px; }
   .note-box{ background:#F3F7F6; border:1px solid var(--teal-bg); border-radius:8px; padding:12px 14px; font-size:12.5px; color:var(--ink); line-height:1.55; margin-bottom:16px; }
   .dist-toolbar{ display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
   .legend{ display:flex; gap:14px; flex-wrap:wrap; font-size:11.5px; color:var(--ink-soft); }
@@ -513,10 +520,13 @@ function renderDistSegment(countries){
       : `<div class="num2" style="color:#B42318;">—</div><div class="lbl2">no total published</div>`;
 
     let bodyHtml = '';
+    if(c.marketAccessNote){
+      bodyHtml += `<div class="market-access-note"><span class="label">Market access note</span>${escapeHtml(c.marketAccessNote)}</div>`;
+    }
     if(c.note || (c.flatEntities && c.flatEntities.length)){
       bodyHtml += `<div class="note-box" style="margin-bottom:10px;">${badgeHtml(c.noteBadge)} ${escapeHtml((c.note||'').replace(/^(Gap|Hard|Value only|Not units|Outdated|Caveat)\s*/,''))}</div>`;
       if(c.flatEntities && c.flatEntities.length){
-        bodyHtml += `<div class="named-list" style="margin-bottom:14px;">${c.flatEntities.map(n=>`<span class="chip">${escapeHtml(n)}</span>`).join('')}</div>`;
+        bodyHtml += `<div class="named-list" style="margin-bottom:14px;">${c.flatEntities.map(fe=>`<span class="model-chip-block"><span class="chip-name">${escapeHtml(fe.name)}</span><span class="chip-model">${escapeHtml(fe.model||'')}</span></span>`).join('')}</div>`;
       }
     }
     if(c.channels && c.channels.length){
@@ -527,14 +537,14 @@ function renderDistSegment(countries){
             return null; // collected into chip list below instead
           }
           return `<div class="entity-row">
-            <div class="entity-name">${escapeHtml(e.name)}</div>
+            <div class="entity-name">${escapeHtml(e.name)}<span class="entity-model">${escapeHtml(e.model||'')}</span></div>
             <div class="entity-owner">${escapeHtml(e.owner||'')}</div>
             <div class="entity-vol ${e.volume ? '' : 'na'}">${escapeHtml(e.volume || 'n/a')}</div>
           </div>`;
         }).filter(Boolean).join('');
         const chipEntities = (ch.entities||[]).filter(e => e.owner === null && e.volume === null);
         const chipsHtml = chipEntities.length
-          ? `<div class="named-list">${chipEntities.map(e=>`<span class="chip">${escapeHtml(e.name)}</span>`).join('')}</div>` : '';
+          ? `<div class="named-list">${chipEntities.map(e=>`<span class="model-chip-block"><span class="chip-name">${escapeHtml(e.name)}</span><span class="chip-model">${escapeHtml(e.model||'')}</span></span>`).join('')}</div>` : '';
 
         return `<details class="channel" ${chi===0 && ci<2 ? 'open':''}>
           <summary>
