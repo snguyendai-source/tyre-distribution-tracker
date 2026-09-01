@@ -1,62 +1,62 @@
 {
-  "runAt": "2026-08-31T06:09:04.109133+00:00",
+  "runAt": "2026-09-01T06:18:05.963229+00:00",
   "totalNew": 7,
   "entitiesChecked": 26,
   "entitiesWithNews": 7,
   "newItemsByEntity": {
-    "Goodyear": [
+    "Bridgestone": [
       {
-        "title": "Goodyear cautious on European market amid EU tire tariff delay - Rubber News",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOaXdfMEtVM3FaUUQyY3RYRFlJbWROa0w3VlVtcmJrV0lLT3FRdGFvQmh5cmxveDJvRnNGV0hMYl8ydFVBcVNIVzYwcHBqbHBOOFVGaWRqUkd0eGUxRFU1SnMwZnNfV3VPOGU1WldnU0xIYWJSUmJ2eXU4cnAyUk9oeTVkTjFMbnM?oc=5",
-        "pubDate": "Wed, 18 Mar 2026 07:00:00 GMT",
+        "title": "ERJ Sustainability Tracker - 2026 - European Rubber Journal",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZU02REJHZ19YN0ZSR1FtemRmNUJhc3NGbW8yaGg0LW1kR3JzaEVNdjBaUXk5bDJQNEFjRUppcndxMTJTSGlqenNxMVFKczQ1TXB2dWVHU0E2eFV0REFuTnhZMFRJbmFzY1ZTelZSN0FGWGRid0NvUlliNU5MaGhzQXZjLVBmNUJkQV9yTlNfYVppd08tV1Vv?oc=5",
+        "pubDate": "Wed, 26 Aug 2026 07:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Pirelli": [
+      {
+        "title": "Italy's Pirelli leads tyre-to-tyre circularity project in Europe - ALCHEMPro",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZG5hZG94enk3UjEzS0M4Q1RsaUxiaW1LWUJvbzhnNlNBN1VLZlQxQTVqbFp1cUdZN0tYYXNZNkctVGFiR0I1X1kwd0gtQlZOcUNCNG1fYXhqd0ZEUmpSSG96WW9xMFFubEFCRHYycXpNbzNMOW1kSC1pUU44ckRVSnBET1pPSHotOHg3c3U0ZnlpT2d0ZHBHcVBsUXJUVVJoYnhoc2g2Ti1Oc1Z0MDBDZURfbXZETnJiUzhTbVk0UXFFSHp3enRxQXpyUElJdw?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
         "category": "Premium global"
       }
     ],
     "Nexen Tire": [
       {
-        "title": "Nexen Tire to raise prices from 1 June - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1VY2ROY3E1ZVNmTnlMdUl2WFI3ZDEzU3FPeTRMSkdiRzdSM2lFYWtwNndSNW9zWi1mWHVoN1ZyNFNXV1hJUDk4M29wc3Y1RkRGdEtRTUs5RkNfUmRyUmxqZGJJZUxwUThQal80WDUzS2c1dHp1YzFBMUN6STltZw?oc=5",
-        "pubDate": "Mon, 27 Apr 2026 07:00:00 GMT",
+        "title": "Nexen Tire to supply original equipment tires to 2 BYD models - The Korea Times",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSTlKOHhJMklBb2JWelNpWXBLMVloeDJlRjQycVJoSlpPblB5UXdvampaUzZ6am5YTjl1V01Ra1dwZGRhSnNoU0UyOExZeE8tYnZibGZIa3lLSkpPVW5GXzdXcXhhLTRHRmxTQTJvWnVqMjdiQlpJeldpVm5Hci1QTjNRSF82Y2NMZlBzaXhvQXVURWRiNlVKU2toMkl3bDlqN2JGdUtWcGtGZGNlUFp1WDVzUU4xMjhOUEHSAb8BQVVfeXFMTTJxa3UxNUJGVUJmZWctOEZLLUZIYjB5WkZCVHBWZk1jdURhSUJ2OGhWNW9qbmM2cFhTcEdFTjdpQ1lSRlJxWnp5Mmk2UVZpMmdRdHVjbWJGcGlZTkJIY0lteF8xY19sbG9LWHlJY0hkR3JWVVVtcjduaExCX2t1UVdSc3NmOUtLZkh1bURGcGUtVVBMc1ZQN1BaWUJRS0EyOFpTcHlxMXBLdTNRQUN5bnRwOHY1S0FwWHdXZVJBdFE?oc=5",
+        "pubDate": "Mon, 22 Jun 2026 07:00:00 GMT",
         "category": "Korean"
       }
     ],
-    "Giti Tire": [
+    "Toyo Tires": [
       {
-        "title": "Giti Tire partners VWCV to support ID. Buzz EV world record attempt - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPU1VobGZrTFhzVDVzUDd0d0luZkFOUzBHRjA2OHhCRXBIa1ZUOTIxNVpRZVlpTml0ZDMxOE1jUGdmaWRHdHotV0lyZE5nX0I1SncwOTlPLU1BYkJ4ZnQxd3h6aGwzZ2NjTTVXZFZxMTIzQ3BUODRBQ0lySHBzZXllN0E2eFZfa2dEQXpBX0ZEX0htLVZrb3lDQ3pvVmVheFpiVzUw?oc=5",
-        "pubDate": "Thu, 03 Jul 2025 07:00:00 GMT",
+        "title": "Toyo’s M177+ long-haul steer tire builds on M177 legacy - Rubber News",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBZdUZmb0RfdnZQZmtxUnJLdXk5ZUE4OURydnpXSjRtNE1OR0szWkJJcHdQQnVoN3k0YnZsc29VcTg4SzYwQjRHR0lVbkRaWnB5RmoxenBWRGhrZmU0M2VTRUNHdV9mRVZNU19RWlpQMVN0VmNa?oc=5",
+        "pubDate": "Wed, 03 Dec 2025 08:00:00 GMT",
+        "category": "Japanese"
+      }
+    ],
+    "Sailun Tire": [
+      {
+        "title": "Sailun rolls out new all-weather tire - Rubber News",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQN2l1d0dPYUMwOEFWN2lKLXlxcEQ2LTh4d2psTmVRbHNhbXZ5WnRwcmxGbG5EeWs0dHcwakV4YlZFajdsRmdpSklJT3pXdWY4cWF4NjRFLW9fQ2VaYzhkS1UteE5YQW9xSnl4dHhNeU5takgxTmhBakVNV2Jsd1NuZG5nYTRnWHEyOGpvT1o3VnY?oc=5",
+        "pubDate": "Thu, 28 Aug 2025 07:00:00 GMT",
         "category": "Chinese"
       }
     ],
     "Double Coin": [
       {
-        "title": "GRI Appoints New Regional Directors in Europe, South America - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9CWlhBdi1salVzYlhfQjNqMUFWNjhQUkJoODQzekttRnV1SjA2bDBUUGlsOWZXRzhfcVlYanQtMllNb1A0YmJUMEJ5MVFveHJ1WV9tUlgtX1p1WF9WYWo5bmF2VWw?oc=5",
-        "pubDate": "Wed, 24 May 2023 07:00:00 GMT",
+        "title": "Low Rolling Resistance Tire Market Size, Growth Forecasts 2034 - Global Market Insights Inc.",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQY3dGYS1lRUNsbmRlZ3otUUhlMlhkQjRsUGV6OWJ5cVVmNVlqZzF2N1F0YU5RUjJTUVFCMXZZQkFrTGdRWHRsSXdqSDVxa21WU3J0dG9aSlpzZTJsT09pUkxZSElJMTE5MHFpREtKY0had1AyMDFWMVh2eGFzXzRaVC01V3V0UQ?oc=5",
+        "pubDate": "Wed, 14 May 2025 13:24:55 GMT",
         "category": "Chinese"
       }
     ],
-    "Nankang Rubber": [
+    "MRF Tyres": [
       {
-        "title": "Safety warning: Illegal Nankang tyres in UK market - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOODc2Tkl6WWREM0k3UVZHLXZ5Rjl1RGZUTmZ0QUdOZVE5MGw0UWtNWHhYVU92YlhiaVB5WV9kSWp5SjZjeVBpSUpRV3VZWG5jbUJIbU9WVmxLVlNrZ2k1dXpGOXRIdnM5WUZfNHl1b0JPUDBiNTQxN0RBVWtMMHpOV1RCaDRvRVJpSk5NbA?oc=5",
-        "pubDate": "Thu, 11 Jul 2019 07:00:00 GMT",
-        "category": "Taiwanese"
-      }
-    ],
-    "Prometeon Tyre Group": [
-      {
-        "title": "Brit European extends Prometeon Tyre Group contract - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWDk1cjZRTXZDd29VclJBeWZ4aXFYZnZ0STVJbGhDTllCUjkxT1pTdHhITFVaYlB2UWw5SGtZWldpeC0xbmNKZ1l2QkFPY0l4dU5Gbm91OHdIUjdqOEtIN29WT2FlQlRuTVYzQ1Q3emRVcFh2ZFh6RUltRk5Eb28tYTlaamJVRmh1OUYtTmlkaw?oc=5",
-        "pubDate": "Fri, 15 Dec 2023 08:00:00 GMT",
-        "category": "Industrial/TBR"
-      }
-    ],
-    "CEAT": [
-      {
-        "title": "CEAT Establishes New UK Subsidiary CEAT International UK Limited - scanx.trade",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUmFZX3ZhNXUtWDZCR0RuR0NmaWVQZWJaRzd1NWtOalRpdVplaWlOX1pFSkNnRERYT0xaYVo1VkNoQzZ1VFlPQm5qeFlLSThVOFNDVk9hSGJtVGJaaDlrNW5MZFRvRVFjMHN5S2ltNXA4dVhuQ1pfenU5WUpFWWhlQTlVS2dxY3BQUklhWS04b19IYTJHSFRjZ19sbzI5b0pQTGJvRDExWDZ6LU5SNVJmQ3BjSFY2LThYbEE?oc=5",
-        "pubDate": "Mon, 12 Jan 2026 08:00:00 GMT",
+        "title": "Team MRF Tyres counts on top trio for early ERC celebrations - FIA European Rally Championship",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNd1M2SEhWZWN6S25ST29wSW9WUTBzUmNuR0dscWF2REtlc3F5VUpjaTc0b2dOazBuVHFxQXJUaXJBYUxrWEY3ZzVaalJMdzFKY3VKN1QzUDJ4LUlPbW80bVlYNjRaWkpJQ3VhR0FQZFB1QVNlelNLMkU4T3RFZUktaVNsVW9hMFA2QzllWkdHcFVsX1pQX1E?oc=5",
+        "pubDate": "Sat, 29 Aug 2026 20:53:47 GMT",
         "category": "Indian"
       }
     ]

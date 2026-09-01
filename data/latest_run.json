@@ -1,25 +1,34 @@
 {
-  "runAt": "2026-08-31T06:09:04.109133+00:00",
-  "totalNew": 2,
+  "runAt": "2026-09-01T06:18:05.963229+00:00",
+  "totalNew": 3,
   "entitiesChecked": 118,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "ReifenDirekt": [
+    "Premio": [
       {
-        "title": "Delticom AG: AGM approves dividend - TradingView",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdDJQUDRLanRrd2FMX3h5SDdtTmkweTlDQ2hBbFN0RGZlcWxENFA5SE1LdThkY0lVaGFsWElBNHhyS3NNQUlQa20tNHR3Z2dRcjgxazJuSmNCdFloNGw5RE9pT3pNWHVGUlhoYUI0TUVnZi1SRUV3Q1F4Tmx3cElDclljYnB6blY1d0ZheHZwZw?oc=5",
-        "pubDate": "Tue, 07 Jul 2026 07:00:00 GMT",
+        "title": "Marc Márquez explains Sprint aggressiveness in Aragon: \"The chance was into the first corner\" | Grand Prix - grandepremio.com",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaUJfY0hUaVY4QUJBYlZHYUlkMjBicEVMbGI2cTBaVXdNQnRLX3ZVVThYbzdvMDFqMHJWWU02N0w4STlYVjh3UTE5MWRjdXdlWWVsQUF6RDNsUHkxZmUtNjJTZ0E4bzQzc09xeUZ4eUp6TmdYUVNuY2dPS1NGaS1rTWtXQmFFQ0JnZmtnQWFPNzI4Tl8tNDhiTy1mb2RtLTd4Y3lkdjR2RjdJQTBIVzFxWXJFSzg3blBtZDQwV1dQUTA1VFdR?oc=5",
+        "pubDate": "Sat, 29 Aug 2026 14:16:55 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Vianor": [
+    "Emil Frey": [
       {
-        "title": "NRE0 Stock Price and Chart — FWB:NRE0 - TradingView",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1hUGJSTHJOb0NQb2hIYjJTZE9paGxLR1JTeGhrYzQ1bW5hUXlWUTRKTXZBc2ZyX3hkVnZDdlFvZ0xIUnhyMjFST1FTVXI2UG5RekQwVXBhYlQ?oc=5",
-        "pubDate": "Wed, 26 Jan 2022 08:00:00 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
+        "title": "Emil Frey Racing Switch To New Ferrari 296 GT3 - dailysportscar.com",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUlBBdzhKeVpIdjhIcVJoZTRHTDRCVHNhWmhFbUl2SXRYWnUyOUdkNXJpajVGd2EwWWllaXJEeVZ6RGoxMnVyREFUWDZQS3ZucFRCaGtiaEZ2QTU0enFiX2F5dXJ6NDFubllFTU9rOTFUNmdpbVQ4WWZYR21GdEVnam5zU0xYLXlXY1VDSnBnZWZhRi1GeW54eA?oc=5",
+        "pubDate": "Mon, 23 Jan 2023 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Speedy": [
+      {
+        "title": "Cervélo Caledonia Force AXS review: simplicity and smoothness combine to speedy effect, but there are better-value bikes - BikeRadar",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNVktQUJULW12RG1Rd3VEc1FBZWl4NjIwalBBZEs1TjB6OUtmcU05Y3MzYzhyX0dxT19lVWJXMEZoeEFhSVlDOUFqZ3lmd3A3Z05Va3lzcmV4b0ltX0hOWDNvVXZqLWt3QjFWa0hEWk9hblRLUDg0RU5oaGtqLTZzLWYzS08?oc=5",
+        "pubDate": "Mon, 31 Aug 2026 14:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
       }
     ]
   }
