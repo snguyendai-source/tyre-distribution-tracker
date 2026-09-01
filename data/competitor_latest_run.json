@@ -1,62 +1,62 @@
 {
-  "runAt": "2026-09-01T06:18:05.963229+00:00",
-  "totalNew": 7,
+  "runAt": "2026-09-01T13:36:21.194186+00:00",
+  "totalNew": 8,
   "entitiesChecked": 26,
-  "entitiesWithNews": 7,
+  "entitiesWithNews": 4,
   "newItemsByEntity": {
-    "Bridgestone": [
-      {
-        "title": "ERJ Sustainability Tracker - 2026 - European Rubber Journal",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZU02REJHZ19YN0ZSR1FtemRmNUJhc3NGbW8yaGg0LW1kR3JzaEVNdjBaUXk5bDJQNEFjRUppcndxMTJTSGlqenNxMVFKczQ1TXB2dWVHU0E2eFV0REFuTnhZMFRJbmFzY1ZTelZSN0FGWGRid0NvUlliNU5MaGhzQXZjLVBmNUJkQV9yTlNfYVppd08tV1Vv?oc=5",
-        "pubDate": "Wed, 26 Aug 2026 07:00:00 GMT",
-        "category": "Premium global"
-      }
-    ],
-    "Pirelli": [
-      {
-        "title": "Italy's Pirelli leads tyre-to-tyre circularity project in Europe - ALCHEMPro",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZG5hZG94enk3UjEzS0M4Q1RsaUxiaW1LWUJvbzhnNlNBN1VLZlQxQTVqbFp1cUdZN0tYYXNZNkctVGFiR0I1X1kwd0gtQlZOcUNCNG1fYXhqd0ZEUmpSSG96WW9xMFFubEFCRHYycXpNbzNMOW1kSC1pUU44ckRVSnBET1pPSHotOHg3c3U0ZnlpT2d0ZHBHcVBsUXJUVVJoYnhoc2g2Ti1Oc1Z0MDBDZURfbXZETnJiUzhTbVk0UXFFSHp3enRxQXpyUElJdw?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
-        "category": "Premium global"
-      }
-    ],
     "Nexen Tire": [
       {
-        "title": "Nexen Tire to supply original equipment tires to 2 BYD models - The Korea Times",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSTlKOHhJMklBb2JWelNpWXBLMVloeDJlRjQycVJoSlpPblB5UXdvampaUzZ6am5YTjl1V01Ra1dwZGRhSnNoU0UyOExZeE8tYnZibGZIa3lLSkpPVW5GXzdXcXhhLTRHRmxTQTJvWnVqMjdiQlpJeldpVm5Hci1QTjNRSF82Y2NMZlBzaXhvQXVURWRiNlVKU2toMkl3bDlqN2JGdUtWcGtGZGNlUFp1WDVzUU4xMjhOUEHSAb8BQVVfeXFMTTJxa3UxNUJGVUJmZWctOEZLLUZIYjB5WkZCVHBWZk1jdURhSUJ2OGhWNW9qbmM2cFhTcEdFTjdpQ1lSRlJxWnp5Mmk2UVZpMmdRdHVjbWJGcGlZTkJIY0lteF8xY19sbG9LWHlJY0hkR3JWVVVtcjduaExCX2t1UVdSc3NmOUtLZkh1bURGcGUtVVBMc1ZQN1BaWUJRS0EyOFpTcHlxMXBLdTNRQUN5bnRwOHY1S0FwWHdXZVJBdFE?oc=5",
+        "title": "Nexen Tire wins first OE supply contract with BYD EVs - Automotive World",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOb2Z2bnFtLUhIS3lTSXdTWmpzclA3d3Q2WnVndFVlR28tV3FLOG9KVlA3ZEVGTWtTN3ZoSHRPVnc2bXR1bW9FdGZNdlpIMkFLaHc0cEVsWGs1S3BtT0VsQkx3c1NKcXUxNkQzeDJ3OHdUZWhlZ2V4MmxucnpGbUVKUnJSMFZicVBYOWRsUUVwTFNMaDJ2Y2c?oc=5",
         "pubDate": "Mon, 22 Jun 2026 07:00:00 GMT",
         "category": "Korean"
       }
     ],
     "Toyo Tires": [
       {
-        "title": "Toyo’s M177+ long-haul steer tire builds on M177 legacy - Rubber News",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBZdUZmb0RfdnZQZmtxUnJLdXk5ZUE4OURydnpXSjRtNE1OR0szWkJJcHdQQnVoN3k0YnZsc29VcTg4SzYwQjRHR0lVbkRaWnB5RmoxenBWRGhrZmU0M2VTRUNHdV9mRVZNU19RWlpQMVN0VmNa?oc=5",
-        "pubDate": "Wed, 03 Dec 2025 08:00:00 GMT",
+        "title": "Toyo Tires reports record figures amidst ongoing decline in Europe - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPY0U3T0E5M3JsRGxjWTJzdkJVS29fTWlzYUc0TUd5UVRXWlFzYlV3ei12c1ZZcUdXX0FET3hQUWhhMlFWTExIb3B3Si1LVHVXWDB4bnlRdU9KeXNlaWlsZVNSdHdwaVlwVlI5TTdBMjJmZ0VwSXVSUVZYRU8yeU9VcGpiNGJJYmQtb21IbWJ6NXg0bndyZEZiV1ZkUmd3eHVwY0FV?oc=5",
+        "pubDate": "Tue, 18 Feb 2025 08:00:00 GMT",
+        "category": "Japanese"
+      },
+      {
+        "title": "Toyo Tire moving east – job cuts in Western, Southern Europe - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOOV9mNW5RbkVOMWpjeXdBUzVTZUNNSExWN2g2enF6OUJqT3Q2Y2dQT3lHTFhyLTZiVm1pbmRkVUlrdHJsT2RIZkNmdlFZZVlWcGRIOU1SX1dBb1hpYWdaTnFxQmJPTzVJbjJScWM0QXhvRXpYdTZCNHZKaEdGQmppQ2pCRVN3cllFa1BtOV9rWkhmeXp3WFhj?oc=5",
+        "pubDate": "Thu, 28 Nov 2024 08:00:00 GMT",
+        "category": "Japanese"
+      },
+      {
+        "title": "Serbia confirms support for Toyo Tires - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE96VGhEa2NrSWUzWE53WHNBYVhfUXlQOWh0SHlINkpQR2s4UldnZ2hUYkVUUkNCNFpaRmpSY3JTeGVxTHpPSW5IOEREQ01na1FQd2N6UG1aN3lma0lIbDBVNkk5ekJFVFVpdk9zTG5YVmxXVzR3MEhDX0ZtVnJqUQ?oc=5",
+        "pubDate": "Fri, 17 Jan 2025 08:00:00 GMT",
+        "category": "Japanese"
+      },
+      {
+        "title": "Wider remit for Toyo Tires’ Hirao - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9TSTFacm55WEluUmhrUW1wYXYtc0RXdHFXcVJ6dzhfSGhNV3pWVXpSZDJGbE5HUnAtQWRZdE5YUFFhSjJtNEhLTXFNSVNMM09kNHFpN0gzQm9SRENyZGJPOUlBeWtLMWRFeUVtcFlWZDZJS0xEYnc?oc=5",
+        "pubDate": "Tue, 03 Jan 2023 08:00:00 GMT",
+        "category": "Japanese"
+      },
+      {
+        "title": "Toyo Tires restructures European operation ahead of plant opening - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQc3hqUUZYS3RuenRjT1IzbGJESGI2c3FRVkp3YjhROGZMbWY5OGpIMlNGNkZOLXQ4NVRkYVhXbmZhYWJ3Nm9XZ0cxMTFoWTBsRWxYX0xWZFd1V2gyN1NrR3hnczk1VmVmZWdjMThTU1dpUWU0UmY3cVBZdjhjcU1jUUxIaDBQRXdxcE9lNEUzSmdvSXZ3cXFwNzg4VmZZLWlLamc?oc=5",
+        "pubDate": "Mon, 30 May 2022 07:00:00 GMT",
         "category": "Japanese"
       }
     ],
-    "Sailun Tire": [
+    "Nokian Tyres": [
       {
-        "title": "Sailun rolls out new all-weather tire - Rubber News",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQN2l1d0dPYUMwOEFWN2lKLXlxcEQ2LTh4d2psTmVRbHNhbXZ5WnRwcmxGbG5EeWs0dHcwakV4YlZFajdsRmdpSklJT3pXdWY4cWF4NjRFLW9fQ2VaYzhkS1UteE5YQW9xSnl4dHhNeU5takgxTmhBakVNV2Jsd1NuZG5nYTRnWHEyOGpvT1o3VnY?oc=5",
-        "pubDate": "Thu, 28 Aug 2025 07:00:00 GMT",
-        "category": "Chinese"
+        "title": "The Ukraine War Changed This Company Forever (Published 2023) - The New York Times",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNk5qTW1qV3I0cXB4MzM0cnZfb0lBV1FBTmxSOU5ldmllQUhGclA0OVhVdlh1RDN2Z3ZMOUJ1UjdlWDhaSUx6V2pqTzVGSmFpaU1Pc0lQNEkydEpFNk11WWdzMUZ3dTR6OGV1OWZqUkdrVS12UkhtUFBhT3lNNjdOa0NSOUlEeHU1VHNJVW93?oc=5",
+        "pubDate": "Wed, 05 Jul 2023 07:00:00 GMT",
+        "category": "Nordic"
       }
     ],
-    "Double Coin": [
+    "JK Tyre": [
       {
-        "title": "Low Rolling Resistance Tire Market Size, Growth Forecasts 2034 - Global Market Insights Inc.",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQY3dGYS1lRUNsbmRlZ3otUUhlMlhkQjRsUGV6OWJ5cVVmNVlqZzF2N1F0YU5RUjJTUVFCMXZZQkFrTGdRWHRsSXdqSDVxa21WU3J0dG9aSlpzZTJsT09pUkxZSElJMTE5MHFpREtKY0had1AyMDFWMVh2eGFzXzRaVC01V3V0UQ?oc=5",
-        "pubDate": "Wed, 14 May 2025 13:24:55 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "MRF Tyres": [
-      {
-        "title": "Team MRF Tyres counts on top trio for early ERC celebrations - FIA European Rally Championship",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNd1M2SEhWZWN6S25ST29wSW9WUTBzUmNuR0dscWF2REtlc3F5VUpjaTc0b2dOazBuVHFxQXJUaXJBYUxrWEY3ZzVaalJMdzFKY3VKN1QzUDJ4LUlPbW80bVlYNjRaWkpJQ3VhR0FQZFB1QVNlelNLMkU4T3RFZUktaVNsVW9hMFA2QzllWkdHcFVsX1pQX1E?oc=5",
-        "pubDate": "Sat, 29 Aug 2026 20:53:47 GMT",
+        "title": "JK Tyre signs 11-year-old karting sensation Atiqa Mir - The New Indian Express",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbmw5OHhvbEZ5OEVtTkw3bEZMUGlUTkRLMmxFaUF1S2NISmV5OVF2OGJKM0ZhcWNWNGtGZ3FSdnJuSmpySGk0M2tYYU52azI3dFlaR2FYNVEzLWZlaVM5aVphQVVtY0FGWVlJZ3FRbUZZU3MxZEVmdHdRSHBpSnZWZVhQQWNFckctZndSQld4MDJSbzNMWGxCWUhDWGpSMFBlNHRqdlJXNUMzMlo3QzhTa3lR0gG_AUFVX3lxTE5CcFUtaU1fMkN6NjZVN2Y0VEhFWHBHbFRkZDlJUl8tMnlmWkthTWV3X2FVTXZDdHBhS0phQnQtcElRUHE0ejN2TWcydGU1cmxCUUNUQXdINGdodjdEMG5PUml3UHZKd3Vnd2tQVmhvWnJIVElsMGh1Nk5NWDZDb29TZnE1OTNhM2pmZjAwZmt1eGJHYlNKR2hKQkVXNmFjQUVaNTJweUhBaHVmZzZLT2t1LVpUZnZUeWdlOFRYaFhV?oc=5",
+        "pubDate": "Thu, 27 Aug 2026 16:01:44 GMT",
         "category": "Indian"
       }
     ]

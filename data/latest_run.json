@@ -1,23 +1,21 @@
 {
-  "runAt": "2026-09-01T06:18:05.963229+00:00",
-  "totalNew": 3,
+  "runAt": "2026-09-01T13:36:21.194186+00:00",
+  "totalNew": 5,
   "entitiesChecked": 118,
-  "entitiesWithNews": 3,
+  "entitiesWithNews": 4,
   "newItemsByEntity": {
-    "Premio": [
-      {
-        "title": "Marc Márquez explains Sprint aggressiveness in Aragon: \"The chance was into the first corner\" | Grand Prix - grandepremio.com",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaUJfY0hUaVY4QUJBYlZHYUlkMjBicEVMbGI2cTBaVXdNQnRLX3ZVVThYbzdvMDFqMHJWWU02N0w4STlYVjh3UTE5MWRjdXdlWWVsQUF6RDNsUHkxZmUtNjJTZ0E4bzQzc09xeUZ4eUp6TmdYUVNuY2dPS1NGaS1rTWtXQmFFQ0JnZmtnQWFPNzI4Tl8tNDhiTy1mb2RtLTd4Y3lkdjR2RjdJQTBIVzFxWXJFSzg3blBtZDQwV1dQUTA1VFdR?oc=5",
-        "pubDate": "Sat, 29 Aug 2026 14:16:55 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
     "Emil Frey": [
       {
-        "title": "Emil Frey Racing Switch To New Ferrari 296 GT3 - dailysportscar.com",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUlBBdzhKeVpIdjhIcVJoZTRHTDRCVHNhWmhFbUl2SXRYWnUyOUdkNXJpajVGd2EwWWllaXJEeVZ6RGoxMnVyREFUWDZQS3ZucFRCaGtiaEZ2QTU0enFiX2F5dXJ6NDFubllFTU9rOTFUNmdpbVQ4WWZYR21GdEVnam5zU0xYLXlXY1VDSnBnZWZhRi1GeW54eA?oc=5",
-        "pubDate": "Mon, 23 Jan 2023 08:00:00 GMT",
+        "title": "Emil Frey Focuses Test Program on Learning Pirelli Tires - Sportscar365",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQem1MNXlMRWpKUGp1WHBMVThiWmxLUGl1NzdOeUxZXzMwSjJKcm1ydHZEUFRQSV8zUXFFd3BuSk8yWDN1U2V5RWxzYkxIQzc1cFdPYkVFU1diY1gyb0tsMHBkXzhwd2ktajVOZFVYelprdWxCR1FVZ0NaSlBlZmlDTEdMbFdNcVE1THlmREZZMmh3bEYtZlBPbmxFNkJCNWVua0dYSTE1aFpGVkFDR3c?oc=5",
+        "pubDate": "Wed, 18 Mar 2020 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Emil Frey Locks Out Front Row For Race 2 - dailysportscar.com",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMWo5S1BGM1Q3amFjbGxFSkpIZlZ2TW5tZnlUX0JScUMzbFlUNFNDT0xsVkhxWklETmNKaTk1S2tkeWFSRDY5UUVNTDhkbUdhNE10dDdSVmhYR09XRmtLSnhMMnpoZzFsYW14Zjg2OHg0dmoweFN5bUtHaEFuZ1ZKd0lZWXZEaXZJS0dqRVNTY1Q?oc=5",
+        "pubDate": "Sun, 18 May 2025 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
@@ -25,8 +23,26 @@
     "Speedy": [
       {
         "title": "Cervélo Caledonia Force AXS review: simplicity and smoothness combine to speedy effect, but there are better-value bikes - BikeRadar",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNVktQUJULW12RG1Rd3VEc1FBZWl4NjIwalBBZEs1TjB6OUtmcU05Y3MzYzhyX0dxT19lVWJXMEZoeEFhSVlDOUFqZ3lmd3A3Z05Va3lzcmV4b0ltX0hOWDNvVXZqLWt3QjFWa0hEWk9hblRLUDg0RU5oaGtqLTZzLWYzS08?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYVdfbnJQdTlUZGYzOEdROVB1cGY5V3pRMzNQQXVwU1BjdG5ibkZLelBVR05DZXNIUTZTYnB1WHBwbTNDWUV4SUV0ejFCYUpSaEZFLVJMZ2FXMWdfVjdYNTJnQlhCQm1EQU5DdEF3VlBmX0hvVGdUM2xyNFZ4cUJ0VUUtVWM4ZzY2S0g3Z3p0bVE?oc=5",
         "pubDate": "Mon, 31 Aug 2026 14:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
+    "Feu Vert": [
+      {
+        "title": "Manifesto: Bring Spare Tires Back (Even If Temporary Ones) – or Give Us Airless Tires - autoevolution",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVnNxck5SaXBJZ19XN1dOcXJGeUpUd1BRNU9hRkU2YUc0QWZKTVh4eHJmR1hXN0tDdTg4ckhSS3BYSEdVZVFDVjdwSzlnVEUwNkIwbThfeVYyUENnMVJta0RDS1hUUEV1QVpneWQ3SVlxODl3TUpmNTZDdWhGVko5VFl5bHhIaWtDc1JfM2NnZVJuTEYtMl9aVjVRQ0lvUXlKcTBGa3YybGJyeDF5ZVhGN3RoUWtOcDdWdnlrbXl1bnFnWDllb1E?oc=5",
+        "pubDate": "Sun, 31 Jul 2022 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
+    "Allopneus": [
+      {
+        "title": "Michelin reaches Infinicoil settlement agreement with Continental - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNLVdtaFRvS0FaTmtYRWRBWWtObTNwRXhjLVQzemw0TVVjSHctZGhHbnBpajNGci01NG5Ra3hFdDI2ZmszbWVzYkRoRm1aMkxfX21wT2psS2lVOFlJVGFxUFplbTJybl9CcVJoTWdpX0lhSEVUVC1wQXU3Y25pMldjeE9DQnUyOHhoaDdCOTIxY2U0REFETGFZc0Jnd3NtdTNwc0E?oc=5",
+        "pubDate": "Wed, 10 Jul 2024 07:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
