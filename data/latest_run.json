@@ -1,50 +1,84 @@
 {
-  "runAt": "2026-09-01T13:36:21.194186+00:00",
-  "totalNew": 5,
+  "runAt": "2026-09-02T06:23:00.748950+00:00",
+  "totalNew": 9,
   "entitiesChecked": 118,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 7,
   "newItemsByEntity": {
-    "Emil Frey": [
+    "Premio": [
       {
-        "title": "Emil Frey Focuses Test Program on Learning Pirelli Tires - Sportscar365",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQem1MNXlMRWpKUGp1WHBMVThiWmxLUGl1NzdOeUxZXzMwSjJKcm1ydHZEUFRQSV8zUXFFd3BuSk8yWDN1U2V5RWxzYkxIQzc1cFdPYkVFU1diY1gyb0tsMHBkXzhwd2ktajVOZFVYelprdWxCR1FVZ0NaSlBlZmlDTEdMbFdNcVE1THlmREZZMmh3bEYtZlBPbmxFNkJCNWVua0dYSTE1aFpGVkFDR3c?oc=5",
-        "pubDate": "Wed, 18 Mar 2020 07:00:00 GMT",
+        "title": "Pirelli mirrors F1 and introduces color-coded tires for MotoGP testing in Aragon - grandepremio.com",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOekRLdzhhYnY3WXRVT2pZWXhieEZXS01BVVhKUl9ob0NmaVFTMFhnOFhuNzZHRU90dEJaSHBIYTV0OWIxdWJ4dy12WUZlRlNRR3p4dGxjYnNwQjB6NHpUVDdFeUlEdF9ocHlueEM5WXVQMk83V3QxNHZRdDRJdHRjOFJwLVB5Smw5QVZhdUlPZHgxWDI1WWxMMVAybjhuWlBJdkZ4d2RKaVZnd09WUUNRZTliaXdQbE0?oc=5",
+        "pubDate": "Fri, 28 Aug 2026 14:59:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       },
       {
-        "title": "Emil Frey Locks Out Front Row For Race 2 - dailysportscar.com",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMWo5S1BGM1Q3amFjbGxFSkpIZlZ2TW5tZnlUX0JScUMzbFlUNFNDT0xsVkhxWklETmNKaTk1S2tkeWFSRDY5UUVNTDhkbUdhNE10dDdSVmhYR09XRmtLSnhMMnpoZzFsYW14Zjg2OHg0dmoweFN5bUtHaEFuZ1ZKd0lZWXZEaXZJS0dqRVNTY1Q?oc=5",
-        "pubDate": "Sun, 18 May 2025 07:00:00 GMT",
+        "title": "FP2: Verstappen leads Leclerc and Antonelli during second practice in Mexico - Formula 1",
+        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxONElVVEdpYWNtVDdweHN2Mk9pNmNzdV9rMjJ5akhfNG5ZWk5BUl9RM2d6bHpGUjhLOTdmMTR1eUF6SmViT3JVOGRaR2tka0tWWG9lMkdhUWNTUS1NdFJRb1hocDRncnZhOC1zS2gta2dYbWNuWHBYd2VUckFoQ3dLaHhiYkp1aldXTk13OEpoZFhVVGlZZ3dKVGtoVGlPYWtfRWZnM1NGdV9TRHl3NlZrNmk2QkRabG9NenhGRHZJbnJNLWRtSFdtc3JjYnhfanNqNElsRWMyV3U?oc=5",
+        "pubDate": "Fri, 24 Oct 2025 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Speedy": [
+    "Emil Frey": [
       {
-        "title": "Cervélo Caledonia Force AXS review: simplicity and smoothness combine to speedy effect, but there are better-value bikes - BikeRadar",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYVdfbnJQdTlUZGYzOEdROVB1cGY5V3pRMzNQQXVwU1BjdG5ibkZLelBVR05DZXNIUTZTYnB1WHBwbTNDWUV4SUV0ejFCYUpSaEZFLVJMZ2FXMWdfVjdYNTJnQlhCQm1EQU5DdEF3VlBmX0hvVGdUM2xyNFZ4cUJ0VUUtVWM4ZzY2S0g3Z3p0bVE?oc=5",
-        "pubDate": "Mon, 31 Aug 2026 14:00:00 GMT",
+        "title": "EMIL FREY LEXUS RACING PREPARES FOR SECOND BLANCPAIN GT SERIES ROUND - newsroom.lexus.eu",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPM1oybzBLVGRmQThTSGJRaEtYQmFXRVh6N3hfb0FuY2lyaXJwUzJ6bWNsdHJrWUtoT3VES280Vm1CNVBXNWJoWFY2WjB6Yjl5Q0d0Y0UyYWZEMEVHZ2d3b295UURiZXJBUnpLbThGWVdBdEJVY3gxWHZVbW1hZGRzVG0xS3dzRl9qU040UkxWd1JOeTBZMEkzM1hrQQ?oc=5",
+        "pubDate": "Fri, 13 Apr 2018 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Roady": [
+      {
+        "title": "Roush will make your Ford F-Series even more off-roady with a ‘Super Duty’ kit - Top Gear",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUVpoVDQ0ZEZiZ3hyNVY1Ykxoakc0alpGX211ZThpU1Bkd0NoRHdOVjlDUUpidkFzcm1nTGE3a0ZxWFg3bmp0a05qa25neDlpWGxfa3ZwaXdyakVteW1GQ3JFYkpzbU5NWkpmU0s2T3ozUHUyTmRlZzlMLUtuUnJya1B3anFvX1lTZ1o1eUZUWE1ndk5uUDIxem5KQjBkNV8xWDMwamxzRkxrQlp1aXc?oc=5",
+        "pubDate": "Wed, 24 Jan 2024 08:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      },
+      {
+        "title": "Suzuki V-Strom SX: Why it's brilliant for a first-time ADV buyer - The Times of India",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOakxtb3pDNXNSS2dMNTJEUTduVkRaSVFZWDZ5ZFM3UDBjZ01HTU9tb1dBRldrMEx3a2lPc0lldWxCTlZybndBcy1WcUdaVV9OMExvX2JLcGJsa2Q5VUN1NzY0UmY4WG1keDUyRXJmaUNwd1pQNEU4TDh3ZmU4cThiWjFlRTZsd0hGaE5qcVQwbFB2N1drX0tsVXZxTnJNX1A2bzN4SXEwV0J1U19UVnM5XzhPQjZaTmhPaHM3c01UdGpiRXJLVVBrdWNPelBJa211TEE?oc=5",
+        "pubDate": "Tue, 20 Sep 2022 07:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "Feu Vert": [
+    "Kwik Fit": [
       {
-        "title": "Manifesto: Bring Spare Tires Back (Even If Temporary Ones) – or Give Us Airless Tires - autoevolution",
-        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVnNxck5SaXBJZ19XN1dOcXJGeUpUd1BRNU9hRkU2YUc0QWZKTVh4eHJmR1hXN0tDdTg4ckhSS3BYSEdVZVFDVjdwSzlnVEUwNkIwbThfeVYyUENnMVJta0RDS1hUUEV1QVpneWQ3SVlxODl3TUpmNTZDdWhGVko5VFl5bHhIaWtDc1JfM2NnZVJuTEYtMl9aVjVRQ0lvUXlKcTBGa3YybGJyeDF5ZVhGN3RoUWtOcDdWdnlrbXl1bnFnWDllb1E?oc=5",
-        "pubDate": "Sun, 31 Jul 2022 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
+        "title": "VWFS and Kwik Fit Fleet agree tyre partnership - brokernews.co.uk",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE11RUE4SXl0NGlrdkkyUjM3YlhHNGhMTTlfcmg1b1d1bGpia2lVNnIzdDNBY3NIZVdiZThLeWsyQUh6Rkhld3VHWU9mQTdTTFgzMS0tbU1obzNBMTJKQjI2N3I3RXloc09SUmV0MlB6OTdJLWp2VzZ5NmJDeEs?oc=5",
+        "pubDate": "Mon, 08 Jun 2026 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ],
-    "Allopneus": [
+    "HiQ Tyres": [
       {
-        "title": "Michelin reaches Infinicoil settlement agreement with Continental - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNLVdtaFRvS0FaTmtYRWRBWWtObTNwRXhjLVQzemw0TVVjSHctZGhHbnBpajNGci01NG5Ra3hFdDI2ZmszbWVzYkRoRm1aMkxfX21wT2psS2lVOFlJVGFxUFplbTJybl9CcVJoTWdpX0lhSEVUVC1wQXU3Y25pMldjeE9DQnUyOHhoaDdCOTIxY2U0REFETGFZc0Jnd3NtdTNwc0E?oc=5",
-        "pubDate": "Wed, 10 Jul 2024 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
+        "title": "HiQ expands with Richard Hardie Group partnership - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeFNJX3FZemo2RUltTXZZWkRzTGdmRE9xLTZhN0Zib2ZJdFdrdFlKUlMxZG5VZkdnTVdRckpNWm9oWko4eGZIUkRCaU1Ob2ZqUVpKenpicU5nd2llR09EdzRYZ1N6VnJUUEFSdUg2LUpJNkxjbGtrakFJX3k1eXpDckNFNWthLVJnWHduNg?oc=5",
+        "pubDate": "Tue, 11 Mar 2025 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Blackcircles": [
+      {
+        "title": "Blackcircles Launches in South Africa - Tire Review Magazine",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Qa25VMDFMekEwcUdWX1p1MHdzaHdVM3VScERXXzRwQUhmWTZfSFUwa21vbnNsNkIzMnBuMWV0dUpweUVxZG84TkR5OS03dnk3aVRnb1djZVV0R182aHEwbFN6ZmQ1MFpsUWoybzdTbzBXbnh2bnpRamdnSGV1UQ?oc=5",
+        "pubDate": "Wed, 02 Feb 2022 08:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Vianor": [
+      {
+        "title": "Nokian Tyres: Changes in operational structure and management team - Automotive World",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPd3B1UTN6N1lHU3dWdmc2NDhBV3ZvbnAtWENHb3lmdy16bk5lM3BhZFA5THBQNVY1ZzRlTHpUUEx4YnN3OVJaNGxTN2pNeU9RT2ZMcGh5aGdmbm4tZGVLOERqNGl3Yi1iOWlDcHdOV0F0T1BrcE5mZTdCbVFqUXgtSW5lTTNUR3ZHTWtv?oc=5",
+        "pubDate": "Tue, 20 Oct 2015 07:00:00 GMT",
+        "country": "Hungary",
+        "cluster": "South-East"
       }
     ]
   }
