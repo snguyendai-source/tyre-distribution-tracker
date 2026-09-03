@@ -1,82 +1,224 @@
 {
-  "runAt": "2026-09-02T06:23:00.748950+00:00",
-  "totalNew": 9,
+  "runAt": "2026-09-03T06:19:12.366295+00:00",
+  "totalNew": 27,
   "entitiesChecked": 118,
-  "entitiesWithNews": 7,
+  "entitiesWithNews": 15,
   "newItemsByEntity": {
     "Premio": [
       {
-        "title": "Pirelli mirrors F1 and introduces color-coded tires for MotoGP testing in Aragon - grandepremio.com",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOekRLdzhhYnY3WXRVT2pZWXhieEZXS01BVVhKUl9ob0NmaVFTMFhnOFhuNzZHRU90dEJaSHBIYTV0OWIxdWJ4dy12WUZlRlNRR3p4dGxjYnNwQjB6NHpUVDdFeUlEdF9ocHlueEM5WXVQMk83V3QxNHZRdDRJdHRjOFJwLVB5Smw5QVZhdUlPZHgxWDI1WWxMMVAybjhuWlBJdkZ4d2RKaVZnd09WUUNRZTliaXdQbE0?oc=5",
-        "pubDate": "Fri, 28 Aug 2026 14:59:00 GMT",
+        "title": "Pirelli headlines Italian Grand Prix weekend at Monza - Newsroom Pirelli",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZU1XYXBnVHQzdnpUVFdkTGFrSDFOTFROUEU0RTZGMUozbVNFZ2E2WnhhVGlGT2F4Tm40LWdZYzEwZXFFU3pMOXBQN2RtTFVaSHVyOEJOMUtsNjNtR05adWhFUUt6aWlhV3FfSWVpVFdJSjlvN1RUQnRnUXZNY2lkQnlKS1Vabkk?oc=5",
+        "pubDate": "Tue, 01 Sep 2026 12:36:31 GMT",
         "country": "Germany",
         "cluster": "Central"
       },
       {
-        "title": "FP2: Verstappen leads Leclerc and Antonelli during second practice in Mexico - Formula 1",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxONElVVEdpYWNtVDdweHN2Mk9pNmNzdV9rMjJ5akhfNG5ZWk5BUl9RM2d6bHpGUjhLOTdmMTR1eUF6SmViT3JVOGRaR2tka0tWWG9lMkdhUWNTUS1NdFJRb1hocDRncnZhOC1zS2gta2dYbWNuWHBYd2VUckFoQ3dLaHhiYkp1aldXTk13OEpoZFhVVGlZZ3dKVGtoVGlPYWtfRWZnM1NGdV9TRHl3NlZrNmk2QkRabG9NenhGRHZJbnJNLWRtSFdtc3JjYnhfanNqNElsRWMyV3U?oc=5",
+        "title": "Norris leads Hamilton in FP3 ahead of Mexico City GP - Formula 1",
+        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRFFIX0Z1ejVZeGpTYjJwOWNQSF9KZU9GQjd4ZHA2QlFIZm01RUNsdmVHWXdfWS1QS2VMTDVrcEQ3ZmZWVHZhbm1xMXphUXJMenVnS2Q3Q3JjdUF6bWlCM1REdW1rRGUxb3JKRUF1clRvRFdJRWxCektnLXRDSnVJdmV4TW96OFJEQktlWjNMbks0UE9GOHd4Qi1zbDl2dFppWlZNZmdxbnpKbXROeWpvNFIzTG9Tdmw1dzZhZUYwLWhienNtYUVDQlU0LXViZkJpbm8xUVJkUGk?oc=5",
+        "pubDate": "Sat, 25 Oct 2025 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Formula 1 News: 2025 Mexico City GP Preview - AutoRacing1.com",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMDhDY1BxdkJCSXdNQ2tFZ2RNNzJSUGtkeXZlZURtU3ZhVGgxNUd4Y3F3bHNzMTc3QVBwNGkxdzRoRlEwQkhVbEY0NHZUY1I2Yl9UZUZ5SVRTM1A1LTJNZnB6LVpPT2E3bHNZcmpTMGg5amFFNUxnUzlQSHpLbml6aGt5T1Q3VGE5?oc=5",
+        "pubDate": "Tue, 21 Oct 2025 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Leclerc heads Antonelli in FP1 for Mexico City GP - Formula 1",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQLVNTaXZlOGxhNkVna1NHRDVBdEtQM0NFVDVoUEpEUDNJcHk2R083OVdlYkNQV1VKbVcxQTNpbzhTUTF3dUxVRmdITTNZUmFzTEMzWVhNUWhSdzRzcGpCWHBWRDJ6ZkxZTFU2cUhiTUQ5SWZyM01QN2xDUWlrbUJpY1pHVzRaR3RqaXRxbHlNTnhwUXhCTzNiV1pRRXQxZExWNmlxcW9zWmhRcS1nMHdiNHFvTzExeGY2OEZGbkRXbTBlandLYkZtdGF3Smd1LXhObmdaTV9n?oc=5",
         "pubDate": "Fri, 24 Oct 2025 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Euromaster Germany": [
+      {
+        "title": "Full service from a single source: Euromaster and FMS pool expertise for reduced downtimes - PROFI Werkstatt",
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVzFER0xlcGd5a1F0MmxUT2RmWXFkd0NkVTJuNm5BdGVlakswMkRFMHhYZHo1bTNLZTMtTFd6NmczbC1DTUVGZHFoQ1VHLXpzMDA5SGhkd0FsdlpfZzVSaTFCQ21CNV9XVXlpa2dCQWJtTkFVN2lDRVRaREJPQjB5N3d3WDdPN3ZvWFdpN1dzS3p4T2s0VklPTlkwbHNib0R5ejlsMzZEeG1rZEN1RTlDTHFWRi1vUlJZNHRteWNlVFhUNzFLeGZWSXln?oc=5",
+        "pubDate": "Tue, 11 Aug 2026 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
     "Emil Frey": [
       {
-        "title": "EMIL FREY LEXUS RACING PREPARES FOR SECOND BLANCPAIN GT SERIES ROUND - newsroom.lexus.eu",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPM1oybzBLVGRmQThTSGJRaEtYQmFXRVh6N3hfb0FuY2lyaXJwUzJ6bWNsdHJrWUtoT3VES280Vm1CNVBXNWJoWFY2WjB6Yjl5Q0d0Y0UyYWZEMEVHZ2d3b295UURiZXJBUnpLbThGWVdBdEJVY3gxWHZVbW1hZGRzVG0xS3dzRl9qU040UkxWd1JOeTBZMEkzM1hrQQ?oc=5",
-        "pubDate": "Fri, 13 Apr 2018 07:00:00 GMT",
+        "title": "Matteo Cairoli Joins Emil Frey Racing For Ferrari DTM Campaign - dailysportscar.com",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTGFZNDU0SnpkS0JTbzBtTHlFUGJjYTNuNVYxMnU4Zl9PcWhoZENfajhCMjZqZnMzRnhrWTN4THBjckV5dHVTbnpIc20zSXFsWXl2MjFtczdjNjVyckxaOTZ1aG1zVFZGRnNiLWZpV0xhN2xHSlFnZEVRd2Q1M1VtTm1FUnVzak95ai1vbDNiejlYQW1PVzFXb0J4eGdkTUJVTk9hREw5amRNZ01Ecmc?oc=5",
+        "pubDate": "Mon, 02 Mar 2026 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Aitken Confirms Departure from DTM, Emil Frey Racing - Sportscar365",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYnBPa1prZmRTZkZ0VDVxamwycUlfbXNkRy1kOFcxTWItUXVTd0cyYURwTWVKaC1ka21nc29aUFZjZ0dvUkhlTF9DUklTMzFkRU5nRktob1JpUDFWY0dLZjdqenA0alBPVVBBNWt5N3F3TEVMNHEtdjdwUTFjVks4WWRQYng1RDFaVlp1WU5LZUFSVDY4Z2RRZTl3?oc=5",
+        "pubDate": "Thu, 18 Dec 2025 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "EMIL FREY LEXUS RACING´S HIGHLIGHTS OF THE YEAR 2018 - Lexus Europe Newsroom",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSG5EYmhUUFczdE83bS1HdG94TV9vZnpMVFQxZk9rT3NiRHBvUE1GRTJQR3lVTlpBRE5NMWVUbVp6Vzg0NVRCa2FUME5maFNiMTMyWjBkdDZEYnhOSmY1YjA0U3VCWkJNLS1PeGljenNnWUx1N0FabllMNHprZkQzX3RPX3A?oc=5",
+        "pubDate": "Fri, 26 Oct 2018 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Preining Leads Porsche Sweep in Oschersleben Practice - Kursiv Media Узбекистан",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbVZhTGlfZ3VFT0lKdWlXQ1g5a1pYaEhJRTl4ZDlEUzFRMElLYndfWHJaY2FtNFRNNElIRzFIVGtwQzgteW5la1VISExYc1ZHZEdIZnVzLWthNDdrM0Q1MXlwUWtyc0dIemRrVXFIT1otaEFiaU1hdW43VFZtQXBoS0d3WHhWc0s3UkoxWUh4ckNJZ05yeVNaNWtkVnU?oc=5",
+        "pubDate": "Sat, 25 Jul 2026 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Roady": [
+    "Speedy": [
       {
-        "title": "Roush will make your Ford F-Series even more off-roady with a ‘Super Duty’ kit - Top Gear",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUVpoVDQ0ZEZiZ3hyNVY1Ykxoakc0alpGX211ZThpU1Bkd0NoRHdOVjlDUUpidkFzcm1nTGE3a0ZxWFg3bmp0a05qa25neDlpWGxfa3ZwaXdyakVteW1GQ3JFYkpzbU5NWkpmU0s2T3ozUHUyTmRlZzlMLUtuUnJya1B3anFvX1lTZ1o1eUZUWE1ndk5uUDIxem5KQjBkNV8xWDMwamxzRkxrQlp1aXc?oc=5",
-        "pubDate": "Wed, 24 Jan 2024 08:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      },
-      {
-        "title": "Suzuki V-Strom SX: Why it's brilliant for a first-time ADV buyer - The Times of India",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOakxtb3pDNXNSS2dMNTJEUTduVkRaSVFZWDZ5ZFM3UDBjZ01HTU9tb1dBRldrMEx3a2lPc0lldWxCTlZybndBcy1WcUdaVV9OMExvX2JLcGJsa2Q5VUN1NzY0UmY4WG1keDUyRXJmaUNwd1pQNEU4TDh3ZmU4cThiWjFlRTZsd0hGaE5qcVQwbFB2N1drX0tsVXZxTnJNX1A2bzN4SXEwV0J1U19UVnM5XzhPQjZaTmhPaHM3c01UdGpiRXJLVVBrdWNPelBJa211TEE?oc=5",
-        "pubDate": "Tue, 20 Sep 2022 07:00:00 GMT",
+        "title": "Hyundai i20 N Shadow Edition farewells hot hatch - torquecafe.com",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5PRFo3SWJiNi1xVmVwSnIxQVBndWtPTlVIWFdTbV9nUEdxWnBLMDZkUGVhZmVqMUJxOEVZWTZ2LUFkUG43N0MteXJoSWdhM0hFVG5MSmk2X05FaDRfMnI3NTdfaU5nYm00X3BfdzJON0V5UDJpMC1JSVVaMFM?oc=5",
+        "pubDate": "Wed, 17 Jun 2026 07:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "Kwik Fit": [
+    "Roady": [
       {
-        "title": "VWFS and Kwik Fit Fleet agree tyre partnership - brokernews.co.uk",
-        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE11RUE4SXl0NGlrdkkyUjM3YlhHNGhMTTlfcmg1b1d1bGpia2lVNnIzdDNBY3NIZVdiZThLeWsyQUh6Rkhld3VHWU9mQTdTTFgzMS0tbU1obzNBMTJKQjI2N3I3RXloc09SUmV0MlB6OTdJLWp2VzZ5NmJDeEs?oc=5",
-        "pubDate": "Mon, 08 Jun 2026 07:00:00 GMT",
+        "title": "MINI Cooper S Countryman ALL4 Uncharted Edition… - autoapp.sg",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1uVmJuRVZGdVVVcjJkOC1vNUVxRkcxVmFibHByVjZWOVZFRDF5TzcyNzAzWUJHNXQyUnFUUW45Nl9wUmxJcmJoeGdmU3NCZENHSksybHl0Q051WHhQR1FPNkt0ZXBuU0ExWXY4Sm5yNjZfMXEtSFVNeERrcw?oc=5",
+        "pubDate": "Fri, 09 Jun 2023 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      },
+      {
+        "title": "First Ride: Cervelo’s 2025 Model Caledonia-5 - Bicycling Australia",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOR01FLVo5RExOdVFTbEYyTFRTemQzRXpBZDJXZnJsUW1nVmhBTWZoZzNHT1VCLXpGUGF6ckMwRkpHU2MxTW0xYktnVmctMGZGVENHRWtsWVgyYVlKaEYyVTNISTMybWVhYUdLX1p0RFNyTkt1aHkwdFpwRUZmekdTM2Q3WmoweE1vSER3?oc=5",
+        "pubDate": "Mon, 16 Sep 2024 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
+    "Halfords Autocentres": [
+      {
+        "title": "91% increase in Halfords Autocentres revenues drives group sales and profits - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVkk5REY2VFlJcHNhOTVZQ3V3cGNGeXFfLXlyRGJuOTIzTWhGWHFWYjJqSUgyOVMxakJRcFVZRmRoNFAweE9KWVFRV0lHVkJhaV9QLU5UVXU0T2Y3VUJDNlBmMllVVG9oS2hMRFoydUNRZ3poVUJwaGhfN0pyT29RRHVwVnFCdGtZcmxrb0duVmpqWUZqTkE1d0NGQ25oVDJReVAyRTlRQ0JGaUREcTlr?oc=5",
+        "pubDate": "Thu, 16 Jun 2022 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Protyre": [
+      {
+        "title": "Protyre owner buys Harris Brothers - Insider Media Ltd",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA0b0ZvS1FjMkowcGtNdVktTmdsN01GdUpWNnN6RktKUFo0WlRxMXRNaW9ZZnE0bnlrRkJpUjdtbDFEMTMwQkNzWkVrMUZRTm1uY2NtUkJZeTNZUQ?oc=5",
+        "pubDate": "Mon, 07 Mar 2011 08:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      },
+      {
+        "title": "Euro Car Parts partners with Protyre - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1MQm5TWHN5cFpCS0lMWmFBbWJ1bUlXNndxbkdzS0w5ajlGUmxxamdDUk50cWZLRHdNeTdTQzJRVVM5ZEpXYmJ2ZWs5ZUYwZ21kQ0VEUDJqc3pWNUJvWDBGeUlsQmZoVThOWUxvTnFheEpTd3ZQN2hBckpmaw?oc=5",
+        "pubDate": "Thu, 18 Jan 2024 08:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
     "HiQ Tyres": [
       {
-        "title": "HiQ expands with Richard Hardie Group partnership - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeFNJX3FZemo2RUltTXZZWkRzTGdmRE9xLTZhN0Zib2ZJdFdrdFlKUlMxZG5VZkdnTVdRckpNWm9oWko4eGZIUkRCaU1Ob2ZqUVpKenpicU5nd2llR09EdzRYZ1N6VnJUUEFSdUg2LUpJNkxjbGtrakFJX3k1eXpDckNFNWthLVJnWHduNg?oc=5",
-        "pubDate": "Tue, 11 Mar 2025 07:00:00 GMT",
+        "title": "HiQ Tyres & Autocare part of retail panel discussion at Automechanika - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNanB1ZzhwZE1RYThkcGdWbURnN2pmdDIyaGVmZ1Z4ZmhFU1ROUzBoSXRGUU96T1EzTDBSZEl3SGYxd21yMTgzemtkd1BGdURBV1VEbUlWaC1iejd2blpaakhweXpRUXBySUt4ajNVTVRmWUlmSEZ0THk3RF85ZTB4ZHYzSl96Qm9UOTJyVDM2eUpvYzFGYzFMRFZhUkp6OWxQZi1GdA?oc=5",
+        "pubDate": "Tue, 03 Jun 2025 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Kwik Fit": [
+      {
+        "title": "Kwik Fit demonstrates its 20,000 mile guarantee with OOH activations in locations nearly 20,000 miles from the UK - Marketing Communication News",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcDVxNWZiQlBodDFvMXdEVkNzV2g2THVmZ1BhclkzcDJIcjZfeVR4ekNNOHUwcEJOcDkwSUpGTzFEQXp6b1NMd2l0aHo3ME5VcFJNczBfdGduX25LSEdZcjNqcnd1TlgtdVZDNUlWMUsyaU92RzREOEJxbFhYZ0xMVmNObnpLaThVTExqVXhqVEttMzVNRm0xaUtubWZxQXdDdnNnV2JxeFR5VXRTV2dxZlVQNE1ZRXdkQzdfUFdQNTVQTTQydmY5M2diSS1vTGl0S0E?oc=5",
+        "pubDate": "Wed, 01 Oct 2025 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Point S UK": [
+      {
+        "title": "Strategic new hires to support Point S strategy - AM-online",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZTBOeTdCUm5MV0hFSE80NnFVYldnY0p3ZFpUaVhwV0RpY0s2YTdsaGdFaEY4TDB3aUhuUDhxLUhqY200akVoR0tXUlFCTm1nYThWR1V5TTIxMUFFZUkzSjl1WDFBekViMVIxeE5PY3UtYjNRRFFGRzd6Q2dSLTQxTHcwVWk?oc=5",
+        "pubDate": "Mon, 15 Apr 2024 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
     "Blackcircles": [
       {
-        "title": "Blackcircles Launches in South Africa - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Qa25VMDFMekEwcUdWX1p1MHdzaHdVM3VScERXXzRwQUhmWTZfSFUwa21vbnNsNkIzMnBuMWV0dUpweUVxZG84TkR5OS03dnk3aVRnb1djZVV0R182aHEwbFN6ZmQ1MFpsUWoybzdTbzBXbnh2bnpRamdnSGV1UQ?oc=5",
-        "pubDate": "Wed, 02 Feb 2022 08:00:00 GMT",
+        "title": "Blackcircles entrepreneur merges US brand with rival tyre company - insider.co.uk",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQWNsaXh0ZnBiRWlkVnFuaXV4Sm5tMDRhSmdZa1RFWVIxYTV4MU5KYzlqTnhJNnUwNUhkNlYxNmRRdUwySzE2NVB6QnFiOUE3V3VWU1lfQmlRR1RzU2dZRkd0ZUNWWjEwd0ZIazZJdG9HU2lJNVpYTldVT1NUVWJHWXRwN0dTU3FBZ3FjZlRnNW1uUldrLUI3SDQtX25KYW8zZGfSAacBQVVfeXFMTTZiNTY1OEVHV0RMa0otdmtlb09uMTVwdWR4eE42UkxZcjVlX0V5ZE1FRlpxZ3hfM2JhR1FnRjNTcVVxY0JYUmRSU3l5T3UxMFhCYURxTUpyZ1hkY3U3U0FXNUVDb1cwNENUc0UtUWFIY2VUSnNsTnhwZzhuY0xWbk53TTRudHBOMV9FM2NfRjFCcEJKTV9XVmhZcl85NTFpTzZjUnBsMlE?oc=5",
+        "pubDate": "Wed, 03 Mar 2021 08:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      },
+      {
+        "title": "Blackcircles.com launches TV push to promote value and speed - Campaign",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaHlFTGxYeWVsVk0xTmdVZ2ZtQi1Sa3NkSVVQbld1eGtIRmtkRTB1MEtybkM3U2hESHF3SG8xYzlkcEpZamxnNFVfSGx5a1RPVWNSemN3RzZXMUlHWFJHeDdpZFdXZzNJMnlmeHN5Y2tiQk9CdG04eGVaSkRKU3dSNkJ6c294VEhRcGswSi1OdmdQRTV0SGwxSWJ5ck9tZXRB?oc=5",
+        "pubDate": "Thu, 29 Aug 2013 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      },
+      {
+        "title": "ATS EUROMASTER MAKES SECOND PIT STOP AT LAKESIDE FOR BLACKCIRCLES - Cision News",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPU0d6RkxEWXZjc09SOHNqdmYzdWJ5c3NScy1mS2k4cy10b3dxdUlsVFNTMHZOVU1sZUdMT2Y1YTQ3NVZqa0pXQW1kRUo0NGJOejNoRXVSTGl1c0F1WkszRWNvc2JMeldUSllzOHhyRnR2bTFrOXZYRlNCNk96dk9uWW1OTEhxWXZIWS1GYXB5eDJXZXhyUzNIRmRvTVBKOU5zck9XUUdpS3o1cmtZMUJSbTFMMVdEdw?oc=5",
+        "pubDate": "Fri, 23 Sep 2016 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
+    "Tructyre": [
+      {
+        "title": "Beddows & Evans join Tructyre leadership team - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWExXUEl5TzRvaWROMmVvZ3FXQnI2ajd0N2xzZ1YyaXJMTDhoZDJXbi1HUUpUZkpqSXhxcmVqdjU2R0NQcjgtZVBUWTlJcEc0UWh5RnppVkhmSWNTZHByajZKc2dudUJiWThsaFFHNmJGWm9iaFJZNlZGaXVEM0tjU01Tenc?oc=5",
+        "pubDate": "Tue, 31 Mar 2026 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      },
+      {
+        "title": "Commercial tyre management specialist Tructyre bolsters top team to fuel growth - Motor Transport",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQXdybTF3SW1wWnFQalpjcmRCN0o2b0lCY1VkM205TUdIV0NzeURkYzk5UDRMbnBfTTVwa094TkM1QXZHU1BlMXdTZjZ1Z1hBWTdrOTY0Z2RQWlNVUkZndW4zVXExemFXX20zV3NUWEZWRVZycXhJc2w0bUp4Qlg0enFhR25aRmNibzBXbVNVNlRsRFJrN2VPNzZ2ZC1jUGc?oc=5",
+        "pubDate": "Tue, 31 Mar 2026 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      },
+      {
+        "title": "Tructyre strengthens leadership team with two senior appointments - Transport Engineer",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdERYQ3NtcE1nWHZYY19aRU1Eb04yOGZqLWZhQXljc3ZQRVdObFJtME1wT292M2xRWWdyTVpBSjNmQVo2b3ZYaUpzS1RlczBobERxb1h5ajd5NjJJZXAyenZZdTA2b1NuQUF0WHNYVHE0QlV5STMwWGRtalRjYmczU2dCV3JLbFNyY2N0STBMYVljOW1vMWt6RXZ2VkRha0ZIOUpjci1KS3dTdzZxOGJIdC1uZm9ndw?oc=5",
+        "pubDate": "Thu, 02 Apr 2026 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Bandvulc": [
+      {
+        "title": "Continental buys Bandvulc - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE44VWJlRkU4Q1dWSjlXOXprUXljaFlra05YcFNIMmdtWVk1cElqTzM1ZXFNMW0xR3RLMDdsNjNPdXZiNll0bTR4ZnVQUTNVLUd0SWF3UnRWQ3RzQTBDb3ZVOUUtd01aazg3QzlhWg?oc=5",
+        "pubDate": "Mon, 04 Jul 2016 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Grupo Andrés": [
+      {
+        "title": "Wholesaler Univergomma defies market trends in 2023 - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUTJ6dEFxRWRTOFBMTmFhUkJDeU5pZjZWa2ZNTm8tTml0aDNFZzBONmhiQzc2czZZZTJXcUNKbTdGa3RpZGRISGo3bW5YVkVxWHVGSmExZU5yaTM2QVJhczVLNExYUmFndnJWd0FyTk1TMzJEUGx2X01VYUtOUkg2QlNhOGV3cjlqbklENUxBTQ?oc=5",
+        "pubDate": "Wed, 24 Jul 2024 07:00:00 GMT",
+        "country": "Spain",
+        "cluster": "South-West"
+      }
+    ],
     "Vianor": [
       {
-        "title": "Nokian Tyres: Changes in operational structure and management team - Automotive World",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPd3B1UTN6N1lHU3dWdmc2NDhBV3ZvbnAtWENHb3lmdy16bk5lM3BhZFA5THBQNVY1ZzRlTHpUUEx4YnN3OVJaNGxTN2pNeU9RT2ZMcGh5aGdmbm4tZGVLOERqNGl3Yi1iOWlDcHdOV0F0T1BrcE5mZTdCbVFqUXgtSW5lTTNUR3ZHTWtv?oc=5",
-        "pubDate": "Tue, 20 Oct 2015 07:00:00 GMT",
+        "title": "Nokian shifts North American tyre business to Anna Hyvönen - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYzBSWjRQNkJURmJna3NqOEQ5RFZQSXRERnVUNlgzRXR6S2p4emkzc1Q0eFVHekk4RmdMVFBUeUdyMk9TT3pYUXdTTkh2S0VlX0k2M0FsTGRTaTN4ZVJReHdmSEZSWl84M3VtX0tERWtRM1RnZGk4dGl3QTRJZ3dwZEhxU3VING11TFV2NDc3WWNJQVloV2hzNg?oc=5",
+        "pubDate": "Fri, 02 Oct 2020 07:00:00 GMT",
         "country": "Hungary",
         "cluster": "South-East"
       }
