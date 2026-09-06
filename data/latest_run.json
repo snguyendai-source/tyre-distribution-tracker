@@ -1,112 +1,100 @@
 {
-  "runAt": "2026-09-05T06:16:40.476316+00:00",
-  "totalNew": 13,
+  "runAt": "2026-09-06T06:16:48.971538+00:00",
+  "totalNew": 11,
   "entitiesChecked": 118,
-  "entitiesWithNews": 8,
+  "entitiesWithNews": 9,
   "newItemsByEntity": {
-    "Premio": [
+    "Pneuhage": [
       {
-        "title": "Russell beats Leclerc and Antonelli to FP2 fastest time - Formula 1",
-        "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxORzhPODQ4YjZNTEpGZkRUb3FlbDFVaV93dFdpd25EYnk5ZlZxZThSZWJWaVFDc0hoclpnMkZnTW5UdkFhTVQ2UXVOY3hSUFMzRUdCd1A5YmlrdkM5V1ZZTHUzbXBROWwwaW5lWnNQQ3hFSkZVeDltbTB3dm14QjVLY2x6NnJOLXhtUWdFLXBCbFdqbGNTOU90RFJFQU1qeTEtemI3WDlHWThJQllhajdDd2dIZkR3ZURSQ1dGbk1qMnZXMU5iTjRiNjlqbWg4RTlHcWNaRk1aUGlkUU1zcC15ZEZxRlZLWmRlQkxKWXdseEphUFkxSTlVWC1IdGNTMGYwYlE?oc=5",
-        "pubDate": "Fri, 04 Sep 2026 15:19:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      },
-      {
-        "title": "Hankook Tyre UK awarded four DriverReviews 2023 Customer Choice Awards - Hankook Tire Media Center",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUHRETDU3Tkh4ejh6UnU0MXV4T05qb0xnQUI1R3RwM3EzRW9OMUFIc1pKcFUyVW9XMkRQZTh5NWZFTGxONWZRRWdWV2ZHZHhZcmRwb2ZHQV9vWHVIQXZ0cWE1YjJvSlZ6UDlQY2phREZyS2MxbzlwT1JfZFp5SkFrbWVWRXBIakdSbjNQNmpQWFg5a09WS2Zoc09zTjJyQXZJT3hkdm51ZmhZT1dnbEdvZ3ZERHNKYzJpVkJGdTJLaGdLZkJYQk5HbA?oc=5",
-        "pubDate": "Tue, 07 Nov 2023 08:00:00 GMT",
+        "title": "Yokohama and Interpneu renew strategic partnership to expand sales - ET Auto",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRUZwOVFHY1A1bmoyU0QtUU9uTWFpVWt4aVlHdHVWb2hqQWxyb1I5YUZJRWlxLXpUd3RXQTdtSkZkUjc5M2xsbHl6aEhlYTRXR3VYWFJIenZnb25oTUtjRGlmb2k1Z1pjOW0zTGVud3ZkZkJKR3hkam15RmhMb0R5ZTlJTWkxTnNSZE5YYnIwTVNLUVd2WkdJMWNEQ00xQjc2ek5PSVl1N3BZdWxqZlVpN0lSNzFMSjFLWUVXOE9SakI4WnBhaWx0Y9IBzgFBVV95cUxOcmxrTUZoUWhac21wQlhVV19JNllzcVdONnRfT3RDd1VsODVCdFFDQlVQcmNIM29xakJFZjA1VDFSN2g1aXlGMEt5eFRJeTBxcUlReWkwcm82dnFQaXAzTGJnbFNJMXR3bVYtMVpqcktPcktjMlY3bTFSU0hUVFpWWXl0VE9lODk0ZlhjcUNoTm9ac1hPTEU2YzdrUTAxZnhDSW5MZDBiTDBKcGlCZ0xCUGw4enZaZDRWMnMtTWpLeDBjNVdYYU1uaVZtd2p4dw?oc=5",
+        "pubDate": "Fri, 23 Feb 2024 08:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Emil Frey": [
+    "Euromaster Germany": [
       {
-        "title": "Lucid teams up with Emil Frey for French market debut - Just Auto",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQc043Z0ZRc1VHa1lsaWNzeUxnUEp3cUVibU43UnZRZnMzZGtxeWhKUExUd2hXYVNTRDRtMXQxR09BVHBxeHhaZ2dqbEtlUlFHQ21UaUQtWlc1a1psaElFTjFFLXJyTDk0SGtpNmdoTEE4ZEpCNlNUNlhWOTlwZHEyZGluQmpOM1RDYWM4aElR?oc=5",
-        "pubDate": "Fri, 04 Sep 2026 15:37:43 GMT",
+        "title": "Vehicle inspection and emissions test: TÜV Rheinland and Euromaster deepen their partnership. - PROFI Werkstatt",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZENnYUZlVHVjVTNVSjlZeWE1S0ViTlNRdEN1aTZ2MHdaZFg5VUd1OHZmTmRaY1A5OGZpS0Z0bXp2WVdMa2RfSmtwWko0M3BYQ2FyX01BRHJCQ1ZRNTZiWGdyNFZSMWdvQmdnWnozb0JZR0NRTzlyYVN1a252Y0JXMGJ2TWhNWk9mUU5RMDMyMTZ1dlJ3cU40V0o1VnlIOTdkeDQ1bC15QlBEYkhtYWJ0T2U3ZEJwRVNWRGx3UGhXVjg0X09id1JBVTJjX1ZVeTh5WkFnclg3WHY1UE0?oc=5",
+        "pubDate": "Wed, 08 Oct 2025 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Feu Vert": [
+    "Reifen Müller": [
       {
-        "title": "Maxxis 26 Inch Tires Cars Are Parked On The Street In Front Of Tall Buildings And A Large Bridge Over It - Krepšinio žinios",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE11M0d3WmZnZmtHOTNqTEJjLXJvQ0YyUWdsWVotMmNWaTdNRUg4OWhjVXl6Q003RXpkTG1QNjhIeU55WERHTTFuZVp2SHZjMThsdDZtb1Q4UEZSSGtWMGZIaENweENrdHpz?oc=5",
-        "pubDate": "Sat, 01 Aug 2026 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
+        "title": "Hankook shows off extended Alphatread retreading factory to customers - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPcnBHUXpaZWR6QUZVSVNxT1ZqaTlNYTNoWVNHT0RsRTNhaWxBUnRHdklsRGw1MlBCanE3V294R0VhaGVwNDNEdEFEeklrMEtBU08tZU5Td3VGTHdXZ2htQk10SDRRX1h3OXgzY3l1a1REN2tmN24wZHBldVV4cWViSGhfSVN2UXVkOUk4V21uMXhQaW1hcG5vSUIwdG5YM3I2LVczZE5vZmF5cHZrM3ZqMkx4bVdYaU90QjlrXzIwVV9tQzNnRUtNOWhuUjVRRnlwb3Mtb3VZNURHbmtfOS1WRW50aHQzaGdPLW1VWFFRSUFmQQ?oc=5",
+        "pubDate": "Sun, 02 Aug 2026 08:35:23 GMT",
+        "country": "Germany",
+        "cluster": "Central"
       },
       {
-        "title": "Vélo Pliable Velo Electrique Feu Vert Avis Sprint Feu Vert Velo Ã©electrique Bicycle Velo Feu Vert Avis - fuelcarmagazine",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ISDBWYmZqLVp1bU5DaEhDQUlFbC03U0gtU1ZOd1gwV1QycGxLUm90WG5UazdCcnd1X2RYc2ZrMXZNVWRtLU1RMTlZMzA5cms1T0RnTnA0YmM?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
+        "title": "Goodyear acquiring German wholesaler Reifen Baierlacher - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQYl9jenZ4UDFaTGFqU1ZMZUN0Y2c5TzFzSExUT1pKb0pXSUkxSmNWa3NMQmM4LWN4VUpzRWRITXlxTGRvaWpQS0FJQk13SkZ3TDQ0ekZDYzhIcXpWMl9vM1pQUFJROGZKd0hMSy1sVlFUSTRDZ3FsSHB5V2dXUDhFYzBxMWpjR0lIYzk2OVNiNU5DWlhr?oc=5",
+        "pubDate": "Mon, 02 Mar 2020 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
       }
     ],
-    "Vulco": [
+    "Norauto": [
       {
-        "title": "10 percent of road crashes in Ghana linked to tyre issues - NRSA - GhanaWeb",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRTUzaVJ1QkEtWlA0S2VFNnUyRU1wMVdJN2VrYWhFRGxnYkpVOHJUbTdNZjhhWlZaTEVKSDhxT09Nd0poeXI0STFkRG1DWHlaVnhGSWRLVWZ3U21RbXRsdWFheHpKZEZqRFdMM0RQLTNxdUxWR20xYjluRk9sVDEwV2prZG5aMlJXUHhaZnRiTTBvZnhBNzRjOEdqZFBRblVoQUNiOUJtYmlFbnlsb1hLLUtKQ1JYZlI3VHZGRlNR?oc=5",
-        "pubDate": "Sun, 18 Jun 2023 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      }
-    ],
-    "Euro Repar": [
-      {
-        "title": "The Euro Repar Car Service multi-brand maintenance and service network has been launched in 6 new countries in 2018 | Groupe PSA Archives - Media Stellantis",
-        "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQUGNVb05RX3Z5a1Q5Z3NpbWJ5WEVrY1dmN0Zoc05VMVVYSW9xaWpVMkdwOW0xeFZsLW9RV1hqXzZmYW5URHJaUy1PWlNzUXpHZ3FhZlk2c0huMDFkdEpVanRZbVNrRmVGN3M0OTcwcV9SZE5xRjJhWC1nVndTZk5UMUhXRmF1bnRPNWJ2REs2YmYyX0Z1VnRhdmlDb3lEX3RHVFV4anktY0VQSXFQeXg3Ny1kTXUyRU40UlhaTTR0VkxZTWJ1ZVB3dGgxT01LVWZjQklIc2RZX00zaGd6blhITnlkeTVOSExxYXB1V3UxZk54d1NJNkxJNWRFNVhQb1Rkdnc?oc=5",
-        "pubDate": "Tue, 18 Dec 2018 08:00:00 GMT",
+        "title": "Retreading at former Bridgestone plant - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB2TXA2WmpTdHNveUZvWUlya096cmJDd2U4OWtCcUVFcFZZby12QW4zbUZLR0E1amdReF9LU0ZOREpGZXNsQWRSTE1xazY0WlJYSS1wZU5BNnVzdzJWNzlBVUttbWd4ZHd3SjV2RGlEY2xvSlFyRm12M0FUUHBZZw?oc=5",
+        "pubDate": "Fri, 12 Nov 2021 08:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "Kwik Fit": [
+    "Allopneus": [
       {
-        "title": "Bridgestone and Kwik Fit make Camper Calling Festival debut - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRWVWVUZKcUh4NDU1a2RRWDNseUpKc19PNVItMUxXbExBT2Q1aUZYUzNjYkJqUl9peENEbzlHeExXQ21NMnItc1R4UnJyUHVmMzN6b1d1SjA3OW9WUUdGcFdnWDZyYkJVc3BvTkpOSU83aHBQUUJuOFJyeDdBTUI3dDBHSkNPTm55ZGhFVmdRNV9tV1JNaDg0ektB?oc=5",
-        "pubDate": "Fri, 04 Sep 2026 15:52:50 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      },
+        "title": "Unlikely to harm competition – regulator approves Michelin’s Allopneus acquisition - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZFlPQXZsbmZ1R250TkZHWDBCVUtFMDRqM0tFcTNCZ2tTQVVsUHBQUFFnNGp0MjVCa1NWTDVVbWtaeHZWeDFta3FQdVhKeDBkMVZqY0RfcEl2UjdmMUwtZURmdjZidFRYQzZBRnZRdGhZOVlQeVRvV3dBZUdQRE91SkxFU2EtYzhQbVdocjZRQ1h4a3JTZ19vM3ZEZlltVHE4ZEZXNW40SG1abWVXSTVfdXc2NHQ?oc=5",
+        "pubDate": "Tue, 11 Jan 2022 08:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
+    "First Stop UK": [
       {
-        "title": "Bridgestone and Kwik Fit celebrate successful Camper Calling Festival debut - Bridgestone EMEA newsroom",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdmZmcVQtaDctS0FyZEpMYUFPaERtTnptVHlzcWIyVjMzUFAzMEZBU3RaQzlaelFjS3I0M1N0UWxERjNmOUFkTEZYRVpaN3V6Ym4zczR1enlBWmFIRHlyU2Z3NUNVeml4dzlrU3RoSTNGMjctcjhiZVRHNHprZVYxX2ctaU50TE1HYi1DRDJPaHhMVDdRRURqMlMxSjlObGN5TXNYZnNrTXNNTU4zVjlKZ01IckM?oc=5",
-        "pubDate": "Fri, 04 Sep 2026 07:06:05 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      },
-      {
-        "title": "Belfast firm acquires Scottish business founded by Kwik Fit founder and former Hibernian owner - The Irish News",
-        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPOTlNS04xeEtOeXZsdWdYbTVJNU1YQWF4ZUpDdzVnaUtEelhZMmctdUFad1E2d1lndXlNSHIxMXlINWJCVXBVb2dqbzJhblJtUktLVVE5YU1fM2RKbU9sYmd4QzdkNUlXN3JnYTNINmNqcURkWUtIYkR6T211dnAzWWl2Y0tDdFhxdlBjbnNkazNFdkFSME9HaUtjeHo4Z3BQd2RxdGZpT2EzWWZrRGRCRlprM2pncFQxbVFmOTV3QWtWOTBId2laUUtHOGx5TFEtM1k0N1JKWVliSXBpQWJoSFZQT01uZ2FvNGtJSUQyVGl4RU9R?oc=5",
-        "pubDate": "Thu, 02 Apr 2026 07:00:00 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      },
-      {
-        "title": "Kwik Fit's Far Flung Campaign Demonstrates 20,000 Mile Guarantee - Little Black Book | LBBOnline",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5lT2U1UHh2WVlIX0xsbmlYUFhiN1hvOGM0eUtBWmxDUzgyNnNfaTNmdWR0TzQzX1BNb2daVWtGQ00yMjU0RlFzeDVfTllqdmZjUWpGQ0ZHbmRWdldSVlFnMWhzSUhsQTNT?oc=5",
-        "pubDate": "Wed, 01 Oct 2025 07:00:00 GMT",
+        "title": "A&A Tyre & Auto Services joins First Stop - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1mcGdpLWhBZ3JwNS1nYXlWV0NPVGhUZUdabWd2cEtpU0pNUFlGZkhpczdzU1VTdEtQcEZpaXpfUXktU2YyN28ycmlMZVliclBQR0lqYjZ2eDFWbzI0Wk4wYUJJRUdSTDNzNjE1NUdRb1REMkJXU05zWDU3N2Npdw?oc=5",
+        "pubDate": "Thu, 18 Jun 2020 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Point S UK": [
+    "Top Recambios": [
       {
-        "title": "Cheltenham garage wins double at national automotive awards - Punchline-Gloucester.com",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQR1ZEVUFkLVNJWlYyQkJTdXRnZmZ0T0Rxd01DRkF2VHJWdmpSWTczbFVyVGdYcVJkWjU3SE5XOUtJMkJaLTJUSk5TVlB0R2VNTnB0aE8zcU1uVlpUVTlMM1I4YU1Jb0tqVjZLaUE2QnpLQkJCWDVwcVJyaWc3ZnBsZmhqbnRNeUoxUzFMT1BjX194WEhTTFBDUVQ3NklOc210c2h0aDJZZUgyR2EyM2l4ZGVB?oc=5",
-        "pubDate": "Thu, 30 Jul 2026 07:00:00 GMT",
-        "country": "UK",
-        "cluster": "North-West"
+        "title": "Fire at Maxion Wheels plant in Spain - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE0yRGo5UThpb3kxVFh6a3RSUVhUMEVqdUx5UEpCY1JsVkxQVjBRRXBrQ1dRdFB1UnFMNDB6NWxwRUJKaTdfZ0VVc1M1aEZ0WTJ5VlZIcXgzeDBHRThOZk14aXd4Mm13bHFmYlZ3YnY5dmJYS2JuU0I4eVFpVQ?oc=5",
+        "pubDate": "Tue, 18 May 2021 07:00:00 GMT",
+        "country": "Spain",
+        "cluster": "South-West"
+      }
+    ],
+    "Fintyre": [
+      {
+        "title": "Bridgestone acquires former Fintyre Germany tyre trade group Reiff - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQlpIQ0tCTXdJUWx4Rmt1ZmJ0QUNIVElQWkZObW9IMDV2dmpXTExSaUJibFBzYlpndkV6RjRxUEVQZV92N1FiRFZTUXZ2V0sxWG9QWUU3RlpCRUFTV1ZLSWtEb280ZHBteDRHT1pEYjB4ZjB3ZUFhajVGZl9TRjd6T3JwQWNLcHo5b2JueXJuNUFKVWs1X0RLWTByQXBWT1ZwSGJv?oc=5",
+        "pubDate": "Mon, 04 May 2020 07:00:00 GMT",
+        "country": "Italy",
+        "cluster": "South-West"
       }
     ],
     "Genan Holding": [
       {
-        "title": "World Recycled Tire Rubber Crumb Mulch - Market Analysis, Forecast, Size, Trends and Insights - IndexBox",
-        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQQWxFeTR5dUJkbU5ieEhOVV9Malc3WkU4YTg5OWVDbXFHUU9OMGFxUTNVSW9Ga2FCdEpHblhGbVlJMDdwUzVvUkNxVG9YM1BFb3lkdloxV0ZLcUNiUjFNNEZUMXFYcGxQNzE0UGNkZG1Qa2UyWDB3NWlDMVVjVl80c2tFQVUwUzdKaFpWY2VubGtLWG5RSUZaUjFkanRrSl9pdTJWZWNWQzVCem9vX0ZnY2p2QXUxc1lNSVhjZjR5M1phdF9mNG9CMDI2MWZoVHdUNXdCTjAtSk1mOWM1bXhrNEdRTQ?oc=5",
-        "pubDate": "Fri, 04 Sep 2026 21:56:19 GMT",
+        "title": "New majority shareholder: Maj Invest Equity takes 51% in Genan Holding - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcXRaTEV2dEFIZFFLbFhzNHZ6OXVYU1VEXzVyUnQ3TjhUR0lZYXY5T05uZGxVaGo0RlBGR3JQc04xNGtpSEg4b2JKWlp6U2oweGdPeUFjZWFqVzkwQ3ctRFRKX2ZCSzJGTUZkLTFkclE5aWtYdlpTeHcwclNsV2hCaFByd3pGbTZPbzl0cW9YTmxtQUtOM0g3V0FINmFrNmZXdGRWQnlR?oc=5",
+        "pubDate": "Mon, 29 Nov 2021 08:00:00 GMT",
+        "country": "Denmark",
+        "cluster": "Central"
+      },
+      {
+        "title": "Rubber Product Waste Materials Market to Hit 5.8% CAGR by 2035 on EU Recycled-Content Mandates - IndexBox",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSThCOV90QWl4QVNkYURoR3FXN3hfUV9pZVV6R240QnBjaUtwNHlZeWlXRG16Ul90SUphejU1YzZUYmZmcGlIcm5pYjZRSWRFY1lIYnBYQVRmQmhyTG14ZHdiandGMHc4cnp0ZlhBcTliblU1dEk4QlFxemU3cGI1LWQwbWV1dUZLYzBxcEtodXB0cEdWSy1kbkJ1QVRydGotRHFKZjVkZnpGczA0VHJhMktjNHBJZ2hyeThpYTBBeUs?oc=5",
+        "pubDate": "Sat, 05 Sep 2026 17:36:20 GMT",
         "country": "Denmark",
         "cluster": "Central"
       }
