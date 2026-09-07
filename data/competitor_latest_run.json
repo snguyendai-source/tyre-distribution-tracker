@@ -1,93 +1,61 @@
 {
-  "runAt": "2026-09-06T06:16:48.971538+00:00",
-  "totalNew": 12,
+  "runAt": "2026-09-07T06:20:06.814723+00:00",
+  "totalNew": 7,
   "entitiesChecked": 26,
-  "entitiesWithNews": 7,
+  "entitiesWithNews": 6,
   "newItemsByEntity": {
-    "Pirelli": [
-      {
-        "title": "Italy Forces Sinochem Out of Pirelli: US Tech War Reaches Europe - European Business Magazine",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQc0lweGR1aUVaWkZTVlQ1emdma2hnaXRjRUJoMTNmbk1pOUpud1NpeS1paGYzTUd6Q2hIVzZnUE15VGNpUldFakZsTzdJdDBFSDhPSkZlTC1IdF9fR2VWLVByV1RPN0pmX2drREhQUmxrNHJVU2RrYmtKejJwRG8tdDhEZnVOYTV3Mm50STd2d0F1bmZ0anQzR0dZeHNjb3l3MGZ2Z0ZmNHNkVXhM?oc=5",
-        "pubDate": "Wed, 07 Jan 2026 08:00:00 GMT",
-        "category": "Premium global"
-      }
-    ],
     "Hankook": [
       {
-        "title": "Hankook to present tyre innovations for commercial vehicles at IAA Transportation 2026 - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNURtcmhqc19PcmJaNmN4VnJndmdYYkl5YzN2TW4wMkg2RDNmUHctYTVOSnZiUTg5SF81bHFDTjRlUzhoaXZGTGdYZjBsZWQtanpDQXhqWXllNFNOb1BHdk04TVlwbTZRVThmdTlTWi1YbktJUDZ4amdNbmhzT2Fvd3lxTEUyZ2lBbUh0dWFjdkVHQXFxUEtsR2tHVHNyc0NjTldpcGFONlFEdmFNZGtVXzVBTk95Vy0yZm85eFZ6dThIQmZpVUg3bXd3dVoxMWExSEZOLUNGcndpVDFzbkE?oc=5",
-        "pubDate": "Mon, 10 Aug 2026 07:00:00 GMT",
+        "title": "Q&A - Trends in electric vehicles and tyres (OE) - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcllBZU5VMDZvTEkwQndRSUppWm5yc3d6ZEFTVUhNSHRIa1RIQ2RWdU1RQU5kQlNuZmVZQlJ3R1FNam4zQUVrVkJsX3JrdFpPVkVPTTFmQW05bGp5eEtlTTdBaHZ5ZDVQQnlvMTN0TDlGd3VYamxibWtRdHBaQzRDX1NyMWJGYkwxYkdBZXVFVS1leHBlRnI3aUJlUUkwYndQZTAtaXVVXzJvRnpqUXNWTmMxWVlQWnA2N2lnNXFWVlI5Vi1QYW9yNUZuOHNUYzVvMmc?oc=5",
+        "pubDate": "Wed, 10 Jun 2026 18:09:00 GMT",
         "category": "Korean"
-      },
+      }
+    ],
+    "Toyo Tires": [
       {
-        "title": "The Tire Cologne 2026: Hankook to showcase a comprehensive portfolio and European premieres - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOU0JvQ1l5MHlFSUlqYjZLc0ItZ2ZtX2tPNVU5Rm1xVUYxS2R3eUJ0RkdWLWxrQ1Q1cVlBQVktcE5FbG5XbHhKTTdzc0tnU3ljY3gyNFlxbzB2aEpEQXh6SDlNRjdhMUxPX084Zk0tcDJ1N0VTa0E1WWV2blQ4NWktZ1d1ZGtXZnpqZTNTb1BFM3VzeXZvNk15VzlkTmwwYWpJZWRTTWRxSGhMV1hfempPUW9ibDhNeTJNSF9ZcEpHM1pidHBjUWtFZ2czQTBDeFp5dk5mM1ExNllRRHl0SWxJb1QxOA?oc=5",
-        "pubDate": "Wed, 29 Apr 2026 07:00:00 GMT",
-        "category": "Korean"
-      },
-      {
-        "title": "iON FlexClimate – Hankook presents new all-season tyre for electric vehicles - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSk1xUjVrQ0hCM1RBY1BjOWFKV0wxMWtTSWRYQW1GdW0xZTFlajVMSko1UDEzOEtSYVhvNXVJc1g3azZnaGNRMWFpZXdMUmdFMmtOZjYya1pUdEZFWm8wdXhDMXR5WTRKNlRLcy1MN21JNzFNMHhUb3MxQVV3Nm5oanRJU1I4aF9MeVpFMjRKYm11UzdCam1VR0dwejJpQnVfRTVVSXo1LWxSelF5azBOUmtvOXRPYnNwaHVtazRyNjBTSURJT1ZqT3VTbG9wZ3pt?oc=5",
-        "pubDate": "Mon, 02 Mar 2026 19:32:04 GMT",
-        "category": "Korean"
-      },
-      {
-        "title": "Q&A - Concept tyres, 3D printing, non-pneumatic tyres & the future of mobility - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQcnhIYy1ta0NJbnlhUmQxcTFocl9OcFZrWmU2QlFoTHo3R3Voa2VHbWU5QjU1ckFHSFE4ek9fMjhrbFNYLU5aLXNsRkhRckt6aDF2cmpOakFfTlEwcF9BcWtjLUlJQnJLOUlSZDVFOUJnNHdZWW56OW1yUVFURjFHMTFDRGpCcTFqbnRHTXFmb3BvSk1zcEUzcjRVZzFRdFlYR1NpSHgtbWJjUEtfRG1vNHpodFY5SFFid3ZNY2pFbmh4bmQ4QzNYVVRCZ3BKVThQVDJjb0RvS1l6ckhQWjFhUVNTUldZX3JsSmdDcTlMelhid1BmaHdV?oc=5",
-        "pubDate": "Thu, 11 Jun 2026 04:19:27 GMT",
-        "category": "Korean"
-      },
-      {
-        "title": "Hankook iON FlexClimate wins the 2026 Auto Bild EV all-season tyre test - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQMzNTMnFRT1I2SWVrRVNZUXJnNkZlYmhpRklDVHI2UTg5dDFsc2plaGpMY2hTd1ptTU0zcGowMl9ZNU85Q1lzQ1hhNlIyalc2d1I5WFVCc2gweWdBNmp5dzkwaDBCU0F5dnVjZnUwTnlaR2ZmOWYxaUV5VnZkbnQ2MkdkM21IWkRpekZGWENheVpKd2t5cGlRd19IQUJzcS0xRUFyRXNsLUdTcGtTYkphelpZc3dBOEVSeEZVTEFMNGtjM3h3LXg3bjhqbUx6N0ZoTkxQSUY1Ymg2eGhiZ2lMOFBpb2JkdzRrX2d0OVNaZFlZNHBmU19z?oc=5",
-        "pubDate": "Thu, 28 May 2026 07:00:00 GMT",
-        "category": "Korean"
+        "title": "Toyo Tire Corporation: Still Good Value For Long Term Investors (TOTTF) - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUEtQVThadDN3Wk92bndBWC0zNWRZZmRPX25ITTgxTThtSm5HM1lFd3Bueko0ZDZtTzZXdS1sYzJsVlRhMEk4RXpvRDBZblQxVHRpeTBoaHd5WTNuMlpRSmx5TVpmUWRnNGktcWVrdS1RdV9oSHZJaWhDQnBzTkNPZlN2X2xjUG9iR0JOcmJ0Sk1kS1hTT1g0VlNJcTYtZzVCa1hUSTh3?oc=5",
+        "pubDate": "Fri, 17 May 2024 07:00:00 GMT",
+        "category": "Japanese"
       }
     ],
     "Nokian Tyres": [
       {
-        "title": "Nokian Tyres names new Germany wholesale manager - tyrepress.com",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQmk3VnRoblpRMmVGM1MtUHlvaGNiWlhoY0VDN29WcVVZWE56WURGelhyWVdBT2lod3QwZGh6M3RSbm83dzFzRGVzSDNqR21GeklmSWF2LWNqNXlNZ1JJWDMzSGZzOFdRaktpTjgybHhJT0lpMU5SZVFaUUEyZWhnMXpIQ0lIN241WUc0?oc=5",
-        "pubDate": "Wed, 10 Sep 2025 07:00:00 GMT",
+        "title": "Nokian Tyres Unveils Seasonproof 2 All-Season Tire for Europe - Tire Review Magazine",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE51ZlhIT1VtWUFpUXkteDk2cl9sVHAwWnJ2Z1NHc0g5Wkxkd1BNT0J1REJFNGJqSW5oanZfbUN1bVFKLXlZWHB3aExpUFh1bHFwYTVwRkhrbV9oQm56?oc=5",
+        "pubDate": "Tue, 29 Apr 2025 07:00:00 GMT",
         "category": "Nordic"
+      }
+    ],
+    "Sailun Tire": [
+      {
+        "title": "Valencia name Sailun Tire as new sleeve sponsor - SportsPro",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5RM2Q1VWFqMFN4cGlhRlRJSUhCY3VNSGxOTWFoYmNJQWVhcXVic09qSTN0SmtSY1RmZ2p3d0w1SWFmMzdOQk9xY3VLUlVxWC1aVkE0OXNHSUVadmJEOTNrckxxaGo1YzhVa2xNb2lTeGtEdWMwUmRWU29iQQ?oc=5",
+        "pubDate": "Thu, 18 Jul 2019 07:00:00 GMT",
+        "category": "Chinese"
       }
     ],
     "Double Coin": [
       {
-        "title": "Goodyear says tires-as-a-service may help fleets save money - Fleet Equipment Magazine",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBHX1hOeTB3Y3EzbWk4ekpUdkFxaE1ROG1ORDRXVHVzeEFYSmNOd24zMnR5c3ZxNnJsZ3p0THlUbmlJS1BnY1NyaU1xM1BWWXEzU1NZcVRmclV2dHg2UnRhVksyLWtxbHhNTDMwZy1FZw?oc=5",
-        "pubDate": "Wed, 03 Jul 2024 07:00:00 GMT",
+        "title": "Apollo Tires adds to EU lineup - Fleet Equipment Magazine",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1mVkYtOTZFSXpRcnhUTnAwTExlZ1luYm1WS1MyYmdOTlJFQWczak9xTHpHS0pEdXE2bFJOZHpJN0JESkZXSjJoNVN0akRlNU1xdWFmdFotN29VaHRrUVl4NFNSVTdxNWtvUHpSU1JDcVlWbDNf?oc=5",
+        "pubDate": "Sun, 21 Apr 2024 07:00:00 GMT",
         "category": "Chinese"
       }
     ],
-    "Giti Tire": [
+    "Prometeon Tyre Group": [
       {
-        "title": "Giti Tire signs European ice hockey partnerships - tyrepress.com",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPT1VYd3FvRExzbzlTY1A5V3B4WWEwa0tNU0t3NmlCZk1DRERnaHluR1UyQ3V1Skg1RnpINHNsZEptNE1HUGNYVmQxbkJMVFAtdnE0eG1IZkotX29nUGxYTEhNWUhKMU5RYnROMjdhVWtGRXRLWE0zcXJKd1NCVV8yUzE4X0RJWG9iVDRv?oc=5",
-        "pubDate": "Thu, 14 Dec 2023 08:00:00 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "Maxxis Tyres": [
-      {
-        "title": "GASGAS chooses Maxxis tyres for 2021 motocross, enduro bikes - tyrepress.com",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYWw2RTh6R3FHa2ZKQ3BZZUN0SzdEX2Y1S2p0cVhPSGwwb2hwa2dPRHROanNWNnhyVXYtYnQ2SVRuT3ZBWEl1bktramhkWkJidVF4TE5TQ291RWoyT2JJdVhRQXZKMlUzUkNSOWZOZ3d6dUJRSzZWeTA3WV9pcTRMM1JZTXFSaE9HdGE4WjE1WHJNbENQMW5RN2RYdF9IaGM?oc=5",
-        "pubDate": "Wed, 30 Sep 2020 07:00:00 GMT",
-        "category": "Taiwanese"
-      }
-    ],
-    "Nankang Rubber": [
-      {
-        "title": "Nankang Launches the NS-20 - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBKZHRTeU9TSWttM1NNc0t0RTRWZHZQT29fS2VPNjFqTWRmZklLSXZjQnVOZE1LMHVjVkZTaWNTYjNiVGxaM3ZIbjEzSmFtdkg3MkR4ak92RkVBaWs2U0Y3NzZDc3Q?oc=5",
-        "pubDate": "Tue, 22 Apr 2008 07:00:00 GMT",
-        "category": "Taiwanese"
+        "title": "Prometeon Tyre Group introduces the new H:01 Proway line - Rubber News",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNd2ZlcUdpeWdPa1ZGbl9UYU5FeFh3S1Vaa242azM1clNLWHZFTlBGRFVGVXFyRWhXLWJ5aHhodDRtTjhiYnJGNGhCd015NkliUWNVTVhHdTRlazRfc1RTcmV5SEhheDBiQWV2cjdkcEVGLUlobXZNc3VTdGZiTThJdERZNEUzT09STXVfdA?oc=5",
+        "pubDate": "Mon, 16 Sep 2019 07:00:00 GMT",
+        "category": "Industrial/TBR"
       },
       {
-        "title": "Nankang opens motorsport showroom at Nürburgring - tyrepress.com",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNVVkWWxzZ2loMzJEOHZsS1pyaGlDTDN3TlhIaTVBMUtiVHFrUnBrZ2VKQ1hIZWd6b0wyQ011cEJKVnJoTUg0clhQdWc1Q04xQWpVT2NIRVRRUTBiX0pVWEsxZzhPSVdnSmZqM3puMGJDRVgxSXdRUTJaZWg1TjJ1eEp1VEJGT3NQTGw0?oc=5",
-        "pubDate": "Tue, 09 Jun 2020 07:00:00 GMT",
-        "category": "Taiwanese"
+        "title": "Aeolus to Be Renamed Prometeon Tyre Group - Tire Review Magazine",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9zMXJVQjJOTHh2MC1Hbm1oZXdSaEhUcFFTMGdRTDZIdkRVbnhteGNIYlJwWVI4b2hYYTMzamJnNWg5cGZMd3h1VHhTbjQ2azc3dVRJQ2NjRm9iOHZxVmhyeGdjc3M4bjZXbzYzY3ZRMm4?oc=5",
+        "pubDate": "Thu, 13 Apr 2017 07:00:00 GMT",
+        "category": "Industrial/TBR"
       }
     ]
   }

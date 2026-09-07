@@ -1,102 +1,68 @@
 {
-  "runAt": "2026-09-06T06:16:48.971538+00:00",
-  "totalNew": 11,
+  "runAt": "2026-09-07T06:20:06.814723+00:00",
+  "totalNew": 7,
   "entitiesChecked": 118,
-  "entitiesWithNews": 9,
+  "entitiesWithNews": 6,
   "newItemsByEntity": {
-    "Pneuhage": [
-      {
-        "title": "Yokohama and Interpneu renew strategic partnership to expand sales - ET Auto",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRUZwOVFHY1A1bmoyU0QtUU9uTWFpVWt4aVlHdHVWb2hqQWxyb1I5YUZJRWlxLXpUd3RXQTdtSkZkUjc5M2xsbHl6aEhlYTRXR3VYWFJIenZnb25oTUtjRGlmb2k1Z1pjOW0zTGVud3ZkZkJKR3hkam15RmhMb0R5ZTlJTWkxTnNSZE5YYnIwTVNLUVd2WkdJMWNEQ00xQjc2ek5PSVl1N3BZdWxqZlVpN0lSNzFMSjFLWUVXOE9SakI4WnBhaWx0Y9IBzgFBVV95cUxOcmxrTUZoUWhac21wQlhVV19JNllzcVdONnRfT3RDd1VsODVCdFFDQlVQcmNIM29xakJFZjA1VDFSN2g1aXlGMEt5eFRJeTBxcUlReWkwcm82dnFQaXAzTGJnbFNJMXR3bVYtMVpqcktPcktjMlY3bTFSU0hUVFpWWXl0VE9lODk0ZlhjcUNoTm9ac1hPTEU2YzdrUTAxZnhDSW5MZDBiTDBKcGlCZ0xCUGw4enZaZDRWMnMtTWpLeDBjNVdYYU1uaVZtd2p4dw?oc=5",
-        "pubDate": "Fri, 23 Feb 2024 08:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Euromaster Germany": [
-      {
-        "title": "Vehicle inspection and emissions test: TÜV Rheinland and Euromaster deepen their partnership. - PROFI Werkstatt",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZENnYUZlVHVjVTNVSjlZeWE1S0ViTlNRdEN1aTZ2MHdaZFg5VUd1OHZmTmRaY1A5OGZpS0Z0bXp2WVdMa2RfSmtwWko0M3BYQ2FyX01BRHJCQ1ZRNTZiWGdyNFZSMWdvQmdnWnozb0JZR0NRTzlyYVN1a252Y0JXMGJ2TWhNWk9mUU5RMDMyMTZ1dlJ3cU40V0o1VnlIOTdkeDQ1bC15QlBEYkhtYWJ0T2U3ZEJwRVNWRGx3UGhXVjg0X09id1JBVTJjX1ZVeTh5WkFnclg3WHY1UE0?oc=5",
-        "pubDate": "Wed, 08 Oct 2025 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
     "Reifen Müller": [
       {
-        "title": "Hankook shows off extended Alphatread retreading factory to customers - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPcnBHUXpaZWR6QUZVSVNxT1ZqaTlNYTNoWVNHT0RsRTNhaWxBUnRHdklsRGw1MlBCanE3V294R0VhaGVwNDNEdEFEeklrMEtBU08tZU5Td3VGTHdXZ2htQk10SDRRX1h3OXgzY3l1a1REN2tmN24wZHBldVV4cWViSGhfSVN2UXVkOUk4V21uMXhQaW1hcG5vSUIwdG5YM3I2LVczZE5vZmF5cHZrM3ZqMkx4bVdYaU90QjlrXzIwVV9tQzNnRUtNOWhuUjVRRnlwb3Mtb3VZNURHbmtfOS1WRW50aHQzaGdPLW1VWFFRSUFmQQ?oc=5",
-        "pubDate": "Sun, 02 Aug 2026 08:35:23 GMT",
+        "title": "Hankook Tire examining distribution structures, looking at M&A growth - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOeEppanZ1ZVNSU1BPZHRnMy1qYjhxM0djMlVab3Nsc2JJMXNGUzdMV3NOUWtFNDRSWGticnNOdFhwdDdidlJyYkxNLVpvbWNySTEzTnRTUFhTUFRjRGJkNWtFem1EY3BqMkVLQnJ3N0pUdUhBWl9GdHRnNW90SVhlU0hWS19fZS1udHNDYTEyRlhXdEFBWnA4VnpiNGF5eEZMZUtfag?oc=5",
+        "pubDate": "Tue, 24 Mar 2020 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Hedin Group": [
+      {
+        "title": "Hedin Mobility Group consolidates its retail division under the brand name Hedin Automotive. - news.cision.com",
+        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPNlNtN2F0VlRsWTBEOFlrSkIybVRoSjlBNDlpWFRMejBxRUcwczE5cWxMdXpnQXc0M3hQaUR0dFhPUmJOcEFEQThFVDQtSi1tLXVuU3hFYzRPUVVpdW1kR240M2ltd2JKZXZVaGtfRmNhdjQ0OHBMOHdobE1YWlRDSk45S09NMTZ3dTlSTEJSeU1RSmEzTWZsNDhRbEVZM3kxZVhTa3lnanRLTnI5TU05SmxtN1BZeTFkeTBKR3BRTW5IMHBtX3lQc3pyMTh4Nm9MZHhYdEFZcGhLSEFsTXFNZEF5NExzU05lR2NMUlNuOA?oc=5",
+        "pubDate": "Thu, 02 May 2024 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       },
       {
-        "title": "Goodyear acquiring German wholesaler Reifen Baierlacher - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQYl9jenZ4UDFaTGFqU1ZMZUN0Y2c5TzFzSExUT1pKb0pXSUkxSmNWa3NMQmM4LWN4VUpzRWRITXlxTGRvaWpQS0FJQk13SkZ3TDQ0ekZDYzhIcXpWMl9vM1pQUFJROGZKd0hMSy1sVlFUSTRDZ3FsSHB5V2dXUDhFYzBxMWpjR0lIYzk2OVNiNU5DWlhr?oc=5",
-        "pubDate": "Mon, 02 Mar 2020 08:00:00 GMT",
+        "title": "Hedin Mobility Group's Interim Report Q3 2023: Positioned for the mobility business of tomorrow - news.cision.com",
+        "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQNkpySUhoT2V2b2xHQjdPZmttbk1IMjFUVEFleFRqUVdjY3BVQmZIRV9LZjVlREZiQ0hsSXc3X25TYmc3M1otWGFGSGpkWUk5UTk1RkJoemtoT2loVmZ6dGxCNjFHUE9LM1E0dlkwUjNlM29kV0Nkd3FyVjNVTmRua1ROQnNFcEJlSWdFTzF4VXozdXh1bnI4WHVwUUlHd0RtaU11OEt2WHFqX0FWNWZVeVZ5Vm5zMFlpeWV0eTFNbFZJdmJacXhqTTNXZDlOVUlMY3FqcDhSWkNacWYwMDlOeGdqVWVEeHpTcGNvQlMyU19KbGc?oc=5",
+        "pubDate": "Wed, 15 Nov 2023 08:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Norauto": [
+    "Eurogom": [
       {
-        "title": "Retreading at former Bridgestone plant - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB2TXA2WmpTdHNveUZvWUlya096cmJDd2U4OWtCcUVFcFZZby12QW4zbUZLR0E1amdReF9LU0ZOREpGZXNsQWRSTE1xazY0WlJYSS1wZU5BNnVzdzJWNzlBVUttbWd4ZHd3SjV2RGlEY2xvSlFyRm12M0FUUHBZZw?oc=5",
-        "pubDate": "Fri, 12 Nov 2021 08:00:00 GMT",
+        "title": "France’s Eurotyre, BestDrive and Siligom cooperate in Fleetpartner - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcHA5OXBvNDZIR3FYSmRqdWpWTnozcWM2UTZ5VFNDNnBWX3NpRHQxa05nWEhWNi1JUjhFekZDbzJZQ05uQXlpWDhQel82bkpOVjFCdm9xaUprYm1KODN2VHdSNG1fN0RmRHlHSzNBM3JsMENhZ2ZYSXVxSnNLdVFnSF83TndnODE2d2RnUXR2MXpsRkhoYjUwcjQwWDEyemxB?oc=5",
+        "pubDate": "Tue, 20 Oct 2015 07:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "Allopneus": [
+    "Point S France": [
       {
-        "title": "Unlikely to harm competition – regulator approves Michelin’s Allopneus acquisition - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZFlPQXZsbmZ1R250TkZHWDBCVUtFMDRqM0tFcTNCZ2tTQVVsUHBQUFFnNGp0MjVCa1NWTDVVbWtaeHZWeDFta3FQdVhKeDBkMVZqY0RfcEl2UjdmMUwtZURmdjZidFRYQzZBRnZRdGhZOVlQeVRvV3dBZUdQRE91SkxFU2EtYzhQbVdocjZRQ1h4a3JTZ19vM3ZEZlltVHE4ZEZXNW40SG1abWVXSTVfdXc2NHQ?oc=5",
-        "pubDate": "Tue, 11 Jan 2022 08:00:00 GMT",
+        "title": "Point S signs Philippines master franchise in global push - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTjJQQUF3OHh5VXlZYURZYnowUGxkYUpHYlBibU04eF9tNXNuNTRUMlhPSXI4LVEtLUUxZ1JjWUVqWHZybTJxOVg1Tm1HVWlsQm5oZ0s1NEpyWjRLdTBWb3V4YlNNbDVYVHdrSUNIdWhycTR1VFRLdDZPRW82SFdGM2pka1ZSVHBPRHV0dkNkNEh4VFdWYWxN?oc=5",
+        "pubDate": "Tue, 20 Mar 2018 07:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "First Stop UK": [
+    "Vulco": [
       {
-        "title": "A&A Tyre & Auto Services joins First Stop - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1mcGdpLWhBZ3JwNS1nYXlWV0NPVGhUZUdabWd2cEtpU0pNUFlGZkhpczdzU1VTdEtQcEZpaXpfUXktU2YyN28ycmlMZVliclBQR0lqYjZ2eDFWbzI0Wk4wYUJJRUdSTDNzNjE1NUdRb1REMkJXU05zWDU3N2Npdw?oc=5",
-        "pubDate": "Thu, 18 Jun 2020 07:00:00 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ],
-    "Top Recambios": [
-      {
-        "title": "Fire at Maxion Wheels plant in Spain - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE0yRGo5UThpb3kxVFh6a3RSUVhUMEVqdUx5UEpCY1JsVkxQVjBRRXBrQ1dRdFB1UnFMNDB6NWxwRUJKaTdfZ0VVc1M1aEZ0WTJ5VlZIcXgzeDBHRThOZk14aXd4Mm13bHFmYlZ3YnY5dmJYS2JuU0I4eVFpVQ?oc=5",
-        "pubDate": "Tue, 18 May 2021 07:00:00 GMT",
-        "country": "Spain",
+        "title": "10 per cent of road crashes linked to tyre issues —NRSA - Ghana News Agency",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUDNCcnl4WktrdW9vbUtSbUlaX0x2SVFjczFudW1RbFhIdUtLR2Q5SmxTU0s3Qk1vYVl5Z3I0aWplZW5xbkRDYklBalg3UG1nRWZucWNtUFlKQWgzNnhYQmxJcURQOXlxMC00cjFnTklpZ2VDczRzOEFKNkV0SEVBUXVjaTNUVl9UUlE?oc=5",
+        "pubDate": "Sat, 17 Jun 2023 07:00:00 GMT",
+        "country": "France",
         "cluster": "South-West"
       }
     ],
     "Fintyre": [
       {
-        "title": "Bridgestone acquires former Fintyre Germany tyre trade group Reiff - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQlpIQ0tCTXdJUWx4Rmt1ZmJ0QUNIVElQWkZObW9IMDV2dmpXTExSaUJibFBzYlpndkV6RjRxUEVQZV92N1FiRFZTUXZ2V0sxWG9QWUU3RlpCRUFTV1ZLSWtEb280ZHBteDRHT1pEYjB4ZjB3ZUFhajVGZl9TRjd6T3JwQWNLcHo5b2JueXJuNUFKVWs1X0RLWTByQXBWT1ZwSGJv?oc=5",
-        "pubDate": "Mon, 04 May 2020 07:00:00 GMT",
+        "title": "Fintyre creditor arrangement approved - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWk5Jc1hVdnROcjlqaHlWVFlpMHBuSFF0M1ZTVzRoVGFLOElDbHY3NmMtTk50cmJlSm5VbHN1WHBGU0VhS3ZvTnMxeVJNTUtwR3JzUDYyX1ByNkNJVzV3T1BnaFZmTlBoR3ZBYmd2bEVfZW1TWDZEZ3Y0dDU0cjZid1k2eHZwdw?oc=5",
+        "pubDate": "Fri, 11 Feb 2022 08:00:00 GMT",
         "country": "Italy",
         "cluster": "South-West"
-      }
-    ],
-    "Genan Holding": [
-      {
-        "title": "New majority shareholder: Maj Invest Equity takes 51% in Genan Holding - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcXRaTEV2dEFIZFFLbFhzNHZ6OXVYU1VEXzVyUnQ3TjhUR0lZYXY5T05uZGxVaGo0RlBGR3JQc04xNGtpSEg4b2JKWlp6U2oweGdPeUFjZWFqVzkwQ3ctRFRKX2ZCSzJGTUZkLTFkclE5aWtYdlpTeHcwclNsV2hCaFByd3pGbTZPbzl0cW9YTmxtQUtOM0g3V0FINmFrNmZXdGRWQnlR?oc=5",
-        "pubDate": "Mon, 29 Nov 2021 08:00:00 GMT",
-        "country": "Denmark",
-        "cluster": "Central"
-      },
-      {
-        "title": "Rubber Product Waste Materials Market to Hit 5.8% CAGR by 2035 on EU Recycled-Content Mandates - IndexBox",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSThCOV90QWl4QVNkYURoR3FXN3hfUV9pZVV6R240QnBjaUtwNHlZeWlXRG16Ul90SUphejU1YzZUYmZmcGlIcm5pYjZRSWRFY1lIYnBYQVRmQmhyTG14ZHdiandGMHc4cnp0ZlhBcTliblU1dEk4QlFxemU3cGI1LWQwbWV1dUZLYzBxcEtodXB0cEdWSy1kbkJ1QVRydGotRHFKZjVkZnpGczA0VHJhMktjNHBJZ2hyeThpYTBBeUs?oc=5",
-        "pubDate": "Sat, 05 Sep 2026 17:36:20 GMT",
-        "country": "Denmark",
-        "cluster": "Central"
       }
     ]
   }
