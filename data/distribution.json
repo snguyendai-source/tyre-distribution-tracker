@@ -906,11 +906,15 @@
         {
           "name": "Pneus In",
           "model": "Wholesaler / distributor"
+        },
+        {
+          "name": "Tagliabue Gomme Gross (TGG)",
+          "model": "Wholesaler / distributor"
         }
       ],
       "noteBadge": "caution",
       "note": "Not units Italy's official figure (Ministry of Environment, MASE) is reported in tonnes, not units — not directly comparable to the unit figures elsewhere on this page without a weight assumption. No clean all-channel unit total is published.",
-      "marketAccessNote": "Fintyre Group (with subsidiaries Franco Gomme and Gexpo Tyre) is the dominant distributor and the clearest single point of entry. Driver (Pirelli-owned, 400+ outlets) is the largest captive network and not an access route for a competing brand."
+      "marketAccessNote": "Fintyre Group (with subsidiaries Franco Gomme and Gexpo Tyre) and Tagliabue Gomme Gross (TGG) are the two dominant distributors and the clearest points of entry — TGG alone turned over €143.3M (2022) serving 20,000+ clients. TGG was acquired by Global Automotive Investments Holding BV in Dec 2023/Feb 2024 — the same group that owns Van den Ban (already in your Netherlands list), a cross-border relationship worth exploring. Driver (Pirelli-owned, 400+ outlets) is the largest captive network and not an access route for a competing brand."
     },
     {
       "country": "Austria",
