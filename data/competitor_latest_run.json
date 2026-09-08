@@ -1,61 +1,31 @@
 {
-  "runAt": "2026-09-07T06:20:06.814723+00:00",
-  "totalNew": 7,
+  "runAt": "2026-09-08T06:18:23.487518+00:00",
+  "totalNew": 3,
   "entitiesChecked": 26,
-  "entitiesWithNews": 6,
+  "entitiesWithNews": 3,
   "newItemsByEntity": {
     "Hankook": [
       {
-        "title": "Q&A - Trends in electric vehicles and tyres (OE) - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcllBZU5VMDZvTEkwQndRSUppWm5yc3d6ZEFTVUhNSHRIa1RIQ2RWdU1RQU5kQlNuZmVZQlJ3R1FNam4zQUVrVkJsX3JrdFpPVkVPTTFmQW05bGp5eEtlTTdBaHZ5ZDVQQnlvMTN0TDlGd3VYamxibWtRdHBaQzRDX1NyMWJGYkwxYkdBZXVFVS1leHBlRnI3aUJlUUkwYndQZTAtaXVVXzJvRnpqUXNWTmMxWVlQWnA2N2lnNXFWVlI5Vi1QYW9yNUZuOHNUYzVvMmc?oc=5",
-        "pubDate": "Wed, 10 Jun 2026 18:09:00 GMT",
+        "title": "Hankook Tyre UK Launches Laufenn365: A new digital platform for tyre accidental damage claims - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOY09wOXBMelBETzZOWk51N1RGSkc4VGxZMjd2RXRpYl9kYnFQV3dzTUdYaTY3Z3pYWlFiUElhSXUxS1F1NmVma3RkRktvZ010OWpmTEkzMHY2SnpXdEZwTTlYUjl1cTJJMWItcVhjdUs2eDZmajJiRS1fQU1Oc0Z0RzF5dDBoakY5bU1LbTU0RE5HVmdEUDdWODRzMDVURnJMbmVCYVpEMFIxUDVmcnNwWkxJcEYxNTdPRUNORGx4Q3pqemJScW4ySDB1Q3ZRRFBCSkd6Q3lTRGduakhoYVpTZjdKOEhtMzNBc3lHUEpKOGJvdUFVREg3SE1xeW9HWUFfeUVsbl9ycEJtZ1BTM1BUYnYwSU9Bdw?oc=5",
+        "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
         "category": "Korean"
-      }
-    ],
-    "Toyo Tires": [
-      {
-        "title": "Toyo Tire Corporation: Still Good Value For Long Term Investors (TOTTF) - Seeking Alpha",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUEtQVThadDN3Wk92bndBWC0zNWRZZmRPX25ITTgxTThtSm5HM1lFd3Bueko0ZDZtTzZXdS1sYzJsVlRhMEk4RXpvRDBZblQxVHRpeTBoaHd5WTNuMlpRSmx5TVpmUWRnNGktcWVrdS1RdV9oSHZJaWhDQnBzTkNPZlN2X2xjUG9iR0JOcmJ0Sk1kS1hTT1g0VlNJcTYtZzVCa1hUSTh3?oc=5",
-        "pubDate": "Fri, 17 May 2024 07:00:00 GMT",
-        "category": "Japanese"
-      }
-    ],
-    "Nokian Tyres": [
-      {
-        "title": "Nokian Tyres Unveils Seasonproof 2 All-Season Tire for Europe - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE51ZlhIT1VtWUFpUXkteDk2cl9sVHAwWnJ2Z1NHc0g5Wkxkd1BNT0J1REJFNGJqSW5oanZfbUN1bVFKLXlZWHB3aExpUFh1bHFwYTVwRkhrbV9oQm56?oc=5",
-        "pubDate": "Tue, 29 Apr 2025 07:00:00 GMT",
-        "category": "Nordic"
-      }
-    ],
-    "Sailun Tire": [
-      {
-        "title": "Valencia name Sailun Tire as new sleeve sponsor - SportsPro",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5RM2Q1VWFqMFN4cGlhRlRJSUhCY3VNSGxOTWFoYmNJQWVhcXVic09qSTN0SmtSY1RmZ2p3d0w1SWFmMzdOQk9xY3VLUlVxWC1aVkE0OXNHSUVadmJEOTNrckxxaGo1YzhVa2xNb2lTeGtEdWMwUmRWU29iQQ?oc=5",
-        "pubDate": "Thu, 18 Jul 2019 07:00:00 GMT",
-        "category": "Chinese"
       }
     ],
     "Double Coin": [
       {
-        "title": "Apollo Tires adds to EU lineup - Fleet Equipment Magazine",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1mVkYtOTZFSXpRcnhUTnAwTExlZ1luYm1WS1MyYmdOTlJFQWczak9xTHpHS0pEdXE2bFJOZHpJN0JESkZXSjJoNVN0akRlNU1xdWFmdFotN29VaHRrUVl4NFNSVTdxNWtvUHpSU1JDcVlWbDNf?oc=5",
-        "pubDate": "Sun, 21 Apr 2024 07:00:00 GMT",
+        "title": "DSV to use ZC Rubber Westlake trailer tires for 10 more years - Fleet Equipment Magazine",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNT2I0a0RCVzh0cXNCVWlTNERtM25KeTIyUzJYRElEWV9zTFdCWXQwaVY5NjNRRG9XeHZMckVYUGtSaGljYWtWWEVkbEg1WDdzT1k2UTgybEJQYVdqVk1jUmlQbzRFaGhjR3lRNWJnbWI0TnpzZ0UweE4yYW9hcHh2dzdMOUh6OUtZeVE?oc=5",
+        "pubDate": "Tue, 08 Oct 2024 07:00:00 GMT",
         "category": "Chinese"
       }
     ],
-    "Prometeon Tyre Group": [
+    "Nankang Rubber": [
       {
-        "title": "Prometeon Tyre Group introduces the new H:01 Proway line - Rubber News",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNd2ZlcUdpeWdPa1ZGbl9UYU5FeFh3S1Vaa242azM1clNLWHZFTlBGRFVGVXFyRWhXLWJ5aHhodDRtTjhiYnJGNGhCd015NkliUWNVTVhHdTRlazRfc1RTcmV5SEhheDBiQWV2cjdkcEVGLUlobXZNc3VTdGZiTThJdERZNEUzT09STXVfdA?oc=5",
-        "pubDate": "Mon, 16 Sep 2019 07:00:00 GMT",
-        "category": "Industrial/TBR"
-      },
-      {
-        "title": "Aeolus to Be Renamed Prometeon Tyre Group - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9zMXJVQjJOTHh2MC1Hbm1oZXdSaEhUcFFTMGdRTDZIdkRVbnhteGNIYlJwWVI4b2hYYTMzamJnNWg5cGZMd3h1VHhTbjQ2azc3dVRJQ2NjRm9iOHZxVmhyeGdjc3M4bjZXbzYzY3ZRMm4?oc=5",
-        "pubDate": "Thu, 13 Apr 2017 07:00:00 GMT",
-        "category": "Industrial/TBR"
+        "title": "Nankang Named a Top Taiwan Brand - Tire Review Magazine",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE12VDVySkZpdDlzMWlROHpPd3dSaHp2LWxYdUtwdUVRZW9RNW8xcVhSSGFDQ2lCaHhzR3lySXpld0NOMEwtU1ktdEcxOEpYOVh0UW9UeGdlNG5ZZm9LcDZHZEIyalkxNWh4VEVxUg?oc=5",
+        "pubDate": "Mon, 01 Aug 2011 07:00:00 GMT",
+        "category": "Taiwanese"
       }
     ]
   }
