@@ -1,23 +1,59 @@
 {
-  "runAt": "2026-09-08T06:18:23.487518+00:00",
-  "totalNew": 2,
+  "runAt": "2026-09-09T06:18:26.204994+00:00",
+  "totalNew": 6,
   "entitiesChecked": 118,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 6,
   "newItemsByEntity": {
-    "Pneuhage": [
+    "Reifen Müller": [
       {
-        "title": "DSV now exclusive Westlake distributor in Scandinavia - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdkNQbFJkeXB5ak5Nem92aUlnZi1SWEtreS01WFVoWWg3ZzRGTkxybnFCYk5KdnI1MWRXLWpnNm1wV2t4b0l1ek5nbVE1ZHBWSGhhdld3SnUtSDNLOGUwZnZmbGptbnZORURTemlzUFdxMl9MdkFlaGZ0MUp5Z0pEeTBybGVMdm9rYzN4S1V5cHBBUQ?oc=5",
-        "pubDate": "Mon, 12 Dec 2016 08:00:00 GMT",
+        "title": "Hankook boosts European Alphatread offer with expanded plant - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONmRXcGxpTVJodzFxUFZVYS1GV2ZzUUItWlNqMTcyeFUzZ1ZaYUZoOHkzTkNseUMxempsN2EzeTl0aUNJWkxPYVhwd0dyeWtNRkI1M29GV0NQSUNxeVVSaGh0T21mVE9lSE5WZjZwVXFRelc4d3FpX0dJb1pHYThOMzRVaTZLLVIyVGlHS1pGZ1k1cHMtRzJ4S0lLZw?oc=5",
+        "pubDate": "Tue, 05 Jul 2022 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
+    "Norauto": [
+      {
+        "title": "Renault to distribute Leonard retreaded car tyres - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZzJTMFFySjFtZ0lpYlNjdS12ZHgzYWY3OTJSX1VtWWpPdUF2ckF2N3JoZEFCUnVkdmtWemM3TmJ2UzZ4RDJpT083Zmc2ZkFUZkhlRC1zdV9kblAxa2ZiMjI2TkhzS0R2dHdRdHJhNEhIdHR1TUhHUzFSQXA1eThoVl9hNkI3Z2tQRWxqZA?oc=5",
+        "pubDate": "Tue, 10 Oct 2023 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
+    "Kwik Fit": [
+      {
+        "title": "Kwik Fit \"Kwik Fit's 20,000 mile tyre guarantee\" by VCCP - Campaign UK",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUG41RHNmWndnR3hKTDl5T3RWczRRSFZNbTZIYzFRRkFwZ3dYNm9Ub1NuT2RDWDBDTWVlbXdwQ2FBdGZtWUw4eFdfSHZJLWR2U1kzUWhRNmsxQkFlb0R0bkFjOFUybnAtQWhBTkk1dU1yRElPUGREVUluLVp3X28zTEx3RzdwNlc1eUVLQ1ZNSk8xZEQ3YzgtRlk2c0d6dUJ5VDJyVjUycjN1d3U5SjdwRFU3eEFNaHc1dXVPSw?oc=5",
+        "pubDate": "Mon, 07 Sep 2026 16:11:46 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Bandvulc": [
+      {
+        "title": "50 years of British retreads: Bandvulc marks half-century at forefront of sustainable production - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOOW9UYzZldVQ1Z25nUnhYVTI0SEpIOVRMRVdMNW4tOHRlV0hHWjZyWFBGSzFTTVFtLXBqSHJGQWJfYWV6VERGem8xYWR5dndlVTJWNE4tVDZ4ZmlWZ3p4X19rWDdPZ3NVc05lanJIZUNzRnhtRTBlb2c0X2xEVTdRRzBoSm9IS1lMSENOd1VLUERUMFFuNWppdTgwaU90cXJ3X0l6eDdzQ3E1ODM5MEZDQ0JwS0doMWFaVXFrMmVGZ3ZEbWJabzdDeVBR?oc=5",
+        "pubDate": "Tue, 22 Jun 2021 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Grupo Andrés": [
+      {
+        "title": "25% of Neumáticos Andrés sales are exports - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQY25oQUFicjFRMlFkdmxxXzZwNUlfVUR3RmlRUDRqSWpxcExMNGRRdmMtN0pSejdHUUg5TzJ6LW1KYUFoLVZBWlBxaHc5WXZnTFh2bXdraW0wV0VJVWh5YzZYdVE4VVFIOFJoZFduZWFGVm1Kd2hpRWJaMUxoYVZ3ZGlB?oc=5",
+        "pubDate": "Thu, 07 Apr 2022 07:00:00 GMT",
+        "country": "Spain",
+        "cluster": "South-West"
+      }
+    ],
     "Vianor": [
       {
-        "title": "Tire-Changing Concerts - Trend Hunter",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE11ZFU2Y3ktR1I0bWdPbkpqYmxUS1plczAtUWc0TnpsS0FnX0hZZ0FJUzVzYlUxMmMtaFBkZnI0V1VGOXdOR0U0ZkpqRnotcFg3M0NjYlQyNVZkUQ?oc=5",
-        "pubDate": "Thu, 02 Apr 2015 07:00:00 GMT",
+        "title": "Nokian's SnapSkan Helps Motorists Monitor Tire Tread Depth - Modern Tire Dealer",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVElNcTcwb0NDRUxKQkVDM19SMXRzT1B5TVF5cHY1LU9fMGY4UERjMkVZc1lQZGJrY2xIWWZBeHQ4Q0JPYjJyVTNoSkZPODZ1REptNGs5NUs4UGJ6RG9iNmU3WmVKdkRQeVVVOXIyUFhPcGZlN2lCU1Jfd1R1dkM0bHNuWUxwbDNUSEd6M1k1RnFsSDVTc1RWb3BkLTIxT0UxOXhmQmlFY3drZmFLV1R3amZ1bUxnT0lQSEFEVFpzSE9JMmFBNGotcjRfcTFybVRMWmpNSFpFYw?oc=5",
+        "pubDate": "Wed, 14 Dec 2016 08:00:00 GMT",
         "country": "Hungary",
         "cluster": "South-East"
       }

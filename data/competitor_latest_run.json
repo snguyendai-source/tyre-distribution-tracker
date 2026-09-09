@@ -1,31 +1,31 @@
 {
-  "runAt": "2026-09-08T06:18:23.487518+00:00",
+  "runAt": "2026-09-09T06:18:26.204994+00:00",
   "totalNew": 3,
   "entitiesChecked": 26,
   "entitiesWithNews": 3,
   "newItemsByEntity": {
+    "Continental": [
+      {
+        "title": "Continental's 43% recycled EV tyre and the EU rule gap - AutoNext.co",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQ0FYQ1I2UXBJdmJaTThZNTRmanloTWJyc3JCdFVUWmVnZU1tZWM1c1dMVGNleTliUW9aTFV2RW1uQ3VhYmF1S1VDbXlxVVU5bTNGOVVuS0JMMmFXSjlrUy14YmhORmpMeEtmeEdhV1ZVejROUjdXWlEyTHZFV21fenZ0cEJtTGZiNS0yTnlB?oc=5",
+        "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Pirelli": [
+      {
+        "title": "Suninen success a big boost for Pirelli in ERC - FIA European Rally Championship",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORmVObkcxVFg5eUwzTHpxOHcyVlJteUx2NXBXcnl5QThPZ3hvMTlkYlhNTlZYbUMxM3JyYlNGVmNzOFZlSjgtYjM1OFpoQVlnZV84akQ2UnhvajV0V2VrOG9WaHJJTjI3Q2oxOWtSdmJhWXN1MkJlQlQ2UklfZlR3SUVwaw?oc=5",
+        "pubDate": "Tue, 08 Sep 2026 10:55:48 GMT",
+        "category": "Premium global"
+      }
+    ],
     "Hankook": [
       {
-        "title": "Hankook Tyre UK Launches Laufenn365: A new digital platform for tyre accidental damage claims - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOY09wOXBMelBETzZOWk51N1RGSkc4VGxZMjd2RXRpYl9kYnFQV3dzTUdYaTY3Z3pYWlFiUElhSXUxS1F1NmVma3RkRktvZ010OWpmTEkzMHY2SnpXdEZwTTlYUjl1cTJJMWItcVhjdUs2eDZmajJiRS1fQU1Oc0Z0RzF5dDBoakY5bU1LbTU0RE5HVmdEUDdWODRzMDVURnJMbmVCYVpEMFIxUDVmcnNwWkxJcEYxNTdPRUNORGx4Q3pqemJScW4ySDB1Q3ZRRFBCSkd6Q3lTRGduakhoYVpTZjdKOEhtMzNBc3lHUEpKOGJvdUFVREg3SE1xeW9HWUFfeUVsbl9ycEJtZ1BTM1BUYnYwSU9Bdw?oc=5",
-        "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
+        "title": "Hankook at the Commercial Vehicle Show 2018 - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9hSzNvcnpFcVZXSmprQzcwMTlUeUN1WFJfUUFzUHRqaW5abnVOM0FiODNkVEdBS3ozZUhUZEtLNXB3NjV0ZXZhRjFrWlF6QS12WUhIVEhObDZJVkpTUUQ3d1ZqUEw0ZzcxQW9rNg?oc=5",
+        "pubDate": "Thu, 25 Jun 2026 14:59:57 GMT",
         "category": "Korean"
-      }
-    ],
-    "Double Coin": [
-      {
-        "title": "DSV to use ZC Rubber Westlake trailer tires for 10 more years - Fleet Equipment Magazine",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNT2I0a0RCVzh0cXNCVWlTNERtM25KeTIyUzJYRElEWV9zTFdCWXQwaVY5NjNRRG9XeHZMckVYUGtSaGljYWtWWEVkbEg1WDdzT1k2UTgybEJQYVdqVk1jUmlQbzRFaGhjR3lRNWJnbWI0TnpzZ0UweE4yYW9hcHh2dzdMOUh6OUtZeVE?oc=5",
-        "pubDate": "Tue, 08 Oct 2024 07:00:00 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "Nankang Rubber": [
-      {
-        "title": "Nankang Named a Top Taiwan Brand - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE12VDVySkZpdDlzMWlROHpPd3dSaHp2LWxYdUtwdUVRZW9RNW8xcVhSSGFDQ2lCaHhzR3lySXpld0NOMEwtU1ktdEcxOEpYOVh0UW9UeGdlNG5ZZm9LcDZHZEIyalkxNWh4VEVxUg?oc=5",
-        "pubDate": "Mon, 01 Aug 2011 07:00:00 GMT",
-        "category": "Taiwanese"
       }
     ]
   }
