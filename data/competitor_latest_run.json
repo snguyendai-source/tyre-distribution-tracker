@@ -1,31 +1,31 @@
 {
-  "runAt": "2026-09-09T06:18:26.204994+00:00",
+  "runAt": "2026-09-10T10:56:08.853579+00:00",
   "totalNew": 3,
   "entitiesChecked": 26,
   "entitiesWithNews": 3,
   "newItemsByEntity": {
     "Continental": [
       {
-        "title": "Continental's 43% recycled EV tyre and the EU rule gap - AutoNext.co",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQ0FYQ1I2UXBJdmJaTThZNTRmanloTWJyc3JCdFVUWmVnZU1tZWM1c1dMVGNleTliUW9aTFV2RW1uQ3VhYmF1S1VDbXlxVVU5bTNGOVVuS0JMMmFXSjlrUy14YmhORmpMeEtmeEdhV1ZVejROUjdXWlEyTHZFV21fenZ0cEJtTGZiNS0yTnlB?oc=5",
+        "title": "Continental Develops Concept Tire Containing Over 40 Percent Recycled Materials for EU Project - Continental AG",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE16UHliaVNKbGFaODJPdGh0azVIYmtsZ1FKcHE5RW1tbU1uMlQzT0oxbHVzNmUtTW1HZHRleDRLRGF0RjZLcmZXSU9pck54LV90bmhuaWg0cjA5VDEzcF9QZEhGTXRPRTd5blFFTmVIWWYxcllVN1NnaA?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 07:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Nokian Tyres": [
+      {
+        "title": "Important milestone in our renewed future journey – Nokian Tyres debuts Seasonproof 2 - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOb3dZUEJuS1RUMndnV2pGZkZjVHZPMks3YUFEc2pvb3BQRnBFeHZRUmRsRjdtRGJJbEEyMm1nMkdtQUstS1dmOGVMM2Joa0NMRnB3U2Z0TFR4RVdoVGwxRWVUTFNEdHZrQ1JNX1dpM2FValdfZVQzY1hQSmtPSXVpOU02M3huejllSFZ1MldjYnFKUjQzNFo5VHVNUUlGUHViUlkzMW5hOEp5Zy1BQ19zWXpOdncxYXVRMmc?oc=5",
+        "pubDate": "Tue, 11 Mar 2025 07:00:00 GMT",
+        "category": "Nordic"
+      }
+    ],
+    "JK Tyre": [
+      {
+        "title": "JK Tyre signs 11-year-old karting world number one Atiqa Mir - The News Mill",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM1dzeXYwRFpscHpPY2hKOTQzdS01WnpOaW5yMm1UOUtiMkJFR3p5eGZhQWxFVVBuVTJEN1ZCRGEwbTZHTko5RjZHMFQyRGZraDlSeU1OYjVjbjctM0dDNFJKZURadk5HLTY4d0RlWEc2WmJPYVhPRkdCNHhFM2FENEJnS0NkQVU5RnctV3JISFllSDRnWjdZZg?oc=5",
         "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT",
-        "category": "Premium global"
-      }
-    ],
-    "Pirelli": [
-      {
-        "title": "Suninen success a big boost for Pirelli in ERC - FIA European Rally Championship",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORmVObkcxVFg5eUwzTHpxOHcyVlJteUx2NXBXcnl5QThPZ3hvMTlkYlhNTlZYbUMxM3JyYlNGVmNzOFZlSjgtYjM1OFpoQVlnZV84akQ2UnhvajV0V2VrOG9WaHJJTjI3Q2oxOWtSdmJhWXN1MkJlQlQ2UklfZlR3SUVwaw?oc=5",
-        "pubDate": "Tue, 08 Sep 2026 10:55:48 GMT",
-        "category": "Premium global"
-      }
-    ],
-    "Hankook": [
-      {
-        "title": "Hankook at the Commercial Vehicle Show 2018 - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9hSzNvcnpFcVZXSmprQzcwMTlUeUN1WFJfUUFzUHRqaW5abnVOM0FiODNkVEdBS3ozZUhUZEtLNXB3NjV0ZXZhRjFrWlF6QS12WUhIVEhObDZJVkpTUUQ3d1ZqUEw0ZzcxQW9rNg?oc=5",
-        "pubDate": "Thu, 25 Jun 2026 14:59:57 GMT",
-        "category": "Korean"
+        "category": "Indian"
       }
     ]
   }

@@ -1,61 +1,70 @@
 {
-  "runAt": "2026-09-09T06:18:26.204994+00:00",
-  "totalNew": 6,
+  "runAt": "2026-09-10T10:56:08.853579+00:00",
+  "totalNew": 7,
   "entitiesChecked": 118,
-  "entitiesWithNews": 6,
+  "entitiesWithNews": 7,
   "newItemsByEntity": {
-    "Reifen Müller": [
+    "Pneuhage": [
       {
-        "title": "Hankook boosts European Alphatread offer with expanded plant - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONmRXcGxpTVJodzFxUFZVYS1GV2ZzUUItWlNqMTcyeFUzZ1ZaYUZoOHkzTkNseUMxempsN2EzeTl0aUNJWkxPYVhwd0dyeWtNRkI1M29GV0NQSUNxeVVSaGh0T21mVE9lSE5WZjZwVXFRelc4d3FpX0dJb1pHYThOMzRVaTZLLVIyVGlHS1pGZ1k1cHMtRzJ4S0lLZw?oc=5",
-        "pubDate": "Tue, 05 Jul 2022 07:00:00 GMT",
+        "title": "THE TIRE COLOGNE 2026: Expanded trade fair concept with a focus on OTR tires and tire service - profi-werkstatt.net",
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSG9OSlpyYmJGYkRqTzQ4WDI4Yl9lNnJZNTZlSHYxVE14WjB0R1g4RDNGXzdiSzB6TF90bXZuUXJPMkZIbWdHc05Ya2JJVG1ENTRTaTFIelJKanhqYmNRVEFTMXhLcDlRMzdBT283eEY3YTczZlNBMEcxNVFHQmtuZzVZTXU0Z211QVdqZmR2MmVmckNPclVtTTJKVEpIdlJDeFpveFZvNXhQT0NuWEIwWXFtODl0VFJXU3I5QWltWndzWWUwbWNzYzl3?oc=5",
+        "pubDate": "Wed, 08 Oct 2025 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Norauto": [
+    "Reifen Müller": [
       {
-        "title": "Renault to distribute Leonard retreaded car tyres - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZzJTMFFySjFtZ0lpYlNjdS12ZHgzYWY3OTJSX1VtWWpPdUF2ckF2N3JoZEFCUnVkdmtWemM3TmJ2UzZ4RDJpT083Zmc2ZkFUZkhlRC1zdV9kblAxa2ZiMjI2TkhzS0R2dHdRdHJhNEhIdHR1TUhHUzFSQXA1eThoVl9hNkI3Z2tQRWxqZA?oc=5",
-        "pubDate": "Tue, 10 Oct 2023 07:00:00 GMT",
+        "title": "Hankook shows off extended Alphatread retreading factory to customers - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQUF9GaDJobmF2cFhDREx2VXlGT1BJOTJoZ3RHXzdLVnhxaVRSNUY0WTJLRVpMbThIbGdxcnNuajQwcTBjZV8wLXRDZ04zT3ZXZF8xeVNhRFNRYjdDeHpXSlpGdlNYYXEtVDk4eWtwa0NJNWh1S3c1eDJ4MlpmeWhPXzZKQ2VCck91c0hqX3A4WGw0anZFc0JHdnlGazRIajJpQUZzVlRBenJSR2VNUEpPUlcyQ1p2eVhwZ1dWWTBmaU9JU19WejhlV05BREFsTnhSbVBfRzVUWWxVUndlbnp3ZFdFdEpVeXhYVUUyaWNCUGxHZHdwRHEtVFVB?oc=5",
+        "pubDate": "Mon, 04 Jul 2022 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Speedy": [
+      {
+        "title": "2023 Canyon Neuron Review | The all-new Neuron is a speedy & light weight trail bike - Flow Mountain Bike",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB4M0pSTzEtbmhuNF9uY3JjTXJtV2tqeHItRl9MelB4dWRWWklnYmd6ZTZUTEVzSE9QQk1sb2p2bTFULXNSRWtnSThuMFY1bmtINXRxZGc4OXJ4Z3gzZjlQNG4zN3RmelFkR3hMOEJR?oc=5",
+        "pubDate": "Tue, 21 Mar 2023 07:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "Kwik Fit": [
+    "Allopneus": [
       {
-        "title": "Kwik Fit \"Kwik Fit's 20,000 mile tyre guarantee\" by VCCP - Campaign UK",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUG41RHNmWndnR3hKTDl5T3RWczRRSFZNbTZIYzFRRkFwZ3dYNm9Ub1NuT2RDWDBDTWVlbXdwQ2FBdGZtWUw4eFdfSHZJLWR2U1kzUWhRNmsxQkFlb0R0bkFjOFUybnAtQWhBTkk1dU1yRElPUGREVUluLVp3X28zTEx3RzdwNlc1eUVLQ1ZNSk8xZEQ3YzgtRlk2c0d6dUJ5VDJyVjUycjN1d3U5SjdwRFU3eEFNaHc1dXVPSw?oc=5",
-        "pubDate": "Mon, 07 Sep 2026 16:11:46 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ],
-    "Bandvulc": [
-      {
-        "title": "50 years of British retreads: Bandvulc marks half-century at forefront of sustainable production - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOOW9UYzZldVQ1Z25nUnhYVTI0SEpIOVRMRVdMNW4tOHRlV0hHWjZyWFBGSzFTTVFtLXBqSHJGQWJfYWV6VERGem8xYWR5dndlVTJWNE4tVDZ4ZmlWZ3p4X19rWDdPZ3NVc05lanJIZUNzRnhtRTBlb2c0X2xEVTdRRzBoSm9IS1lMSENOd1VLUERUMFFuNWppdTgwaU90cXJ3X0l6eDdzQ3E1ODM5MEZDQ0JwS0doMWFaVXFrMmVGZ3ZEbWJabzdDeVBR?oc=5",
-        "pubDate": "Tue, 22 Jun 2021 07:00:00 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ],
-    "Grupo Andrés": [
-      {
-        "title": "25% of Neumáticos Andrés sales are exports - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQY25oQUFicjFRMlFkdmxxXzZwNUlfVUR3RmlRUDRqSWpxcExMNGRRdmMtN0pSejdHUUg5TzJ6LW1KYUFoLVZBWlBxaHc5WXZnTFh2bXdraW0wV0VJVWh5YzZYdVE4VVFIOFJoZFduZWFGVm1Kd2hpRWJaMUxoYVZ3ZGlB?oc=5",
-        "pubDate": "Thu, 07 Apr 2022 07:00:00 GMT",
-        "country": "Spain",
+        "title": "The European Commission refers the examination of Michelin's acquisition of Allopneus to the Autorité de la concurrence - autoritedelaconcurrence.fr",
+        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTHBYbGx6aWNDWmZBVlllT3BQQkYyZkpnYXBQWUZVZC1jMldvOXBCRmtMOU9ZS0dKb3RiZnBTZ3NIQmF2T0FsYkszTGF4LVlleFpBek01UnNmek5zdFRXcW9mU1FFQjF6SFBMM1hKRFR0OXZ0MG5TZjdWOXJMazVTOWhlcUJxMVctVW1abjdUVlU3WTE3bGNURUFDYlhTb3g1UjhZaXVaUzhZMHB4X3ZIOGNQeVlsaHBZTHVscDY4Ni1MUzVZZjMwaWF0OU1NYTA?oc=5",
+        "pubDate": "Fri, 22 Oct 2021 07:00:00 GMT",
+        "country": "France",
         "cluster": "South-West"
       }
     ],
-    "Vianor": [
+    "Halfords Autocentres": [
       {
-        "title": "Nokian's SnapSkan Helps Motorists Monitor Tire Tread Depth - Modern Tire Dealer",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVElNcTcwb0NDRUxKQkVDM19SMXRzT1B5TVF5cHY1LU9fMGY4UERjMkVZc1lQZGJrY2xIWWZBeHQ4Q0JPYjJyVTNoSkZPODZ1REptNGs5NUs4UGJ6RG9iNmU3WmVKdkRQeVVVOXIyUFhPcGZlN2lCU1Jfd1R1dkM0bHNuWUxwbDNUSEd6M1k1RnFsSDVTc1RWb3BkLTIxT0UxOXhmQmlFY3drZmFLV1R3amZ1bUxnT0lQSEFEVFpzSE9JMmFBNGotcjRfcTFybVRMWmpNSFpFYw?oc=5",
-        "pubDate": "Wed, 14 Dec 2016 08:00:00 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
+        "title": "Halfords buys National Tyres and Autocare in £62 million deal - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVEpkTGktdkgyWW05OS1ScFJEYjZqbk1zUUlSTjlsbjdhcThOb3ZJRkVfT3BVSzhNeE5aRFBzLUZrRzRGNTVaelpzai1Sei03cGh4amRUM2tFZmhJZVNkOFlVSVNyMVZzLTJmOTN6ejljOW9aMTRRbld3Ukx2T2MtU3dHdHpMVGJUSUw5ZHZEUFBjRUVkclE?oc=5",
+        "pubDate": "Thu, 02 Dec 2021 08:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "HiQ Tyres": [
+      {
+        "title": "Research reveals shocking toll potholes take on drivers in Cornwall - falmouthpacket.co.uk",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQT1lGcVJCMHhWRXRlZndkaUNtWGVYTm04UEhvN1piWldLUkRRTmJhR0pia2l3VGpSc01fNzVoX1JVT1pMTEh4ZHFqNFlLek9BcnBBR3dWWS04dUxkd0ZoUFl1OTVaUk9GQkdQMWh3a0hZT0U4aWxCc2h4VTZDUnRtWElBLU5JV0pYY0NuSVltdUhEbDNvY1BiSmpCOVRaSFlfVkE?oc=5",
+        "pubDate": "Sat, 09 Nov 2024 08:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Point S UK": [
+      {
+        "title": "Tyre Point car meet raises over £2200 for charity - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZmZyTlJveXJ4dEFBTm1VNF8yT0E1YUxSbGlMRDBFbHI2aGlWODdJajcta0g1MUpDbTFmNEJvREN6ZDdjQThZNG1udmtVa1VXVUd6TFdTT1R3ZzNxSm9JZUh4S3B3TTVsVEN3ZG0wQ3BPM3hMUFlYeXAxOTZ0akxncU9JaEZIZ3JLdzFj?oc=5",
+        "pubDate": "Tue, 10 Aug 2021 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ]
   }
