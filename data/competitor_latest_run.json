@@ -1,31 +1,15 @@
 {
-  "runAt": "2026-09-10T10:56:08.853579+00:00",
-  "totalNew": 3,
+  "runAt": "2026-09-11T10:54:03.578755+00:00",
+  "totalNew": 1,
   "entitiesChecked": 26,
-  "entitiesWithNews": 3,
+  "entitiesWithNews": 1,
   "newItemsByEntity": {
-    "Continental": [
+    "Hankook": [
       {
-        "title": "Continental Develops Concept Tire Containing Over 40 Percent Recycled Materials for EU Project - Continental AG",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE16UHliaVNKbGFaODJPdGh0azVIYmtsZ1FKcHE5RW1tbU1uMlQzT0oxbHVzNmUtTW1HZHRleDRLRGF0RjZLcmZXSU9pck54LV90bmhuaWg0cjA5VDEzcF9QZEhGTXRPRTd5blFFTmVIWWYxcllVN1NnaA?oc=5",
-        "pubDate": "Tue, 25 Aug 2026 07:00:00 GMT",
-        "category": "Premium global"
-      }
-    ],
-    "Nokian Tyres": [
-      {
-        "title": "Important milestone in our renewed future journey – Nokian Tyres debuts Seasonproof 2 - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOb3dZUEJuS1RUMndnV2pGZkZjVHZPMks3YUFEc2pvb3BQRnBFeHZRUmRsRjdtRGJJbEEyMm1nMkdtQUstS1dmOGVMM2Joa0NMRnB3U2Z0TFR4RVdoVGwxRWVUTFNEdHZrQ1JNX1dpM2FValdfZVQzY1hQSmtPSXVpOU02M3huejllSFZ1MldjYnFKUjQzNFo5VHVNUUlGUHViUlkzMW5hOEp5Zy1BQ19zWXpOdncxYXVRMmc?oc=5",
-        "pubDate": "Tue, 11 Mar 2025 07:00:00 GMT",
-        "category": "Nordic"
-      }
-    ],
-    "JK Tyre": [
-      {
-        "title": "JK Tyre signs 11-year-old karting world number one Atiqa Mir - The News Mill",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM1dzeXYwRFpscHpPY2hKOTQzdS01WnpOaW5yMm1UOUtiMkJFR3p5eGZhQWxFVVBuVTJEN1ZCRGEwbTZHTko5RjZHMFQyRGZraDlSeU1OYjVjbjctM0dDNFJKZURadk5HLTY4d0RlWEc2WmJPYVhPRkdCNHhFM2FENEJnS0NkQVU5RnctV3JISFllSDRnWjdZZg?oc=5",
-        "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT",
-        "category": "Indian"
+        "title": "Press kit: Hankook at the Road Transport Expo Stoneleigh 2026 - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9CV2RUN2lwaTV1b181ZGozcE9pUU1pRzl1bzc4ZEpJQ2tTQUFkN0o3dEl6NUxnMk9HN2pUQl9NaFl0MkxhaHJVR1pVQXgyM2RrNDQyZ0dxMHB4dHZzdWFycmdiYU5JdXo0b3JnQWxacTFSN2xXMjZtLTlR?oc=5",
+        "pubDate": "Tue, 30 Jun 2026 07:00:00 GMT",
+        "category": "Korean"
       }
     ]
   }
