@@ -1150,6 +1150,66 @@
       "noteBadge": "caution",
       "note": "Gap No Danish unit total or channel split found. Trade data are price/import-oriented (avg. import price ~$49-57/unit 2024; Germany ~49-58% of imports, Sweden ~10%).",
       "marketAccessNote": "The most fluid supplier relationships in Europe right now, following Euromaster's 2023-24 exit (split between Super Dæk/NDI and Vulkan Dæk). NDI Group (owner of Super Dæk) is the standout wholesaler to approach while these relationships are actively being reset."
+    },
+    {
+      "country": "Poland",
+      "meta": "Credence Research / IndexBox 2024 · passenger car replacement tyres",
+      "total": "$1.77B",
+      "totalLabel": "VALUE ONLY (2024) · fastest-growing major EU market, +4.1% CAGR 2013-2024",
+      "channels": [],
+      "flatEntities": [
+        {
+          "name": "Inter Cars S.A.",
+          "model": "Wholesaler / distributor",
+          "territories": []
+        },
+        {
+          "name": "Handlopex S.A.",
+          "model": "Wholesaler / distributor",
+          "territories": []
+        },
+        {
+          "name": "JMK Sp. z o.o.",
+          "model": "Wholesaler / distributor",
+          "territories": []
+        },
+        {
+          "name": "Euromaster Poland (Michelin)",
+          "model": "Manufacturer-owned franchise (Michelin)",
+          "territories": []
+        },
+        {
+          "name": "Premio Poland (Goodyear)",
+          "model": "Manufacturer-owned franchise (Goodyear)",
+          "territories": []
+        },
+        {
+          "name": "Bosch Car Service Poland",
+          "model": "Independent multi-brand workshop network",
+          "territories": []
+        }
+      ],
+      "noteBadge": "caution",
+      "note": "No official channel-split (retail vs. wholesale vs. online) is published for Poland the way MITECO/BRV/GfK do for Spain/Germany/UK — the $1.77B figure is total market value, not a sourced unit total. Entities below are confirmed named players, not volume-ranked.",
+      "marketAccessNote": "Inter Cars is the standout priority — Poland's (and Central/Eastern Europe's) dominant aftermarket distributor, with 250+ Polish branches, 600+ across 21 countries, and its own Q Service Castrol independent workshop network. A relationship here has reach far beyond Poland alone, given Inter Cars' footprint across the wider CEE region (Czech Republic, Slovakia, Hungary, Baltics, Balkans). Handlopex and JMK are established secondary wholesalers worth knowing but far smaller in scale.",
+      "territoryDefs": [
+        {
+          "code": "R1",
+          "name": "North"
+        },
+        {
+          "code": "R2",
+          "name": "Central & East"
+        },
+        {
+          "code": "R3",
+          "name": "South"
+        },
+        {
+          "code": "R4",
+          "name": "West & Southwest"
+        }
+      ]
     }
   ],
   "tbr": [
