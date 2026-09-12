@@ -1,34 +1,59 @@
 {
-  "runAt": "2026-09-11T10:54:03.578755+00:00",
-  "totalNew": 3,
+  "runAt": "2026-09-12T10:21:15.854573+00:00",
+  "totalNew": 6,
   "entitiesChecked": 118,
-  "entitiesWithNews": 3,
+  "entitiesWithNews": 5,
   "newItemsByEntity": {
+    "Euromaster Germany": [
+      {
+        "title": "More workshop services for commercial vehicle fleet customers: Euromaster integrates TPMS service - PROFI Werkstatt",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWHg3YkRIZ295MXFhZHRNQW45c3E3WEVNVElEZ29tWVVGcnV3Vm5vOTF2alpOSjF5LUpoeHhXNG82R05uckZoY0UxdWN6NlhPYUtVSFZYZWVfeC00YUFSRVpjLWR3VDVFb1BOd081VDF4ZXRkY1dnM1IxUjlObjE3NGxNUHBuV3RsVlpudWpyZVphNHA1R1BEa2I4QnRKMGJQZHhhTTJFc21JYjRnTXpsd1VmODI1a0dhaTdpejZSV05pNWJ3OUE0LS1IT2lkdlkzd0lZdmtYVmV1anFm?oc=5",
+        "pubDate": "Thu, 15 May 2025 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Hedin Group": [
+      {
+        "title": "Hedin Mobility Group publishes the Annual Report for 2024 - news.cision.com",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRW1uNjhkbm5iU0xCM25ydVZrYnNPZU8xaDA0QXV5cF81RWQ3SjFuTEZLVUF6VjBIbDRUM1ZyeXdhVVRmMzNhQU12Y2tvUUFfdHlGLXFYWjJjNUtEU1djQ09UT21qQkZVOURfSTE0bHowcFduN2ZkX2ZFTXE2bUtxOVhLd1VTUnZDOHVZTE5oTXVvZmlvVERUSDg4YThXOVJQX3R2M1h0emstV05ObTYya3J1RmY1elFGeEYyVWRMa2g?oc=5",
+        "pubDate": "Thu, 24 Apr 2025 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Hedin Mobility Group appointed importer of the Ford F-150 - news.cision.com",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMTdQeXNaV0JOT0w0Rkx4SmdDNzh1ZG02bEtvLUprblc4eFNGYXhWakpURmhEY1gtTFBMcWdrZ0hkVWRvckRuRTF4LTAwWmQzYmlxR2poSGZMaXhETmNoLVBOQy1Wem1zalVMSFVxczhNZ0lHRUUwbUhCajYwQi1NSEhMVXVIOEpic0NkOWNaQmJOeTRsaFhoMkc4N05FNGN0cFRlZ09lV2ZxY1hOZVdORFJ4TWtST3JaODJmSmthbm4?oc=5",
+        "pubDate": "Thu, 29 Sep 2022 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Speedy": [
+      {
+        "title": "In the Drops: Uber-wide Reserve gravel wheels, classy Shimano shoes, a posh Berk saddle and speedy Conti tyres - cyclist.co.uk",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5TbkJCZ05HS2FNNHFEMkVJZTBwUzctSDByU2NLdElXVEpVSUdFeE11VGJLaTFmNDAtVm9HdDFLR3V6dWtXTFJwZFE5LVRnczRuQWlvLUJVc2JkaEloRFhHQ2FLRXlDTVF4dXNvaDRHWG5Jb2pvVjNSTXVR?oc=5",
+        "pubDate": "Fri, 11 Sep 2026 10:20:32 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
     "Feu Vert": [
       {
-        "title": "Amazon expands tyre fitting options in USA - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOT2FrSTVpd1VwNm9vTUZ3SXlzOWpKcldybEk2SzEzSDZGSDNSR2s1cC1FUjRzLVVNQ3hoTTZLQkRyTEpMTTlrZjNnSzJSYmNabTdGYjk4cmFPaEdEOGcwbFdWRDVlQlFVTzlYbjQ2RFJvS2ZUNHV4OVFQSEp2RlFzRllJaw?oc=5",
-        "pubDate": "Mon, 14 May 2018 07:00:00 GMT",
+        "title": "E Sprint Vtc électrique Velo Electrique Feu Vert Avis Pliant Boulanger Vtt électrique Fat Bike Ã©électrique Boulanger Vélo Assistance électrique Ion Fat 26' - fuelcarmagazine",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE94bldtTkNUazA2cXZRdjFWZ2xJd0p5eVNOU3VFbExOOTNvUHNEZE9hVzIxRVdmWEJEZmYwdG5ZVmQ2VzY2VGluT1hwbXVqMXZkajZ5ZUpDc2lBRUVVV3M5N19sT0pMS19qLVNtTTFFZ2FLOW84QUJRN3Nmck1Cdw?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 22:09:46 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
     "Point S UK": [
       {
-        "title": "Point S UK appoints Sarah Gumbley to drive strategic growth - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSE52TlBfbDRkTllYMmU0Ymw2Z1dvUlFrOGN0MWhrOENFUG1oZzFIaWRDeVVINW5EY2o4UTV5ejVVUlRTYVNkTUdkMWlxbjlLNDhnTEFHQml2TFo0OERVYUZNQ2RPdW9QZWkyZ2s5bHVfN3ZVbkZVVnRhVTJ1ckRKYjVON0VCVUZHOVVSazQ4b0p1M1hoZGc1ZXBR?oc=5",
-        "pubDate": "Thu, 10 Sep 2026 18:39:38 GMT",
+        "title": "Point S adds bespoke ADAS course to UK training programme - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTF9sb1lGZUtXUFJCeG5KWTN1LXpZcU1wWHZsZzJMQXlqQ2g5dXpueHpEdXYyMElDdC1oa3l6VFFUaWtWbWhDYjN1X2xnejFuYkxwcUdIMWlzZ1NQSV91SHVTS25JZ0M1c0wxdkJWYzFTcUcxM1dlMWRVdDJNY293YVVLUEZiQ2dYdDFhMXBqNTVQYTh1MUdz?oc=5",
+        "pubDate": "Wed, 13 Dec 2023 08:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
-      }
-    ],
-    "MARSO": [
-      {
-        "title": "Walsall drivers pulled over in surprise police roadside operation hit with fines for a multitude of motoring offences - Express and Star",
-        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPTG5lZ1g3VlVlb0RZX0ZuTEk3RFM3Rk5hc2duSHVkNXo2VjFYNHZBYjhwZHZZWHFQMElDQS03UF9pbUZkc2l4NGs2VVhiU3k4eXh1VTBQVkFKUDNEdHllb09XZFItcDh0djVSQ1BPb1VvZFRCWFE3MG5CNDB2cGJUX19sTlN2N2RkRFlvdGpia3JaUGNIaHhyenUzWUprMVhQYXNLTFVMZENiU0pLOVhKemVHZ1ZJYkNyaWlZUWJHVXRCYjNhdEdnbm5kY0pWTmZOZjZURXU4NUI4XzNfUFdJNHFOMDFIeFhHRDh2WTU4UXlNRnU3Q000R0x5TzJ6QQ?oc=5",
-        "pubDate": "Sat, 19 Jul 2025 07:00:00 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
       }
     ]
   }

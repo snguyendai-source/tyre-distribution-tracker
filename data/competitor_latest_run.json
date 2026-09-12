@@ -1,15 +1,23 @@
 {
-  "runAt": "2026-09-11T10:54:03.578755+00:00",
-  "totalNew": 1,
+  "runAt": "2026-09-12T10:21:15.854573+00:00",
+  "totalNew": 2,
   "entitiesChecked": 26,
-  "entitiesWithNews": 1,
+  "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Hankook": [
+    "Double Coin": [
       {
-        "title": "Press kit: Hankook at the Road Transport Expo Stoneleigh 2026 - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9CV2RUN2lwaTV1b181ZGozcE9pUU1pRzl1bzc4ZEpJQ2tTQUFkN0o3dEl6NUxnMk9HN2pUQl9NaFl0MkxhaHJVR1pVQXgyM2RrNDQyZ0dxMHB4dHZzdWFycmdiYU5JdXo0b3JnQWxacTFSN2xXMjZtLTlR?oc=5",
-        "pubDate": "Tue, 30 Jun 2026 07:00:00 GMT",
-        "category": "Korean"
+        "title": "Europe Mining Equipment Tire Market Size, Report 2034 - Global Market Insights Inc.",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPM1FoX1FnQzY4VXI3b2V6bUpvNUM4M0tObVNhcU1mYk0wbFBVV0U4SEJMZE15YUkyaW9XTUNtTGRvWWJ4OWVOR0xrZmdqZFNDYVlLTlhXOWZKOVBnYTc2UVRCTWtua3poQ21LcWh6R01EaVB4VkJUR01TMjlIS2tjWGFHVGFXQ2M?oc=5",
+        "pubDate": "Mon, 12 May 2025 07:33:07 GMT",
+        "category": "Chinese"
+      }
+    ],
+    "Nankang Rubber": [
+      {
+        "title": "Nankang Debuts New Winter Line - Tire Review Magazine",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE01ZEV6U1hfb1R4eWJQc3Fqdi1oQUQ3VnVJM21ZX0oxYkROS05rbmtuT3NvN1FkLU1XaTFRYzUyYTNGQVFfeHlGSFNzWmlxSVhPYkN6YlYyRklIU0ExTXg4TXlKYzB6UmYxMkE?oc=5",
+        "pubDate": "Sat, 22 Dec 2018 19:06:58 GMT",
+        "category": "Taiwanese"
       }
     ]
   }
