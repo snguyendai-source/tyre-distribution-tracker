@@ -211,7 +211,12 @@
               "owner": "Mobivia Group",
               "volume": "~1.4M",
               "model": "Fast-fit / auto-centre chain (Mobivia)",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 500,
+                "metric": "branches",
+                "label": "~500 branches (Mobivia)"
+              }
             }
           ]
         },
@@ -291,35 +296,60 @@
               "owner": "Bridgestone · ~466 branches",
               "volume": "~1.30M",
               "model": "Fast-fit / auto-centre chain",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 466,
+                "metric": "branches",
+                "label": "~466 branches"
+              }
             },
             {
               "name": "Norauto",
               "owner": "Mobivia · ~415 branches",
               "volume": "~1.16M",
               "model": "Fast-fit / auto-centre chain",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 415,
+                "metric": "branches",
+                "label": "~415 branches"
+              }
             },
             {
               "name": "Midas",
               "owner": "Mobivia · ~367 branches",
               "volume": "~1.03M",
               "model": "Fast-fit / auto-centre chain",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 367,
+                "metric": "branches",
+                "label": "~367 branches"
+              }
             },
             {
               "name": "Feu Vert",
               "owner": "Groupe Monnoyeur · ~350 branches",
               "volume": "~0.98M",
               "model": "Fast-fit / auto-centre chain",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 350,
+                "metric": "branches",
+                "label": "~350 branches"
+              }
             },
             {
               "name": "Roady",
               "owner": "Independent · ~120 branches",
               "volume": "~0.34M",
               "model": "Fast-fit / auto-centre chain",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 120,
+                "metric": "branches",
+                "label": "~120 branches"
+              }
             },
             {
               "name": "Alliance Automotive Group (AAG)",
@@ -377,14 +407,24 @@
               "owner": null,
               "volume": null,
               "model": "Buying group / cooperative",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 3300,
+                "metric": "garages",
+                "label": "~3,000-3,600 garages"
+              }
             },
             {
               "name": "Bosch Car Service France — ~600-700 garages",
               "owner": null,
               "volume": null,
               "model": "Independent multi-brand workshop network",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 650,
+                "metric": "garages",
+                "label": "~600-700 garages"
+              }
             },
             {
               "name": "Euro Repar (Stellantis-affiliated independent network)",
@@ -414,35 +454,60 @@
               "owner": "Independent cooperative · ~450 branches",
               "volume": "~1.11M",
               "model": "Buying group / cooperative",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 450,
+                "metric": "branches",
+                "label": "~450 French branches (6,376 PoS / 51 countries group-wide)"
+              }
             },
             {
               "name": "Eurogom group",
               "owner": "Siligom / Eurotyre / Côté Route · ~437 branches",
               "volume": "~1.08M",
               "model": "Buying group / cooperative",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 437,
+                "metric": "branches",
+                "label": "~437 branches"
+              }
             },
             {
               "name": "Euromaster",
               "owner": "Michelin · ~415 branches",
               "volume": "~1.02M",
               "model": "Manufacturer-owned franchise (Michelin)",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 415,
+                "metric": "branches",
+                "label": "~415 French branches"
+              }
             },
             {
               "name": "First Stop",
               "owner": "Bridgestone (incl. Métifiot) · ~300 branches",
               "volume": "~0.74M",
               "model": "Manufacturer-owned franchise (Bridgestone)",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 300,
+                "metric": "branches",
+                "label": "~300 French branches"
+              }
             },
             {
               "name": "Vulco",
               "owner": "Goodyear-Dunlop backed · ~230 branches",
               "volume": "~0.57M",
               "model": "Manufacturer-owned franchise (Goodyear)",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 230,
+                "metric": "branches",
+                "label": "~230 branches"
+              }
             },
             {
               "name": "BestDrive",
@@ -493,7 +558,12 @@
               "owner": null,
               "volume": null,
               "model": "Online retailer",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 1300,
+                "metric": "partner outlets",
+                "label": "~1,300 partner outlets"
+              }
             }
           ]
         }
@@ -535,22 +605,42 @@
         {
           "name": "Halfords Autocentres (~650+ branches)",
           "model": "Fast-fit / auto-centre chain",
-          "territories": []
+          "territories": [],
+          "scale": {
+            "value": 650,
+            "metric": "branches",
+            "label": "~650+ branches"
+          }
         },
         {
           "name": "Kwik Fit (~600, ETEL/Itochu)",
           "model": "Fast-fit / auto-centre chain",
-          "territories": []
+          "territories": [],
+          "scale": {
+            "value": 600,
+            "metric": "branches",
+            "label": "~600 branches"
+          }
         },
         {
           "name": "Protyre (186+, Micheldever/Sumitomo)",
           "model": "Fast-fit / auto-centre chain",
-          "territories": []
+          "territories": [],
+          "scale": {
+            "value": 186,
+            "metric": "branches",
+            "label": "186+ branches"
+          }
         },
         {
           "name": "First Stop UK (150, Bridgestone — targeting 220)",
           "model": "Manufacturer-owned franchise (Bridgestone)",
-          "territories": []
+          "territories": [],
+          "scale": {
+            "value": 150,
+            "metric": "branches",
+            "label": "150 branches (targeting 220)"
+          }
         },
         {
           "name": "HiQ (Goodyear franchise)",
@@ -560,7 +650,12 @@
         {
           "name": "Point S UK (300+ independent centres)",
           "model": "Buying group / cooperative",
-          "territories": []
+          "territories": [],
+          "scale": {
+            "value": 300,
+            "metric": "centres",
+            "label": "300+ independent centres"
+          }
         },
         {
           "name": "Bosch Car Service UK",
@@ -575,12 +670,22 @@
         {
           "name": "Micheldever Tyre Services",
           "model": "Wholesaler / distributor",
-          "territories": []
+          "territories": [],
+          "scale": {
+            "value": 6000,
+            "metric": "wholesale clients",
+            "label": "supplies 6,000+ retailers, ~6M tyres/year"
+          }
         },
         {
           "name": "Bond International",
           "model": "Wholesaler / distributor",
-          "territories": []
+          "territories": [],
+          "scale": {
+            "value": 11,
+            "metric": "distribution centres",
+            "label": "11 distribution centres"
+          }
         },
         {
           "name": "Stapleton's (Tyre Services)",
@@ -595,7 +700,12 @@
         {
           "name": "National Tyres and Autocare (Halfords)",
           "model": "Fast-fit / auto-centre chain",
-          "territories": []
+          "territories": [],
+          "scale": {
+            "value": 604,
+            "metric": "garages",
+            "label": "part of Halfords' 604-garage estate (up from 372)"
+          }
         },
         {
           "name": "Lodge Tyres (Halfords)",
@@ -743,7 +853,12 @@
         },
         {
           "name": "Deldo Autobanden",
-          "model": "Wholesaler / distributor"
+          "model": "Wholesaler / distributor",
+          "scale": {
+            "value": 2,
+            "metric": "M+ tyres in stock",
+            "label": "2M+ tyres in stock, sells to 64 countries"
+          }
         },
         {
           "name": "Forrez",
@@ -865,7 +980,12 @@
       "flatEntities": [
         {
           "name": "Euromaster Italia (350+ centres — expanded via ATS Pneusmarket acquisition, 2024)",
-          "model": "Manufacturer-owned franchise (Michelin)"
+          "model": "Manufacturer-owned franchise (Michelin)",
+          "scale": {
+            "value": 350,
+            "metric": "centres",
+            "label": "350+ centres"
+          }
         },
         {
           "name": "Driver (Prometeon/Pirelli-linked franchise)",
@@ -909,7 +1029,12 @@
         },
         {
           "name": "Tagliabue Gomme Gross (TGG)",
-          "model": "Wholesaler / distributor"
+          "model": "Wholesaler / distributor",
+          "scale": {
+            "value": 143.3,
+            "metric": "€M revenue",
+            "label": "€143.3M revenue (2022), 20,000+ clients"
+          }
         }
       ],
       "noteBadge": "caution",
@@ -996,11 +1121,21 @@
       "flatEntities": [
         {
           "name": "MARSO Kft. (~30 own locations)",
-          "model": "Wholesaler / distributor"
+          "model": "Wholesaler / distributor",
+          "scale": {
+            "value": 30,
+            "metric": "own locations",
+            "label": "~30 own locations + franchise network"
+          }
         },
         {
           "name": "Point S Hungary (~73-75 franchise shops)",
-          "model": "Buying group / cooperative"
+          "model": "Buying group / cooperative",
+          "scale": {
+            "value": 74,
+            "metric": "franchise shops",
+            "label": "~73-75 franchise shops"
+          }
         },
         {
           "name": "First Stop (Bridgestone)",
@@ -1008,11 +1143,21 @@
         },
         {
           "name": "Gumi Pont / Gumi.hu network (150+ service points)",
-          "model": "Independent retail network"
+          "model": "Independent retail network",
+          "scale": {
+            "value": 150,
+            "metric": "service points",
+            "label": "150+ service points"
+          }
         },
         {
           "name": "Gumik.hu (400+ contracted partners)",
-          "model": "Independent retail network"
+          "model": "Independent retail network",
+          "scale": {
+            "value": 400,
+            "metric": "contracted partners",
+            "label": "400+ contracted partners"
+          }
         },
         {
           "name": "Vianor (Nokian)",
@@ -1072,7 +1217,12 @@
         },
         {
           "name": "ESA (buying cooperative for Swiss garages)",
-          "model": "Buying group / cooperative"
+          "model": "Buying group / cooperative",
+          "scale": {
+            "value": 7000,
+            "metric": "members/co-owners",
+            "label": "~7,000 members and co-owners, ~600 employees"
+          }
         },
         {
           "name": "Bosch Car Service",
@@ -1112,7 +1262,12 @@
       "flatEntities": [
         {
           "name": "Super Dæk Service (NDI Group) — acquired 9 Euromaster branches, Sept 2023",
-          "model": "Manufacturer-owned franchise (Michelin)"
+          "model": "Manufacturer-owned franchise (Michelin)",
+          "scale": {
+            "value": 71,
+            "metric": "outlets",
+            "label": "71 outlets pre-acquisition, ~500 employees"
+          }
         },
         {
           "name": "Euromaster — exited Denmark end-2023/early-2024",
@@ -1161,12 +1316,22 @@
         {
           "name": "Inter Cars S.A.",
           "model": "Wholesaler / distributor",
-          "territories": []
+          "territories": [],
+          "scale": {
+            "value": 250,
+            "metric": "PL branches",
+            "label": "250+ Polish branches, 600+ across 21 countries (group revenue ~€2.18B, all product lines)"
+          }
         },
         {
           "name": "Handlopex S.A.",
           "model": "Wholesaler / distributor",
-          "territories": []
+          "territories": [],
+          "scale": {
+            "value": 16,
+            "metric": "branches",
+            "label": "16 branches, 5,000+ regular clients"
+          }
         },
         {
           "name": "JMK Sp. z o.o.",
