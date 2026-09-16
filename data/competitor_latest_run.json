@@ -1,54 +1,28 @@
 {
-  "runAt": "2026-09-15T11:23:40.825005+00:00",
-  "totalNew": 7,
+  "runAt": "2026-09-16T11:08:06.051448+00:00",
+  "totalNew": 3,
   "entitiesChecked": 26,
-  "entitiesWithNews": 3,
+  "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Hankook": [
+    "Goodyear": [
       {
-        "title": "Hankook presents first pre-production tyre from new production line for commercial vehicle tyres in Hungary - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQeHdyWFozU1pfN0lfYmNOaVpkLWtLblJnLVNYMFRPdTdXU1RwOVFFWUhDMXVBaGt4ZzNqV1ZMVWVTZk1IeFVESWFnVHpFS1pfT29pSmNDZUJ5Y2E0V19TY01Sb3NjUDc4azRzQ19YMldrYTY1cXJtRlhEd3hqOVNMT0JnVlREaGJHaEpVTlBXQkkxVDhqTzFFTmNJa0xjd2hEVUI0dHZHZ1hkbDVnVHJoaW1vSlh3QTVjbjdyN1pWUmh0LW55QzhqQnBKSkwwc3FqTV9BUE8wQXN2Q01JdHhUSDNLRldUUjdSNGg1dGVDSnpBUzZXY1hJRllTZU8?oc=5",
-        "pubDate": "Mon, 14 Sep 2026 12:32:35 GMT",
-        "category": "Korean"
+        "title": "Goodyear expands iconic historic tire range, reinforcing its historic racing legacy - news.goodyear.eu",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUExVYWkzdExGMGRfMFUzX0lMY0xjZGNSTnJqTUQwQVJUOXl0bFJuYnB3NHNHOEJZaGJwQlJpT1AyRlJPZFlVeV9VWl9DSmx5TFpnSFhNRllLSTg5REdwR3Q0UjNhMURWa0p0M3pFU2ZJSGxSSVotWktaNVU2c1dhWUhOOFdaclY3bktaNTVnNGc1YXplMFZaLVpPVlc4NXJyLXVvZHJJSFZ6VDhY?oc=5",
+        "pubDate": "Wed, 20 May 2026 07:00:00 GMT",
+        "category": "Premium global"
       },
       {
-        "title": "Hankook unveils first truck tyre from expanded Hungary plant – October production start - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMWJvMWQ3TGQ2cHdsWGFQWUNTc3RwZ0MyOHZCZGNBeC1hSWtXSi1GVk9ITTdyNlp3SnQ0ZnNHcU9nYXVWQlR6VmVXR2ZjYURQUTlsaXMzOFFRczJnOHk2WFpBNTVCMDRKWmhETU04RTF6d1FrMzVxUmJiRmFfM0UyMnJqTElkdFlYdE1OZ1Z6UXhhTlRuUUlLR1B0d2Z4dXJmbmJHZUI5eHo4allHbXFKZVExSUkyTEdncEhjVw?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 10:48:24 GMT",
-        "category": "Korean"
-      },
-      {
-        "title": "Hankook set to start European truck tire production - European Rubber Journal",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeUdrRUU0QW1WNHhlRFR3bFM0aFNwV0NtY1BLZ0VNNHlzY2xoN1VOUTJVZklNQTVZT3RSSW9waURoTEJvc0JhUG40Z3dBV0szOVQ2NldUUS1PdGhxSkh0QzFpaHF1YUVkeDNoNk80OVVJWmUxbExrY0JLaGo0Z3FIUXZOMUE0ellpeDFMa3VieFpNUWFiTy1YTGJaNlFZUWphMFFzX2tGS3dOQWc?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 06:04:23 GMT",
-        "category": "Korean"
-      },
-      {
-        "title": "Hankook opens first European truck tyre line in Hungary - Automotive World",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUS0wdFp4QkRpc3dkQXVhbTc2VmQ3dFpzQTZOTXBkVC0teXZXcC1tWlFkNWtvdFROSXA1OVFXVnloUXZXSDRuazNBTGZkQWluMVFObW5QZWZUNDV0aVhoNU9zdkxLQkdqR1FhYi1qcWJ3UktYbkM2MERpOXVqRjVmS21uMVQ4bTVLVlFKVHo2RWpRbUxRT1JCWg?oc=5",
-        "pubDate": "Mon, 14 Sep 2026 05:20:06 GMT",
-        "category": "Korean"
-      }
-    ],
-    "Nokian Tyres": [
-      {
-        "title": "A/A/A-rated Powerproof E joins Nokian Tyres’ summer tire range - Tire Technology International",
-        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSE9QQy1kYWdQZG9CRmo4TVpZOXhhQXJ1ZlRWTkZIYnhSOHBLRGtodnhMenZlX2hnYmJlTXdxb1dKaWM2ZXlGejVQb0M1ZXFYbHVfYWtzR3FqdlMxamQ2UHRFdkNKX2hQVE13SmtnZlh2aUlaajJ1ZEhGUV9oSngyWGNRLTV0R21iTTgxWmIyZW55dFViR2ItVXNmZk9Ca2JKRGhUcGhVc3FyLXItc1VNSS1jSW9YU3hUVlI5VXV2WjVjLVNGaFRmbWJR?oc=5",
-        "pubDate": "Mon, 14 Sep 2026 14:27:13 GMT",
-        "category": "Nordic"
-      },
-      {
-        "title": "Inside information: Paolo Pompei appointed President and CEO of Nokian Tyres plc, will start on January 1, 2025 at the latest - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQeHBVSGE3NW5qa215bGNSTnJkcVlJMjBVWUoxMU51eklla0cxcmpGM0xtMG52Tk52Vm5TZlZ1YkZLMjZac0Q4akFKemdERVllNlUwYzY1ZkJEeC1sU05FdGMxc3RpaEZXRE9ranFDb0xfMEFIZ2dkYk00RnBzZkMya3UyZkl3dDlvVHo3SWZjLXo4cFVFeGlBN0xRdGVHMWZnY291TTJVS1E5NEFGUTBSc2FERXNjeDhDOUU5bVp1T0llbEUzSTRPLUxLdThPNm9UOFVrQUhacmVkQ3VvSWRPWUZB?oc=5",
-        "pubDate": "Sat, 20 Jul 2024 07:00:00 GMT",
-        "category": "Nordic"
+        "title": "Goodyear Luxembourg celebrates 75th birthday with royal visit - Luxembourg Times",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTzJYeExobUJ6T25xTzlLeWJfRnJSRVpWTFVUeFNQNmdjQVlhMDBjOTNURXJNY1ZkdjYtVjhaaTVvWkpoSGlyNllfZDg4WXgzUlN0b0RYeGNiXzFnanBzTUFBZmlQSThFNmV5QUJHTWVGY2VpWGNyZmVXMkxSUTQwODBMNUQzbllPYkpndFlpeG5VMDcxQjNzX1hCNGowSDh5MDRjRnozQ0lRQWZKaXk0Ti1OajdRbDkxWk5n?oc=5",
+        "pubDate": "Tue, 12 May 2026 07:00:00 GMT",
+        "category": "Premium global"
       }
     ],
     "MRF Tyres": [
       {
-        "title": "MRF advances tarmac tyre development with Paolo Andreucci - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbmJ1RTA2elZ3bktxalB1dW5qbVpwODlVY0NsZGNPeUE3bXo5MWxMTWRhQkZ3NDJYZWlYWThJejBMNG5Cc3Q4X1FCWFhicFlGMUNWVzhFMmNOaVBFa05TWkhWNjNBOE5LRHNGTVh2aVYtamZ4bFYtVm52WlVzSk9zRC1SLVBNekNncllsSmdic3dFbWdhN09B?oc=5",
-        "pubDate": "Fri, 11 Sep 2026 16:12:26 GMT",
+        "title": "Breen finding MRF tires \"pretty incredible\" so far - DirtFish",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcjJORmMzWmF5bFlkTWtkLXhPeTFWZlNLSWJSeTBIbDJEb2VITU54XzczOTZMa1hqdHpNbmF4YVdsWnE4MlloWUlsMUc0eVNQS3M2T1U1dnQzck9EbnJTMG1abmU5UEY2QWY3VFRvbEdUdVJZQXlqWTNwM0ZVOW9XQWx3?oc=5",
+        "pubDate": "Tue, 03 Mar 2020 08:00:00 GMT",
         "category": "Indian"
       }
     ]
