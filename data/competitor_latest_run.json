@@ -1,29 +1,59 @@
 {
-  "runAt": "2026-09-16T11:08:06.051448+00:00",
-  "totalNew": 3,
+  "runAt": "2026-09-17T11:17:10.069531+00:00",
+  "totalNew": 7,
   "entitiesChecked": 26,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 5,
   "newItemsByEntity": {
-    "Goodyear": [
+    "Continental": [
       {
-        "title": "Goodyear expands iconic historic tire range, reinforcing its historic racing legacy - news.goodyear.eu",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUExVYWkzdExGMGRfMFUzX0lMY0xjZGNSTnJqTUQwQVJUOXl0bFJuYnB3NHNHOEJZaGJwQlJpT1AyRlJPZFlVeV9VWl9DSmx5TFpnSFhNRllLSTg5REdwR3Q0UjNhMURWa0p0M3pFU2ZJSGxSSVotWktaNVU2c1dhWUhOOFdaclY3bktaNTVnNGc1YXplMFZaLVpPVlc4NXJyLXVvZHJJSFZ6VDhY?oc=5",
-        "pubDate": "Wed, 20 May 2026 07:00:00 GMT",
-        "category": "Premium global"
-      },
-      {
-        "title": "Goodyear Luxembourg celebrates 75th birthday with royal visit - Luxembourg Times",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTzJYeExobUJ6T25xTzlLeWJfRnJSRVpWTFVUeFNQNmdjQVlhMDBjOTNURXJNY1ZkdjYtVjhaaTVvWkpoSGlyNllfZDg4WXgzUlN0b0RYeGNiXzFnanBzTUFBZmlQSThFNmV5QUJHTWVGY2VpWGNyZmVXMkxSUTQwODBMNUQzbllPYkpndFlpeG5VMDcxQjNzX1hCNGowSDh5MDRjRnozQ0lRQWZKaXk0Ti1OajdRbDkxWk5n?oc=5",
-        "pubDate": "Tue, 12 May 2026 07:00:00 GMT",
+        "title": "New Continental tyres deliver 30km of additional range for Renault - electrive.com",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUWVUaTlNVkRKMHJKaUxSeXR4SmVLaVRWRk1rbmppYWFWSDhfbElGaElUdktKeTMtdHhKQ3Q0SUxVVG1ndHExeEMtNV9OT0dNMnJsY2lBWmwxejBmSXR4aUdIWTRFY0poQV9sam05UVpxRjZvanM0SzB5N2NKRzhfUE15SjVBcTNMT2ticTdnVU8xZzFKUjdLVlZFR0E0UFpRdU5NeUxnOA?oc=5",
+        "pubDate": "Tue, 16 Jun 2026 07:00:00 GMT",
         "category": "Premium global"
       }
     ],
-    "MRF Tyres": [
+    "Bridgestone": [
       {
-        "title": "Breen finding MRF tires \"pretty incredible\" so far - DirtFish",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcjJORmMzWmF5bFlkTWtkLXhPeTFWZlNLSWJSeTBIbDJEb2VITU54XzczOTZMa1hqdHpNbmF4YVdsWnE4MlloWUlsMUc0eVNQS3M2T1U1dnQzck9EbnJTMG1abmU5UEY2QWY3VFRvbEdUdVJZQXlqWTNwM0ZVOW9XQWx3?oc=5",
-        "pubDate": "Tue, 03 Mar 2020 08:00:00 GMT",
-        "category": "Indian"
+        "title": "Sanchini to lead Bridgestone’s Europe sales organisation - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRkxSNjNHRkdOSDRkYkQzSW8tSmFraXpoVEROczdPcERoRW93Z29iVVFXMVpoMXlwcTlyTlRYaGV6Y29hbFE0YW5ERHdBbDkwZzJZTFk2aWVLZnA5TE9uTzNkWERQclREeGVaVEdUYmRleGw0Q2NiUUdTUWZLT0d0OUtGbXZrcjJTMTNzR2d1NU1DUmRx?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 15:39:48 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Hankook": [
+      {
+        "title": "Hankook returns as Schmitz Cargobull tyre supplier - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdTQzSUQyZVV6dXp2bGZTZUxzeUwwUDRkNFpOU3ZYaGJqMDhrdXhVSEx3YVA1b3U1MVUzSW5JN1A1cVBidjJodjc1OVdIWXEtVmRXSUU0dU52UGlqa0g2aHQyamt3M0U1MlhTdW56ZThUeEhwSmp0WnFxVFZXM2ZaS1gyR1NhVHk3NTBLaWZB?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 06:47:53 GMT",
+        "category": "Korean"
+      },
+      {
+        "title": "Hankook Tyre UK Launches Laufenn365: A new digital platform for tyre accidental damage claims - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxOeVUxU1d6QzZ2THdxQVNCZjZWZWp1cE43bEhDT0dKMC1SZDFpNGNic3BMZjRnNmpUWW5VN05MeXdhSER5TWlEbUVGWlloQW9NUWlUSUpzSm9SZnNXTi1rMHRHSFpDcUxhbVhKSlg2RVdLb1FtZFc3cndTSnRVWUhMX0Q0Uk9yWXlmT3JTNHI4b29Vc0ljNUFJVExKeno1bFNnZzF0VzdvM2NVdUtwQXdmWllDOHhLaU5FenhoYUtZaloybzg4YnVYSFFFdGtsTkpUT3JOMmJKelE4TXJ0NU1MTmpoWGtBeDVvMHB6ZGIwNENSWG92ZmlhRDlCMWYwbE95bklMbGY2RWhPcmF2WGQtTkNITG9mTWJmMHpZRHkzMmtvcE94bnB4XzBURm41c0hqZk93ZDYydkl0RUc3d1BQLVh5TWxKeng1OExqaHdnWTFxWURfeFR6VngzNkl4UTJ0bDlF?oc=5",
+        "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
+        "category": "Korean"
+      }
+    ],
+    "Yokohama Rubber": [
+      {
+        "title": "Yokohama Rubber to launch all-season passenger car tire in Europe - Tire Technology International Magazine",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTjRSVFVPZVQ3WU9PZHF1X1FJQk1kSEc3LXRlc29vLWphaEJPbzd2cEtxVUNpWkZBRXhEc1otV2xjTVo0WF9LNWxNTjkwWmd4bGViOGVwSEMxRXNDZGl0WDFSaWhPY05WZ0ZSSlRrajF4Z3Y5RDlEVUloY0ZuSzNlRUpxNmN2MVMxTEhaSkx6U2ZZV3Q1SnlTbWNKNkNzVVN2Tm02ZTdWbk9VTlRIYzNUaHBSanJyMEFGdV9wVHM2eFM4YUtSaG1F?oc=5",
+        "pubDate": "Wed, 14 Mar 2018 07:00:00 GMT",
+        "category": "Japanese"
+      },
+      {
+        "title": "Yokohama Europe promotes Takashi Maki to CEO, Ponzoni named Asia president in February - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZDRvLS1URmRhemNpX195cUhUSEU4eGNRdzBFRFY0eGxEV0dKQl83ZXNlb1BXaVgyVjlzVHZmYWNtUWhLaDZIZ2Vhdk80UlRmMVJRMmN3NFRKLWJRUnRGOHJaRU5KRHRxbnF0dGg2Q3dGY0ZQWDhjNkhidGFXalg5VWtYLUQ3SVhNcGhoUEp4NFFUQWdmY2FKSHI3TDRfTHk2SzRTOUlpMkFvanJZS1V3eFFTNEF4NmxYV2VB?oc=5",
+        "pubDate": "Tue, 02 Jun 2026 07:00:00 GMT",
+        "category": "Japanese"
+      }
+    ],
+    "Double Coin": [
+      {
+        "title": "Electric Vehicle Tires Market Growth & Forecast Analysis 2026-35 - Market.us",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjUjV3RkU4LU01a0ZoS0RzZXBnTWp0eXlReGV4czlJanR6MFJSSFVTNzE1MUdvQVJaZXM5VWRhSzhWZnRMdThSQ3p1aTNnQWl4b2JPNHk5bENaR3E2X0swZHJUNGx0QQ?oc=5",
+        "pubDate": "Tue, 08 Sep 2026 15:37:46 GMT",
+        "category": "Chinese"
       }
     ]
   }

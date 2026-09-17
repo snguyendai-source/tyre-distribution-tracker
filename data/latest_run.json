@@ -1,34 +1,34 @@
 {
-  "runAt": "2026-09-16T11:08:06.051448+00:00",
+  "runAt": "2026-09-17T11:17:10.069531+00:00",
   "totalNew": 3,
   "entitiesChecked": 118,
   "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Premio": [
+    "Protyre": [
       {
-        "title": "Hamilton and Leclerc complete 623 km at Imola in Pirelli’s 2027 F1 tyre test - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcnJKS3NVQ3dnVjM3Qm52QmcxRkU0RWhiaG9zelJVa2V6dndOc0xsaXgya2tJeFE1Wnd4X3VabUZVYUFjbFJVOF9UMGlQUlNiQkM1NUxrZ3NTUnpfU0JaOHlWV0NYeFl3R19ldlNuak9qWWFOSjg0dDVWVVR3Y0lvSnFnZEpGUlRkV2pRQXNmQ2xNQTRPaUZROER0X2JXeHItclNGVmJGOWs3Qmc?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 17:50:00 GMT",
-        "country": "Germany",
+        "title": "Stalwart garage reopens over 18 months after devastating fire - Stourbridge News",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQkQ3SHQ0T19PTzU4TV9CYzZKWGVPSnJQTXpvVVc1N1ZMSnZLTFRNdjNyeWwyc0o0Mmp6R1AwMk5FUC00Zkk3ekZDckVpT3pmMW1XRTJMVVNrTXI4djJQdVhDRFlPdFdUaHllYjZkcEJNaDZJWDhxSGdmZDBpcC1jZ2lNSDBHdzQ4SzBPY3NzT3ZEVFIwXzA5a1BR?oc=5",
+        "pubDate": "Mon, 20 Oct 2025 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Marangoni": [
+      {
+        "title": "Marangoni GRP establishes retreading franchise in India - Tire Technology International Magazine",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNaDd1OW8zMklUeVRNeVZ3NVhhVC1mN1NnMkYxcXB5dDhmUzJHNElUM29HVVdYZWNxQWNZcmR2dDlWcng5ejNqcjBGcXNkY2luSzdQSHB0SzBYVGFxWnBWZ1JnaUVUVnZiRS1OcUhLWnVlQXZzQjMyZWRqVWdJWFFEOHh1RkpRaGhOTTJvMWc1U3BKeEZfcUNHMUhqMU5fR0MxeUhLS3VOWHo1LW1GcXNTYnBuVVI1aUd4MnpSTQ?oc=5",
+        "pubDate": "Tue, 16 Apr 2019 07:00:00 GMT",
+        "country": "Italy",
+        "cluster": "South-West"
+      }
+    ],
+    "Genan Holding": [
+      {
+        "title": "Waste Tyre Modified Asphalt Market To Reach USD 4.13 billion - Traction News",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUGlDNnFRNzIzdHRlSkdOby1RM3N1T1dCam12MzNLS0hOY29HeGk4Z056cTg0VklfdnBYbkt3dlhsVEVFV0xnWnJuVTMtbDV4MWdIZTYwYzV4bG0yVEtGV3loME91aFdqYjlCZ2loN3BEelVRZzhKUjZFZVZSWVptUmlBVl83b0ppc2RCRGxFUEQ3dEJ3?oc=5",
+        "pubDate": "Mon, 08 Dec 2025 08:00:00 GMT",
+        "country": "Denmark",
         "cluster": "Central"
-      }
-    ],
-    "Speedy": [
-      {
-        "title": "ASK THE MXPERTS: SECRETS OF THE BIB MOUSSE - Motocross Action Magazine",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBNUjRPVVl1ajd4YXlUUU94eGlqOWEwd04tSUpnVTNLbXZMa2ZXYi1RdUJDZEVmNFJaQlhvaUtXRU9reDRQdFBCcWd2VUo4ZllyS3RiNE1Vdi13RU9KT0Q5bTBPMmJHLThuYWpkS2I2SFhrOHpC?oc=5",
-        "pubDate": "Tue, 12 Sep 2017 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      }
-    ],
-    "Vulco": [
-      {
-        "title": "Women in the driver’s seat, mastering car tyre safety, maintenance - Ghana News Agency",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOU01UTFJfa3dZN1dSY0tIdERWWVN6bmFEUkpidWNxTU1NY0lsSmtTRTJmSU1Va09lbmV0SWk4ampVOHBNeFN2TkNpQXFGMWwyZ3l2M0hOTHlaZzlXaDRkT2haU2tjV19DUUlQa3M0Ql95SC0waWxsOV96Ykl0Wk9yQWFUbWZMcWE3ZG56RUFEOWZLaWFJR0E?oc=5",
-        "pubDate": "Mon, 02 Jun 2025 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
       }
     ]
   }
