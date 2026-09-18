@@ -1,58 +1,38 @@
 {
-  "runAt": "2026-09-17T11:17:10.069531+00:00",
-  "totalNew": 7,
+  "runAt": "2026-09-18T10:50:40.122562+00:00",
+  "totalNew": 4,
   "entitiesChecked": 26,
-  "entitiesWithNews": 5,
+  "entitiesWithNews": 4,
   "newItemsByEntity": {
-    "Continental": [
+    "Pirelli": [
       {
-        "title": "New Continental tyres deliver 30km of additional range for Renault - electrive.com",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUWVUaTlNVkRKMHJKaUxSeXR4SmVLaVRWRk1rbmppYWFWSDhfbElGaElUdktKeTMtdHhKQ3Q0SUxVVG1ndHExeEMtNV9OT0dNMnJsY2lBWmwxejBmSXR4aUdIWTRFY0poQV9sam05UVpxRjZvanM0SzB5N2NKRzhfUE15SjVBcTNMT2ticTdnVU8xZzFKUjdLVlZFR0E0UFpRdU5NeUxnOA?oc=5",
-        "pubDate": "Tue, 16 Jun 2026 07:00:00 GMT",
+        "title": "EU imposes anti-dumping measures on Chinese tyre firms - South China Morning Post",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOalI5Wmp4aHE0Um5DR3NwZFBGOVc4YTlmUWtKNWlOMGhsbjVIczdQeUtXcE5jRW5YYWFQYXBCSzlwT0o3ZGFmMHdOMEFRUnExemp6X3ZmWWhwalQ5U3VfeTl4TUZnOTFPMndseUpTTm5JQVVmOTRKYTVOdkxpWERJSDVyWTFPX1pncmZNOHRMOHRkNDBEalBfeE5IbW9nLXJqdVVaRzhxLTBoWVd1N1d3?oc=5",
+        "pubDate": "Wed, 08 Jul 2026 07:00:00 GMT",
         "category": "Premium global"
       }
     ],
-    "Bridgestone": [
+    "Falken Tyres": [
       {
-        "title": "Sanchini to lead Bridgestone’s Europe sales organisation - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRkxSNjNHRkdOSDRkYkQzSW8tSmFraXpoVEROczdPcERoRW93Z29iVVFXMVpoMXlwcTlyTlRYaGV6Y29hbFE0YW5ERHdBbDkwZzJZTFk2aWVLZnA5TE9uTzNkWERQclREeGVaVEdUYmRleGw0Q2NiUUdTUWZLT0d0OUtGbXZrcjJTMTNzR2d1NU1DUmRx?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 15:39:48 GMT",
-        "category": "Premium global"
-      }
-    ],
-    "Hankook": [
-      {
-        "title": "Hankook returns as Schmitz Cargobull tyre supplier - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdTQzSUQyZVV6dXp2bGZTZUxzeUwwUDRkNFpOU3ZYaGJqMDhrdXhVSEx3YVA1b3U1MVUzSW5JN1A1cVBidjJodjc1OVdIWXEtVmRXSUU0dU52UGlqa0g2aHQyamt3M0U1MlhTdW56ZThUeEhwSmp0WnFxVFZXM2ZaS1gyR1NhVHk3NTBLaWZB?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 06:47:53 GMT",
-        "category": "Korean"
-      },
-      {
-        "title": "Hankook Tyre UK Launches Laufenn365: A new digital platform for tyre accidental damage claims - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxOeVUxU1d6QzZ2THdxQVNCZjZWZWp1cE43bEhDT0dKMC1SZDFpNGNic3BMZjRnNmpUWW5VN05MeXdhSER5TWlEbUVGWlloQW9NUWlUSUpzSm9SZnNXTi1rMHRHSFpDcUxhbVhKSlg2RVdLb1FtZFc3cndTSnRVWUhMX0Q0Uk9yWXlmT3JTNHI4b29Vc0ljNUFJVExKeno1bFNnZzF0VzdvM2NVdUtwQXdmWllDOHhLaU5FenhoYUtZaloybzg4YnVYSFFFdGtsTkpUT3JOMmJKelE4TXJ0NU1MTmpoWGtBeDVvMHB6ZGIwNENSWG92ZmlhRDlCMWYwbE95bklMbGY2RWhPcmF2WGQtTkNITG9mTWJmMHpZRHkzMmtvcE94bnB4XzBURm41c0hqZk93ZDYydkl0RUc3d1BQLVh5TWxKeng1OExqaHdnWTFxWURfeFR6VngzNkl4UTJ0bDlF?oc=5",
-        "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
-        "category": "Korean"
-      }
-    ],
-    "Yokohama Rubber": [
-      {
-        "title": "Yokohama Rubber to launch all-season passenger car tire in Europe - Tire Technology International Magazine",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTjRSVFVPZVQ3WU9PZHF1X1FJQk1kSEc3LXRlc29vLWphaEJPbzd2cEtxVUNpWkZBRXhEc1otV2xjTVo0WF9LNWxNTjkwWmd4bGViOGVwSEMxRXNDZGl0WDFSaWhPY05WZ0ZSSlRrajF4Z3Y5RDlEVUloY0ZuSzNlRUpxNmN2MVMxTEhaSkx6U2ZZV3Q1SnlTbWNKNkNzVVN2Tm02ZTdWbk9VTlRIYzNUaHBSanJyMEFGdV9wVHM2eFM4YUtSaG1F?oc=5",
-        "pubDate": "Wed, 14 Mar 2018 07:00:00 GMT",
-        "category": "Japanese"
-      },
-      {
-        "title": "Yokohama Europe promotes Takashi Maki to CEO, Ponzoni named Asia president in February - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZDRvLS1URmRhemNpX195cUhUSEU4eGNRdzBFRFY0eGxEV0dKQl83ZXNlb1BXaVgyVjlzVHZmYWNtUWhLaDZIZ2Vhdk80UlRmMVJRMmN3NFRKLWJRUnRGOHJaRU5KRHRxbnF0dGg2Q3dGY0ZQWDhjNkhidGFXalg5VWtYLUQ3SVhNcGhoUEp4NFFUQWdmY2FKSHI3TDRfTHk2SzRTOUlpMkFvanJZS1V3eFFTNEF4NmxYV2VB?oc=5",
-        "pubDate": "Tue, 02 Jun 2026 07:00:00 GMT",
+        "title": "Falken Tyres-Equipped Custom Porsche Takes on the North West 200 - tractionnews.com",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaVRqb29DY2lSTEhORTVFYnpFTnBNQUd6WVoxS0lKVHgyMFZUcFBqUkt2OTdfR3lqdGk3NllOVFVKV09jWE5TZnB0dmh4VXhuLXA2NjJPQ0NHLUFCTGwzZnhzWmZMeGJ5b1RtckFBUDJJQ2VqN1pFcXBmOHJPaU1ucjVJZUljUnlHN0UtaUd2a1lZZlRqZFdmd3NR?oc=5",
+        "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
         "category": "Japanese"
       }
     ],
-    "Double Coin": [
+    "Nokian Tyres": [
       {
-        "title": "Electric Vehicle Tires Market Growth & Forecast Analysis 2026-35 - Market.us",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjUjV3RkU4LU01a0ZoS0RzZXBnTWp0eXlReGV4czlJanR6MFJSSFVTNzE1MUdvQVJaZXM5VWRhSzhWZnRMdThSQ3p1aTNnQWl4b2JPNHk5bENaR3E2X0swZHJUNGx0QQ?oc=5",
-        "pubDate": "Tue, 08 Sep 2026 15:37:46 GMT",
+        "title": "Pirelli, Continental, Michelin and Nokian targeted in EU raids - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQS01NUjRqcndXZldsc1ZTbFBZVlpwdTFZRUwtMWJNbDZiS0x1M0NmSU1zS1ZQdUE1MTUxVHpCVkNneF9HMDJlNEVjUFJKQTVQbk80c2VLSGwzem9CSmdlUFlDcXk0SnpDTHlBTUI1Vl9HcjIyM01LSzUwUUwwbWZaSVVwM1pKT0FiT3JaeWIxV1NWV1RjRlc4MG9fb3lBbFJnOWhDelFsclNzTlh1NFhNeV96UDQ4cy1pNFhuNl9nSHZ4akFITFNxNTZMR3owd0dHX2c0?oc=5",
+        "pubDate": "Wed, 31 Jan 2024 08:00:00 GMT",
+        "category": "Nordic"
+      }
+    ],
+    "Triangle Tyre": [
+      {
+        "title": "Triangle Tyre strengthens European OTR presence at Le Dig Tour Lyon 2026 - hub-4.com",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdkE2aU84ZmxIUWJuN3RCdjIzRmtOVUNqeVJIdmlDcUV6NkMzMlpTQkNxQ050Z1JncXdobi12OXNXNlFWMGNxTG1jLXFhNXZlTVV4QTZYdUxoaFV1eGwtQmpadkJTVzhEWWh0alhDM3dZSmN0M25QY284N0JSVkF2TVFteG9CXzdGb2lTRDJ2cXhJX2hqLVV2cnllOA?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 19:52:09 GMT",
         "category": "Chinese"
       }
     ]

@@ -1,34 +1,16 @@
 {
-  "runAt": "2026-09-17T11:17:10.069531+00:00",
-  "totalNew": 3,
+  "runAt": "2026-09-18T10:50:40.122562+00:00",
+  "totalNew": 1,
   "entitiesChecked": 118,
-  "entitiesWithNews": 3,
+  "entitiesWithNews": 1,
   "newItemsByEntity": {
     "Protyre": [
       {
-        "title": "Stalwart garage reopens over 18 months after devastating fire - Stourbridge News",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQkQ3SHQ0T19PTzU4TV9CYzZKWGVPSnJQTXpvVVc1N1ZMSnZLTFRNdjNyeWwyc0o0Mmp6R1AwMk5FUC00Zkk3ekZDckVpT3pmMW1XRTJMVVNrTXI4djJQdVhDRFlPdFdUaHllYjZkcEJNaDZJWDhxSGdmZDBpcC1jZ2lNSDBHdzQ4SzBPY3NzT3ZEVFIwXzA5a1BR?oc=5",
-        "pubDate": "Mon, 20 Oct 2025 07:00:00 GMT",
+        "title": "National operator Micheldever acquires Carlisle tyre business - newsandstar.co.uk",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMzV6ODZDOS1Pa3ZaNFd4d1loRnVFWGZyYzBlclNuWUlQcFZCbTlRaFlOMmFqUV84T2N5alZZZzFVODBROUY5d09oTDFQcElnVm9JR283dzE2bGJ0RE5zSzF5VnFlX2pKM1ktSG9rVmdwdXhwbVVQaU40d0ZsdjdSVlFMZTMxLTZXRFo1cFlBVG01UlZEZG9qdm04Wk5yclY4TFNzTlVDUkJkQQ?oc=5",
+        "pubDate": "Thu, 28 Jul 2016 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
-      }
-    ],
-    "Marangoni": [
-      {
-        "title": "Marangoni GRP establishes retreading franchise in India - Tire Technology International Magazine",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNaDd1OW8zMklUeVRNeVZ3NVhhVC1mN1NnMkYxcXB5dDhmUzJHNElUM29HVVdYZWNxQWNZcmR2dDlWcng5ejNqcjBGcXNkY2luSzdQSHB0SzBYVGFxWnBWZ1JnaUVUVnZiRS1OcUhLWnVlQXZzQjMyZWRqVWdJWFFEOHh1RkpRaGhOTTJvMWc1U3BKeEZfcUNHMUhqMU5fR0MxeUhLS3VOWHo1LW1GcXNTYnBuVVI1aUd4MnpSTQ?oc=5",
-        "pubDate": "Tue, 16 Apr 2019 07:00:00 GMT",
-        "country": "Italy",
-        "cluster": "South-West"
-      }
-    ],
-    "Genan Holding": [
-      {
-        "title": "Waste Tyre Modified Asphalt Market To Reach USD 4.13 billion - Traction News",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUGlDNnFRNzIzdHRlSkdOby1RM3N1T1dCam12MzNLS0hOY29HeGk4Z056cTg0VklfdnBYbkt3dlhsVEVFV0xnWnJuVTMtbDV4MWdIZTYwYzV4bG0yVEtGV3loME91aFdqYjlCZ2loN3BEelVRZzhKUjZFZVZSWVptUmlBVl83b0ppc2RCRGxFUEQ3dEJ3?oc=5",
-        "pubDate": "Mon, 08 Dec 2025 08:00:00 GMT",
-        "country": "Denmark",
-        "cluster": "Central"
       }
     ]
   }
