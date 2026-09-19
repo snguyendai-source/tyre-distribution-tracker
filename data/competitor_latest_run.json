@@ -1,39 +1,23 @@
 {
-  "runAt": "2026-09-18T10:50:40.122562+00:00",
-  "totalNew": 4,
+  "runAt": "2026-09-19T10:34:10.737156+00:00",
+  "totalNew": 2,
   "entitiesChecked": 26,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Pirelli": [
+    "Hankook": [
       {
-        "title": "EU imposes anti-dumping measures on Chinese tyre firms - South China Morning Post",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOalI5Wmp4aHE0Um5DR3NwZFBGOVc4YTlmUWtKNWlOMGhsbjVIczdQeUtXcE5jRW5YYWFQYXBCSzlwT0o3ZGFmMHdOMEFRUnExemp6X3ZmWWhwalQ5U3VfeTl4TUZnOTFPMndseUpTTm5JQVVmOTRKYTVOdkxpWERJSDVyWTFPX1pncmZNOHRMOHRkNDBEalBfeE5IbW9nLXJqdVVaRzhxLTBoWVd1N1d3?oc=5",
-        "pubDate": "Wed, 08 Jul 2026 07:00:00 GMT",
-        "category": "Premium global"
+        "title": "Hankook returns to European trailer OE market with Schmitz Cargobull deal - Tire Technology International",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNHUyRjZZaXBYclI1VDZMbEdtMVd5QUFIRXU2ZVdMbU9IZVpkTm5kaHR2YXNkLUppYUdoRVNzSmluWWV3c0c5eEdEQWZFX1p6aDVtY1VOekdtRTI0X3JmREVfRG52YXdvMkQ1UFdKZE0xNC0yLVluRmlYcnFuMWU2QTJIanV5LXdpNHQ0YmlwX0FEM0hScW15c2U5bmFwVnhTSWlkQTJEYk9yLXBKOTBKNVdxazU5ampWb1MzYzN3UTZEUTU2T08yQklHUGlJbEtJVzBVRVh3?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 14:13:00 GMT",
+        "category": "Korean"
       }
     ],
-    "Falken Tyres": [
+    "Yokohama Rubber": [
       {
-        "title": "Falken Tyres-Equipped Custom Porsche Takes on the North West 200 - tractionnews.com",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaVRqb29DY2lSTEhORTVFYnpFTnBNQUd6WVoxS0lKVHgyMFZUcFBqUkt2OTdfR3lqdGk3NllOVFVKV09jWE5TZnB0dmh4VXhuLXA2NjJPQ0NHLUFCTGwzZnhzWmZMeGJ5b1RtckFBUDJJQ2VqN1pFcXBmOHJPaU1ucjVJZUljUnlHN0UtaUd2a1lZZlRqZFdmd3NR?oc=5",
-        "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
+        "title": "Yokohama Rubber to close US off-road tire plant - European Rubber Journal",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVGprYkxtWjl3ZW5CRzlyZmFTMWdWMExmWkEyRk9qSGhObFc5NnhYS0wyZWJiOTVlTlRuWkhwY1l2aE4yUGpHLUhRNWk5V0lHYlhaNTM5NXdzYXlhbmtiUFFyazhTeHZlYjFEMWhDOHJ5b3lQUVVJNkFWa2hjSTNqZ0lfdkJMa0w5SkdRdVlrZFYzM0g4Z0tXSHdxT2RwTXJlMnZ2Nnh3?oc=5",
+        "pubDate": "Fri, 21 Feb 2025 08:00:00 GMT",
         "category": "Japanese"
-      }
-    ],
-    "Nokian Tyres": [
-      {
-        "title": "Pirelli, Continental, Michelin and Nokian targeted in EU raids - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQS01NUjRqcndXZldsc1ZTbFBZVlpwdTFZRUwtMWJNbDZiS0x1M0NmSU1zS1ZQdUE1MTUxVHpCVkNneF9HMDJlNEVjUFJKQTVQbk80c2VLSGwzem9CSmdlUFlDcXk0SnpDTHlBTUI1Vl9HcjIyM01LSzUwUUwwbWZaSVVwM1pKT0FiT3JaeWIxV1NWV1RjRlc4MG9fb3lBbFJnOWhDelFsclNzTlh1NFhNeV96UDQ4cy1pNFhuNl9nSHZ4akFITFNxNTZMR3owd0dHX2c0?oc=5",
-        "pubDate": "Wed, 31 Jan 2024 08:00:00 GMT",
-        "category": "Nordic"
-      }
-    ],
-    "Triangle Tyre": [
-      {
-        "title": "Triangle Tyre strengthens European OTR presence at Le Dig Tour Lyon 2026 - hub-4.com",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdkE2aU84ZmxIUWJuN3RCdjIzRmtOVUNqeVJIdmlDcUV6NkMzMlpTQkNxQ050Z1JncXdobi12OXNXNlFWMGNxTG1jLXFhNXZlTVV4QTZYdUxoaFV1eGwtQmpadkJTVzhEWWh0alhDM3dZSmN0M25QY284N0JSVkF2TVFteG9CXzdGb2lTRDJ2cXhJX2hqLVV2cnllOA?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 19:52:09 GMT",
-        "category": "Chinese"
       }
     ]
   }
