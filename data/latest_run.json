@@ -1,16 +1,25 @@
 {
-  "runAt": "2026-09-19T10:34:10.737156+00:00",
-  "totalNew": 1,
+  "runAt": "2026-09-20T10:57:04.691003+00:00",
+  "totalNew": 2,
   "entitiesChecked": 118,
-  "entitiesWithNews": 1,
+  "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Point S UK": [
+    "Pneusmarket": [
       {
-        "title": "Point S appoints South West business development manager - Motor Trade News",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVm5sLXdmc2hqdHNPVjZSUmZnRUdtS21WU0xDR01rNS1wM2c4SkVNS1VnR05LS1ZtRGpWS0tOelZMSU00SF9HVGRjdnJhcEN3ZXpDOUVTU25TRjVXbWozVHVROUpmNzZhYlJST1JZNERNOEtlTEhVZ0Z0bUd2Q0otbFRKQkI1WEh3eFJfdkZRdEVkX2huWHJRbm1lVnFiYnB1LWlUTjc5bEk?oc=5",
-        "pubDate": "Wed, 25 Feb 2026 08:00:00 GMT",
-        "country": "UK",
-        "cluster": "North-West"
+        "title": "Management appointments continue Marangoni’s “generational change” - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVVpZN2pqdGlwdHJDT0VSblZWaXBCaHpySXdtZ0wtNkEydHg3cGQzdVQ4eV9aX3d6Z1hBSjI2R1UyZGFFRmRmM2pkNGVHcE0tTmZQRXREY1Ftb3NBSDllTy1iYXZPMFBtaV9CcEdhaEtsNlRHRnZoUGo4MWQzNnkzSjQ1ZTZJTWdJeV9abFdXV3A4NURLOTFMd3J5aXduZHc?oc=5",
+        "pubDate": "Wed, 22 Feb 2017 08:00:00 GMT",
+        "country": "Italy",
+        "cluster": "South-West"
+      }
+    ],
+    "Genan Holding": [
+      {
+        "title": "Tire Recycling Market Size, Share & Industry Forecast, 2035 - SNS Insider",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9WdjRvVjhsT0JIR1BkTG9Bdk9kTkM1WWR1NXZFX2lZeEQ4VTVLd2llSl9CNEgxeW0tYmJ1b3ZEZzZqVl9NeS13OVBuNllqYUdNbEFxMU9WNHA1cktzZ1VuMFB6ajZlenNadVh4MmRR?oc=5",
+        "pubDate": "Tue, 13 May 2025 07:00:00 GMT",
+        "country": "Denmark",
+        "cluster": "Central"
       }
     ]
   }
