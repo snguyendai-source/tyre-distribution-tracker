@@ -1,24 +1,24 @@
 {
-  "runAt": "2026-09-20T10:57:04.691003+00:00",
+  "runAt": "2026-09-21T12:22:52.920055+00:00",
   "totalNew": 2,
   "entitiesChecked": 118,
   "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Pneusmarket": [
+    "Premio": [
       {
-        "title": "Management appointments continue Marangoni’s “generational change” - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVVpZN2pqdGlwdHJDT0VSblZWaXBCaHpySXdtZ0wtNkEydHg3cGQzdVQ4eV9aX3d6Z1hBSjI2R1UyZGFFRmRmM2pkNGVHcE0tTmZQRXREY1Ftb3NBSDllTy1iYXZPMFBtaV9CcEdhaEtsNlRHRnZoUGo4MWQzNnkzSjQ1ZTZJTWdJeV9abFdXV3A4NURLOTFMd3J5aXduZHc?oc=5",
-        "pubDate": "Wed, 22 Feb 2017 08:00:00 GMT",
-        "country": "Italy",
-        "cluster": "South-West"
+        "title": "Martín reveals fuel concern and “destroyed” tyre ended Austria victory bid - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU3I4OUpfZUo0dFBTdms5V2JDNmdzbTRPZ01fTjM3SUJ2NzFjSEV4N0VmWGkzT1JieFB1WTYwN2dOeTd4UzFSZWhsVjJtMnJYOHZWc2diUExCaGUxNFpmeWY4NGdZa1lkYk9IaHA0eTdpNGVqNzZ1TXJWZWJWcDItZnk3Zmw0NFJibjdyb0RHeGJxMGFRUHJxZHAzMVg0SGNEbXV6anB2ZTRRM2sw?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 13:45:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
       }
     ],
-    "Genan Holding": [
+    "Emil Frey": [
       {
-        "title": "Tire Recycling Market Size, Share & Industry Forecast, 2035 - SNS Insider",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9WdjRvVjhsT0JIR1BkTG9Bdk9kTkM1WWR1NXZFX2lZeEQ4VTVLd2llSl9CNEgxeW0tYmJ1b3ZEZzZqVl9NeS13OVBuNllqYUdNbEFxMU9WNHA1cktzZ1VuMFB6ajZlenNadVh4MmRR?oc=5",
-        "pubDate": "Tue, 13 May 2025 07:00:00 GMT",
-        "country": "Denmark",
+        "title": "Team encounters issue as F1 returns to one of Verstappen's favourite tracks - GPblog",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNemhEbjZOdmxOeTZtVGlyajRoUFVEZ1VDc3VldmY4RG0tMlJWdnlmU1hqc3ppX1NqMDNfWnJ1b1VjZGlxYVVPOTNVRlFNZFJhQkdzX0RxbzZUV1lFeThoQ0piVEFOOGZFWHlHV0FxT1lMdFhNTFlvVFRhV0o3aHFTR09lMFN6Yk9tNDJvMlFYSFlEdkN0VzZrNw?oc=5",
+        "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
+        "country": "Germany",
         "cluster": "Central"
       }
     ]

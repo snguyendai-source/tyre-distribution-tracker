@@ -1,39 +1,39 @@
 {
-  "runAt": "2026-09-20T10:57:04.691003+00:00",
+  "runAt": "2026-09-21T12:22:52.920055+00:00",
   "totalNew": 4,
   "entitiesChecked": 26,
   "entitiesWithNews": 4,
   "newItemsByEntity": {
-    "Bridgestone": [
+    "Continental": [
       {
-        "title": "Bridgestone Announces First-Ever Motorhome Tyre, the Duravis Camper All Season - Bridgestone EMEA newsroom",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbXNMUU9QZGtKZ0N4NmNwbWVWWWJZeVBTTnVROUN1OEhuSmd5MnphUUJUT2hFR1R3Y2kxSzJwMWRBNExrMm9NeGctQ0VoZHY5NTNmSUY4R3ZyRGRGeUFRNmJxdHZzMEloT2MzWGwyUUFtaG9PZVgxWjY5UmJ0SUNzRng1MDJOWG9qY2NCUlJBTEt0RFhvNVVCdXpRY2EwZVoxam55MzVjRDk2VjFNd1JTTk9ubw?oc=5",
-        "pubDate": "Thu, 26 Mar 2026 07:00:00 GMT",
+        "title": "Continental's 43% recycled EV tyre and the EU rule gap - AutoNext.co",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNaGM1YktjR2NyVk5IUXFyN0xTdDNLRl9DOW5CVW9LdTRjVkJlb0VMT2tnM3VLUWpwekJoNld6bXp3R2tNVkMyMUh2eGxkczZmZXFYWWFaLUY5S3M1OU9hQW5fYmlLUy1rNlpKYUdKcDhoVTZLRHA2T3F2U19hZTFlRmlvZ1BrYU01U2c?oc=5",
+        "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT",
         "category": "Premium global"
       }
     ],
     "Nexen Tire": [
       {
-        "title": "NEXEN TIRE Named Supplier for BYD Electric Vehicles - TheNewsMarket",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVDl6cnd0alplRmgzcnVWazZ2TzNzTkhRMTFscVlrdkJ0dm9jbUdRZzNaZmtmWW1jRGFTbGQxYXNRZGRKelUyZTNGbHV1LURaSWJBclNBVVNTLTBLMFZpZ3lILWNQRS1xREZvQWtmaGN2MHcyYjNSOTB2SHFoUFdkSDZsWEVKUFFpcFgwNWJuZXY4cHpGM0t6bGFnLVVMMXdTa3pkU2FiRjdKdFRFWi13a2xoYzNKQU5jWTh2ODNCSGt5NkU?oc=5",
-        "pubDate": "Mon, 22 Jun 2026 07:00:00 GMT",
+        "title": "NEXEN TIRE Raises European Supply Capabilities with Automated Warehouse Expansion - Traction News",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVHFlMDdUV0h1WkVrbDN2VS1qZnk4encwRGVRZDNnMTk0SDhoY1VYTmhGS0tuNDZOS1FqTzlRYy1JcHVzV0VNU0czc05JbjBzSTRHeERockh3Y01waDVYMkQtNl96U1NZYnNpbUVMSmw4dFFWQjg4UEk1dDlPT3B4amdYUkNnRTZMV19TWjYtQU5Kdlhfb1VESnBSVVFMVDNZNWFZQUZDMG9HYkFnSzJjLQ?oc=5",
+        "pubDate": "Thu, 18 Jun 2026 07:00:00 GMT",
         "category": "Korean"
       }
     ],
-    "Falken Tyres": [
+    "Nankang Rubber": [
       {
-        "title": "Mitsubishi GT-PHEV Concept with Falken Tyres - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNT0RmdmtfbEtPbU50MXdSWmpRbWxJV25xUDN6ZEdqNkJpY2RoZGJZOVp2ZHhpYmVUa0V1dnNMMnlTMXVkR3pDdGZIaEhKTkstTEkwSjYzdkpZQ3VNYXk4NXBDbzZmN2FLUFNVcVdsZzh6RWpUVUEtZDhwZXpRYXZxQ3R6RjYtWGlNVHo1dWx1Mk1CQ19yRHE0MWl5c1VFWDA?oc=5",
-        "pubDate": "Fri, 07 Oct 2016 07:00:00 GMT",
-        "category": "Japanese"
+        "title": "The Dragon Lures Tyre Giants - Tire Review Magazine",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1EVU45cDVlX1lhRUlZNFhQNXVRYmhhZnNTV1VQXzE3bXZuZEZQZFdNTEtEcG85S3RYS3g0VVphTE5MNk9vX0hSdEhxdWlQbDZsLWpZLVhaWG93WDFZNUx1QzE4TzA5S0U?oc=5",
+        "pubDate": "Tue, 08 Aug 2006 07:00:00 GMT",
+        "category": "Taiwanese"
       }
     ],
-    "Giti Tire": [
+    "JK Tyre": [
       {
-        "title": "PCR & TBR prototypes extend Giti Tire’s sustainable materials usage - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWEJNU1pDaHdJSndzRlhwdFdkMTRyRlNSdGtoZENaVnR0ay04cy1QRWJaZWFucHpUa25zNElIcUFQUVkzR3pIdVlydlFwUUw5SGlScXlmMDhXSUZNdTdHMjVjdG1rYkRDSFMyejg2S0dNdzZ0LVRQcWhUNWh2SDRzMmtJSVpubnJodlBJRWY4V1huV0R4OEJxLVg1RUlEdl9T?oc=5",
-        "pubDate": "Thu, 25 Jun 2026 07:00:00 GMT",
-        "category": "Chinese"
+        "title": "JK Tyre targets European mixed-service fleets with JDC construction range - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaGlFMEtwUjU5dU03akZyck52X0hmQWpXOGl2SDdpVTdwUVprTGVjdkpfT0ZJUTk5X3c4TzZabmlrT1ZJTllyZDZNUk82dEJHMHhVRTNaZTc2WlJRcEJuUXJnUTg5eGFWU08yZ2lVTzU1UGJVSjV3X0FEUWtEdEhLc1EtWHJmMUpqYVY2azllc1VLSHEtRXFsRmdDcUFPeGw3N3hRTm9fYkJobG5E?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 06:55:48 GMT",
+        "category": "Indian"
       }
     ]
   }
