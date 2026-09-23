@@ -1,68 +1,52 @@
 {
-  "runAt": "2026-09-22T11:13:55.116524+00:00",
-  "totalNew": 7,
+  "runAt": "2026-09-23T11:05:36.719878+00:00",
+  "totalNew": 5,
   "entitiesChecked": 118,
-  "entitiesWithNews": 6,
+  "entitiesWithNews": 5,
   "newItemsByEntity": {
-    "Pneuhage": [
-      {
-        "title": "Westlake presents Gen II truck tyre range at IAA Transportation - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTktrU1ROOG1xTGU5cGhOOWt5bERHZXNqa0NjeU4wQ0VpZ3doSTBYYzFBZWtnNTI0Vjd0d3I3MUZnSG12dFFhamJ4Qzc3WEVLc2pCUXN3blZzTGxvTFBueVJHNXdGQktRMHJsMHR1TUNyekFndWRPMDAzTzd0WHhzQmNaY3B4cGV1Y09oTDlXWnVLYnJUc1d5a0JBakxDWU0?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 19:21:38 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
     "Premio": [
       {
-        "title": "Pirelli hails “positive” Austria MotoGP test as 18 riders evaluate 2027 tyres - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTnJPdjZ2c2t6dF9QLTQtSkdpRGdZOWpYcUk2VTNOX052QUtIN0JIb0pINkJ0UHVONXdycUJVQUt6WEh1czI5VDFxNURBVld0c2NjR3g4S3BtZzRPYmR3dVV6UHN6NjVoWXZQbVUwVzhCRE95TGthZGhOY0dxSXJEZ2o0eW9iRFEwNVZwa0FqaVQ2bnVXODR1cExIWHozRkV6Tlk2Rk9uZUxPMFI4SThDNQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 18:30:00 GMT",
+        "title": "Álex Márquez warns Ducati tyre weakness could return in Indonesia - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUUNZeVZjT2lfYWpVQmlIOGFjZnFRMGRyTWdDdGhibHp6eVFJZGs5bF9iemVZRXFZdnRTblgyZnFjUlNDSlhSbnNIS2lKdDB6NkpBMGlZSGNrLTVhOFh3S0ZNVU12dUVMVlNRSDlqLU0tUE12blRncjRhbHcyZzJBQnFIZFZsVkxvUlRDQ3Iza0NkRjh0clhZbXNweEQ4V3JxaTdZ?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 11:30:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Hedin Group": [
+    "ReifenDirekt": [
       {
-        "title": "Hedin Mobility Group completes the acquisitions of Mats Lindholms Bil and Molin Bil - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQR1p5QndnaGs1d3RrdEZPTmtIcFRiemV6RU9sTVExRnBWRS1Dc3VwMlRtVGpCUklYV1BTZkNsdkZQcnlaX2NRWUNJQXJPS0s2aGE1VFo1Qkg3X3dVam5mYmNkb1hfZlhXX3NrcHFCVWJESDNULUNCcWhlckF1LWJHRFBSOW5mRnlwVXBBLXlDQU9OZkZtQXdVMU51dUNYNUdXY1VtSWVpUHd0M0ZFT3ZIWDR5N2lOVl9GXy1jWWk2aDFzVXUxajQwWDNQS0RfSWFmWENPU3BxWGtXUzNWTjhyT2s0SQ?oc=5",
-        "pubDate": "Wed, 01 Feb 2023 08:00:00 GMT",
+        "title": "Delticom AG: AGM approves dividend - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQT3U0MVFUS2ltMXBpOWJpeEFIRm9NZXB6QzZWc0V4RVJ6VE81UkJoM0k5SEpvVVVOOGZxaDgyU1hwcjQxLTR1NjN2eTI4dXlQVjJFaWpvZVg0S1FKV1lJV3ZNUVZXMEIwcWdGNHFJRXdVeExUTUwwbW1KeWxnUE13R3ZhZDFqOHBqWEtJd01HaUc?oc=5",
+        "pubDate": "Wed, 09 Jul 2025 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
     "Emil Frey": [
       {
-        "title": "Verstappen given hope as Pirelli question rivals' Zandvoort decisions - gpblog.com",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVUNnTFZDSDNNandwRWY2cmQ3Xzd5T0ZrTC1BM1h3RXZ2eW1mbWJqQ0xJQ0EtQ2JfMjQtVlhsNk93ZFJ3VFBIb3NjOUdzc0xOTnVXZWtjdGhOVTljRVVXQmV3MFNqZzZzWGx5SEJCYUJheU1jckNremQ0VURYdEZZMHcxVmY2bVBkVlgtYUp6NDBFdWFaVEp3RmtsT3Y?oc=5",
-        "pubDate": "Fri, 21 Aug 2026 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      },
-      {
-        "title": "Emil Frey Ferrari Loses Win At Valencia (Updated) - dailysportscar.com",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcWN0eUM4eUNJXzRMNkl2YXRjUi10dHZuWDIzdWd4ZnRtcnYwTmgxVHBSdDhwaS1KYk5ERGpjdk54ZlhnQlRCYlU0VHBFMEpqOHZvaFdodXZBaGYwek0wNTg3TnA5QlhFWlVlMEF6NTlpQmFIZ3hVSXNMU3lOczV0Z0tSRFpVcWRoZ0hXN1NicDVXY0NqR2E5dW5pUnB5Ykp2YTc0Y240YUh4MlN5dXBqcm5mMA?oc=5",
-        "pubDate": "Sat, 20 Sep 2025 07:00:00 GMT",
+        "title": "No.69 Emil Frey Ferrari wins convincingly in GTWC EU Zandoort Race two as Silver champions are crowned - DIVEBOMB Motorsport",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORVRkMXZpbWtOYlNnMHZad01IbVpqbE9HcUJVaFI0dlpJZkFWNzM2SmFJSzhobV9tV2pZQmY3dVA5c1lsWjhDdjhoZmhfbnJPY1ZGSU1HQTgxUlJqV2RmV2xQS0dQc1dFVkVGTUJPVUVzNVBSbjNYc0h4LXA3MzNzS2pLLWV4YVp6OTlDQVJHMmswWERDYW01WXZndzdpWmx2Z2V1N3BmNE1wRWxuc2gxODE4NWxVMmJVcHFXVnlHMER6c1M3Y0pr?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 02:05:54 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Allopneus": [
+    "Euromaster France": [
       {
-        "title": "Michelin acquires Blackcircles in £50m deal - insider.co.uk",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMXlFZDZTMVdyckNGM2hwR0dmR2phdW5UMFViSG5pajRlNTkzVmJVeFpkLVRrVk81Q3hIcU5vQzBJdGktVmlCeElFMmVYUUpIaUxEVzRTQ0cyUW5QUHd5Wjc5WlhSTzJESEVnajVaWXJ0UExEV0RBYjlnd2tvTUdYR2ZBT2I?oc=5",
-        "pubDate": "Thu, 07 May 2015 07:00:00 GMT",
+        "title": "Michelin and HDI Global unite to improve fleet road safety - Autocar Professional",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdVhuZ3F2ZXBtTW51VlN5M3d4VWQ1TXNCWFU1LXF3VjlURGxiN1E5SEhxNG5xYU0zRDdHOU5PQVpGOE14ZFRTUTBHSVBIQzBpb0UtWDFmenFDUm5nS2tTUVRxRTFIN0l4dVlfVVY5cElMaUtpZk1ZU29NYkZaODFvMGZVZFhjUncxZVk4bFVPMC1meDZ0UTdZM3VXX1pheW15YUFPdUlsYjV5R3RlT1HSAbYBQVVfeXFMTWFvaWtoWUMtY0hkd2pTMlFocngzSjhCbGxXcEpwdTJ6d2YwWk5OS3hlcGZCWFgyWVdqMFE5VW9hQUJaSnVFeFNCM19tVnhTRFNSOFBZTGs3N3pPZGFTbTRQbTV5M1VtcU91UnU0aFd3T1MtbnNuTXdfUUxEZ2JXLTA4RElpdEF3UGt0M0xPbk5JWElNME16cGZmX1lrcjVpUUprYzZTemRfaWFIUUhNSjhzRE9Tanc?oc=5",
+        "pubDate": "Mon, 20 Jan 2020 08:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "Genan Holding": [
+    "HiQ Tyres": [
       {
-        "title": "Genan reconstruction proceeds as planned with new MD - Tire Technology International",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaUc2TnJIOVF4TExTUTJmUFBoMlJ1SzVIeHpTQS02bjZXVlRXTjB4cFpDbkZzVW1KeHA2ZjN1TEhkXy1hQlBDZHluSTkydnJFZHQ0N1B1NGQzZzA5WVJXS0xIbV9CVWhoeDJnRVV1V2xXeG1URmlCRkw0aTFrSWY2dU1tRUVMcEdmTG1wSmUyZVRGQmJTYWRhX1FHMFZBWjkwSk41akMwenBXR0pJUVNjR0FxaC1EZw?oc=5",
-        "pubDate": "Thu, 11 Aug 2016 07:00:00 GMT",
-        "country": "Denmark",
-        "cluster": "Central"
+        "title": "Northamptonshire autocentre franchisee honoured by Goodyear for 27 years of service - Northamptonshire Telegraph",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQQkdKWFhwWVJiMjFDR1VTUm9MVnZYODI2YzVUUHZ5M2JZZzgzRmd6UDJsZy1DaXBFNXZPcFBfOVBOVWtiQ0g5b1lxVHJDWFlSZkZuMXU0OGdTVVg4Qkxvd1YyRnhGQWRISGlMYTRTbkNxSTgzd09DM3lJRFdBdzJsN0U5V1hSeEJmTkJKNGw2QWJjSGZ3NUFIek84MWtDTmZ1ZUdRQVQycXZ5akdPWVVVSVFjSzBGVTJzVmlfVmpiclFtM0pLdkhjVWR1OTVlSjFlTndN?oc=5",
+        "pubDate": "Mon, 29 Apr 2024 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ]
   }
