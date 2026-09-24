@@ -18,105 +18,138 @@
               "owner": null,
               "volume": null,
               "model": "Wholesaler / distributor",
-              "territories": []
+              "territories": [
+                "R4"
+              ]
             },
             {
               "name": "Best4Tires",
               "owner": null,
               "volume": null,
               "model": "Wholesaler / distributor",
-              "territories": []
+              "territories": [
+                "R4"
+              ]
             },
             {
               "name": "Interpneu (Pneuhage)",
               "owner": null,
               "volume": null,
               "model": "Wholesaler / distributor",
-              "territories": []
+              "territories": [
+                "R4"
+              ]
             },
             {
               "name": "Pneuhage",
               "owner": null,
               "volume": null,
               "model": "Wholesaler / distributor",
-              "territories": []
+              "territories": [
+                "R4"
+              ]
             },
             {
               "name": "Point S Germany",
               "owner": null,
               "volume": null,
               "model": "Buying group / cooperative",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Premio",
               "owner": null,
               "volume": null,
               "model": "Specialist tyre retail chain",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Vergölst (Continental)",
               "owner": null,
               "volume": null,
               "model": "Manufacturer-owned franchise (Continental)",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Driver / Pneumobil (Pirelli)",
               "owner": null,
               "volume": null,
               "model": "Manufacturer-owned franchise (Pirelli)",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Euromaster Germany (Michelin)",
               "owner": null,
               "volume": null,
               "model": "Manufacturer-owned franchise (Michelin)",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Ihle (Michelin)",
               "owner": null,
               "volume": null,
               "model": "Manufacturer-owned wholesaler (Michelin)",
-              "territories": []
+              "territories": [
+                "R4"
+              ]
             },
             {
               "name": "Reifen Müller (Hankook)",
               "owner": null,
               "volume": null,
               "model": "Manufacturer-owned wholesaler (Hankook)",
-              "territories": []
+              "territories": [
+                "R1",
+                "R3",
+                "R4",
+                "R5"
+              ]
             },
             {
               "name": "Bosch Car Service Deutschland",
               "owner": null,
               "volume": null,
               "model": "Independent multi-brand workshop network",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Reifen Center Wolf (Pneuhage)",
               "owner": null,
               "volume": null,
               "model": "Wholesaler / distributor",
-              "territories": []
+              "territories": [
+                "R4"
+              ]
             },
             {
               "name": "Gewe Reifengroßhandel (Pneuhage)",
               "owner": null,
               "volume": null,
               "model": "Wholesaler / distributor",
-              "territories": []
+              "territories": [
+                "R4"
+              ]
             },
             {
               "name": "1a Berlin-Tyre (Best4Tires)",
               "owner": null,
               "volume": null,
               "model": "Wholesaler / distributor",
-              "territories": []
+              "territories": [
+                "R1"
+              ]
             },
             {
               "name": "Reifen Helm",
@@ -146,56 +179,74 @@
               "owner": null,
               "volume": null,
               "model": "Consolidated OEM dealer group",
-              "territories": []
+              "territories": [
+                "R4"
+              ]
             },
             {
               "name": "Hedin Group",
               "owner": null,
               "volume": null,
               "model": "Consolidated OEM dealer group",
-              "territories": []
+              "territories": [
+                "R1",
+                "R4"
+              ]
             },
             {
               "name": "Van Mossel Group",
               "owner": null,
               "volume": null,
               "model": "Consolidated OEM dealer group",
-              "territories": []
+              "territories": [
+                "R2"
+              ]
             },
             {
               "name": "Feser-Graf",
               "owner": null,
               "volume": null,
               "model": "Consolidated OEM dealer group",
-              "territories": []
+              "territories": [
+                "R1",
+                "R5"
+              ]
             },
             {
               "name": "AVAG",
               "owner": null,
               "volume": null,
               "model": "Consolidated OEM dealer group",
-              "territories": []
+              "territories": [
+                "R5"
+              ]
             },
             {
               "name": "Scherer Gruppe",
               "owner": null,
               "volume": null,
               "model": "Consolidated OEM dealer group",
-              "territories": []
+              "territories": [
+                "R4"
+              ]
             },
             {
               "name": "Lueg",
               "owner": null,
               "volume": null,
               "model": "Consolidated OEM dealer group",
-              "territories": []
+              "territories": [
+                "R3"
+              ]
             },
             {
               "name": "Gottfried Schultz",
               "owner": null,
               "volume": null,
               "model": "Consolidated OEM dealer group",
-              "territories": []
+              "territories": [
+                "R3"
+              ]
             }
           ]
         },
@@ -211,7 +262,9 @@
               "owner": "Mobivia Group",
               "volume": "~1.4M",
               "model": "Fast-fit / auto-centre chain (Mobivia)",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 500,
                 "metric": "branches",
@@ -232,21 +285,27 @@
               "owner": null,
               "volume": null,
               "model": "Online retailer (Delticom)",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Tirendo (Delticom)",
               "owner": null,
               "volume": null,
               "model": "Online retailer (Delticom)",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Reifen24",
               "owner": null,
               "volume": null,
               "model": "Specialist tyre retail chain",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             }
           ]
         }
@@ -1051,11 +1110,16 @@
         {
           "name": "Forstinger (auto-parts/service retailer, tyre workshops)",
           "model": "Fast-fit / auto-centre chain",
-          "territories": []
+          "territories": [],
+          "scale": {
+            "value": 111,
+            "metric": "branches",
+            "label": "~111 branches — Austria's largest PC tyre specialist retailer"
+          }
         },
         {
-          "name": "A.T.U (German-owned, also present in Austria)",
-          "model": "Fast-fit / auto-centre chain (Mobivia)",
+          "name": "A.T.U (exited Austria Feb 2024 — sold to Lucky Car)",
+          "model": "Manufacturer-owned franchise (Mobivia) — historical, no longer present",
           "territories": []
         },
         {
@@ -1092,11 +1156,21 @@
           "name": "Reifentotal.at",
           "model": "Online retailer",
           "territories": []
+        },
+        {
+          "name": "Lucky Car",
+          "model": "Independent multi-brand workshop network",
+          "scale": {
+            "value": 44,
+            "metric": "locations",
+            "label": "~44 locations Austria-wide (took over 24 former A.T.U sites, Feb 2024; also ex-Midas Austria operator)"
+          },
+          "territories": []
         }
       ],
       "noteBadge": "caution",
       "note": "Value only No unit total or channel split is published for Austria. Winter-tyre law (mandatory in winter conditions, Nov-Apr) structurally supports high seasonal/all-season fitment volumes.",
-      "marketAccessNote": "Thinner on named independent wholesalers than neighbouring markets — Forstinger is the strongest specialist-retail anchor identified. Worth direct outreach to confirm whether a dedicated Austrian wholesaler sits behind the pan-European franchise networks (Premio, First Stop, Euromaster, Vergölst) already present here.",
+      "marketAccessNote": "Forstinger (111 branches) is Austria's largest PC tyre specialist retailer and the clearest anchor. Worth knowing: A.T.U exited Austria entirely in Feb 2024, selling all 25 locations to independent chain Lucky Car (now ~44 locations Austria-wide) — a live disruption window similar to Denmark's Euromaster exit, worth approaching while Lucky Car is actively building out its supplier relationships. Still thin on named independent wholesalers — worth direct outreach to confirm whether one sits behind the pan-European franchise networks (Premio, First Stop, Euromaster, Vergölst) already present here.",
       "territoryDefs": [
         {
           "code": "E",
