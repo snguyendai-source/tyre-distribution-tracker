@@ -1,52 +1,43 @@
 {
-  "runAt": "2026-09-23T11:05:36.719878+00:00",
-  "totalNew": 5,
+  "runAt": "2026-09-24T11:22:56.797295+00:00",
+  "totalNew": 4,
   "entitiesChecked": 118,
-  "entitiesWithNews": 5,
+  "entitiesWithNews": 4,
   "newItemsByEntity": {
-    "Premio": [
+    "Norauto": [
       {
-        "title": "Álex Márquez warns Ducati tyre weakness could return in Indonesia - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUUNZeVZjT2lfYWpVQmlIOGFjZnFRMGRyTWdDdGhibHp6eVFJZGs5bF9iemVZRXFZdnRTblgyZnFjUlNDSlhSbnNIS2lKdDB6NkpBMGlZSGNrLTVhOFh3S0ZNVU12dUVMVlNRSDlqLU0tUE12blRncjRhbHcyZzJBQnFIZFZsVkxvUlRDQ3Iza0NkRjh0clhZbXNweEQ4V3JxaTdZ?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 11:30:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "ReifenDirekt": [
-      {
-        "title": "Delticom AG: AGM approves dividend - TradingView",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQT3U0MVFUS2ltMXBpOWJpeEFIRm9NZXB6QzZWc0V4RVJ6VE81UkJoM0k5SEpvVVVOOGZxaDgyU1hwcjQxLTR1NjN2eTI4dXlQVjJFaWpvZVg0S1FKV1lJV3ZNUVZXMEIwcWdGNHFJRXdVeExUTUwwbW1KeWxnUE13R3ZhZDFqOHBqWEtJd01HaUc?oc=5",
-        "pubDate": "Wed, 09 Jul 2025 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Emil Frey": [
-      {
-        "title": "No.69 Emil Frey Ferrari wins convincingly in GTWC EU Zandoort Race two as Silver champions are crowned - DIVEBOMB Motorsport",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORVRkMXZpbWtOYlNnMHZad01IbVpqbE9HcUJVaFI0dlpJZkFWNzM2SmFJSzhobV9tV2pZQmY3dVA5c1lsWjhDdjhoZmhfbnJPY1ZGSU1HQTgxUlJqV2RmV2xQS0dQc1dFVkVGTUJPVUVzNVBSbjNYc0h4LXA3MzNzS2pLLWV4YVp6OTlDQVJHMmswWERDYW01WXZndzdpWmx2Z2V1N3BmNE1wRWxuc2gxODE4NWxVMmJVcHFXVnlHMER6c1M3Y0pr?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 02:05:54 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Euromaster France": [
-      {
-        "title": "Michelin and HDI Global unite to improve fleet road safety - Autocar Professional",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdVhuZ3F2ZXBtTW51VlN5M3d4VWQ1TXNCWFU1LXF3VjlURGxiN1E5SEhxNG5xYU0zRDdHOU5PQVpGOE14ZFRTUTBHSVBIQzBpb0UtWDFmenFDUm5nS2tTUVRxRTFIN0l4dVlfVVY5cElMaUtpZk1ZU29NYkZaODFvMGZVZFhjUncxZVk4bFVPMC1meDZ0UTdZM3VXX1pheW15YUFPdUlsYjV5R3RlT1HSAbYBQVVfeXFMTWFvaWtoWUMtY0hkd2pTMlFocngzSjhCbGxXcEpwdTJ6d2YwWk5OS3hlcGZCWFgyWVdqMFE5VW9hQUJaSnVFeFNCM19tVnhTRFNSOFBZTGs3N3pPZGFTbTRQbTV5M1VtcU91UnU0aFd3T1MtbnNuTXdfUUxEZ2JXLTA4RElpdEF3UGt0M0xPbk5JWElNME16cGZmX1lrcjVpUUprYzZTemRfaWFIUUhNSjhzRE9Tanc?oc=5",
-        "pubDate": "Mon, 20 Jan 2020 08:00:00 GMT",
+        "title": "Norauto at the forefront of electric vehicles - Flottes Automobiles",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1EQTVzd19pSUJjNFZHbU5UQmNQLWY0N0Q3a3djcEE1RWRxRnd3X3F5STQ1ckF0cjVSOUpESmdmUmViY1EtS0Q5Q2Z2dkxMcW5EWUZmYklsM1phdVhiZ0pOTlNLZFZRUjdEeS11YjRNUG5zdw?oc=5",
+        "pubDate": "Wed, 23 Sep 2026 13:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "HiQ Tyres": [
+    "Kwik Fit": [
       {
-        "title": "Northamptonshire autocentre franchisee honoured by Goodyear for 27 years of service - Northamptonshire Telegraph",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQQkdKWFhwWVJiMjFDR1VTUm9MVnZYODI2YzVUUHZ5M2JZZzgzRmd6UDJsZy1DaXBFNXZPcFBfOVBOVWtiQ0g5b1lxVHJDWFlSZkZuMXU0OGdTVVg4Qkxvd1YyRnhGQWRISGlMYTRTbkNxSTgzd09DM3lJRFdBdzJsN0U5V1hSeEJmTkJKNGw2QWJjSGZ3NUFIek84MWtDTmZ1ZUdRQVQycXZ5akdPWVVVSVFjSzBGVTJzVmlfVmpiclFtM0pLdkhjVWR1OTVlSjFlTndN?oc=5",
-        "pubDate": "Mon, 29 Apr 2024 07:00:00 GMT",
+        "title": "Tyre boss Michael Welch: ‘I wanted to show people what I was made of’ - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5iQTBXMUlkOFVhcTJSdG1qd2tyZWxsUVRPcFFtZE1mM1Jvb1lOaUVScmg4NUtZLTVHdEszcDZGVmVwN3F1Rk9VdWRIMTQtS3BMR19iRURnQWFncnV5RE1vS3dpLVkwV01UNFJtMzZEYzM?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
+      }
+    ],
+    "Point S UK": [
+      {
+        "title": "Point S launches EV-compatible all-season tyre range - Motor Trade News",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaGU4SVc4clQxTnRveXV3SmIyYXdCTmdVci0wSVFvT3ZCblQ1bVJmMTFYeVFRaVVYYjZ2UHA5ZUQ2RUhyTFNETzR3WFF5b214NS1xVV96c2d6Ymd3dUpOekRfMFFpOWdmaERwcW5jVWFERnYydGhrT2xiNkhqel8teDRwVUo0SmU3YVlseXNmZDJnTmFZTWlwVVpkcGhFNjdFbUFKREw4NVU?oc=5",
+        "pubDate": "Wed, 23 Sep 2026 13:43:51 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Vianor": [
+      {
+        "title": "Nokian's SnapSkan Will 3D Scan Your Tire Treads for Free to Keep You Safe - autoevolution",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTXFmd2lzMnQySl9vWmlpWTdrRU80cmlyZ2k1WkJ4c2VtUWs1Z0FjaGxoMUxoNG5sWFpzZFppNTRQTXlKU1pkV2hoQW1sYmJkeHg2bms3bkpiMHZyZTM3eG9ndWNDd0o1TnZtZkNLVkVXNlY3dEFJcG4yXzh3ZG1NU2JhNVZhYU9PcThyaXlBSzY3cmdiaW9VZkVWdGVZQTVQak1DQUNYTF9INy1HaUp4ZERoMFZwM0RDU3piUFJTMXctWVJLNVE?oc=5",
+        "pubDate": "Tue, 13 Dec 2016 08:00:00 GMT",
+        "country": "Hungary",
+        "cluster": "South-East"
       }
     ]
   }
