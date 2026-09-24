@@ -355,7 +355,9 @@
               "owner": "Bridgestone · ~466 branches",
               "volume": "~1.30M",
               "model": "Fast-fit / auto-centre chain",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 466,
                 "metric": "branches",
@@ -367,7 +369,9 @@
               "owner": "Mobivia · ~415 branches",
               "volume": "~1.16M",
               "model": "Fast-fit / auto-centre chain",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 415,
                 "metric": "branches",
@@ -379,7 +383,9 @@
               "owner": "Mobivia · ~367 branches",
               "volume": "~1.03M",
               "model": "Fast-fit / auto-centre chain",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 367,
                 "metric": "branches",
@@ -391,7 +397,9 @@
               "owner": "Groupe Monnoyeur · ~350 branches",
               "volume": "~0.98M",
               "model": "Fast-fit / auto-centre chain",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 350,
                 "metric": "branches",
@@ -403,7 +411,9 @@
               "owner": "Independent · ~120 branches",
               "volume": "~0.34M",
               "model": "Fast-fit / auto-centre chain",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 120,
                 "metric": "branches",
@@ -415,42 +425,54 @@
               "owner": null,
               "volume": null,
               "model": "Wholesaler / distributor",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Doyen Auto France / Autodis (API, 1,2,3 AutoService, Requal)",
               "owner": null,
               "volume": null,
               "model": "Wholesaler / distributor",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Copadex",
               "owner": null,
               "volume": null,
               "model": "Wholesaler / distributor",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "DPI (Doumerc Pneus)",
               "owner": null,
               "volume": null,
               "model": "Wholesaler / distributor",
-              "territories": []
+              "territories": [
+                "SW"
+              ]
             },
             {
               "name": "Chrono SLPA Pneus",
               "owner": null,
               "volume": null,
               "model": "Wholesaler / distributor",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Pneumaclic",
               "owner": null,
               "volume": null,
               "model": "Online retailer",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             }
           ]
         },
@@ -466,7 +488,9 @@
               "owner": null,
               "volume": null,
               "model": "Buying group / cooperative",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 3300,
                 "metric": "garages",
@@ -478,7 +502,9 @@
               "owner": null,
               "volume": null,
               "model": "Independent multi-brand workshop network",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 650,
                 "metric": "garages",
@@ -490,14 +516,18 @@
               "owner": null,
               "volume": null,
               "model": "OEM-affiliated independent repairer network (Stellantis)",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Motrio (Renault Group-affiliated independent network)",
               "owner": null,
               "volume": null,
               "model": "OEM-affiliated independent repairer network (Renault)",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             }
           ]
         },
@@ -513,7 +543,9 @@
               "owner": "Independent cooperative · ~450 branches",
               "volume": "~1.11M",
               "model": "Buying group / cooperative",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 450,
                 "metric": "branches",
@@ -525,7 +557,9 @@
               "owner": "Siligom / Eurotyre / Côté Route · ~437 branches",
               "volume": "~1.08M",
               "model": "Buying group / cooperative",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 437,
                 "metric": "branches",
@@ -537,7 +571,9 @@
               "owner": "Michelin · ~415 branches",
               "volume": "~1.02M",
               "model": "Manufacturer-owned franchise (Michelin)",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 415,
                 "metric": "branches",
@@ -549,7 +585,9 @@
               "owner": "Bridgestone (incl. Métifiot) · ~300 branches",
               "volume": "~0.74M",
               "model": "Manufacturer-owned franchise (Bridgestone)",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 300,
                 "metric": "branches",
@@ -561,7 +599,9 @@
               "owner": "Goodyear-Dunlop backed · ~230 branches",
               "volume": "~0.57M",
               "model": "Manufacturer-owned franchise (Goodyear)",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 230,
                 "metric": "branches",
@@ -573,7 +613,9 @@
               "owner": "Continental · branch count n/a",
               "volume": "folded in above",
               "model": "Manufacturer-owned franchise (Continental)",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Profil Plus",
@@ -603,21 +645,27 @@
               "owner": null,
               "volume": null,
               "model": "Online retailer",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "123pneus.fr (Delticom)",
               "owner": null,
               "volume": null,
               "model": "Online retailer (Delticom)",
-              "territories": []
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             },
             {
               "name": "Pneuwyz (~1,300 partner outlets)",
               "owner": null,
               "volume": null,
               "model": "Online retailer",
-              "territories": [],
+              "territories": [
+                "__NATIONWIDE__"
+              ],
               "scale": {
                 "value": 1300,
                 "metric": "partner outlets",
@@ -664,7 +712,9 @@
         {
           "name": "Halfords Autocentres (~650+ branches)",
           "model": "Fast-fit / auto-centre chain",
-          "territories": [],
+          "territories": [
+            "__NATIONWIDE__"
+          ],
           "scale": {
             "value": 650,
             "metric": "branches",
@@ -674,7 +724,9 @@
         {
           "name": "Kwik Fit (~600, ETEL/Itochu)",
           "model": "Fast-fit / auto-centre chain",
-          "territories": [],
+          "territories": [
+            "__NATIONWIDE__"
+          ],
           "scale": {
             "value": 600,
             "metric": "branches",
@@ -684,7 +736,9 @@
         {
           "name": "Protyre (186+, Micheldever/Sumitomo)",
           "model": "Fast-fit / auto-centre chain",
-          "territories": [],
+          "territories": [
+            "__NATIONWIDE__"
+          ],
           "scale": {
             "value": 186,
             "metric": "branches",
@@ -694,7 +748,9 @@
         {
           "name": "First Stop UK (150, Bridgestone — targeting 220)",
           "model": "Manufacturer-owned franchise (Bridgestone)",
-          "territories": [],
+          "territories": [
+            "__NATIONWIDE__"
+          ],
           "scale": {
             "value": 150,
             "metric": "branches",
@@ -704,12 +760,16 @@
         {
           "name": "HiQ (Goodyear franchise)",
           "model": "Manufacturer-owned franchise (Goodyear)",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Point S UK (300+ independent centres)",
           "model": "Buying group / cooperative",
-          "territories": [],
+          "territories": [
+            "__NATIONWIDE__"
+          ],
           "scale": {
             "value": 300,
             "metric": "centres",
@@ -719,17 +779,23 @@
         {
           "name": "Bosch Car Service UK",
           "model": "Independent multi-brand workshop network",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Blackcircles (Michelin, online)",
           "model": "Manufacturer-owned online retailer (Michelin)",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Micheldever Tyre Services",
           "model": "Wholesaler / distributor",
-          "territories": [],
+          "territories": [
+            "__NATIONWIDE__"
+          ],
           "scale": {
             "value": 6000,
             "metric": "wholesale clients",
@@ -739,7 +805,9 @@
         {
           "name": "Bond International",
           "model": "Wholesaler / distributor",
-          "territories": [],
+          "territories": [
+            "__NATIONWIDE__"
+          ],
           "scale": {
             "value": 11,
             "metric": "distribution centres",
@@ -759,7 +827,9 @@
         {
           "name": "National Tyres and Autocare (Halfords)",
           "model": "Fast-fit / auto-centre chain",
-          "territories": [],
+          "territories": [
+            "__NATIONWIDE__"
+          ],
           "scale": {
             "value": 604,
             "metric": "garages",
@@ -769,7 +839,9 @@
         {
           "name": "Lodge Tyres (Halfords)",
           "model": "Fast-fit / auto-centre chain",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "F1 Autocentres",
@@ -805,42 +877,59 @@
         {
           "name": "Profile Tyrecenter (Dutch-origin multi-brand network)",
           "model": "Buying group / cooperative",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Kwik Fit Nederland",
           "model": "Fast-fit / auto-centre chain",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Euromaster Nederland (Michelin)",
           "model": "Manufacturer-owned franchise (Michelin)",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Autobandenmarkt / Bandenmarkt",
-          "model": "Wholesaler / distributor",
-          "territories": []
+          "model": "Online retailer (Delticom)",
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Bosch Car Service Nederland",
           "model": "Independent multi-brand workshop network",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "ReifenDirekt.nl (Delticom)",
           "model": "Online retailer (Delticom)",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Van den Ban Autobanden",
           "model": "Wholesaler / distributor",
-          "territories": []
+          "territories": [
+            "3"
+          ]
         },
         {
           "name": "Heuver Banden",
           "model": "Wholesaler / distributor",
-          "territories": []
+          "territories": [
+            "2",
+            "4"
+          ]
         },
         {
           "name": "Distri24 (Profile)",
@@ -850,7 +939,9 @@
         {
           "name": "AutoCrew (Bosch-supplied)",
           "model": "Independent multi-brand workshop network",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         }
       ],
       "noteBadge": "caution",
@@ -942,27 +1033,37 @@
         {
           "name": "Confortauto",
           "model": "Specialist tyre retail chain",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Euromaster España (Michelin)",
           "model": "Manufacturer-owned franchise (Michelin)",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "First Stop (Bridgestone)",
           "model": "Manufacturer-owned franchise (Bridgestone)",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Rodi Motor Services",
           "model": "Specialist tyre retail chain",
-          "territories": []
+          "territories": [
+            "NE"
+          ]
         },
         {
           "name": "Norauto España",
           "model": "Fast-fit / auto-centre chain",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Feu Vert",
@@ -972,22 +1073,32 @@
         {
           "name": "Point S España",
           "model": "Buying group / cooperative",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Vulco (Goodyear)",
           "model": "Manufacturer-owned franchise (Goodyear)",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Aurgi",
           "model": "Specialist tyre retail chain",
-          "territories": []
+          "territories": [
+            "CE",
+            "NE",
+            "SSW"
+          ]
         },
         {
           "name": "Neumáticos Soledad",
           "model": "Wholesaler / distributor",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Vialider",
@@ -1005,28 +1116,20 @@
       "marketAccessNote": "NEX (the Euromaster/Rodi 50/50 joint venture, 12 logistics platforms) and Neumáticos Soledad/Confortauto are the two major gateways; NEX's scale and backing make it the priority first contact.",
       "territoryDefs": [
         {
-          "code": "T1",
-          "name": "Catalonia & Islands"
+          "code": "SSW",
+          "name": "South / Southwest"
         },
         {
-          "code": "T2",
-          "name": "Northwest"
+          "code": "CE",
+          "name": "Central-East / Madrid-Valencia"
         },
         {
-          "code": "T3",
-          "name": "North & Ebro"
+          "code": "NNW",
+          "name": "North / Northwest"
         },
         {
-          "code": "T4",
-          "name": "Central"
-        },
-        {
-          "code": "T5",
-          "name": "East & South"
-        },
-        {
-          "code": "OUT",
-          "name": "Outside Spain / Portugal"
+          "code": "NE",
+          "name": "Northeast / Catalonia-Aragon"
         }
       ]
     },
@@ -1110,7 +1213,9 @@
         {
           "name": "Forstinger (auto-parts/service retailer, tyre workshops)",
           "model": "Fast-fit / auto-centre chain",
-          "territories": [],
+          "territories": [
+            "__NATIONWIDE__"
+          ],
           "scale": {
             "value": 111,
             "metric": "branches",
@@ -1125,37 +1230,52 @@
         {
           "name": "Euromaster Austria (Michelin)",
           "model": "Manufacturer-owned franchise (Michelin)",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Point S Austria",
           "model": "Buying group / cooperative",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "First Stop (Bridgestone)",
           "model": "Manufacturer-owned franchise (Bridgestone)",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Bosch Car Service",
           "model": "Independent multi-brand workshop network",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "ReifenDirekt.at / Reifen.at (Delticom)",
           "model": "Online retailer (Delticom)",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Reifen John",
           "model": "Specialist tyre retail chain",
-          "territories": []
+          "territories": [
+            "C",
+            "E"
+          ]
         },
         {
           "name": "Reifentotal.at",
           "model": "Online retailer",
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         },
         {
           "name": "Lucky Car",
@@ -1165,7 +1285,9 @@
             "metric": "locations",
             "label": "~44 locations Austria-wide (took over 24 former A.T.U sites, Feb 2024; also ex-Midas Austria operator)"
           },
-          "territories": []
+          "territories": [
+            "__NATIONWIDE__"
+          ]
         }
       ],
       "noteBadge": "caution",
