@@ -1,7 +1,32 @@
 {
-  "runAt": "2026-09-24T11:22:56.797295+00:00",
-  "totalNew": 0,
+  "runAt": "2026-09-25T11:28:37.707846+00:00",
+  "totalNew": 3,
   "entitiesChecked": 26,
-  "entitiesWithNews": 0,
-  "newItemsByEntity": {}
+  "entitiesWithNews": 3,
+  "newItemsByEntity": {
+    "Yokohama Rubber": [
+      {
+        "title": "Yokohama Tire Strategy Drives Record Sales and Global Growth - Tire Review Magazine",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE10SFpTMjNZWmFZWXVEZklmUVRSRDRGcXBwMUhKdlBmd1NIQnViWHYtaFJVTjhsb3U4TjB5cjZjQ1NscmhRbDNnR3dST0NldURYRkkzOFBtX0xud3NqVVhhYnBfV2hlUQ?oc=5",
+        "pubDate": "Wed, 01 Oct 2025 07:00:00 GMT",
+        "category": "Japanese"
+      }
+    ],
+    "Triangle Tyre": [
+      {
+        "title": "Europe Articulated Dump Truck Tire Market Size, Share Report 2034 - Global Market Insights Inc.",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUTNxWnF4YUxwRWlyYlhsMU9jYmhKRVgzT3ZJRDlDeUFyQTlDdmlyYzNzUU9GUmI3RC1uX1NjWE56UGVxczYwYy1uMlowX0JqLUpsTzExS2l0WDhzMmpLRW1uMUQ5MlV5VkdjOUVRMU9NQUEzYW8zOHlPX0NDa19NQ1NnV3RiS0VwQndIeHU0Yw?oc=5",
+        "pubDate": "Fri, 09 May 2025 12:33:48 GMT",
+        "category": "Chinese"
+      }
+    ],
+    "Giti Tire": [
+      {
+        "title": "Giti Tire Achieves EV World Record with VW ID Buzz - Fuel Cells Works",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTWx2T0gxdWJEUHYzX1hEbUF3dDRQUmVqbE9VQnVPNVJqdmtWNFRiZjVfVnlfZjgtSC1yODM2bVNORFRMUGpZaFVhYjQyeTFsZXVOcDdWcWV5ZGR0VXdvX1h4LVlQUmRuU01reW44X1hvTnlDaV9UbTVhTlc4dlZneV9Fb0xqTnNpOXMtbVhtNE81Nk5NaC1xRlp1VnpNOUdocDFiZVFn?oc=5",
+        "pubDate": "Thu, 24 Sep 2026 16:11:00 GMT",
+        "category": "Chinese"
+      }
+    ]
+  }
 }
