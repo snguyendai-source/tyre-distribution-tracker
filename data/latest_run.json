@@ -1,43 +1,34 @@
 {
-  "runAt": "2026-09-27T11:42:28.174568+00:00",
-  "totalNew": 4,
+  "runAt": "2026-09-28T13:19:41.370567+00:00",
+  "totalNew": 3,
   "entitiesChecked": 118,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Vulco": [
+    "Vergölst": [
       {
-        "title": "10 percent of road crashes in Ghana linked to tyre issues—NRSA - GBC Ghana Online",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9MWHBOZW53SnVEV1NwVDVSYmtoVVRXVDN0YVFPMnJ4d0MyUUV3dDBQMmdRVWNjVHplNkttZlY5QXJnODlaOHpmTHlTSTBhZlE3d25MUFFfczh0OWE4b0JWTm5vVUFSNHBqU09EVnh1Zw?oc=5",
-        "pubDate": "Sun, 18 Jun 2023 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      }
-    ],
-    "Grupo Andrés": [
-      {
-        "title": "Top Recambios: Tire Cologne ‘a great success’ - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOb3NNaENfdWFXdnNENFZTVnppTDJySmRTUlNwbGV2VDRYQ0x4TS1xZlFFa3FKQkZacmtPWUN0QU9jc08zbHJOWUtYczJkQWloYVVqd1EwT1pXOG1ieG1XcjBCMWF6ODhsX0FiSERVMU1xTEVqUzVpQk5hTFkxaDktczVGbw?oc=5",
-        "pubDate": "Wed, 12 Jun 2024 07:00:00 GMT",
-        "country": "Spain",
-        "cluster": "South-West"
-      }
-    ],
-    "Vianor": [
-      {
-        "title": "Nokian Tyres Earnings Show 136% Operating Profit Jump - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE92Z2VYcTc2bTc2cEJVQm4wZUVDNnFXV3Q4NloxZnZhbXlNZU9idzZlNUdvWUk0dlo0dER6WDN2WkN1UkZoUjJPclhhRGpmUGlaT3RubnEzUmk2c3dKRjZEV0xZc1NFWHh1?oc=5",
-        "pubDate": "Tue, 21 Jul 2026 07:00:00 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
-      }
-    ],
-    "Super Dæk Service": [
-      {
-        "title": "Sweden’s JJ’s Däck now a Colmec business - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5SbmVxcDdMRV9peHppNGtSdVZDVk1TdElCT0ZuRy1HUGhhTTVkY0M1WmdvZ2RMNHpxU2NxT3VLSldRaVUxTHRNTWFQNk9xMjNRdVJMWjBjT3hxM3ZCWUQyRGpfSm4wNGNYYldBOHlvVzQ4WGE2VjhFLUZWVlFYdw?oc=5",
-        "pubDate": "Wed, 17 Jul 2024 07:00:00 GMT",
-        "country": "Denmark",
+        "title": "Licensable picture: Vergölst, Tire And Auto Service, Retail Chain, Vergölst GmbH, A Subsidiary Of Continental AG; Shown Here: Certified Auto Repair Shop In Erfurt, Thuringia, Advertising Tower - reutersconnect.com",
+        "link": "https://news.google.com/rss/articles/CBMigANBVV95cUxPdlI4S0laSEYycmZzRGVyOVhrNldnYXdoZ1ZoV1FjQ1lwSGJMRzhoRVBDbWZ5LU1YOE8tWFFfYlpBdDJOTVdhRzI1Q1ZJQ0xSV18wR0ptdjZwQ2lPSGJkMU1ua1czd3ZYVVl2MHg4WFd6enM5cG9Qd3hiaDJlbjgwaXZGZVZNYk5tZ1ZCN1FhN1d1VGpBNHN3U0RxYXlVa0JlSS0wbU0zQ2R3S21MdEF6OFZGNU82WU1sV0ZMTnluN3VfSGNhRGsycUFGYlJlYWI4OHBEUktXcGJzcjNGcjlRUV9FdTRjWWlpb1Fzc2lGY3A5LWwtZ2d2OWhTNW1Ydzhtb1liaFdCMHc1Tmt5RVlGN3NsQnAtMDlhaV9OcDZkWlNUWGF0WFRQenFlbjVNLUFpdnRTbzFIbXNiM3dnZG5RQmgtcUdaSlFzcXNDX2c5LU55eUJJMk50WmFNNHZxMThKZHh0SFJqNWFmaFBzWnFzOXUyMVh4UmIxaFpOZUFxLWQ?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+        "country": "Germany",
         "cluster": "Central"
+      }
+    ],
+    "First Stop UK": [
+      {
+        "title": "First Stop offer TechMan Pro garage management software - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRnJzUEgycm8zY0FOaV9KSnJlRzhXTzF3SUdsTWdoXzF6cUQyTGxibExvZUNsQUFlb21iSGxXcUNIOW5xTlpJbTJfaU90VFQ4TU5VRTlqM0NpcmJia2VpOFZmYWlQU1JkMUU5QXljdHpESnVrMFdGZVBPNVQxNl84TmRJNDZQTDhNSEhiX3N1MU5UUTh3?oc=5",
+        "pubDate": "Tue, 20 Apr 2021 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Tructyre": [
+      {
+        "title": "Tructyre appoints Elizabeth Nagel managing director - Transport Engineer",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcldGZFN1M1NQUTMyRVF1LUZsWjBlTHhITDE0V2RFaFlMdlZHNkFmQ19LLTItZElaRkhZb2FySWRNUTN4aWFfb2xyQ1hkd2NuQmd2RVZHYWZfQTZJVGMxUllsZllZMkxET2lJYUFWT2hVckNya1hiSGRoZ2tMNFhfQi01NF9KRFdtUjd3OWZZaEZNVHJSSjlQeEtreUNCT01LTXhF?oc=5",
+        "pubDate": "Tue, 12 May 2026 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ]
   }
