@@ -1,7 +1,16 @@
 {
-  "runAt": "2026-09-29T12:25:45.975879+00:00",
-  "totalNew": 0,
+  "runAt": "2026-09-30T12:11:04.753362+00:00",
+  "totalNew": 1,
   "entitiesChecked": 26,
-  "entitiesWithNews": 0,
-  "newItemsByEntity": {}
+  "entitiesWithNews": 1,
+  "newItemsByEntity": {
+    "JK Tyre": [
+      {
+        "title": "JK Tyre prepares European PCR & van tyre launch - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNeFRvQXBoWkc0Q3dRUnZvSm9IX3hscFAtYkJPZWtsNmRhZG5NMG8zdUFTUUhTWW9VeDNqeHZYX1VyZm5mcVNONmk5QU1pWEVjaU1PNHkxUmNzSHdDclJYbTdXc2NYM0tvTW9zOXpPQWhVOVNHWnN1RFl4WVNjM2gwcjlNM2NsRFU?oc=5",
+        "pubDate": "Mon, 15 Jun 2026 07:00:00 GMT",
+        "category": "Indian"
+      }
+    ]
+  }
 }
