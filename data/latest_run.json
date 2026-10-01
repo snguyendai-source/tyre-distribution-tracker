@@ -1,43 +1,48 @@
 {
-  "runAt": "2026-09-30T12:11:04.753362+00:00",
-  "totalNew": 4,
+  "runAt": "2026-10-01T12:45:06.197793+00:00",
+  "totalNew": 5,
   "entitiesChecked": 118,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 3,
   "newItemsByEntity": {
     "Premio": [
       {
-        "title": "Bridgestone unveils Formula E Gen4 tyres and dedicated wet-weather option in Rome - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUWFNdHpjNkFMSkJKdXpLZmU3Mml3RW1KX0NTVllkelJQZVB5TDlKaGx0aV9HLWFINTgwYlNkVWxpMXNmd3RRdGc5QTFtSjJjaExRbVl3N3lrcjVuNUZLZnpBaF9yd283Z2t6UjNNc0g5MW9aODdxUWpYRWxaUkhoUG1pU1cxdGFOSk1UeU53NTJvbnhMREEtNVk3azhBaXJvcDFSRmVxOWVKZkpjSnpPVmdpQkhqdjlYOGJjZA?oc=5",
-        "pubDate": "Wed, 30 Sep 2026 10:00:00 GMT",
+        "title": "MotoGP’s new Motegi asphalt forces Michelin to rethink Japanese GP tyres - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR2VsUExLWUtjcUZSMVp5VUw0SWlzazU3a1JnRHZTYnF5dS1SLTBjQk9nYUFKSTZRLUQ5NjVaSi1kMEM4NmppSXZyZlhGTUcwNnh4YlZHWkZVeW1CejVEQlQwUjZxLUZuSldBYVNmQ3ltNXE5azBZbGdsZzNXSFF1aXNST2t4bWs1NFBSRjNiTjVkLUtNQ18ybTU3VVRlckxlWFVkdktBUWR1bnc?oc=5",
+        "pubDate": "Wed, 30 Sep 2026 17:30:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Sepang tyre choice explained: why Pirelli’s C2, C3 and C4 matter - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbXZZNm9vUHJhcHVVTTZ2eW1TWFU4eHVtSWh1bWE0WGgwd2ZELWJWX1VvOTVINEdmdHo2UEtVVTZfQkwxRTdMOWV6M0NTUFhCRnpSYlcxdU95OU9SWkJCWkVKdTA5V09kbHNmSzN4S0dsVmdscWYtUFNTNi1OTnEtZDdVeDR6cGRVWGNxaGRDUmtKM2Vid2Y2bA?oc=5",
+        "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Sepang tyre choice explained: why Pirelli’s C2, C3 and C4 matter - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQmVIclBJSFJQWWQ5ME51UWFhZ0IxWml2SUljUnlSMTJqbHFWdmhodWZ3V2czUkN2dF8xdjNiQ09YTDlENlhaNlBrZ1VDcDV6a0I5b3k0RzZpSXB4ZGl5azE3bWtZZTF1VGRQQzBpOXNwZVhrMzRaN3JKUXBjZ2pScjhMb1dJaUxGTEtzbzFqV1NwVEJuNWUzZHkwZw?oc=5",
+        "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "ReifenDirekt": [
+    "Blackcircles": [
       {
-        "title": "Delticom Expands its Online Truck Tyre Offering - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRGxDcnpnREZoYXhRWXdzOXFfQW0wNW03Wk5HeGxsVDRhMWlHRVNnYkt5Z0lsNXl6cjZQakFvQ0tHa0xaTTNZdkJoNjJGY3ZULWh4aW5EV1d3QU5KNEQzMVNSbWRLcUFYVFhVcTctVk1BMldHZzRvNmRlQTFYRkE3WA?oc=5",
-        "pubDate": "Wed, 17 Sep 2008 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Tructyre": [
-      {
-        "title": "Tructyre Reduces Roadside Customer Call Response Times By 40% - contact-centres.com",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONE40dXZhTE52RFdCUjV6NVhScmR0T1lTZzZyWDd6djZOTE5CSHgwU3FfbGtkRC1LY3ZsYmVhanRiU1BubjI3Q3pJdHVtTXNhOTN4Ql83WHdLTmZSTTJRV0pQTzNST0Jhb2ZvVGs3M2QyeGZ4a1prZHdLNkJma0J0UmxNakF2ck5qTXdweTdXeWx5LWs?oc=5",
-        "pubDate": "Tue, 29 Sep 2026 11:34:37 GMT",
+        "title": "Blackcircles study: more than a third of used car buyers face average £1,288 unexpected repair bill - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1Wc3RpN20yUVpPclFwWEk1d0luZTg0TmVSQXgzVGhHSFcyb3VDWEY0b3ZzUFNsNTg4UmRyRmZPZS04OXdYbUZXbnUwSQ?oc=5",
+        "pubDate": "Thu, 24 Sep 2026 17:59:21 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Marangoni": [
+    "Bandvulc": [
       {
-        "title": "Marangoni Adds Atlanta-Area J&R Tire as a Dealer Member - Heavy Duty Trucking",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOejBrU3BMeDNUZ24zQmpNbWFhcms0a0F1RG1tQVMxOFhQVWlndkVKbmhqS2ZVMjRHSEMtQWRFMEFJMkdZaHpfVS1VWnhSanVNbWNUS1NtZWRZNjkwRVB4amlVYkdYeVY3OVZJWEFKTURzTlVHQTV0X2hNamlLanhDQVVpNnFZbjhQYWZMSVlQcTF2dw?oc=5",
-        "pubDate": "Wed, 04 Feb 2026 10:49:19 GMT",
-        "country": "Italy",
-        "cluster": "South-West"
+        "title": "Bibby renews tyre management deal with Bandvulc - Transport Engineer",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUUYwb3lSNXFCTVhsb21EVzVwNXVrZjlLQ0VTQkxocFZlZHdCUTRGMThwM3lhbjJCNnBNRVBVN1NfeHh0UHB5VUdUUWlfSzlKMHdqWjBzZ29tZmxhRW9pUzdyem53OWwwb2dDcGtWMTNSMG9MemVBUDdYRUk3bmVUNWoybzA0Y2t5WExIYU45SkJJWFp5M3F3YmxYQXN4Zw?oc=5",
+        "pubDate": "Fri, 09 Aug 2019 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ]
   }
