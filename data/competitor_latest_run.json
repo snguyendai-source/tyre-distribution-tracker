@@ -1,47 +1,47 @@
 {
-  "runAt": "2026-10-01T12:45:06.197793+00:00",
+  "runAt": "2026-10-02T12:09:12.414184+00:00",
   "totalNew": 5,
   "entitiesChecked": 26,
   "entitiesWithNews": 5,
   "newItemsByEntity": {
     "Continental": [
       {
-        "title": "Continental highlights the role of digital tyre management - fleetpoint.org",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQU0FYbkRyMzMyeVNoUjg5cTRMUV9Jc3BsSm5QTUdtbGY3MWtUWWdGc1BzTGcxbVJwVzZyQVc2cjBkeEZESmJvY0Y5WU9udmJIQnBiQmpjdWVqVHh5TkNRd3VjTTEtYnVMcmNTS3c0eXViSE1kSm1jckcxVW9BUG9ZTUNkc1JyeG9yUnpRVUxHWnhBd2ZMQ2k0eGNvWmoyTHVQWEtTVUR3U3NDMDdC?oc=5",
-        "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
+        "title": "Continental Has Obtained ISCC PLUS Certifications for All European Tire Plants - Continental AG",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZHpzcUVhM2dMUThYWEpVUHNlSFZLVDBtMDEzbmV1aE96VFlndm40bW9HN2NYVUpNMDlwUWxTNzJpejdIbVQxejFVdGhoaGZ5MEU5anRtS0FLNDJkUFh5OERSblNnSFBvNTB3WkJLT0ZQUGVYSVlxMXBfUXIyRTFrN3k5MXlxM0Rt?oc=5",
+        "pubDate": "Thu, 26 Jun 2025 07:00:00 GMT",
         "category": "Premium global"
       }
     ],
-    "Goodyear": [
+    "Bridgestone": [
       {
-        "title": "Goodyear Integrates European Truck Tire Production with Dunlop Joint Venture - Heavy Duty Trucking",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxON1RjOWF4VkhGS3hoSVQtdVFFdVFEd0ltMFlWRzd5TF9iZU4wTUc0TFdfb3RpQkt2dWRzaUdBY3hOdklTbnBnN0w4SGFoUFJDdUJGY0NkWW5ZWWdDZW9mVElveEYtZjk5WE9VWUxwWEZaSXROYVFjbktTMm56ZmhOOENEbEpQTXM3NVdibHBBLVZ3dEE4QkV6M2JENkFmMmdPTFQ5eXlJR2ROTmkyRTVn?oc=5",
-        "pubDate": "Wed, 04 Mar 2026 14:41:37 GMT",
+        "title": "Product Safety Recall: Bridgestone Tyres Duravis R660 Eco 215/65R16C 109/107T - thebulrushes.com",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVnFKaURBR0tCbTQ0Q3l4WF9OSmphWjJ2SmI1aWhOVmhxNE1RenlEcFZzYUgzd2tBMVVPbWhyYjFtZDJyclVGYXdnTm1hMGcxaEtlMmE4VlZtdzNnT3dzLUk4QTZQWjluSzE1NDlIbjlLbUdQUmNzeThkXzB5QzJfS1FUS0N2TlNNSHMwR3BqRnBEdXlTcEpucUozV0prMllGS050aGVfUXF6aXVVTV91NkJyaw?oc=5",
+        "pubDate": "Fri, 08 May 2026 07:00:00 GMT",
         "category": "Premium global"
       }
     ],
-    "Maxxis Tyres": [
+    "Yokohama Rubber": [
       {
-        "title": "Enduro Rubbers – 4 Maxxis DoubleDown Tyres Reviewed & Compared - singletrackworld.com",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa3Q3Yldfc2JNWU4yeTJJTkVoMHc3aklDRlk5TWQ3N3lsRjhnUlFYSnlKa0dxZHdUZm13WWFsUEtUZGFTeWY4Mzc2Q1F6dUJhSnFTbFBjNFFxQzRjeGpSYkl1LVhmOXZPZFVXa2R5Tjd3WlJHUUszdXBzTVVqN0FxV3ZPaGFIXzBjeUIzOF9GbzF3aDJ5OHVrS001eEg?oc=5",
-        "pubDate": "Sun, 10 Feb 2019 08:00:00 GMT",
-        "category": "Taiwanese"
+        "title": "Tire maker Goodyear to sell Dunlop brand to Japan's Sumitomo Rubber for $701 mln - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTzhrM0J6WGxyOTJYU0NFS1d3M0l4Wnl2T2R4S3JWOHVrN2RJNE5IajlsS2RFT2p5dVlHODRjS3BBS2JOOUZZWnZnc1VvVHRXbGdFZy1JY2JsRFFYQlBjODRUYkJPakVQelNSWEhobERTUDdBdHFlQ2RQZnBlYWdoVzVWU0dmc0NkWFJhZE5kaGg0ZnEyMGVyeThfUmZTQVZYekk2LTBlYjVVT1ZwVEZyTQ?oc=5",
+        "pubDate": "Wed, 08 Jan 2025 08:00:00 GMT",
+        "category": "Japanese"
       }
     ],
-    "Nankang Rubber": [
+    "Toyo Tires": [
       {
-        "title": "Nankang Rubber Tire Corp.,Ltd. (2101.TW) Company Profile & Facts - Yahoo! Finance Canada",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JNzRtNDhhRjJCdlRidGtkai1vb2d6elFya3FhQ1pId2ZDQlp5NWt4dDU0TEFXSUJQaTRrdWRESjk1V08xYmVna0d3a0pQVlRRUWZFWE0tUEhHS3NBV0tEeg?oc=5",
-        "pubDate": "Sun, 11 Mar 2018 22:18:59 GMT",
-        "category": "Taiwanese"
+        "title": "Kono named GM of Toyo Tires’ EMEA sales team - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWUN2VkQ2bEF2Z09PMVotWmdtMDZia3lHTFRscFN4YlZ6bFVWWm9nWWtwUTh6U1AwaXFDRUNCUXhDM3R2OVhCUWJXY0NFUHFPc3l1ZlJGczV1VXJySkJNWmw1Vk5lc0RlWGE5RFU5MTF0bk9aSW1Vd0V2OVE4SzBuQVBSdVk?oc=5",
+        "pubDate": "Fri, 02 Oct 2026 09:16:27 GMT",
+        "category": "Japanese"
       }
     ],
-    "CEAT": [
+    "Prometeon Tyre Group": [
       {
-        "title": "CEAT expands Chennai plant with 22-inch SUV tyre capability - Manufacturing Today India",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWjBBNmZBR1VQWklmaHJ2YkZFRElhSUZJNjNUUlI5Z3Vmc2ZueUVzM2stUWNheU5hSTJvaXJqanRwekc1dXNCTk9UZEVncWIzWnZmNWtBeDVEdG95anNLeHYzQkdhNzdkOVBQeDBqZm1sRzdLX1BLeGFmODhFQ3VWbHVJc3VJSzk2UUNZWHNwRlVKRGxQZVM3c2hyNkFZR0Zf?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 07:35:01 GMT",
-        "category": "Indian"
+        "title": "Prometeon to Expand Pirelli Tire Production in Turkey - Modern Tire Dealer",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPTGY0NlpXbGY5QWM0b205WUpNbjVaVkFsaXFRQ25QRWtSTXFQeGhXeWo5SWdWMk5wZEprQVZhVWJ4VnhDTWhjMExPdTlIeEVfS2RwSUg3Yjl4eUFRWXZ4ME5wQkFTTDE4anVCbnFMT3VGQWttYkxMZjhpU3N4Wl9YWnVUTEZXTXA1MmtUem51QWZ0aFJhLUhLQkdoRUo1RUtGM3hxMk8zekE3LVJ5eGlpeEtWeFE1ZXVSXzhhZ2F3RGk5cUx1eTRIRzNsT3oyV0xibHBnamZ5eTNNUmpjdTVodG9B?oc=5",
+        "pubDate": "Mon, 12 Nov 2018 08:00:00 GMT",
+        "category": "Industrial/TBR"
       }
     ]
   }
