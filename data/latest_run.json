@@ -1,61 +1,34 @@
 {
-  "runAt": "2026-10-02T12:09:12.414184+00:00",
-  "totalNew": 6,
+  "runAt": "2026-10-03T11:19:46.813983+00:00",
+  "totalNew": 3,
   "entitiesChecked": 118,
-  "entitiesWithNews": 6,
+  "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Premio": [
+    "Kwik Fit": [
       {
-        "title": "MotoGP riders question Michelin’s reinforced Motegi tyre as Miller threatens to “go home” - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeDBIMGZKSTROWkRQZmlIekxkSVJrX0NQVnRDUkZDQ1BCaUdNSW0zRnZncG56WVJKWnFUdHBjZVpHSUNFZ2FkanhMUThQRms0aFVnNlR6clpVQklDSWNGSDFYeG00eHlsYldRa3gzSTViSkp3YURoNUVfZDliUG1qaUNmcWUxcHZWcUMwWFM2MmMxZnFlZUJxejVOM1VNanJ1cENXVlRzLUZ6b0RJV1puOFAweVVXYWhyMUIxYjhxdw?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 14:45:00 GMT",
-        "country": "Germany",
+        "title": "Goodyear Racing Notes – BTCC Thruxton - news.goodyear.eu",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnVXhBRDRMeHNYZWVWU0o2ZEhjaWxDa0laendscTI3U3AxM0V1QTJsV0xkaHp6bDhpemNNdS1WZnBzOFJvX2pUQkdVNXgwX0kwTThJQ21kQzJ3MXZ0d1VkdjIycVY5cWpqUXVoRE1rZkVtVUU?oc=5",
+        "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Point S UK": [
+      {
+        "title": "Point S adds electric vehicle focus to UK network growth - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc1ZHLTM1SE9LeVJmTzRUd3p5VTFHUHlLMDVzaUxBS25zRjRmQ2RlRlJNbHRBeG1NekNrWkllOG5sRVNxaWpHSlk3UC1ZNTJrYXhldm1IaUxmUGppYmRsV0dlTTJ2cWhWWVE2TGhFX2pTRHRVV0l5TDhaT3FsNHBwSjF0eXdQR3E0bUNDNUZpazBLQ2trV3c?oc=5",
+        "pubDate": "Mon, 30 May 2022 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Genan Holding": [
+      {
+        "title": "Recovered Carbon Black Europe 2026 Unveils Agenda for Amsterdam Event - Tyre & Rubber Recycling",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRXdmTTFNLWJCZl9IMTdSeW5pT0tzNVd3bnpFU201ZFFweGxBbThWZEdaRDFaemFCV0V2RVNabHlzZmdkeVdpNmRpaUl3TDNQZFRRX0lfYldGenNhRlZhUnQzQmRBSzFnbEhQMnJjb0tUOWVHRjQ2aDdMMUdSb09iczJiVlVzS3NXS05IUFp0bUYwZVhjbjNnYWJvTk1EWEJmYnFsMnpmbW1uRVNIdUo3WXZzQXlTdVJQN2l4MjVfY1JCR1U?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 07:00:00 GMT",
+        "country": "Denmark",
         "cluster": "Central"
-      }
-    ],
-    "Hedin Group": [
-      {
-        "title": "Hedin Mobility Group completes the acquisition of Alpina Group - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPclpGZG8weUhCYUdwRm1BTy1TT2hSMjI3UkhpZnQzRmtpYzFzelItdzVJb2RoMlk0MmhndnB6eEdZZDhWbzlNWFZCaTFBQ1RQQjNrU2tla1J0OEJ2bVlXN1IxZnllNXBqWFM4VjBZOTdxRWZzVEFab3ZVWFFNbW1NSEhlal9UWVNSZ2pBR3gzaEJDVFJJcUhlNXFpUHZaVDF1YzJYRVZqd3lIYUVuQ2hyVDhuVnVmZTZ2cFo5RHpFSHlZQ2VWNzg0?oc=5",
-        "pubDate": "Wed, 19 Oct 2022 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Emil Frey": [
-      {
-        "title": "DTM Sachsenring: Dorr wins chaotic race ahead of Preining as Engel penalised - inkl",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNzg1Tzh0R2xQb1IyelEtZFAwbEEwYlZ3a0lPQnVxRlBWaXFPSGc3RUNnT1hvWlRibTZBUW91VTRvenJ3N1JnTXlnU0ZqeU1yb0oyVjFrYXdpVDN4TG4zMHhZX2FWbGU2Vzh3bzJtOE1adzdNT0RVSFZpUW5oNjE0SURGOEZCWjlwRF96NkZab1VUaDVRamVOdHFWWmNXN2huYzZR?oc=5",
-        "pubDate": "Sun, 13 Sep 2026 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Norauto": [
-      {
-        "title": "New MD for Norauto France - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1tWEJvTlBvZG80dTdXUjh5REZrbzJrdnN6SkVLV204QzJKTkRsbml6T1lPYVVEcS1Sd3o0ZlZibDdzaTFpQnc4d0gwR21ZUkhxdUY2NDlHOWZldWlFMHhwUmdsRFhFaVMtX0piSg?oc=5",
-        "pubDate": "Mon, 16 Oct 2023 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      }
-    ],
-    "Grupo Andrés": [
-      {
-        "title": "TyreCall to distribute Bridgestone passenger portfolio across Ireland - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQenhVbzVnZEZxZWswM2FJNm1lejd6dG5kS2Eybm5OTnVxbjA0NlZBQ1lkUjloR1NuWDkwTWd6ZnpQalN5U3ZMZUxOQTM5Z2JxR1ZjeG82NWxZcWE3UlhLM0dFMi1nazRHMzdqd19UR2FTTktBV2tSeTQxZHU5VlJQdlJBN1B6WmR0OHpaQnlYNWtrM2xCV0pyN3c4dGJmMVZ1cmZVUTZ1MA?oc=5",
-        "pubDate": "Fri, 02 Oct 2026 06:45:21 GMT",
-        "country": "Spain",
-        "cluster": "South-West"
-      }
-    ],
-    "Vianor": [
-      {
-        "title": "FI400055644 Bond Profile: Coupon and Redemption - TradingView",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBoNzdBM1B1VUZIOVlOVE9Ua09tazBzQ2M1TFcyTzkwdW1kWnJneUZsQmFrbWVJdUFBQW0xajBMZHdZWTdmbURneUViNTlyWlVPdjFpR3pZbmZlSW4xZ0Z4REctM0lqMlhpbkU2Mw?oc=5",
-        "pubDate": "Wed, 30 Sep 2026 18:40:02 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
       }
     ]
   }
