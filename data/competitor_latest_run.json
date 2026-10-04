@@ -1,23 +1,15 @@
 {
-  "runAt": "2026-10-03T11:19:46.813983+00:00",
-  "totalNew": 2,
+  "runAt": "2026-10-04T12:00:41.449506+00:00",
+  "totalNew": 1,
   "entitiesChecked": 26,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 1,
   "newItemsByEntity": {
-    "Aeolus Tyre": [
+    "Toyo Tires": [
       {
-        "title": "Aeolus Tyre eyes growth in South Africa, Australia with new subsidiaries - European Rubber Journal",
-        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMjlNdGtJb1VzWkwyc09rdmRwa2RzZDJKX3FndERERDA3SGNYMV9BXzE2V3dXSlhScjBhSzRBZ0otUmRaOWFHVjdxbGY2YUlkSFJSeHFkbHFKYjdCVEdfSE1rUm9wWjZOOC0zMUE5VEx0M3d1Vk80OVhqcHVTWkpWdnFFa3ZhT1lxamJtUzdEMlhqSHBtbkxMRUt0X3JvVTZ6LW5IdDJzbkhHX0tEMkZfalBwbHZmVlFmNmhTR3ZqTEN0UlNuVlE?oc=5",
-        "pubDate": "Thu, 29 May 2025 07:00:00 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "MRF Tyres": [
-      {
-        "title": "ERC Tyre Supplier review: Pirelli edges Michelin - FIA European Rally Championship",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQM0pWeU05ZldzWDZ5TUJzeFJMUEpnVko5TlFOaEN4ZW9GUjU1ZWtmTXEwX2NpU2NIZnJtem90X3Nhd1ZsaUFBN2RVS2I2RXV5aUFRT3NJOUEtTXdYd2U4OVVjUmpPTGFyeUlTWDZpM2dZUTBaVGZaaXdpWkptUlFLZHVUbDI?oc=5",
-        "pubDate": "Fri, 26 Dec 2025 08:00:00 GMT",
-        "category": "Indian"
+        "title": "Toyo Tire operating income fell 22.2% in Q2 2026 - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQN3BjdTdKVDhEdm9NeXJabkFaLXhyTUlTMUtYZ0F5V1ZsQWpvWW9vS3NpSHFvZ0RBWk1KT2d6R2VvcVh5VXdOLXQyUHFmWFc0blUzVUxrRDM2NDc1QzVNU3hmUWs4WXFneS12OExiTjhILXBVejJzZlZzNGhhVXJGSktIVkFYZFFpVkE?oc=5",
+        "pubDate": "Thu, 13 Aug 2026 07:00:00 GMT",
+        "category": "Japanese"
       }
     ]
   }

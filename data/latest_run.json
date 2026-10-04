@@ -1,32 +1,55 @@
 {
-  "runAt": "2026-10-03T11:19:46.813983+00:00",
-  "totalNew": 3,
+  "runAt": "2026-10-04T12:00:41.449506+00:00",
+  "totalNew": 6,
   "entitiesChecked": 118,
-  "entitiesWithNews": 3,
+  "entitiesWithNews": 4,
   "newItemsByEntity": {
-    "Kwik Fit": [
+    "Premio": [
       {
-        "title": "Goodyear Racing Notes – BTCC Thruxton - news.goodyear.eu",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnVXhBRDRMeHNYZWVWU0o2ZEhjaWxDa0laendscTI3U3AxM0V1QTJsV0xkaHp6bDhpemNNdS1WZnBzOFJvX2pUQkdVNXgwX0kwTThJQ21kQzJ3MXZ0d1VkdjIycVY5cWpqUXVoRE1rZkVtVUU?oc=5",
-        "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
-        "country": "UK",
-        "cluster": "North-West"
+        "title": "Hamilton refused to pit after Sepang tyre gamble: “Until this bloody place dries” - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVEdFM1RPVUk0RHBKNVRaMnFuUkNOSHJJVno1ZGItNU5lTERuOWwzWTNzTFdGWk9vbGxMb0ZtM1ltSmtpN1pya2ZGMWRndDlOUVZXb1QwcjR5WjBaaXVKc2xrRmk1V1B6Ul9tQVF2VlFuaDN3OEhwbXhGYUJIY0dSaDVTRWVpT3dMTG9XT3VMMHVHM0JJVHl3LXA0dkhkblBTTW4wZXVERGhNX1J0eENV?oc=5",
+        "pubDate": "Sun, 04 Oct 2026 11:45:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Verstappen and Leclerc face Sepang strategy twist with only one hard tyre set - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWTg0MFktNm5TaEduUkdDNmRfZklobXh4RDVlbzdwLXE5bm1vSjlyR3piVVRVWHRZdVpfb2dNY2QxMVg0UTIwSmRTVkJ5cjdHTkJtcUZkZjRsa1Z4VndfR1FQb0ZlV0k0TGZWdjV5S1JZYWMzbVlCQ2FTS21oSnYwSUs2RVRYTXFFdFFTRDNHS0d1X1JUYXktLWJzZlAyWE53ampmMlp2R0hiSDljMFE?oc=5",
+        "pubDate": "Sat, 03 Oct 2026 16:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Michelin bans Motegi’s soft tyre — but warns the medium is still “risky” - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRGNudVlzWU1Sd1lyZlB0VWVpcGNKdmREVktza3F5OHFsSjBTV1BEbG1xclZuMmtzRC1UZllLVnlnQXY4ZDg0TWtNZTJSbG5lT0xRbnhaZXFWb3hKbmYyVmRNNkI5T28ydy1VZEJDRWZaTm1YTjRlSGxZUkxxbzh0NGR2M2NUaU5yNkVka1JzWmNFVHl2dXhJRzhxYk4wRDY3dzhJbDhR?oc=5",
+        "pubDate": "Sat, 03 Oct 2026 13:30:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
       }
     ],
-    "Point S UK": [
+    "A.T.U Auto-Teile-Unger": [
       {
-        "title": "Point S adds electric vehicle focus to UK network growth - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc1ZHLTM1SE9LeVJmTzRUd3p5VTFHUHlLMDVzaUxBS25zRjRmQ2RlRlJNbHRBeG1NekNrWkllOG5sRVNxaWpHSlk3UC1ZNTJrYXhldm1IaUxmUGppYmRsV0dlTTJ2cWhWWVE2TGhFX2pTRHRVV0l5TDhaT3FsNHBwSjF0eXdQR3E0bUNDNUZpazBLQ2trV3c?oc=5",
-        "pubDate": "Mon, 30 May 2022 07:00:00 GMT",
+        "title": "Licensable picture: ATU, Auto-Teile-Unger Handels GmbH & Co. KG, Tires, Rims, And Auto Parts; Automotive Services; Promotional Sign At A Branch - reutersconnect.com",
+        "link": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQbDQ3akk3UXlUd1NENGItcVpNM2NyenBhdzN5Q2VycGVsSUtiWHV6ckdudERJdW11R1pjc1NkNjIxMl9UTlRGY0JyZUJBT2c1SGVkVFVDdjdscWg3OHBKVElic2R1S21vc3hnT1JyMzFjWmdBZXlaRmlLakJtVTJoOUthQ0dQZVV5MGIycTFla2tGNWJVaTFtb1R3ZTZIaDZXNkFuOF83RHlxUngxaWJ4eTU1cHFtLV94ZGVxWG9MRVVVV2RselRVZGhXaHpJSS1nYmVxbkVCSDdURW1BcFRKYzNYNmRheHp5ZnRzeGxvOHNGenFJd0FrcWQ1VnZmQlpTMlFLY0NPb0xqZWxvcXBwbVEzcVNFSWtBQkFkQnRrekxTTGtKRFNwS0o2TDUtX1lONjFWX3ZzTVMya1ZEaHc?oc=5",
+        "pubDate": "Thu, 24 Sep 2026 09:01:52 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Protyre": [
+      {
+        "title": "Family-owned North East garages chain Tyre Spot taken over after more than 40 years - Chronicle Live",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQT09uN2JIVmFiSnF1RHNNdlNJeXRXSXVZM0pKV1hPdXAxbzNrdktpTGJQeVVLdXlEdjQzSXEtLWZFMGR4VTE0UEZ5RVBrQ3pfU25LUGdibXNvZ29DWjhHZWs3dWVOZEdvQ2ZLSXk1Q2RtYTFVdG9vTmQwWm9WN0s5M3FKQzdxVkVIWEoyXzF3a2lORWpLbTNJU9IBngFBVV95cUxORDd5N2V3T0hKUW95WXgxQ2plYVlxR01zVWFNR29SdVkwLU0zNGdSRE5yZ21vWXpvWEZya2oxWWNjSkRTcjdWUzhESkU0ZENCQXhCWmwwSGdoQ2NnT2R6S291dXlKemdFOU95ZVN4Z0xpSUVNWWJ0Nks2LUk5SU00LUwxbEZBZmhHbXpJWnZockFLQ2UzNnF5ajFwMlVkdw?oc=5",
+        "pubDate": "Thu, 02 Jul 2026 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
     "Genan Holding": [
       {
-        "title": "Recovered Carbon Black Europe 2026 Unveils Agenda for Amsterdam Event - Tyre & Rubber Recycling",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRXdmTTFNLWJCZl9IMTdSeW5pT0tzNVd3bnpFU201ZFFweGxBbThWZEdaRDFaemFCV0V2RVNabHlzZmdkeVdpNmRpaUl3TDNQZFRRX0lfYldGenNhRlZhUnQzQmRBSzFnbEhQMnJjb0tUOWVHRjQ2aDdMMUdSb09iczJiVlVzS3NXS05IUFp0bUYwZVhjbjNnYWJvTk1EWEJmYnFsMnpmbW1uRVNIdUo3WXZzQXlTdVJQN2l4MjVfY1JCR1U?oc=5",
-        "pubDate": "Fri, 31 Jul 2026 07:00:00 GMT",
+        "title": "Genan Announces New Strategic Acquisition in Germany - Tyre & Rubber Recycling",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOG5TdW1hSGFqWlBQVTdJaFI0bzZoSm5rUkxKOFFwS1JMcVJSdmVTdkY4Q0JUMlF4QjEyejluS2FhbXVlcHBxUDFMUkphMFdBd2dZTDRUaThrR3NXbVNJdUN1eHRhZ0Iybk5ibXlabjM3d1JoTG5jLVpKbHVtSWZ2czY1aFNoSGJsUGJsTFV0R09JcEt4WVd1Q0xncFZrdjY0cHF0bUx5WFlqRW04WFRUOWlkRnJCZw?oc=5",
+        "pubDate": "Fri, 26 Jun 2026 07:00:00 GMT",
         "country": "Denmark",
         "cluster": "Central"
       }
