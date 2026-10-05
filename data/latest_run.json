@@ -1,57 +1,68 @@
 {
-  "runAt": "2026-10-04T12:00:41.449506+00:00",
-  "totalNew": 6,
+  "runAt": "2026-10-05T14:02:45.143249+00:00",
+  "totalNew": 7,
   "entitiesChecked": 118,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 6,
   "newItemsByEntity": {
     "Premio": [
       {
-        "title": "Hamilton refused to pit after Sepang tyre gamble: “Until this bloody place dries” - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVEdFM1RPVUk0RHBKNVRaMnFuUkNOSHJJVno1ZGItNU5lTERuOWwzWTNzTFdGWk9vbGxMb0ZtM1ltSmtpN1pya2ZGMWRndDlOUVZXb1QwcjR5WjBaaXVKc2xrRmk1V1B6Ul9tQVF2VlFuaDN3OEhwbXhGYUJIY0dSaDVTRWVpT3dMTG9XT3VMMHVHM0JJVHl3LXA0dkhkblBTTW4wZXVERGhNX1J0eENV?oc=5",
-        "pubDate": "Sun, 04 Oct 2026 11:45:00 GMT",
+        "title": "Aprilia pushed for Motegi tyre intervention after Martín safety scare - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMzM5czlaZTZXbEhyel9McV9aU1FFWUNCN3FFcTl5VE5HVHhzVzdMOTJ6TGNHSF9CS09BbnpXWTdLU2h3aEJtb1dfRjhUbW1hUnRkWU96LXQyZ2VPV19qR1N5ZGpGWGs2V2ZqZjVsZ2NmWmFPZ25OR0dXN25OUEhfYWpVQmhKbUVXbk1TVzZPRERGRHV2Nk5TMFNQdV9WUUdiR1R6ZlFqWk8?oc=5",
+        "pubDate": "Mon, 05 Oct 2026 10:30:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       },
       {
-        "title": "Verstappen and Leclerc face Sepang strategy twist with only one hard tyre set - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWTg0MFktNm5TaEduUkdDNmRfZklobXh4RDVlbzdwLXE5bm1vSjlyR3piVVRVWHRZdVpfb2dNY2QxMVg0UTIwSmRTVkJ5cjdHTkJtcUZkZjRsa1Z4VndfR1FQb0ZlV0k0TGZWdjV5S1JZYWMzbVlCQ2FTS21oSnYwSUs2RVRYTXFFdFFTRDNHS0d1X1JUYXktLWJzZlAyWE53ampmMlp2R0hiSDljMFE?oc=5",
-        "pubDate": "Sat, 03 Oct 2026 16:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      },
-      {
-        "title": "Michelin bans Motegi’s soft tyre — but warns the medium is still “risky” - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRGNudVlzWU1Sd1lyZlB0VWVpcGNKdmREVktza3F5OHFsSjBTV1BEbG1xclZuMmtzRC1UZllLVnlnQXY4ZDg0TWtNZTJSbG5lT0xRbnhaZXFWb3hKbmYyVmRNNkI5T28ydy1VZEJDRWZaTm1YTjRlSGxZUkxxbzh0NGR2M2NUaU5yNkVka1JzWmNFVHl2dXhJRzhxYk4wRDY3dzhJbDhR?oc=5",
-        "pubDate": "Sat, 03 Oct 2026 13:30:00 GMT",
+        "title": "Quartararo says MotoGP riders were “stupid” to overlook Motegi’s best tyre - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPb24tcmt1ck96dS01M1VmOXZfNzRtd05WOEVBYjE4V2RiMnJQNGF6SnM0T3lCZ0RZTTluaVZFU3dNOVViWlFZZHhTTEFHd2R6VWF5Tk5LOHpUS1JWOWdvbXZWMVEwQTNKRnQtUWIxVTliN0NDVzI0YUtYVVVJWmxQZzNZWF9XcEdkdEh2M1lrNU4tX25OVlRjM3B5U21fOWdqUlVXR0hZY1dIQnM?oc=5",
+        "pubDate": "Sun, 04 Oct 2026 16:30:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "A.T.U Auto-Teile-Unger": [
+    "Emil Frey": [
       {
-        "title": "Licensable picture: ATU, Auto-Teile-Unger Handels GmbH & Co. KG, Tires, Rims, And Auto Parts; Automotive Services; Promotional Sign At A Branch - reutersconnect.com",
-        "link": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQbDQ3akk3UXlUd1NENGItcVpNM2NyenBhdzN5Q2VycGVsSUtiWHV6ckdudERJdW11R1pjc1NkNjIxMl9UTlRGY0JyZUJBT2c1SGVkVFVDdjdscWg3OHBKVElic2R1S21vc3hnT1JyMzFjWmdBZXlaRmlLakJtVTJoOUthQ0dQZVV5MGIycTFla2tGNWJVaTFtb1R3ZTZIaDZXNkFuOF83RHlxUngxaWJ4eTU1cHFtLV94ZGVxWG9MRVVVV2RselRVZGhXaHpJSS1nYmVxbkVCSDdURW1BcFRKYzNYNmRheHp5ZnRzeGxvOHNGenFJd0FrcWQ1VnZmQlpTMlFLY0NPb0xqZWxvcXBwbVEzcVNFSWtBQkFkQnRrekxTTGtKRFNwS0o2TDUtX1lONjFWX3ZzTVMya1ZEaHc?oc=5",
-        "pubDate": "Thu, 24 Sep 2026 09:01:52 GMT",
+        "title": "Emil Frey Racing Victorious In Race 2 at Barcelona - dailysportscar.com",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVXF6eWl1U21IQkNPYkJweHhLdVZySG9DdnQzT2hfQmctMi1qTkJyZmczS2JjaWo3NzhHNHJyOXg0TWRyUWVyN3hXLWpKd0RTNnE2bXVNMjB0TjRvMXZmTzhKRjdnaTExM3RYWHAzYXdkbUppcFR4M29JSnJMLWNCTFlydHNXcUQxVmItbVh1RUljVHNQeW1qZFRWRkVmUQ?oc=5",
+        "pubDate": "Sun, 04 Oct 2026 17:24:02 GMT",
         "country": "Germany",
         "cluster": "Central"
+      }
+    ],
+    "Feu Vert": [
+      {
+        "title": "Tyre market: the internet reshuffles the deck - Flottes Automobiles",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBCVnd6bVdBWmI0ak9vVW9FYjkyUXlNX0E2OF9jZm5NSDhkVHdSSWJld0FQTGt5bzhEb2xXVUcyR0hWRTdxRDE5YnZjMHZ1N0ZMb0pDdlEyN2RSang1emE4S3B1d3dZV05wT04xNHo4eDdWYVh5ODhiT2JGdDU?oc=5",
+        "pubDate": "Thu, 18 Sep 2014 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
+    "Euromaster France": [
+      {
+        "title": "Euromaster launches new maintenance services for EVs - Flottes Automobiles",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9XbzQxNzVpSFBMVzd6WmlNWUJxNEQxV0EtNDgzdnEwbktWOEtkYnY1dzJmeWFPUmRZcWFod2Foc0xZUGhVZjRpeVlxRzN0YWZGRWUxUVRuM3NXdThFclJEZzA2bGJOQzU1RWhn?oc=5",
+        "pubDate": "Tue, 02 Sep 2025 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
       }
     ],
     "Protyre": [
       {
-        "title": "Family-owned North East garages chain Tyre Spot taken over after more than 40 years - Chronicle Live",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQT09uN2JIVmFiSnF1RHNNdlNJeXRXSXVZM0pKV1hPdXAxbzNrdktpTGJQeVVLdXlEdjQzSXEtLWZFMGR4VTE0UEZ5RVBrQ3pfU25LUGdibXNvZ29DWjhHZWs3dWVOZEdvQ2ZLSXk1Q2RtYTFVdG9vTmQwWm9WN0s5M3FKQzdxVkVIWEoyXzF3a2lORWpLbTNJU9IBngFBVV95cUxORDd5N2V3T0hKUW95WXgxQ2plYVlxR01zVWFNR29SdVkwLU0zNGdSRE5yZ21vWXpvWEZya2oxWWNjSkRTcjdWUzhESkU0ZENCQXhCWmwwSGdoQ2NnT2R6S291dXlKemdFOU95ZVN4Z0xpSUVNWWJ0Nks2LUk5SU00LUwxbEZBZmhHbXpJWnZockFLQ2UzNnF5ajFwMlVkdw?oc=5",
-        "pubDate": "Thu, 02 Jul 2026 07:00:00 GMT",
+        "title": "How Micheldever Group increased website conversions by 98% in just 3 months - Performance Marketing World",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObjJ1SEJDM2hyTkstN3ljMFB6YmxLdTRxNXZ0elc1VHBQRG85Q283WG8teHh5Q2pNd1BGM3B5Q21mUkNlV1pUMnJDOGlSOEJxbFlCUVl1b0xnZlNKZm9PTURtYUcxRnNOUHJZRkU4ZVlnRkg2VGJrMTFNWVI2WHlDNEdKeUQzRHplcGJJRWhRSjJXVVZQWjF2bk1KMm9Qc2ZJclZGNEwtcHpXdUNiZmpoVV81cWFpZHY3OGxrclhFYw?oc=5",
+        "pubDate": "Thu, 15 Feb 2024 08:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Genan Holding": [
+    "Tructyre": [
       {
-        "title": "Genan Announces New Strategic Acquisition in Germany - Tyre & Rubber Recycling",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOG5TdW1hSGFqWlBQVTdJaFI0bzZoSm5rUkxKOFFwS1JMcVJSdmVTdkY4Q0JUMlF4QjEyejluS2FhbXVlcHBxUDFMUkphMFdBd2dZTDRUaThrR3NXbVNJdUN1eHRhZ0Iybk5ibXlabjM3d1JoTG5jLVpKbHVtSWZ2czY1aFNoSGJsUGJsTFV0R09JcEt4WVd1Q0xncFZrdjY0cHF0bUx5WFlqRW04WFRUOWlkRnJCZw?oc=5",
-        "pubDate": "Fri, 26 Jun 2026 07:00:00 GMT",
-        "country": "Denmark",
-        "cluster": "Central"
+        "title": "Halfords recruits former Tructyre operations director for Commercial Fleet Services - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWU5KVmRpWDBVWTBEbm1NMFlONXJkLS1VQmpWWnkxc0FkNS13OTFDM0FZR29tREZjS2M1dE5rZ3VHbVBNVDFOMHl3TlIzMVlDaVdNVGZnUnF3bmZQMlJTVjBvN0VhQmFtTkZKNUdYcUg2cVViZnh0d05mRFk4bEpSd3VsaEIxZVN5d3p4OWQyN0Z3U1hFdmMwZlhicTBreUZXX1F0c2tQWkJKcnlFelpkYThHYjQyZHg0LUE?oc=5",
+        "pubDate": "Tue, 05 May 2026 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ]
   }
