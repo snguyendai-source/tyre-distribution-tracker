@@ -154,6 +154,39 @@
   .lv-more summary{ cursor:pointer; font-weight:600; }
   .lv-more .named-list{ margin-top:8px; }
   @media (max-width:760px){ .lv-row{ grid-template-columns: 30px 1fr; } .lv-row .fig{ text-align:left; } }
+  .tv-scroll{ overflow-x:auto; padding:4px 0 10px; }
+  .tv{ min-width:780px; font-size:12px; }
+  .tv-bar{ background:#EEF0F5; border-radius:6px; text-align:center; font-weight:700; padding:9px; color:var(--navy); font-size:13px; }
+  .tv-l1{ position:relative; display:flex; justify-content:center; margin-top:14px; }
+  .tv-com{ position:absolute; left:0; top:0; width:170px; text-align:center; }
+  .tv-con{ width:220px; text-align:center; }
+  .tv-box{ border-radius:8px; color:#fff; padding:9px 8px; font-weight:600; text-align:center; line-height:1.25; }
+  .tv-box.l1{ background:#5B2BA0; }
+  .tv-box.ch{ background:#2B5BD9; }
+  .tv-box.sp{ background:#4A74E8; }
+  .tv-box.gap{ background:transparent; border:1.5px dashed #2B5BD9; color:#2B5BD9; }
+  .tv-pctwrap{ margin-top:6px; text-align:center; }
+  .pct{ display:inline-block; padding:2px 12px; border-radius:20px; font-weight:700; font-size:11.5px; color:#fff; background:#9AA3B5; }
+  .pct.c-Hard{ background:#2F6F62; } .pct.c-Reported{ background:#2B4C86; } .pct.c-Modeled{ background:#B5701E; } .pct.c-Estimate{ background:#5B3E96; }
+  .tv-stem{ width:0; height:18px; border-left:1.5px solid #2B5BD9; margin:0 auto; }
+  .tv-vstem{ width:0; height:12px; border-left:1.5px solid #2B5BD9; margin:6px auto 0; }
+  .tv-cols{ display:flex; gap:10px; }
+  .tv-col{ flex:1; position:relative; padding-top:18px; text-align:center; min-width:0; }
+  .tv-col.wide{ flex:2; }
+  .tv-col::before{ content:''; position:absolute; top:0; left:-5px; right:-5px; border-top:1.5px solid #2B5BD9; }
+  .tv-col:first-child::before{ left:50%; } .tv-col:last-child::before{ right:50%; } .tv-col:only-child::before{ display:none; }
+  .tv-col::after{ content:''; position:absolute; top:0; left:50%; height:18px; border-left:1.5px solid #2B5BD9; }
+  .tv-split-row{ display:flex; gap:8px; }
+  .tv-sp{ flex:1; position:relative; padding-top:14px; min-width:0; }
+  .tv-sp::before{ content:''; position:absolute; top:0; left:-4px; right:-4px; border-top:1.5px solid #2B5BD9; }
+  .tv-sp:first-child::before{ left:50%; } .tv-sp:last-child::before{ right:50%; } .tv-sp:only-child::before{ display:none; }
+  .tv-sp::after{ content:''; position:absolute; top:0; left:50%; height:14px; border-left:1.5px solid #2B5BD9; }
+  .tv-outlets{ display:flex; flex-direction:column; gap:6px; margin-top:6px; }
+  .tv-out{ border:1.5px solid #2B5BD9; border-radius:8px; padding:6px 8px; background:#fff; color:#1B2333; font-weight:600; }
+  .tv-feeds{ margin-top:8px; font-size:10.5px; color:#2B5BD9; border:1px dashed #2B5BD9; border-radius:6px; padding:3px 6px; }
+  .tv-note{ font-size:11.5px; color:var(--ink-soft); margin:8px 0 0; line-height:1.5; }
+  .tv-legend{ font-size:11px; color:var(--ink-soft); margin-top:6px; }
+  .tv-legend .pct{ font-size:10px; padding:1px 8px; margin:0 4px 0 8px; }
   .territory-view-block{ display:none; }
   .territory-view-block.active{ display:block; }
   .terr-region-card{ border:1px solid var(--hairline); border-radius:8px; padding:10px 14px; margin-bottom:8px; background:#FAFBFC; }
@@ -644,6 +677,8 @@ function renderDistSegment(countries, segKey){
     const layerRecs = sellinFor(c.country, segKey);
     const layerHasFigures = layerRecs.some(r => r.sellIn || r.sellOut || r.mix);
     const views = [['channel','By channel']];
+    const treeData = segKey === 'PCR' ? treeFor(c.country) : null;
+    if(treeData) views.push(['tree','Channel tree']);
     if(c.territoryDefs) views.push(['territory','By territory']);
     if(layerHasFigures) views.push(['layer','By layer · sell-in']);
     const viewToggleHtml = views.length > 1
@@ -651,6 +686,7 @@ function renderDistSegment(countries, segKey){
       : '';
     const territoryViewHtml = c.territoryDefs ? renderTerritoryView(c) : '';
     const layerViewHtml = layerHasFigures ? renderLayerView(c, layerRecs) : '';
+    const treeViewHtml = treeData ? renderTreeView(c, treeData) : '';
 
     return `<details class="country" ${ci<2 ? 'open':''}>
       <summary>
@@ -662,6 +698,7 @@ function renderDistSegment(countries, segKey){
         <div class="territory-view-block active" data-view-panel="channel" data-country-idx="${ci}">${channelViewHtml}</div>
         <div class="territory-view-block" data-view-panel="territory" data-country-idx="${ci}">${territoryViewHtml}</div>
         <div class="territory-view-block" data-view-panel="layer" data-country-idx="${ci}">${layerViewHtml}</div>
+        <div class="territory-view-block" data-view-panel="tree" data-country-idx="${ci}">${treeViewHtml}</div>
       </div>
     </details>`;
   }).join('');
@@ -678,6 +715,48 @@ function collectAllEntities(country){
     all.push(fe);
   }
   return all;
+}
+
+function treeFor(countryName){
+  const ts = (window.__sellin && window.__sellin.trees) || [];
+  return ts.find(t => t.country === countryName && t.channels && t.channels.length) || null;
+}
+function fmtPctTree(v){ return v == null ? 'n/a' : (Number.isInteger(Number(v)) ? Number(v) : Number(v).toFixed(1)) + '%'; }
+function tvPct(v, conf, src){
+  const cls = v == null ? '' : 'c-' + (conf || 'Estimate');
+  const tip = v == null ? 'No estimate entered yet' : ((conf || 'Estimate') + (src ? ': ' + src : ''));
+  return `<div class="tv-pctwrap"><span class="pct ${cls}" title="${escapeHtml(tip)}">${fmtPctTree(v)}</span></div>`;
+}
+function tvOutlets(list){
+  if(!list || !list.length) return '';
+  return `<div class="tv-vstem"></div><div class="tv-outlets">${list.map(o => `<div class="tv-out">${escapeHtml(o)}</div>`).join('')}</div>`;
+}
+function renderTreeView(c, t){
+  const chName = id => { const ch = t.channels.find(x => x.id === id); return ch ? ch.name : ''; };
+  const cols = t.channels.map(ch => {
+    const hasSplit = ch.split && ch.split.length;
+    let inner = `<div class="tv-box ch">${escapeHtml(ch.name)}</div>${tvPct(ch.pct, ch.confidence, ch.source)}`;
+    if(hasSplit){
+      inner += `<div class="tv-vstem"></div><div class="tv-split-row">` + ch.split.map(sp => {
+        const feeds = (sp.feeds || []).map(chName).filter(Boolean);
+        return `<div class="tv-sp"><div class="tv-box sp ${sp.pct == null ? 'gap' : ''}">${escapeHtml(sp.name)}</div>${tvPct(sp.pct, sp.confidence, sp.source)}${feeds.length ? `<div class="tv-feeds">also supplies: ${feeds.map(escapeHtml).join(', ')}</div>` : ''}${tvOutlets(sp.outlets)}</div>`;
+      }).join('') + `</div>`;
+    }
+    inner += tvOutlets(ch.outlets);
+    return `<div class="tv-col${hasSplit ? ' wide' : ''}">${inner}</div>`;
+  }).join('');
+  const legend = ['Hard','Reported','Modeled','Estimate'].map(k => `<span class="pct c-${k}">${k}</span>`).join('');
+  return `<div class="tv-scroll"><div class="tv">
+      <div class="tv-bar">${escapeHtml(c.country)} tyre industry</div>
+      <div class="tv-l1">
+        <div class="tv-com"><div class="tv-box l1">Commercial</div>${tvPct(t.commercialPct, t.topConf, t.basis)}</div>
+        <div class="tv-con"><div class="tv-box l1">Consumer</div>${tvPct(t.consumerPct, t.topConf, t.basis)}</div>
+      </div>
+      <div class="tv-stem"></div>
+      <div class="tv-cols">${cols}</div>
+    </div></div>
+    <p class="tv-note">${escapeHtml(t.basis || 'Percentages are shares of total market volume.')}${t.asOf ? ' As of ' + escapeHtml(t.asOf) + '.' : ''} Dashed boxes mean no estimate has been entered yet.</p>
+    <div class="tv-legend">Oval colour = confidence:${legend}</div>`;
 }
 
 function sellinFor(countryName, segKey){
