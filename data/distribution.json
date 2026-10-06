@@ -165,7 +165,8 @@
               "model": "Buying group / cooperative",
               "territories": []
             }
-          ]
+          ],
+          "flowGroup": "gA"
         },
         {
           "name": "Car dealers / brand-tied workshops",
@@ -248,7 +249,8 @@
                 "R3"
               ]
             }
-          ]
+          ],
+          "flowGroup": "gB"
         },
         {
           "name": "Fachmärkte",
@@ -271,7 +273,8 @@
                 "label": "~500 branches (Mobivia)"
               }
             }
-          ]
+          ],
+          "flowGroup": "gC"
         },
         {
           "name": "B2C online",
@@ -307,7 +310,8 @@
                 "__NATIONWIDE__"
               ]
             }
-          ]
+          ],
+          "flowGroup": "gD"
         }
       ],
       "flatEntities": [],
@@ -497,7 +501,8 @@
               },
               "territories": []
             }
-          ]
+          ],
+          "flowGroup": "fB"
         },
         {
           "name": "Car dealers & independent repairers",
@@ -552,7 +557,8 @@
                 "__NATIONWIDE__"
               ]
             }
-          ]
+          ],
+          "flowGroup": "fC"
         },
         {
           "name": "Tyre specialists (pneumaticiens)",
@@ -682,7 +688,8 @@
               "buyingGroup": "Eurofleet (with First Stop & Speedy) — Bridgestone B2B fleet accounts",
               "territories": []
             }
-          ]
+          ],
+          "flowGroup": "fA"
         },
         {
           "name": "Pure-play online",
@@ -723,7 +730,8 @@
                 "label": "~1,300 partner outlets"
               }
             }
-          ]
+          ],
+          "flowGroup": "fD"
         }
       ],
       "flatEntities": [],

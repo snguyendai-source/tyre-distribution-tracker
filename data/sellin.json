@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generatedAt": "2026-10-06T14:05:29Z",
+ "generatedAt": "2026-10-06T14:27:38Z",
  "dealers": [
   {
    "id": "de-a-t-u",
@@ -2865,6 +2865,7 @@
    "iso": "DE",
    "meta": {
     "mappingNote": "Which of your 11 boxes sit inside each BRV group is my reading and should be confirmed in the editor.",
+    "scopeNote": "The card header's 41.0M is described as passenger-car tyres; this model's 45.1M is BRV's consumer segment (cars, 4x4 and light trucks).",
     "seasons": {
      "allSeason": 36,
      "source": "BRV 2024 via AUTOHAUS, March 2025",
@@ -2879,6 +2880,160 @@
     "ETRMA publishes members' (pool) replacement sales; Germany-level pool and non-pool figures were not found publicly"
    ],
    "scope": "Consumer replacement tyres (car, van, 4x4)",
+   "unit": "million tyres",
+   "year": 2024
+  },
+  {
+   "cells": {
+    "g.fA": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Dashboard channel split (26.3%), modeled by branch count",
+     "tier": "Derived",
+     "value": 4.52
+    },
+    "g.fB": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Dashboard channel split (27.9%), modeled by branch count",
+     "tier": "Derived",
+     "value": 4.8
+    },
+    "g.fC": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Dashboard channel split (28.0%), Syndicat du Pneu/GfK 2024",
+     "tier": "Published",
+     "value": 4.82
+    },
+    "g.fD": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Dashboard channel split (18.0%); trade press reports 5.6M, unresolved",
+     "tier": "Published",
+     "value": 3.1
+    },
+    "market": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Syndicat du Pneu/GfK 2024 sell-out (TC4), +3.4%",
+     "tier": "Published",
+     "value": 17.211
+    }
+   },
+   "channels": [
+    {
+     "id": "sgb",
+     "name": "Tyre specialists, group branches",
+     "source": ""
+    },
+    {
+     "id": "sgm",
+     "name": "Tyre specialists, group members",
+     "source": ""
+    },
+    {
+     "id": "sin",
+     "name": "Tyre specialists, independent",
+     "source": ""
+    },
+    {
+     "id": "ng",
+     "name": "Non-specialist retail, group",
+     "source": ""
+    },
+    {
+     "id": "ni",
+     "name": "Non-specialist retail, independent",
+     "source": ""
+    },
+    {
+     "id": "ps",
+     "name": "Petrol stations",
+     "source": ""
+    },
+    {
+     "id": "ot",
+     "name": "Other",
+     "source": ""
+    },
+    {
+     "id": "cd",
+     "name": "Car dealers",
+     "source": ""
+    },
+    {
+     "id": "gg",
+     "name": "Garages, group",
+     "source": ""
+    },
+    {
+     "id": "gi",
+     "name": "Garages, independent",
+     "source": ""
+    },
+    {
+     "id": "in",
+     "name": "Internet",
+     "source": ""
+    }
+   ],
+   "country": "France",
+   "groups": [
+    {
+     "id": "fA",
+     "members": [
+      "sgb",
+      "sgm",
+      "sin"
+     ],
+     "name": "Tyre specialists (pneumaticiens)"
+    },
+    {
+     "id": "fB",
+     "members": [
+      "ng",
+      "ni",
+      "ps",
+      "ot"
+     ],
+     "name": "Auto-centres and fast-fitters"
+    },
+    {
+     "id": "fC",
+     "members": [
+      "cd",
+      "gg",
+      "gi"
+     ],
+     "name": "Car dealers + independent repairers"
+    },
+    {
+     "id": "fD",
+     "members": [
+      "in"
+     ],
+     "name": "Online (pure players)"
+    }
+   ],
+   "iso": "FR",
+   "meta": {
+    "mappingNote": "Which of your 11 boxes sit inside each Syndicat du Pneu group is my reading and should be confirmed in the editor. The online figure is disputed: trade press reports pure players at 5.6M tyres (about a third of sell-out), against 3.1M here.",
+    "seasons": {
+     "allSeason": 37,
+     "source": "Syndicat du Pneu/GfK 2024 via trade press",
+     "summer": null,
+     "winter": null
+    }
+   },
+   "refs": [
+    "Syndicat du Pneu / GfK 2024: 17.211M consumer (TC4) tyres reached drivers (sell-out, +3.4%), as reported by Journal de l'Automobile",
+    "The same release gives 31.744M tyres sold by manufacturers into the trade (sell-in). That is a different scope and is not used here because the sources do not reconcile it with sell-out",
+    "Channel group volumes (4.52 / 4.80 / 4.82 / 3.10M) are the 2024 channel split already on the dashboard; tyre specialists and auto-centres were modeled by branch count",
+    "All-season tyres were 37% of the French market in 2024 (trade press)",
+    "Unresolved conflict: trade press reports pure players at 5.6M units (+21.9%), about a third of the 17.2M. Check against the Syndicat's original release before relying on the online figure"
+   ],
+   "scope": "Consumer replacement tyres (car, van, 4x4; TC4)",
    "unit": "million tyres",
    "year": 2024
   }
