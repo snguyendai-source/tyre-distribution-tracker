@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generatedAt": "2026-10-06T09:27:29Z",
+ "generatedAt": "2026-10-06T09:44:15.415Z",
  "dealers": [
   {
    "id": "de-a-t-u",
@@ -13,16 +13,28 @@
    "segment": "PCR",
    "layerRole": "both",
    "scaleLabel": "~500 branches (Mobivia)",
-   "sellIn": null,
-   "sellOut": {
-    "value": 1400000,
+   "sellIn": {
+    "asOf": "",
+    "confidence": "Estimate",
+    "notes": "",
+    "source": "",
     "unit": "units",
-    "source": "BRV 2024 · Modeled single named chain ≈ full channel",
-    "confidence": "Modeled",
-    "asOf": "2024",
-    "notes": "Sell-out estimate from channel: Fachmärkte"
+    "value": 15000
    },
-   "mix": null
+   "sellOut": {
+    "asOf": "2024",
+    "confidence": "Modeled",
+    "notes": "Sell-out estimate from channel: Fachmärkte",
+    "source": "BRV 2024 · Modeled single named chain ≈ full channel",
+    "unit": "units",
+    "value": 1400000
+   },
+   "mix": {
+    "carDealers": null,
+    "consumerRetail": null,
+    "fleet": 0,
+    "online": null
+   }
   },
   {
    "id": "de-1a-berlin-tyre",
@@ -487,12 +499,12 @@
    "scaleLabel": "~665 French branches — 70% stake in Viasso buying group (with Siligom)",
    "sellIn": null,
    "sellOut": {
-    "value": 1110000,
-    "unit": "units",
-    "source": "Syndicat du Pneu / GfK 2024 · Modeled split among the 5 of 8 named entities with a known branch count",
-    "confidence": "Modeled",
     "asOf": "2024",
-    "notes": "Sell-out estimate from channel: Tyre specialists (pneumaticiens)"
+    "confidence": "Modeled",
+    "notes": "Sell-out estimate from channel: Tyre specialists (pneumaticiens)",
+    "source": "Syndicat du Pneu / GfK 2024 · Modeled split among the 5 of 8 named entities with a known branch count",
+    "unit": "units",
+    "value": 1110000
    },
    "mix": null
   },
@@ -524,12 +536,12 @@
    "scaleLabel": "~650 branches — majority company-owned, targeting ≥250 franchisees by 2027",
    "sellIn": null,
    "sellOut": {
-    "value": 1020000,
-    "unit": "units",
-    "source": "Syndicat du Pneu / GfK 2024 · Modeled split among the 5 of 8 named entities with a known branch count",
-    "confidence": "Modeled",
     "asOf": "2024",
-    "notes": "Sell-out estimate from channel: Tyre specialists (pneumaticiens)"
+    "confidence": "Modeled",
+    "notes": "Sell-out estimate from channel: Tyre specialists (pneumaticiens)",
+    "source": "Syndicat du Pneu / GfK 2024 · Modeled split among the 5 of 8 named entities with a known branch count",
+    "unit": "units",
+    "value": 1020000
    },
    "mix": null
   },
@@ -561,12 +573,12 @@
    "scaleLabel": "~500 branches (ambition: 700)",
    "sellIn": null,
    "sellOut": {
-    "value": 1300000,
-    "unit": "units",
-    "source": "Syndicat du Pneu / GfK 2024 · Modeled split by branch count (all 5 chains have known counts)",
-    "confidence": "Modeled",
     "asOf": "2024",
-    "notes": "Sell-out estimate from channel: Auto-centres & fast-fitters"
+    "confidence": "Modeled",
+    "notes": "Sell-out estimate from channel: Auto-centres & fast-fitters",
+    "source": "Syndicat du Pneu / GfK 2024 · Modeled split by branch count (all 5 chains have known counts)",
+    "unit": "units",
+    "value": 1300000
    },
    "mix": null
   },
@@ -583,12 +595,12 @@
    "scaleLabel": "~437 branches",
    "sellIn": null,
    "sellOut": {
-    "value": 1080000,
-    "unit": "units",
-    "source": "Syndicat du Pneu / GfK 2024 · Modeled split among the 5 of 8 named entities with a known branch count",
-    "confidence": "Modeled",
     "asOf": "2024",
-    "notes": "Sell-out estimate from channel: Tyre specialists (pneumaticiens)"
+    "confidence": "Modeled",
+    "notes": "Sell-out estimate from channel: Tyre specialists (pneumaticiens)",
+    "source": "Syndicat du Pneu / GfK 2024 · Modeled split among the 5 of 8 named entities with a known branch count",
+    "unit": "units",
+    "value": 1080000
    },
    "mix": null
   },
@@ -605,12 +617,12 @@
    "scaleLabel": "~410 branches",
    "sellIn": null,
    "sellOut": {
-    "value": 1160000,
-    "unit": "units",
-    "source": "Syndicat du Pneu / GfK 2024 · Modeled split by branch count (all 5 chains have known counts)",
-    "confidence": "Modeled",
     "asOf": "2024",
-    "notes": "Sell-out estimate from channel: Auto-centres & fast-fitters"
+    "confidence": "Modeled",
+    "notes": "Sell-out estimate from channel: Auto-centres & fast-fitters",
+    "source": "Syndicat du Pneu / GfK 2024 · Modeled split by branch count (all 5 chains have known counts)",
+    "unit": "units",
+    "value": 1160000
    },
    "mix": null
   },
@@ -627,12 +639,12 @@
    "scaleLabel": "~367 branches",
    "sellIn": null,
    "sellOut": {
-    "value": 1030000,
-    "unit": "units",
-    "source": "Syndicat du Pneu / GfK 2024 · Modeled split by branch count (all 5 chains have known counts)",
-    "confidence": "Modeled",
     "asOf": "2024",
-    "notes": "Sell-out estimate from channel: Auto-centres & fast-fitters"
+    "confidence": "Modeled",
+    "notes": "Sell-out estimate from channel: Auto-centres & fast-fitters",
+    "source": "Syndicat du Pneu / GfK 2024 · Modeled split by branch count (all 5 chains have known counts)",
+    "unit": "units",
+    "value": 1030000
    },
    "mix": null
   },
@@ -649,12 +661,12 @@
    "scaleLabel": "~340 branches — franchise contract model since 2025",
    "sellIn": null,
    "sellOut": {
-    "value": 740000,
-    "unit": "units",
-    "source": "Syndicat du Pneu / GfK 2024 · Modeled split among the 5 of 8 named entities with a known branch count",
-    "confidence": "Modeled",
     "asOf": "2024",
-    "notes": "Sell-out estimate from channel: Tyre specialists (pneumaticiens)"
+    "confidence": "Modeled",
+    "notes": "Sell-out estimate from channel: Tyre specialists (pneumaticiens)",
+    "source": "Syndicat du Pneu / GfK 2024 · Modeled split among the 5 of 8 named entities with a known branch count",
+    "unit": "units",
+    "value": 740000
    },
    "mix": null
   },
@@ -671,12 +683,12 @@
    "scaleLabel": "~300 branches — network being divested 2026 (Alpha PE → Bassac, exclusive talks)",
    "sellIn": null,
    "sellOut": {
-    "value": 980000,
-    "unit": "units",
-    "source": "Syndicat du Pneu / GfK 2024 · Modeled split by branch count (all 5 chains have known counts)",
-    "confidence": "Modeled",
     "asOf": "2024",
-    "notes": "Sell-out estimate from channel: Auto-centres & fast-fitters"
+    "confidence": "Modeled",
+    "notes": "Sell-out estimate from channel: Auto-centres & fast-fitters",
+    "source": "Syndicat du Pneu / GfK 2024 · Modeled split by branch count (all 5 chains have known counts)",
+    "unit": "units",
+    "value": 980000
    },
    "mix": null
   },
@@ -708,12 +720,12 @@
    "scaleLabel": "~250 branches, ~95% franchise — commercial partnership with Profil+",
    "sellIn": null,
    "sellOut": {
-    "value": 570000,
-    "unit": "units",
-    "source": "Syndicat du Pneu / GfK 2024 · Modeled split among the 5 of 8 named entities with a known branch count",
-    "confidence": "Modeled",
     "asOf": "2024",
-    "notes": "Sell-out estimate from channel: Tyre specialists (pneumaticiens)"
+    "confidence": "Modeled",
+    "notes": "Sell-out estimate from channel: Tyre specialists (pneumaticiens)",
+    "source": "Syndicat du Pneu / GfK 2024 · Modeled split among the 5 of 8 named entities with a known branch count",
+    "unit": "units",
+    "value": 570000
    },
    "mix": null
   },
@@ -730,12 +742,12 @@
    "scaleLabel": "~230 branches — franchise extension since 2025 (ITM Mobilité)",
    "sellIn": null,
    "sellOut": {
-    "value": 340000,
-    "unit": "units",
-    "source": "Syndicat du Pneu / GfK 2024 · Modeled split by branch count (all 5 chains have known counts)",
-    "confidence": "Modeled",
     "asOf": "2024",
-    "notes": "Sell-out estimate from channel: Auto-centres & fast-fitters"
+    "confidence": "Modeled",
+    "notes": "Sell-out estimate from channel: Auto-centres & fast-fitters",
+    "source": "Syndicat du Pneu / GfK 2024 · Modeled split by branch count (all 5 chains have known counts)",
+    "unit": "units",
+    "value": 340000
    },
    "mix": null
   },
@@ -961,12 +973,12 @@
    "layerRole": "sell-in",
    "scaleLabel": "supplies 6,000+ retailers, ~6M tyres/year",
    "sellIn": {
-    "value": 6000000,
-    "unit": "units",
-    "source": "Micheldever statement: supplies ~6M tyres/yr to 6,000+ retailers (Part B research)",
-    "confidence": "Reported",
     "asOf": "",
-    "notes": "All tyres, not PCR-only; statement date not confirmed"
+    "confidence": "Reported",
+    "notes": "All tyres, not PCR-only; statement date not confirmed",
+    "source": "Micheldever statement: supplies ~6M tyres/yr to 6,000+ retailers (Part B research)",
+    "unit": "units",
+    "value": 6000000
    },
    "sellOut": null,
    "mix": null
@@ -1688,12 +1700,12 @@
    "layerRole": "sell-in",
    "scaleLabel": "€143.3M revenue (2022), 20,000+ clients",
    "sellIn": {
-    "value": 143.3,
-    "unit": "€M",
-    "source": "TGG revenue 2022 (wholesale sales, proxy for sell-in); 20,000+ clients",
-    "confidence": "Reported",
     "asOf": "2022",
-    "notes": "Value in €M, not units"
+    "confidence": "Reported",
+    "notes": "Value in €M, not units",
+    "source": "TGG revenue 2022 (wholesale sales, proxy for sell-in); 20,000+ clients",
+    "unit": "€M",
+    "value": 143.3
    },
    "sellOut": null,
    "mix": null
