@@ -352,30 +352,31 @@
           "entities": [
             {
               "name": "Speedy",
-              "owner": "Bridgestone · ~466 branches",
+              "owner": "Bridgestone",
               "volume": "~1.30M",
               "model": "Fast-fit / auto-centre chain",
               "territories": [
                 "__NATIONWIDE__"
               ],
               "scale": {
-                "value": 466,
+                "value": 500,
                 "metric": "branches",
-                "label": "~466 branches"
-              }
+                "label": "~500 branches (ambition: 700)"
+              },
+              "buyingGroup": "Eurofleet (with First Stop & Côté Route) — Bridgestone B2B fleet accounts"
             },
             {
               "name": "Norauto",
-              "owner": "Mobivia · ~415 branches",
+              "owner": "Mobivia",
               "volume": "~1.16M",
               "model": "Fast-fit / auto-centre chain",
               "territories": [
                 "__NATIONWIDE__"
               ],
               "scale": {
-                "value": 415,
+                "value": 410,
                 "metric": "branches",
-                "label": "~415 branches"
+                "label": "~410 branches"
               }
             },
             {
@@ -394,31 +395,32 @@
             },
             {
               "name": "Feu Vert",
-              "owner": "Groupe Monnoyeur · ~350 branches",
+              "owner": "Alpha PE (pending sale to Bassac, exclusive talks 2026)",
               "volume": "~0.98M",
               "model": "Fast-fit / auto-centre chain",
               "territories": [
                 "__NATIONWIDE__"
               ],
               "scale": {
-                "value": 350,
+                "value": 300,
                 "metric": "branches",
-                "label": "~350 branches"
+                "label": "~300 branches — network being divested 2026 (Alpha PE → Bassac, exclusive talks)"
               }
             },
             {
               "name": "Roady",
-              "owner": "Independent · ~120 branches",
+              "owner": "Independent (ITM Mobilité/Mousquetaires)",
               "volume": "~0.34M",
               "model": "Fast-fit / auto-centre chain",
               "territories": [
                 "__NATIONWIDE__"
               ],
               "scale": {
-                "value": 120,
+                "value": 230,
                 "metric": "branches",
-                "label": "~120 branches"
-              }
+                "label": "~230 branches — franchise extension since 2025 (ITM Mobilité)"
+              },
+              "buyingGroup": "PRODY (with Profil+) — created 2018"
             },
             {
               "name": "Alliance Automotive Group (AAG)",
@@ -473,6 +475,27 @@
               "territories": [
                 "__NATIONWIDE__"
               ]
+            },
+            {
+              "name": "Rapid Pare-Brise",
+              "owner": null,
+              "volume": null,
+              "model": "Buying group / cooperative",
+              "scale": null,
+              "buyingGroup": "PRODY (with Profil+) — ITM Mobilité windshield/glazing network",
+              "territories": []
+            },
+            {
+              "name": "L'Auto E.Leclerc",
+              "owner": "Independent Leclerc-movement members",
+              "volume": null,
+              "model": "Fast-fit / auto-centre chain",
+              "scale": {
+                "value": 250,
+                "metric": "branches",
+                "label": "~250 branches — hypermarket tyre/auto departments"
+              },
+              "territories": []
             }
           ]
         },
@@ -540,21 +563,22 @@
           "entities": [
             {
               "name": "Point S",
-              "owner": "Independent cooperative · ~450 branches",
+              "owner": "Independent cooperative",
               "volume": "~1.11M",
               "model": "Buying group / cooperative",
               "territories": [
                 "__NATIONWIDE__"
               ],
               "scale": {
-                "value": 450,
+                "value": 665,
                 "metric": "branches",
-                "label": "~450 French branches (6,376 PoS / 51 countries group-wide)"
-              }
+                "label": "~665 French branches — 70% stake in Viasso buying group (with Siligom)"
+              },
+              "buyingGroup": "Viasso (70% stake, with Siligom 30%) — Lyon-based, ~885 POS combined"
             },
             {
               "name": "Eurogom group",
-              "owner": "Siligom / Eurotyre / Côté Route · ~437 branches",
+              "owner": "Siligom (~220 branches, Viasso w/ Point S) / Eurotyre (~190+ branches, FleetPartner w/ BestDrive) / Côté Route (>100 branches, Eurofleet w/ First Stop & Speedy)",
               "volume": "~1.08M",
               "model": "Buying group / cooperative",
               "territories": [
@@ -568,45 +592,47 @@
             },
             {
               "name": "Euromaster",
-              "owner": "Michelin · ~415 branches",
+              "owner": "Michelin",
               "volume": "~1.02M",
               "model": "Manufacturer-owned franchise (Michelin)",
               "territories": [
                 "__NATIONWIDE__"
               ],
               "scale": {
-                "value": 415,
+                "value": 650,
                 "metric": "branches",
-                "label": "~415 French branches"
+                "label": "~650 branches — majority company-owned, targeting ≥250 franchisees by 2027"
               }
             },
             {
               "name": "First Stop",
-              "owner": "Bridgestone (incl. Métifiot) · ~300 branches",
+              "owner": "Bridgestone (incl. Métifiot)",
               "volume": "~0.74M",
               "model": "Manufacturer-owned franchise (Bridgestone)",
               "territories": [
                 "__NATIONWIDE__"
               ],
               "scale": {
-                "value": 300,
+                "value": 340,
                 "metric": "branches",
-                "label": "~300 French branches"
-              }
+                "label": "~340 branches — franchise contract model since 2025"
+              },
+              "buyingGroup": "Eurofleet (with Speedy & Côté Route) — Bridgestone B2B fleet accounts"
             },
             {
               "name": "Vulco",
-              "owner": "Goodyear-Dunlop backed · ~230 branches",
+              "owner": "Goodyear-Dunlop backed",
               "volume": "~0.57M",
               "model": "Manufacturer-owned franchise (Goodyear)",
               "territories": [
                 "__NATIONWIDE__"
               ],
               "scale": {
-                "value": 230,
+                "value": 250,
                 "metric": "branches",
-                "label": "~230 branches"
-              }
+                "label": "~250 branches, ~95% franchise — commercial partnership with Profil+"
+              },
+              "buyingGroup": "Commercial partnership with Profil+ (not a shared buying group)"
             },
             {
               "name": "BestDrive",
@@ -615,20 +641,45 @@
               "model": "Manufacturer-owned franchise (Continental)",
               "territories": [
                 "__NATIONWIDE__"
-              ]
+              ],
+              "scale": {
+                "value": 220,
+                "metric": "branches",
+                "label": ">220 branches — independents under contract, launched 2015"
+              },
+              "buyingGroup": "FleetPartner (with Eurotyre; Siligom left 2016)"
             },
             {
               "name": "Profil Plus",
               "owner": "Independent · branch count n/a",
               "volume": "folded in above",
               "model": "Specialist tyre retail chain",
-              "territories": []
+              "territories": [],
+              "scale": {
+                "value": 500,
+                "metric": "branches",
+                "label": "~500 branches — cooperative members, leader in TC4/PL/agri"
+              },
+              "buyingGroup": "PRODY (with Roady/Rapid Pare-Brise, ITM Mobilité) — created 2018"
             },
             {
               "name": "4Fleet",
               "owner": "Goodyear/Dunlop · branch count n/a",
               "volume": "folded in above",
               "model": "Specialist tyre retail chain",
+              "territories": []
+            },
+            {
+              "name": "Côté Route",
+              "owner": null,
+              "volume": null,
+              "model": "Manufacturer-owned franchise (Bridgestone)",
+              "scale": {
+                "value": 100,
+                "metric": "branches",
+                "label": ">100 branches — PL/fleet specialist"
+              },
+              "buyingGroup": "Eurofleet (with First Stop & Speedy) — Bridgestone B2B fleet accounts",
               "territories": []
             }
           ]
@@ -678,7 +729,7 @@
       "flatEntities": [],
       "noteBadge": null,
       "note": null,
-      "marketAccessNote": "Structured by wholesaler federations rather than individual retailers. Alliance Automotive Group (AAG) and Doyen/Autodis (API, 1,2,3 AutoService, Requal) are the two largest gateways — a listing with either opens thousands of independent workshops and franchise garages at once.",
+      "marketAccessNote": "Structured by wholesaler federations AND four B2B buying-group centrals, each aligning several networks: Viasso (Point S + Siligom, ~885 POS, Lyon), Eurofleet (Bridgestone's First Stop + Speedy + Côté Route, fleet accounts), FleetPartner (Continental's BestDrive + Eurotyre), and PRODY (Profil+ + Roady/Rapid Pare-Brise, ITM Mobilité). A relationship with one of these centrals opens several networks at once rather than one. Alliance Automotive Group (AAG) and Doyen/Autodis remain the largest pure wholesaler gateways. Two live disruption windows worth tracking: Feu Vert is being divested in 2026 (Alpha PE → Bassac, exclusive negotiation) and Midas International was acquired by Mavis (US) in June 2025 — both mean active supplier-relationship flux.",
       "territoryDefs": [
         {
           "code": "NE",
