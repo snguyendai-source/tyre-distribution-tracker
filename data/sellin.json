@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generatedAt": "2026-10-06T14:27:38Z",
+ "generatedAt": "2026-10-06T14:38:43Z",
  "dealers": [
   {
    "id": "de-a-t-u",
@@ -2724,40 +2724,40 @@
  "flows": [
   {
    "cells": {
-    "comAll": {
-     "asOf": "2018",
-     "by": "research",
-     "source": "BRV (around 2018): fleet and leasing about 17.5% of car replacement; old figure",
-     "tier": "Derived",
-     "value": 7.897
-    },
-    "g.gA": {
-     "asOf": "2024",
-     "by": "research",
-     "source": "BRV 2024 channel share 71.3% x consumer volume",
-     "tier": "Derived",
-     "value": 32.174
-    },
-    "g.gB": {
+    "ch.deal.tot": {
      "asOf": "2024",
      "by": "research",
      "source": "BRV 2024 channel share 19.8% x consumer volume",
      "tier": "Derived",
      "value": 8.935
     },
-    "g.gC": {
+    "ch.fach.tot": {
      "asOf": "2024",
      "by": "research",
      "source": "BRV 2024 channel share 3.4% (existing dashboard data) x consumer volume",
      "tier": "Derived",
      "value": 1.534
     },
-    "g.gD": {
+    "ch.onl.tot": {
      "asOf": "2024",
      "by": "research",
      "source": "BRV 2024 channel share 5.5% (existing dashboard data) x consumer volume",
      "tier": "Derived",
      "value": 2.482
+    },
+    "ch.spec.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "BRV 2024 channel share 71.3% x consumer volume",
+     "tier": "Derived",
+     "value": 32.174
+    },
+    "comAll": {
+     "asOf": "2018",
+     "by": "research",
+     "source": "BRV (around 2018): fleet and leasing about 17.5% of car replacement; old figure",
+     "tier": "Derived",
+     "value": 7.897
     },
     "market": {
      "asOf": "2024",
@@ -2769,102 +2769,31 @@
    },
    "channels": [
     {
-     "id": "sgb",
-     "name": "Tyre specialists, group branches",
+     "id": "spec",
+     "name": "Specialist trade + independent workshops",
      "source": ""
     },
     {
-     "id": "sgm",
-     "name": "Tyre specialists, group members",
+     "id": "deal",
+     "name": "Car dealers / brand-tied workshops",
      "source": ""
     },
     {
-     "id": "sin",
-     "name": "Tyre specialists, independent",
+     "id": "fach",
+     "name": "Fachmärkte",
      "source": ""
     },
     {
-     "id": "gg",
-     "name": "Garages, group",
-     "source": ""
-    },
-    {
-     "id": "gi",
-     "name": "Garages, independent",
-     "source": ""
-    },
-    {
-     "id": "cd",
-     "name": "Car dealers",
-     "source": ""
-    },
-    {
-     "id": "ng",
-     "name": "Non-specialist retail, group",
-     "source": ""
-    },
-    {
-     "id": "ni",
-     "name": "Non-specialist retail, independent",
-     "source": ""
-    },
-    {
-     "id": "ps",
-     "name": "Petrol stations",
-     "source": ""
-    },
-    {
-     "id": "ot",
-     "name": "Other",
-     "source": ""
-    },
-    {
-     "id": "in",
-     "name": "Internet",
+     "id": "onl",
+     "name": "B2C online",
      "source": ""
     }
    ],
    "country": "Germany",
-   "groups": [
-    {
-     "id": "gA",
-     "members": [
-      "sgb",
-      "sgm",
-      "sin",
-      "gg",
-      "gi"
-     ],
-     "name": "Specialist trade + independent workshops"
-    },
-    {
-     "id": "gB",
-     "members": [
-      "cd"
-     ],
-     "name": "Car dealers + brand workshops"
-    },
-    {
-     "id": "gC",
-     "members": [
-      "ng",
-      "ni",
-      "ps",
-      "ot"
-     ],
-     "name": "Fachmärkte + other retail"
-    },
-    {
-     "id": "gD",
-     "members": [
-      "in"
-     ],
-     "name": "Online"
-    }
-   ],
+   "groups": [],
    "iso": "DE",
    "meta": {
-    "mappingNote": "Which of your 11 boxes sit inside each BRV group is my reading and should be confirmed in the editor.",
+    "boxNote": "Boxes are the channels as named under \"By channel\". Finer boxes, for example group versus independent, can be added in the editor.",
     "scopeNote": "The card header's 41.0M is described as passenger-car tyres; this model's 45.1M is BRV's consumer segment (cars, 4x4 and light trucks).",
     "seasons": {
      "allSeason": 36,
@@ -2885,33 +2814,33 @@
   },
   {
    "cells": {
-    "g.fA": {
-     "asOf": "2024",
-     "by": "research",
-     "source": "Dashboard channel split (26.3%), modeled by branch count",
-     "tier": "Derived",
-     "value": 4.52
-    },
-    "g.fB": {
+    "ch.auto.tot": {
      "asOf": "2024",
      "by": "research",
      "source": "Dashboard channel split (27.9%), modeled by branch count",
      "tier": "Derived",
      "value": 4.8
     },
-    "g.fC": {
+    "ch.deal.tot": {
      "asOf": "2024",
      "by": "research",
      "source": "Dashboard channel split (28.0%), Syndicat du Pneu/GfK 2024",
      "tier": "Published",
      "value": 4.82
     },
-    "g.fD": {
+    "ch.onl.tot": {
      "asOf": "2024",
      "by": "research",
      "source": "Dashboard channel split (18.0%); trade press reports 5.6M, unresolved",
      "tier": "Published",
      "value": 3.1
+    },
+    "ch.spec.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Dashboard channel split (26.3%), modeled by branch count",
+     "tier": "Derived",
+     "value": 4.52
     },
     "market": {
      "asOf": "2024",
@@ -2923,102 +2852,31 @@
    },
    "channels": [
     {
-     "id": "sgb",
-     "name": "Tyre specialists, group branches",
+     "id": "auto",
+     "name": "Auto-centres & fast-fitters",
      "source": ""
     },
     {
-     "id": "sgm",
-     "name": "Tyre specialists, group members",
+     "id": "deal",
+     "name": "Car dealers & independent repairers",
      "source": ""
     },
     {
-     "id": "sin",
-     "name": "Tyre specialists, independent",
+     "id": "spec",
+     "name": "Tyre specialists (pneumaticiens)",
      "source": ""
     },
     {
-     "id": "ng",
-     "name": "Non-specialist retail, group",
-     "source": ""
-    },
-    {
-     "id": "ni",
-     "name": "Non-specialist retail, independent",
-     "source": ""
-    },
-    {
-     "id": "ps",
-     "name": "Petrol stations",
-     "source": ""
-    },
-    {
-     "id": "ot",
-     "name": "Other",
-     "source": ""
-    },
-    {
-     "id": "cd",
-     "name": "Car dealers",
-     "source": ""
-    },
-    {
-     "id": "gg",
-     "name": "Garages, group",
-     "source": ""
-    },
-    {
-     "id": "gi",
-     "name": "Garages, independent",
-     "source": ""
-    },
-    {
-     "id": "in",
-     "name": "Internet",
+     "id": "onl",
+     "name": "Pure-play online",
      "source": ""
     }
    ],
    "country": "France",
-   "groups": [
-    {
-     "id": "fA",
-     "members": [
-      "sgb",
-      "sgm",
-      "sin"
-     ],
-     "name": "Tyre specialists (pneumaticiens)"
-    },
-    {
-     "id": "fB",
-     "members": [
-      "ng",
-      "ni",
-      "ps",
-      "ot"
-     ],
-     "name": "Auto-centres and fast-fitters"
-    },
-    {
-     "id": "fC",
-     "members": [
-      "cd",
-      "gg",
-      "gi"
-     ],
-     "name": "Car dealers + independent repairers"
-    },
-    {
-     "id": "fD",
-     "members": [
-      "in"
-     ],
-     "name": "Online (pure players)"
-    }
-   ],
+   "groups": [],
    "iso": "FR",
    "meta": {
-    "mappingNote": "Which of your 11 boxes sit inside each Syndicat du Pneu group is my reading and should be confirmed in the editor. The online figure is disputed: trade press reports pure players at 5.6M tyres (about a third of sell-out), against 3.1M here.",
+    "boxNote": "Boxes are the channels as named under \"By channel\". The online figure is disputed: trade press reports pure players at 5.6M tyres (about a third of sell-out), against 3.1M here. Finer boxes can be added in the editor.",
     "seasons": {
      "allSeason": 37,
      "source": "Syndicat du Pneu/GfK 2024 via trade press",

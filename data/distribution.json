@@ -166,7 +166,7 @@
               "territories": []
             }
           ],
-          "flowGroup": "gA"
+          "flowBox": "spec"
         },
         {
           "name": "Car dealers / brand-tied workshops",
@@ -250,7 +250,7 @@
               ]
             }
           ],
-          "flowGroup": "gB"
+          "flowBox": "deal"
         },
         {
           "name": "Fachmärkte",
@@ -274,7 +274,7 @@
               }
             }
           ],
-          "flowGroup": "gC"
+          "flowBox": "fach"
         },
         {
           "name": "B2C online",
@@ -311,7 +311,7 @@
               ]
             }
           ],
-          "flowGroup": "gD"
+          "flowBox": "onl"
         }
       ],
       "flatEntities": [],
@@ -502,7 +502,7 @@
               "territories": []
             }
           ],
-          "flowGroup": "fB"
+          "flowBox": "auto"
         },
         {
           "name": "Car dealers & independent repairers",
@@ -558,7 +558,7 @@
               ]
             }
           ],
-          "flowGroup": "fC"
+          "flowBox": "deal"
         },
         {
           "name": "Tyre specialists (pneumaticiens)",
@@ -689,7 +689,7 @@
               "territories": []
             }
           ],
-          "flowGroup": "fA"
+          "flowBox": "spec"
         },
         {
           "name": "Pure-play online",
@@ -731,7 +731,7 @@
               }
             }
           ],
-          "flowGroup": "fD"
+          "flowBox": "onl"
         }
       ],
       "flatEntities": [],
