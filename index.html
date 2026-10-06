@@ -128,6 +128,32 @@
   .view-toggle{ display:inline-flex; gap:2px; background:var(--slate-bg); border-radius:20px; padding:2px; margin-bottom:12px; }
   .view-toggle button{ appearance:none; border:none; background:transparent; font-family:var(--sans); font-size:11.5px; font-weight:600; color:var(--ink-soft); padding:5px 12px; border-radius:16px; cursor:pointer; }
   .view-toggle button.active{ background:#fff; color:var(--teal-ink); box-shadow:0 1px 2px rgba(0,0,0,0.08); }
+  .lv-intro{ font-size:12px; color:var(--ink-soft); margin:0 0 12px; line-height:1.5; }
+  .lv-layer{ border:1px solid var(--hairline); border-radius:10px; padding:12px 14px; margin-bottom:12px; background:#FAFBFC; }
+  .lv-layer h4{ margin:0 0 2px; font-size:13px; color:var(--navy); }
+  .lv-layer .lv-sub{ font-size:11.5px; color:var(--ink-soft); margin:0 0 10px; display:block; }
+  .lv-row{ display:grid; grid-template-columns: 34px 1.6fr 1fr 1.4fr; gap:10px; align-items:center; padding:8px 0; border-top:1px solid var(--hairline); }
+  .lv-row:first-of-type{ border-top:none; }
+  .lv-row .nm{ font-size:13px; font-weight:700; }
+  .lv-row .nm small{ display:block; font-weight:500; font-size:10.5px; color:var(--ink-soft); }
+  .lv-row .fig{ font-family:var(--mono); font-size:13.5px; font-weight:700; text-align:right; }
+  .lv-row .fig small{ display:block; font-family:var(--sans); font-weight:500; font-size:10px; color:var(--ink-soft); }
+  .lv-row .meta{ font-size:10.5px; color:var(--ink-soft); line-height:1.4; }
+  .lv-row .chip-rank{ justify-self:start; display:inline-block; background:var(--navy); color:#fff; font-size:9.5px; font-weight:700; border-radius:10px; padding:2px 7px; }
+  .cbadge{ display:inline-block; padding:1px 8px; border-radius:20px; font-size:10px; font-weight:700; margin-right:5px; }
+  .cbadge.c-Hard{ background:var(--teal-bg); color:var(--teal-ink); }
+  .cbadge.c-Reported{ background:#E1EBF8; color:#2B4C86; }
+  .cbadge.c-Modeled{ background:var(--amber-bg); color:var(--amber-ink); }
+  .cbadge.c-Estimate{ background:#EDE7F6; color:#5B3E96; }
+  .mixbar{ display:flex; height:8px; border-radius:20px; overflow:hidden; background:var(--hairline); margin-top:4px; }
+  .mixbar span{ display:block; height:100%; }
+  .mx-consumerRetail{ background:#2F6F62; } .mx-fleet{ background:#16233A; } .mx-carDealers{ background:#C98A3B; } .mx-online{ background:#8A6FD1; }
+  .mixlegend{ font-size:10px; color:var(--ink-soft); margin-top:2px; }
+  .mixlegend i{ display:inline-block; width:8px; height:8px; border-radius:2px; margin:0 3px 0 8px; vertical-align:middle; }
+  .lv-more{ margin-top:8px; font-size:11.5px; color:var(--ink-soft); }
+  .lv-more summary{ cursor:pointer; font-weight:600; }
+  .lv-more .named-list{ margin-top:8px; }
+  @media (max-width:760px){ .lv-row{ grid-template-columns: 30px 1fr; } .lv-row .fig{ text-align:left; } }
   .territory-view-block{ display:none; }
   .territory-view-block.active{ display:block; }
   .terr-region-card{ border:1px solid var(--hairline); border-radius:8px; padding:10px 14px; margin-bottom:8px; background:#FAFBFC; }
@@ -388,8 +414,9 @@ async function init(){
   try{
     const dist = await loadJSON('data/distribution.json');
     window.__distData = dist;
-    document.getElementById('sub-pc').innerHTML = renderDistSegment(dist.pc);
-    document.getElementById('sub-tbr').innerHTML = renderDistSegment(dist.tbr);
+    try{ window.__sellin = await loadJSON('data/sellin.json'); }catch(e){ window.__sellin = null; } // optional file
+    document.getElementById('sub-pc').innerHTML = renderDistSegment(dist.pc, 'PCR');
+    document.getElementById('sub-tbr').innerHTML = renderDistSegment(dist.tbr, 'TBR');
   }catch(e){
     document.getElementById('sub-pc').innerHTML = '<p class="skeleton">Could not load distribution data.</p>';
     console.error(e);
@@ -557,7 +584,7 @@ function sortByScale(list){
   return withScale.concat(withoutScale);
 }
 
-function renderDistSegment(countries){
+function renderDistSegment(countries, segKey){
   if(!countries || !countries.length) return '<p class="skeleton">No data.</p>';
   return countries.map((c, ci) => {
     const totalHtml = c.total
@@ -614,13 +641,16 @@ function renderDistSegment(countries){
       }).join('');
     }
 
-    const viewToggleHtml = c.territoryDefs
-      ? `<div class="view-toggle" data-country-idx="${ci}">
-           <button class="active" data-view="channel">By channel</button>
-           <button data-view="territory">By territory</button>
-         </div>`
+    const layerRecs = sellinFor(c.country, segKey);
+    const layerHasFigures = layerRecs.some(r => r.sellIn || r.sellOut || r.mix);
+    const views = [['channel','By channel']];
+    if(c.territoryDefs) views.push(['territory','By territory']);
+    if(layerHasFigures) views.push(['layer','By layer · sell-in']);
+    const viewToggleHtml = views.length > 1
+      ? `<div class="view-toggle" data-country-idx="${ci}">${views.map(([v,l],i)=>`<button class="${i===0?'active':''}" data-view="${v}">${l}</button>`).join('')}</div>`
       : '';
     const territoryViewHtml = c.territoryDefs ? renderTerritoryView(c) : '';
+    const layerViewHtml = layerHasFigures ? renderLayerView(c, layerRecs) : '';
 
     return `<details class="country" ${ci<2 ? 'open':''}>
       <summary>
@@ -631,6 +661,7 @@ function renderDistSegment(countries){
         ${viewToggleHtml}
         <div class="territory-view-block active" data-view-panel="channel" data-country-idx="${ci}">${channelViewHtml}</div>
         <div class="territory-view-block" data-view-panel="territory" data-country-idx="${ci}">${territoryViewHtml}</div>
+        <div class="territory-view-block" data-view-panel="layer" data-country-idx="${ci}">${layerViewHtml}</div>
       </div>
     </details>`;
   }).join('');
@@ -647,6 +678,64 @@ function collectAllEntities(country){
     all.push(fe);
   }
   return all;
+}
+
+function sellinFor(countryName, segKey){
+  const all = (window.__sellin && window.__sellin.dealers) || [];
+  return all.filter(d => d.country === countryName && d.segment === segKey);
+}
+function fmtFig(v, unit){
+  if(v == null) return '';
+  if(unit === '€M') return '€' + Number(v).toLocaleString('en-GB', {maximumFractionDigits:1}) + 'M';
+  const n = Number(v);
+  return n >= 1e5 ? (n/1e6).toFixed(2) + 'M' : n.toLocaleString('en-GB');
+}
+function confBadge(conf){ return conf ? `<span class="cbadge c-${escapeHtml(conf)}">${escapeHtml(conf)}</span>` : ''; }
+function mixBarHtml(mix){
+  if(!mix) return '';
+  const parts = [['consumerRetail','Consumer retail'],['fleet','Fleet / B2B'],['carDealers','Car dealers'],['online','Online']]
+    .filter(([k]) => mix[k] != null && mix[k] > 0);
+  if(!parts.length) return '';
+  const bar = parts.map(([k,l]) => `<span class="mx-${k}" style="width:${mix[k]}%" title="${l} ${mix[k]}%"></span>`).join('');
+  const lg = parts.map(([k,l]) => `<i class="mx-${k}"></i>${l} ${mix[k]}%`).join('');
+  return `<div class="mixbar">${bar}</div><div class="mixlegend">${lg}</div>`;
+}
+function layerRowHtml(r, rank, key){
+  const b = r[key];
+  const unitTxt = key === 'sellIn' ? (b.unit === '€M' ? ' per year' : ' units / year') : ' units / year';
+  const meta = [confBadge(b.confidence), b.asOf ? 'as of ' + escapeHtml(b.asOf) : ''].filter(Boolean).join(' ')
+    + (b.source ? `<div title="${escapeHtml(b.source)}">${escapeHtml(b.source.length > 90 ? b.source.slice(0,88) + '…' : b.source)}</div>` : '')
+    + (b.notes ? `<div>${escapeHtml(b.notes)}</div>` : '');
+  return `<div class="lv-row">
+    <span class="chip-rank">#${rank}</span>
+    <div class="nm">${escapeHtml(r.name)}<small>${escapeHtml(r.model || '')}${r.scaleLabel ? ' · ' + escapeHtml(r.scaleLabel) : ''}</small></div>
+    <div class="fig">${escapeHtml(fmtFig(b.value, b.unit))}<small>${escapeHtml(unitTxt.trim())}</small></div>
+    <div class="meta">${meta}${key === 'sellOut' ? mixBarHtml(r.mix) : ''}</div>
+  </div>`;
+}
+function layerNoFigHtml(list, label){
+  if(!list.length) return '';
+  return `<details class="lv-more"><summary>${list.length} dealer${list.length===1?'':'s'} without a ${label} figure yet</summary>
+    <div class="named-list">${list.map(r => `<span class="chip">${escapeHtml(r.name)}</span>`).join('')}</div></details>`;
+}
+function renderLayerView(c, recs){
+  const l1 = recs.filter(r => r.layerRole === 'sell-in' || r.layerRole === 'both');
+  const l2 = recs.filter(r => r.layerRole === 'pos' || r.layerRole === 'both');
+  const l1fig = l1.filter(r => r.sellIn).sort((a,b) => {
+    const ua = a.sellIn.unit === '€M' ? 1 : 0, ub = b.sellIn.unit === '€M' ? 1 : 0;
+    return ua - ub || b.sellIn.value - a.sellIn.value;
+  });
+  const l2fig = l2.filter(r => r.sellOut || r.mix).sort((a,b) => ((b.sellOut&&b.sellOut.value)||0) - ((a.sellOut&&a.sellOut.value)||0));
+  const l1rows = l1fig.map((r,i) => layerRowHtml(r, i+1, 'sellIn')).join('') || '<p class="terr-empty-note">No sell-in figure entered yet.</p>';
+  const l2rows = l2fig.map((r,i) => r.sellOut ? layerRowHtml(r, i+1, 'sellOut')
+      : `<div class="lv-row"><span class="chip-rank">#${i+1}</span><div class="nm">${escapeHtml(r.name)}<small>${escapeHtml(r.model||'')}</small></div><div class="fig"></div><div class="meta">${mixBarHtml(r.mix)}</div></div>`).join('')
+    || '<p class="terr-empty-note">No sell-out figure entered yet.</p>';
+  const stamp = window.__sellin && window.__sellin.generatedAt ? ` Data last exported ${escapeHtml(String(window.__sellin.generatedAt).slice(0,10))}.` : '';
+  return `<p class="lv-intro">Two layers: dealers that <b>buy from tyre manufacturers</b> (sell-in), and the <b>final points of sale</b> where customers buy. A dealer can sit in both. All figures are estimates with a confidence tag; € and unit figures are ranked separately because they are not directly comparable.${stamp}</p>
+    <div class="lv-layer"><h4>Layer 1 · Sell-in</h4><span class="lv-sub">Estimated annual purchases from manufacturers — wholesalers, buying groups, chain purchasing</span>
+      ${l1rows}${layerNoFigHtml(l1.filter(r => !r.sellIn), 'sell-in')}</div>
+    <div class="lv-layer"><h4>Layer 2 · Final points of sale</h4><span class="lv-sub">Estimated annual volume sold to end customers, with customer mix where known</span>
+      ${l2rows}${layerNoFigHtml(l2.filter(r => !r.sellOut && !r.mix), 'sell-out')}</div>`;
 }
 
 function renderTerritoryView(country){
