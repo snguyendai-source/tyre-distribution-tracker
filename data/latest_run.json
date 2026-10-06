@@ -1,68 +1,52 @@
 {
-  "runAt": "2026-10-05T14:02:45.143249+00:00",
-  "totalNew": 7,
+  "runAt": "2026-10-06T13:01:57.693887+00:00",
+  "totalNew": 5,
   "entitiesChecked": 118,
-  "entitiesWithNews": 6,
+  "entitiesWithNews": 5,
   "newItemsByEntity": {
-    "Premio": [
+    "Pneuhage": [
       {
-        "title": "Aprilia pushed for Motegi tyre intervention after Martín safety scare - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMzM5czlaZTZXbEhyel9McV9aU1FFWUNCN3FFcTl5VE5HVHhzVzdMOTJ6TGNHSF9CS09BbnpXWTdLU2h3aEJtb1dfRjhUbW1hUnRkWU96LXQyZ2VPV19qR1N5ZGpGWGs2V2ZqZjVsZ2NmWmFPZ25OR0dXN25OUEhfYWpVQmhKbUVXbk1TVzZPRERGRHV2Nk5TMFNQdV9WUUdiR1R6ZlFqWk8?oc=5",
-        "pubDate": "Mon, 05 Oct 2026 10:30:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      },
-      {
-        "title": "Quartararo says MotoGP riders were “stupid” to overlook Motegi’s best tyre - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPb24tcmt1ck96dS01M1VmOXZfNzRtd05WOEVBYjE4V2RiMnJQNGF6SnM0T3lCZ0RZTTluaVZFU3dNOVViWlFZZHhTTEFHd2R6VWF5Tk5LOHpUS1JWOWdvbXZWMVEwQTNKRnQtUWIxVTliN0NDVzI0YUtYVVVJWmxQZzNZWF9XcEdkdEh2M1lrNU4tX25OVlRjM3B5U21fOWdqUlVXR0hZY1dIQnM?oc=5",
-        "pubDate": "Sun, 04 Oct 2026 16:30:00 GMT",
+        "title": "Bridgestone acquires German specialist tyre trade group - press.bridgestone-emea.com",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc0tXSTF3RnJWU0NRQXktOHhmejEwZEdyM2NSZzBGSDVYa3p5ekJxRXdPbHJOWlVFSzB0SzAwYmJpNVVpcllPTTdTLUFpRUlZNmpaanJRTlNFMGJkWk9ZcDNxWXFOZVprbE9GV2pCbnBpSWJZeFBSakNWYnVzYTZ6NEM0NEoyMjNqNS0wSmNXcWV3eXF5Qk5JMHBB?oc=5",
+        "pubDate": "Wed, 13 May 2020 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
     "Emil Frey": [
       {
-        "title": "Emil Frey Racing Victorious In Race 2 at Barcelona - dailysportscar.com",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVXF6eWl1U21IQkNPYkJweHhLdVZySG9DdnQzT2hfQmctMi1qTkJyZmczS2JjaWo3NzhHNHJyOXg0TWRyUWVyN3hXLWpKd0RTNnE2bXVNMjB0TjRvMXZmTzhKRjdnaTExM3RYWHAzYXdkbUppcFR4M29JSnJMLWNCTFlydHNXcUQxVmItbVh1RUljVHNQeW1qZFRWRkVmUQ?oc=5",
-        "pubDate": "Sun, 04 Oct 2026 17:24:02 GMT",
+        "title": "XPeng Signs Emil Frey as German Dealer in Push Toward 110 Sites - eletric-vehicles.com",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPS05BN3FyT2NIQWNPeDhoWk9vdzZ4WVNkME1lODlmSVRtOTBHbFVrSGg5SWE3UHlWS0hnSWs1SDZnMXlNdmp4VXcteDNJc1A5eW9jYVo0UWdIMlhqLXdMSklYUk5QN0V3bTZoaVRsNXRIS3FVTDIxd1E1VVRWaFRVUjhreXdQNXE0NlJibzJOYklZd0VyNG5tS0JyNTFTNTJK?oc=5",
+        "pubDate": "Thu, 01 Oct 2026 13:48:33 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Feu Vert": [
+    "Blackcircles": [
       {
-        "title": "Tyre market: the internet reshuffles the deck - Flottes Automobiles",
-        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBCVnd6bVdBWmI0ak9vVW9FYjkyUXlNX0E2OF9jZm5NSDhkVHdSSWJld0FQTGt5bzhEb2xXVUcyR0hWRTdxRDE5YnZjMHZ1N0ZMb0pDdlEyN2RSang1emE4S3B1d3dZV05wT04xNHo4eDdWYVh5ODhiT2JGdDU?oc=5",
-        "pubDate": "Thu, 18 Sep 2014 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      }
-    ],
-    "Euromaster France": [
-      {
-        "title": "Euromaster launches new maintenance services for EVs - Flottes Automobiles",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9XbzQxNzVpSFBMVzd6WmlNWUJxNEQxV0EtNDgzdnEwbktWOEtkYnY1dzJmeWFPUmRZcWFod2Foc0xZUGhVZjRpeVlxRzN0YWZGRWUxUVRuM3NXdThFclJEZzA2bGJOQzU1RWhn?oc=5",
-        "pubDate": "Tue, 02 Sep 2025 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      }
-    ],
-    "Protyre": [
-      {
-        "title": "How Micheldever Group increased website conversions by 98% in just 3 months - Performance Marketing World",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObjJ1SEJDM2hyTkstN3ljMFB6YmxLdTRxNXZ0elc1VHBQRG85Q283WG8teHh5Q2pNd1BGM3B5Q21mUkNlV1pUMnJDOGlSOEJxbFlCUVl1b0xnZlNKZm9PTURtYUcxRnNOUHJZRkU4ZVlnRkg2VGJrMTFNWVI2WHlDNEdKeUQzRHplcGJJRWhRSjJXVVZQWjF2bk1KMm9Qc2ZJclZGNEwtcHpXdUNiZmpoVV81cWFpZHY3OGxrclhFYw?oc=5",
-        "pubDate": "Thu, 15 Feb 2024 08:00:00 GMT",
+        "title": "Entrepreneur Mike Welch resurrects fashion brand Atterley - BBC",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5XUVp3YmJ2RDJkMXptSDA0YUVNZEN1MDliSFhwMUZCLUlIMGlpM0dnMVhYWFZ6Wlp4WmdjZUhzMEI3QzV2c1FPbmRrWkR6REY5R0RBU0YtRGlIampPVS1BWG14TElFVHdjUzlMMXJOYWM?oc=5",
+        "pubDate": "Wed, 17 Feb 2016 08:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Tructyre": [
+    "Nex Tyres": [
       {
-        "title": "Halfords recruits former Tructyre operations director for Commercial Fleet Services - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWU5KVmRpWDBVWTBEbm1NMFlONXJkLS1VQmpWWnkxc0FkNS13OTFDM0FZR29tREZjS2M1dE5rZ3VHbVBNVDFOMHl3TlIzMVlDaVdNVGZnUnF3bmZQMlJTVjBvN0VhQmFtTkZKNUdYcUg2cVViZnh0d05mRFk4bEpSd3VsaEIxZVN5d3p4OWQyN0Z3U1hFdmMwZlhicTBreUZXX1F0c2tQWkJKcnlFelpkYThHYjQyZHg0LUE?oc=5",
-        "pubDate": "Tue, 05 May 2026 07:00:00 GMT",
-        "country": "UK",
-        "cluster": "North-West"
+        "title": "Michelin enters African tyre distribution joint venture - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbTVqc0pHcjEzRWNhYTQ3UzNFWjRmeTRLYi1Hb0ZGOFFYei1lQU5qSW9XYzMyRldtRmdCRFBBU285ck13Z2xpaFNxVllESmFLeVUtZjZSUXdyc2FTSldWR3d6VFM3WWwycmp5OUpqWHhMMllYLURIZ3VmNXlKUkFPZ3p1TF9jbkRwaDJBTS1OU1RGdVdZ?oc=5",
+        "pubDate": "Thu, 22 Mar 2018 07:00:00 GMT",
+        "country": "Spain",
+        "cluster": "South-West"
+      }
+    ],
+    "Vianor": [
+      {
+        "title": "NKRKY Stock Price and Chart — OTC:NKRKY - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSk90QnYxLUlud2JYZlUyTWtIY1l0Y2JLVlBZRmNQSFhKOHRYM19WR21TdUxTbjVQdzJTd1BKbmpya3pVQml6bFJvQ2pzbFRIN2xKRG03d0hQM1BnUy01ZHEyWmlSQ1JfdUc2MGpYM2NEQzUtSUVfTkhodWJvdDIzdjBxb0tFUGNjV0w2eHlpeUpFbTVlZE5fcjU5aHphMGRuR0hfQ21NRFkyVGNVT3p5V2l5Q3p3WVd4Q2k1dUVpMEI4X2xXekZv?oc=5",
+        "pubDate": "Wed, 26 Jan 2022 08:00:00 GMT",
+        "country": "Hungary",
+        "cluster": "South-East"
       }
     ]
   }
