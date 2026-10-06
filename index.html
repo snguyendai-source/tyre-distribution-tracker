@@ -154,6 +154,9 @@
   .lv-more summary{ cursor:pointer; font-weight:600; }
   .lv-more .named-list{ margin-top:8px; }
   @media (max-width:760px){ .lv-row{ grid-template-columns: 30px 1fr; } .lv-row .fig{ text-align:left; } }
+  .fv-scroll{ overflow-x:auto; padding:4px 0 6px; }
+  .fv-dot{ display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:4px; vertical-align:middle; }
+  .fv-refs{ margin:8px 0 0; padding-left:18px; font-size:11.5px; color:var(--ink-soft); line-height:1.5; }
   .tv-scroll{ overflow-x:auto; padding:4px 0 10px; }
   .tv{ min-width:780px; font-size:12px; }
   .tv-bar{ background:#EEF0F5; border-radius:6px; text-align:center; font-weight:700; padding:9px; color:var(--navy); font-size:13px; }
@@ -677,7 +680,9 @@ function renderDistSegment(countries, segKey){
     const layerRecs = sellinFor(c.country, segKey);
     const layerHasFigures = layerRecs.some(r => r.sellIn || r.sellOut || r.mix);
     const views = [['channel','By channel']];
-    const treeData = segKey === 'PCR' ? treeFor(c.country) : null;
+    const flowData = segKey === 'PCR' ? flowFor(c.country) : null;
+    const treeData = segKey === 'PCR' && !flowData ? treeFor(c.country) : null;
+    if(flowData) views.push(['flow','Flow model']);
     if(treeData) views.push(['tree','Channel tree']);
     if(c.territoryDefs) views.push(['territory','By territory']);
     if(layerHasFigures) views.push(['layer','By layer · sell-in']);
@@ -687,6 +692,7 @@ function renderDistSegment(countries, segKey){
     const territoryViewHtml = c.territoryDefs ? renderTerritoryView(c) : '';
     const layerViewHtml = layerHasFigures ? renderLayerView(c, layerRecs) : '';
     const treeViewHtml = treeData ? renderTreeView(c, treeData) : '';
+    const flowViewHtml = flowData ? renderFlowView(c, flowData) : '';
 
     return `<details class="country" ${ci<2 ? 'open':''}>
       <summary>
@@ -699,6 +705,7 @@ function renderDistSegment(countries, segKey){
         <div class="territory-view-block" data-view-panel="territory" data-country-idx="${ci}">${territoryViewHtml}</div>
         <div class="territory-view-block" data-view-panel="layer" data-country-idx="${ci}">${layerViewHtml}</div>
         <div class="territory-view-block" data-view-panel="tree" data-country-idx="${ci}">${treeViewHtml}</div>
+        <div class="territory-view-block" data-view-panel="flow" data-country-idx="${ci}">${flowViewHtml}</div>
       </div>
     </details>`;
   }).join('');
@@ -715,6 +722,137 @@ function collectAllEntities(country){
     all.push(fe);
   }
   return all;
+}
+
+/* ---------- flow model (industry -> wholesale / direct -> channels -> customers) ---------- */
+const FV_COL={Published:'#2F6F62',Derived:'#B5701E',Team:'#5B3E96'};
+function flowFor(countryName){
+  const fs=(window.__sellin&&window.__sellin.flows)||[];
+  return fs.find(f=>f.country===countryName&&f.channels&&f.channels.length)||null;
+}
+function flowSolve(flow){
+  const val={}, tier={};
+  for(const [id,c] of Object.entries(flow.cells||{})){ if(c&&c.value!=null&&!isNaN(c.value)){ val[id]=Number(c.value); tier[id]=c.tier||'Team'; } }
+  const ids=flow.channels.map(c=>c.id);
+  const T=i=>'ch.'+i+'.tot', W=i=>'ch.'+i+'.ws', D=i=>'ch.'+i+'.dir', P=i=>'ch.'+i+'.prv', C=i=>'ch.'+i+'.com';
+  const cons=[];
+  cons.push([['industry',1],['toWs',-1],['direct',-1]]);
+  cons.push([['wsDom',1],['toWs',-1],['import',-1],['export',1]]);
+  cons.push([['market',1],['wsDom',-1],['direct',-1]]);
+  cons.push([['market',1],['prvAll',-1],['comAll',-1]]);
+  ids.forEach(i=>{ cons.push([[T(i),1],[W(i),-1],[D(i),-1]]); cons.push([[T(i),1],[P(i),-1],[C(i),-1]]); });
+  cons.push([...ids.map(i=>[W(i),1]),['wsDom',-1]]);
+  cons.push([...ids.map(i=>[D(i),1]),['direct',-1]]);
+  cons.push([...ids.map(i=>[T(i),1]),['market',-1]]);
+  cons.push([...ids.map(i=>[P(i),1]),['prvAll',-1]]);
+  cons.push([...ids.map(i=>[C(i),1]),['comAll',-1]]);
+  (flow.groups||[]).forEach(g=>{ cons.push([...g.members.map(i=>[T(i),1]),['g.'+g.id,-1]]); });
+  if((flow.groups||[]).length) cons.push([...flow.groups.map(g=>['g.'+g.id,1]),['market',-1]]);
+  let changed=true, loops=0;
+  while(changed&&loops++<100){
+    changed=false;
+    for(const k of cons){
+      const unk=k.filter(([id])=>!(id in val)); if(unk.length!==1) continue;
+      const known=k.filter(([id])=>id in val).reduce((a,[id,co])=>a+co*val[id],0);
+      const [uid,uco]=unk[0]; const x=-known/uco;
+      if(x<-0.0005) continue;
+      val[uid]=Math.round(Math.max(0,x)*1000)/1000; tier[uid]='Derived'; changed=true;
+    }
+  }
+  const tol=Math.max(0.1,0.01*(val.market||0)), conflicts=[];
+  cons.forEach(k=>{ if(k.every(([id])=>id in val)){ const s=k.reduce((a,[id,co])=>a+co*val[id],0); if(Math.abs(s)>tol) conflicts.push({k,res:Math.round(s*100)/100}); } });
+  return {val,tier,conflicts};
+}
+function fvFmt(v){ if(v==null) return '—'; return Math.abs(v)>=1 ? Number(v).toFixed(1) : Number(v).toFixed(2); }
+function fvWrap(s,max){
+  const lines=[]; let cur='';
+  String(s).split(/\s+/).forEach(w=>{ if((cur+' '+w).trim().length>max){ if(cur) lines.push(cur); cur=w; } else cur=(cur+' '+w).trim(); });
+  if(cur) lines.push(cur); return lines;
+}
+function renderFlowView(c, flow){
+  const R=flowSolve(flow), val=R.val, tier=R.tier, esc=escapeHtml;
+  const n=flow.channels.length, CW=100, GAP=8, X0=30;
+  const W=Math.max(1240, X0*2+n*(CW+GAP)-GAP);
+  const lx=i=>X0+i*(CW+GAP), mid=i=>lx(i)+CW/2;
+  const T=i=>'ch.'+i+'.tot', Wc=i=>'ch.'+i+'.ws', D=i=>'ch.'+i+'.dir', P=i=>'ch.'+i+'.prv', Cm=i=>'ch.'+i+'.com';
+  const RED='#C0392B', BLUE='#2B5BD9', GREY='#9AA3B5', INK='#1B2333';
+  const has=id=>id in val;
+  const dot=(x,y,id)=>has(id)?`<circle cx="${x}" cy="${y}" r="3.2" fill="${FV_COL[tier[id]]||'#999'}"/>`:'';
+  const maxFlow=Math.max(1,val.toWs||0,val.direct||0,...flow.channels.flatMap(ch=>[val[Wc(ch.id)]||0,val[D(ch.id)]||0]));
+  const sw=v=>v==null?1.2:Math.max(1.8,Math.min(11,1.8+(v/maxFlow)*9));
+  const line=(d,col,id,arrow)=>`<path d="${d}" fill="none" stroke="${col}" stroke-width="${sw(val[id])}" ${has(id)?'':'stroke-dasharray="4 3"'} ${arrow?'marker-end="url(#fvArr)"':''} stroke-linejoin="round"/>`;
+  let s='';
+  s+=`<defs><marker id="fvArr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>`;
+  const node=(x,y,w,h,fill,stroke,title,id,sub)=>{
+    const h1=has(id);
+    return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" fill="${fill}" stroke="${stroke}" ${h1?'':'stroke-dasharray="4 3"'}/>`
+      +`<text x="${x+w/2}" y="${y+19}" text-anchor="middle" style="font-size:12px;font-weight:700;fill:${INK}">${esc(title)}</text>`
+      +`<text x="${x+w/2}" y="${y+(sub?h-26:h-14)}" text-anchor="middle" style="font-size:${h1?17:13}px;font-weight:700;fill:${h1?INK:'#8A93A8'}">${h1?fvFmt(val[id])+'M':'needs input'}</text>`
+      +(sub?`<text x="${x+w/2}" y="${y+h-9}" text-anchor="middle" style="font-size:10px;fill:#6B7487">${esc(sub)}</text>`:'')+dot(x+w-12,y+h-(sub?32:20),id);
+  };
+  const indX=130, indW=320, impX=W-130-320, wsW=320, wsX=W/2-160, wsY=170, wsH=78;
+  s+=node(indX,24,indW,60,'#E8EEFB',BLUE,'Industry (ETRMA pool)','industry');
+  s+=node(impX,24,320,60,'#FBE6D2','#B5701E','Wholesale import (non-pool)','import');
+  s+=node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in Germany','wsDom','industry + imports − exports');
+  s+=node(wsX+wsW+40,wsY+14,150,50,'#F2F3F7',GREY,'Export','export');
+  const indCx=indX+indW/2, impCx=impX+160;
+  s+=line(`M${indCx} 84 V127 H${wsX+90} V${wsY-4}`,RED,'toWs',true);
+  s+=line(`M${impCx} 84 V127 H${wsX+230} V${wsY-4}`,RED,'import',true);
+  s+=line(`M${wsX+wsW} ${wsY+39} H${wsX+wsW+36}`,GREY,'export',true);
+  s+=`<text x="${(indCx+wsX+90)/2}" y="120" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${RED}">to wholesale ${has('toWs')?fvFmt(val.toWs)+'M':'—'}</text>`;
+  s+=`<text x="${(impCx+wsX+230)/2}" y="120" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${RED}">imports ${has('import')?fvFmt(val.import)+'M':'—'}</text>`;
+  const dirX=indX+80;
+  s+=line(`M${dirX} 84 V294`,BLUE,'direct',false);
+  s+=`<text x="${dirX+10}" y="200" style="font-size:11px;font-weight:700;fill:${BLUE}">direct ${has('direct')?fvFmt(val.direct)+'M':'—'}</text>`;
+  s+=`<text x="${dirX+10}" y="214" style="font-size:10px;fill:#6B7487">industry to channels</text>`;
+  const redY=276, bluY=294, topY=338;
+  const rx=i=>mid(i)-12, bx=i=>mid(i)+12;
+  s+=`<path d="M${W/2} ${wsY+wsH} V${redY}" fill="none" stroke="${RED}" stroke-width="${sw(val.wsDom)}" ${has('wsDom')?'':'stroke-dasharray="4 3"'}/>`;
+  s+=`<path d="M${rx(0)} ${redY} H${rx(n-1)}" fill="none" stroke="${RED}" stroke-width="2"/>`;
+  s+=`<path d="M${bx(0)} ${bluY} H${bx(n-1)}" fill="none" stroke="${BLUE}" stroke-width="2"/>`;
+  flow.channels.forEach((ch,i)=>{
+    s+=line(`M${rx(i)} ${redY} V${topY-4}`,RED,Wc(ch.id),true);
+    s+=line(`M${bx(i)} ${bluY} V${topY-4}`,BLUE,D(ch.id),true);
+    const x=lx(i), known=has(T(ch.id));
+    s+=`<rect x="${x}" y="${topY}" width="${CW}" height="118" rx="8" fill="#fff" stroke="${BLUE}" ${known?'':'stroke-dasharray="4 3"'}/>`;
+    fvWrap(ch.name,15).slice(0,3).forEach((t,k)=>{ s+=`<text x="${x+CW/2}" y="${topY+16+k*12}" text-anchor="middle" style="font-size:10.5px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
+    [['Total',T(ch.id),INK,86],['via wholesale',Wc(ch.id),RED,88],['direct',D(ch.id),BLUE,90]].forEach(([lab,id,col],k)=>{
+      const y=topY+66+k*17;
+      s+=`<text x="${x+7}" y="${y}" style="font-size:9.5px;fill:${col}">${lab}</text>`;
+      s+=`<text x="${x+CW-17}" y="${y}" text-anchor="end" style="font-size:12px;font-weight:700;fill:${has(id)?INK:'#9AA3B5'}">${has(id)?fvFmt(val[id]):'—'}</text>`+dot(x+CW-9,y-4,id);
+    });
+    s+=`<rect x="${x}" y="${topY+128}" width="${CW}" height="42" rx="8" fill="#F5F6FA" stroke="#D5D9E4"/>`;
+    [['Private',P(ch.id)],['Commercial',Cm(ch.id)]].forEach(([lab,id],k)=>{
+      const y=topY+146+k*15;
+      s+=`<text x="${x+7}" y="${y}" style="font-size:9.5px;fill:#5B6478">${lab}</text><text x="${x+CW-17}" y="${y}" text-anchor="end" style="font-size:11px;font-weight:700;fill:${has(id)?INK:'#9AA3B5'}">${has(id)?fvFmt(val[id]):'—'}</text>`+dot(x+CW-9,y-4,id);
+    });
+  });
+  const gy=topY+184;
+  (flow.groups||[]).forEach(g=>{
+    const idx=g.members.map(m=>flow.channels.findIndex(c=>c.id===m)).filter(i=>i>=0).sort((a,b)=>a-b);
+    if(!idx.length) return;
+    const runs=[]; idx.forEach(i=>{ const r=runs[runs.length-1]; if(r&&i===r[1]+1) r[1]=i; else runs.push([i,i]); });
+    runs.forEach((r,ri)=>{
+      const x1=lx(r[0]), x2=lx(r[1])+CW;
+      s+=`<path d="M${x1} ${gy} V${gy+7} H${x2} V${gy}" fill="none" stroke="#7A8299" stroke-width="1.2"/>`;
+      if(ri===0){
+        const lines=fvWrap(g.name,Math.max(10,Math.floor((x2-x1)/5.4)));
+        lines.slice(0,3).forEach((t,k)=>{ s+=`<text x="${(x1+x2)/2}" y="${gy+22+k*12}" text-anchor="middle" style="font-size:10px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
+        const gid='g.'+g.id;
+        s+=`<text x="${(x1+x2)/2}" y="${gy+22+Math.min(lines.length,3)*12+2}" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${has(gid)?INK:'#9AA3B5'}">${has(gid)?fvFmt(val[gid])+'M':'—'}</text>`+(has(gid)?dot((x1+x2)/2+30,gy+22+Math.min(lines.length,3)*12-2,gid):'');
+      }
+    });
+  });
+  const H=gy+100;
+  const coreIds=['market','industry','toWs','direct','import','export','wsDom','prvAll','comAll'];
+  const allIds=[...coreIds,...flow.channels.flatMap(ch=>[T(ch.id),Wc(ch.id),D(ch.id),P(ch.id),Cm(ch.id)])];
+  const missing=allIds.filter(id=>!has(id)).length;
+  const seasons=(flow.meta&&flow.meta.seasons)?` Season mix (${esc(flow.meta.seasons.source||'')}): all-season ${flow.meta.seasons.allSeason}% · winter ${flow.meta.seasons.winter}% · summer ${flow.meta.seasons.summer}%.`:'';
+  const legend=[['Published','#2F6F62'],['Derived','#B5701E'],['Team input','#5B3E96']].map(([l,col])=>`<span class="fv-dot" style="background:${col}"></span>${l}`).join(' &nbsp; ');
+  return `<p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b> Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Scroll sideways to see all channels.${seasons}</p>
+    <div class="fv-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
+    <p class="tv-note">Dot colour: ${legend}. <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')}</p>
+    ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}`;
 }
 
 function treeFor(countryName){
