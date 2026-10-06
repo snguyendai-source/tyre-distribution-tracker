@@ -154,6 +154,7 @@
   .lv-more summary{ cursor:pointer; font-weight:600; }
   .lv-more .named-list{ margin-top:8px; }
   @media (max-width:760px){ .lv-row{ grid-template-columns: 30px 1fr; } .lv-row .fig{ text-align:left; } }
+  .channel-boxes{ font-size:11px; color:var(--ink-soft); margin:2px 0 8px; line-height:1.45; }
   .fv-scroll{ overflow-x:auto; padding:4px 0 6px; }
   .fv-dot{ display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:4px; vertical-align:middle; }
   .fv-refs{ margin:8px 0 0; padding-left:18px; font-size:11.5px; color:var(--ink-soft); line-height:1.5; }
@@ -627,6 +628,7 @@ function renderDistSegment(countries, segKey){
       ? `<div class="num2">${escapeHtml(c.total)}</div><div class="lbl2">${escapeHtml(c.totalLabel||'')}</div>`
       : `<div class="num2" style="color:#B42318;">—</div><div class="lbl2">no total published</div>`;
 
+    const flowData = segKey === 'PCR' ? flowFor(c.country) : null;
     let channelViewHtml = '';
     if(c.marketAccessNote){
       channelViewHtml += `<div class="market-access-note"><span class="label">Market access note</span>${escapeHtml(c.marketAccessNote)}</div>`;
@@ -640,6 +642,9 @@ function renderDistSegment(countries, segKey){
     }
     if(c.channels && c.channels.length){
       channelViewHtml += c.channels.map((ch, chi) => {
+        const gObj = flowData && ch.flowGroup ? (flowData.groups||[]).find(g => g.id === ch.flowGroup) : null;
+        const chTitle = gObj ? gObj.name : ch.name;
+        const boxesLine = gObj ? `<div class="channel-boxes">Boxes in the flow model: ${gObj.members.map(m => { const b=(flowData.channels||[]).find(x => x.id === m); return b ? escapeHtml(b.name) : ''; }).filter(Boolean).join(' · ')}</div>` : '';
         const shareNum = parseFloat((ch.share||'').replace(/[^0-9.]/g,'')) || 0;
         // Entity-rows (with owner/volume) keep their original order -- that already
         // reflects sell-out volume rank, which is what this channel view is about.
@@ -663,12 +668,13 @@ function renderDistSegment(countries, segKey){
 
         return `<details class="channel" ${chi===0 && ci<2 ? 'open':''}>
           <summary>
-            <div class="channel-name">${escapeHtml(ch.name)}</div>
+            <div class="channel-name">${escapeHtml(chTitle)}</div>
             <div class="channel-bar-wrap"><div class="channel-bar-track"><div class="channel-bar-fill" style="width:${Math.min(shareNum,100)}%"></div></div></div>
             <div class="channel-share">${escapeHtml(ch.share||'')}</div>
             <div class="channel-vol">${escapeHtml(ch.volume||'')}</div>
           </summary>
           <div class="channel-body">
+            ${boxesLine}
             <div class="channel-source">${badgeHtml(ch.sourceBadge)} ${escapeHtml((ch.source||'').replace(/^(Source:.*?)(Hard %|Modeled|Estimate|Named only|Fragmented)?\s*/,'$1'))}</div>
             ${entitiesHtml}
             ${chipsHtml}
@@ -680,7 +686,6 @@ function renderDistSegment(countries, segKey){
     const layerRecs = sellinFor(c.country, segKey);
     const layerHasFigures = layerRecs.some(r => r.sellIn || r.sellOut || r.mix);
     const views = [['channel','By channel']];
-    const flowData = segKey === 'PCR' ? flowFor(c.country) : null;
     const treeData = segKey === 'PCR' && !flowData ? treeFor(c.country) : null;
     if(flowData) views.push(['flow','Flow model']);
     if(treeData) views.push(['tree','Channel tree']);
@@ -728,7 +733,8 @@ function collectAllEntities(country){
 const FV_COL={Published:'#2F6F62',Derived:'#B5701E',Team:'#5B3E96'};
 function flowFor(countryName){
   const fs=(window.__sellin&&window.__sellin.flows)||[];
-  return fs.find(f=>f.country===countryName&&f.channels&&f.channels.length)||null;
+  const f=fs.find(x=>x.country===countryName&&x.channels&&x.channels.length); if(!f) return null;
+  return Object.keys(flowSolve(f).val).some(k=>k.startsWith('ch.')||k.startsWith('g.')) ? f : null;
 }
 function flowSolve(flow){
   const val={}, tier={};
@@ -793,7 +799,7 @@ function renderFlowView(c, flow){
   const indX=130, indW=320, impX=W-130-320, wsW=320, wsX=W/2-160, wsY=170, wsH=78;
   s+=node(indX,24,indW,60,'#E8EEFB',BLUE,'Industry (ETRMA pool)','industry');
   s+=node(impX,24,320,60,'#FBE6D2','#B5701E','Wholesale import (non-pool)','import');
-  s+=node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in Germany','wsDom','industry + imports − exports');
+  s+=node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+c.country,'wsDom','industry + imports − exports');
   s+=node(wsX+wsW+40,wsY+14,150,50,'#F2F3F7',GREY,'Export','export');
   const indCx=indX+indW/2, impCx=impX+160;
   s+=line(`M${indCx} 84 V127 H${wsX+90} V${wsY-4}`,RED,'toWs',true);
@@ -847,9 +853,13 @@ function renderFlowView(c, flow){
   const coreIds=['market','industry','toWs','direct','import','export','wsDom','prvAll','comAll'];
   const allIds=[...coreIds,...flow.channels.flatMap(ch=>[T(ch.id),Wc(ch.id),D(ch.id),P(ch.id),Cm(ch.id)])];
   const missing=allIds.filter(id=>!has(id)).length;
-  const seasons=(flow.meta&&flow.meta.seasons)?` Season mix (${esc(flow.meta.seasons.source||'')}): all-season ${flow.meta.seasons.allSeason}% · winter ${flow.meta.seasons.winter}% · summer ${flow.meta.seasons.summer}%.`:'';
+  const se=flow.meta&&flow.meta.seasons, sp=[];
+  if(se){ if(se.allSeason!=null) sp.push('all-season '+se.allSeason+'%'); if(se.winter!=null) sp.push('winter '+se.winter+'%'); if(se.summer!=null) sp.push('summer '+se.summer+'%'); }
+  const seasons=sp.length?` Season mix (${esc(se.source||'')}): ${sp.join(' · ')}.`:'';
+  const mk=has('market')?` Replacement market: <b>${fvFmt(val.market)}M</b>.`:'';
+  const scopeNote=(flow.meta&&flow.meta.scopeNote)?` ${esc(flow.meta.scopeNote)}`:'';
   const legend=[['Published','#2F6F62'],['Derived','#B5701E'],['Team input','#5B3E96']].map(([l,col])=>`<span class="fv-dot" style="background:${col}"></span>${l}`).join(' &nbsp; ');
-  return `<p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b> Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Scroll sideways to see all channels.${seasons}</p>
+  return `<p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Scroll sideways to see all channels.${seasons}</p>
     <div class="fv-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
     <p class="tv-note">Dot colour: ${legend}. <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')}</p>
     ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}`;
