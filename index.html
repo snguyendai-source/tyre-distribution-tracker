@@ -642,9 +642,6 @@ function renderDistSegment(countries, segKey){
     }
     if(c.channels && c.channels.length){
       channelViewHtml += c.channels.map((ch, chi) => {
-        const gObj = flowData && ch.flowGroup ? (flowData.groups||[]).find(g => g.id === ch.flowGroup) : null;
-        const chTitle = gObj ? gObj.name : ch.name;
-        const boxesLine = gObj ? `<div class="channel-boxes">Boxes in the flow model: ${gObj.members.map(m => { const b=(flowData.channels||[]).find(x => x.id === m); return b ? escapeHtml(b.name) : ''; }).filter(Boolean).join(' · ')}</div>` : '';
         const shareNum = parseFloat((ch.share||'').replace(/[^0-9.]/g,'')) || 0;
         // Entity-rows (with owner/volume) keep their original order -- that already
         // reflects sell-out volume rank, which is what this channel view is about.
@@ -668,13 +665,12 @@ function renderDistSegment(countries, segKey){
 
         return `<details class="channel" ${chi===0 && ci<2 ? 'open':''}>
           <summary>
-            <div class="channel-name">${escapeHtml(chTitle)}</div>
+            <div class="channel-name">${escapeHtml(ch.name)}</div>
             <div class="channel-bar-wrap"><div class="channel-bar-track"><div class="channel-bar-fill" style="width:${Math.min(shareNum,100)}%"></div></div></div>
             <div class="channel-share">${escapeHtml(ch.share||'')}</div>
             <div class="channel-vol">${escapeHtml(ch.volume||'')}</div>
           </summary>
           <div class="channel-body">
-            ${boxesLine}
             <div class="channel-source">${badgeHtml(ch.sourceBadge)} ${escapeHtml((ch.source||'').replace(/^(Source:.*?)(Hard %|Modeled|Estimate|Named only|Fragmented)?\s*/,'$1'))}</div>
             ${entitiesHtml}
             ${chipsHtml}
@@ -777,8 +773,9 @@ function fvWrap(s,max){
 }
 function renderFlowView(c, flow){
   const R=flowSolve(flow), val=R.val, tier=R.tier, esc=escapeHtml;
-  const n=flow.channels.length, CW=100, GAP=8, X0=30;
-  const W=Math.max(1240, X0*2+n*(CW+GAP)-GAP);
+  const nameOf=ch=>{ const dc=(c.channels||[]).find(x=>x.flowBox===ch.id); return dc?dc.name:ch.name; };
+  const n=flow.channels.length, GAP=10, CW=n<=5?200:(n<=8?140:100);
+  const rowW=n*CW+(n-1)*GAP, W=Math.max(1240,rowW+60), X0=(W-rowW)/2, OFF=Math.min(18,Math.round(CW*0.12));
   const lx=i=>X0+i*(CW+GAP), mid=i=>lx(i)+CW/2;
   const T=i=>'ch.'+i+'.tot', Wc=i=>'ch.'+i+'.ws', D=i=>'ch.'+i+'.dir', P=i=>'ch.'+i+'.prv', Cm=i=>'ch.'+i+'.com';
   const RED='#C0392B', BLUE='#2B5BD9', GREY='#9AA3B5', INK='#1B2333';
@@ -812,16 +809,16 @@ function renderFlowView(c, flow){
   s+=`<text x="${dirX+10}" y="200" style="font-size:11px;font-weight:700;fill:${BLUE}">direct ${has('direct')?fvFmt(val.direct)+'M':'—'}</text>`;
   s+=`<text x="${dirX+10}" y="214" style="font-size:10px;fill:#6B7487">industry to channels</text>`;
   const redY=276, bluY=294, topY=338;
-  const rx=i=>mid(i)-12, bx=i=>mid(i)+12;
+  const rx=i=>mid(i)-OFF, bx=i=>mid(i)+OFF;
   s+=`<path d="M${W/2} ${wsY+wsH} V${redY}" fill="none" stroke="${RED}" stroke-width="${sw(val.wsDom)}" ${has('wsDom')?'':'stroke-dasharray="4 3"'}/>`;
   s+=`<path d="M${rx(0)} ${redY} H${rx(n-1)}" fill="none" stroke="${RED}" stroke-width="2"/>`;
-  s+=`<path d="M${bx(0)} ${bluY} H${bx(n-1)}" fill="none" stroke="${BLUE}" stroke-width="2"/>`;
+  s+=`<path d="M${Math.min(bx(0),dirX)} ${bluY} H${bx(n-1)}" fill="none" stroke="${BLUE}" stroke-width="2"/>`;
   flow.channels.forEach((ch,i)=>{
     s+=line(`M${rx(i)} ${redY} V${topY-4}`,RED,Wc(ch.id),true);
     s+=line(`M${bx(i)} ${bluY} V${topY-4}`,BLUE,D(ch.id),true);
     const x=lx(i), known=has(T(ch.id));
     s+=`<rect x="${x}" y="${topY}" width="${CW}" height="118" rx="8" fill="#fff" stroke="${BLUE}" ${known?'':'stroke-dasharray="4 3"'}/>`;
-    fvWrap(ch.name,15).slice(0,3).forEach((t,k)=>{ s+=`<text x="${x+CW/2}" y="${topY+16+k*12}" text-anchor="middle" style="font-size:10.5px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
+    fvWrap(nameOf(ch),Math.max(13,Math.floor((CW-12)/6.3))).slice(0,3).forEach((t,k)=>{ s+=`<text x="${x+CW/2}" y="${topY+16+k*12}" text-anchor="middle" style="font-size:10.5px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
     [['Total',T(ch.id),INK,86],['via wholesale',Wc(ch.id),RED,88],['direct',D(ch.id),BLUE,90]].forEach(([lab,id,col],k)=>{
       const y=topY+66+k*17;
       s+=`<text x="${x+7}" y="${y}" style="font-size:9.5px;fill:${col}">${lab}</text>`;
@@ -849,7 +846,7 @@ function renderFlowView(c, flow){
       }
     });
   });
-  const H=gy+100;
+  const H=(flow.groups||[]).length?gy+100:topY+196;
   const coreIds=['market','industry','toWs','direct','import','export','wsDom','prvAll','comAll'];
   const allIds=[...coreIds,...flow.channels.flatMap(ch=>[T(ch.id),Wc(ch.id),D(ch.id),P(ch.id),Cm(ch.id)])];
   const missing=allIds.filter(id=>!has(id)).length;
@@ -861,7 +858,7 @@ function renderFlowView(c, flow){
   const legend=[['Published','#2F6F62'],['Derived','#B5701E'],['Team input','#5B3E96']].map(([l,col])=>`<span class="fv-dot" style="background:${col}"></span>${l}`).join(' &nbsp; ');
   return `<p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Scroll sideways to see all channels.${seasons}</p>
     <div class="fv-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
-    <p class="tv-note">Dot colour: ${legend}. <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')}</p>
+    <p class="tv-note">Dot colour: ${legend}. <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
     ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}`;
 }
 
