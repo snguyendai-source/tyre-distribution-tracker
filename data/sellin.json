@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generatedAt": "2026-10-06T11:11:30Z",
+ "generatedAt": "2026-10-06T14:05:29Z",
  "dealers": [
   {
    "id": "de-a-t-u",
@@ -2553,101 +2553,94 @@
  ],
  "trees": [
   {
-   "iso": "DE",
-   "country": "Germany",
-   "consumerPct": 95,
-   "commercialPct": 5,
-   "topConf": "Reported",
    "asOf": "2023-24",
    "basis": "% of total German tyre volume. Consumer/commercial: BRV (passenger-car and van tyres ≈95% of 2023 volume). Channel shares: BRV 2024 consumer split × 95%.",
    "channels": [
     {
+     "confidence": "Modeled",
      "id": "c1",
      "name": "Specialist trade",
-     "pct": 67.7,
-     "confidence": "Modeled",
-     "source": "BRV 2024: 71.3% of consumer sell-out × 95%",
      "outlets": [
       "Point S",
       "Vergölst",
       "Premio",
       "Euromaster"
      ],
+     "pct": 67.7,
+     "source": "BRV 2024: 71.3% of consumer sell-out × 95%",
      "split": [
       {
+       "confidence": "",
+       "feeds": [],
        "id": "s1",
        "name": "Buys direct",
-       "pct": null,
-       "confidence": "",
-       "source": "",
        "outlets": [],
-       "feeds": []
+       "pct": null,
+       "source": ""
       },
       {
+       "confidence": "",
+       "feeds": [],
        "id": "s2",
        "name": "Via wholesalers",
-       "pct": null,
-       "confidence": "",
-       "source": "",
        "outlets": [],
-       "feeds": []
+       "pct": null,
+       "source": ""
       }
      ]
     },
     {
+     "confidence": "Modeled",
      "id": "c2",
      "name": "Car dealers",
-     "pct": 18.8,
-     "confidence": "Modeled",
-     "source": "BRV 2024: 19.8% of consumer sell-out × 95%",
      "outlets": [
       "Emil Frey",
       "AVAG",
       "Hedin Group"
      ],
+     "pct": 18.8,
+     "source": "BRV 2024: 19.8% of consumer sell-out × 95%",
      "split": []
     },
     {
+     "confidence": "Modeled",
      "id": "c3",
      "name": "Fachmärkte",
-     "pct": 3.2,
-     "confidence": "Modeled",
-     "source": "BRV 2024: 3.4% of consumer sell-out × 95%",
      "outlets": [
       "A.T.U"
      ],
+     "pct": 3.2,
+     "source": "BRV 2024: 3.4% of consumer sell-out × 95%",
      "split": []
     },
     {
+     "confidence": "Modeled",
      "id": "c4",
      "name": "Online",
-     "pct": 5.2,
-     "confidence": "Modeled",
-     "source": "BRV 2024: 5.5% of consumer sell-out × 95%",
      "outlets": [
       "ReifenDirekt",
       "Tirendo",
       "Reifen24"
      ],
+     "pct": 5.2,
+     "source": "BRV 2024: 5.5% of consumer sell-out × 95%",
      "split": []
     }
-   ]
+   ],
+   "commercialPct": 5,
+   "consumerPct": 95,
+   "country": "Germany",
+   "iso": "DE",
+   "topConf": "Reported"
   },
   {
-   "iso": "FR",
-   "country": "France",
-   "consumerPct": null,
-   "commercialPct": null,
-   "topConf": "",
    "asOf": "2024",
    "basis": "% of TC4 consumer sell-out (17.21M units, Syndicat du Pneu/GfK 2024). Truck (commercial) volumes are not included: enter the consumer/commercial split to re-base to total market.",
    "channels": [
     {
+     "confidence": "Modeled",
      "id": "c1",
      "name": "Auto-centres & fast-fitters",
-     "pct": 27.9,
-     "confidence": "Modeled",
-     "source": "Syndicat du Pneu/GfK 2024 (modeled by branch count)",
      "outlets": [
       "Speedy",
       "Norauto",
@@ -2655,28 +2648,28 @@
       "Feu Vert",
       "Roady"
      ],
+     "pct": 27.9,
+     "source": "Syndicat du Pneu/GfK 2024 (modeled by branch count)",
      "split": []
     },
     {
+     "confidence": "Reported",
      "id": "c2",
      "name": "Car dealers & independent repairers",
-     "pct": 28.0,
-     "confidence": "Reported",
-     "source": "Syndicat du Pneu/GfK 2024",
      "outlets": [
       "AD",
       "Bosch Car Service",
       "Euro Repar",
       "Motrio"
      ],
+     "pct": 28,
+     "source": "Syndicat du Pneu/GfK 2024",
      "split": []
     },
     {
+     "confidence": "Modeled",
      "id": "c3",
      "name": "Tyre specialists",
-     "pct": 26.3,
-     "confidence": "Modeled",
-     "source": "Syndicat du Pneu/GfK 2024 (modeled)",
      "outlets": [
       "Point S",
       "Euromaster",
@@ -2684,41 +2677,210 @@
       "Vulco",
       "Profil+"
      ],
+     "pct": 26.3,
+     "source": "Syndicat du Pneu/GfK 2024 (modeled)",
      "split": [
       {
+       "confidence": "",
+       "feeds": [],
        "id": "s1",
        "name": "Buys direct",
-       "pct": null,
-       "confidence": "",
-       "source": "",
        "outlets": [],
-       "feeds": []
+       "pct": null,
+       "source": ""
       },
       {
+       "confidence": "",
+       "feeds": [],
        "id": "s2",
        "name": "Via wholesalers",
-       "pct": null,
-       "confidence": "",
-       "source": "",
        "outlets": [],
-       "feeds": []
+       "pct": null,
+       "source": ""
       }
      ]
     },
     {
+     "confidence": "Reported",
      "id": "c4",
      "name": "Online (pure players)",
-     "pct": 18.0,
-     "confidence": "Reported",
-     "source": "Syndicat du Pneu/GfK 2024. Trade press reports pure players at 5.6M units (about 33%): verify",
      "outlets": [
       "Allopneus",
       "123pneus",
       "Pneuwyz"
      ],
+     "pct": 18,
+     "source": "Syndicat du Pneu/GfK 2024. Trade press reports pure players at 5.6M units (about 33%): verify",
      "split": []
     }
-   ]
+   ],
+   "commercialPct": null,
+   "consumerPct": null,
+   "country": "France",
+   "iso": "FR",
+   "topConf": ""
+  }
+ ],
+ "flows": [
+  {
+   "cells": {
+    "comAll": {
+     "asOf": "2018",
+     "by": "research",
+     "source": "BRV (around 2018): fleet and leasing about 17.5% of car replacement; old figure",
+     "tier": "Derived",
+     "value": 7.897
+    },
+    "g.gA": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "BRV 2024 channel share 71.3% x consumer volume",
+     "tier": "Derived",
+     "value": 32.174
+    },
+    "g.gB": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "BRV 2024 channel share 19.8% x consumer volume",
+     "tier": "Derived",
+     "value": 8.935
+    },
+    "g.gC": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "BRV 2024 channel share 3.4% (existing dashboard data) x consumer volume",
+     "tier": "Derived",
+     "value": 1.534
+    },
+    "g.gD": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "BRV 2024 channel share 5.5% (existing dashboard data) x consumer volume",
+     "tier": "Derived",
+     "value": 2.482
+    },
+    "market": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "BRV 2024: 47.5M tyres x 95% consumer share",
+     "tier": "Derived",
+     "value": 45.125
+    }
+   },
+   "channels": [
+    {
+     "id": "sgb",
+     "name": "Tyre specialists, group branches",
+     "source": ""
+    },
+    {
+     "id": "sgm",
+     "name": "Tyre specialists, group members",
+     "source": ""
+    },
+    {
+     "id": "sin",
+     "name": "Tyre specialists, independent",
+     "source": ""
+    },
+    {
+     "id": "gg",
+     "name": "Garages, group",
+     "source": ""
+    },
+    {
+     "id": "gi",
+     "name": "Garages, independent",
+     "source": ""
+    },
+    {
+     "id": "cd",
+     "name": "Car dealers",
+     "source": ""
+    },
+    {
+     "id": "ng",
+     "name": "Non-specialist retail, group",
+     "source": ""
+    },
+    {
+     "id": "ni",
+     "name": "Non-specialist retail, independent",
+     "source": ""
+    },
+    {
+     "id": "ps",
+     "name": "Petrol stations",
+     "source": ""
+    },
+    {
+     "id": "ot",
+     "name": "Other",
+     "source": ""
+    },
+    {
+     "id": "in",
+     "name": "Internet",
+     "source": ""
+    }
+   ],
+   "country": "Germany",
+   "groups": [
+    {
+     "id": "gA",
+     "members": [
+      "sgb",
+      "sgm",
+      "sin",
+      "gg",
+      "gi"
+     ],
+     "name": "Specialist trade + independent workshops"
+    },
+    {
+     "id": "gB",
+     "members": [
+      "cd"
+     ],
+     "name": "Car dealers + brand workshops"
+    },
+    {
+     "id": "gC",
+     "members": [
+      "ng",
+      "ni",
+      "ps",
+      "ot"
+     ],
+     "name": "Fachmärkte + other retail"
+    },
+    {
+     "id": "gD",
+     "members": [
+      "in"
+     ],
+     "name": "Online"
+    }
+   ],
+   "iso": "DE",
+   "meta": {
+    "mappingNote": "Which of your 11 boxes sit inside each BRV group is my reading and should be confirmed in the editor.",
+    "seasons": {
+     "allSeason": 36,
+     "source": "BRV 2024 via AUTOHAUS, March 2025",
+     "summer": 26,
+     "winter": 38
+    }
+   },
+   "refs": [
+    "BRV 2024 replacement market: 47.5M tyres (cars, vans, trucks), 95% consumer, season mix and channel shares, as reported by AUTOHAUS and meinauto.de, March 2025",
+    "BRV managing director, around 2018: fleet and leasing is about 17.5% of car replacement",
+    "Roland Berger, 2018 (context only): about 50 German tyre wholesalers, top 7 hold about 75%",
+    "ETRMA publishes members' (pool) replacement sales; Germany-level pool and non-pool figures were not found publicly"
+   ],
+   "scope": "Consumer replacement tyres (car, van, 4x4)",
+   "unit": "million tyres",
+   "year": 2024
   }
  ]
 }
