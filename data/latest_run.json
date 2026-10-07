@@ -1,52 +1,50 @@
 {
-  "runAt": "2026-10-06T13:01:57.693887+00:00",
+  "runAt": "2026-10-07T12:56:26.329499+00:00",
   "totalNew": 5,
   "entitiesChecked": 118,
-  "entitiesWithNews": 5,
+  "entitiesWithNews": 4,
   "newItemsByEntity": {
-    "Pneuhage": [
+    "Best4Tires": [
       {
-        "title": "Bridgestone acquires German specialist tyre trade group - press.bridgestone-emea.com",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc0tXSTF3RnJWU0NRQXktOHhmejEwZEdyM2NSZzBGSDVYa3p5ekJxRXdPbHJOWlVFSzB0SzAwYmJpNVVpcllPTTdTLUFpRUlZNmpaanJRTlNFMGJkWk9ZcDNxWXFOZVprbE9GV2pCbnBpSWJZeFBSakNWYnVzYTZ6NEM0NEoyMjNqNS0wSmNXcWV3eXF5Qk5JMHBB?oc=5",
-        "pubDate": "Wed, 13 May 2020 07:00:00 GMT",
+        "title": "CMS advises shareholder of 1a Berlin-Tyre on sale to Best4Tires, a Rivean Capital portfolio company - CMS.law",
+        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPazNYM2ZVbGtIc1pZQ09wbU5nRlM5ejE3OUFQOGhnZ0VZbUNjbnRyc0JMc2FkTV9ldWNyYU1Cb2FkYzk4VHZLcmdZczhyUE9adC1IamJObDBad1dUamQyd29rZmFkUlpWS3hkM1NrVkg1X0dveGJPaEdoUnB5b2txY2NfWThMYVQ3dDB0dnhwTWM4d1RYeXlvTEpmOUFOZzBOTjRkZWV2ZXhQMXRVdFJrWGFuM2QtdHJ1Ul9KZ1VpckVaTDhkaUtld29jbmRodDhTbmxVXw?oc=5",
+        "pubDate": "Thu, 16 Jun 2022 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Emil Frey": [
+    "Hedin Group": [
       {
-        "title": "XPeng Signs Emil Frey as German Dealer in Push Toward 110 Sites - eletric-vehicles.com",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPS05BN3FyT2NIQWNPeDhoWk9vdzZ4WVNkME1lODlmSVRtOTBHbFVrSGg5SWE3UHlWS0hnSWs1SDZnMXlNdmp4VXcteDNJc1A5eW9jYVo0UWdIMlhqLXdMSklYUk5QN0V3bTZoaVRsNXRIS3FVTDIxd1E1VVRWaFRVUjhreXdQNXE0NlJibzJOYklZd0VyNG5tS0JyNTFTNTJK?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 13:48:33 GMT",
+        "title": "Hedin Mobility Group’s Year-End Report 2025: A hesitant market amid continued uncertainty - Cision News",
+        "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQY2ZCRld1QVAyMkpJU3RIdjZfVEd0QUxmUGNOMTJ1WWVkM1pwX1JuWG1EZV9SOFNQUDd4RW1LdFBSVDZiNHhweUxwS3V4NWJicjd2Rzlta29lS0U4NzJWNXFpdHZXMkhLQnU3WUZRN3RhUlRzTlRfTU9qS2J2aC1UQ3pzOVJwUDNSZVI4OWtrMlF6a2xnb0VJdFJMaXJQVE9mZlMzM0VVa21LZUtjd1ZNUy1RYXBYUjNLeUo0dHZ1dlNiQ2RMeXJxN19yb2lPQ2JNQnBFaHRzNTY5RmR5c2JILVlCdXlXRkN5dnBn?oc=5",
+        "pubDate": "Fri, 27 Feb 2026 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Hedin Automotive acquires Dutch dealer group Janssen Kerres - Cision News",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQN0d6amh6LXkyR1FxQ2tXamJqQVR2RlJOWkUyMHJPVVp2ckR2bkVGaVNlX2NtRWxyZUoxWFJFenhjUGtxaHBNUnhScmlaQVNEMjhrMG0xVHF3RFZlRUJqLXg1MDI0NHpSWFZsX1BDcFNMeENYcThVTW5zX1JOSjJoYUZiNnQ5UEpadTU0dHNFdVdVVUktemFmQVEweDZqV3dRVl9nT1F4S3BGY3JNbmxNbUFTb0FKV0IzaVhVRjFXVlNPZFk?oc=5",
+        "pubDate": "Mon, 31 Jul 2023 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Blackcircles": [
+    "Kwik Fit": [
       {
-        "title": "Entrepreneur Mike Welch resurrects fashion brand Atterley - BBC",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5XUVp3YmJ2RDJkMXptSDA0YUVNZEN1MDliSFhwMUZCLUlIMGlpM0dnMVhYWFZ6Wlp4WmdjZUhzMEI3QzV2c1FPbmRrWkR6REY5R0RBU0YtRGlIampPVS1BWG14TElFVHdjUzlMMXJOYWM?oc=5",
-        "pubDate": "Wed, 17 Feb 2016 08:00:00 GMT",
+        "title": "Pirelli brings motorsport to the Husqvarna British Masters with Kwik Fit - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdkRNbUE5T0pVd1RoOGxfMDJhcG1XdHYwM19OdnJya2dOWENSWkthLTh4TTQ5OHVUVmtTRWktdGN0WFlSQms1VWg2ampkcHNLa3VJbC1CY0FvN1NWUlJael9CYkNTNTVGNnhaMm9wYVRBSTFicVkyNGtYMUJGSlBIZVJ3R0NRSDhUWTgtM2xqUkIyblZ0b0NHX1Y4ZjJmSFZvMHpURUNtbTBNeGc?oc=5",
+        "pubDate": "Tue, 06 Oct 2026 15:53:18 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Nex Tyres": [
+    "First Stop Spain": [
       {
-        "title": "Michelin enters African tyre distribution joint venture - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbTVqc0pHcjEzRWNhYTQ3UzNFWjRmeTRLYi1Hb0ZGOFFYei1lQU5qSW9XYzMyRldtRmdCRFBBU285ck13Z2xpaFNxVllESmFLeVUtZjZSUXdyc2FTSldWR3d6VFM3WWwycmp5OUpqWHhMMllYLURIZ3VmNXlKUkFPZ3p1TF9jbkRwaDJBTS1OU1RGdVdZ?oc=5",
-        "pubDate": "Thu, 22 Mar 2018 07:00:00 GMT",
+        "title": "Bridgestone collaborates with Scoobic to provide premium tyres, maintenance and telematics for its electric vehicles - Bridgestone EMEA newsroom",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcWVCYzdKanlxY0tVaFFUUnZaUlQwRk1ZUVRPM3hMQ3Z3VGhYdURucWdpR1N2TFdCRFY2RURvbVF3c0Z5bEExRWJnNWx5NDNIQjJoeEZ1OGlHX0YzTHl4Z1pTMEV0SFA5TE9ieUtyMjg2aHg1eE84eDdZSThuVkw1N2ROZS1hRVYycmRmX3BrU1REWWlHeWh3Qg?oc=5",
+        "pubDate": "Wed, 09 Feb 2022 08:00:00 GMT",
         "country": "Spain",
         "cluster": "South-West"
-      }
-    ],
-    "Vianor": [
-      {
-        "title": "NKRKY Stock Price and Chart — OTC:NKRKY - TradingView",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSk90QnYxLUlud2JYZlUyTWtIY1l0Y2JLVlBZRmNQSFhKOHRYM19WR21TdUxTbjVQdzJTd1BKbmpya3pVQml6bFJvQ2pzbFRIN2xKRG03d0hQM1BnUy01ZHEyWmlSQ1JfdUc2MGpYM2NEQzUtSUVfTkhodWJvdDIzdjBxb0tFUGNjV0w2eHlpeUpFbTVlZE5fcjU5aHphMGRuR0hfQ21NRFkyVGNVT3p5V2l5Q3p3WVd4Q2k1dUVpMEI4X2xXekZv?oc=5",
-        "pubDate": "Wed, 26 Jan 2022 08:00:00 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
       }
     ]
   }

@@ -1,31 +1,31 @@
 {
-  "runAt": "2026-10-06T13:01:57.693887+00:00",
+  "runAt": "2026-10-07T12:56:26.329499+00:00",
   "totalNew": 3,
   "entitiesChecked": 26,
   "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Nexen Tire": [
+    "Hankook": [
       {
-        "title": "DC Kim heading Nexen Tire Europe’s combined sales organisation - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLXdKNmYxck9Ed2xwdUFZWFlyNW84bGhuRGQ0R3JnZTJTRjZQNVZPN2tWSEVrNTJkU0NQdGZmMm5aMkswdFZ2ajBWdnBucmVvb0pQbzRxNTEyS05RU0dCRmY1eExkdE5od05mRHVtZmladGNxczVfd2twRGlrTlYzQ2VJWGJCXzdDRmNPWWhyU0FDblYyVmlRYmVjSXk?oc=5",
-        "pubDate": "Tue, 06 Oct 2026 09:22:55 GMT",
+        "title": "Hankook Ventus evo Commended in the Auto Express Product Awards 2026 - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxNWmx1RTNLbVZyZTI4azZRbXRQS1VoVy14eENkdDRUdTV2YnNqVGs3YlBibHhMQ1VXYlNETGpjVjA1eERrVWczc3BrdFdXWUlWM0lpZlpwN1RjWFY0WHRLRjNNNFZ1U1hPc3dMU3Iyb2thbkpYaVFodVJ5V01OdUlMYkYxSE5QdE1kUENkVGExU3ZnYzlVaUR5RXNkbmFpd3JSQUpBNVM5bkxlcVZSMHFkQkV6TGR5d0pQNHd2d3pPX3VNS25CcXlUSnc1dURTdW83dTN0ZG1XRjBLRjJsMW1FR3JyUUFNam1FeVpkRk5jY0pTZGtZUUdqbS1yM2Q4Q1VxZHVKNzFCYmUyMHZHSmpzMlA5TFZmeVYzck41OW1UXzhybzZicTJiN0lOdng?oc=5",
+        "pubDate": "Thu, 25 Jun 2026 07:00:00 GMT",
         "category": "Korean"
       }
     ],
-    "Aeolus Tyre": [
+    "CEAT": [
       {
-        "title": "AE74 a strong addition to Aeolus tyre range, says Heuver - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNaXRNMEFjUUFkVFc0eF9MUllkV1FlMGNjQ0U3WFZWUjJHc1ltMVc5d1RiQXFrLTgtOHFwVC1xZ0FtUkZyUlBoWDlnMlkzSHJyU244aTV0UzRFdUVIbmdOWnBPSmhIVGJrNHFmMFQ3eC0xRWRKbUROOTFrUmRkVm9DX21uZ2RJcHhkVnl4bkJkcGMzX0h5?oc=5",
-        "pubDate": "Thu, 10 Dec 2015 08:00:00 GMT",
-        "category": "Chinese"
+        "title": "3 Tyre Stocks With a Strong Future Roadmap: MRF, Apollo Tyres and CEAT - Univest",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JdGNQbHU5MVB0eXByQ21wRGd0SDJ0X2dHdUlWMi1kUnRWYjVyQm80Qzl5YUQzOFIwRU51Z1dSWjNUQ3FEV3dYYkFEVTFFZ0ZZUGpLQjZISnY3VFBNaWdBSg?oc=5",
+        "pubDate": "Tue, 06 Oct 2026 06:09:02 GMT",
+        "category": "Indian"
       }
     ],
-    "Nankang Rubber": [
+    "MRF Tyres": [
       {
-        "title": "TyreSafe welcomes Nankang as new member - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNFYzVnR0bXZPVG1MTmlmbmxDZS1ZR25JYWQtdnFfcmVYdEtBTEhYbFdkMUl5eFhWTndTTl9OQ0o1VU9FVTdrX1BzZTBVSmE3OUZqUnU5YjZiel9kS2pjSGowaEszRmJuMHVWd0RZaU9RQ0Q4dlp1OWRFdW5aNndJQzRTRnJpeU5HUk1B?oc=5",
-        "pubDate": "Thu, 11 Jul 2013 07:00:00 GMT",
-        "category": "Taiwanese"
+        "title": "MRF Tyres Squad Pleased with Roma Development - thecheckeredflag.co.uk",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZk5PbjNKaVkyei1CcG9lWlBXSG8wMTVmd1cyVUU2ZzFUQzBxbEFjSWYzdGNyNHZvMVZPb3Jtdkk2cXhQcWM4S0lpdjhUQlRYQVcwdGhGeDRnZFRwWkFMZm9Md1lSOUNhSUJhN1B5ZXNCYUlwOEpENlpLSWk1ZUgyTXJZa3FlcE5MSkp1a2xlcDBOM2c?oc=5",
+        "pubDate": "Thu, 30 Jul 2020 07:00:00 GMT",
+        "category": "Indian"
       }
     ]
   }
