@@ -726,7 +726,7 @@ function collectAllEntities(country){
 }
 
 /* ---------- flow model (industry -> wholesale / direct -> channels -> customers) ---------- */
-const FV_COL={Published:'#2F6F62',Derived:'#B5701E',Team:'#5B3E96'};
+const FV_COL={Published:'#2F6F62',Derived:'#B5701E',Team:'#5B3E96',Estimate:'#2B6CB0'};
 function flowFor(countryName){
   const fs=(window.__sellin&&window.__sellin.flows)||[];
   const f=fs.find(x=>x.country===countryName&&x.channels&&x.channels.length); if(!f) return null;
@@ -855,10 +855,12 @@ function renderFlowView(c, flow){
   const seasons=sp.length?` Season mix (${esc(se.source||'')}): ${sp.join(' · ')}.`:'';
   const mk=has('market')?` Replacement market: <b>${fvFmt(val.market)}M</b>.`:'';
   const scopeNote=(flow.meta&&flow.meta.scopeNote)?` ${esc(flow.meta.scopeNote)}`:'';
-  const legend=[['Published','#2F6F62'],['Derived','#B5701E'],['Team input','#5B3E96']].map(([l,col])=>`<span class="fv-dot" style="background:${col}"></span>${l}`).join(' &nbsp; ');
+  const hasEst=Object.values(tier).includes('Estimate');
+  const legend=[['Published','#2F6F62'],['Derived','#B5701E'],...(hasEst?[['Estimate (not published)','#2B6CB0']]:[]),['Team input','#5B3E96']].map(([l,col])=>`<span class="fv-dot" style="background:${col}"></span>${l}`).join(' &nbsp; ');
+  const estNote=hasEst?' Blue dots are benchmark estimates, not published figures; the method is under Sources and notes.':'';
   return `<p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Scroll sideways to see all channels.${seasons}</p>
     <div class="fv-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
-    <p class="tv-note">Dot colour: ${legend}. <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
+    <p class="tv-note">Dot colour: ${legend}.${estNote} <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
     ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}`;
 }
 
