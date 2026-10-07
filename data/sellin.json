@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generatedAt": "2026-10-06T14:38:43Z",
+ "generatedAt": "2026-10-06T15:03:07Z",
  "dealers": [
   {
    "id": "de-a-t-u",
@@ -2892,6 +2892,776 @@
     "Unresolved conflict: trade press reports pure players at 5.6M units (+21.9%), about a third of the 17.2M. Check against the Syndicat's original release before relying on the online figure"
    ],
    "scope": "Consumer replacement tyres (car, van, 4x4; TC4)",
+   "unit": "million tyres",
+   "year": 2024
+  },
+  {
+   "cells": {
+    "ch.deal.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 12% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 3.48
+    },
+    "ch.onl.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 14% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 4.06
+    },
+    "ch.ret.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 4% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 1.16
+    },
+    "ch.spec.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 70% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 20.3
+    },
+    "market": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Estimate: 36.2M licensed cars (DfT, end-2024) x about 0.80 tyres per car per year. An older GfK/NTDA study put the market at 28.4M",
+     "tier": "Estimate",
+     "value": 29
+    }
+   },
+   "channels": [
+    {
+     "id": "spec",
+     "name": "Specialists, fast-fit and independent garages",
+     "source": ""
+    },
+    {
+     "id": "deal",
+     "name": "Car dealers / brand workshops",
+     "source": ""
+    },
+    {
+     "id": "ret",
+     "name": "Other retail (parts stores, hypermarkets, petrol)",
+     "source": ""
+    },
+    {
+     "id": "onl",
+     "name": "Online",
+     "source": ""
+    }
+   ],
+   "country": "United Kingdom",
+   "groups": [],
+   "iso": "UK",
+   "meta": {
+    "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
+    "scopeNote": "The card header's 28.4M is an older GfK/NTDA estimate; this model's 29.0M is an estimate from the number of cars on the road.",
+    "seasons": {}
+   },
+   "refs": [
+    "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
+    "UK: independent garages dominate and fast-fit networks are stable or growing, while franchised dealers have been losing share (Mintel, qualitative; the numbers are paywalled). Online is a growing but smaller channel.",
+    "Market size: Estimate: 36.2M licensed cars (DfT, end-2024) x about 0.80 tyres per car per year. An older GfK/NTDA study put the market at 28.4M"
+   ],
+   "scope": "Consumer replacement tyres (car, van, 4x4)",
+   "unit": "million tyres",
+   "year": 2024
+  },
+  {
+   "cells": {
+    "ch.deal.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 14% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 1.008
+    },
+    "ch.onl.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 13% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.936
+    },
+    "ch.ret.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 2% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.144
+    },
+    "ch.spec.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 71% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 5.112
+    },
+    "market": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Estimate: about 9.0M cars x about 0.80 tyres per car per year. VACO does not publish a unit total",
+     "tier": "Estimate",
+     "value": 7.2
+    }
+   },
+   "channels": [
+    {
+     "id": "spec",
+     "name": "Specialists, fast-fit and independent garages",
+     "source": ""
+    },
+    {
+     "id": "deal",
+     "name": "Car dealers / brand workshops",
+     "source": ""
+    },
+    {
+     "id": "ret",
+     "name": "Other retail (parts stores, hypermarkets, petrol)",
+     "source": ""
+    },
+    {
+     "id": "onl",
+     "name": "Online",
+     "source": ""
+    }
+   ],
+   "country": "Netherlands",
+   "groups": [],
+   "iso": "NL",
+   "meta": {
+    "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
+    "scopeNote": "",
+    "seasons": {}
+   },
+   "refs": [
+    "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
+    "Netherlands: chains and the Profile cooperative serve most fitting; online is relatively strong in the Benelux; dealers close to the German level.",
+    "Market size: Estimate: about 9.0M cars x about 0.80 tyres per car per year. VACO does not publish a unit total"
+   ],
+   "scope": "Consumer replacement tyres (car, van, 4x4)",
+   "unit": "million tyres",
+   "year": 2024
+  },
+  {
+   "cells": {
+    "ch.deal.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 15% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.69
+    },
+    "ch.onl.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 12% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.552
+    },
+    "ch.ret.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 2% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.092
+    },
+    "ch.spec.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 71% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 3.266
+    },
+    "market": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Estimate: about 5.8M cars x about 0.80 tyres per car per year. Traxio publishes no unit total",
+     "tier": "Estimate",
+     "value": 4.6
+    }
+   },
+   "channels": [
+    {
+     "id": "spec",
+     "name": "Specialists, fast-fit and independent garages",
+     "source": ""
+    },
+    {
+     "id": "deal",
+     "name": "Car dealers / brand workshops",
+     "source": ""
+    },
+    {
+     "id": "ret",
+     "name": "Other retail (parts stores, hypermarkets, petrol)",
+     "source": ""
+    },
+    {
+     "id": "onl",
+     "name": "Online",
+     "source": ""
+    }
+   ],
+   "country": "Belgium",
+   "groups": [],
+   "iso": "BE",
+   "meta": {
+    "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
+    "scopeNote": "",
+    "seasons": {}
+   },
+   "refs": [
+    "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
+    "Belgium: structure close to the Netherlands and France; dealer share slightly above the Dutch level.",
+    "Market size: Estimate: about 5.8M cars x about 0.80 tyres per car per year. Traxio publishes no unit total"
+   ],
+   "scope": "Consumer replacement tyres (car, van, 4x4)",
+   "unit": "million tyres",
+   "year": 2024
+  },
+  {
+   "cells": {
+    "ch.deal.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 18% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 3.791
+    },
+    "ch.onl.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 11% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 2.316
+    },
+    "ch.ret.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 3% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.632
+    },
+    "ch.spec.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 68% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 14.32
+    },
+    "market": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "MITECO producer register 2024: 17.934M passenger-car plus 3.125M van and 4x4 tyres placed on the replacement market. This is a sell-in measure used here as a proxy for sell-out",
+     "tier": "Published",
+     "value": 21.059
+    }
+   },
+   "channels": [
+    {
+     "id": "spec",
+     "name": "Specialists, fast-fit and independent garages",
+     "source": ""
+    },
+    {
+     "id": "deal",
+     "name": "Car dealers / brand workshops",
+     "source": ""
+    },
+    {
+     "id": "ret",
+     "name": "Other retail (parts stores, hypermarkets, petrol)",
+     "source": ""
+    },
+    {
+     "id": "onl",
+     "name": "Online",
+     "source": ""
+    }
+   ],
+   "country": "Spain",
+   "groups": [],
+   "iso": "ES",
+   "meta": {
+    "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
+    "scopeNote": "",
+    "seasons": {}
+   },
+   "refs": [
+    "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
+    "Spain: trade press describes a growing dealer channel and consolidation of independent agents into manufacturer and distributor programmes; online is smaller than in France or Germany.",
+    "Market size: MITECO producer register 2024: 17.934M passenger-car plus 3.125M van and 4x4 tyres placed on the replacement market. This is a sell-in measure used here as a proxy for sell-out"
+   ],
+   "scope": "Consumer replacement tyres (car, van, 4x4)",
+   "unit": "million tyres",
+   "year": 2024
+  },
+  {
+   "cells": {
+    "ch.deal.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 12% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 3.96
+    },
+    "ch.onl.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 17% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 5.61
+    },
+    "ch.ret.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 3% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.99
+    },
+    "ch.spec.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 68% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 22.44
+    },
+    "market": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Estimate: 421,645 tonnes of replacement tyres (MASE 2024) converted at an assumed average weight, which gives about 33M consumer tyres; cross-check about 0.81 tyres per car",
+     "tier": "Estimate",
+     "value": 33
+    }
+   },
+   "channels": [
+    {
+     "id": "spec",
+     "name": "Specialists, fast-fit and independent garages",
+     "source": ""
+    },
+    {
+     "id": "deal",
+     "name": "Car dealers / brand workshops",
+     "source": ""
+    },
+    {
+     "id": "ret",
+     "name": "Other retail (parts stores, hypermarkets, petrol)",
+     "source": ""
+    },
+    {
+     "id": "onl",
+     "name": "Online",
+     "source": ""
+    }
+   ],
+   "country": "Italy",
+   "groups": [],
+   "iso": "IT",
+   "meta": {
+    "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
+    "scopeNote": "The card header shows tonnes (421,645 t); this model converts that to an estimated unit count.",
+    "seasons": {}
+   },
+   "refs": [
+    "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
+    "Italy: independent tyre dealers (gommisti) dominate; online is established but trade claims of very high online volumes come from sponsored articles and were not used.",
+    "Market size: Estimate: 421,645 tonnes of replacement tyres (MASE 2024) converted at an assumed average weight, which gives about 33M consumer tyres; cross-check about 0.81 tyres per car"
+   ],
+   "scope": "Consumer replacement tyres (car, van, 4x4)",
+   "unit": "million tyres",
+   "year": 2024
+  },
+  {
+   "cells": {
+    "ch.deal.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 18% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.828
+    },
+    "ch.onl.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 7% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.322
+    },
+    "ch.ret.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 3% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.138
+    },
+    "ch.spec.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 72% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 3.312
+    },
+    "market": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Estimate: about 5.2M cars x about 0.88 tyres per car per year (winter-tyre law; German-like usage)",
+     "tier": "Estimate",
+     "value": 4.6
+    }
+   },
+   "channels": [
+    {
+     "id": "spec",
+     "name": "Specialists, fast-fit and independent garages",
+     "source": ""
+    },
+    {
+     "id": "deal",
+     "name": "Car dealers / brand workshops",
+     "source": ""
+    },
+    {
+     "id": "ret",
+     "name": "Other retail (parts stores, hypermarkets, petrol)",
+     "source": ""
+    },
+    {
+     "id": "onl",
+     "name": "Online",
+     "source": ""
+    }
+   ],
+   "country": "Austria",
+   "groups": [],
+   "iso": "AT",
+   "meta": {
+    "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
+    "scopeNote": "",
+    "seasons": {}
+   },
+   "refs": [
+    "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
+    "Austria: structure close to Germany (Forstinger and independent specialists strong, dealers about a fifth, online small).",
+    "Market size: Estimate: about 5.2M cars x about 0.88 tyres per car per year (winter-tyre law; German-like usage)"
+   ],
+   "scope": "Consumer replacement tyres (car, van, 4x4)",
+   "unit": "million tyres",
+   "year": 2024
+  },
+  {
+   "cells": {
+    "ch.deal.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 10% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.28
+    },
+    "ch.onl.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 15% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.42
+    },
+    "ch.ret.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 5% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.14
+    },
+    "ch.spec.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 70% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 1.96
+    },
+    "market": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Estimate anchored on HTA 2018: 3.1M total tyres of which 2.42M passenger-car; adjusted to a 2024 consumer figure",
+     "tier": "Estimate",
+     "value": 2.8
+    }
+   },
+   "channels": [
+    {
+     "id": "spec",
+     "name": "Specialists, fast-fit and independent garages",
+     "source": ""
+    },
+    {
+     "id": "deal",
+     "name": "Car dealers / brand workshops",
+     "source": ""
+    },
+    {
+     "id": "ret",
+     "name": "Other retail (parts stores, hypermarkets, petrol)",
+     "source": ""
+    },
+    {
+     "id": "onl",
+     "name": "Online",
+     "source": ""
+    }
+   ],
+   "country": "Hungary",
+   "groups": [],
+   "iso": "HU",
+   "meta": {
+    "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
+    "scopeNote": "The card header's 3.1M is HTA's 2018 total for all tyres; this model's 2.8M is a 2024 consumer-tyre estimate.",
+    "seasons": {}
+   },
+   "refs": [
+    "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
+    "Hungary: wholesaler-led (MARSO) with franchise networks; online growing from a low base.",
+    "Market size: Estimate anchored on HTA 2018: 3.1M total tyres of which 2.42M passenger-car; adjusted to a 2024 consumer figure"
+   ],
+   "scope": "Consumer replacement tyres (car, van, 4x4)",
+   "unit": "million tyres",
+   "year": 2024
+  },
+  {
+   "cells": {
+    "ch.deal.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 18% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.738
+    },
+    "ch.onl.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 7% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.287
+    },
+    "ch.ret.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 3% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.123
+    },
+    "ch.spec.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 72% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 2.952
+    },
+    "market": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Estimate: about 4.7M cars x about 0.88 tyres per car per year. No Swiss association total found",
+     "tier": "Estimate",
+     "value": 4.1
+    }
+   },
+   "channels": [
+    {
+     "id": "spec",
+     "name": "Specialists, fast-fit and independent garages",
+     "source": ""
+    },
+    {
+     "id": "deal",
+     "name": "Car dealers / brand workshops",
+     "source": ""
+    },
+    {
+     "id": "ret",
+     "name": "Other retail (parts stores, hypermarkets, petrol)",
+     "source": ""
+    },
+    {
+     "id": "onl",
+     "name": "Online",
+     "source": ""
+    }
+   ],
+   "country": "Switzerland",
+   "groups": [],
+   "iso": "CH",
+   "meta": {
+    "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
+    "scopeNote": "",
+    "seasons": {}
+   },
+   "refs": [
+    "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
+    "Switzerland: ESA cooperative and garage networks dominate; German-like dealer and online shares assumed.",
+    "Market size: Estimate: about 4.7M cars x about 0.88 tyres per car per year. No Swiss association total found"
+   ],
+   "scope": "Consumer replacement tyres (car, van, 4x4)",
+   "unit": "million tyres",
+   "year": 2024
+  },
+  {
+   "cells": {
+    "ch.deal.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 14% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.308
+    },
+    "ch.onl.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 14% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.308
+    },
+    "ch.ret.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 4% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.088
+    },
+    "ch.spec.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 68% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 1.496
+    },
+    "market": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Estimate: about 2.7M cars x about 0.80 tyres per car per year. No Danish unit total found",
+     "tier": "Estimate",
+     "value": 2.2
+    }
+   },
+   "channels": [
+    {
+     "id": "spec",
+     "name": "Specialists, fast-fit and independent garages",
+     "source": ""
+    },
+    {
+     "id": "deal",
+     "name": "Car dealers / brand workshops",
+     "source": ""
+    },
+    {
+     "id": "ret",
+     "name": "Other retail (parts stores, hypermarkets, petrol)",
+     "source": ""
+    },
+    {
+     "id": "onl",
+     "name": "Online",
+     "source": ""
+    }
+   ],
+   "country": "Denmark",
+   "groups": [],
+   "iso": "DK",
+   "meta": {
+    "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
+    "scopeNote": "",
+    "seasons": {}
+   },
+   "refs": [
+    "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
+    "Denmark: consolidating chain structure after Euromaster's exit; online assumed moderate.",
+    "Market size: Estimate: about 2.7M cars x about 0.80 tyres per car per year. No Danish unit total found"
+   ],
+   "scope": "Consumer replacement tyres (car, van, 4x4)",
+   "unit": "million tyres",
+   "year": 2024
+  },
+  {
+   "cells": {
+    "ch.deal.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 6% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.66
+    },
+    "ch.onl.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 32% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 3.52
+    },
+    "ch.ret.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 2% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 0.22
+    },
+    "ch.spec.tot": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Benchmark estimate: 60% of the consumer market. See notes",
+     "tier": "Estimate",
+     "value": 6.6
+    },
+    "market": {
+     "asOf": "2024",
+     "by": "research",
+     "source": "Estimate anchored on a Bridgestone statement of about 10M passenger-car, van and SUV tyres a year (older), adjusted for PZPO's reported 2024 growth",
+     "tier": "Estimate",
+     "value": 11
+    }
+   },
+   "channels": [
+    {
+     "id": "spec",
+     "name": "Specialists, fast-fit and independent garages",
+     "source": ""
+    },
+    {
+     "id": "deal",
+     "name": "Car dealers / brand workshops",
+     "source": ""
+    },
+    {
+     "id": "ret",
+     "name": "Other retail (parts stores, hypermarkets, petrol)",
+     "source": ""
+    },
+    {
+     "id": "onl",
+     "name": "Online",
+     "source": ""
+    }
+   ],
+   "country": "Poland",
+   "groups": [],
+   "iso": "PL",
+   "meta": {
+    "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
+    "scopeNote": "The card header shows a value-only market figure; this model estimates units.",
+    "seasons": {}
+   },
+   "refs": [
+    "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
+    "Poland: analysts estimate that the leading online retailer Oponeo alone holds around 25% of Polish tyre sales, so the online channel is assumed to be far larger than in Germany; dealers assumed lower given an older car fleet.",
+    "Market size: Estimate anchored on a Bridgestone statement of about 10M passenger-car, van and SUV tyres a year (older), adjusted for PZPO's reported 2024 growth"
+   ],
+   "scope": "Consumer replacement tyres (car, van, 4x4)",
    "unit": "million tyres",
    "year": 2024
   }
