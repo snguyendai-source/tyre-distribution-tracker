@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>European Tyre Distribution — Daily News Tracker</title>
+<style>
+  :root{
+    --bg: #F3F4F7; --panel: #FFFFFF; --ink: #1B2333; --ink-soft: #5B6478; --hairline: #E1E4EA;
+    --navy: #16233A; --navy-ink: #EDEFF3; --teal: #2F6F62; --teal-bg: #DCEEE7; --teal-ink: #1F6350;
+    --slate-bg: #EAECF2; --slate-ink: #3B4863; --amber-bg: #FBE6D2; --amber-ink: #9A5B1E;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; background:var(--bg); color:var(--ink); font-family:var(--sans); }
+  body{ padding-bottom:60px; }
+  header.top{ background:var(--navy); color:var(--navy-ink); padding:22px 28px 18px; }
+  header.top h1{ margin:0; font-size:20px; font-weight:700; }
+  header.top p{ margin:6px 0 0; font-size:13px; color:#AEB8CC; }
+  .built-tag{ display:inline-block; margin-top:10px; font-family:var(--mono); font-size:11px;
+    color:#8FE0C6; background: rgba(47,111,98,0.25); padding:3px 8px; border-radius:4px; }
+  main{ max-width:1080px; margin:0 auto; padding:22px 24px 10px; }
+  .card{ background:var(--panel); border:1px solid var(--hairline); border-radius:10px; padding:18px 20px; margin-bottom:16px; }
+  .card h2{ margin:0 0 10px; font-size:15px; }
+  .toolbar{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom: 6px; }
+  .stat-row{ display:flex; gap:24px; flex-wrap:wrap; margin-bottom: 4px; }
+  .stat{ }
+  .stat .num{ font-family:var(--mono); font-size:22px; font-weight:700; color:var(--teal-ink); }
+  .stat .lbl{ font-size:11px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.4px; }
+  .btn{ appearance:none; border:1px solid var(--teal); background:#fff; color:var(--teal); font-family:var(--sans);
+    font-size:12.5px; font-weight:600; padding:7px 14px; border-radius:6px; cursor:pointer; text-decoration:none; display:inline-block; }
+  .btn:hover{ background:var(--teal-bg); }
+  select, input[type=text]{ font-family:var(--sans); font-size:13px; padding:7px 9px; border:1px solid var(--hairline); border-radius:6px; background:#fff; }
+  table{ width:100%; border-collapse:collapse; font-size:12.5px; }
+  thead th{ text-align:left; padding:9px 10px; background:#F8F9FB; border-bottom:2px solid var(--hairline);
+    color:var(--ink-soft); font-size:11px; text-transform:uppercase; letter-spacing:0.3px; }
+  tbody td{ padding:9px 10px; border-bottom:1px solid var(--hairline); vertical-align:top; }
+  tbody tr:hover{ background:#FAFBFC; }
+  .mono{ font-family:var(--mono); }
+  .nf-entity-block{ margin-bottom:16px; }
+  .nf-entity-block h4{ margin:0 0 6px; font-size:13.5px; }
+  .nf-entity-block ul{ margin:0; padding-left:18px; }
+  .nf-entity-block li{ margin-bottom:4px; }
+  .nf-entity-block a{ color:var(--teal); text-decoration:none; font-weight:600; }
+  .nf-entity-block a:hover{ text-decoration:underline; }
+  .nf-meta{ color:var(--ink-soft); font-size:11.5px; }
+  .badge{ display:inline-block; padding:2px 8px; border-radius:20px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.3px; background:var(--slate-bg); color:var(--slate-ink); }
+  .skeleton{ color:var(--ink-soft); font-size:13px; padding: 8px 0; }
+  .filter-row{ display:flex; gap:10px; flex-wrap:wrap; margin: 10px 0 14px; }
+
+  /* top-level + sub segment tabs */
+  nav.toptabs{ display:flex; gap:2px; background:var(--panel); border-bottom:1px solid var(--hairline); padding:0 24px; position:sticky; top:0; z-index:50; }
+  nav.toptabs button{ appearance:none; border:none; background:transparent; font-family:var(--sans); font-size:13.5px; font-weight:700; color:var(--ink-soft); padding:14px 18px; cursor:pointer; border-bottom:3px solid transparent; }
+  nav.toptabs button:hover{ color:var(--ink); }
+  nav.toptabs button.active{ color:var(--teal); border-bottom-color:var(--teal); }
+  .toppanel{ display:none; }
+  .toppanel.active{ display:block; }
+  nav.subtabs{ display:flex; gap:8px; margin-bottom:14px; }
+  nav.subtabs button{ appearance:none; border:1px solid var(--hairline); background:#fff; color:var(--ink-soft); font-family:var(--sans); font-size:12.5px; font-weight:600; padding:6px 14px; border-radius:20px; cursor:pointer; }
+  nav.subtabs button.active{ border-color:var(--teal); color:var(--teal); background:var(--teal-bg); }
+  .subpanel{ display:none; }
+  .subpanel.active{ display:block; }
+
+  /* drill-down: country -> channel -> entity */
+  .badge.hard{ background:var(--teal-bg); color:var(--teal-ink); text-transform:none; }
+  .badge.modeled{ background:var(--amber-bg); color:var(--amber-ink); text-transform:none; }
+  .badge.none{ background:var(--slate-bg); color:var(--slate-ink); text-transform:none; }
+  .badge.estimate{ background:#EDE7F6; color:#5B3E96; text-transform:none; }
+
+  .comp-category-block{ margin-bottom:20px; }
+  .comp-category-label{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:var(--teal-ink); margin-bottom:8px; }
+  .comp-card-grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap:10px; }
+  .comp-card{ border:1px solid var(--hairline); border-radius:8px; padding:12px 14px; background:#FAFBFC; }
+  .comp-card-name{ font-size:13.5px; font-weight:700; color:var(--ink); margin-bottom:6px; }
+  .comp-card-earnings{ font-size:12px; color:var(--ink); line-height:1.4; }
+  .comp-card-earnings a{ color:var(--teal-ink); text-decoration:none; font-weight:600; }
+  .comp-card-earnings a:hover{ text-decoration:underline; }
+  .comp-card-earnings-date{ display:block; color:var(--ink-soft); font-size:11px; margin-top:2px; }
+  .comp-card-none{ font-size:11.5px; color:var(--ink-soft); font-style:italic; }
+  .comp-card-ir{ margin-top:6px; }
+  .comp-card-ir a{ font-size:11px; color:var(--ink-soft); text-decoration:none; }
+  .comp-card-ir a:hover{ color:var(--teal-ink); text-decoration:underline; }
+  .badge.caution{ background:#FDE7E7; color:#B42318; text-transform:none; }
+  details.country{ background:var(--panel); border:1px solid var(--hairline); border-radius:10px; margin-bottom:14px; overflow:hidden; }
+  details.country > summary{ list-style:none; cursor:pointer; padding:16px 20px; display:flex; align-items:center; gap:14px; }
+  details.country > summary::-webkit-details-marker{ display:none; }
+  details.country > summary::before{ content:"▸"; color:var(--teal); font-size:13px; transition:transform 0.15s ease; flex:0 0 auto; }
+  details.country[open] > summary::before{ transform:rotate(90deg); }
+  .country-name{ font-size:16px; font-weight:700; color:var(--navy); }
+  .country-meta{ font-size:12px; color:var(--ink-soft); margin-top:2px; }
+  .country-total{ margin-left:auto; text-align:right; }
+  .country-total .num2{ font-family:var(--mono); font-size:18px; font-weight:700; color:var(--teal-ink); }
+  .country-total .lbl2{ font-size:10.5px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.4px; }
+  .country-body{ padding:0 20px 18px 44px; }
+  details.channel{ border:1px solid var(--hairline); border-radius:8px; margin-bottom:10px; background:#FAFBFC; }
+  details.channel > summary{ list-style:none; cursor:pointer; padding:12px 14px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  details.channel > summary::-webkit-details-marker{ display:none; }
+  details.channel > summary::before{ content:"▸"; color:var(--ink-soft); font-size:11px; transition:transform 0.15s ease; flex:0 0 auto; }
+  details.channel[open] > summary::before{ transform:rotate(90deg); }
+  .channel-name{ font-size:13.5px; font-weight:600; flex:1; min-width:160px; }
+  .channel-bar-wrap{ flex:1; min-width:120px; max-width:220px; }
+  .channel-bar-track{ background:var(--hairline); border-radius:20px; height:7px; overflow:hidden; }
+  .channel-bar-fill{ background:var(--teal); height:100%; border-radius:20px; }
+  .channel-share{ font-family:var(--mono); font-size:12px; color:var(--ink-soft); width:44px; text-align:right; }
+  .channel-vol{ font-family:var(--mono); font-size:13.5px; font-weight:700; color:var(--ink); width:80px; text-align:right; }
+  .channel-body{ padding:2px 14px 14px 30px; }
+  .channel-source{ font-size:11px; color:var(--ink-soft); margin:-2px 0 10px; }
+  .entity-row{ display:flex; align-items:center; gap:10px; padding:6px 0; border-bottom:1px solid var(--hairline); flex-wrap:wrap; }
+  .entity-row:last-child{ border-bottom:none; }
+  .entity-name{ font-size:13px; font-weight:600; flex:1; min-width:140px; }
+  .entity-owner{ font-size:11px; color:var(--ink-soft); flex:1; min-width:100px; }
+  .entity-vol{ font-family:var(--mono); font-size:12.5px; font-weight:700; width:72px; text-align:right; }
+  .entity-vol.na{ color:var(--ink-soft); font-weight:500; }
+  .named-list{ display:flex; flex-wrap:wrap; gap:6px; margin-top:2px; }
+  .chip{ display:inline-block; padding:3px 9px; border-radius:20px; font-size:11.5px; background:var(--slate-bg); color:var(--slate-ink); }
+
+  .entity-model{ display:block; font-size:10px; color:var(--teal-ink); font-weight:600; margin-top:1px; }
+  .model-chip-block{ display:inline-flex; flex-direction:column; padding:5px 10px; border-radius:8px; background:var(--slate-bg); max-width:280px; }
+  .model-chip-block .chip-name{ font-size:11.5px; color:var(--slate-ink); font-weight:600; line-height:1.3; }
+  .model-chip-block .chip-model{ font-size:10px; color:var(--teal-ink); font-weight:600; margin-top:2px; }
+  .model-chip-block .chip-scale{ font-size:10px; color:var(--ink-soft); margin-top:2px; }
+  .model-chip-block .chip-rank{ display:inline-block; background:var(--navy); color:#fff; font-size:9px; font-weight:700; border-radius:10px; padding:1px 6px; margin-right:5px; }
+  .entity-row .entity-scale{ display:block; font-size:10px; color:var(--ink-soft); margin-top:1px; }
+  .entity-row .entity-buying-group{ display:block; font-size:10px; color:#5B3E96; margin-top:1px; font-weight:600; }
+  .model-chip-block .chip-buying-group{ font-size:10px; color:#5B3E96; margin-top:2px; font-weight:600; }
+
+  .view-toggle{ display:inline-flex; gap:2px; background:var(--slate-bg); border-radius:20px; padding:2px; margin-bottom:12px; }
+  .view-toggle button{ appearance:none; border:none; background:transparent; font-family:var(--sans); font-size:11.5px; font-weight:600; color:var(--ink-soft); padding:5px 12px; border-radius:16px; cursor:pointer; }
+  .view-toggle button.active{ background:#fff; color:var(--teal-ink); box-shadow:0 1px 2px rgba(0,0,0,0.08); }
+  .lv-intro{ font-size:12px; color:var(--ink-soft); margin:0 0 12px; line-height:1.5; }
+  .lv-layer{ border:1px solid var(--hairline); border-radius:10px; padding:12px 14px; margin-bottom:12px; background:#FAFBFC; }
+  .lv-layer h4{ margin:0 0 2px; font-size:13px; color:var(--navy); }
+  .lv-layer .lv-sub{ font-size:11.5px; color:var(--ink-soft); margin:0 0 10px; display:block; }
+  .lv-row{ display:grid; grid-template-columns: 34px 1.6fr 1fr 1.4fr; gap:10px; align-items:center; padding:8px 0; border-top:1px solid var(--hairline); }
+  .lv-row:first-of-type{ border-top:none; }
+  .lv-row .nm{ font-size:13px; font-weight:700; }
+  .lv-row .nm small{ display:block; font-weight:500; font-size:10.5px; color:var(--ink-soft); }
+  .lv-row .fig{ font-family:var(--mono); font-size:13.5px; font-weight:700; text-align:right; }
+  .lv-row .fig small{ display:block; font-family:var(--sans); font-weight:500; font-size:10px; color:var(--ink-soft); }
+  .lv-row .meta{ font-size:10.5px; color:var(--ink-soft); line-height:1.4; }
+  .lv-row .chip-rank{ justify-self:start; display:inline-block; background:var(--navy); color:#fff; font-size:9.5px; font-weight:700; border-radius:10px; padding:2px 7px; }
+  .cbadge{ display:inline-block; padding:1px 8px; border-radius:20px; font-size:10px; font-weight:700; margin-right:5px; }
+  .cbadge.c-Hard{ background:var(--teal-bg); color:var(--teal-ink); }
+  .cbadge.c-Reported{ background:#E1EBF8; color:#2B4C86; }
+  .cbadge.c-Modeled{ background:var(--amber-bg); color:var(--amber-ink); }
+  .cbadge.c-Estimate{ background:#EDE7F6; color:#5B3E96; }
+  .mixbar{ display:flex; height:8px; border-radius:20px; overflow:hidden; background:var(--hairline); margin-top:4px; }
+  .mixbar span{ display:block; height:100%; }
+  .mx-consumerRetail{ background:#2F6F62; } .mx-fleet{ background:#16233A; } .mx-carDealers{ background:#C98A3B; } .mx-online{ background:#8A6FD1; }
+  .mixlegend{ font-size:10px; color:var(--ink-soft); margin-top:2px; }
+  .mixlegend i{ display:inline-block; width:8px; height:8px; border-radius:2px; margin:0 3px 0 8px; vertical-align:middle; }
+  .lv-more{ margin-top:8px; font-size:11.5px; color:var(--ink-soft); }
+  .lv-more summary{ cursor:pointer; font-weight:600; }
+  .lv-more .named-list{ margin-top:8px; }
+  @media (max-width:760px){ .lv-row{ grid-template-columns: 30px 1fr; } .lv-row .fig{ text-align:left; } }
+  .channel-boxes{ font-size:11px; color:var(--ink-soft); margin:2px 0 8px; line-height:1.45; }
+  .fv-scroll{ overflow-x:auto; padding:4px 0 6px; }
+  .fv-dot{ display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:4px; vertical-align:middle; }
+  .fv-refs{ margin:8px 0 0; padding-left:18px; font-size:11.5px; color:var(--ink-soft); line-height:1.5; }
+  .tv-scroll{ overflow-x:auto; padding:4px 0 10px; }
+  .tv{ min-width:780px; font-size:12px; }
+  .tv-bar{ background:#EEF0F5; border-radius:6px; text-align:center; font-weight:700; padding:9px; color:var(--navy); font-size:13px; }
+  .tv-l1{ position:relative; display:flex; justify-content:center; margin-top:14px; }
+  .tv-com{ position:absolute; left:0; top:0; width:170px; text-align:center; }
+  .tv-con{ width:220px; text-align:center; }
+  .tv-box{ border-radius:8px; color:#fff; padding:9px 8px; font-weight:600; text-align:center; line-height:1.25; }
+  .tv-box.l1{ background:#5B2BA0; }
+  .tv-box.ch{ background:#2B5BD9; }
+  .tv-box.sp{ background:#4A74E8; }
+  .tv-box.gap{ background:transparent; border:1.5px dashed #2B5BD9; color:#2B5BD9; }
+  .tv-pctwrap{ margin-top:6px; text-align:center; }
+  .pct{ display:inline-block; padding:2px 12px; border-radius:20px; font-weight:700; font-size:11.5px; color:#fff; background:#9AA3B5; }
+  .pct.c-Hard{ background:#2F6F62; } .pct.c-Reported{ background:#2B4C86; } .pct.c-Modeled{ background:#B5701E; } .pct.c-Estimate{ background:#5B3E96; }
+  .tv-stem{ width:0; height:18px; border-left:1.5px solid #2B5BD9; margin:0 auto; }
+  .tv-vstem{ width:0; height:12px; border-left:1.5px solid #2B5BD9; margin:6px auto 0; }
+  .tv-cols{ display:flex; gap:10px; }
+  .tv-col{ flex:1; position:relative; padding-top:18px; text-align:center; min-width:0; }
+  .tv-col.wide{ flex:2; }
+  .tv-col::before{ content:''; position:absolute; top:0; left:-5px; right:-5px; border-top:1.5px solid #2B5BD9; }
+  .tv-col:first-child::before{ left:50%; } .tv-col:last-child::before{ right:50%; } .tv-col:only-child::before{ display:none; }
+  .tv-col::after{ content:''; position:absolute; top:0; left:50%; height:18px; border-left:1.5px solid #2B5BD9; }
+  .tv-split-row{ display:flex; gap:8px; }
+  .tv-sp{ flex:1; position:relative; padding-top:14px; min-width:0; }
+  .tv-sp::before{ content:''; position:absolute; top:0; left:-4px; right:-4px; border-top:1.5px solid #2B5BD9; }
+  .tv-sp:first-child::before{ left:50%; } .tv-sp:last-child::before{ right:50%; } .tv-sp:only-child::before{ display:none; }
+  .tv-sp::after{ content:''; position:absolute; top:0; left:50%; height:14px; border-left:1.5px solid #2B5BD9; }
+  .tv-outlets{ display:flex; flex-direction:column; gap:6px; margin-top:6px; }
+  .tv-out{ border:1.5px solid #2B5BD9; border-radius:8px; padding:6px 8px; background:#fff; color:#1B2333; font-weight:600; }
+  .tv-feeds{ margin-top:8px; font-size:10.5px; color:#2B5BD9; border:1px dashed #2B5BD9; border-radius:6px; padding:3px 6px; }
+  .tv-note{ font-size:11.5px; color:var(--ink-soft); margin:8px 0 0; line-height:1.5; }
+  .tv-legend{ font-size:11px; color:var(--ink-soft); margin-top:6px; }
+  .tv-legend .pct{ font-size:10px; padding:1px 8px; margin:0 4px 0 8px; }
+  .territory-view-block{ display:none; }
+  .territory-view-block.active{ display:block; }
+  .terr-region-card{ border:1px solid var(--hairline); border-radius:8px; padding:10px 14px; margin-bottom:8px; background:#FAFBFC; }
+  .terr-region-card h4{ margin:0 0 6px; font-size:12.5px; color:var(--navy); }
+  .terr-entity-chip{ display:inline-block; padding:3px 9px; margin:0 4px 4px 0; border-radius:20px; font-size:11px; background:var(--teal-bg); color:var(--teal-ink); font-weight:600; }
+  .terr-nationwide-card{ border:1px solid #D8C089; background:#FFFBF2; border-radius:8px; padding:10px 14px; margin-bottom:10px; }
+  .terr-nationwide-card h4{ margin:0 0 6px; font-size:12.5px; color:var(--amber-ink); }
+  .terr-empty-note{ font-size:12px; color:var(--ink-soft); padding:8px 0; }
+  .market-access-note{ background:#FFF8EC; border:1px solid #F0DDB8; border-radius:8px; padding:10px 14px; margin-bottom:12px; font-size:12.5px; color:var(--ink); line-height:1.5; }
+  .market-access-note .label{ font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:#9A6B1E; display:block; margin-bottom:3px; }
+  .note-box{ background:#F3F7F6; border:1px solid var(--teal-bg); border-radius:8px; padding:12px 14px; font-size:12.5px; color:var(--ink); line-height:1.55; margin-bottom:16px; }
+  /* By channel layers (wholesale -> direct -> channels), mirrors the flow model */
+  .layer-block{ border:1px solid var(--hairline); border-radius:10px; padding:12px 14px; margin-bottom:12px; background:#fff; scroll-margin-top:12px; }
+  .layer-ws{ background:#FFF8EC; border-color:#F0DDB8; }
+  .layer-dir{ background:#EEF3FC; border-color:#D3DEF3; }
+  .layer-head{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .layer-title{ font-size:13.5px; font-weight:700; flex:1; min-width:200px; }
+  .layer-vol{ display:flex; align-items:center; gap:6px; }
+  .layer-num{ font-family:var(--mono); font-size:17px; font-weight:700; color:var(--ink); }
+  .tierb{ display:inline-block; font-size:10px; font-weight:700; padding:1px 7px; border-radius:20px; border:1px solid; }
+  .needs{ font-size:12px; color:#8A93A8; border:1px dashed #B8BFD0; border-radius:20px; padding:1px 10px; background:#fff; }
+  .layer-sub{ font-size:11.5px; color:var(--ink-soft); margin:6px 0 8px; line-height:1.5; }
+  .layer-formula{ font-family:var(--mono); font-size:11px; color:var(--ink-soft); margin:6px 0 2px; }
+  .layer-empty{ font-size:12px; color:var(--ink-soft); margin:4px 0 0; }
+  .layer-cap{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:var(--teal-ink); margin:18px 0 8px; }
+  .ws-cap{ font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.3px; color:#9A6B1E; margin:10px 0 6px; }
+  .ws-group{ border:1px solid #E8D5AE; border-radius:10px; padding:6px; background:#FFFBF3; display:flex; flex-direction:column; gap:6px; align-items:flex-start; }
+  .ws-kids{ display:flex; flex-wrap:wrap; gap:6px; padding-left:12px; border-left:3px solid #E8C98A; margin-left:6px; }
+  .ws-kids-cap{ flex-basis:100%; font-size:10px; color:var(--ink-soft); font-weight:600; }
+  .layer-ws .named-list{ align-items:flex-start; }
+  .layer-ws .model-chip-block{ background:#fff; border:1px solid #EBDDBF; }
+  .model-chip-block.is-bg .chip-model, .entity-model.bg{ color:#5B3E96; }
+  .model-chip-block.is-mo .chip-model{ color:#9A5B1E; }
+  button.jump{ appearance:none; border:none; background:none; padding:0; font:inherit; font-size:11px; font-weight:600; color:var(--teal); cursor:pointer; text-decoration:underline; text-underline-offset:2px; }
+  button.jump:hover{ color:var(--teal-ink); }
+  .channel-split{ flex-basis:100%; padding-left:23px; margin-top:-4px; font-size:11.5px; color:var(--ink-soft); display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .channel-split b{ font-family:var(--mono); }
+  .channel-split .ch-ws{ color:#C0392B; } .channel-split .ch-dir{ color:#2B5BD9; } .channel-split .ch-miss{ color:#8A93A8; }
+  .channel-split button.jump{ margin-left:auto; }
+  .fv-jump{ cursor:pointer; }
+  .fv-jump:hover rect{ stroke-width:2.2; }
+  @keyframes jumpflash{ 0%,70%{ box-shadow:0 0 0 3px rgba(232,161,0,.7); } 100%{ box-shadow:0 0 0 0 rgba(232,161,0,0); } }
+  @keyframes jumpflashsvg{ 0%,70%{ stroke:#E8A100; stroke-width:4; } }
+  .jump-flash{ animation:jumpflash 2.4s ease-out; }
+  g.jump-flash{ animation:none; }
+  g.jump-flash rect{ animation:jumpflashsvg 2.4s ease-out; }
+  .dist-toolbar{ display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
+  .legend{ display:flex; gap:14px; flex-wrap:wrap; font-size:11.5px; color:var(--ink-soft); }
+  .legend span{ display:inline-flex; align-items:center; gap:5px; }
+  .swatch{ width:9px; height:9px; border-radius:3px; display:inline-block; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <h1>European Tyre Distribution — Daily News Tracker</h1>
+  <p>118 named entities across 11 countries, checked automatically every day.</p>
+  <span class="built-tag" id="built-tag">loading…</span>
+</header>
+
+<nav class="toptabs">
+  <button data-top="news" class="active">News tracker</button>
+  <button data-top="dist">Distribution &amp; sell-out</button>
+  <button data-top="comp">Competitors</button>
+</nav>
+
+<main>
+<div class="toppanel active" id="top-news">
+  <div class="card">
+    <div class="toolbar">
+      <h2 style="margin:0;">Latest check</h2>
+      <a class="btn" href="https://github.com/snguyendai-source/tyre-distribution-tracker/actions/workflows/daily-news-check.yml" id="run-link" target="_blank" rel="noopener">Run manually on GitHub →</a>
+    </div>
+    <div class="stat-row" id="stat-row">
+      <div class="stat"><div class="num" id="stat-lastrun">—</div><div class="lbl">Last checked (UTC)</div></div>
+      <div class="stat"><div class="num" id="stat-new">—</div><div class="lbl">New mentions</div></div>
+      <div class="stat"><div class="num" id="stat-entities">—</div><div class="lbl">Entities with news</div></div>
+      <div class="stat"><div class="num" id="stat-checked">—</div><div class="lbl">Entities checked</div></div>
+    </div>
+    <div class="filter-row">
+      <input type="text" id="f-search" placeholder="Filter by entity or country…" style="flex:1; min-width:200px;">
+    </div>
+    <div id="nf-results"><p class="skeleton">Loading…</p></div>
+  </div>
+
+  <div class="card">
+    <h2>Run history</h2>
+    <table>
+      <thead><tr><th>Run (UTC)</th><th>New mentions</th><th>Entities with news</th></tr></thead>
+      <tbody id="history-tbody"><tr><td colspan="3" class="skeleton">Loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="toolbar">
+      <h2 style="margin:0;">Article archive</h2>
+      <span style="font-size:11.5px; color:var(--ink-soft);" id="archive-count"></span>
+    </div>
+    <p style="font-size:12.5px; color:var(--ink-soft); margin:0 0 10px;">Every article this tracker has ever found, kept permanently (unlike "Latest check" above, which only shows the most recent run). Filter by the article's own published year, or search by entity/country.</p>
+    <div class="filter-row">
+      <select id="archive-year"><option value="">All years</option></select>
+      <select id="archive-month">
+        <option value="">All months</option>
+        <option value="1">January</option><option value="2">February</option><option value="3">March</option>
+        <option value="4">April</option><option value="5">May</option><option value="6">June</option>
+        <option value="7">July</option><option value="8">August</option><option value="9">September</option>
+        <option value="10">October</option><option value="11">November</option><option value="12">December</option>
+      </select>
+      <input type="text" id="archive-search" placeholder="Filter by entity or country…" style="flex:1; min-width:200px;">
+    </div>
+    <div id="archive-results"><p class="skeleton">Loading…</p></div>
+  </div>
+
+  <div class="card">
+    <h2>Monitored entities</h2>
+    <p style="font-size:12.5px; color:var(--ink-soft); margin:0 0 10px;">The full list this tracker checks daily. Edit <code>data/entities.json</code> in the repo to add or remove entities — the next scheduled run picks up the change automatically.</p>
+    <div id="entities-list"></div>
+  </div>
+</div>
+
+<div class="toppanel" id="top-dist">
+  <div class="dist-toolbar">
+    <nav class="subtabs">
+      <button data-sub="pc" class="active">Passenger car</button>
+      <button data-sub="tbr">Truck &amp; bus (TBR)</button>
+    </nav>
+    <div class="legend">
+      <span><span class="swatch" style="background:var(--teal-ink)"></span> Hard % / published</span>
+      <span><span class="swatch" style="background:var(--amber-ink)"></span> Modeled</span>
+      <span><span class="swatch" style="background:#5B3E96"></span> Estimate</span>
+      <span><span class="swatch" style="background:var(--slate-ink)"></span> Named only</span>
+    </div>
+  </div>
+  <div class="note-box">Country → channel → named entity, with estimated sell-out volume where a real source publishes one. Where it doesn't, entities are listed without a forced number — see the color legend above for what's sourced vs. modeled vs. a gap.</div>
+  <div class="subpanel active" id="sub-pc"><p class="skeleton">Loading…</p></div>
+  <div class="subpanel" id="sub-tbr"><p class="skeleton">Loading…</p></div>
+</div>
+
+<div class="toppanel" id="top-comp">
+  <div class="note-box">Tracks the tyre <b>manufacturers</b> competing for European sell-in — Michelin, Continental, Bridgestone, Goodyear, Pirelli, the major Korean/Japanese/Chinese/Indian makers — checked daily the same way as the distribution entities, kept in a separate archive.</div>
+  <div class="card">
+    <div class="toolbar">
+      <h2 style="margin:0;">Latest check</h2>
+      <a class="btn" href="https://github.com/snguyendai-source/tyre-distribution-tracker/actions/workflows/daily-news-check.yml" target="_blank" rel="noopener">Run manually on GitHub →</a>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="num" id="comp-stat-lastrun">—</div><div class="lbl">Last checked (UTC)</div></div>
+      <div class="stat"><div class="num" id="comp-stat-new">—</div><div class="lbl">New mentions</div></div>
+      <div class="stat"><div class="num" id="comp-stat-entities">—</div><div class="lbl">Makers with news</div></div>
+      <div class="stat"><div class="num" id="comp-stat-checked">—</div><div class="lbl">Makers checked</div></div>
+    </div>
+    <div class="filter-row">
+      <input type="text" id="comp-f-search" placeholder="Filter by maker…" style="flex:1; min-width:200px;">
+    </div>
+    <div id="comp-nf-results"><p class="skeleton">Loading…</p></div>
+  </div>
+
+  <div class="card">
+    <h2>Run history</h2>
+    <table>
+      <thead><tr><th>Run (UTC)</th><th>New mentions</th><th>Makers with news</th></tr></thead>
+      <tbody id="comp-history-tbody"><tr><td colspan="3" class="skeleton">Loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="toolbar">
+      <h2 style="margin:0;">Article archive</h2>
+      <span style="font-size:11.5px; color:var(--ink-soft);" id="comp-archive-count"></span>
+    </div>
+    <p style="font-size:12.5px; color:var(--ink-soft); margin:0 0 10px;">Every competitor article ever found, kept permanently. Filter by the article's own published year, or search by maker/category.</p>
+    <div class="filter-row">
+      <select id="comp-archive-year"><option value="">All years</option></select>
+      <select id="comp-archive-month">
+        <option value="">All months</option>
+        <option value="1">January</option><option value="2">February</option><option value="3">March</option>
+        <option value="4">April</option><option value="5">May</option><option value="6">June</option>
+        <option value="7">July</option><option value="8">August</option><option value="9">September</option>
+        <option value="10">October</option><option value="11">November</option><option value="12">December</option>
+      </select>
+      <input type="text" id="comp-archive-search" placeholder="Filter by maker or category…" style="flex:1; min-width:200px;">
+    </div>
+    <div id="comp-archive-results"><p class="skeleton">Loading…</p></div>
+  </div>
+
+  <div class="card">
+    <h2>Monitored competitors</h2>
+    <p style="font-size:12.5px; color:var(--ink-soft); margin:0 0 10px;">Edit <code>data/competitors.json</code> in the repo to add or remove makers — the next scheduled run picks up the change automatically.</p>
+    <div id="comp-entities-list"></div>
+  </div>
+</div>
+</main>
+
+
+<script>
+function escapeHtml(str){
+  if(str === null || str === undefined) return '';
+  return String(str).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+async function loadJSON(path){
+  const res = await fetch(path + '?t=' + Date.now()); // cache-bust so Pages doesn't serve a stale copy
+  if(!res.ok) throw new Error('failed to load ' + path);
+  return res.json();
+}
+
+function renderLatestRun(run){
+  document.getElementById('stat-lastrun').textContent = run ? new Date(run.runAt).toLocaleString('en-GB', {timeZone:'UTC'}) + ' UTC' : '—';
+  document.getElementById('stat-new').textContent = run ? run.totalNew : '—';
+  document.getElementById('stat-entities').textContent = run ? run.entitiesWithNews : '—';
+  document.getElementById('stat-checked').textContent = run ? run.entitiesChecked : '—';
+
+  const results = document.getElementById('nf-results');
+  if(!run){
+    results.innerHTML = '<p class="skeleton">No runs yet — the first scheduled run (or a manual trigger via the button above) will populate this.</p>';
+    return;
+  }
+  const entries = Object.entries(run.newItemsByEntity || {});
+  window.__allEntries = entries;
+  renderFilteredResults('');
+}
+
+function renderFilteredResults(filterText){
+  const entries = window.__allEntries || [];
+  const results = document.getElementById('nf-results');
+  const q = filterText.trim().toLowerCase();
+  const filtered = q
+    ? entries.filter(([name, items]) => {
+        const hay = (name + ' ' + items.map(i=>i.country||'').join(' ')).toLowerCase();
+        return hay.includes(q);
+      })
+    : entries;
+
+  results.innerHTML = filtered.length ? filtered.map(([entity, items])=>`
+    <div class="nf-entity-block">
+      <h4>${escapeHtml(entity)} <span class="badge">${escapeHtml(items[0].country || '')}</span></h4>
+      <ul>
+        ${items.map(it=>`<li><a href="${it.link}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a><br><span class="nf-meta">${escapeHtml(it.pubDate||'')}</span></li>`).join('')}
+      </ul>
+    </div>
+  `).join('') : '<p style="color:var(--ink-soft);">No matching entities with new mentions.</p>';
+}
+document.getElementById('f-search').addEventListener('input', (e)=> renderFilteredResults(e.target.value));
+
+function renderHistory(history){
+  const tbody = document.getElementById('history-tbody');
+  if(!history || !history.length){
+    tbody.innerHTML = '<tr><td colspan="3" class="skeleton">No history yet.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = history.map(h => `
+    <tr>
+      <td class="mono">${new Date(h.runAt).toLocaleString('en-GB', {timeZone:'UTC'})} UTC</td>
+      <td class="mono">${h.totalNew}</td>
+      <td class="mono">${h.entitiesWithNews}</td>
+    </tr>
+  `).join('');
+}
+
+function renderEntitiesList(entities){
+  const container = document.getElementById('entities-list');
+  const byCluster = {};
+  entities.forEach(e => {
+    if(!byCluster[e.cluster]) byCluster[e.cluster] = [];
+    byCluster[e.cluster].push(e);
+  });
+  container.innerHTML = Object.entries(byCluster).map(([cluster, list]) => `
+    <div style="margin-bottom:12px;">
+      <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:var(--teal-ink); margin-bottom:6px;">${escapeHtml(cluster)} (${list.length})</div>
+      <div style="display:flex; flex-wrap:wrap; gap:6px;">
+        ${list.map(e => `<span class="badge" style="background:var(--slate-bg); color:var(--slate-ink); text-transform:none; font-weight:600;">${escapeHtml(e.name)}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+async function init(){
+  document.getElementById('built-tag').textContent = 'checked daily via GitHub Actions · data lives in this repo';
+  try{
+    const [latestRun, history, entities] = await Promise.all([
+      loadJSON('data/latest_run.json'),
+      loadJSON('data/history.json'),
+      loadJSON('data/entities.json'),
+    ]);
+    renderLatestRun(latestRun);
+    renderHistory(history);
+    renderEntitiesList(entities);
+  }catch(e){
+    document.getElementById('nf-results').innerHTML = '<p class="skeleton">Could not load data files. If this is right after the first deploy, the first Action run has not completed yet.</p>';
+    console.error(e);
+  }
+
+  try{
+    const dist = await loadJSON('data/distribution.json');
+    window.__distData = dist;
+    try{ window.__sellin = await loadJSON('data/sellin.json'); }catch(e){ window.__sellin = null; } // optional file
+    document.getElementById('sub-pc').innerHTML = renderDistSegment(dist.pc, 'PCR');
+    document.getElementById('sub-tbr').innerHTML = renderDistSegment(dist.tbr, 'TBR');
+  }catch(e){
+    document.getElementById('sub-pc').innerHTML = '<p class="skeleton">Could not load distribution data.</p>';
+    console.error(e);
+  }
+
+  try{
+    const archive = await loadJSON('data/archive.json');
+    window.__archiveData = archive || [];
+    populateArchiveYearOptions(window.__archiveData);
+    renderArchive();
+  }catch(e){
+    document.getElementById('archive-results').innerHTML = '<p class="skeleton">Could not load the archive yet — it is created after the first run.</p>';
+    console.error(e);
+  }
+
+  try{
+    const [compLatest, compHistory, competitors, compArchive, compEarnings] = await Promise.all([
+      loadJSON('data/competitor_latest_run.json'),
+      loadJSON('data/competitor_history.json'),
+      loadJSON('data/competitors.json'),
+      loadJSON('data/competitor_archive.json'),
+      loadJSON('data/competitor_earnings.json').catch(() => ({})), // new file, may not exist yet on first load
+    ]);
+    window.__compEarnings = compEarnings || {};
+    renderCompEntitiesList(competitors); // builds window.__compIRLinks -- must run before the calls below
+    renderCompLatestRun(compLatest);
+    renderCompHistory(compHistory);
+    window.__compArchiveData = compArchive || [];
+    populateCompArchiveYearOptions(window.__compArchiveData);
+    renderCompArchive();
+  }catch(e){
+    document.getElementById('comp-nf-results').innerHTML = '<p class="skeleton">Could not load competitor data. If this is right after the first deploy, the first Action run has not completed yet.</p>';
+    console.error(e);
+  }
+}
+init();
+
+// Distribution tab: channel/territory view toggle (event delegation since these
+// buttons are generated dynamically per-country inside renderDistSegment).
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.view-toggle button');
+  if(!btn) return;
+  const idx = btn.closest('.view-toggle').dataset.countryIdx;
+  const view = btn.dataset.view;
+  const toggle = btn.closest('.view-toggle');
+  toggle.querySelectorAll('button').forEach(b => b.classList.toggle('active', b === btn));
+  const country = btn.closest('details.country');
+  country.querySelectorAll(`.territory-view-block[data-country-idx="${idx}"]`).forEach(panel => {
+    panel.classList.toggle('active', panel.dataset.viewPanel === view);
+  });
+});
+
+// Click-through between "By channel" and "Flow model": same boxes, both directions.
+function jumpTo(countryEl, idx, view, key){
+  const btn = countryEl.querySelector(`.view-toggle[data-country-idx="${idx}"] button[data-view="${view}"]`);
+  if(btn && !btn.classList.contains('active')) btn.click();
+  const panel = countryEl.querySelector(`.territory-view-block[data-country-idx="${idx}"][data-view-panel="${view}"]`);
+  if(!panel) return;
+  const all = Array.from(panel.querySelectorAll('[data-jump-target]'));
+  const t = all.find(n => n.getAttribute('data-jump-target') === key) || (view==='channel' ? all.find(n => n.getAttribute('data-jump-target')==='ws') : null);
+  if(!t) return;
+  if(t.tagName === 'DETAILS') t.open = true;
+  requestAnimationFrame(() => {
+    try{ t.scrollIntoView({behavior:'smooth', block:'center', inline:'center'}); }catch(_){}
+    t.classList.add('jump-flash');
+    setTimeout(() => t.classList.remove('jump-flash'), 2400);
+  });
+}
+document.addEventListener('click', (e) => {
+  const src = e.target.closest('[data-jump], [data-goto]');
+  if(!src) return;
+  const panel = src.closest('.territory-view-block'); if(!panel) return;
+  const countryEl = src.closest('details.country'); if(!countryEl) return;
+  const idx = panel.dataset.countryIdx;
+  if(src.hasAttribute('data-goto')){ e.preventDefault(); jumpTo(countryEl, idx, src.dataset.goto, src.dataset.focus); }
+  else jumpTo(countryEl, idx, 'channel', src.dataset.jump);
+});
+
+// ---------- article archive: year + month + entity/country filtering ----------
+function parseArticleYear(pubDate){
+  if(!pubDate) return null;
+  const d = new Date(pubDate);
+  return isNaN(d.getTime()) ? null : d.getFullYear();
+}
+function parseArticleMonth(pubDate){
+  // returns 1-12 (matches the <option value> in the month dropdowns), or null if undated
+  if(!pubDate) return null;
+  const d = new Date(pubDate);
+  return isNaN(d.getTime()) ? null : d.getMonth() + 1;
+}
+
+function populateArchiveYearOptions(archive){
+  const years = new Set();
+  archive.forEach(a => { const y = parseArticleYear(a.pubDate); if(y) years.add(y); });
+  const sorted = Array.from(years).sort((a,b) => b - a);
+  const sel = document.getElementById('archive-year');
+  sorted.forEach(y => {
+    const opt = document.createElement('option');
+    opt.value = String(y);
+    opt.textContent = String(y);
+    sel.appendChild(opt);
+  });
+}
+
+function renderArchive(){
+  const archive = window.__archiveData || [];
+  const yearFilter = document.getElementById('archive-year').value;
+  const monthFilter = document.getElementById('archive-month').value;
+  const q = document.getElementById('archive-search').value.trim().toLowerCase();
+
+  let filtered = archive;
+  if(yearFilter){
+    filtered = filtered.filter(a => String(parseArticleYear(a.pubDate)) === yearFilter);
+  }
+  if(monthFilter){
+    filtered = filtered.filter(a => String(parseArticleMonth(a.pubDate)) === monthFilter);
+  }
+  if(q){
+    filtered = filtered.filter(a => (a.entity + ' ' + (a.country||'')).toLowerCase().includes(q));
+  }
+  // newest published first; undated articles sort last
+  filtered = [...filtered].sort((a,b) => {
+    const da = new Date(a.pubDate).getTime() || 0;
+    const db = new Date(b.pubDate).getTime() || 0;
+    return db - da;
+  });
+
+  document.getElementById('archive-count').textContent = `${filtered.length} of ${archive.length} article(s)`;
+
+  const results = document.getElementById('archive-results');
+  if(!archive.length){
+    results.innerHTML = '<p class="skeleton">No articles archived yet — this fills in as the daily check finds new mentions.</p>';
+    return;
+  }
+  if(!filtered.length){
+    results.innerHTML = '<p style="color:var(--ink-soft);">No articles match that filter.</p>';
+    return;
+  }
+  // group by entity for readability, same visual pattern as "Latest check"
+  const byEntity = {};
+  filtered.forEach(a => { (byEntity[a.entity] = byEntity[a.entity] || []).push(a); });
+
+  results.innerHTML = Object.entries(byEntity).map(([entity, items]) => `
+    <div class="nf-entity-block">
+      <h4>${escapeHtml(entity)} <span class="badge">${escapeHtml(items[0].country || '')}</span></h4>
+      <ul>
+        ${items.map(it => `<li><a href="${it.link}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a><br><span class="nf-meta">${escapeHtml(it.pubDate||'undated')}</span></li>`).join('')}
+      </ul>
+    </div>
+  `).join('');
+}
+document.getElementById('archive-year').addEventListener('change', renderArchive);
+document.getElementById('archive-month').addEventListener('change', renderArchive);
+document.getElementById('archive-search').addEventListener('input', renderArchive);
+
+// ---------- top-level tabs ----------
+document.querySelectorAll('nav.toptabs button').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('nav.toptabs button').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.toppanel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('top-'+btn.dataset.top).classList.add('active');
+  });
+});
+document.querySelectorAll('nav.subtabs button').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('nav.subtabs button').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.subpanel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('sub-'+btn.dataset.sub).classList.add('active');
+  });
+});
+
+// ---------- distribution & sell-out rendering ----------
+function badgeHtml(cls, label){
+  if(!cls) return '';
+  const map = {hard:'Hard %', modeled:'Modeled', estimate:'Estimate', none:'Named only', caution:label||'Note'};
+  return `<span class="badge ${cls}">${escapeHtml(map[cls] || label || cls)}</span>`;
+}
+
+function sortByScale(list){
+  // Entities with known scale data first (largest first), everything else after
+  // in its original order. Different metrics (branches vs revenue vs members)
+  // aren't strictly comparable -- this is a rough size proxy, not a rigorous
+  // cross-metric ranking, which is why the actual metric label always displays
+  // alongside the number rather than just a bare rank.
+  const withScale = [];
+  const withoutScale = [];
+  list.forEach(e => (e.scale && typeof e.scale.value === 'number' ? withScale : withoutScale).push(e));
+  withScale.sort((a,b) => b.scale.value - a.scale.value);
+  return withScale.concat(withoutScale);
+}
+
+/* ---------- By channel: same layers as the flow model ----------
+   wholesale (who the wholesalers are) -> direct (number only) -> channels (retail only) */
+function isWholesaleModel(m){ return /wholesal|distributor|importer/i.test(m||'') && !/buying|cooperative/i.test(m||''); }
+function isBuyingGroupModel(m){ return /buying|cooperative/i.test(m||''); }
+function isMfrOwnedModel(m){ return /manufacturer-owned/i.test(m||''); }
+const TIER_LABEL={Published:'Published',Derived:'Derived',Estimate:'Estimate',Team:'Team input'};
+function tierPill(t){ const col=FV_COL[t]||'#777'; return `<span class="tierb" style="background:${col}1A;color:${col};border-color:${col}66">${escapeHtml(TIER_LABEL[t]||t||'')}</span>`; }
+function entChip(e, rank){
+  const sub=[e.owner,e.volume].filter(Boolean).map(escapeHtml).join(' · ');
+  return `<span class="model-chip-block${isBuyingGroupModel(e.model)?' is-bg':''}${isMfrOwnedModel(e.model)?' is-mo':''}"><span class="chip-name">${rank?`<span class="chip-rank">#${rank}</span>`:''}${escapeHtml(e.name)}</span><span class="chip-model">${escapeHtml(e.model||'')}</span>${sub?`<span class="chip-scale">${sub}</span>`:''}${e.scale?`<span class="chip-scale">${escapeHtml(e.scale.label)}</span>`:''}${e.buyingGroup?`<span class="chip-buying-group">🔗 ${escapeHtml(e.buyingGroup)}</span>`:''}</span>`;
+}
+function chipListHtml(list){
+  const sorted=sortByScale(list);
+  return `<div class="named-list">${sorted.map((e,i)=>entChip(e,e.scale?i+1:0)).join('')}</div>`;
+}
+function wholesaleListHtml(list){
+  if(!list.length) return '<p class="layer-empty">No wholesalers named yet for this market.</p>';
+  const nm=x=>String(x||'').trim().toLowerCase(), PAR=/\s*\(([^()]+)\)\s*$/;
+  const byName=new Map(list.map(e=>[nm(e.name),e]));
+  const parentOf=e=>{ const m=PAR.exec(e.name||''); const p=m&&byName.get(nm(m[1])); return (p&&p!==e)?p:null; };
+  const kids=new Map(), top=[];
+  list.forEach(e=>{ const p=parentOf(e); if(p&&!parentOf(p)){ if(!kids.has(p)) kids.set(p,[]); kids.get(p).push(e); } else top.push(e); });
+  const part=arr=>`<div class="named-list">${sortByScale(arr).map((e,i)=>{
+    const chip=entChip(e,e.scale?i+1:0), k=kids.get(e);
+    if(!k) return chip;
+    return `<div class="ws-group">${chip}<div class="ws-kids"><span class="ws-kids-cap">${k.length} subsidiar${k.length>1?'ies':'y'}</span>${sortByScale(k).map(x=>entChip({...x,name:x.name.replace(PAR,'')})).join('')}</div></div>`;
+  }).join('')}</div>`;
+  const indep=top.filter(e=>!isMfrOwnedModel(e.model)), mo=top.filter(e=>isMfrOwnedModel(e.model));
+  return (indep.length?`<div class="ws-cap">Wholesalers and distributors</div>${part(indep)}`:'')+(mo.length?`<div class="ws-cap">Manufacturer-owned wholesalers</div>${part(mo)}`:'');
+}
+function renderChannelLayers(c, flow, ci){
+  const esc=escapeHtml, R=flow?flowSolve(flow):null, val=R?R.val:{}, tier=R?R.tier:{}, has=id=>id in val;
+  const volHtml=id=>has(id)?`<span class="layer-num">${fvFmt(val[id])}M</span>${tierPill(tier[id])}`:'<span class="needs">needs input</span>';
+  const goto=(focus,label)=>flow?`<button class="jump" data-goto="flow" data-focus="${esc(focus)}">${label||'see in flow model ›'}</button>`:'';
+  const allEnts=[...(c.channels||[]).flatMap(ch=>ch.entities||[]), ...(c.flatEntities||[])];
+  const wsEnts=allEnts.filter(e=>isWholesaleModel(e.model));
+  const hasCh=!!(c.channels&&c.channels.length);
+  let h='';
+  if(flow) h+=`<p class="lv-intro">Same layers as the flow model. Tyres reach the channels either <b style="color:#C0392B">through wholesale</b> or <b style="color:#2B5BD9">direct from the manufacturers</b>. Wholesalers are listed once, in the wholesale layer, and not repeated in the channels below.</p>`;
+  if(c.note || (c.flatEntities && c.flatEntities.length)){
+    h+=`<div class="note-box" style="margin-bottom:10px;">${badgeHtml(c.noteBadge)} ${esc((c.note||'').replace(/^(Gap|Hard|Value only|Not units|Outdated|Caveat)\s*/,''))}</div>`;
+  }
+  // --- layer 1: wholesale ---
+  const formula=(flow&&has('wsDom')&&has('toWs')&&has('import')&&has('export'))
+    ? `<div class="layer-formula">${fvFmt(val.toWs)}M sold to wholesale by the industry (ETRMA pool) + ${fvFmt(val.import)}M imports (non-pool) − ${fvFmt(val.export)}M export = ${fvFmt(val.wsDom)}M</div>` : '';
+  if(flow || wsEnts.length) h+=`<div class="layer-block layer-ws" data-jump-target="ws">
+    <div class="layer-head"><div class="layer-title">Wholesale sold in ${esc(c.country)}</div>${flow?`<div class="layer-vol">${volHtml('wsDom')}</div>`:''}${goto('ws')}</div>
+    ${formula}
+    <p class="layer-sub">Distributors that buy from the manufacturers and importers and resell to the channels below${wsEnts.length?` (${wsEnts.length} named)`:''}.</p>
+    ${wholesaleListHtml(wsEnts)}
+  </div>`;
+  // --- layer 2: direct (number only) ---
+  if(flow) h+=`<div class="layer-block layer-dir" data-jump-target="direct">
+    <div class="layer-head"><div class="layer-title">Direct from the manufacturers to the channels</div><div class="layer-vol">${volHtml('direct')}</div>${goto('direct')}</div>
+    <p class="layer-sub">Tyres the manufacturers sell straight to dealers, chains, workshops and online shops, bypassing wholesale. No source says who receives this volume, so no names are listed.</p>
+  </div>`;
+  // --- layer 3: channels (retail only) ---
+  if(hasCh){
+    h+=`<div class="layer-cap">${flow?`Channels · where the tyres reach the end customer${has('market')?` · ${fvFmt(val.market)}M`:''}`:'Channels and breakdowns'}</div>`;
+    h+=c.channels.map((ch, chi) => {
+      const shareNum = parseFloat((ch.share||'').replace(/[^0-9.]/g,'')) || 0;
+      const ents=(ch.entities||[]).filter(e=>!isWholesaleModel(e.model));
+      const entitiesHtml = ents.map(e => {
+        if(e.owner === null && e.volume === null) return null;
+        return `<div class="entity-row">
+          <div class="entity-name">${esc(e.name)}<span class="entity-model${isBuyingGroupModel(e.model)?' bg':''}">${esc(e.model||'')}</span>${e.scale ? `<span class="entity-scale">${esc(e.scale.label)}</span>` : ''}${e.buyingGroup ? `<span class="entity-buying-group">🔗 ${esc(e.buyingGroup)}</span>` : ''}</div>
+          <div class="entity-owner">${esc(e.owner||'')}</div>
+          <div class="entity-vol ${e.volume ? '' : 'na'}">${esc(e.volume || 'n/a')}</div>
+        </div>`;
+      }).filter(Boolean).join('');
+      const chipEnts=ents.filter(e => e.owner === null && e.volume === null);
+      const chipsHtml = chipEnts.length ? chipListHtml(chipEnts) : '';
+      let split='';
+      if(flow&&ch.flowBox){
+        const W='ch.'+ch.flowBox+'.ws', D='ch.'+ch.flowBox+'.dir';
+        split=`<div class="channel-split">${has(W)&&has(D)
+          ? `<span><b class="ch-ws">${fvFmt(val[W])}M</b> via wholesale</span><span>·</span><span><b class="ch-dir">${fvFmt(val[D])}M</b> direct</span>`
+          : '<span class="ch-miss">wholesale vs direct split: needs input</span>'}${goto('ch:'+ch.flowBox)}</div>`;
+      }
+      return `<details class="channel" data-jump-target="ch:${esc(ch.flowBox||('i'+chi))}" ${chi===0 && ci<2 ? 'open':''}>
+        <summary>
+          <div class="channel-name">${esc(ch.name)}</div>
+          <div class="channel-bar-wrap"><div class="channel-bar-track"><div class="channel-bar-fill" style="width:${Math.min(shareNum,100)}%"></div></div></div>
+          <div class="channel-share">${esc(ch.share||'')}</div>
+          <div class="channel-vol">${esc(ch.volume||'')}</div>
+          ${split}
+        </summary>
+        <div class="channel-body">
+          <div class="channel-source">${badgeHtml(ch.sourceBadge)} ${esc((ch.source||'').replace(/^(Source:.*?)(Hard %|Modeled|Estimate|Named only|Fragmented)?\s*/,'$1 '))}</div>
+          ${entitiesHtml}
+          ${chipsHtml}
+        </div>
+      </details>`;
+    }).join('');
+  }
+  // --- retail entities not assigned to a channel (flat countries, or leftovers) ---
+  const retailFlat=(c.flatEntities||[]).filter(e=>!isWholesaleModel(e.model));
+  if(retailFlat.length || (flow && !hasCh)){
+    const strip=(flow&&!hasCh)
+      ? flow.channels.filter(fc=>has('ch.'+fc.id+'.tot')).map(fc=>`${esc(fc.name)} <b>${fvFmt(val['ch.'+fc.id+'.tot'])}M</b>`).join(' · ') : '';
+    h+=`<div class="layer-block layer-retail" data-jump-target="retail">
+      <div class="layer-head"><div class="layer-title">${!flow?'Other named entities (not wholesale)':(hasCh?'Other named retail and networks':'Retail, networks and online')}</div>${flow&&!hasCh&&flow.channels.length?goto('ch:'+flow.channels[0].id):''}</div>
+      ${strip?`<p class="layer-sub">Channel sizes in the flow model${flow&&has('market')?` (${fvFmt(val.market)}M in total)`:''}: ${strip}. The names below are not yet assigned to a channel.</p>`:''}
+      ${retailFlat.length?chipListHtml(retailFlat):'<p class="layer-empty">No retail names yet.</p>'}
+    </div>`;
+  }
+  return h;
+}
+
+function renderDistSegment(countries, segKey){
+  if(!countries || !countries.length) return '<p class="skeleton">No data.</p>';
+  return countries.map((c, ci) => {
+    const totalHtml = c.total
+      ? `<div class="num2">${escapeHtml(c.total)}</div><div class="lbl2">${escapeHtml(c.totalLabel||'')}</div>`
+      : `<div class="num2" style="color:#B42318;">—</div><div class="lbl2">no total published</div>`;
+
+    const flowData = segKey === 'PCR' ? flowFor(c.country) : null;
+    let channelViewHtml = '';
+    if(c.marketAccessNote){
+      channelViewHtml += `<div class="market-access-note"><span class="label">Market access note</span>${escapeHtml(c.marketAccessNote)}</div>`;
+    }
+    channelViewHtml += renderChannelLayers(c, flowData, ci);
+
+    const layerRecs = sellinFor(c.country, segKey);
+    const layerHasFigures = layerRecs.some(r => r.sellIn || r.sellOut || r.mix);
+    const views = [['channel','By channel']];
+    const treeData = segKey === 'PCR' && !flowData ? treeFor(c.country) : null;
+    if(flowData) views.push(['flow','Flow model']);
+    if(treeData) views.push(['tree','Channel tree']);
+    if(c.territoryDefs) views.push(['territory','By territory']);
+    if(layerHasFigures) views.push(['layer','By layer · sell-in']);
+    const viewToggleHtml = views.length > 1
+      ? `<div class="view-toggle" data-country-idx="${ci}">${views.map(([v,l],i)=>`<button class="${i===0?'active':''}" data-view="${v}">${l}</button>`).join('')}</div>`
+      : '';
+    const territoryViewHtml = c.territoryDefs ? renderTerritoryView(c) : '';
+    const layerViewHtml = layerHasFigures ? renderLayerView(c, layerRecs) : '';
+    const treeViewHtml = treeData ? renderTreeView(c, treeData) : '';
+    const flowViewHtml = flowData ? renderFlowView(c, flowData) : '';
+
+    return `<details class="country" ${ci<2 ? 'open':''}>
+      <summary>
+        <div><div class="country-name">${escapeHtml(c.country)}</div><div class="country-meta">${escapeHtml(c.meta||'')}</div></div>
+        <div class="country-total">${totalHtml}</div>
+      </summary>
+      <div class="country-body">
+        ${viewToggleHtml}
+        <div class="territory-view-block active" data-view-panel="channel" data-country-idx="${ci}">${channelViewHtml}</div>
+        <div class="territory-view-block" data-view-panel="territory" data-country-idx="${ci}">${territoryViewHtml}</div>
+        <div class="territory-view-block" data-view-panel="layer" data-country-idx="${ci}">${layerViewHtml}</div>
+        <div class="territory-view-block" data-view-panel="tree" data-country-idx="${ci}">${treeViewHtml}</div>
+        <div class="territory-view-block" data-view-panel="flow" data-country-idx="${ci}">${flowViewHtml}</div>
+      </div>
+    </details>`;
+  }).join('');
+}
+
+function collectAllEntities(country){
+  const all = [];
+  for(const ch of (country.channels||[])){
+    for(const e of (ch.entities||[])){
+      if(e.name) all.push(e);
+    }
+  }
+  for(const fe of (country.flatEntities||[])){
+    all.push(fe);
+  }
+  return all;
+}
+
+/* ---------- flow model (industry -> wholesale / direct -> channels -> customers) ---------- */
+const FV_COL={Published:'#2F6F62',Derived:'#B5701E',Team:'#5B3E96',Estimate:'#2B6CB0'};
+function flowFor(countryName){
+  const fs=(window.__sellin&&window.__sellin.flows)||[];
+  const f=fs.find(x=>x.country===countryName&&x.channels&&x.channels.length); if(!f) return null;
+  return Object.keys(flowSolve(f).val).some(k=>k.startsWith('ch.')||k.startsWith('g.')) ? f : null;
+}
+function flowSolve(flow){
+  const val={}, tier={};
+  for(const [id,c] of Object.entries(flow.cells||{})){ if(c&&c.value!=null&&!isNaN(c.value)){ val[id]=Number(c.value); tier[id]=c.tier||'Team'; } }
+  const ids=flow.channels.map(c=>c.id);
+  const T=i=>'ch.'+i+'.tot', W=i=>'ch.'+i+'.ws', D=i=>'ch.'+i+'.dir', P=i=>'ch.'+i+'.prv', C=i=>'ch.'+i+'.com';
+  const cons=[];
+  cons.push([['industry',1],['toWs',-1],['direct',-1]]);
+  cons.push([['wsDom',1],['toWs',-1],['import',-1],['export',1]]);
+  cons.push([['market',1],['wsDom',-1],['direct',-1]]);
+  cons.push([['market',1],['prvAll',-1],['comAll',-1]]);
+  ids.forEach(i=>{ cons.push([[T(i),1],[W(i),-1],[D(i),-1]]); cons.push([[T(i),1],[P(i),-1],[C(i),-1]]); });
+  cons.push([...ids.map(i=>[W(i),1]),['wsDom',-1]]);
+  cons.push([...ids.map(i=>[D(i),1]),['direct',-1]]);
+  cons.push([...ids.map(i=>[T(i),1]),['market',-1]]);
+  cons.push([...ids.map(i=>[P(i),1]),['prvAll',-1]]);
+  cons.push([...ids.map(i=>[C(i),1]),['comAll',-1]]);
+  (flow.groups||[]).forEach(g=>{ cons.push([...g.members.map(i=>[T(i),1]),['g.'+g.id,-1]]); });
+  if((flow.groups||[]).length) cons.push([...flow.groups.map(g=>['g.'+g.id,1]),['market',-1]]);
+  let changed=true, loops=0;
+  while(changed&&loops++<100){
+    changed=false;
+    for(const k of cons){
+      const unk=k.filter(([id])=>!(id in val)); if(unk.length!==1) continue;
+      const known=k.filter(([id])=>id in val).reduce((a,[id,co])=>a+co*val[id],0);
+      const [uid,uco]=unk[0]; const x=-known/uco;
+      if(x<-0.0005) continue;
+      val[uid]=Math.round(Math.max(0,x)*1000)/1000; tier[uid]='Derived'; changed=true;
+    }
+  }
+  const tol=Math.max(0.1,0.01*(val.market||0)), conflicts=[];
+  cons.forEach(k=>{ if(k.every(([id])=>id in val)){ const s=k.reduce((a,[id,co])=>a+co*val[id],0); if(Math.abs(s)>tol) conflicts.push({k,res:Math.round(s*100)/100}); } });
+  return {val,tier,conflicts};
+}
+function fvFmt(v){ if(v==null) return '—'; return Math.abs(v)>=1 ? Number(v).toFixed(1) : Number(v).toFixed(2); }
+function fvWrap(s,max){
+  const lines=[]; let cur='';
+  String(s).split(/\s+/).forEach(w=>{ if((cur+' '+w).trim().length>max){ if(cur) lines.push(cur); cur=w; } else cur=(cur+' '+w).trim(); });
+  if(cur) lines.push(cur); return lines;
+}
+function renderFlowView(c, flow){
+  const R=flowSolve(flow), val=R.val, tier=R.tier, esc=escapeHtml;
+  const nameOf=ch=>{ const dc=(c.channels||[]).find(x=>x.flowBox===ch.id); return dc?dc.name:ch.name; };
+  const n=flow.channels.length, GAP=10, CW=n<=5?200:(n<=8?140:100);
+  const rowW=n*CW+(n-1)*GAP, W=Math.max(1240,rowW+60), X0=(W-rowW)/2, OFF=Math.min(18,Math.round(CW*0.12));
+  const lx=i=>X0+i*(CW+GAP), mid=i=>lx(i)+CW/2;
+  const T=i=>'ch.'+i+'.tot', Wc=i=>'ch.'+i+'.ws', D=i=>'ch.'+i+'.dir', P=i=>'ch.'+i+'.prv', Cm=i=>'ch.'+i+'.com';
+  const RED='#C0392B', BLUE='#2B5BD9', GREY='#9AA3B5', INK='#1B2333';
+  const has=id=>id in val;
+  const dot=(x,y,id)=>has(id)?`<circle cx="${x}" cy="${y}" r="3.2" fill="${FV_COL[tier[id]]||'#999'}"/>`:'';
+  const maxFlow=Math.max(1,val.toWs||0,val.direct||0,...flow.channels.flatMap(ch=>[val[Wc(ch.id)]||0,val[D(ch.id)]||0]));
+  const sw=v=>v==null?1.2:Math.max(1.8,Math.min(11,1.8+(v/maxFlow)*9));
+  const line=(d,col,id,arrow)=>`<path d="${d}" fill="none" stroke="${col}" stroke-width="${sw(val[id])}" ${has(id)?'':'stroke-dasharray="4 3"'} ${arrow?'marker-end="url(#fvArr)"':''} stroke-linejoin="round"/>`;
+  let s='';
+  s+=`<defs><marker id="fvArr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>`;
+  const node=(x,y,w,h,fill,stroke,title,id,sub)=>{
+    const h1=has(id);
+    return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" fill="${fill}" stroke="${stroke}" ${h1?'':'stroke-dasharray="4 3"'}/>`
+      +`<text x="${x+w/2}" y="${y+19}" text-anchor="middle" style="font-size:12px;font-weight:700;fill:${INK}">${esc(title)}</text>`
+      +`<text x="${x+w/2}" y="${y+(sub?h-26:h-14)}" text-anchor="middle" style="font-size:${h1?17:13}px;font-weight:700;fill:${h1?INK:'#8A93A8'}">${h1?fvFmt(val[id])+'M':'needs input'}</text>`
+      +(sub?`<text x="${x+w/2}" y="${y+h-9}" text-anchor="middle" style="font-size:10px;fill:#6B7487">${esc(sub)}</text>`:'')+dot(x+w-12,y+h-(sub?32:20),id);
+  };
+  const indX=130, indW=320, impX=W-130-320, wsW=320, wsX=W/2-160, wsY=170, wsH=78;
+  s+=node(indX,24,indW,60,'#E8EEFB',BLUE,'Industry (ETRMA pool)','industry');
+  s+=node(impX,24,320,60,'#FBE6D2','#B5701E','Wholesale import (non-pool)','import');
+  s+=`<g class="fv-jump" data-jump="ws" data-jump-target="ws"><title>Click to see who the wholesalers are</title>`+node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+c.country,'wsDom','to wholesale + imports − exports')+`<text x="${wsX+10}" y="${wsY+wsH-9}" style="font-size:10px;fill:#9A5B1E;text-decoration:underline">who? ›</text></g>`;
+  s+=node(wsX+wsW+40,wsY+14,150,50,'#F2F3F7',GREY,'Export','export');
+  const indCx=indX+indW/2, impCx=impX+160;
+  s+=line(`M${indCx} 84 V127 H${wsX+90} V${wsY-4}`,RED,'toWs',true);
+  s+=line(`M${impCx} 84 V127 H${wsX+230} V${wsY-4}`,RED,'import',true);
+  s+=line(`M${wsX+wsW} ${wsY+39} H${wsX+wsW+36}`,GREY,'export',true);
+  s+=`<text x="${(indCx+wsX+90)/2}" y="120" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${RED}">to wholesale ${has('toWs')?fvFmt(val.toWs)+'M':'—'}</text>`;
+  s+=`<text x="${(impCx+wsX+230)/2}" y="120" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${RED}">imports ${has('import')?fvFmt(val.import)+'M':'—'}</text>`;
+  const dirX=indX+80;
+  s+=`<g class="fv-jump" data-jump="direct" data-jump-target="direct"><title>Click for the direct layer</title><rect x="${dirX-8}" y="186" width="150" height="46" fill="transparent"/>`
+    +line(`M${dirX} 84 V294`,BLUE,'direct',false)
+    +`<text x="${dirX+10}" y="200" style="font-size:11px;font-weight:700;fill:${BLUE}">direct ${has('direct')?fvFmt(val.direct)+'M':'—'}</text>`
+    +`<text x="${dirX+10}" y="214" style="font-size:10px;fill:#6B7487">industry to channels</text></g>`;
+  const redY=276, bluY=294, topY=338;
+  const rx=i=>mid(i)-OFF, bx=i=>mid(i)+OFF;
+  s+=`<path d="M${W/2} ${wsY+wsH} V${redY}" fill="none" stroke="${RED}" stroke-width="${sw(val.wsDom)}" ${has('wsDom')?'':'stroke-dasharray="4 3"'}/>`;
+  s+=`<path d="M${rx(0)} ${redY} H${rx(n-1)}" fill="none" stroke="${RED}" stroke-width="2"/>`;
+  s+=`<path d="M${Math.min(bx(0),dirX)} ${bluY} H${bx(n-1)}" fill="none" stroke="${BLUE}" stroke-width="2"/>`;
+  flow.channels.forEach((ch,i)=>{
+    s+=line(`M${rx(i)} ${redY} V${topY-4}`,RED,Wc(ch.id),true);
+    s+=line(`M${bx(i)} ${bluY} V${topY-4}`,BLUE,D(ch.id),true);
+    const x=lx(i), known=has(T(ch.id));
+    s+=`<g class="fv-jump" data-jump="${(c.channels||[]).some(x=>x.flowBox===ch.id)?'ch:'+esc(ch.id):'retail'}" data-jump-target="ch:${esc(ch.id)}"><title>Click to see who is in this channel</title>`;
+    s+=`<rect x="${x}" y="${topY}" width="${CW}" height="118" rx="8" fill="#fff" stroke="${BLUE}" ${known?'':'stroke-dasharray="4 3"'}/>`;
+    fvWrap(nameOf(ch),Math.max(13,Math.floor((CW-12)/6.3))).slice(0,3).forEach((t,k)=>{ s+=`<text x="${x+CW/2}" y="${topY+16+k*12}" text-anchor="middle" style="font-size:10.5px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
+    [['Total',T(ch.id),INK,86],['via wholesale',Wc(ch.id),RED,88],['direct',D(ch.id),BLUE,90]].forEach(([lab,id,col],k)=>{
+      const y=topY+66+k*17;
+      s+=`<text x="${x+7}" y="${y}" style="font-size:9.5px;fill:${col}">${lab}</text>`;
+      s+=`<text x="${x+CW-17}" y="${y}" text-anchor="end" style="font-size:12px;font-weight:700;fill:${has(id)?INK:'#9AA3B5'}">${has(id)?fvFmt(val[id]):'—'}</text>`+dot(x+CW-9,y-4,id);
+    });
+    s+=`<rect x="${x}" y="${topY+128}" width="${CW}" height="42" rx="8" fill="#F5F6FA" stroke="#D5D9E4"/>`;
+    [['Private',P(ch.id)],['Commercial',Cm(ch.id)]].forEach(([lab,id],k)=>{
+      const y=topY+146+k*15;
+      s+=`<text x="${x+7}" y="${y}" style="font-size:9.5px;fill:#5B6478">${lab}</text><text x="${x+CW-17}" y="${y}" text-anchor="end" style="font-size:11px;font-weight:700;fill:${has(id)?INK:'#9AA3B5'}">${has(id)?fvFmt(val[id]):'—'}</text>`+dot(x+CW-9,y-4,id);
+    });
+    s+='</g>';
+  });
+  const gy=topY+184;
+  (flow.groups||[]).forEach(g=>{
+    const idx=g.members.map(m=>flow.channels.findIndex(c=>c.id===m)).filter(i=>i>=0).sort((a,b)=>a-b);
+    if(!idx.length) return;
+    const runs=[]; idx.forEach(i=>{ const r=runs[runs.length-1]; if(r&&i===r[1]+1) r[1]=i; else runs.push([i,i]); });
+    runs.forEach((r,ri)=>{
+      const x1=lx(r[0]), x2=lx(r[1])+CW;
+      s+=`<path d="M${x1} ${gy} V${gy+7} H${x2} V${gy}" fill="none" stroke="#7A8299" stroke-width="1.2"/>`;
+      if(ri===0){
+        const lines=fvWrap(g.name,Math.max(10,Math.floor((x2-x1)/5.4)));
+        lines.slice(0,3).forEach((t,k)=>{ s+=`<text x="${(x1+x2)/2}" y="${gy+22+k*12}" text-anchor="middle" style="font-size:10px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
+        const gid='g.'+g.id;
+        s+=`<text x="${(x1+x2)/2}" y="${gy+22+Math.min(lines.length,3)*12+2}" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${has(gid)?INK:'#9AA3B5'}">${has(gid)?fvFmt(val[gid])+'M':'—'}</text>`+(has(gid)?dot((x1+x2)/2+30,gy+22+Math.min(lines.length,3)*12-2,gid):'');
+      }
+    });
+  });
+  const H=(flow.groups||[]).length?gy+100:topY+196;
+  const coreIds=['market','industry','toWs','direct','import','export','wsDom','prvAll','comAll'];
+  const allIds=[...coreIds,...flow.channels.flatMap(ch=>[T(ch.id),Wc(ch.id),D(ch.id),P(ch.id),Cm(ch.id)])];
+  const missing=allIds.filter(id=>!has(id)).length;
+  const se=flow.meta&&flow.meta.seasons, sp=[];
+  if(se){ if(se.allSeason!=null) sp.push('all-season '+se.allSeason+'%'); if(se.winter!=null) sp.push('winter '+se.winter+'%'); if(se.summer!=null) sp.push('summer '+se.summer+'%'); }
+  const seasons=sp.length?` Season mix (${esc(se.source||'')}): ${sp.join(' · ')}.`:'';
+  const mk=has('market')?` Replacement market: <b>${fvFmt(val.market)}M</b>.`:'';
+  const scopeNote=(flow.meta&&flow.meta.scopeNote)?` ${esc(flow.meta.scopeNote)}`:'';
+  const hasEst=Object.values(tier).includes('Estimate');
+  const legend=[['Published','#2F6F62'],['Derived','#B5701E'],...(hasEst?[['Estimate (not published)','#2B6CB0']]:[]),['Team input','#5B3E96']].map(([l,col])=>`<span class="fv-dot" style="background:${col}"></span>${l}`).join(' &nbsp; ');
+  const estNote=hasEst?' Blue dots are benchmark estimates, not published figures; the method is under Sources and notes.':'';
+  return `<p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels.${seasons}</p>
+    <div class="fv-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
+    <p class="tv-note">Dot colour: ${legend}.${estNote} <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
+    ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}`;
+}
+
+function treeFor(countryName){
+  const ts = (window.__sellin && window.__sellin.trees) || [];
+  return ts.find(t => t.country === countryName && t.channels && t.channels.length) || null;
+}
+function fmtPctTree(v){ return v == null ? 'n/a' : (Number.isInteger(Number(v)) ? Number(v) : Number(v).toFixed(1)) + '%'; }
+function tvPct(v, conf, src){
+  const cls = v == null ? '' : 'c-' + (conf || 'Estimate');
+  const tip = v == null ? 'No estimate entered yet' : ((conf || 'Estimate') + (src ? ': ' + src : ''));
+  return `<div class="tv-pctwrap"><span class="pct ${cls}" title="${escapeHtml(tip)}">${fmtPctTree(v)}</span></div>`;
+}
+function tvOutlets(list){
+  if(!list || !list.length) return '';
+  return `<div class="tv-vstem"></div><div class="tv-outlets">${list.map(o => `<div class="tv-out">${escapeHtml(o)}</div>`).join('')}</div>`;
+}
+function renderTreeView(c, t){
+  const chName = id => { const ch = t.channels.find(x => x.id === id); return ch ? ch.name : ''; };
+  const cols = t.channels.map(ch => {
+    const hasSplit = ch.split && ch.split.length;
+    let inner = `<div class="tv-box ch">${escapeHtml(ch.name)}</div>${tvPct(ch.pct, ch.confidence, ch.source)}`;
+    if(hasSplit){
+      inner += `<div class="tv-vstem"></div><div class="tv-split-row">` + ch.split.map(sp => {
+        const feeds = (sp.feeds || []).map(chName).filter(Boolean);
+        return `<div class="tv-sp"><div class="tv-box sp ${sp.pct == null ? 'gap' : ''}">${escapeHtml(sp.name)}</div>${tvPct(sp.pct, sp.confidence, sp.source)}${feeds.length ? `<div class="tv-feeds">also supplies: ${feeds.map(escapeHtml).join(', ')}</div>` : ''}${tvOutlets(sp.outlets)}</div>`;
+      }).join('') + `</div>`;
+    }
+    inner += tvOutlets(ch.outlets);
+    return `<div class="tv-col${hasSplit ? ' wide' : ''}">${inner}</div>`;
+  }).join('');
+  const legend = ['Hard','Reported','Modeled','Estimate'].map(k => `<span class="pct c-${k}">${k}</span>`).join('');
+  return `<div class="tv-scroll"><div class="tv">
+      <div class="tv-bar">${escapeHtml(c.country)} tyre industry</div>
+      <div class="tv-l1">
+        <div class="tv-com"><div class="tv-box l1">Commercial</div>${tvPct(t.commercialPct, t.topConf, t.basis)}</div>
+        <div class="tv-con"><div class="tv-box l1">Consumer</div>${tvPct(t.consumerPct, t.topConf, t.basis)}</div>
+      </div>
+      <div class="tv-stem"></div>
+      <div class="tv-cols">${cols}</div>
+    </div></div>
+    <p class="tv-note">${escapeHtml(t.basis || 'Percentages are shares of total market volume.')}${t.asOf ? ' As of ' + escapeHtml(t.asOf) + '.' : ''} Dashed boxes mean no estimate has been entered yet.</p>
+    <div class="tv-legend">Oval colour = confidence:${legend}</div>`;
+}
+
+function sellinFor(countryName, segKey){
+  const all = (window.__sellin && window.__sellin.dealers) || [];
+  return all.filter(d => d.country === countryName && d.segment === segKey);
+}
+function fmtFig(v, unit){
+  if(v == null) return '';
+  if(unit === '€M') return '€' + Number(v).toLocaleString('en-GB', {maximumFractionDigits:1}) + 'M';
+  const n = Number(v);
+  return n >= 1e5 ? (n/1e6).toFixed(2) + 'M' : n.toLocaleString('en-GB');
+}
+function confBadge(conf){ return conf ? `<span class="cbadge c-${escapeHtml(conf)}">${escapeHtml(conf)}</span>` : ''; }
+function mixBarHtml(mix){
+  if(!mix) return '';
+  const parts = [['consumerRetail','Consumer retail'],['fleet','Fleet / B2B'],['carDealers','Car dealers'],['online','Online']]
+    .filter(([k]) => mix[k] != null && mix[k] > 0);
+  if(!parts.length) return '';
+  const bar = parts.map(([k,l]) => `<span class="mx-${k}" style="width:${mix[k]}%" title="${l} ${mix[k]}%"></span>`).join('');
+  const lg = parts.map(([k,l]) => `<i class="mx-${k}"></i>${l} ${mix[k]}%`).join('');
+  return `<div class="mixbar">${bar}</div><div class="mixlegend">${lg}</div>`;
+}
+function layerRowHtml(r, rank, key){
+  const b = r[key];
+  const unitTxt = key === 'sellIn' ? (b.unit === '€M' ? ' per year' : ' units / year') : ' units / year';
+  const meta = [confBadge(b.confidence), b.asOf ? 'as of ' + escapeHtml(b.asOf) : ''].filter(Boolean).join(' ')
+    + (b.source ? `<div title="${escapeHtml(b.source)}">${escapeHtml(b.source.length > 90 ? b.source.slice(0,88) + '…' : b.source)}</div>` : '')
+    + (b.notes ? `<div>${escapeHtml(b.notes)}</div>` : '');
+  return `<div class="lv-row">
+    <span class="chip-rank">#${rank}</span>
+    <div class="nm">${escapeHtml(r.name)}<small>${escapeHtml(r.model || '')}${r.scaleLabel ? ' · ' + escapeHtml(r.scaleLabel) : ''}</small></div>
+    <div class="fig">${escapeHtml(fmtFig(b.value, b.unit))}<small>${escapeHtml(unitTxt.trim())}</small></div>
+    <div class="meta">${meta}${key === 'sellOut' ? mixBarHtml(r.mix) : ''}</div>
+  </div>`;
+}
+function layerNoFigHtml(list, label){
+  if(!list.length) return '';
+  return `<details class="lv-more"><summary>${list.length} dealer${list.length===1?'':'s'} without a ${label} figure yet</summary>
+    <div class="named-list">${list.map(r => `<span class="chip">${escapeHtml(r.name)}</span>`).join('')}</div></details>`;
+}
+function renderLayerView(c, recs){
+  const l1 = recs.filter(r => r.layerRole === 'sell-in' || r.layerRole === 'both');
+  const l2 = recs.filter(r => r.layerRole === 'pos' || r.layerRole === 'both');
+  const l1fig = l1.filter(r => r.sellIn).sort((a,b) => {
+    const ua = a.sellIn.unit === '€M' ? 1 : 0, ub = b.sellIn.unit === '€M' ? 1 : 0;
+    return ua - ub || b.sellIn.value - a.sellIn.value;
+  });
+  const l2fig = l2.filter(r => r.sellOut || r.mix).sort((a,b) => ((b.sellOut&&b.sellOut.value)||0) - ((a.sellOut&&a.sellOut.value)||0));
+  const l1rows = l1fig.map((r,i) => layerRowHtml(r, i+1, 'sellIn')).join('') || '<p class="terr-empty-note">No sell-in figure entered yet.</p>';
+  const l2rows = l2fig.map((r,i) => r.sellOut ? layerRowHtml(r, i+1, 'sellOut')
+      : `<div class="lv-row"><span class="chip-rank">#${i+1}</span><div class="nm">${escapeHtml(r.name)}<small>${escapeHtml(r.model||'')}</small></div><div class="fig"></div><div class="meta">${mixBarHtml(r.mix)}</div></div>`).join('')
+    || '<p class="terr-empty-note">No sell-out figure entered yet.</p>';
+  const stamp = window.__sellin && window.__sellin.generatedAt ? ` Data last exported ${escapeHtml(String(window.__sellin.generatedAt).slice(0,10))}.` : '';
+  return `<p class="lv-intro">Two layers: dealers that <b>buy from tyre manufacturers</b> (sell-in), and the <b>final points of sale</b> where customers buy. A dealer can sit in both. All figures are estimates with a confidence tag; € and unit figures are ranked separately because they are not directly comparable.${stamp}</p>
+    <div class="lv-layer"><h4>Layer 1 · Sell-in</h4><span class="lv-sub">Estimated annual purchases from manufacturers — wholesalers, buying groups, chain purchasing</span>
+      ${l1rows}${layerNoFigHtml(l1.filter(r => !r.sellIn), 'sell-in')}</div>
+    <div class="lv-layer"><h4>Layer 2 · Final points of sale</h4><span class="lv-sub">Estimated annual volume sold to end customers, with customer mix where known</span>
+      ${l2rows}${layerNoFigHtml(l2.filter(r => !r.sellOut && !r.mix), 'sell-out')}</div>`;
+}
+
+function renderTerritoryView(country){
+  const allEntities = collectAllEntities(country);
+  const nationwide = allEntities.filter(e => (e.territories||[]).includes('__NATIONWIDE__'));
+  const anyTagged = allEntities.some(e => (e.territories||[]).length > 0);
+
+  if(!anyTagged){
+    return `<p class="terr-empty-note">No territory data yet for ${escapeHtml(country.country)} — this populates once entities are tagged with the territory tool and folded in.</p>`;
+  }
+
+  let html = '';
+  if(nationwide.length){
+    html += `<div class="terr-nationwide-card">
+      <h4>Nationwide / present everywhere (${nationwide.length})</h4>
+      ${nationwide.map(e=>`<span class="terr-entity-chip" style="background:var(--amber-bg); color:var(--amber-ink);">${escapeHtml(e.name)}</span>`).join('')}
+    </div>`;
+  }
+  html += country.territoryDefs.map(t => {
+    const here = allEntities.filter(e => (e.territories||[]).includes(t.code));
+    return `<div class="terr-region-card">
+      <h4>${escapeHtml(t.name)} <span style="color:var(--ink-soft); font-weight:500;">(${here.length})</span></h4>
+      ${here.length ? here.map(e=>`<span class="terr-entity-chip">${escapeHtml(e.name)}</span>`).join('') : '<span class="terr-empty-note" style="padding:0;">No entities placed here yet.</span>'}
+    </div>`;
+  }).join('');
+  return html;
+}
+
+// ---------- competitors tab (mirrors the news-tracker functions above) ----------
+function renderCompLatestRun(run){
+  document.getElementById('comp-stat-lastrun').textContent = run ? new Date(run.runAt).toLocaleString('en-GB', {timeZone:'UTC'}) + ' UTC' : '—';
+  document.getElementById('comp-stat-new').textContent = run ? run.totalNew : '—';
+  document.getElementById('comp-stat-entities').textContent = run ? run.entitiesWithNews : '—';
+  document.getElementById('comp-stat-checked').textContent = run ? run.entitiesChecked : '—';
+
+  const results = document.getElementById('comp-nf-results');
+  if(!run){
+    results.innerHTML = '<p class="skeleton">No runs yet — the first scheduled run (or a manual trigger) will populate this.</p>';
+    return;
+  }
+  const entries = Object.entries(run.newItemsByEntity || {});
+  window.__compAllEntries = entries;
+  renderCompFilteredResults('');
+}
+
+function renderCompFilteredResults(filterText){
+  const entries = window.__compAllEntries || [];
+  const results = document.getElementById('comp-nf-results');
+  const q = filterText.trim().toLowerCase();
+  const filtered = q
+    ? entries.filter(([name, items]) => (name + ' ' + (items[0].category||'')).toLowerCase().includes(q))
+    : entries;
+
+  results.innerHTML = filtered.length ? filtered.map(([name, items])=>`
+    <div class="nf-entity-block">
+      <h4>${escapeHtml(name)} <span class="badge">${escapeHtml(items[0].category || '')}</span>${irLinkHtml(name)}</h4>
+      <ul>
+        ${items.map(it=>`<li><a href="${it.link}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a><br><span class="nf-meta">${escapeHtml(it.pubDate||'')}</span></li>`).join('')}
+      </ul>
+    </div>
+  `).join('') : '<p style="color:var(--ink-soft);">No matching makers with new mentions.</p>';
+}
+document.getElementById('comp-f-search').addEventListener('input', (e)=> renderCompFilteredResults(e.target.value));
+
+function renderCompHistory(history){
+  const tbody = document.getElementById('comp-history-tbody');
+  if(!history || !history.length){
+    tbody.innerHTML = '<tr><td colspan="3" class="skeleton">No history yet.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = history.map(h => `
+    <tr>
+      <td class="mono">${new Date(h.runAt).toLocaleString('en-GB', {timeZone:'UTC'})} UTC</td>
+      <td class="mono">${h.totalNew}</td>
+      <td class="mono">${h.entitiesWithNews}</td>
+    </tr>
+  `).join('');
+}
+
+function formatEarningsDate(pubDate){
+  const d = new Date(pubDate);
+  if(isNaN(d.getTime())) return '';
+  return d.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
+}
+
+function renderCompEntitiesList(competitors){
+  window.__compIRLinks = {};
+  (competitors||[]).forEach(c => { if(c.investorRelationsUrl) window.__compIRLinks[c.name] = c.investorRelationsUrl; });
+  const earnings = window.__compEarnings || {};
+
+  const container = document.getElementById('comp-entities-list');
+  const byCategory = {};
+  (competitors||[]).forEach(c => {
+    if(!byCategory[c.category]) byCategory[c.category] = [];
+    byCategory[c.category].push(c);
+  });
+
+  container.innerHTML = Object.entries(byCategory).map(([category, list]) => `
+    <div class="comp-category-block">
+      <div class="comp-category-label">${escapeHtml(category)} (${list.length})</div>
+      <div class="comp-card-grid">
+        ${list.map(c => {
+          const mention = earnings[c.name];
+          let earningsHtml;
+          if(mention){
+            const dateStr = formatEarningsDate(mention.pubDate);
+            const sourceLabel = mention.source === 'official-site' ? 'official source' : 'news coverage';
+            earningsHtml = `<div class="comp-card-earnings">
+              <a href="${mention.link}" target="_blank" rel="noopener">📈 ${escapeHtml(mention.title)}</a>
+              <span class="comp-card-earnings-date">${dateStr ? 'Published '+dateStr : ''} · ${sourceLabel}</span>
+            </div>`;
+          } else {
+            earningsHtml = `<div class="comp-card-none">No dated earnings mention found yet</div>`;
+          }
+          const irHtml = c.investorRelationsUrl
+            ? `<div class="comp-card-ir"><a href="${c.investorRelationsUrl}" target="_blank" rel="noopener">Official investor relations page →</a></div>`
+            : '';
+          return `<div class="comp-card">
+            <div class="comp-card-name">${escapeHtml(c.name)}</div>
+            ${earningsHtml}
+            ${irHtml}
+          </div>`;
+        }).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function irLinkHtml(entityName){
+  const mention = (window.__compEarnings || {})[entityName];
+  if(mention){
+    const dateStr = formatEarningsDate(mention.pubDate);
+    return ` <a href="${mention.link}" target="_blank" rel="noopener" class="badge" style="background:var(--teal-bg); color:var(--teal-ink); text-decoration:none; text-transform:none; font-weight:600;" title="${escapeHtml(mention.title)}">📈 Earnings${dateStr ? ' · '+dateStr : ''}</a>`;
+  }
+  const url = (window.__compIRLinks || {})[entityName];
+  return url ? ` <a href="${url}" target="_blank" rel="noopener" class="badge" style="background:var(--slate-bg); color:var(--slate-ink); text-decoration:none; text-transform:none; font-weight:600;">Investor relations</a>` : '';
+}
+
+function populateCompArchiveYearOptions(archive){
+  const years = new Set();
+  archive.forEach(a => { const y = parseArticleYear(a.pubDate); if(y) years.add(y); });
+  const sorted = Array.from(years).sort((a,b) => b - a);
+  const sel = document.getElementById('comp-archive-year');
+  sorted.forEach(y => {
+    const opt = document.createElement('option');
+    opt.value = String(y);
+    opt.textContent = String(y);
+    sel.appendChild(opt);
+  });
+}
+
+function renderCompArchive(){
+  const archive = window.__compArchiveData || [];
+  const yearFilter = document.getElementById('comp-archive-year').value;
+  const monthFilter = document.getElementById('comp-archive-month').value;
+  const q = document.getElementById('comp-archive-search').value.trim().toLowerCase();
+
+  let filtered = archive;
+  if(yearFilter){
+    filtered = filtered.filter(a => String(parseArticleYear(a.pubDate)) === yearFilter);
+  }
+  if(monthFilter){
+    filtered = filtered.filter(a => String(parseArticleMonth(a.pubDate)) === monthFilter);
+  }
+  if(q){
+    filtered = filtered.filter(a => (a.entity + ' ' + (a.category||'')).toLowerCase().includes(q));
+  }
+  filtered = [...filtered].sort((a,b) => (new Date(b.pubDate).getTime()||0) - (new Date(a.pubDate).getTime()||0));
+
+  document.getElementById('comp-archive-count').textContent = `${filtered.length} of ${archive.length} article(s)`;
+
+  const results = document.getElementById('comp-archive-results');
+  if(!archive.length){
+    results.innerHTML = '<p class="skeleton">No articles archived yet — this fills in as the daily check finds new mentions.</p>';
+    return;
+  }
+  if(!filtered.length){
+    results.innerHTML = '<p style="color:var(--ink-soft);">No articles match that filter.</p>';
+    return;
+  }
+  const byEntity = {};
+  filtered.forEach(a => { (byEntity[a.entity] = byEntity[a.entity] || []).push(a); });
+
+  results.innerHTML = Object.entries(byEntity).map(([name, items]) => `
+    <div class="nf-entity-block">
+      <h4>${escapeHtml(name)} <span class="badge">${escapeHtml(items[0].category || '')}</span>${irLinkHtml(name)}</h4>
+      <ul>
+        ${items.map(it => `<li><a href="${it.link}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a><br><span class="nf-meta">${escapeHtml(it.pubDate||'undated')}</span></li>`).join('')}
+      </ul>
+    </div>
+  `).join('');
+}
+document.getElementById('comp-archive-year').addEventListener('change', renderCompArchive);
+document.getElementById('comp-archive-month').addEventListener('change', renderCompArchive);
+document.getElementById('comp-archive-search').addEventListener('input', renderCompArchive);
+</script>
+</body>
+</html>
