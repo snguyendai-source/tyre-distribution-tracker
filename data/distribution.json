@@ -2,16 +2,16 @@
   "pc": [
     {
       "country": "Germany",
-      "meta": "BRV 2024 · passenger car replacement tyres",
-      "total": "41.0M",
+      "meta": "BRV 2024 · consumer replacement tyres (car 41.0M + van 4.1M)",
+      "total": "45.1M",
       "totalLabel": "units",
       "channels": [
         {
           "name": "Specialist trade + independent workshops",
           "share": "71.3%",
-          "volume": "29.2M",
+          "volume": "32.2M",
           "sourceBadge": "none",
-          "source": "Source: BRV 2024  · Named only individual entity shares not available",
+          "source": "Source: BRV 2024 channel shares (cars), applied to the car + van base  · Named only individual entity shares not available",
           "entities": [
             {
               "name": "Reifen Göggel",
@@ -171,9 +171,9 @@
         {
           "name": "Car dealers / brand-tied workshops",
           "share": "19.8%",
-          "volume": "8.1M",
+          "volume": "8.9M",
           "sourceBadge": "none",
-          "source": "Source: BRV 2024  · Named only largest identifiable dealer-group consolidators — no per-entity volume, and thousands of smaller independent single-brand dealers exist beyond these",
+          "source": "Source: BRV 2024 channel shares (cars), applied to the car + van base  · Named only largest identifiable dealer-group consolidators — no per-entity volume, and thousands of smaller independent single-brand dealers exist beyond these",
           "entities": [
             {
               "name": "Emil Frey Deutschland",
@@ -255,14 +255,14 @@
         {
           "name": "Fachmärkte",
           "share": "3.4%",
-          "volume": "1.4M",
+          "volume": "1.5M",
           "sourceBadge": "modeled",
-          "source": "Source: BRV 2024  · Modeled single named chain ≈ full channel",
+          "source": "Source: BRV 2024 channel shares (cars), applied to the car + van base  · Modeled single named chain ≈ full channel",
           "entities": [
             {
               "name": "A.T.U",
               "owner": "Mobivia Group",
-              "volume": "~1.4M",
+              "volume": "~1.5M",
               "model": "Fast-fit / auto-centre chain (Mobivia)",
               "territories": [
                 "__NATIONWIDE__"
@@ -279,9 +279,9 @@
         {
           "name": "B2C online",
           "share": "5.5%",
-          "volume": "2.3M",
+          "volume": "2.5M",
           "sourceBadge": "none",
-          "source": "Source: BRV 2024  · Named only no per-brand split (online has no branch count to model from)",
+          "source": "Source: BRV 2024 channel shares (cars), applied to the car + van base  · Named only no per-brand split (online has no branch count to model from)",
           "entities": [
             {
               "name": "ReifenDirekt.de (Delticom)",
