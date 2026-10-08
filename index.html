@@ -202,6 +202,41 @@
   .market-access-note{ background:#FFF8EC; border:1px solid #F0DDB8; border-radius:8px; padding:10px 14px; margin-bottom:12px; font-size:12.5px; color:var(--ink); line-height:1.5; }
   .market-access-note .label{ font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:#9A6B1E; display:block; margin-bottom:3px; }
   .note-box{ background:#F3F7F6; border:1px solid var(--teal-bg); border-radius:8px; padding:12px 14px; font-size:12.5px; color:var(--ink); line-height:1.55; margin-bottom:16px; }
+  /* By channel layers (wholesale -> direct -> channels), mirrors the flow model */
+  .layer-block{ border:1px solid var(--hairline); border-radius:10px; padding:12px 14px; margin-bottom:12px; background:#fff; scroll-margin-top:12px; }
+  .layer-ws{ background:#FFF8EC; border-color:#F0DDB8; }
+  .layer-dir{ background:#EEF3FC; border-color:#D3DEF3; }
+  .layer-head{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .layer-title{ font-size:13.5px; font-weight:700; flex:1; min-width:200px; }
+  .layer-vol{ display:flex; align-items:center; gap:6px; }
+  .layer-num{ font-family:var(--mono); font-size:17px; font-weight:700; color:var(--ink); }
+  .tierb{ display:inline-block; font-size:10px; font-weight:700; padding:1px 7px; border-radius:20px; border:1px solid; }
+  .needs{ font-size:12px; color:#8A93A8; border:1px dashed #B8BFD0; border-radius:20px; padding:1px 10px; background:#fff; }
+  .layer-sub{ font-size:11.5px; color:var(--ink-soft); margin:6px 0 8px; line-height:1.5; }
+  .layer-formula{ font-family:var(--mono); font-size:11px; color:var(--ink-soft); margin:6px 0 2px; }
+  .layer-empty{ font-size:12px; color:var(--ink-soft); margin:4px 0 0; }
+  .layer-cap{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:var(--teal-ink); margin:18px 0 8px; }
+  .ws-cap{ font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.3px; color:#9A6B1E; margin:10px 0 6px; }
+  .ws-group{ border:1px solid #E8D5AE; border-radius:10px; padding:6px; background:#FFFBF3; display:flex; flex-direction:column; gap:6px; align-items:flex-start; }
+  .ws-kids{ display:flex; flex-wrap:wrap; gap:6px; padding-left:12px; border-left:3px solid #E8C98A; margin-left:6px; }
+  .ws-kids-cap{ flex-basis:100%; font-size:10px; color:var(--ink-soft); font-weight:600; }
+  .layer-ws .named-list{ align-items:flex-start; }
+  .layer-ws .model-chip-block{ background:#fff; border:1px solid #EBDDBF; }
+  .model-chip-block.is-bg .chip-model, .entity-model.bg{ color:#5B3E96; }
+  .model-chip-block.is-mo .chip-model{ color:#9A5B1E; }
+  button.jump{ appearance:none; border:none; background:none; padding:0; font:inherit; font-size:11px; font-weight:600; color:var(--teal); cursor:pointer; text-decoration:underline; text-underline-offset:2px; }
+  button.jump:hover{ color:var(--teal-ink); }
+  .channel-split{ flex-basis:100%; padding-left:23px; margin-top:-4px; font-size:11.5px; color:var(--ink-soft); display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .channel-split b{ font-family:var(--mono); }
+  .channel-split .ch-ws{ color:#C0392B; } .channel-split .ch-dir{ color:#2B5BD9; } .channel-split .ch-miss{ color:#8A93A8; }
+  .channel-split button.jump{ margin-left:auto; }
+  .fv-jump{ cursor:pointer; }
+  .fv-jump:hover rect{ stroke-width:2.2; }
+  @keyframes jumpflash{ 0%,70%{ box-shadow:0 0 0 3px rgba(232,161,0,.7); } 100%{ box-shadow:0 0 0 0 rgba(232,161,0,0); } }
+  @keyframes jumpflashsvg{ 0%,70%{ stroke:#E8A100; stroke-width:4; } }
+  .jump-flash{ animation:jumpflash 2.4s ease-out; }
+  g.jump-flash{ animation:none; }
+  g.jump-flash rect{ animation:jumpflashsvg 2.4s ease-out; }
   .dist-toolbar{ display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
   .legend{ display:flex; gap:14px; flex-wrap:wrap; font-size:11.5px; color:var(--ink-soft); }
   .legend span{ display:inline-flex; align-items:center; gap:5px; }
@@ -506,6 +541,32 @@ document.addEventListener('click', (e) => {
   });
 });
 
+// Click-through between "By channel" and "Flow model": same boxes, both directions.
+function jumpTo(countryEl, idx, view, key){
+  const btn = countryEl.querySelector(`.view-toggle[data-country-idx="${idx}"] button[data-view="${view}"]`);
+  if(btn && !btn.classList.contains('active')) btn.click();
+  const panel = countryEl.querySelector(`.territory-view-block[data-country-idx="${idx}"][data-view-panel="${view}"]`);
+  if(!panel) return;
+  const all = Array.from(panel.querySelectorAll('[data-jump-target]'));
+  const t = all.find(n => n.getAttribute('data-jump-target') === key) || (view==='channel' ? all.find(n => n.getAttribute('data-jump-target')==='ws') : null);
+  if(!t) return;
+  if(t.tagName === 'DETAILS') t.open = true;
+  requestAnimationFrame(() => {
+    try{ t.scrollIntoView({behavior:'smooth', block:'center', inline:'center'}); }catch(_){}
+    t.classList.add('jump-flash');
+    setTimeout(() => t.classList.remove('jump-flash'), 2400);
+  });
+}
+document.addEventListener('click', (e) => {
+  const src = e.target.closest('[data-jump], [data-goto]');
+  if(!src) return;
+  const panel = src.closest('.territory-view-block'); if(!panel) return;
+  const countryEl = src.closest('details.country'); if(!countryEl) return;
+  const idx = panel.dataset.countryIdx;
+  if(src.hasAttribute('data-goto')){ e.preventDefault(); jumpTo(countryEl, idx, src.dataset.goto, src.dataset.focus); }
+  else jumpTo(countryEl, idx, 'channel', src.dataset.jump);
+});
+
 // ---------- article archive: year + month + entity/country filtering ----------
 function parseArticleYear(pubDate){
   if(!pubDate) return null;
@@ -621,6 +682,115 @@ function sortByScale(list){
   return withScale.concat(withoutScale);
 }
 
+/* ---------- By channel: same layers as the flow model ----------
+   wholesale (who the wholesalers are) -> direct (number only) -> channels (retail only) */
+function isWholesaleModel(m){ return /wholesal|distributor|importer/i.test(m||'') && !/buying|cooperative/i.test(m||''); }
+function isBuyingGroupModel(m){ return /buying|cooperative/i.test(m||''); }
+function isMfrOwnedModel(m){ return /manufacturer-owned/i.test(m||''); }
+const TIER_LABEL={Published:'Published',Derived:'Derived',Estimate:'Estimate',Team:'Team input'};
+function tierPill(t){ const col=FV_COL[t]||'#777'; return `<span class="tierb" style="background:${col}1A;color:${col};border-color:${col}66">${escapeHtml(TIER_LABEL[t]||t||'')}</span>`; }
+function entChip(e, rank){
+  const sub=[e.owner,e.volume].filter(Boolean).map(escapeHtml).join(' · ');
+  return `<span class="model-chip-block${isBuyingGroupModel(e.model)?' is-bg':''}${isMfrOwnedModel(e.model)?' is-mo':''}"><span class="chip-name">${rank?`<span class="chip-rank">#${rank}</span>`:''}${escapeHtml(e.name)}</span><span class="chip-model">${escapeHtml(e.model||'')}</span>${sub?`<span class="chip-scale">${sub}</span>`:''}${e.scale?`<span class="chip-scale">${escapeHtml(e.scale.label)}</span>`:''}${e.buyingGroup?`<span class="chip-buying-group">🔗 ${escapeHtml(e.buyingGroup)}</span>`:''}</span>`;
+}
+function chipListHtml(list){
+  const sorted=sortByScale(list);
+  return `<div class="named-list">${sorted.map((e,i)=>entChip(e,e.scale?i+1:0)).join('')}</div>`;
+}
+function wholesaleListHtml(list){
+  if(!list.length) return '<p class="layer-empty">No wholesalers named yet for this market.</p>';
+  const nm=x=>String(x||'').trim().toLowerCase(), PAR=/\s*\(([^()]+)\)\s*$/;
+  const byName=new Map(list.map(e=>[nm(e.name),e]));
+  const parentOf=e=>{ const m=PAR.exec(e.name||''); const p=m&&byName.get(nm(m[1])); return (p&&p!==e)?p:null; };
+  const kids=new Map(), top=[];
+  list.forEach(e=>{ const p=parentOf(e); if(p&&!parentOf(p)){ if(!kids.has(p)) kids.set(p,[]); kids.get(p).push(e); } else top.push(e); });
+  const part=arr=>`<div class="named-list">${sortByScale(arr).map((e,i)=>{
+    const chip=entChip(e,e.scale?i+1:0), k=kids.get(e);
+    if(!k) return chip;
+    return `<div class="ws-group">${chip}<div class="ws-kids"><span class="ws-kids-cap">${k.length} subsidiar${k.length>1?'ies':'y'}</span>${sortByScale(k).map(x=>entChip({...x,name:x.name.replace(PAR,'')})).join('')}</div></div>`;
+  }).join('')}</div>`;
+  const indep=top.filter(e=>!isMfrOwnedModel(e.model)), mo=top.filter(e=>isMfrOwnedModel(e.model));
+  return (indep.length?`<div class="ws-cap">Independent wholesalers</div>${part(indep)}`:'')+(mo.length?`<div class="ws-cap">Manufacturer-owned wholesalers</div>${part(mo)}`:'');
+}
+function renderChannelLayers(c, flow, ci){
+  const esc=escapeHtml, R=flow?flowSolve(flow):null, val=R?R.val:{}, tier=R?R.tier:{}, has=id=>id in val;
+  const volHtml=id=>has(id)?`<span class="layer-num">${fvFmt(val[id])}M</span>${tierPill(tier[id])}`:'<span class="needs">needs input</span>';
+  const goto=(focus,label)=>flow?`<button class="jump" data-goto="flow" data-focus="${esc(focus)}">${label||'see in flow model ›'}</button>`:'';
+  const allEnts=[...(c.channels||[]).flatMap(ch=>ch.entities||[]), ...(c.flatEntities||[])];
+  const wsEnts=allEnts.filter(e=>isWholesaleModel(e.model));
+  const hasCh=!!(c.channels&&c.channels.length);
+  let h='';
+  if(flow) h+=`<p class="lv-intro">Same layers as the flow model. Tyres reach the channels either <b style="color:#C0392B">through wholesale</b> or <b style="color:#2B5BD9">direct from the manufacturers</b>. Wholesalers are listed once, in the wholesale layer, and not repeated in the channels below.</p>`;
+  if(c.note || (c.flatEntities && c.flatEntities.length)){
+    h+=`<div class="note-box" style="margin-bottom:10px;">${badgeHtml(c.noteBadge)} ${esc((c.note||'').replace(/^(Gap|Hard|Value only|Not units|Outdated|Caveat)\s*/,''))}</div>`;
+  }
+  // --- layer 1: wholesale ---
+  const formula=(flow&&has('wsDom')&&has('toWs')&&has('import')&&has('export'))
+    ? `<div class="layer-formula">${fvFmt(val.toWs)}M from the industry (ETRMA pool) + ${fvFmt(val.import)}M imports (non-pool) − ${fvFmt(val.export)}M export = ${fvFmt(val.wsDom)}M</div>` : '';
+  if(flow || wsEnts.length) h+=`<div class="layer-block layer-ws" data-jump-target="ws">
+    <div class="layer-head"><div class="layer-title">Wholesale sold in ${esc(c.country)}</div>${flow?`<div class="layer-vol">${volHtml('wsDom')}</div>`:''}${goto('ws')}</div>
+    ${formula}
+    <p class="layer-sub">Distributors that buy from the manufacturers and importers and resell to the channels below${wsEnts.length?` (${wsEnts.length} named)`:''}.</p>
+    ${wholesaleListHtml(wsEnts)}
+  </div>`;
+  // --- layer 2: direct (number only) ---
+  if(flow) h+=`<div class="layer-block layer-dir" data-jump-target="direct">
+    <div class="layer-head"><div class="layer-title">Direct from the manufacturers to the channels</div><div class="layer-vol">${volHtml('direct')}</div>${goto('direct')}</div>
+    <p class="layer-sub">Tyres the manufacturers sell straight to dealers, chains, workshops and online shops, bypassing wholesale. No source says who receives this volume, so no names are listed.</p>
+  </div>`;
+  // --- layer 3: channels (retail only) ---
+  if(hasCh){
+    h+=`<div class="layer-cap">${flow?`Channels · where the tyres reach the end customer${has('market')?` · ${fvFmt(val.market)}M`:''}`:'Channels and breakdowns'}</div>`;
+    h+=c.channels.map((ch, chi) => {
+      const shareNum = parseFloat((ch.share||'').replace(/[^0-9.]/g,'')) || 0;
+      const ents=(ch.entities||[]).filter(e=>!isWholesaleModel(e.model));
+      const entitiesHtml = ents.map(e => {
+        if(e.owner === null && e.volume === null) return null;
+        return `<div class="entity-row">
+          <div class="entity-name">${esc(e.name)}<span class="entity-model${isBuyingGroupModel(e.model)?' bg':''}">${esc(e.model||'')}</span>${e.scale ? `<span class="entity-scale">${esc(e.scale.label)}</span>` : ''}${e.buyingGroup ? `<span class="entity-buying-group">🔗 ${esc(e.buyingGroup)}</span>` : ''}</div>
+          <div class="entity-owner">${esc(e.owner||'')}</div>
+          <div class="entity-vol ${e.volume ? '' : 'na'}">${esc(e.volume || 'n/a')}</div>
+        </div>`;
+      }).filter(Boolean).join('');
+      const chipEnts=ents.filter(e => e.owner === null && e.volume === null);
+      const chipsHtml = chipEnts.length ? chipListHtml(chipEnts) : '';
+      let split='';
+      if(flow&&ch.flowBox){
+        const W='ch.'+ch.flowBox+'.ws', D='ch.'+ch.flowBox+'.dir';
+        split=`<div class="channel-split">${has(W)&&has(D)
+          ? `<span><b class="ch-ws">${fvFmt(val[W])}M</b> via wholesale</span><span>·</span><span><b class="ch-dir">${fvFmt(val[D])}M</b> direct</span>`
+          : '<span class="ch-miss">wholesale vs direct split: needs input</span>'}${goto('ch:'+ch.flowBox)}</div>`;
+      }
+      return `<details class="channel" data-jump-target="ch:${esc(ch.flowBox||('i'+chi))}" ${chi===0 && ci<2 ? 'open':''}>
+        <summary>
+          <div class="channel-name">${esc(ch.name)}</div>
+          <div class="channel-bar-wrap"><div class="channel-bar-track"><div class="channel-bar-fill" style="width:${Math.min(shareNum,100)}%"></div></div></div>
+          <div class="channel-share">${esc(ch.share||'')}</div>
+          <div class="channel-vol">${esc(ch.volume||'')}</div>
+          ${split}
+        </summary>
+        <div class="channel-body">
+          <div class="channel-source">${badgeHtml(ch.sourceBadge)} ${esc((ch.source||'').replace(/^(Source:.*?)(Hard %|Modeled|Estimate|Named only|Fragmented)?\s*/,'$1 '))}</div>
+          ${entitiesHtml}
+          ${chipsHtml}
+        </div>
+      </details>`;
+    }).join('');
+  }
+  // --- retail entities not assigned to a channel (flat countries, or leftovers) ---
+  const retailFlat=(c.flatEntities||[]).filter(e=>!isWholesaleModel(e.model));
+  if(retailFlat.length || (flow && !hasCh)){
+    const strip=(flow&&!hasCh)
+      ? flow.channels.filter(fc=>has('ch.'+fc.id+'.tot')).map(fc=>`${esc(fc.name)} <b>${fvFmt(val['ch.'+fc.id+'.tot'])}M</b>`).join(' · ') : '';
+    h+=`<div class="layer-block layer-retail" data-jump-target="retail">
+      <div class="layer-head"><div class="layer-title">${!flow?'Other named entities (not wholesale)':(hasCh?'Other named retail and networks':'Retail, networks and online')}</div>${flow&&!hasCh&&flow.channels.length?goto('ch:'+flow.channels[0].id):''}</div>
+      ${strip?`<p class="layer-sub">Channel sizes in the flow model${flow&&has('market')?` (${fvFmt(val.market)}M in total)`:''}: ${strip}. The names below are not yet assigned to a channel.</p>`:''}
+      ${retailFlat.length?chipListHtml(retailFlat):'<p class="layer-empty">No retail names yet.</p>'}
+    </div>`;
+  }
+  return h;
+}
+
 function renderDistSegment(countries, segKey){
   if(!countries || !countries.length) return '<p class="skeleton">No data.</p>';
   return countries.map((c, ci) => {
@@ -633,51 +803,7 @@ function renderDistSegment(countries, segKey){
     if(c.marketAccessNote){
       channelViewHtml += `<div class="market-access-note"><span class="label">Market access note</span>${escapeHtml(c.marketAccessNote)}</div>`;
     }
-    if(c.note || (c.flatEntities && c.flatEntities.length)){
-      channelViewHtml += `<div class="note-box" style="margin-bottom:10px;">${badgeHtml(c.noteBadge)} ${escapeHtml((c.note||'').replace(/^(Gap|Hard|Value only|Not units|Outdated|Caveat)\s*/,''))}</div>`;
-      if(c.flatEntities && c.flatEntities.length){
-        const sortedFlat = sortByScale(c.flatEntities);
-        channelViewHtml += `<div class="named-list" style="margin-bottom:14px;">${sortedFlat.map((fe,i)=>`<span class="model-chip-block"><span class="chip-name">${fe.scale ? `<span class="chip-rank">#${i+1}</span>` : ''}${escapeHtml(fe.name)}</span><span class="chip-model">${escapeHtml(fe.model||'')}</span>${fe.scale ? `<span class="chip-scale">${escapeHtml(fe.scale.label)}</span>` : ''}</span>`).join('')}</div>`;
-      }
-    }
-    if(c.channels && c.channels.length){
-      channelViewHtml += c.channels.map((ch, chi) => {
-        const shareNum = parseFloat((ch.share||'').replace(/[^0-9.]/g,'')) || 0;
-        // Entity-rows (with owner/volume) keep their original order -- that already
-        // reflects sell-out volume rank, which is what this channel view is about.
-        // Scale (branch count etc.) is a different metric shown alongside, not used
-        // to re-sort these specifically.
-        const entitiesHtml = (ch.entities||[]).map(e => {
-          if(e.owner === null && e.volume === null){
-            return null; // collected into chip list below instead
-          }
-          return `<div class="entity-row">
-            <div class="entity-name">${escapeHtml(e.name)}<span class="entity-model">${escapeHtml(e.model||'')}</span>${e.scale ? `<span class="entity-scale">${escapeHtml(e.scale.label)}</span>` : ''}${e.buyingGroup ? `<span class="entity-buying-group">🔗 ${escapeHtml(e.buyingGroup)}</span>` : ''}</div>
-            <div class="entity-owner">${escapeHtml(e.owner||'')}</div>
-            <div class="entity-vol ${e.volume ? '' : 'na'}">${escapeHtml(e.volume || 'n/a')}</div>
-          </div>`;
-        }).filter(Boolean).join('');
-        // Chip entities (name-only, no volume data) had no ranking at all before --
-        // scale-sorting genuinely adds new information here.
-        const chipEntities = sortByScale((ch.entities||[]).filter(e => e.owner === null && e.volume === null));
-        const chipsHtml = chipEntities.length
-          ? `<div class="named-list">${chipEntities.map((e,i)=>`<span class="model-chip-block"><span class="chip-name">${e.scale ? `<span class="chip-rank">#${i+1}</span>` : ''}${escapeHtml(e.name)}</span><span class="chip-model">${escapeHtml(e.model||'')}</span>${e.scale ? `<span class="chip-scale">${escapeHtml(e.scale.label)}</span>` : ''}${e.buyingGroup ? `<span class="chip-buying-group">🔗 ${escapeHtml(e.buyingGroup)}</span>` : ''}</span>`).join('')}</div>` : '';
-
-        return `<details class="channel" ${chi===0 && ci<2 ? 'open':''}>
-          <summary>
-            <div class="channel-name">${escapeHtml(ch.name)}</div>
-            <div class="channel-bar-wrap"><div class="channel-bar-track"><div class="channel-bar-fill" style="width:${Math.min(shareNum,100)}%"></div></div></div>
-            <div class="channel-share">${escapeHtml(ch.share||'')}</div>
-            <div class="channel-vol">${escapeHtml(ch.volume||'')}</div>
-          </summary>
-          <div class="channel-body">
-            <div class="channel-source">${badgeHtml(ch.sourceBadge)} ${escapeHtml((ch.source||'').replace(/^(Source:.*?)(Hard %|Modeled|Estimate|Named only|Fragmented)?\s*/,'$1'))}</div>
-            ${entitiesHtml}
-            ${chipsHtml}
-          </div>
-        </details>`;
-      }).join('');
-    }
+    channelViewHtml += renderChannelLayers(c, flowData, ci);
 
     const layerRecs = sellinFor(c.country, segKey);
     const layerHasFigures = layerRecs.some(r => r.sellIn || r.sellOut || r.mix);
@@ -796,7 +922,7 @@ function renderFlowView(c, flow){
   const indX=130, indW=320, impX=W-130-320, wsW=320, wsX=W/2-160, wsY=170, wsH=78;
   s+=node(indX,24,indW,60,'#E8EEFB',BLUE,'Industry (ETRMA pool)','industry');
   s+=node(impX,24,320,60,'#FBE6D2','#B5701E','Wholesale import (non-pool)','import');
-  s+=node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+c.country,'wsDom','industry + imports − exports');
+  s+=`<g class="fv-jump" data-jump="ws" data-jump-target="ws"><title>Click to see who the wholesalers are</title>`+node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+c.country,'wsDom','industry + imports − exports')+`<text x="${wsX+10}" y="${wsY+wsH-9}" style="font-size:10px;fill:#9A5B1E;text-decoration:underline">who? ›</text></g>`;
   s+=node(wsX+wsW+40,wsY+14,150,50,'#F2F3F7',GREY,'Export','export');
   const indCx=indX+indW/2, impCx=impX+160;
   s+=line(`M${indCx} 84 V127 H${wsX+90} V${wsY-4}`,RED,'toWs',true);
@@ -805,9 +931,10 @@ function renderFlowView(c, flow){
   s+=`<text x="${(indCx+wsX+90)/2}" y="120" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${RED}">to wholesale ${has('toWs')?fvFmt(val.toWs)+'M':'—'}</text>`;
   s+=`<text x="${(impCx+wsX+230)/2}" y="120" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${RED}">imports ${has('import')?fvFmt(val.import)+'M':'—'}</text>`;
   const dirX=indX+80;
-  s+=line(`M${dirX} 84 V294`,BLUE,'direct',false);
-  s+=`<text x="${dirX+10}" y="200" style="font-size:11px;font-weight:700;fill:${BLUE}">direct ${has('direct')?fvFmt(val.direct)+'M':'—'}</text>`;
-  s+=`<text x="${dirX+10}" y="214" style="font-size:10px;fill:#6B7487">industry to channels</text>`;
+  s+=`<g class="fv-jump" data-jump="direct" data-jump-target="direct"><title>Click for the direct layer</title><rect x="${dirX-8}" y="186" width="150" height="46" fill="transparent"/>`
+    +line(`M${dirX} 84 V294`,BLUE,'direct',false)
+    +`<text x="${dirX+10}" y="200" style="font-size:11px;font-weight:700;fill:${BLUE}">direct ${has('direct')?fvFmt(val.direct)+'M':'—'}</text>`
+    +`<text x="${dirX+10}" y="214" style="font-size:10px;fill:#6B7487">industry to channels</text></g>`;
   const redY=276, bluY=294, topY=338;
   const rx=i=>mid(i)-OFF, bx=i=>mid(i)+OFF;
   s+=`<path d="M${W/2} ${wsY+wsH} V${redY}" fill="none" stroke="${RED}" stroke-width="${sw(val.wsDom)}" ${has('wsDom')?'':'stroke-dasharray="4 3"'}/>`;
@@ -817,6 +944,7 @@ function renderFlowView(c, flow){
     s+=line(`M${rx(i)} ${redY} V${topY-4}`,RED,Wc(ch.id),true);
     s+=line(`M${bx(i)} ${bluY} V${topY-4}`,BLUE,D(ch.id),true);
     const x=lx(i), known=has(T(ch.id));
+    s+=`<g class="fv-jump" data-jump="${(c.channels||[]).some(x=>x.flowBox===ch.id)?'ch:'+esc(ch.id):'retail'}" data-jump-target="ch:${esc(ch.id)}"><title>Click to see who is in this channel</title>`;
     s+=`<rect x="${x}" y="${topY}" width="${CW}" height="118" rx="8" fill="#fff" stroke="${BLUE}" ${known?'':'stroke-dasharray="4 3"'}/>`;
     fvWrap(nameOf(ch),Math.max(13,Math.floor((CW-12)/6.3))).slice(0,3).forEach((t,k)=>{ s+=`<text x="${x+CW/2}" y="${topY+16+k*12}" text-anchor="middle" style="font-size:10.5px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
     [['Total',T(ch.id),INK,86],['via wholesale',Wc(ch.id),RED,88],['direct',D(ch.id),BLUE,90]].forEach(([lab,id,col],k)=>{
@@ -829,6 +957,7 @@ function renderFlowView(c, flow){
       const y=topY+146+k*15;
       s+=`<text x="${x+7}" y="${y}" style="font-size:9.5px;fill:#5B6478">${lab}</text><text x="${x+CW-17}" y="${y}" text-anchor="end" style="font-size:11px;font-weight:700;fill:${has(id)?INK:'#9AA3B5'}">${has(id)?fvFmt(val[id]):'—'}</text>`+dot(x+CW-9,y-4,id);
     });
+    s+='</g>';
   });
   const gy=topY+184;
   (flow.groups||[]).forEach(g=>{
@@ -858,7 +987,7 @@ function renderFlowView(c, flow){
   const hasEst=Object.values(tier).includes('Estimate');
   const legend=[['Published','#2F6F62'],['Derived','#B5701E'],...(hasEst?[['Estimate (not published)','#2B6CB0']]:[]),['Team input','#5B3E96']].map(([l,col])=>`<span class="fv-dot" style="background:${col}"></span>${l}`).join(' &nbsp; ');
   const estNote=hasEst?' Blue dots are benchmark estimates, not published figures; the method is under Sources and notes.':'';
-  return `<p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Scroll sideways to see all channels.${seasons}</p>
+  return `<p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels.${seasons}</p>
     <div class="fv-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
     <p class="tv-note">Dot colour: ${legend}.${estNote} <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
     ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}`;
