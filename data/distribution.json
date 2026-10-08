@@ -1160,6 +1160,20 @@
           ]
         },
         {
+          "name": "Grupo Andrés",
+          "model": "Wholesaler / distributor",
+          "territories": [],
+          "owner": "Independent",
+          "volume": null
+        },
+        {
+          "name": "NEX",
+          "model": "Wholesaler / distributor (Euromaster/Rodi joint venture)",
+          "territories": [],
+          "owner": "Euromaster (Michelin) / Rodi, 50/50",
+          "volume": null
+        },
+        {
           "name": "Vialider",
           "model": "Specialist tyre retail chain",
           "territories": []
@@ -1172,7 +1186,7 @@
       ],
       "noteBadge": "hard",
       "note": "Hard Spain has the strongest official data of this batch: MITECO's producer register recorded 24,559,740 new replacement tyres in 2024 (+9.6%) , split PC 17,934,194 (73%) + van/4×4/SUV 3,124,549 (12.7%) + truck & bus 1,532,446 (6.2%, see TBR tab) + moto 1,325,375 (5.4%). ADINE's Distripool wholesale panel (PwC-audited) shows the consumer segment up 10.1% in 2024 — but this is a product-segment split (by tyre type), not a retail-channel split; no independent-vs-dealer-vs-online percentage is published.",
-      "marketAccessNote": "NEX (the Euromaster/Rodi 50/50 joint venture, 12 logistics platforms) and Neumáticos Soledad/Confortauto are the two major gateways; NEX's scale and backing make it the priority first contact.",
+      "marketAccessNote": "Spain is highly distributor-led. Grupo Soledad and Grupo Andrés are the two strongest independent wholesale gateways, while NEX (the Euromaster/Rodi 50/50 joint venture) is a major strategic wholesaler but not an independent one. Soledad is especially strong in imported and multibrand supply, Grupo Andrés in large independent national distribution, and NEX in high-frequency delivery to professional workshops and the Euromaster/Rodi network. A new entrant should approach these three before trying fragmented workshop-by-workshop coverage.",
       "territoryDefs": [
         {
           "code": "SSW",

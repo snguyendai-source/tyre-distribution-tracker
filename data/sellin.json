@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-08T22:34:34Z",
+  "generatedAt": "2026-10-08T22:54:34Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -3600,40 +3600,173 @@
     },
     {
       "cells": {
-        "ch.deal.tot": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Benchmark estimate: 18% of the consumer market. See notes",
-          "tier": "Estimate",
-          "value": 3.791
-        },
-        "ch.onl.tot": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Benchmark estimate: 11% of the consumer market. See notes",
-          "tier": "Estimate",
-          "value": 2.316
-        },
-        "ch.ret.tot": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Benchmark estimate: 3% of the consumer market. See notes",
-          "tier": "Estimate",
-          "value": 0.632
-        },
-        "ch.spec.tot": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Benchmark estimate: 68% of the consumer market. See notes",
-          "tier": "Estimate",
-          "value": 14.32
-        },
         "market": {
           "asOf": "2024",
           "by": "research",
           "source": "MITECO producer register 2024: 17.934M passenger-car plus 3.125M van and 4x4 tyres placed on the replacement market. This is a sell-in measure used here as a proxy for sell-out",
           "tier": "Published",
           "value": 21.059
+        },
+        "industry": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "ETRMA/Europool consumer sell-in for Spain in 2024 (about 14.775M, +2%), as quoted by the research. A panel of manufacturers, not the whole market. I could not confirm this figure against the original release.",
+          "tier": "Published",
+          "value": 14.775
+        },
+        "toWs": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Modelling assumption: 60% of the Europool volume goes through wholesale. Sensitivity: 55% gives 68% wholesale overall, 65% gives 75%.",
+          "tier": "Estimate",
+          "value": 8.865
+        },
+        "export": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Model convention only. The model uses a net domestic-market denominator, so exports are already excluded. It does not mean Spain exported nothing.",
+          "tier": "Estimate",
+          "value": 0.0
+        },
+        "ch.spec.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 80% of the market. Consolidates specialists, fast-fit and autocentres and independent garages. GfK (as quoted by the research) puts specialists alone at 47.0% and autocentres at 13.4%. Replaces the earlier 68%.",
+          "tier": "Estimate",
+          "value": 16.847
+        },
+        "ch.spec.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 78% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. Neither GfK nor ADINE publishes procurement routes by channel.",
+          "tier": "Estimate",
+          "value": 13.2
+        },
+        "ch.spec.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 3.65
+        },
+        "ch.spec.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption only (about 82% private overall), more commercial exposure in garages and dealers than online. No 2024 Spanish dataset splits customer type by channel.",
+          "tier": "Estimate",
+          "value": 13.8
+        },
+        "ch.spec.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption only (about 18% commercial overall). The lowest-confidence layer of the model.",
+          "tier": "Estimate",
+          "value": 3.0
+        },
+        "ch.deal.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research: GfK measured official workshops at about 9.5% of 2024 tyre unit sell-out (9.9% before), applied to the 21.06M market. The GfK figure is as quoted by the research, not independently verified. Replaces the earlier 18%.",
+          "tier": "Estimate",
+          "value": 2.001
+        },
+        "ch.deal.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 28% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. Neither GfK nor ADINE publishes procurement routes by channel.",
+          "tier": "Estimate",
+          "value": 0.55
+        },
+        "ch.deal.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 1.45
+        },
+        "ch.deal.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption only (about 82% private overall), more commercial exposure in garages and dealers than online. No 2024 Spanish dataset splits customer type by channel.",
+          "tier": "Estimate",
+          "value": 1.5
+        },
+        "ch.deal.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption only (about 18% commercial overall). The lowest-confidence layer of the model.",
+          "tier": "Estimate",
+          "value": 0.5
+        },
+        "ch.ret.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Kept from the earlier benchmark (3%). No robust 2024 source to change it.",
+          "tier": "Estimate",
+          "value": 0.632
+        },
+        "ch.ret.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 71% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. Neither GfK nor ADINE publishes procurement routes by channel. Lowest confidence.",
+          "tier": "Estimate",
+          "value": 0.45
+        },
+        "ch.ret.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.18
+        },
+        "ch.ret.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption only (about 82% private overall), more commercial exposure in garages and dealers than online. No 2024 Spanish dataset splits customer type by channel.",
+          "tier": "Estimate",
+          "value": 0.57
+        },
+        "ch.ret.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption only (about 18% commercial overall). The lowest-confidence layer of the model.",
+          "tier": "Estimate",
+          "value": 0.06
+        },
+        "ch.onl.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 7.5% (range 5-10%), counted as the seller of record. Online orders fitted at a workshop are common, so a pure online share is not published. Replaces the earlier 11%.",
+          "tier": "Estimate",
+          "value": 1.579
+        },
+        "ch.onl.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 60% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. Neither GfK nor ADINE publishes procurement routes by channel. Lowest confidence.",
+          "tier": "Estimate",
+          "value": 0.95
+        },
+        "ch.onl.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.63
+        },
+        "ch.onl.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption only (about 82% private overall), more commercial exposure in garages and dealers than online. No 2024 Spanish dataset splits customer type by channel.",
+          "tier": "Estimate",
+          "value": 1.42
+        },
+        "ch.onl.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption only (about 18% commercial overall). The lowest-confidence layer of the model.",
+          "tier": "Estimate",
+          "value": 0.16
         }
       },
       "channels": [
@@ -3662,14 +3795,19 @@
       "groups": [],
       "iso": "ES",
       "meta": {
-        "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
-        "scopeNote": "",
+        "boxNote": "Boxes are the channels as named under \"By channel\". The import box is net non-pool supply, the 6.3M gap between the 21.06M market and the Europool pool, not gross imports (Asian consumer-tyre imports alone were about 13.4M). Export is set to zero as a modelling convention. Online is the seller of record, so orders fitted at a workshop sit in the online box. Private and commercial are a planning assumption only. Finer boxes can be added in the editor.",
+        "scopeNote": "The market size is the MITECO producer register total (17.934M passenger-car plus 3.125M van and 4x4 tyres). Everything below it is modelled: the research treats Europool's 14.8M as the manufacturer pool, so about 6.3M (30%) of the market sits outside it.",
         "seasons": {}
       },
       "refs": [
-        "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
-        "Spain: trade press describes a growing dealer channel and consolidation of independent agents into manufacturer and distributor programmes; online is smaller than in France or Germany.",
-        "Market size: MITECO producer register 2024: 17.934M passenger-car plus 3.125M van and 4x4 tyres placed on the replacement market. This is a sell-in measure used here as a proxy for sell-out"
+        "Method (replaced with the Spain research file): the channel totals now follow the research's mutually exclusive model of 80 / 9.5 / 3 / 7.5%, replacing the earlier benchmark shares of 68 / 18 / 3 / 11%.",
+        "Market size: MITECO producer register 2024: 17.934M passenger-car plus 3.125M van and 4x4 tyres placed on the replacement market. This is a sell-in measure used here as a proxy for sell-out",
+        "Pool versus market: Europool consumer sell-in was about 14.775M in 2024 (+2%) and GfK's measured sell-out about 11.216M (+3.1%), both as quoted by the research and not independently verified. Both are panels, not the whole market. 21.059M less 14.775M leaves 6.284M (about 30%) outside the pool, which is the import box here.",
+        "ADINE's Distripool (PwC) shows consumer-tyre distributor sales up 10.1% in 2024 (passenger car +9.7%, van +5.6%, 4x4/SUV +16.1%), as reported by Interempresas in February 2025. The research sets that against about +2% for the Europool panel. Asian consumer-tyre imports were about 13.4M in 2024 (ADINE's 2025 figure of 15.05M, up 11.9%, implies the same), so the 6.3M cannot be read as gross imports.",
+        "Wholesale versus direct is not published for Spain. The research assumes 60% of the Europool volume and all of the non-pool volume go through wholesale, which gives about 72% wholesale and 28% direct (range 68-76%). It is a medium-confidence derived estimate, not a hard percentage.",
+        "Channels (research, GfK figures as quoted and not independently verified): official workshops about 9.5% of 2024 tyre unit sell-out, tyre specialists 47.0%, autocentres 13.4%. That makes the earlier 18% dealer share too high. The 80% workshop bucket also includes independent garages, which GfK's public figures do not break out.",
+        "Wholesale scale (research; only Soledad's revenue was checked): Grupo Soledad reported about 409M EUR of revenue in 2024 (Alicante Plaza) and, per the research, distributes slightly below 20% of tyres in Spain. NEX sold more than 2.5M tyres in 2024, and Grupo Andres' tyre division had about 360M EUR of revenue (its own site reported 219M EUR for 2021). These must not be added up. NEX grew out of the Euromaster and Rodi wholesale operations (50/50), so it is not independent.",
+        "Private versus commercial is a planning assumption of about 82% / 18%. MITECO's 17.934M passenger versus 3.125M van and 4x4 split is by vehicle type, not by customer."
       ],
       "scope": "Consumer replacement tyres (car, van, 4x4)",
       "unit": "million tyres",
