@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-08T14:37:42Z",
+  "generatedAt": "2026-10-08T22:15:20Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -2980,40 +2980,187 @@
     },
     {
       "cells": {
+        "market": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Syndicat du Pneu/GfK 2024 sell-out (TC4), +3.4%. This is the Syndicat's panel figure, not total French replacement consumption (the research puts the full market at about 42M; see notes).",
+          "tier": "Published",
+          "value": 17.211
+        },
+        "industry": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research: pool share of about 75% applied to the 17.2M panel, a normalised figure rather than a real pool volume. The published 2024 sell-in of manufacturers into the trade is 31.74M, a different scope.",
+          "tier": "Estimate",
+          "value": 13.0
+        },
+        "direct": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research: about 46% of the 17.2M reaches the channels straight from manufacturers or through central-purchasing arrangements. Range 40-52%. Manufacturer-owned networks (Speedy, First Stop, BestDrive, Euromaster, Vulco) support a sizeable direct route.",
+          "tier": "Estimate",
+          "value": 8.0
+        },
+        "toWs": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Industry 13.0 minus direct 8.0. Modelled.",
+          "tier": "Estimate",
+          "value": 5.0
+        },
+        "import": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research: net non-pool imports, normalised onto the 17.2M panel (about 10.3M on the full-market basis). Treat this box as net imports. Gross customs flows are not comparable (see notes).",
+          "tier": "Estimate",
+          "value": 4.2
+        },
+        "export": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Netted into the import box. No public dataset isolates wholesaler re-exports of replacement car and van tyres, so no standalone export figure is shown.",
+          "tier": "Estimate",
+          "value": 0.0
+        },
         "ch.auto.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Dashboard channel split (27.9%), modeled by branch count",
-          "tier": "Derived",
+          "source": "2024 channel share (27.9%) scaled onto the 17.2M panel. A modelled allocation, not an observed volume.",
+          "tier": "Estimate",
           "value": 4.8
+        },
+        "ch.auto.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 35% via wholesale. Triangulated from channel structure and manufacturer ownership; no public French split exists.",
+          "tier": "Estimate",
+          "value": 1.7
+        },
+        "ch.auto.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale. 35% assumed via wholesale.",
+          "tier": "Estimate",
+          "value": 3.1
+        },
+        "ch.auto.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus commercial. About 10% commercial.",
+          "tier": "Estimate",
+          "value": 4.3
+        },
+        "ch.auto.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: about 10% commercial. Not published; wide error band.",
+          "tier": "Estimate",
+          "value": 0.5
         },
         "ch.deal.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Dashboard channel split (28.0%), Syndicat du Pneu/GfK 2024",
-          "tier": "Published",
+          "source": "2024 channel share (about 28%) scaled onto the 17.2M panel. A modelled allocation, not an observed volume.",
+          "tier": "Estimate",
           "value": 4.82
         },
-        "ch.onl.tot": {
+        "ch.deal.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Dashboard channel split (18.0%); trade press reports 5.6M, unresolved",
-          "tier": "Published",
-          "value": 3.1
+          "source": "Research estimate: 85% via wholesale (long tail of independent multibrand garages). Triangulated from channel structure and manufacturer ownership; no public French split exists.",
+          "tier": "Estimate",
+          "value": 4.1
+        },
+        "ch.deal.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale. 85% assumed via wholesale (long tail of independent multibrand garages).",
+          "tier": "Estimate",
+          "value": 0.7
+        },
+        "ch.deal.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus commercial. About 15% commercial.",
+          "tier": "Estimate",
+          "value": 4.1
+        },
+        "ch.deal.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: about 15% commercial. Not published; wide error band.",
+          "tier": "Estimate",
+          "value": 0.7
         },
         "ch.spec.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Dashboard channel split (26.3%), modeled by branch count",
-          "tier": "Derived",
+          "source": "2024 channel share (26.3%) scaled onto the 17.2M panel. A modelled allocation, not an observed volume.",
+          "tier": "Estimate",
           "value": 4.52
         },
-        "market": {
+        "ch.spec.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Syndicat du Pneu/GfK 2024 sell-out (TC4), +3.4%",
-          "tier": "Published",
-          "value": 17.211
+          "source": "Research estimate: 50% via wholesale. Triangulated from channel structure and manufacturer ownership; no public French split exists.",
+          "tier": "Estimate",
+          "value": 2.2
+        },
+        "ch.spec.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale. 50% assumed via wholesale.",
+          "tier": "Estimate",
+          "value": 2.3
+        },
+        "ch.spec.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus commercial. About 50% commercial (fleet and rental b2b).",
+          "tier": "Estimate",
+          "value": 2.3
+        },
+        "ch.spec.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: about 50% commercial (fleet and rental B2B). Strongest evidence of the four: GfK data cited by the Syndicat du Pneu say about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens.",
+          "tier": "Estimate",
+          "value": 2.2
+        },
+        "ch.onl.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "2024 channel share (about 18%) scaled onto the 17.2M panel. A modelled allocation, not an observed volume.",
+          "tier": "Estimate",
+          "value": 3.1
+        },
+        "ch.onl.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 40% via wholesale. Triangulated from channel structure and manufacturer ownership; no public French split exists.",
+          "tier": "Estimate",
+          "value": 1.2
+        },
+        "ch.onl.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale. 40% assumed via wholesale.",
+          "tier": "Estimate",
+          "value": 1.9
+        },
+        "ch.onl.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus commercial. About 10% commercial.",
+          "tier": "Estimate",
+          "value": 2.8
+        },
+        "ch.onl.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: about 10% commercial. Not published; wide error band.",
+          "tier": "Estimate",
+          "value": 0.3
         }
       },
       "channels": [
@@ -3042,20 +3189,25 @@
       "groups": [],
       "iso": "FR",
       "meta": {
-        "boxNote": "Boxes are the channels as named under \"By channel\". The online figure is disputed: trade press reports pure players at 5.6M tyres (about a third of sell-out), against 3.1M here. Finer boxes can be added in the editor.",
+        "boxNote": "Boxes are the channels as named under \"By channel\". Industry and non-pool imports are normalised onto the 17.2M panel, so they are not the real pool or import volumes, and export is netted into imports. Pure-play online is 3.1M here (the 18% share on 17.2M); trade press quotes 5.6M, which fits the same share on the 31.7M sell-in basis. Finer boxes can be added in the editor.",
         "seasons": {
           "allSeason": 37,
           "source": "Syndicat du Pneu/GfK 2024 via trade press",
           "summer": null,
           "winter": null
-        }
+        },
+        "scopeNote": "17.2M is the Syndicat du Pneu/GfK panel sell-out, not total French replacement consumption. The research behind these boxes puts the full market at about 42M (range 40-44M) and manufacturer sell-in at 31.7M. The channel boxes are the published 2024 channel shares scaled onto the 17.2M panel."
       },
       "refs": [
         "Syndicat du Pneu / GfK 2024: 17.211M consumer (TC4) tyres reached drivers (sell-out, +3.4%), as reported by Journal de l'Automobile",
-        "The same release gives 31.744M tyres sold by manufacturers into the trade (sell-in). That is a different scope and is not used here because the sources do not reconcile it with sell-out",
-        "Channel group volumes (4.52 / 4.80 / 4.82 / 3.10M) are the 2024 channel split already on the dashboard; tyre specialists and auto-centres were modeled by branch count",
+        "The same release gives 31.744M tyres sold by manufacturers into the trade (sell-in, +4.5%). The sources reviewed describe the 17.2M as sell-out through the Syndicat's panel. An April 2020 L'Argus article on the earlier 18.2M figure says that panel covered specialist wholesalers, car centres and fast-fitters only. Research reading for 2024: 17.2M is about auto-centres (8.86M) plus pneumaticiens (about 8.35M), so it leaves out dealers/MRA and most pure players.",
+        "Channel volumes on the dashboard (4.80 / 4.82 / 4.52 / 3.10M) are the 2024 channel shares scaled onto 17.2M, so they are modelled allocations. The research, citing L'Argus and the Syndicat du Pneu, gives the 2024 channel volumes on the 31.74M basis as auto-centres 8.86M, dealers/agents/MRA 8.85M, pneumaticiens about 8.35M and pure players 5.68M. Not independently verified here.",
         "All-season tyres were 37% of the French market in 2024 (trade press)",
-        "Unresolved conflict: trade press reports pure players at 5.6M units (+21.9%), about a third of the 17.2M. Check against the Syndicat's original release before relying on the online figure"
+        "Online discrepancy: trade press reports pure players at 5.6M units (+21.9%) while this model shows 3.1M. The research explains it as the same 17.9% share applied to 31.74M (5.68M) versus 17.2M (3.08M). That reading fits the arithmetic, but the press articles do not state the basis of the 5.6M.",
+        "Full-market estimate (research, not used for the boxes): about 42M replacement car, 4x4 and van tyres in 2024, range 40-44M. It is anchored on ADEME's 42.2M replacement tyres for 2022, a Europool series of about 32M and budget imports (19-20% of sales, doubled in a decade). The 42M is an inference, not a published 2024 count. The ADEME and Europool figures were not independently verified here. Switching the whole France model to this base would change the card header and every channel volume.",
+        "Wholesale versus direct splits are triangulated estimates: about 54% via wholesale overall (range 48-60%), built from 35% auto-centres, 85% dealers and independent repairers, 50% specialists and 40% online. No public French dataset gives this split. Context from the research: Distri Cash sold about 6.5M tyres in 2024 (not verified; J2R Auto reports 5.5M for 2022), so the wholesale route is large.",
+        "Private versus commercial is about 78% / 22% (range 74-82% private). Only the specialist figure has direct evidence. The mixes for the other channels are estimates.",
+        "UN Comtrade / WITS 2024, HS 401110, as quoted by the research: France gross imports about 55.1M and exports about 20.2M passenger tyres. Not usable for the import and export boxes, because gross customs flows include OE supply and intra-group movements. Not checked here."
       ],
       "scope": "Consumer replacement tyres (car, van, 4x4; TC4)",
       "unit": "million tyres",
