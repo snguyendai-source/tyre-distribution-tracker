@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-08T22:15:20Z",
+  "generatedAt": "2026-10-08T22:34:34Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -3249,6 +3249,153 @@
           "source": "Estimate: 36.2M licensed cars (DfT, end-2024) x about 0.80 tyres per car per year. An older GfK/NTDA study put the market at 28.4M",
           "tier": "Estimate",
           "value": 29
+        },
+        "industry": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Estimate: BTMA/EuroPool members sold 9.330M UK consumer replacement tyres (car, SUV, light commercial) in H1 2024, doubled. Not a reported full-year figure. Range 18.2-19.3.",
+          "tier": "Estimate",
+          "value": 18.7
+        },
+        "direct": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research: about 28% of the market goes from manufacturers or their brand organisations straight to the channels. Counted by physical flow, so stock held and delivered by Bond, Stapleton's or Micheldever is via wholesale. Range 6.5-9.0.",
+          "tier": "Estimate",
+          "value": 8.0
+        },
+        "toWs": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Industry 18.7 minus direct 8.0. Range 9.5-12.0.",
+          "tier": "Estimate",
+          "value": 10.7
+        },
+        "import": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Modelled gross non-pool supply for the replacement market, not customs imports. Net of the export balancing item it is about 10.3M, the gap between the 29.0M market and the 18.7M pool. Range 9.5-12.5.",
+          "tier": "Estimate",
+          "value": 11.0
+        },
+        "export": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Balancing assumption for re-exports out of the wholesale layer. Not a published statistic, lowest confidence. Range 0.2-1.5.",
+          "tier": "Estimate",
+          "value": 0.7
+        },
+        "ch.spec.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 82% of the channel via wholesale, inferred from market structure. No UK source reports this.",
+          "tier": "Estimate",
+          "value": 16.6
+        },
+        "ch.spec.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 3.7
+        },
+        "ch.spec.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Passenger car proxy: channel total minus the LCV proxy. Based on car versus van mileage, not an observed split.",
+          "tier": "Estimate",
+          "value": 15.9
+        },
+        "ch.spec.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "LCV (commercial) proxy: about 18.6% of car plus van mileage (DfT 2024), placed mostly in the specialist channel by judgement. The overall 5.4M is firmer than this channel placement.",
+          "tier": "Estimate",
+          "value": 4.4
+        },
+        "ch.deal.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 54% of the channel via wholesale, inferred from market structure. No UK source reports this.",
+          "tier": "Estimate",
+          "value": 1.9
+        },
+        "ch.deal.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 1.6
+        },
+        "ch.deal.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Passenger car proxy: channel total minus the LCV proxy. Based on car versus van mileage, not an observed split.",
+          "tier": "Estimate",
+          "value": 3.1
+        },
+        "ch.deal.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "LCV (commercial) proxy: about 18.6% of car plus van mileage (DfT 2024), placed mostly in the specialist channel by judgement.",
+          "tier": "Estimate",
+          "value": 0.4
+        },
+        "ch.ret.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 75% of the channel via wholesale, inferred from market structure. No UK source reports this.",
+          "tier": "Estimate",
+          "value": 0.9
+        },
+        "ch.ret.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.3
+        },
+        "ch.ret.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Passenger car proxy: channel total minus the LCV proxy. Based on car versus van mileage, not an observed split.",
+          "tier": "Estimate",
+          "value": 1.1
+        },
+        "ch.ret.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "LCV (commercial) proxy: about 18.6% of car plus van mileage (DfT 2024), placed mostly in the specialist channel by judgement.",
+          "tier": "Estimate",
+          "value": 0.1
+        },
+        "ch.onl.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 39% of the channel via wholesale, inferred from market structure. No UK source reports this. Lowest-confidence split; 50:50 is also defensible.",
+          "tier": "Estimate",
+          "value": 1.6
+        },
+        "ch.onl.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 2.5
+        },
+        "ch.onl.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Passenger car proxy: channel total minus the LCV proxy. Based on car versus van mileage, not an observed split.",
+          "tier": "Estimate",
+          "value": 3.6
+        },
+        "ch.onl.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "LCV (commercial) proxy: about 18.6% of car plus van mileage (DfT 2024), placed mostly in the specialist channel by judgement.",
+          "tier": "Estimate",
+          "value": 0.5
         }
       },
       "channels": [
@@ -3277,14 +3424,21 @@
       "groups": [],
       "iso": "UK",
       "meta": {
-        "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
-        "scopeNote": "The card header's 28.4M is an older GfK/NTDA estimate; this model's 29.0M is an estimate from the number of cars on the road.",
+        "boxNote": "No channel split is published for the UK, so the four channel totals are benchmark estimates. The import box is modelled non-pool supply, not customs imports, and export is a balancing item. Red and blue show where the tyre is physically stocked and delivered, so a tyre bought on a manufacturer contract but delivered by a distributor counts as via wholesale. Private and commercial are a car versus van mileage proxy, so read them as passenger and LCV. Finer boxes can be added in the editor.",
+        "scopeNote": "The card header's 28.4M is an older GfK/NTDA estimate; this model's 29.0M is an estimate from the number of cars on the road. The wholesale, direct, import and export figures are research estimates anchored on BTMA's H1 2024 EuroPool sales.",
         "seasons": {}
       },
       "refs": [
         "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
         "UK: independent garages dominate and fast-fit networks are stable or growing, while franchised dealers have been losing share (Mintel, qualitative; the numbers are paywalled). Online is a growing but smaller channel.",
-        "Market size: Estimate: 36.2M licensed cars (DfT, end-2024) x about 0.80 tyres per car per year. An older GfK/NTDA study put the market at 28.4M"
+        "Market size: Estimate: 36.2M licensed cars (DfT, end-2024) x about 0.80 tyres per car per year. An older GfK/NTDA study put the market at 28.4M",
+        "BTMA/EuroPool: members sold 9.330M UK consumer replacement tyres (passenger car, SUV, light commercial) in H1 2024, as reported by European Rubber Journal. Doubled to 18.7M for the year; seasonality and stock timing are why the range is 18.2-19.3M. The research also quotes 4.786M for Q2 2024 (not checked).",
+        "Pool versus market: 29.0M less 18.7M leaves about 10.3M (35%) outside the EuroPool members. BTMA links member volumes to low-cost imports, particularly from China and Vietnam (European Rubber Journal). The research also quotes extra-EU passenger and light-truck imports up 10% in 2024 and well above 30M tyres a year, and GfK's 2023 UK mix of 33% premium, 22% mid-range and 45% budget. None of that was checked here, and customs imports cannot go in the import box because they include pool brands, OE supply and stock.",
+        "Wholesale structure: Micheldever supplies about 6.0M tyres a year (Sumitomo Rubber Industries agreed to buy it in January 2017). Stapleton's calls itself the UK's largest distributor, with 11 locations, and has been owned by Itochu since 1994. The research also cites more than 7,000 independent customers for Stapleton's and more than 6,000 retailers for Micheldever (not checked). Do not add these up: they include own retail and overlapping customers.",
+        "Halfords sold its Viking distribution business to Bond International in FY2024, expecting savings of about 5M GBP a year while keeping the margin benefits of direct sourcing (Tyrepress). It shows why direct versus wholesale is blurry: sourcing can be direct while stock and delivery run through a distributor.",
+        "Wholesale versus direct is an inference from market structure, about 72 / 28 with a range of 67-78% wholesale, not a reported percentage. Channel routing has the lowest confidence of all: specialists about 82% via wholesale, dealers 54%, other retail 75%, online 39%.",
+        "Ownership (research, not checked): Micheldever and Protyre belong to Sumitomo Rubber, Stapleton's and Kwik Fit sit within Itochu's European Tyre Enterprise, and Blackcircles is Michelin-owned. The large UK wholesalers are therefore not independent in the ownership sense.",
+        "Private versus commercial is a mileage proxy. The research quotes DfT 2024 Great Britain vehicle miles of 256.1bn for cars and taxis and 58.5bn for vans, which puts vans at about 18.6% of the total and about 5.4M of the 29.0M tyres. Not checked here."
       ],
       "scope": "Consumer replacement tyres (car, van, 4x4)",
       "unit": "million tyres",
