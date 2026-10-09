@@ -1,44 +1,14 @@
 {
-  "runAt": "2026-10-08T13:04:40.991323+00:00",
-  "totalNew": 5,
+  "runAt": "2026-10-09T12:51:15.079122+00:00",
+  "totalNew": 1,
   "entitiesChecked": 26,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 1,
   "newItemsByEntity": {
-    "Pirelli": [
-      {
-        "title": "McLaren Trophy extends Official Tyre Supplier Partnership with Pirelli for another three years - Newsroom Pirelli",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTEc5UGNtbEFtOHFSU3NYNXg1SFhlUmZsR0Z0Um1vVnNhT3BKeXZzN2xnQVhUdWVMU3VhcDdULUFQaTl0M1JsYktoZ0pwaWE2bDc5ZTFiNGJ3NXlxU1JqSkQxQW5XSHNTa3dteVRmRllacmhMNTNTMUtDZEhkelg3SUUzOUpqY29OUl9sTDZvQ2pVQnlfRzNoOHQ1Ukw0SHB0NmpEdUQyMm80Yk85SF8yeGdJRUpQc1ZEZFZIYUFR?oc=5",
-        "pubDate": "Thu, 28 May 2026 07:00:00 GMT",
-        "category": "Premium global"
-      }
-    ],
-    "Falken Tyres": [
-      {
-        "title": "Skoda Superb relies on Falken Tyres and their safety and fuel efficiency - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZFI4Z01UV3QtU01vRlpGOTIwalJyTjg0TkxJeGs4NW9renYyUEdFX0hLbE5hWWtqMS1fNGFJMDRvSEN6b3BHZk5VT2lWQmRseXZzQ0pLcTFLcG9CdTJ2QU0wWXh0RXpmQ05jalFWSFM3T2dVR1VPX0JWTy1oNDRVbkJXRE9JdkhjWXRQc3h0U0t4YnM0QWF6dWZKZWV6dlZmaGFxVEtZbGZyUlZhdTktZE5sZGlPZFlpZ1VqVWhfVkJlZGpW?oc=5",
-        "pubDate": "Wed, 02 Nov 2016 07:00:00 GMT",
-        "category": "Japanese"
-      }
-    ],
-    "Sailun Tire": [
-      {
-        "title": "China's tire supply chain bets nearly 40 billion yuan on Egypt in full-chain overseas push - BigGo Finance",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5vSkl0NUFHUFZoWXVqVE03aERVUVg1clZqYmF1NmdDVElEOWhaQTZoeUhGMndoYWN4VWVmRHJBWllYZUtha01Qd184NW96WHZvTFIyOXBXZ25UV1pNWWZhMktQbFFaWXk3ZU1VY2lEQWd6dTBxTHc?oc=5",
-        "pubDate": "Thu, 08 Oct 2026 07:06:00 GMT",
-        "category": "Chinese"
-      }
-    ],
     "Double Coin": [
       {
-        "title": "Dunlop Heads Towards Winter with a Robust Winter and All-Season Tyre Portfolio - Traction News",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNV2NVS25zUG1Ka2FtRWtGMDJsQ0tEYnVscWh5aWlEYmdVeWUyc3JrbzQ1dmwxNTJpYzZHT05YM1BKSE9qbzNmRWV6eFNWVFNqalVOaGpQWHRGQl9JaURfTFVDODllb1VRcGV6VUkzdzVNbGpTa21WQ0Nfazc3SWNSd25SRUR6TUtwUFQ3dFpDZFJ3UDJtU0I5UUZfY0trclprd25KOHk5Z19hTmxC?oc=5",
-        "pubDate": "Thu, 08 Oct 2026 01:25:09 GMT",
-        "category": "Chinese"
-      },
-      {
-        "title": "New FALKEN EUROALL SEASON AS220 Takes Centre Stage in Brand's Upgraded Winter Tyre Range - Traction News",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWWRBU3hGOEFFN0k5U1IyNmJpekhva3ZaeTRqNzFWQzlhQzk4VWhDVkFKNDVJRDJ5VmhQYnpjSXNGMC1TeDFNM0I1QV9WOHRXZTAwYmxGYmpjWWtKMERvejRtdkpTQUstMGRmdFQxZFlaWDNPYWt2cXItdm4zU1pkZjJyRHRWUWNCTlZKOTR1Z01hdUR4eG5pUk9yYkVFb29rNjJaWllMbDZ4UEFEUlB3aEVnLTRhREk2ZVE?oc=5",
-        "pubDate": "Thu, 08 Oct 2026 01:49:41 GMT",
+        "title": "Double Coin Tires Supports A&E Shipping Wars Star, Chris Hanna - Mining.com",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbVpUMG1QLXRrS1QwVnBLY0JTcEVaeUlxMEJjWXlxdGpUT0huc0Jjc1NJSnFIcklyWjBhalBfQzNEZmhhczItdmMzWlBNcWRuRzdkQ0pRMElZdXptQ21SNy01Sk9SWjBHT0NwX01zVWdzcFJodXBLd0ZCY0tVeU0zUFBISXdKMXV1NFpIaTdRcF9fQQ?oc=5",
+        "pubDate": "Tue, 05 Mar 2013 08:00:00 GMT",
         "category": "Chinese"
       }
     ]
