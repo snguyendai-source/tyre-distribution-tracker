@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-09T06:32:55Z",
+  "generatedAt": "2026-10-09T07:11:06Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -4285,40 +4285,124 @@
     },
     {
       "cells": {
-        "ch.deal.tot": {
+        "market": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 10% of the consumer market. See notes",
+          "source": "Research estimate for passenger-car plus SUV/4x4 tyres, light commercial excluded (range 2.65-3.05M). HTA's 2018 data (2.420M passenger-car plus 0.182M SUV, as quoted by the research) give a 2.602M benchmark; the 3.1M header also includes 0.258M light-commercial tyres. 2024 is an inference from a car parc about 17% larger than in 2018 and a lower replacement rate, not a published figure. Replaces the earlier 2.8M.",
           "tier": "Estimate",
-          "value": 0.28
+          "value": 2.85
         },
-        "ch.onl.tot": {
+        "industry": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 15% of the consumer market. See notes",
+          "source": "Research model (range 1.80-2.15M): the part of the 2.85M supplied by the manufacturers' Hungarian sales entities (HTA/Tyres Europe member equivalent). Not a published HTA figure.",
           "tier": "Estimate",
-          "value": 0.42
+          "value": 2.0
         },
-        "ch.ret.tot": {
+        "toWs": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 5% of the consumer market. See notes",
+          "source": "Research model (range 1.10-1.40M): manufacturer sell-in into distributors. The other 0.75M goes direct to the channels. Not a published figure.",
           "tier": "Estimate",
-          "value": 0.14
+          "value": 1.25
+        },
+        "import": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate (range 0.90-1.30M) of non-pool and budget-brand imports that feed Hungarian replacement wholesalers. It is not customs imports, which include original-equipment supply, factories and regional stock.",
+          "tier": "Estimate",
+          "value": 1.1
+        },
+        "export": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate (range 0.15-0.40M) of distributor re-export. It is not factory exports: Hungary is a major tyre production and export hub, so customs figures are several times the replacement market.",
+          "tier": "Estimate",
+          "value": 0.25
         },
         "ch.spec.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 70% of the consumer market. See notes",
+          "source": "Research estimate: 70% of the market. Kept from the earlier benchmark shape and rescaled to 2.85M. HTA described specialist workshops, traditional retailers and online as the main routes, but no unit split is published.",
           "tier": "Estimate",
-          "value": 1.96
+          "value": 2.0
         },
-        "market": {
+        "ch.spec.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Estimate anchored on HTA 2018: 3.1M total tyres of which 2.42M passenger-car; adjusted to a 2024 consumer figure",
+          "source": "Research estimate, about 83% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Hungarian source publishes procurement routes by channel.",
           "tier": "Estimate",
-          "value": 2.8
+          "value": 1.65
+        },
+        "ch.spec.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.35
+        },
+        "ch.deal.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 10% of the market, kept from the earlier benchmark and rescaled to 2.85M. Not a published figure.",
+          "tier": "Estimate",
+          "value": 0.29
+        },
+        "ch.deal.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 34% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Hungarian source publishes procurement routes by channel.",
+          "tier": "Estimate",
+          "value": 0.1
+        },
+        "ch.deal.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.19
+        },
+        "ch.ret.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 5% of the market, kept from the earlier benchmark. Low confidence, no Hungarian source for it.",
+          "tier": "Estimate",
+          "value": 0.14
+        },
+        "ch.ret.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 79% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Hungarian source publishes procurement routes by channel. Lowest confidence.",
+          "tier": "Estimate",
+          "value": 0.11
+        },
+        "ch.ret.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.03
+        },
+        "ch.onl.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 15% of the market, kept from the earlier benchmark. The research table shows 0.43M, but the four channels then add up to 2.86M, so 0.42M is used to make them balance to 2.85M. Online means the order origin, wherever the tyre is fitted. HTA called online the fastest-growing channel but publishes no share.",
+          "tier": "Estimate",
+          "value": 0.42
+        },
+        "ch.onl.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 57% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Hungarian source publishes procurement routes by channel. Lowest confidence.",
+          "tier": "Estimate",
+          "value": 0.24
+        },
+        "ch.onl.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.18
         }
       },
       "channels": [
@@ -4347,16 +4431,21 @@
       "groups": [],
       "iso": "HU",
       "meta": {
-        "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
-        "scopeNote": "The card header's 3.1M is HTA's 2018 total for all tyres; this model's 2.8M is a 2024 consumer-tyre estimate.",
+        "boxNote": "Boxes are the channels as named under \"By channel\". The import box is the research's 1.10M estimate of non-pool imports feeding Hungarian wholesalers, and the export box its 0.25M estimate of distributor re-export. Neither is customs data, which includes original-equipment supply, factories and regional stock, because Hungary is a large tyre production hub. Online is the order origin, wherever the tyre is fitted.",
+        "scopeNote": "The card header's 3.1M is HTA's 2018 total for all tyre categories, including light-commercial tyres. This model's 2.85M is a 2024 estimate for passenger cars plus SUV/4x4 only. The research does not cover private versus commercial demand, so those boxes still need input.",
         "seasons": {}
       },
       "refs": [
-        "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
-        "Hungary: wholesaler-led (MARSO) with franchise networks; online growing from a low base.",
-        "Market size: Estimate anchored on HTA 2018: 3.1M total tyres of which 2.42M passenger-car; adjusted to a 2024 consumer figure"
+        "Method (replaced with the Hungary research file): the market and every flow and channel figure are modelled for passenger-car plus SUV/4x4 tyres, excluding light commercial. The channel shares of 70 / 10 / 5 / 15% are kept from the earlier benchmark and rescaled from 2.8M to 2.85M. No Hungarian source publishes sell-out by channel.",
+        "HTA 2018 (confirmed): the Hungarian Tyre Association reported 3.1M tyres sold in 2018 (up 9.7%) through manufacturers' representatives, of which passenger-car 2.4M (up 9%), SUV 182,000 (up 23%) and light commercial 258,000 (up 5%) (444.hu, January 2019). That gives about 2.6M for passenger cars plus SUVs. The older 3.1M card header is the all-category total.",
+        "2024 estimate: KSH reports 4.37M passenger cars at the end of 2025, up 111,000 (2.6%) in the year, so about 4.26M at the end of 2024, with an average age of about 16.5 years (confirmed). The research quotes 3.642M cars at the end of 2018, so the parc is about 17% larger. Applying 2018's 0.714 tyres per car would give about 3.05M; the research uses 2.85M (range 2.65-3.05M) because replacement demand has been weak since the post-Covid price shock, citing an Apollo executive's roughly 30% decline comment (not checked). Its 2025 figure (about 2.80M) and 2026 run-rate (about 2.90M) are estimates; the Tyres Europe changes it quotes (down 2% in 2025, up 2% in H1 2026) are European, not Hungarian, and not checked.",
+        "Customs versus domestic balance: customs data are not used. Hungary is a major tyre production and export hub (the research quotes HTA: 34.1M tyres produced in 2022), so import and export statistics include original-equipment supply, factory output and re-export. The 1.10M import and 0.25M export boxes are the research's estimates of non-pool distributor flows.",
+        "Wholesale versus direct is a modelled split of about 74 / 26, not a published figure: 1.25M of the 2.00M industry volume goes through wholesale and 0.75M goes direct, plus 1.10M of non-pool imports, less 0.25M re-exported, gives 2.10M wholesale sold in Hungary (74%) and 0.75M direct (26%).",
+        "Wholesalers (checked): AKH is a Hungarian family-owned company that says it sells more than one million tyres a year and had more than 200 reseller partners in its service programme (Vilaggazdasag 2021 and 2022). MARSO is a tyre wholesaler with more than 1,000 resellers and 30 stores in 2020, and 2019 revenue of HUF 27.3bn (Vilaggazdasag). Not confirmed: AKH's claims of 2,000 reseller partners and being the largest player, MARSO's 16 regional warehouses, the 2024 domestic sales of HUF 33.0bn (MARSO) and HUF 27.1bn (AKH), and Bridgestone's 2023 move of distribution to MARSO.",
+        "Caution on wholesaler volumes: the research estimates 0.65-0.80M PCR for AKH and 0.55-0.70M for MARSO. In 2022 AKH's deputy CEO put its market share at around 10% (Economx), which is hard to reconcile with 23-28% of 2.85M, so treat these volumes as upper-end estimates. The earlier note that MARSO holds exclusive Michelin and Bridgestone agreements is removed because I found no support for it.",
+        "Manufacturer layer: the research names Apollo, Bridgestone, Continental, Goodyear, Hankook, Michelin and Pirelli as having Hungarian sales entities (HTA, as quoted, not checked). They supply distributors and large accounts directly and sit behind the industry and direct boxes. The Gumi.hu network size differs: this page says 150+ service points, the research 100+ workshop stations. Left as is."
       ],
-      "scope": "Consumer replacement tyres (car, van, 4x4)",
+      "scope": "Passenger-car replacement tyres (car + SUV/4x4; excludes light commercial)",
       "unit": "million tyres",
       "year": 2024
     },

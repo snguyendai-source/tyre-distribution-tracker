@@ -1516,18 +1516,15 @@
     {
       "country": "Hungary",
       "meta": "HTA (Hungarian Tire Association)",
-      "total": "3.1M",
-      "totalLabel": "units (2018 — outdated)",
+      "total": "~2.85M",
+      "totalLabel": "units, 2024 estimate (passenger car + SUV)",
       "channels": [],
       "flatEntities": [
         {
-          "name": "MARSO Kft. (~30 own locations)",
+          "name": "MARSO Kft.",
           "model": "Wholesaler / distributor",
-          "scale": {
-            "value": 30,
-            "metric": "own locations",
-            "label": "~30 own locations + franchise network"
-          }
+          "owner": "Nyíregyháza HQ",
+          "volume": "1,000+ resellers and ~30 own stores (2020); est. 0.55-0.70M PCR a year (research estimate)"
         },
         {
           "name": "Point S Hungary (~73-75 franchise shops)",
@@ -1566,7 +1563,9 @@
         },
         {
           "name": "AKH – Abroncs Kereskedőház (gumi.hu)",
-          "model": "Wholesaler / distributor"
+          "model": "Wholesaler / distributor",
+          "owner": "Hungarian family-owned",
+          "volume": "says 1M+ tyres a year; claims 2,000+ resellers (not confirmed); est. 0.65-0.80M PCR a year (research estimate)"
         },
         {
           "name": "UNIX Autó Kft",
@@ -1582,8 +1581,8 @@
         }
       ],
       "noteBadge": "caution",
-      "note": "Outdated The last clean HTA unit total is from 2018: 3.1M total tyres (+9.7%), of which PC 2,420,000 (+9%) . HTA has not published a Hungary-specific 2024 figure — recent HTA communications cite European (ETRMA) percentages, not Hungarian units. Do not substitute Germany's 47.5M/+6.8% figure for Hungary. No channel split is published; HTA states online is the fastest-growing channel (qualitative only).",
-      "marketAccessNote": "MARSO is the clear priority contact — Hungary's largest wholesaler already holds exclusive agreements with Michelin and Bridgestone plus a long-term Continental relationship. Apollo already has a Hungarian sales entity and a new Győr distribution centre to build on directly."
+      "note": "Outdated HTA's last published unit data are for 2018: 3.1M tyres in total (+9.7%), of which passenger-car 2.42M, SUV 0.182M and light commercial 0.258M. HTA has not published a Hungary-specific 2024 figure; recent communications cite European percentages. The 2.85M in the flow model is a passenger-car plus SUV estimate (range 2.65-3.05M), not a published number. Do not substitute Germany's 47.5M/+6.8% figure for Hungary. No channel split is published; HTA states online is the fastest-growing channel (qualitative only).",
+      "marketAccessNote": "AKH and MARSO are Hungary's two dominant independent tyre-distribution gateways. AKH says it is the largest player in the market and sells more than one million tyres a year; MARSO is a nationwide wholesaler with more than 1,000 resellers and about 30 own stores. Neither is clearly ahead on the evidence, and there is no third independent wholesaler of comparable scale. Major manufacturers also run Hungarian sales entities, so large-account business is split between distributors and the manufacturers' own direct sales. Apollo already has a Hungarian sales entity and a new Győr distribution centre to build on directly."
     },
     {
       "country": "Switzerland",
