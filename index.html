@@ -710,7 +710,7 @@ function wholesaleListHtml(list){
     return `<div class="ws-group">${chip}<div class="ws-kids"><span class="ws-kids-cap">${k.length} subsidiar${k.length>1?'ies':'y'}</span>${sortByScale(k).map(x=>entChip({...x,name:x.name.replace(PAR,'')})).join('')}</div></div>`;
   }).join('')}</div>`;
   const indep=top.filter(e=>!isMfrOwnedModel(e.model)), mo=top.filter(e=>isMfrOwnedModel(e.model));
-  return (indep.length?`<div class="ws-cap">Independent wholesalers</div>${part(indep)}`:'')+(mo.length?`<div class="ws-cap">Manufacturer-owned wholesalers</div>${part(mo)}`:'');
+  return (indep.length?`<div class="ws-cap">Wholesalers and distributors</div>${part(indep)}`:'')+(mo.length?`<div class="ws-cap">Manufacturer-owned wholesalers</div>${part(mo)}`:'');
 }
 function renderChannelLayers(c, flow, ci){
   const esc=escapeHtml, R=flow?flowSolve(flow):null, val=R?R.val:{}, tier=R?R.tier:{}, has=id=>id in val;
@@ -726,7 +726,7 @@ function renderChannelLayers(c, flow, ci){
   }
   // --- layer 1: wholesale ---
   const formula=(flow&&has('wsDom')&&has('toWs')&&has('import')&&has('export'))
-    ? `<div class="layer-formula">${fvFmt(val.toWs)}M from the industry (ETRMA pool) + ${fvFmt(val.import)}M imports (non-pool) − ${fvFmt(val.export)}M export = ${fvFmt(val.wsDom)}M</div>` : '';
+    ? `<div class="layer-formula">${fvFmt(val.toWs)}M sold to wholesale by the industry (ETRMA pool) + ${fvFmt(val.import)}M imports (non-pool) − ${fvFmt(val.export)}M export = ${fvFmt(val.wsDom)}M</div>` : '';
   if(flow || wsEnts.length) h+=`<div class="layer-block layer-ws" data-jump-target="ws">
     <div class="layer-head"><div class="layer-title">Wholesale sold in ${esc(c.country)}</div>${flow?`<div class="layer-vol">${volHtml('wsDom')}</div>`:''}${goto('ws')}</div>
     ${formula}
@@ -891,7 +891,15 @@ function flowSolve(flow){
   cons.forEach(k=>{ if(k.every(([id])=>id in val)){ const s=k.reduce((a,[id,co])=>a+co*val[id],0); if(Math.abs(s)>tol) conflicts.push({k,res:Math.round(s*100)/100}); } });
   return {val,tier,conflicts};
 }
-function fvFmt(v){ if(v==null) return '—'; return Math.abs(v)>=1 ? Number(v).toFixed(1) : Number(v).toFixed(2); }
+function fvFmt(v){
+  if(v==null) return '—';
+  const n=Number(v);
+  if(Math.abs(n)<1) return n.toFixed(2);
+  // keep a second decimal when the figure really has one (5.25, 4.06), so boxes add up as entered
+  const two=Math.round(n*100)/100, one=Math.round(n*10)/10;
+  if(Math.abs(n-two)<1e-6 && Math.abs(n-one)>1e-6) return two.toFixed(2);
+  return n.toFixed(1);
+}
 function fvWrap(s,max){
   const lines=[]; let cur='';
   String(s).split(/\s+/).forEach(w=>{ if((cur+' '+w).trim().length>max){ if(cur) lines.push(cur); cur=w; } else cur=(cur+' '+w).trim(); });
@@ -922,7 +930,7 @@ function renderFlowView(c, flow){
   const indX=130, indW=320, impX=W-130-320, wsW=320, wsX=W/2-160, wsY=170, wsH=78;
   s+=node(indX,24,indW,60,'#E8EEFB',BLUE,'Industry (ETRMA pool)','industry');
   s+=node(impX,24,320,60,'#FBE6D2','#B5701E','Wholesale import (non-pool)','import');
-  s+=`<g class="fv-jump" data-jump="ws" data-jump-target="ws"><title>Click to see who the wholesalers are</title>`+node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+c.country,'wsDom','industry + imports − exports')+`<text x="${wsX+10}" y="${wsY+wsH-9}" style="font-size:10px;fill:#9A5B1E;text-decoration:underline">who? ›</text></g>`;
+  s+=`<g class="fv-jump" data-jump="ws" data-jump-target="ws"><title>Click to see who the wholesalers are</title>`+node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+c.country,'wsDom','to wholesale + imports − exports')+`<text x="${wsX+10}" y="${wsY+wsH-9}" style="font-size:10px;fill:#9A5B1E;text-decoration:underline">who? ›</text></g>`;
   s+=node(wsX+wsW+40,wsY+14,150,50,'#F2F3F7',GREY,'Export','export');
   const indCx=indX+indW/2, impCx=impX+160;
   s+=line(`M${indCx} 84 V127 H${wsX+90} V${wsY-4}`,RED,'toWs',true);
