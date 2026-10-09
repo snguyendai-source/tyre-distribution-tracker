@@ -1268,21 +1268,97 @@
         },
         {
           "name": "Pneus In",
-          "model": "Wholesaler / distributor"
+          "model": "Wholesaler / distributor",
+          "scale": {
+            "value": 0.6,
+            "metric": "M PCR tyres a year (estimate)",
+            "label": "est. ~0.6M PCR tyres a year (research estimate, low confidence)"
+          }
         },
         {
           "name": "Tagliabue Gomme Gross (TGG)",
           "model": "Wholesaler / distributor",
+          "volume": "€143.3M revenue (2022), 20,000+ clients; not covered by the latest research"
+        },
+        {
+          "name": "Fintyre",
+          "model": "Wholesaler / distributor",
+          "owner": "Fintyre Group (Fintyre, Franco Gomme, Gexpo Tyre)",
           "scale": {
-            "value": 143.3,
-            "metric": "€M revenue",
-            "label": "€143.3M revenue (2022), 20,000+ clients"
+            "value": 4.5,
+            "metric": "M PCR tyres a year (estimate)",
+            "label": "over 6M tyres a year across all categories (own site); est. ~4.5M PCR (research estimate, range 4.0-5.0M)"
           }
+        },
+        {
+          "name": "Univergomma",
+          "model": "Wholesaler / distributor",
+          "scale": {
+            "value": 3.1,
+            "metric": "M PCR tyres a year (estimate)",
+            "label": "2023 revenue above €335M (Tyrepress); est. ~3.1M PCR (research estimate, range 2.6-3.6M)"
+          }
+        },
+        {
+          "name": "Gruppo Magri",
+          "model": "Wholesaler / distributor",
+          "scale": {
+            "value": 1.5,
+            "metric": "M PCR tyres a year (estimate)",
+            "label": "national multi-brand distributor (car, truck, agriculture); works with the CDG and Kwik Fit networks; est. ~1.5M PCR (research estimate, range 0.9-2.0M)"
+          }
+        },
+        {
+          "name": "Zuin",
+          "model": "Wholesaler / distributor",
+          "owner": "San Pietro in Gu (PD)",
+          "scale": {
+            "value": 1.0,
+            "metric": "M PCR tyres a year (estimate)",
+            "label": "latest declared revenue €89.4M (Atoka); est. ~1.0M PCR (research estimate, range 0.8-1.3M)"
+          }
+        },
+        {
+          "name": "Palmeri Pneumatici",
+          "model": "Wholesaler / distributor",
+          "owner": "Sicily and Calabria",
+          "scale": {
+            "value": 0.45,
+            "metric": "M PCR tyres a year (estimate)",
+            "label": "est. ~0.45M PCR tyres a year (research estimate, low confidence)"
+          }
+        },
+        {
+          "name": "Intergomma",
+          "model": "Wholesaler / distributor",
+          "scale": {
+            "value": 0.35,
+            "metric": "M PCR tyres a year (estimate)",
+            "label": "est. ~0.35M PCR tyres a year (research estimate, low confidence)"
+          }
+        },
+        {
+          "name": "Pneutec",
+          "model": "Wholesaler / distributor",
+          "owner": "Regional distributor",
+          "volume": "part of ~1.2M combined regional estimate (research)"
+        },
+        {
+          "name": "Piùgomme",
+          "model": "Wholesaler / distributor",
+          "owner": "Regional distributor",
+          "volume": "part of ~1.2M combined regional estimate (research)"
+        },
+        {
+          "name": "PR Sud",
+          "model": "Wholesaler / distributor",
+          "owner": "Regional distributor",
+          "volume": "part of ~1.2M combined regional estimate (research)"
         }
       ],
       "noteBadge": "caution",
-      "note": "Not units Italy's official figure (Ministry of Environment, MASE) is reported in tonnes, not units — not directly comparable to the unit figures elsewhere on this page without a weight assumption. No clean all-channel unit total is published.",
-      "marketAccessNote": "Fintyre Group (with subsidiaries Franco Gomme and Gexpo Tyre) and Tagliabue Gomme Gross (TGG) are the two dominant distributors and the clearest points of entry — TGG alone turned over €143.3M (2022) serving 20,000+ clients. TGG was acquired by Global Automotive Investments Holding BV in Dec 2023/Feb 2024 — the same group that owns Van den Ban (already in your Netherlands list), a cross-border relationship worth exploring. Driver (Pirelli-owned, 400+ outlets) is the largest captive network and not an access route for a competing brand."
+      "note": "Not units Italy's official figure (Ministry of Environment, MASE) is reported in tonnes (421,645 t, all tyre types), not units, so the card header is not comparable with unit figures. The flow model uses a 27.0M estimate anchored on GfK's specialist-dealer sell-out instead. No clean all-channel unit total is published.",
+      "marketAccessNote": "Italian wholesale is a few national groups plus a regional tier, not a two-name market. Fintyre Group (Fintyre, Franco Gomme and Gexpo Tyre; over 6M tyres a year across all categories) is the first anchor, followed by Univergomma, Gruppo Magri and Zuin, with Tagliabue Gomme Gross (TGG, €143.3M revenue in 2022) alongside them. Pneus In, Palmeri, Intergomma and regional importers such as Pneutec, Piùgomme and PR Sud make up the next tier, and manufacturers often use several of these at once for territorial coverage. TGG was acquired by Global Automotive Investments Holding BV in Dec 2023/Feb 2024, the same group that owns Van den Ban (already in your Netherlands list), a cross-border relationship worth exploring. Driver (Pirelli-owned, 400+ outlets) is the largest captive network and not an access route for a competing brand."
     },
     {
       "country": "Austria",

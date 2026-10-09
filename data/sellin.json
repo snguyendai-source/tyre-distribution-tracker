@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-09T06:03:22Z",
+  "generatedAt": "2026-10-09T06:32:55Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -3952,40 +3952,124 @@
     },
     {
       "cells": {
-        "ch.deal.tot": {
+        "market": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 12% of the consumer market. See notes",
+          "source": "Research estimate: the specialist-dealer volume of 19.68M divided by an assumed 72.9% specialist share (a 69-77% share gives 25.6-28.5M). Not a published total. The research labels it passenger-car only, but GfK's earlier Italian releases include light-truck and 4x4/SUV tyres. Replaces the earlier 33M, which converted MASE tonnes (all tyre types) at an assumed weight.",
           "tier": "Estimate",
-          "value": 3.96
+          "value": 27.0
         },
-        "ch.onl.tot": {
+        "industry": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 17% of the consumer market. See notes",
+          "source": "Research model, medium-low confidence (range 22.0-25.0M): manufacturer and pool (ETRMA-member-equivalent) supply into Italian distribution and direct channels. Not a published Italy figure; no public Italian PCR-only ETRMA series exists.",
           "tier": "Estimate",
-          "value": 5.61
+          "value": 23.6
         },
-        "ch.ret.tot": {
+        "toWs": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 3% of the consumer market. See notes",
+          "source": "Research model, low-to-medium confidence (range 11.5-15.0M): the part of the industry volume that goes through wholesale. It is the residual needed to reconcile estimated wholesaler throughput, not an observed figure.",
           "tier": "Estimate",
-          "value": 0.99
+          "value": 13.2
+        },
+        "import": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate (range 3.2-5.2M) of non-pool wholesale imports: about 3.4M sold in Italy plus 0.7M re-exported. Informed by NIQ-GfK's extrapool share (as quoted by the research). It is not customs imports: UN Comtrade (as quoted, not checked) shows 35.74M passenger-car tyres imported in 2024, which includes factory, original-equipment and intra-group flows.",
+          "tier": "Estimate",
+          "value": 4.1
+        },
+        "export": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate (range 0.3-1.2M) of re-export by independent distributors only. Customs data (as quoted by the research, not checked) show 18.47M passenger-car tyres exported in 2024, mostly factory exports, which this flow excludes.",
+          "tier": "Estimate",
+          "value": 0.7
         },
         "ch.spec.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 68% of the consumer market. See notes",
-          "tier": "Estimate",
-          "value": 22.44
+          "source": "Back-calculated from NIQ-GfK: the specialised tyre-dealer channel sold 19.6M tyres in 2025, down 0.4%, which implies 19.68M in 2024 (figures as quoted by the research; I could not find that March 2026 release). GfK's earlier Italian releases (19.7M in 2022, also down 0.4%) cover passenger-car, light-truck and 4x4/SUV tyres, so the scope may be wider than passenger cars only. The research maps this channel onto specialists, fast-fit and independent garages. Replaces the earlier 68% share.",
+          "tier": "Derived",
+          "value": 19.68
         },
-        "market": {
+        "ch.spec.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Estimate: 421,645 tonnes of replacement tyres (MASE 2024) converted at an assumed average weight, which gives about 33M consumer tyres; cross-check about 0.81 tyres per car",
+          "source": "Research estimate, about 68% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Italian source publishes procurement routes by channel. Low confidence for the route split.",
           "tier": "Estimate",
-          "value": 33
+          "value": 13.3
+        },
+        "ch.spec.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 6.38
+        },
+        "ch.deal.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 15.7% of the market (range 3.5-5.0M). A residual allocation of the 7.32M outside the specialist channel; no public source for dealer volumes. Replaces the earlier 12%.",
+          "tier": "Estimate",
+          "value": 4.25
+        },
+        "ch.deal.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 38% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Italian source publishes procurement routes by channel.",
+          "tier": "Estimate",
+          "value": 1.6
+        },
+        "ch.deal.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 2.65
+        },
+        "ch.ret.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 2.6% of the market (range 0.4-1.0M), an analytical residual. Low confidence. Replaces the earlier 3%.",
+          "tier": "Estimate",
+          "value": 0.7
+        },
+        "ch.ret.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 71% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Italian source publishes procurement routes by channel. Lowest confidence.",
+          "tier": "Estimate",
+          "value": 0.5
+        },
+        "ch.ret.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.2
+        },
+        "ch.onl.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 8.8% of the market (range 1.8-3.0M). Online means the consumer buys online, not a gommista ordering through a wholesaler's B2B portal. Replaces the earlier 17%, which was much higher.",
+          "tier": "Estimate",
+          "value": 2.37
+        },
+        "ch.onl.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 51% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Italian source publishes procurement routes by channel. Lowest confidence.",
+          "tier": "Estimate",
+          "value": 1.2
+        },
+        "ch.onl.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 1.17
         }
       },
       "channels": [
@@ -4014,14 +4098,20 @@
       "groups": [],
       "iso": "IT",
       "meta": {
-        "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
-        "scopeNote": "The card header shows tonnes (421,645 t); this model converts that to an estimated unit count.",
+        "boxNote": "Boxes are the channels as named under \"By channel\". The import box is the research's 4.1M estimate of non-pool wholesale imports (about 3.4M sold in Italy plus 0.7M re-exported), not customs imports: Italy imported 35.7M and exported 18.5M passenger-car tyres in 2024 (UN Comtrade, as quoted by the research), which include factory, original-equipment and intra-group flows. The export box is the research's 0.7M estimate of re-export by independent distributors. Online means the consumer buys online, not a gommista ordering through a wholesaler's B2B portal.",
+        "scopeNote": "The 27.0M is anchored on GfK's specialist-dealer sell-out (19.68M) divided by an assumed 72.9% specialist share. The research calls it passenger-car only, but GfK's earlier Italian releases include light-truck and 4x4/SUV tyres, so read it as a consumer-tyre figure like the other countries. The card header shows tonnes (MASE, all tyre types), which is not comparable. The research does not cover private versus commercial demand, so those boxes still need input.",
         "seasons": {}
       },
       "refs": [
-        "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
-        "Italy: independent tyre dealers (gommisti) dominate; online is established but trade claims of very high online volumes come from sponsored articles and were not used.",
-        "Market size: Estimate: 421,645 tonnes of replacement tyres (MASE 2024) converted at an assumed average weight, which gives about 33M consumer tyres; cross-check about 0.81 tyres per car"
+        "Method (replaced with the Italy research file): the channel volumes follow the research's model of 72.9 / 15.7 / 2.6 / 8.8%, replacing the earlier benchmark of 68 / 12 / 3 / 17% on a 33M market. Only the specialist total has a measured anchor; the other three channels and every route split are modelled allocations.",
+        "Specialist anchor: NIQ-GfK, as quoted by the research in March 2026, put specialised tyre-dealer sales at 19.6M in 2025, down 0.4%, which implies 19.68M in 2024. I could not find that release. What I could confirm is the older GfK series for the same panel: 19.7M tyres in 2022, also down 0.4% (GfK, September 2023), covering passenger-car, light-truck and 4x4/SUV tyres. So the order of magnitude holds, but the scope may include light trucks.",
+        "Market size: 19.68M divided by a 72.9% specialist share gives 27.0M. The 69-77% sensitivity gives 25.6-28.5M. The research cross-checks it at about 0.65 tyres per car on a parc of about 41.3M cars (ACI/ACEA, as quoted, not checked) and expects 2025 to be flat at 26.8-27.0M. The earlier 33M converted MASE's 421,645 tonnes, which cover all tyre types.",
+        "Customs versus domestic balance: UN Comtrade (as quoted by the research, not checked) shows 35.735M HS 401110 passenger-car tyres imported (9.04M from China) and 18.467M exported in 2024. Net imports of 17.3M reflect Italy's role as a manufacturing and distribution hub, so customs data are not used in the import or export boxes.",
+        "Non-pool supply: the research quotes NIQ-GfK's extrapool share at 14.7% of specialist volume in 2025, up 26% in a year, which implies about 11.7% (about 2.30M tyres) in 2024. Adding online and other retail gives about 3.4M non-pool tyres consumed in Italy, plus 0.7M re-exported, so 4.1M. On 7 July 2026 the European Commission imposed definitive anti-dumping duties of 4.3% to 45.3% on Chinese passenger-car and light-truck tyres (confirmed, Eunews). China supplied almost 93M such tyres to the EU in 2024, a 28% share.",
+        "Wholesale versus direct is a modelled split: 13.2M of the 23.6M industry volume goes through wholesale and 10.4M direct, plus 4.1M non-pool imports, less 0.7M re-exported, gives 16.6M wholesale sold in Italy (about 61.5%) and 10.4M direct (about 38.5%). The 13.2M is a residual that reconciles the model, not an observed figure.",
+        "Wholesalers (checked): Fintyre's own site states over 6M tyres a year, 2 hubs, 10-12 warehouses and more than 50 brands, through three companies: Fintyre, Franco Gomme and Gexpo Tyre. Tyrepress reported Univergomma's 2023 revenue above 335M EUR (up 5%, car segment growing). Atoka lists Zuin as a tyre and auto-parts wholesaler in San Pietro in Gu with latest declared revenue of 89.4M EUR. Tyre Trends (May 2024) describes Magri Group as a national multi-brand distributor of car, truck and agricultural tyres working with the CDG and Kwik Fit networks.",
+        "Wholesale volumes are the research's PCR estimates, converted from all-category disclosures, not company figures: Fintyre about 4.5M (4.0-5.0M), Univergomma 3.1M (2.6-3.6M), Magri 1.5M (0.9-2.0M), Zuin 1.0M (0.8-1.3M), Pneus In 0.6M, Palmeri 0.45M, Intergomma 0.35M, regional importers about 1.2M combined. Not confirmed: Univergomma's 5M pieces in 2024 and 1M tyres in stock, Zuin's 86M EUR for 2024 and 500+ points of sale, Magri's 60% car share of revenue, and the Pneus In, Palmeri, Intergomma, Pneutec, Piùgomme and PR Sud details. Tagliabue Gomme Gross and Carlini Gomme, already on the list, are not covered by the research.",
+        "Latest signals (research, not checked): all-season tyres reached 31.6% of specialist volume in 2025, up from 21.8% in 2020, with all-season volume up 3.0%, summer down 1.8% and winter down 2.0%. Michelin's market indicator shows European replacement demand broadly stable through August 2026. Older carried-over note: trade claims of very high online volumes come from sponsored articles and were not used."
       ],
       "scope": "Consumer replacement tyres (car, van, 4x4)",
       "unit": "million tyres",
