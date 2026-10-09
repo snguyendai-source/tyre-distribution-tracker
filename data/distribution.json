@@ -1587,71 +1587,93 @@
     {
       "country": "Switzerland",
       "meta": "passenger car replacement tyres",
-      "total": "—",
-      "totalLabel": "no total published",
+      "total": "~6.5M",
+      "totalLabel": "units, 2024 estimate (passenger car + SUV)",
       "channels": [],
       "flatEntities": [
         {
+          "name": "ESA (buying cooperative for Swiss garages)",
+          "model": "Buying group / cooperative",
+          "owner": "Burgdorf, founded 1930",
+          "volume": "about 7,000 co-owners; est. ~0.8M tyres a year (research estimate)"
+        },
+        {
+          "name": "Swiss Tyre Group GmbH",
+          "model": "Buying group / cooperative",
+          "owner": "Independent tyre dealers, founded 2006",
+          "volume": "17 shareholders, 25 sales points (own site); est. ~0.15M tyres a year (research estimate)"
+        },
+        {
           "name": "Point S Suisse",
-          "model": "Buying group / cooperative"
+          "model": "Buying group / cooperative",
+          "volume": "network size not confirmed (the research could not verify it)"
         },
         {
           "name": "Euromaster Suisse (Michelin)",
-          "model": "Manufacturer-owned franchise (Michelin)"
+          "model": "Manufacturer-owned franchise (Michelin)",
+          "volume": "~30 centres (research, not checked)"
         },
         {
           "name": "First Stop (Bridgestone)",
-          "model": "Manufacturer-owned franchise (Bridgestone)"
+          "model": "Manufacturer-owned franchise (Bridgestone)",
+          "volume": "72+ centres (research, not checked)"
         },
         {
-          "name": "Adam Touring",
-          "model": "Specialist tyre retail chain"
+          "name": "BestDrive by Continental (formerly Adam Touring and Pneu Egger)",
+          "model": "Manufacturer-owned franchise (Continental)",
+          "owner": "Contitrade Schweiz AG (Continental)",
+          "volume": "renamed from Adam Touring and Pneu Egger during 2023; 70+ workshops (research, not checked)"
         },
         {
-          "name": "Pneuhage",
-          "model": "Wholesaler / distributor"
+          "name": "Premio Switzerland",
+          "model": "Manufacturer-owned franchise (Goodyear)",
+          "volume": "85 partners (research, not checked)"
         },
         {
           "name": "Emil Frey (Switzerland's largest dealer group, HQ Zürich)",
           "model": "Consolidated OEM dealer group"
         },
         {
-          "name": "ESA (buying cooperative for Swiss garages)",
-          "model": "Buying group / cooperative",
-          "scale": {
-            "value": 7000,
-            "metric": "members/co-owners",
-            "label": "~7,000 members and co-owners, ~600 employees"
-          }
-        },
-        {
           "name": "Bosch Car Service",
           "model": "Independent multi-brand workshop network"
         },
         {
-          "name": "reifen.com / ReifenDirekt.ch (Delticom)",
+          "name": "reifen.com",
+          "model": "Online retailer (Apollo)",
+          "owner": "Apollo Tyres (Reifencom GmbH, bought 2015)"
+        },
+        {
+          "name": "ReifenDirekt.ch (Delticom)",
           "model": "Online retailer (Delticom)"
         },
         {
-          "name": "Contitrade Schweiz / BestDrive by Continental",
-          "model": "Manufacturer-owned franchise (Continental)"
+          "name": "Pneuhage",
+          "model": "Wholesaler / distributor",
+          "owner": "German group",
+          "volume": "supplies Swiss trade cross-border; part of an est. ~0.9M a year of EU wholesale supply (research); no Swiss subsidiary verified"
         },
         {
           "name": "Interpneu AG (Switzerland)",
-          "model": "Wholesaler / distributor"
+          "model": "Wholesaler / distributor",
+          "owner": "Ballwil",
+          "volume": "small; est. ~0.02M tyres a year (research estimate); unrelated to Pneuhage's Interpneu"
         },
         {
           "name": "Pneucore AG",
-          "model": "Wholesaler / distributor"
+          "model": "Wholesaler / distributor",
+          "owner": "Döttingen",
+          "volume": "micro; est. ~0.03M tyres a year (research estimate)"
         },
         {
-          "name": "Premio Switzerland",
-          "model": "Manufacturer-owned franchise (Goodyear)"
+          "name": "Pneuhaus Leu AG",
+          "model": "Wholesaler / distributor",
+          "owner": "Hochdorf",
+          "volume": "small; est. ~0.05M tyres a year (research estimate)"
         }
       ],
       "noteBadge": "caution",
-      "note": "Gap No Swiss association unit total or channel split found. Trade data are price/import-oriented (avg. import price ~$62/unit in 2024, down ~30% y/y; Germany supplies ~33% of imports) — import pricing, not a market-size figure.",
-      "marketAccessNote": "ESA is the single most important relationship in this market — a member-owned cooperative of roughly 7,000 garages that functions as the country's default independent-channel gateway. Continental's Contitrade/BestDrive network is captive and not an access route."
+      "note": "Caveat No Swiss association publishes a unit total or channel split. The 6.5M in the flow model is a customs-anchored estimate (range 5.9-7.0M) for passenger-car and SUV/4x4 tyres, not a published number, and it implies about 1.35 tyres per car, well above Austria and the Netherlands, so treat it with caution. Switzerland has no tyre production, so all supply is imported. The earlier import-price claim (about $62 a unit, down 30%) is withdrawn: the research's customs data give about USD 86 a unit, down 2% (quoted, not checked).",
+      "marketAccessNote": "Switzerland has no tyre production, so everything is imported, and the model puts about four in ten tyres on a direct route from the manufacturers. The largest chains are captive: BestDrive (Continental), Euromaster (Michelin), First Stop (Bridgestone) and Premio (Goodyear). The independent trade is served by ESA, the purchasing cooperative of the Swiss motor trade with about 7,000 co-owners, by Swiss Tyre Group (17 shareholders, 25 sales points), by a few small regional wholesalers and by cross-border supply from German wholesalers and online platforms. For Apollo the openings are ESA, Swiss Tyre Group, regional wholesalers and online, including its own reifen.com. Growth here depends on getting listed and priced competitively, not on finding an importer."
     },
     {
       "country": "Denmark",

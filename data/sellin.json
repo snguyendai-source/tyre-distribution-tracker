@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-09T07:11:06Z",
+  "generatedAt": "2026-10-09T10:27:00Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -4451,40 +4451,180 @@
     },
     {
       "cells": {
-        "ch.deal.tot": {
+        "market": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 18% of the consumer market. See notes",
+          "source": "Research estimate (range 5.9-7.0M) for passenger-car plus SUV/4x4 replacement tyres, light commercial excluded. Anchored on customs: the research quotes 7.15M new passenger-car tyres imported and 0.27M exported in 2024 (UN Comtrade/WITS, HS 4011.10; I could not check these), a net 6.89M, less 0.04M Liechtenstein, 0.15M stock build and 0.20M non-passenger-car use. On a parc of 4.80M cars (BFS, as quoted) this is about 1.35 tyres per car, well above Austria (0.87) and the Netherlands (0.85) in this dashboard, so treat the lower end of the range as plausible. Replaces the earlier 4.1M, a parc-based figure of 0.88 tyres per car.",
           "tier": "Estimate",
-          "value": 0.738
+          "value": 6.5
         },
-        "ch.onl.tot": {
+        "industry": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 7% of the consumer market. See notes",
+          "source": "Research model: the part of the 6.5M supplied by the manufacturers' Swiss sales entities (industry pool). Switzerland has no tyre production, so everything is imported. Not a published figure.",
           "tier": "Estimate",
-          "value": 0.287
+          "value": 4.9
         },
-        "ch.ret.tot": {
+        "toWs": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 3% of the consumer market. See notes",
+          "source": "Research model: of the 4.9M industry volume, 2.4M goes through wholesale and 2.5M direct to the channels. Not a published figure.",
           "tier": "Estimate",
-          "value": 0.123
+          "value": 2.4
+        },
+        "import": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: non-pool supply that enters the Swiss wholesale layer, mainly cross-border EU wholesalers and B2B platforms plus the sourcing of online pure-players. It is not gross customs imports (7.15M passenger-car tyres in 2024, as quoted by the research, not checked).",
+          "tier": "Estimate",
+          "value": 1.8
+        },
+        "export": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate of replacement tyres that Swiss wholesalers re-export. Customs exports of 0.27M passenger-car tyres in 2024 (as quoted by the research, not checked) are the reference.",
+          "tier": "Estimate",
+          "value": 0.2
         },
         "ch.spec.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 72% of the consumer market. See notes",
+          "source": "Research estimate: about 65% of the market. Includes fast-fit chains, tyre specialists and independent garages, among them the ESA co-owner garages. No Swiss source publishes a channel split.",
           "tier": "Estimate",
-          "value": 2.952
+          "value": 4.23
         },
-        "market": {
+        "ch.spec.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Estimate: about 4.7M cars x about 0.88 tyres per car per year. No Swiss association total found",
+          "source": "Research estimate, about 60% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Swiss source publishes procurement routes by channel.",
           "tier": "Estimate",
-          "value": 4.1
+          "value": 2.53
+        },
+        "ch.spec.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 1.7
+        },
+        "ch.spec.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption, not data: about 75% of replacement demand is private, applied to each channel by the research. No Swiss source splits replacement tyres this way.",
+          "tier": "Estimate",
+          "value": 3.05
+        },
+        "ch.spec.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption, not data: about 25% of replacement demand is company, lease and fleet cars, applied to each channel by the research, with more weight at dealers. No Swiss source splits replacement tyres this way.",
+          "tier": "Estimate",
+          "value": 1.18
+        },
+        "ch.deal.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: about 23% of the market. Car dealers and brand workshops, including large dealer groups such as Emil Frey. Not a published figure.",
+          "tier": "Estimate",
+          "value": 1.49
+        },
+        "ch.deal.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 60% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Swiss source publishes procurement routes by channel.",
+          "tier": "Estimate",
+          "value": 0.89
+        },
+        "ch.deal.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.6
+        },
+        "ch.deal.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption, not data: about 75% of replacement demand is private, applied to each channel by the research. No Swiss source splits replacement tyres this way.",
+          "tier": "Estimate",
+          "value": 1.04
+        },
+        "ch.deal.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption, not data: about 25% of replacement demand is company, lease and fleet cars, applied to each channel by the research, with more weight at dealers. No Swiss source splits replacement tyres this way.",
+          "tier": "Estimate",
+          "value": 0.45
+        },
+        "ch.ret.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: about 2% of the market. Low confidence, no Swiss source for it.",
+          "tier": "Estimate",
+          "value": 0.13
+        },
+        "ch.ret.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, all via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Swiss source publishes procurement routes by channel. Lowest confidence.",
+          "tier": "Estimate",
+          "value": 0.13
+        },
+        "ch.ret.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.0
+        },
+        "ch.ret.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption, not data: about 75% of replacement demand is private, applied to each channel by the research. No Swiss source splits replacement tyres this way.",
+          "tier": "Estimate",
+          "value": 0.13
+        },
+        "ch.ret.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption, not data: about 25% of replacement demand is company, lease and fleet cars, applied to each channel by the research, with more weight at dealers. No Swiss source splits replacement tyres this way.",
+          "tier": "Estimate",
+          "value": 0.0
+        },
+        "ch.onl.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: about 10% of the market, counted as the seller of record (wherever the tyre is fitted). Low confidence, no Swiss source for it.",
+          "tier": "Estimate",
+          "value": 0.65
+        },
+        "ch.onl.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 69% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Swiss source publishes procurement routes by channel. Lowest confidence.",
+          "tier": "Estimate",
+          "value": 0.45
+        },
+        "ch.onl.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.2
+        },
+        "ch.onl.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption, not data: about 75% of replacement demand is private, applied to each channel by the research. No Swiss source splits replacement tyres this way.",
+          "tier": "Estimate",
+          "value": 0.62
+        },
+        "ch.onl.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Planning assumption, not data: about 25% of replacement demand is company, lease and fleet cars, applied to each channel by the research, with more weight at dealers. No Swiss source splits replacement tyres this way.",
+          "tier": "Estimate",
+          "value": 0.03
         }
       },
       "channels": [
@@ -4513,16 +4653,23 @@
       "groups": [],
       "iso": "CH",
       "meta": {
-        "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
-        "scopeNote": "",
+        "boxNote": "Boxes are the channels as named under \"By channel\". Switzerland has no tyre production, so the industry box is what the manufacturers' Swiss sales companies supply. The import box is the research's 1.80M estimate of non-pool supply entering wholesale (cross-border EU wholesalers, B2B platforms and online sourcing), not customs imports, which the research quotes at 7.15M passenger-car tyres for 2024. The export box is its 0.20M estimate of re-export. Online is the seller of record. Private and commercial are a planning assumption of about 75 / 25.",
+        "scopeNote": "The 6.5M is a model estimate (range 5.9-7.0M) for passenger-car and SUV/4x4 replacement tyres, light commercial excluded. It replaces an earlier 4.1M parc-based figure that also covered vans. No Swiss association publishes a unit total or a channel split, so every figure below the market is modelled, not published. Private versus commercial is a planning assumption of about 75 / 25, not data.",
         "seasons": {}
       },
       "refs": [
-        "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
-        "Switzerland: ESA cooperative and garage networks dominate; German-like dealer and online shares assumed.",
-        "Market size: Estimate: about 4.7M cars x about 0.88 tyres per car per year. No Swiss association total found"
+        "Method (replaced with the Switzerland research file): the market and every flow and channel figure are modelled for passenger-car plus SUV/4x4 replacement tyres, light commercial excluded. The earlier benchmark shares (65 / 18 / 3 / 7% of a 4.1M parc-based figure) are replaced by the research's model of about 65 / 23 / 2 / 10% of 6.5M. No Swiss association publishes a unit total, a sell-out series or a channel split.",
+        "Market size: the 6.5M (range 5.9-7.0M) is anchored on customs, not on a published market figure. The research quotes UN Comtrade/WITS data for HS 4011.10: 7,151,750 tyres imported (USD 618M, about USD 86 a tyre, down 2%) and 265,043 exported in 2024, a net 6.89M. It deducts 0.04M for Liechtenstein, 0.15M for stock build and 0.20M for non-passenger-car use to reach 6.50M. I could not check any of these figures. The parc is 4.80M cars (BFS 2024, as quoted).",
+        "Plausibility caution: 6.5M on 4.80M cars is about 1.35 tyres per car a year. Austria is 0.87 and the Netherlands 0.85 in this dashboard, and the earlier Swiss figure was 0.88. Customs imports can include stock building, cross-border trade and tyres that never reach Swiss drivers, so the 5.9M low end of the range (about 1.23 per car) is still above the neighbours. Treat 6.5M as the research's central case, not a confirmed number.",
+        "Customs versus domestic balance: Switzerland produces no tyres and sits outside the EU customs union, so imports are the only supply. The research quotes Germany at 35.6% of 2024 import value (the 33% on the earlier page was the 2023 share) and 2025 imports of 7.40M. Both are as quoted, not checked. The earlier page's import price of about $62 a tyre, down 30%, is withdrawn because the research's customs data give about USD 86, down 2%.",
+        "Wholesale versus direct is a modelled split, not a published figure: 2.4M of the 4.9M industry volume goes through wholesale and 2.5M goes direct, plus 1.8M of non-pool supply, less 0.2M re-exported, gives 4.0M wholesale sold in Switzerland (62%) and 2.5M direct (38%). Direct means any route that bypasses an independent Swiss wholesaler, including the manufacturer-owned networks.",
+        "Wholesale layer, research throughput estimates (not company figures) adding to 4.00M: ESA 0.80M, cross-border EU wholesalers and B2B platforms 0.90M (the research names Pneuhage and Interpneu in Germany), online pure-players' sourcing 0.45M, manufacturer-affiliated wholesale 0.40M, Swiss Tyre Group 0.15M, Pneuhaus Leu 0.05M, Pneucore 0.03M, Interpneu AG 0.02M and a fragmented remainder of 1.20M.",
+        "Checked: ESA is a cooperative of the Swiss motor trade founded in 1930 in Burgdorf with about 7,000 co-owners (Wikipedia); it reported record sales of CHF 416.9M in its May 2022 results (Wirtschaftszeit), and Wikipedia gives CHF 445.3M for 2023. The research's 2024 figures (CHF 373.8M, 6,906 co-owners, 730 staff) do not match these and are not used. Swiss Tyre Group's own site describes a cooperation of independent tyre dealers founded in 2006 with 17 shareholders and 25 sales points that bundle purchasing (the research said 15 and 19, so the site is used).",
+        "Retail networks: Continental's release of 17 November 2022 confirms that Adam Touring and Pneu Egger, the two brands of Contitrade Schweiz AG, a 100% Continental subsidiary, were renamed BestDrive by Continental in a rollout planned for 2023, so the separate Adam Touring entry is merged. The research gives BestDrive 70+ workshops, Euromaster about 30 centres, First Stop 72+ and Premio Switzerland 85 partners; I could not check those counts. The research could not verify Point S Suisse, and Emil Frey and Bosch Car Service were not re-checked.",
+        "reifen.com belongs to Apollo (Apollo bought Reifencom GmbH in November 2015, European Rubber Journal and Tyrepress), not to Delticom, so it is now listed separately from ReifenDirekt.ch (Delticom). Pneuhage is a German group and the research found no verified Swiss subsidiary, so it is kept as a cross-border supplier only. Interpneu AG in Ballwil is a small Swiss wholesaler unrelated to Pneuhage's Interpneu.",
+        "Apollo's own presence (research, not checked): Apollo Tyres (Schweiz) AG in Baden is described as Apollo's Swiss sales company with a warehouse, trading under the former Maloya and Vredestein names. The research expects about 6.60M in 2025 and a similar 2026 run-rate; both are estimates with low confidence."
       ],
-      "scope": "Consumer replacement tyres (car, van, 4x4)",
+      "scope": "Passenger-car replacement tyres (car + SUV/4x4; excludes light commercial)",
       "unit": "million tyres",
       "year": 2024
     },
