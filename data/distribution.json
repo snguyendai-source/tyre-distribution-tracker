@@ -1730,9 +1730,9 @@
     },
     {
       "country": "Poland",
-      "meta": "Credence Research / IndexBox 2024 · passenger car replacement tyres",
-      "total": "$1.77B",
-      "totalLabel": "VALUE ONLY (2024) · fastest-growing major EU market, +4.1% CAGR 2013-2024",
+      "meta": "passenger car replacement tyres",
+      "total": "~16.9M",
+      "totalLabel": "units, 2024 research estimate (not confirmed)",
       "channels": [],
       "flatEntities": [
         {
@@ -1774,11 +1774,25 @@
           "name": "Bosch Car Service Poland",
           "model": "Independent multi-brand workshop network",
           "territories": []
+        },
+        {
+          "name": "Oponeo.pl",
+          "model": "Online retailer",
+          "territories": [],
+          "owner": "Oponeo.pl S.A.",
+          "volume": "2024 group revenue PLN 2.11bn, up 13% (Poland PLN 1.79bn, all products); the research claims over 30% of tyres, not confirmed"
+        },
+        {
+          "name": "Motointegrator.pl (Inter Cars)",
+          "model": "Online retailer (Inter Cars)",
+          "territories": [],
+          "owner": "Inter Cars S.A.",
+          "volume": "the research lists it as a separate wholesaler, but it is an Inter Cars online project (Auto Swiat, 2014)"
         }
       ],
       "noteBadge": "caution",
-      "note": "No official channel-split (retail vs. wholesale vs. online) is published for Poland the way MITECO/BRV/GfK do for Spain/Germany/UK — the $1.77B figure is total market value, not a sourced unit total. Entities below are confirmed named players, not volume-ranked.",
-      "marketAccessNote": "Inter Cars is the standout priority — Poland's (and Central/Eastern Europe's) dominant aftermarket distributor, with 250+ Polish branches, 600+ across 21 countries, and its own Q Service Castrol independent workshop network. A relationship here has reach far beyond Poland alone, given Inter Cars' footprint across the wider CEE region (Czech Republic, Slovakia, Hungary, Baltics, Balkans). Handlopex and JMK are established secondary wholesalers worth knowing but far smaller in scale.",
+      "note": "Caveat The research behind this card is an early draft. Its 16.9M passenger-car figure comes from a market report I could not open, so it is not confirmed, but it fits a real car parc of about 20M (0.84 tyres per car). PZPO data, which measure its members' sales to distributors and not the whole market, show passenger-car tyres up 7% in 2024 and SUV tyres up 23%. No channel split, wholesale split or distributor volumes are published, and entities are named players, not volume-ranked. Value figures differ by source ($1.77B on the earlier card, about $1.93B for all tyres in the research) and are not units.",
+      "marketAccessNote": "Inter Cars is the standout priority: Poland's dominant aftermarket distributor, with 250+ Polish branches, 600+ across 21 countries, its own Q Service Castrol independent workshop network and the Motointegrator.pl online shop. A relationship here has reach across the wider CEE region (Czech Republic, Slovakia, Hungary, Baltics, Balkans). Handlopex and JMK are established secondary wholesalers, far smaller. Online is the other gateway: Oponeo.pl is the leading tyre retailer online, although its claimed 30%+ share is not confirmed. The manufacturers' own Polish sales entities (Michelin, Continental, Goodyear, Pirelli) also supply the trade directly. The research gives no wholesaler volumes, so no distributor is ranked on tyre throughput.",
       "territoryDefs": [
         {
           "code": "R1",

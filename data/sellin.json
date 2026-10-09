@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-09T10:27:00Z",
+  "generatedAt": "2026-10-09T14:29:53Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -4752,40 +4752,40 @@
     },
     {
       "cells": {
-        "ch.deal.tot": {
+        "market": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 6% of the consumer market. See notes",
+          "source": "Research figure (16-17M range): a market report puts Poland's passenger-car tyre market at about 16.945M units in 2024, roughly 13% above 2018. I could not open that report and I cannot confirm the figure or whether vans are inside it. It fits a real car parc of about 20M (Samar), or about 0.84 tyres per car, in line with Austria (0.87) and the Netherlands (0.85) in this dashboard. Replaces the earlier 11M, which rested on an older statement of about 10M tyres a year.",
           "tier": "Estimate",
-          "value": 0.66
-        },
-        "ch.onl.tot": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Benchmark estimate: 32% of the consumer market. See notes",
-          "tier": "Estimate",
-          "value": 3.52
-        },
-        "ch.ret.tot": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Benchmark estimate: 2% of the consumer market. See notes",
-          "tier": "Estimate",
-          "value": 0.22
+          "value": 16.9
         },
         "ch.spec.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 60% of the consumer market. See notes",
+          "source": "Benchmark estimate: 60% of the market, kept from the earlier benchmark (anchored on the published German and French splits) and rescaled to 16.9M. The research gives no split for these four channels. Its own figures (independent chains plus online 25-35%, workshops and dealers the rest) do not map onto them.",
           "tier": "Estimate",
-          "value": 6.6
+          "value": 10.14
         },
-        "market": {
+        "ch.deal.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Estimate anchored on a Bridgestone statement of about 10M passenger-car, van and SUV tyres a year (older), adjusted for PZPO's reported 2024 growth",
+          "source": "Benchmark estimate: 6% of the market, kept from the earlier benchmark (anchored on the published German and French splits) and rescaled to 16.9M. The research gives no split for these four channels. Its own figures (independent chains plus online 25-35%, workshops and dealers the rest) do not map onto them.",
           "tier": "Estimate",
-          "value": 11
+          "value": 1.01
+        },
+        "ch.ret.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Benchmark estimate: 2% of the market, kept from the earlier benchmark (anchored on the published German and French splits) and rescaled to 16.9M. The research gives no split for these four channels. Its own figures (independent chains plus online 25-35%, workshops and dealers the rest) do not map onto them.",
+          "tier": "Estimate",
+          "value": 0.34
+        },
+        "ch.onl.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Benchmark estimate: 32% of the market, kept from the earlier benchmark (anchored on the published German and French splits) and rescaled to 16.9M. The research gives no split for these four channels. Its own figures (independent chains plus online 25-35%, workshops and dealers the rest) do not map onto them. Lowest confidence: the earlier benchmark rested on Oponeo alone holding about 25% (not confirmed), and the research's 25-35% covers independent chains and online together, so this box may be too high.",
+          "tier": "Estimate",
+          "value": 5.41
         }
       },
       "channels": [
@@ -4814,16 +4814,20 @@
       "groups": [],
       "iso": "PL",
       "meta": {
-        "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
-        "scopeNote": "The card header shows a value-only market figure; this model estimates units.",
+        "boxNote": "Boxes are the channels as named under \"By channel\". Channel sizes keep the earlier benchmark shares of 60 / 6 / 2 / 32% rescaled to 16.9M, so the online box is the least certain. The industry, wholesale, import and export boxes are blank on purpose: the research's 13-14M imports and 3-4M domestic supply are customs-style totals, not the non-pool wholesale imports this model uses.",
+        "scopeNote": "The 16.9M is the research's 2024 figure for passenger-car tyres from a market report I could not open, so whether vans and SUVs are inside it is not confirmed. It replaces an earlier 11M estimate that included vans. The card header's older $1.77B is a value-only figure. The research gives no wholesale or direct split, no private versus commercial split and no usable import or export figures, so those boxes still need input.",
         "seasons": {}
       },
       "refs": [
-        "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
-        "Poland: analysts estimate that the leading online retailer Oponeo alone holds around 25% of Polish tyre sales, so the online channel is assumed to be far larger than in Germany; dealers assumed lower given an older car fleet.",
-        "Market size: Estimate anchored on a Bridgestone statement of about 10M passenger-car, van and SUV tyres a year (older), adjusted for PZPO's reported 2024 growth"
+        "Method (Poland research file added): only the market figure comes from the research. The four channel totals keep the earlier benchmark shares of 60 / 6 / 2 / 32% (anchored on the published German and French splits) rescaled from 11M to 16.9M. The research is an early draft: it ends with next steps that were not carried out, so there are no wholesale or direct figures, no private versus commercial split and no distributor volumes.",
+        "Market size: the research cites a market report for about 16.945M passenger-car tyres in 2024, roughly 13% above 2018. I could not confirm it: the public IndexBox page for Poland shows only 2024 unit prices (about $68 imported, up 14%, and $71 exported, up 12%), no volumes. As a plausibility check, the real car parc is about 20M (Samar: 27.35M cars registered at the end of 2023, of which 7.25M have shown no activity for about 6 years), so 16.9M is about 0.84 tyres per car. The average car is 15.1 years old (ACEA, as reported by Auto Swiat). The earlier 11M was only 0.55 per car.",
+        "PZPO data (checked): PZPO reports sales by its member companies to distributors, a sell-in measure and not the whole market. Passenger-car tyres were up 0.4% in H1 2024 and 4% in Q2, up 9% in Q3 (3% for the first nine months) and up 21% in Q4, for a full-year rise of 7%, with SUV tyres up 23%. The research quotes only the H1 and Q2 figures, so its 'modest growth' reading understates the full year. PZPO also says more than 140,000 tyres a day leave its members' Polish factories, all tyre types, which is about 50M a year and matches the research.",
+        "Imports and domestic supply (not used in the model): the research says 75-85% of replacement tyres are imported, about 13-14M imported plus 3-4M domestic, but elsewhere quotes 15-17M imports, which does not fit. These are customs-style totals and do not map onto this model's non-pool wholesale import box, so the import and export boxes are left blank. The public IndexBox page also shows Germany, China and Hungary together at about 50% of import value (year not labelled).",
+        "Channels: the research quotes IndexBox for independent chains and online sellers at 25-35% of replacement sales, with workshops and dealers the rest (about 11-12M tyres), and says Oponeo.pl claims more than 30% on its own. I could not confirm that. Oponeo's 2024 results give no unit sales or market share: group revenue PLN 2.11bn (up 13%), of which Poland PLN 1.79bn and the parent's domestic sales PLN 1.46bn, covering all products. A 30% share would be about 5M tyres, which would imply under PLN 290 a tyre even if nothing else were sold. It would also exceed the research's own 25-35% for chains and online together. Do not rely on either share.",
+        "Wholesalers: Inter Cars is the main aftermarket distributor, but the research gives no tyre volume for it. Motointegrator.pl is an Inter Cars online project (Auto Swiat, October 2014), so the research's 'Moto-Integrator' is not a separate player, and I could not confirm its 'Helios / MotaParts network' claim. S-Trading, TB Tyres, Europa, Europart and Quick Service are named without data and I could not confirm any as a tyre wholesaler or chain, so they are not added. The manufacturers' Polish sales entities (Michelin, Continental, Goodyear, Pirelli) are named; Euromaster and Premio are already listed.",
+        "Not used: the research's 'mid and budget brands are 55-65% of volume' and its value figures (about $1.93B for all tyres, so about $1.5B for passenger cars). They are not units, and the earlier card header's $1.77B differs. An older figure, about 10% of roughly 10M tyres sold online in 2013 (Motointegrator report, October 2014), is too old to use."
       ],
-      "scope": "Consumer replacement tyres (car, van, 4x4)",
+      "scope": "Passenger-car replacement tyres (scope of the source report not confirmed)",
       "unit": "million tyres",
       "year": 2024
     }
