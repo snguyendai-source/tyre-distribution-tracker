@@ -976,6 +976,14 @@
           ]
         },
         {
+          "name": "Inter-Sprint",
+          "model": "Wholesaler / distributor",
+          "territories": [
+            "__NATIONWIDE__"
+          ],
+          "owner": "Founder-owned (Global Automotive Investment Holding)"
+        },
+        {
           "name": "Van den Ban Autobanden",
           "model": "Wholesaler / distributor",
           "territories": [
@@ -984,7 +992,7 @@
         },
         {
           "name": "Heuver Banden",
-          "model": "Wholesaler / distributor",
+          "model": "Tyre group and Profile retail (business focus: truck, agricultural and earthmoving tyres)",
           "territories": [
             "2",
             "4"
@@ -1005,7 +1013,7 @@
       ],
       "noteBadge": "caution",
       "note": "Gap VACO (the Dutch tyre trade body, ~300 members / ~650 outlets) commissions GfK consumer research but does not publish an annual unit total. No channel-level split exists either.",
-      "marketAccessNote": "Two established wholesalers — Van den Ban and Heuver — plus the Profile cooperative cover most of the market. Bosch Car Service is the largest independent workshop network and worth a parallel relationship alongside the wholesale route.",
+      "marketAccessNote": "Independent wholesale for passenger-car tyres is concentrated around two gateways, Inter-Sprint and Van den Ban, with some supply through automotive-parts distributors. Sell-out is fragmented across a very dense service network: Bosch Car Service (over 425 independent workshops), Kwik Fit (165), Profile (over 150) and Euromaster (over 100, owned by Michelin). Heuver is a major tyre group and Profile retailer, but its wholesale business is truck, agricultural and earthmoving, so it is not a passenger-car wholesale gateway.",
       "territoryDefs": [
         {
           "code": "1",

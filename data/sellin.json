@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-08T22:54:34Z",
+  "generatedAt": "2026-10-09T05:24:22Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -3446,40 +3446,173 @@
     },
     {
       "cells": {
-        "ch.deal.tot": {
+        "market": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 14% of the consumer market. See notes",
+          "source": "Research estimate for passenger-car tyres only, not a VACO figure (VACO publishes no unit total). RecyBEM collected 10.53M tyres in 2024 and its final 2024 balance of -538,000 implies about 9.99M placed (both as quoted by the research). That scope also covers light-truck and trailer/caravan tyres, so the research takes 79-82% of it (7.9-8.2M). Working range 7.7-8.4M. Replaces the earlier 7.2M.",
           "tier": "Estimate",
-          "value": 1.008
+          "value": 8.0
         },
-        "ch.onl.tot": {
+        "industry": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 13% of the consumer market. See notes",
+          "source": "Research model, low confidence: the part of the 8.0M supplied by the major-brand (industry pool) manufacturers. Not a published ETRMA or Tyres Europe country figure.",
           "tier": "Estimate",
-          "value": 0.936
+          "value": 6.5
         },
-        "ch.ret.tot": {
+        "toWs": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 2% of the consumer market. See notes",
+          "source": "Research model: of the 6.5M industry volume, 3.75M goes through wholesale and 2.75M direct to the channels. Central case 66% wholesale overall (range 58-72%), not a published percentage.",
           "tier": "Estimate",
-          "value": 0.144
+          "value": 3.75
+        },
+        "export": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Model convention only. Customs data (UN Comtrade, as quoted by the research) show 21.16M passenger-car tyres exported and 31.75M imported in 2024, but those flows include re-export and transit trade and cannot be used in a domestic balance. It does not mean the Netherlands exported nothing.",
+          "tier": "Estimate",
+          "value": 0.0
         },
         "ch.spec.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Benchmark estimate: 71% of the consumer market. See notes",
+          "source": "Research estimate: 72.5% of the market (range 68-76%). Includes fast-fit chains, tyre specialists and independent garages. Network sizes, as stated by the networks and quoted by the research: Bosch Car Service over 425, Kwik Fit 165, Profile over 150, Euromaster over 100. They overlap, so they cannot be added up. Replaces the earlier 71%.",
           "tier": "Estimate",
-          "value": 5.112
+          "value": 5.8
         },
-        "market": {
+        "ch.spec.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Estimate: about 9.0M cars x about 0.80 tyres per car per year. VACO does not publish a unit total",
+          "source": "Research estimate, about 70% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Dutch source publishes procurement routes by channel.",
           "tier": "Estimate",
-          "value": 7.2
+          "value": 4.06
+        },
+        "ch.spec.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 1.74
+        },
+        "ch.spec.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Modelled split of private passenger-car demand by channel. The overall figure of about 80% private is anchored on CBS ownership and mileage data (see Sources and notes); the channel split is not published.",
+          "tier": "Estimate",
+          "value": 4.58
+        },
+        "ch.spec.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Modelled split of company, lease and fleet passenger-car demand (not vans) by channel. The overall figure of about 20% is anchored on CBS data; the channel split is not published, with more weight at dealers and service networks.",
+          "tier": "Estimate",
+          "value": 1.22
+        },
+        "ch.deal.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 13.5% of the market (range 11-16%). Car dealers and brand workshops are significant but secondary. Replaces the earlier 14%.",
+          "tier": "Estimate",
+          "value": 1.08
+        },
+        "ch.deal.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 55% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Dutch source publishes procurement routes by channel.",
+          "tier": "Estimate",
+          "value": 0.59
+        },
+        "ch.deal.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.49
+        },
+        "ch.deal.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Modelled split of private passenger-car demand by channel. The overall figure of about 80% private is anchored on CBS ownership and mileage data (see Sources and notes); the channel split is not published.",
+          "tier": "Estimate",
+          "value": 0.76
+        },
+        "ch.deal.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Modelled split of company, lease and fleet passenger-car demand (not vans) by channel. The overall figure of about 20% is anchored on CBS data; the channel split is not published, with more weight at dealers and service networks.",
+          "tier": "Estimate",
+          "value": 0.32
+        },
+        "ch.ret.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 3.0% of the market (range 2-5%). Low confidence, no Dutch source for it. Replaces the earlier 2%.",
+          "tier": "Estimate",
+          "value": 0.24
+        },
+        "ch.ret.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 85% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Dutch source publishes procurement routes by channel. Lowest confidence.",
+          "tier": "Estimate",
+          "value": 0.2
+        },
+        "ch.ret.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.04
+        },
+        "ch.ret.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Modelled split of private passenger-car demand by channel. The overall figure of about 80% private is anchored on CBS ownership and mileage data (see Sources and notes); the channel split is not published.",
+          "tier": "Estimate",
+          "value": 0.22
+        },
+        "ch.ret.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Modelled split of company, lease and fleet passenger-car demand (not vans) by channel. The overall figure of about 20% is anchored on CBS data; the channel split is not published, with more weight at dealers and service networks.",
+          "tier": "Estimate",
+          "value": 0.02
+        },
+        "ch.onl.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: 11% of the market (range 8-13%), counted as the seller of record. An old VACO/GfK study found only about 4% of buyers used a webshop, which is now too old to use. Delticom's EUR 601M gross merchandise volume in 2025 is not specific to the Netherlands. Replaces the earlier 13%.",
+          "tier": "Estimate",
+          "value": 0.88
+        },
+        "ch.onl.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, about 45% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Dutch source publishes procurement routes by channel. Lowest confidence.",
+          "tier": "Estimate",
+          "value": 0.4
+        },
+        "ch.onl.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale.",
+          "tier": "Estimate",
+          "value": 0.48
+        },
+        "ch.onl.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Modelled split of private passenger-car demand by channel. The overall figure of about 80% private is anchored on CBS ownership and mileage data (see Sources and notes); the channel split is not published.",
+          "tier": "Estimate",
+          "value": 0.82
+        },
+        "ch.onl.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Modelled split of company, lease and fleet passenger-car demand (not vans) by channel. The overall figure of about 20% is anchored on CBS data; the channel split is not published, with more weight at dealers and service networks.",
+          "tier": "Estimate",
+          "value": 0.06
         }
       },
       "channels": [
@@ -3508,16 +3641,20 @@
       "groups": [],
       "iso": "NL",
       "meta": {
-        "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
-        "scopeNote": "",
+        "boxNote": "Boxes are the channels as named under \"By channel\". The import box is the 1.5M of non-pool supply that the model routes through wholesale, not gross imports. Customs data show about 31.7M passenger-car tyres imported and 21.2M exported in 2024 because the Netherlands is a European distribution and re-export hub, so Export is set to zero. Online is the seller of record. Private and commercial (company, lease and fleet cars, not vans) are anchored on ownership and mileage data and modelled by channel.",
+        "scopeNote": "The 8.0M is a passenger-car-only estimate. RecyBEM's official placement figure (about 9.99M in 2024) also covers light-truck and trailer/caravan tyres, so the research takes about 80% of it. Everything below the market figure is modelled, not published.",
         "seasons": {}
       },
       "refs": [
-        "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
-        "Netherlands: chains and the Profile cooperative serve most fitting; online is relatively strong in the Benelux; dealers close to the German level.",
-        "Market size: Estimate: about 9.0M cars x about 0.80 tyres per car per year. VACO does not publish a unit total"
+        "Method (replaced with the Netherlands research file): the market and every channel figure now follow the research's model of 72.5 / 13.5 / 3 / 11%, replacing the earlier benchmark shares of 71 / 14 / 2 / 13% on a 7.2M market. No Dutch source publishes sell-out by these channels, so all of them are estimates.",
+        "Market size: RecyBEM's 2025 balance reports about 9.9M tyres placed and 10.4M collected, in a scope that includes light-truck and trailer/caravan tyres (up to 3.5 t). For 2024 it reports 10.53M collected, and with the final negative balance of 538,000 that implies about 9.99M placed. I could not confirm these RecyBEM figures on the pages I could open. The research takes 79-82% as passenger cars, giving 8.0M for 2024 and about 7.9M for 2025 (range 7.6-8.3M), broadly flat.",
+        "Parc and mileage (confirmed on CBS): Dutch passenger cars drove about 122 billion km in 2024, privately owned cars about 11,100 km and company cars about 20,300 km each, and the parc passed 9.4M cars on 1 January 2026 (+1.8%). The research quotes 87.7% of cars as privately owned. Weighting by mileage gives about 80% private and 20% commercial tyre demand.",
+        "Customs versus domestic balance: UN Comtrade (as quoted by the research, not checked) shows 31.746M passenger-car tyres (HS 401110) imported and 21.160M exported in 2024. Net imports of 10.59M already exceed the whole Dutch market, so gross customs figures describe a distribution and re-export hub and are not used in the domestic balance.",
+        "Wholesale versus direct is a modelled split, not a published figure: 3.75M of the 6.5M industry volume goes through wholesale, 2.75M goes direct, and the 1.5M of non-pool supply is routed through wholesalers and importers. That gives 5.25M wholesale and 2.75M direct (66 / 34, range 58-72% wholesale).",
+        "Wholesale layer: Inter-Sprint's own site says it supplies tyre specialists, wholesalers and parts distributors. The research quotes about 2.7M tyres in stock and more than 17,000 SKUs; a 2022 trade article reported about 2.8M and 16,000, so the scale matches, but I could not confirm the current figures. Heuver's own site presents it as a B2B wholesaler for truck, agricultural and earthmoving tyres and does not mention passenger-car tyres, so it is no longer shown as a passenger-car wholesaler. Van den Ban stays as a major passenger-car gateway (not confirmed on its website).",
+        "Latest signals: BOVAG's August 2025 sample found almost 39% of cars on all-season tyres. That is a fleet fitment share, not a replacement sales mix. RecyBEM notes that private purchases from foreign online sellers can fall outside the Dutch placement statistics, so the online box is partly invisible in official data."
       ],
-      "scope": "Consumer replacement tyres (car, van, 4x4)",
+      "scope": "Passenger-car replacement tyres (excludes vans, trailer and caravan tyres)",
       "unit": "million tyres",
       "year": 2024
     },
