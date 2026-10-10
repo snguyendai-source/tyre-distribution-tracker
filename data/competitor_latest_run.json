@@ -1,15 +1,23 @@
 {
-  "runAt": "2026-10-09T12:51:15.079122+00:00",
-  "totalNew": 1,
+  "runAt": "2026-10-10T12:09:06.805888+00:00",
+  "totalNew": 2,
   "entitiesChecked": 26,
-  "entitiesWithNews": 1,
+  "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Double Coin": [
+    "Giti Tire": [
       {
-        "title": "Double Coin Tires Supports A&E Shipping Wars Star, Chris Hanna - Mining.com",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbVpUMG1QLXRrS1QwVnBLY0JTcEVaeUlxMEJjWXlxdGpUT0huc0Jjc1NJSnFIcklyWjBhalBfQzNEZmhhczItdmMzWlBNcWRuRzdkQ0pRMElZdXptQ21SNy01Sk9SWjBHT0NwX01zVWdzcFJodXBLd0ZCY0tVeU0zUFBISXdKMXV1NFpIaTdRcF9fQQ?oc=5",
-        "pubDate": "Tue, 05 Mar 2013 08:00:00 GMT",
+        "title": "Giti Tire targets high volume trailer operators with new 19.5” sizes - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNLW40MnBWVTB2THRCMVNRN3J3c1c1Xzh4b3NWZzJRN0VCdWFRVTVHcllZWkJMazNyYnQ5OERfWkZaSHFodGFyNDc1bG9rdU5wUV9oUEtWVXNsSVV5VlFiaWlweUgyTUV6aFRvdGFQTzNPYlZDMEs2b0k5U0ZFN0pvOTJYbnNkZEd5VGVBOTY4M0IzR1Y4WGh0NkJYRG5tck9oNlVpVw?oc=5",
+        "pubDate": "Mon, 17 Aug 2026 07:00:00 GMT",
         "category": "Chinese"
+      }
+    ],
+    "Prometeon Tyre Group": [
+      {
+        "title": "Prometeon renews Macík Jr rally partnership, announces participation in 2026 Dakar Rally - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVHJNREJ2TjMzamtCQzA2THNNQXRzSGVhbU9ZNDlad3JIVXNKd3BKczhmbDJfWUpJUFgxLXA5bU9IeUZSMDZxRC1ZOTNxQjdab0ZMUVIyc1Y3NnBBcTlqWFZLTUZkRnBKWWV1VktiU1hnRWhuMlBDdVJBMUNtNFpaUlZQSkE4UVdOQ1Q0MGxoSUxvX2MtaDV2R0tGUmNPMHJTNDl3ZXdIT3lfVW1pXzZsMzZtcTBfeGhRQ09pcjFoTQ?oc=5",
+        "pubDate": "Fri, 28 Nov 2025 08:00:00 GMT",
+        "category": "Industrial/TBR"
       }
     ]
   }
