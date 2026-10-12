@@ -1,7 +1,16 @@
 {
-  "runAt": "2026-10-11T12:23:05.057486+00:00",
-  "totalNew": 0,
+  "runAt": "2026-10-12T14:51:43.750624+00:00",
+  "totalNew": 1,
   "entitiesChecked": 26,
-  "entitiesWithNews": 0,
-  "newItemsByEntity": {}
+  "entitiesWithNews": 1,
+  "newItemsByEntity": {
+    "Triangle Tyre": [
+      {
+        "title": "Triangle to Expand Presence in Russia through Collaboration with Laserta - Tires & Parts News",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcElQRU5MTmFIYmhRWEFsVW5idklYQVBJdVhQWjR0dkpCMUJZMmNwT2ZiN2NWdjc1UEJtbmdKemxOSzhmdmxXbDd6akVfejNyUTR6MVpOREg0WEIxQXUwT2R2U0NlNEdOQl92aVVJN0tkdmZIYjRlMG9YRVJSeUpYVFlKUTRKRHhHbjlENG9vOWtGLUlVcEE?oc=5",
+        "pubDate": "Mon, 30 Oct 2017 07:00:00 GMT",
+        "category": "Chinese"
+      }
+    ]
+  }
 }

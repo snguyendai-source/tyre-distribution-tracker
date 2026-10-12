@@ -1,61 +1,43 @@
 {
-  "runAt": "2026-10-11T12:23:05.057486+00:00",
-  "totalNew": 6,
+  "runAt": "2026-10-12T14:51:43.750624+00:00",
+  "totalNew": 4,
   "entitiesChecked": 118,
-  "entitiesWithNews": 6,
+  "entitiesWithNews": 4,
   "newItemsByEntity": {
+    "Premio": [
+      {
+        "title": "Jorge Martín explains tyre-pressure mistake and lost MotoGP championship lead - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcDFubUFCNTVySHFUTmRzbnNkdnVoRFdWbWFnRzFKb21JQ1BPNlR5ZUppRTVUWWxrQlZCZEhscHhRUmJGeHpEaHV2c2otUTJhSXdyOTJnU0dmOUV6UEJodFBxcUVJZFRhMlJIZzRGbTc1X0U2Nk9PRVNteHgxdUJVV1RQa3lIVFdVZms1MEFyeWxtRHJVdklsSVdLUmJjRGVtNEVUREtjNVZzazM0UngzNWtub0dqYTlm?oc=5",
+        "pubDate": "Sat, 10 Oct 2026 11:20:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Euromaster Germany": [
+      {
+        "title": "Euromaster becomes Elvis partner: New service and maintenance access for Europe's freight forwarders - PROFI Werkstatt",
+        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOd3RZTklCbG5FMm9SVS0tVmlZTi16dHBjQkl0Qy1zWjF5ZEcxMXNuZTV5NDVKc3lnWWwydWJnWGpQakJCSm5WekFNUU44a0dNRklQaExrZEpCTThFR2R4eXNYWjl3MmVlVy0wa3hoSjFLZjVGVzFEWHZndVE0Q1RlQVVjbGhXaUJDOVZEa3NiVlpiVzBfRWliblhzRDV0bERUVXpuRjMwQXB2aEJTMk9pem1ESUVQNDY4YnRvSHpqM1VHYmllQzZYUE1FOTNObHR2LUdmWmM0ckNTT19VVTk5RnZMZEJfVkFpd0NGTlJwZGU0WVFjQ2c?oc=5",
+        "pubDate": "Tue, 11 Aug 2026 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
     "Reifen Müller": [
       {
-        "title": "Hankook shows off extended Alphatread retreading factory to customers - Transport Engineer",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaUFmQ09tTjRkSGNQbkRDbU9ia2N3RjJ1SndzMDUzajNnaEp2VDhUeHZCdXlmNWlzNmZSTTFZc05ZU3BYZ29xcWc5ZmZmQzA5eFA0M0FzZzhPTjkzaFo1MEcxNmtGRGFvUE9jbTN0ZUFZc3lIUmRvYkZfSXU0TTF0emNUQVFSQVR5ODI0Vks0b2liNmNNOGV4a0g3eTB3c1hLaE9BREtTak9reFlidDRSN0lFM0I2TC1kTXow?oc=5",
-        "pubDate": "Thu, 07 Jul 2022 07:00:00 GMT",
+        "title": "Hankook shows off extended Alphatread retreading factory to customers - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZnpuSVBORlZfcXNWSDg4VjB1ZmVrM25ncF9KN2JhbkVMMUxDc2JxVjM2Y3JtaFNmem91LVBsTHJqTFZ1bWtTc2JTSnBQVjcxb25KSkl6eEJwVTBQbmc4ZVlHRDFSc1pGWHRHT1JON1hQeXNsR1N1cWFRd2pPUHdKdWQ5Qk1qdFUwdWlaREN0V2s1VUhUN3BzalNwUEVFalVScU5WYkdRZHU4NUY0bEVGSWhHOEFUdVJZSHhrSTV6QkFjemVMOWFJ?oc=5",
+        "pubDate": "Mon, 04 Jul 2022 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
-      }
-    ],
-    "Emil Frey": [
-      {
-        "title": "DTM Nurburgring: Manthey dominates free practice, is AMG stronger than it looks? - Yahoo Sports",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOa196TGUzeF9JNldaNjJpaFpEMVRwZXg3ZHFFcF9KMmhWUU04NEpGNWtmNkpNREVwcmlzam5yUlZZSFhES05uMjZ1d01TRV9VUDVoS2dhRDNQYkZiS2xPN1dDWHdEUksyeHByZHozYjI2akFqZHdTRURUTm44WEtsdWJiOGdHNzlUQ1NLNm5seDc?oc=5",
-        "pubDate": "Fri, 14 Aug 2026 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Bandvulc": [
-      {
-        "title": "Tyre firm Bandvulc on road to strong sales recovery after £1m investment - Business Live",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUDVaWHVMaVNoaFliejZCR2J0LUh0U3kwb0ZwWGxKdVJWZHBMMC1TVTljaUVyZElod1ZQalV0dllNRkhZZ0FPTkkxenJzQWdfN1VXX18zTnpJTWt3UzNMM0lsTmlWRjlYXzgxU2lEdEhCcERzOThBU1dFdzVsazZ3VF9DX2tzMzZMVzlpUWJR0gGTAUFVX3lxTFBsUkFqN05ueGJhSzJUMkdWaE1OZ09RcEVsY0J3UEtPQUlpTU1jZmhiTHNUSGYwRGd1WlNhVVk1VWtoSE55ejI3S0R5bkw5RnpaOTl0aUNfUFUxZGpYVkY3QjF0RG1CMU5vdm84em9aSmlIOU1rbm9LbDR0M21fN1E4dmRCdzlaZGhqTnM1TkZvaHpOWQ?oc=5",
-        "pubDate": "Thu, 22 Apr 2021 07:00:00 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ],
-    "Grupo Andrés": [
-      {
-        "title": "Top Recambios exhibiting at Tire Cologne 2024 - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYjZGOFZ0MUROeEVRSTV3X3ZtYmc2Rm1oc3o1b1UtWndOTDZhOEpKSWtQTm1pelZ1LWxsM1BOelRIVzN3MmxVN3FDTS1YN1ctRk1SYWxJOTlpaHMwQzF2a2JpSVJPaWt6SXl1MXgwWFl6TnpjWS01cktaOXZxYnZLQ2JoUFMtUms?oc=5",
-        "pubDate": "Tue, 21 May 2024 07:00:00 GMT",
-        "country": "Spain",
-        "cluster": "South-West"
       }
     ],
     "Vianor": [
       {
-        "title": "Gills Point S acquires Hogan Tires of Maine - Tire Business",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbXdUcWdsTUQ4V1F0MG0wSlN3c0lHcksxd0FUcFB4OW1pNU5hdlZKTlVPOEFKNEVNcmt6dnk0bkFqajRGTXJrM3FMUzV2NmdoY2FFcnR1cWxJRFNUbHJfekRvMHh3NkxROU5EZkxYRzZ2WXp2NFZjdU5mdmhOdnRQblJHRGpEQXlwcXc?oc=5",
-        "pubDate": "Thu, 02 Feb 2023 08:00:00 GMT",
+        "title": "TYRES Stock Price and Chart — OMXHEX:TYRES - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9pRVhGU1I2bEh2bGVVcHJ5TzNHbHRaVUpJaHJyTzJ6Z0hUaFZHa1NJLUs1dUVDYkNVbHdnZ3B1VGltRlBZSzFOV2tRQnZUbk9RR1NybEJnUHd5eWhhSVE?oc=5",
+        "pubDate": "Wed, 26 Jan 2022 08:00:00 GMT",
         "country": "Hungary",
         "cluster": "South-East"
-      }
-    ],
-    "Genan Holding": [
-      {
-        "title": "Tire Recycling Market worth $7.29 billion by 2029, at a CAGR of 3.7%, says MarketsandMarkets™ - GlobeNewswire",
-        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNOFVZbENUNEtZdlJaLTFWSGduN0FvQUJldXhOVHdsRkdlSElBQVNWaDF4UkY4RVVuUng5UEdEUG1zcWRjZ1JlaUJsd25scFdTQ3k4OUp0UWxLSWpjOE5mVXUyaUhFR1RWR2RpWER5WlZ0bzIyMXhsd0pYZEc5TXhGbGVhcDZkSDFwSzdNRExyS2J6eDBLQzEtRVpDbkgxT05TUzV6Z0xRc2JCY2ExV3luUU1uNkxDakV3N1NnbHhFdHoxczAwd0FHWnpRd1FTU0xFV2RXQ3FzSWlPLUVaOHg1T1ZlTEZlOEJYOGZjX3RaZF9jZw?oc=5",
-        "pubDate": "Mon, 18 Aug 2025 07:00:00 GMT",
-        "country": "Denmark",
-        "cluster": "Central"
       }
     ]
   }
