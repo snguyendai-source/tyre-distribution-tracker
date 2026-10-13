@@ -16,20 +16,30 @@
             {
               "name": "Reifen Göggel",
               "owner": null,
-              "volume": null,
+              "volume": "all tyre types",
               "model": "Wholesaler / distributor",
               "territories": [
                 "R4"
-              ]
+              ],
+              "scale": {
+                "value": 490,
+                "metric": "EUR M revenue 2022",
+                "label": "2022 revenue about EUR 490M (firm's own data, Neue Reifenzeitung 8/2024)"
+              }
             },
             {
               "name": "Best4Tires",
               "owner": null,
-              "volume": null,
+              "volume": "all tyre types",
               "model": "Wholesaler / distributor",
               "territories": [
                 "R4"
-              ]
+              ],
+              "scale": {
+                "value": 286,
+                "metric": "EUR M revenue 2022",
+                "label": "2022 wholesale revenue EUR 286M; group EUR 508M (Neue Reifenzeitung 8/2024)"
+              }
             },
             {
               "name": "Interpneu (Pneuhage)",
@@ -42,12 +52,17 @@
             },
             {
               "name": "Pneuhage",
-              "owner": null,
-              "volume": null,
+              "owner": "Pneuhage Group",
+              "volume": "all tyre types",
               "model": "Wholesaler / distributor",
               "territories": [
                 "R4"
-              ]
+              ],
+              "scale": {
+                "value": 543,
+                "metric": "EUR M revenue 2022",
+                "label": "2022 wholesale revenue EUR 543M; group EUR 908M (Neue Reifenzeitung 8/2024)"
+              }
             },
             {
               "name": "Point S Germany",
@@ -70,50 +85,75 @@
             {
               "name": "Vergölst (Continental)",
               "owner": null,
-              "volume": null,
+              "volume": "~2.7M",
               "model": "Manufacturer-owned franchise (Continental)",
               "territories": [
                 "__NATIONWIDE__"
-              ]
+              ],
+              "scale": {
+                "value": 180,
+                "metric": "outlets",
+                "label": "180 outlets (research, not checked). Volume is a research estimate (outlets times an assumed throughput), low confidence."
+              }
             },
             {
               "name": "Driver / Pneumobil (Pirelli)",
               "owner": null,
-              "volume": null,
+              "volume": "~0.4M",
               "model": "Manufacturer-owned franchise (Pirelli)",
               "territories": [
                 "__NATIONWIDE__"
-              ]
+              ],
+              "scale": {
+                "value": 70,
+                "metric": "outlets",
+                "label": "70 outlets (research, not checked). Volume is a research estimate (outlets times an assumed throughput), low confidence."
+              }
             },
             {
               "name": "Euromaster Germany (Michelin)",
               "owner": null,
-              "volume": null,
+              "volume": "~4M",
               "model": "Manufacturer-owned franchise (Michelin)",
               "territories": [
                 "__NATIONWIDE__"
-              ]
+              ],
+              "scale": {
+                "value": 200,
+                "metric": "outlets",
+                "label": "200 franchise locations (L'Express Franchise, Aug 2026). Volume is a research estimate (outlets times an assumed throughput), low confidence."
+              }
             },
             {
               "name": "Ihle (Michelin)",
-              "owner": null,
-              "volume": null,
+              "owner": "Michelin (took over in 2014)",
+              "volume": "all tyre types",
               "model": "Manufacturer-owned wholesaler (Michelin)",
               "territories": [
                 "R4"
-              ]
+              ],
+              "scale": {
+                "value": 167,
+                "metric": "EUR M revenue 2022",
+                "label": "2022 revenue EUR 167M (Neue Reifenzeitung 8/2024)"
+              }
             },
             {
               "name": "Reifen Müller (Hankook)",
               "owner": null,
-              "volume": null,
+              "volume": "all tyre types",
               "model": "Manufacturer-owned wholesaler (Hankook)",
               "territories": [
                 "R1",
                 "R3",
                 "R4",
                 "R5"
-              ]
+              ],
+              "scale": {
+                "value": 282,
+                "metric": "EUR M revenue 2022",
+                "label": "2022 revenue about EUR 282M including retail (Neue Reifenzeitung 8/2024)"
+              }
             },
             {
               "name": "Bosch Car Service Deutschland",
@@ -154,7 +194,7 @@
             {
               "name": "Reifen Helm",
               "owner": null,
-              "volume": null,
+              "volume": "about 54 branches (research; a store listing shows 53); owns B+B Reifencenter since 2021; not in the 2022 revenue ranking, tyre volume not published",
               "model": "Wholesaler / distributor",
               "territories": []
             },
@@ -164,6 +204,20 @@
               "volume": null,
               "model": "Buying group / cooperative",
               "territories": []
+            },
+            {
+              "name": "REIFF (Bridgestone)",
+              "owner": "Bridgestone (bought May 2020)",
+              "volume": "~0.3M",
+              "scale": {
+                "value": 42,
+                "metric": "stores",
+                "label": "42 stores in southern Germany when Bridgestone bought it (Tyrepress, May 2020). Volume is a research estimate (outlets times an assumed throughput), low confidence."
+              },
+              "model": "Manufacturer-owned franchise (Bridgestone)",
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             }
           ],
           "flowBox": "spec"
@@ -268,9 +322,9 @@
                 "__NATIONWIDE__"
               ],
               "scale": {
-                "value": 500,
+                "value": 530,
                 "metric": "branches",
-                "label": "~500 branches (Mobivia)"
+                "label": "~530 branches (A.T.U., Nov 2025)"
               }
             }
           ],
@@ -313,11 +367,16 @@
             {
               "name": "Goodyear online shop (goodyear.de/shop)",
               "owner": "Goodyear",
-              "volume": "direct to consumers since a December 2019 pilot, fitting at partner retailers; current status not confirmed",
+              "volume": null,
               "model": "Manufacturer online shop (Goodyear)",
               "territories": [
                 "__NATIONWIDE__"
-              ]
+              ],
+              "scale": {
+                "value": null,
+                "metric": null,
+                "label": "Direct to consumers since a December 2019 pilot, fitting at partner retailers; current status not confirmed"
+              }
             }
           ],
           "flowBox": "onl"
@@ -325,7 +384,7 @@
       ],
       "flatEntities": [],
       "noteBadge": "caution",
-      "note": "Caveat Market and channel shares are BRV 2024 figures: 47.5M tyres in all, of which the consumer segment is about 45.1M (41.0M cars and 4x4 plus 4.1M vans), with channel shares of 71.3 / 19.8 / 3.4 / 5.5%. The wholesale versus direct split (about 75 / 25 of sell-in), imports (2.0M) and exports (1.5M) are modelled assumptions from the research, not published figures, and an earlier version of the model gave quite different values.",
+      "note": "Caveat Market and channel shares are BRV 2024 figures: 47.5M tyres in all, of which the consumer segment is about 45.1M (41.0M cars and 4x4 plus 4.1M vans), with channel shares of 71.3 / 19.8 / 3.4 / 5.5%. No source publishes the wholesale versus direct split, imports or exports for Germany. The model assumes about 60 / 40 (27.1M wholesale, 18.0M direct); several research files gave different splits and the latest one only repeated these figures. Wholesaler figures are 2022 revenues, not tyre volumes, and cover all tyre types.",
       "marketAccessNote": "Wholesaler-led market. Reifen Göggel and the Pneuhage Group (Interpneu, Reifen Center Wolf, Gewe) already dominate independent-trade supply and are the fastest single-relationship route to volume. Michelin, Continental and Hankook already control their own downstream (Ihle, Vergölst, Reifen Müller) — not viable access routes for a competing brand.",
       "territoryDefs": [
         {
