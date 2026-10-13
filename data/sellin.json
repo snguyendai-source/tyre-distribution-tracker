@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-13T19:40:45Z",
+  "generatedAt": "2026-10-13T20:18:06Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -2724,208 +2724,194 @@
   "flows": [
     {
       "cells": {
-        "ch.deal.com": {
+        "market": {
           "asOf": "2024",
           "by": "research",
-          "source": "Channel total minus private; assumption (virtually all light-truck demand treated as commercial).",
-          "tier": "Estimate",
-          "value": 3.6
-        },
-        "ch.deal.dir": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Channel total minus via-wholesale; range 2-5.",
-          "tier": "Estimate",
-          "value": 2.7
-        },
-        "ch.deal.prv": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Research file demand-allocation model: 60% private assumed; BRV does not publish private versus commercial by channel.",
-          "tier": "Estimate",
-          "value": 5.3
-        },
-        "ch.deal.tot": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "BRV 2024 channel share 19.8% x consumer volume",
-          "tier": "Derived",
-          "value": 8.935
-        },
-        "ch.deal.ws": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Research file base case: 70% via wholesale assumed (range 4-7). Structural assumption, not a published BRV figure.",
-          "tier": "Estimate",
-          "value": 6.2
-        },
-        "ch.fach.com": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Channel total minus private; assumption (virtually all light-truck demand treated as commercial).",
-          "tier": "Estimate",
-          "value": 0.2
-        },
-        "ch.fach.dir": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Channel total minus via-wholesale; range 0.9-1.3.",
-          "tier": "Estimate",
-          "value": 1.2
-        },
-        "ch.fach.prv": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Research file demand-allocation model: 87% private assumed; BRV does not publish private versus commercial by channel.",
-          "tier": "Estimate",
-          "value": 1.3
-        },
-        "ch.fach.tot": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "BRV 2024 channel share 3.4% (existing dashboard data) x consumer volume",
-          "tier": "Derived",
-          "value": 1.534
-        },
-        "ch.fach.ws": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Research file base case: 20% via wholesale assumed (range 0.2-0.6). Structural assumption, not a published BRV figure.",
-          "tier": "Estimate",
-          "value": 0.3
-        },
-        "ch.onl.com": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Channel total minus private; assumption (virtually all light-truck demand treated as commercial).",
-          "tier": "Estimate",
-          "value": 0.1
-        },
-        "ch.onl.dir": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Channel total minus via-wholesale; range 0.9-1.7.",
-          "tier": "Estimate",
-          "value": 1.2
-        },
-        "ch.onl.prv": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Research file demand-allocation model: 96% private assumed; BRV does not publish private versus commercial by channel.",
-          "tier": "Estimate",
-          "value": 2.4
-        },
-        "ch.onl.tot": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "BRV 2024 channel share 5.5% (existing dashboard data) x consumer volume",
-          "tier": "Derived",
-          "value": 2.482
-        },
-        "ch.onl.ws": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Research file base case: 52% via wholesale assumed (range 0.8-1.6). Structural assumption, not a published BRV figure.",
-          "tier": "Estimate",
-          "value": 1.3
-        },
-        "ch.spec.com": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Channel total minus private; assumption (virtually all light-truck demand treated as commercial).",
-          "tier": "Estimate",
-          "value": 9.2
-        },
-        "ch.spec.dir": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Channel total minus via-wholesale; range 9-16.",
-          "tier": "Estimate",
-          "value": 12.9
-        },
-        "ch.spec.prv": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Research file demand-allocation model: 71% private assumed; BRV does not publish private versus commercial by channel.",
-          "tier": "Estimate",
-          "value": 23
-        },
-        "ch.spec.tot": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "BRV 2024 channel share 71.3% x consumer volume",
-          "tier": "Derived",
-          "value": 32.174
-        },
-        "ch.spec.ws": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Research file base case: 60% via wholesale assumed (range 16-23). Structural assumption, not a published BRV figure.",
-          "tier": "Estimate",
-          "value": 19.3
-        },
-        "comAll": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Sum of the channel commercial estimates, about 29%. Range 11-16. Replaces an earlier derived 7.9M (BRV around 2018: fleet and leasing 17.5% of car replacement), which left out light-truck tyres.",
-          "tier": "Estimate",
-          "value": 13.1
-        },
-        "direct": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Market 45.1 minus wholesale sold in Germany 27.1; follows from an assumed 60% wholesale penetration. Range 14-22.",
-          "tier": "Estimate",
-          "value": 18
-        },
-        "export": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Residual balancing item = to wholesale 33.5 + imports 8.0 - wholesale sold 27.1. It includes re-exports and stock movements and is not an observed export figure. Range 9-20.",
-          "tier": "Derived",
-          "value": 14.4
-        },
-        "import": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Modelling assumption. UN Comtrade gross imports (87.8M tyres in 2024) are not comparable, as they include OE, intra-group flows and re-exports. Range 6-10.",
-          "tier": "Estimate",
-          "value": 8
+          "source": "BRV 2024 (checked on the BRV press release of 20 March 2025): replacement sales of cars and 4x4 were just under 41M tyres (up 7.4%), used here as 41.0M. The 4.1M van tyres are left out, because BRV's channel shares are for cars. The earlier version used the whole consumer segment of 45.1M, which stretched the car shares over vans.",
+          "tier": "Published",
+          "value": 41.0
         },
         "industry": {
           "asOf": "2024",
           "by": "research",
-          "source": "Scope-adjusted estimate: 46.8M car-tyre ETRMA/Europool Germany sell-in (as cited in the research file from Pirelli Germany statutory reporting; not found in Pirelli group annual report, so unverified) + about 4.7M light-truck at the 1.14 sell-in/sell-out ratio. Range 50.5-52.5.",
+          "source": "Research estimate, low confidence: domestic passenger-car sell-in by industry (ETRMA pool) members, about 31M with a range of 29-33M; the research puts the pool for cars and vans together at 32-36M. Replaces the earlier 51.5M, which the research calls a balancing figure: wdk says the 2024 changes in sell-in and sell-out were 'eng beieinander' (close together), which points to domestic sell-in near sell-out, not 59.5M of supply for 45.1M of sales. wdk compares percentage changes, not volumes, so the level is an assumption. Check it against your own pool data.",
           "tier": "Estimate",
-          "value": 51.5
+          "value": 31.0
         },
-        "market": {
+        "import": {
           "asOf": "2024",
           "by": "research",
-          "source": "BRV 2024: 47.5M tyres (+6.8%) x 95% consumer share, confirmed on AUTOHAUS. The research file reads the same as about 41.0M car/4x4 plus about 4.1M light truck.",
+          "source": "Research estimate, low-medium confidence: non-pool importers, about 10M of the 41.0M (range 8-12M), about 24% of the market. wdk says the market shares of the mostly Asian importers reach 'bis zu 30 Prozent' depending on the tyre segment, so 30% is a ceiling by segment, not a published average. Replaces the earlier 8.0M.",
+          "tier": "Estimate",
+          "value": 10.0
+        },
+        "export": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Convention. The earlier 14.4M was a balancing residual with no source and is removed, as the research recommends. Cross-border wholesale flows (Göggel to Austria, Switzerland and France, Interpneu Polska, Delticom across Europe) exist but are not quantified, so they are not netted. Customs data show very large gross flows (for example 87.8M passenger tyres imported in 2024 per UN Comtrade, quoted earlier, not checked) because they include original-equipment and intra-group plant flows.",
+          "tier": "Estimate",
+          "value": 0.0
+        },
+        "direct": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: the 60 / 40 wholesale versus direct split is kept (range 55-65% wholesale), which gives 16.3M direct of the 41.0M, built from the per-channel ratios. wdk calls wholesale the largest customer of the industry, but no source publishes a split. Replaces the 18.0M on the 45.1M basis.",
+          "tier": "Estimate",
+          "value": 16.3
+        },
+        "ch.spec.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "BRV 2024 channel share 71.3% x 41.0M cars and 4x4 = 29.23M, rounded to 29.2M.",
           "tier": "Derived",
-          "value": 45.125
+          "value": 29.2
+        },
+        "ch.spec.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: the model's earlier wholesale ratio for specialist trade and independent workshops (about 60% via wholesale), rescaled to the 41.0M cars basis. A structural assumption, not a published BRV figure.",
+          "tier": "Estimate",
+          "value": 17.5
+        },
+        "ch.spec.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Channel total minus via wholesale. Not published.",
+          "tier": "Estimate",
+          "value": 11.7
+        },
+        "ch.spec.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate of private demand in this channel, rescaled to cars and 4x4 only. BRV does not publish private versus commercial by channel.",
+          "tier": "Estimate",
+          "value": 22.5
+        },
+        "ch.spec.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Channel total minus private. With the mostly commercial vans (about 85% commercial, the research's assumption) removed, the commercial share of car tyres falls from about 29% to about 24% (9.7M). A BRV managing director put fleet and leasing at about 17.5% of car replacement around 2018.",
+          "tier": "Estimate",
+          "value": 6.7
+        },
+        "ch.deal.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "BRV 2024 channel share 19.8% x 41.0M cars and 4x4 = 8.12M, rounded to 8.1M.",
+          "tier": "Derived",
+          "value": 8.1
+        },
+        "ch.deal.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: the model's earlier wholesale ratio for car dealers and brand-tied workshops (about 70% via wholesale), rescaled to the 41.0M cars basis. A structural assumption, not a published BRV figure.",
+          "tier": "Estimate",
+          "value": 5.7
+        },
+        "ch.deal.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Channel total minus via wholesale. Not published.",
+          "tier": "Estimate",
+          "value": 2.4
+        },
+        "ch.deal.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate of private demand in this channel, rescaled to cars and 4x4 only. BRV does not publish private versus commercial by channel.",
+          "tier": "Estimate",
+          "value": 5.3
+        },
+        "ch.deal.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Channel total minus private. With the mostly commercial vans (about 85% commercial, the research's assumption) removed, the commercial share of car tyres falls from about 29% to about 24% (9.7M). A BRV managing director put fleet and leasing at about 17.5% of car replacement around 2018.",
+          "tier": "Estimate",
+          "value": 2.8
+        },
+        "ch.fach.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "BRV 2024 channel share 3.4% x 41.0M cars and 4x4 = 1.39M, rounded to 1.4M.",
+          "tier": "Derived",
+          "value": 1.4
+        },
+        "ch.fach.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: the model's earlier wholesale ratio for Fachmärkte (about 21% via wholesale), rescaled to the 41.0M cars basis. A structural assumption, not a published BRV figure.",
+          "tier": "Estimate",
+          "value": 0.3
+        },
+        "ch.fach.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Channel total minus via wholesale. Not published.",
+          "tier": "Estimate",
+          "value": 1.1
+        },
+        "ch.fach.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate of private demand in this channel, rescaled to cars and 4x4 only. BRV does not publish private versus commercial by channel.",
+          "tier": "Estimate",
+          "value": 1.3
+        },
+        "ch.fach.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Channel total minus private. With the mostly commercial vans (about 85% commercial, the research's assumption) removed, the commercial share of car tyres falls from about 29% to about 24% (9.7M). A BRV managing director put fleet and leasing at about 17.5% of car replacement around 2018.",
+          "tier": "Estimate",
+          "value": 0.1
+        },
+        "ch.onl.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "BRV 2024 channel share 5.5% x 41.0M cars and 4x4 = 2.25M, rounded to 2.3M.",
+          "tier": "Derived",
+          "value": 2.3
+        },
+        "ch.onl.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: the model's earlier wholesale ratio for B2C online (about 52% via wholesale), rescaled to the 41.0M cars basis. A structural assumption, not a published BRV figure.",
+          "tier": "Estimate",
+          "value": 1.2
+        },
+        "ch.onl.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Channel total minus via wholesale. Not published.",
+          "tier": "Estimate",
+          "value": 1.1
+        },
+        "ch.onl.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate of private demand in this channel, rescaled to cars and 4x4 only. BRV does not publish private versus commercial by channel.",
+          "tier": "Estimate",
+          "value": 2.2
+        },
+        "ch.onl.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Channel total minus private. With the mostly commercial vans (about 85% commercial, the research's assumption) removed, the commercial share of car tyres falls from about 29% to about 24% (9.7M). A BRV managing director put fleet and leasing at about 17.5% of car replacement around 2018.",
+          "tier": "Estimate",
+          "value": 0.1
         },
         "prvAll": {
           "asOf": "2024",
           "by": "research",
-          "source": "Sum of the channel private estimates, about 71% of the market. Range 29-34.",
+          "source": "Sum of the channel private estimates, about 76% of the 41.0M. Not published.",
           "tier": "Estimate",
-          "value": 32
+          "value": 31.3
         },
-        "toWs": {
+        "comAll": {
           "asOf": "2024",
           "by": "research",
-          "source": "Industry 51.5 minus direct 18.0. Range 29-38.",
+          "source": "Sum of the channel commercial estimates, about 24% of the 41.0M (research: about 23% for cars only). Not published.",
           "tier": "Estimate",
-          "value": 33.5
-        },
-        "wsDom": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Assumed about 60% wholesale share of the 45.1M consumer market (defensible 50-70%, i.e. 23-31M).",
-          "tier": "Estimate",
-          "value": 27.1
+          "value": 9.7
         }
       },
       "channels": [
@@ -2954,30 +2940,33 @@
       "groups": [],
       "iso": "DE",
       "meta": {
-        "boxNote": "Boxes are the channels as named under \"By channel\". Finer boxes, for example group versus independent, can be added in the editor.",
-        "scopeNote": "Channel shares are BRV's for passenger cars, applied to the whole consumer segment (cars, 4x4 and light trucks), a small extrapolation.",
+        "boxNote": "Boxes are the channels as named under \"By channel\". Only the market and the channel shares are published (BRV 2024). The supply figures (pool, importers, wholesale versus direct) are modelled assumptions, and cross-border wholesale flows are not netted. Finer boxes, for example group versus independent, can be added in the editor.",
+        "scopeNote": "BRV's channel shares are for cars and 4x4, so the model now uses BRV's 41.0M for cars and 4x4 and leaves out the 4.1M vans, which removes the earlier stretch of the car shares over vans. Vans are mostly commercial (trades, courier and delivery services) and can be added separately. The season mix below is BRV's for cars and vans together.",
         "seasons": {
           "allSeason": 36,
-          "source": "BRV 2024 via AUTOHAUS, March 2025",
+          "source": "BRV 2024 via AUTOHAUS, March 2025 (cars and vans together)",
           "summer": 26,
           "winter": 38
         }
       },
       "refs": [
-        "BRV 2024 replacement market (checked on the BRV press release): about 47.5M tyres, up 6.8%. The consumer segment is about 45M (95%, up 7.1%), made up of about 41.0M cars and 4x4 (up 7.4%) and 4.1M light commercial (up 5%). Trucks are 2.465M. Channel shares for cars and 4x4: tyre specialists including independent garages 71.3% (up from 69.5%), dealers and brand workshops 19.8%, Fachmärkte 3.4%, B2C online 5.5% (down from 6.7%). Season mix and channel shares were also reported by AUTOHAUS, meinauto.de and Reifenpresse (March to May 2025).",
+        "BRV replacement market 2024 (checked on the BRV press release of 20 March 2025): about 47.5M tyres, up 6.8%. The consumer segment is about 45M (95%, up 7.1%), made up of about 41.0M cars and 4x4 (up 7.4%) and 4.1M vans (up 5%). Trucks are 2.465M. Channel shares for cars: tyre specialists including independent workshops 71.3% (69.5% in 2023), dealers and brand workshops 19.8%, Fachmärkte 3.4%, B2C online 5.5% (6.7%). The season mix (all-season about 36%, winter 38%, summer about 26%) is for cars and vans together. BRV figures are association estimates of sales to consumers, not a census. 2025 (BRV press release of 30 March 2026, checked): about 46.6M tyres (down 1.9%), consumer segment about 44.1M (down 2.1%), cars just over 40M (down 1.9%), vans just over 3.9M (down 4.2%), trucks about 2.52M; all-season was the only car type that grew (up 6.1%); car channel shares 72.5 / 19.1 / 3.0 / 5.5%. The research adds that car summer sales fell 4.0% and winter 7.8%, which BRV blames on pull-forward buying in 2024 after the snowflake-symbol rule from October 2024, and that BRV forecasts consumer sales down 2.2% in 2026 if the Middle East situation eases. I did not check those last points.",
         "BRV managing director, around 2018: fleet and leasing is about 17.5% of car replacement",
         "Roland Berger, 2018 (context only): about 50 German tyre wholesalers, top 7 hold about 75%",
         "ETRMA publishes members' (pool) replacement sales; Germany-level pool and non-pool figures were not found publicly",
-        "Research file (Germany consumer replacement tyre distribution 2024): BRV 2024 channel shares of 71% specialist and independent, just under 20% dealers, 3.5% Fachmärkte and 5.5% B2C online (as reported by Reifenpresse and AUTOHAUS); the manufacturer-direct versus wholesale split, non-pool imports, export balance and private versus commercial splits are model estimates and should be treated as indicative.",
-        "ETRMA Europool Germany car-tyre sell-in of 46.8M (+7%), cited in the research file via Pirelli Germany statutory reporting, versus BRV sell-out of about 41.0M: the gap is why industry sell-in should not be expected to equal consumer sell-out. Not independently verified here.",
-        "UN Comtrade / WITS 2024, HS 401110: Germany gross imports 87.8M and exports 53.1M passenger tyres. These show Germany is a large cross-border hub but cannot be used directly for the wholesale import and export boxes.",
-        "Only the net is pinned down by the data: wholesale exports net of non-pool imports come to about 6.4M. Any change to the import assumption moves the export balance one for one.",
+        "Scope (changed in this version): the research recommends the 41.0M for cars and 4x4 as the headline, because BRV's channel shares are for cars; they had been applied to cars and vans together (45.1M). Channel totals are now the BRV share times 41.0M (29.2 / 8.1 / 1.4 / 2.3M). Adding the 4.1M vans at 75% specialists, 20% dealers, 1% Fachmärkte and 4% online (the research's assumption) gives back the earlier 32.3 / 8.9 / 1.45 / 2.4M, so those earlier figures are the cars-and-vans equivalent. Vans are mostly commercial (the research assumes about 85%), which lowers the commercial share of car tyres from about 29% to about 24%.",
+        "Supply side rebuilt, replacing the earlier 51.5M pool, 8.0M imports and 14.4M export. wdk's annual report for 2024 (checked) says: 'Bei Pkw-Reifen konnten die Industrielieferungen um mehr als 7 Prozent gesteigert werden'; the percentage changes of sell-in and sell-out were 'eng beieinander'; the market shares of the mostly Asian importers reach 'je nach Reifensegment schon bis zu 30 Prozent'; and 'Der größte Abnehmer ist dabei mittlerweile der Reifengroßhandel'. From this the research infers consumer sell-in close to sell-out (about 45M for cars and vans), with pool members at 32-36M and importers at 9-13M; for cars and 4x4 alone about 41M, with the pool at 29-33M, importers at 8-12M and wholesale about 24.7M. The model uses the midpoints, a pool of 31M and importers of 10M. Caution: wdk compares percentage changes, not volumes, and the 30% is a ceiling by segment, so the split is an assumption. The earlier 51.5M came from an ETRMA / Europool car-tyre figure of 46.8M (up 7%), cited through Pirelli Germany's reporting, which I could not verify; if it is genuine it probably includes deliveries to German-registered pan-European distributors. The 14.4M export was a balancing item, which made the earlier balance circular.",
+        "Trade data (quoted, not checked): UN Comtrade / WITS 2024, HS 401110, shows Germany with gross imports of 87.8M and exports of 53.1M passenger tyres. The research adds Destatis flows from a Hans-Böckler-Stiftung study: 85.4M imports of new car tyres in 2022, German car-tyre production of about 31.1M in 2023 (extrapolated from Q1-Q3), about 25M imports from South-East Asia in 2024 (wdk), 10-11M exports to non-European countries and an estimated 17-18M consumer original-equipment deliveries. These include original-equipment and intra-group plant flows, so they cannot validate the wholesale, import or export boxes.",
         "Wholesale infrastructure examples (research file): Best4Tires serves more than 33,000 dealers and workshops with more than 20 manufacturers; Reifen Müller stocks about 500,000 tyres.",
-        "Later Germany research files (October 2026) reached different splits: about 75 / 25 of sell-in with imports of 2.0M and exports of 1.5M (delivered earlier and now replaced); about 70-75 / 25-30 by treating the whole tyre-trade channel (71.3%) as wholesale (not applied); and finally 60 / 40, with exactly this model's flow of 33.5M + 8.0M - 14.4M = 27.1M. That last file was produced from the dashboard's own figures, so it does not confirm them independently. No source publishes a wholesale versus direct split for Germany. The model keeps 60 / 40; the last file's sensitivity range is 55-65% wholesale (25-29M) and 35-45% direct (16-20M).",
+        "Later Germany research files (October 2026) reached different splits: about 75 / 25 of sell-in (delivered earlier and then replaced), about 70-75 / 25-30 by treating the whole tyre-trade channel as wholesale (not applied), then a file that repeated the 60 / 40 flow of 33.5M + 8.0M - 14.4M = 27.1M. The latest file, a validation of the whole model, keeps 60 / 40 (range 55-65% wholesale) but rebuilds the supply side from wdk as described above. No source publishes a wholesale versus direct split for Germany.",
         "Corrections to the last research file: (1) it puts A.T.U. at 3.0-3.5M tyres, but BRV's whole Fachmärkte channel, which BRV describes as chains such as A.T.U. and Pit-Stop, is 3.4%, about 1.5M, and the file itself puts DIY chains at 1.5M; (2) it calls Ihle a small family business, but Michelin took Ihle over in 2014 (Tyrepress) and Ihle Tires had revenue of EUR 167M in 2022; (3) its volumes for Reifen Göggel (1.0-1.5M tyres) and Reifen Müller (0.4-0.6M) look far too low against their 2022 revenues of about EUR 490M and EUR 282M (EUR 490M over 1.25M tyres would be about EUR 390 a tyre); (4) its per-company estimates are branches times an assumed throughput per outlet, and the assumption runs from 5,000 tyres an outlet (A.T.U.) to 20,000 (Euromaster); (5) the named players it adds up reach about 25-28M tyres, which it compares with the 27.1M wholesale figure, but the market is 45.1M, so the comparison does not hold; (6) it counts 570 A.T.U. branches (A.T.U. says about 530) and describes reifen.com as a 37-shop Apollo chain, which I could not confirm. Its other estimates are not used beyond the card: Helm 2.0-3.0M, Pneuhage 5-8M, Best4Tires 1-2M, Ihle 0.5M, dealer groups 3-5M.",
-        "Wholesaler revenue, 2022 (Neue Reifenzeitung 8/2024 ranking of company disclosures, via Reifenpresse; covers all tyre types, not only cars): Pneuhage wholesale EUR 543M (group EUR 908M), Reifen Göggel about EUR 490M (firm's own data), Best4Tires wholesale EUR 286M (group EUR 508M), Reifen Müller about EUR 282M including retail, Ihle Tires EUR 167M. Reifen Helm is not in the ranking (B+B Reifencenter has belonged to Helm since 2021). Chain counts (checked): Euromaster Germany 200 franchise locations (L'Express Franchise, 31 August 2026; the file says 199); A.T.U. about 530 branches (Autohaus, 17 November 2025); REIFF had 42 stores in southern Germany when Bridgestone bought it in May 2020 (Tyrepress; the file says 40). Not checked: Vergölst 180 outlets, Reifen Müller 45, Driver 70, Pneuhage 893 outlets including partners, Reifen Helm 54 branches (a store listing shows 53)."
+        "Wholesaler revenue, 2022 (Neue Reifenzeitung 8/2024 ranking of company disclosures, via Reifenpresse; covers all tyre types, not only cars): Pneuhage wholesale EUR 543M (group EUR 908M), Reifen Göggel about EUR 490M (firm's own data), Best4Tires wholesale EUR 286M (group EUR 508M), Reifen Müller about EUR 282M including retail, Ihle Tires EUR 167M. Reifen Helm is not in the ranking (B+B Reifencenter has belonged to Helm since 2021). Chain counts (checked): Euromaster Germany 200 franchise locations (L'Express Franchise, 31 August 2026; the file says 199); A.T.U. about 530 branches (Autohaus, 17 November 2025); REIFF had 42 stores in southern Germany when Bridgestone bought it in May 2020 (Tyrepress; the file says 40). Not checked: Vergölst 180 outlets, Reifen Müller 45, Driver 70, Pneuhage 893 outlets including partners, Reifen Helm 54 branches (a store listing shows 53).",
+        "Player volumes revised in the latest research file (all research estimates, low confidence). Vergölst is now about 1.7M tyres (range 1.4-2.2M) and Euromaster about 1.3M (1.0-1.8M), down from 2.7M and 4M, built from revenue instead of outlets: Vergölst revenue about EUR 330M with over 450 locations including franchise partners (Vergölst press release, 2024, checked); Euromaster revenue EUR 316.3M in 2023 with 228 own and 144 franchise locations then (research, not checked), and about 400 own and franchise locations in December 2024 (Euromaster press release, checked). The research converts revenue to tyres assuming tyre sales are about 65% of specialist revenue (BRV operating comparison 2023) and about EUR 95 net per tyre. That arithmetic gives about 2.3M tyres for Vergölst (330 x 0.65 / 95) and 2.2M for Euromaster, above the research's own ranges. A strong truck and fleet mix at Euromaster could explain a lower passenger-car figure, but I could not verify it. Driver / Pneumobil (0.4M) and REIFF (0.3M) are not re-verified. A.T.U.: about 525-529 branches and revenue of about EUR 1bn across all activities (research, revenue not checked). Its tyre volume could equal or exceed the whole 1.4M Fachmärkte channel, so BRV may count part of it under workshops; range 1.0-2.5M. Wholesale volumes use an assumed EUR 85 per tyre (from one Best4Tires data point: EUR 508M group revenue over about 6M tyres in 2022, via auto.news, not checked): Göggel about 5.8M tyres of all types, Pneuhage wholesale about 8.4M of all types and countries including supply to its own outlets, which risks double counting.",
+        "Ownership and list corrections. First Stop in Germany is run by Pneuhage: in 2016 Bridgestone agreed a joint venture in which Pneuhage takes 75% (Tyrepress), and Pneuhage was to run the 47 First Stop branches from 2017 (Eurotransport); I could not confirm whether Bridgestone still holds a stake. Reifen Ehrhardt is a Pneuhage brand (27 branches in 2017). Neither is listed here as Bridgestone. Reifen Burkhardt, a family wholesaler in south-west Germany with storage for 250,000 tyres and wheels, was bought by Goodyear (announced 27 July 2022, Tyrepress; a law-firm news item of October 2022 suggests it closed, not checked). It was missing from the card and is now listed as a Goodyear-owned wholesaler. Ihle: Tyrepress reported Michelin's takeover in September 2014 (merger review pending then); the research cites 2015, which matches Michelin's purchase of a second wholesaler, Meyer Lissendorf near Cologne, in July 2015, so 2014 stands for Ihle. Tyre24 / Alzura, Saitow and Gettygo are B2B platforms, not stocking wholesalers, so their volume is counted through the wholesalers behind them. Other wholesaler names from the NRZ ranking tags (the ranks are behind a paywall): Bohnenkamp (mostly agricultural and industrial), Baierlacher, Meyer Lissendorf, Gamma, Rad-Center Derkum, Reifenvertrieb24, Grasdorf. Not checked: Pneuhage group revenue of EUR 1.15bn in 2024 and wholesale growth of 32% in 2023, and Reifen1+ with 687 dealers and 721 locations and First Stop with 200+ franchisees.",
+        "Online: BRV counts 5.5% of car tyres (2.3M) at the point of sale. The research quotes Delticom's annual report for 2024 as saying experts put the online share of tyres sold in Germany at just under 13% (the same figure is given for Europe and the experts are not named); I could not open the report to check. Delticom's Germany segment revenue of EUR 241.4M in 2023 (Montega, via the research, not checked) would, at EUR 75-95 a tyre, be 2.5-3.2M tyres on its own, more than BRV's whole online channel. The research's explanation is that BRV records tyres bought online but fitted at a workshop under the specialist channel, so online-originated demand could be 4-5M (research estimate). The model keeps BRV's point-of-sale 2.3M.",
+        "Trade policy and concentration (quoted by the research; I confirmed only that the regulation exists): Commission Implementing Regulation (EU) 2026/1540 sets definitive anti-dumping duties on passenger-car and light-lorry tyres from China; the research gives 4.3% to 45.3%, in force from 8 July 2026 for five years, with a parallel anti-subsidy investigation due to conclude in December 2026, and quotes Agence Europe on nearly 93M Chinese units in 2024, a 28% share of EU consumption. These measures could shift volume between pool and non-pool brands. Wholesale concentration: Roland Berger (2018) counted about 50 wholesalers, with the top 7 holding about 75%; the research puts Pneuhage, Göggel and Best4Tires at about 20M tyres combined across all types and countries."
       ],
-      "scope": "Consumer replacement tyres (car, van, 4x4)",
+      "scope": "Passenger-car replacement tyres (cars and 4x4, excludes vans)",
       "unit": "million tyres",
       "year": 2024
     },
