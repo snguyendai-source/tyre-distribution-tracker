@@ -309,14 +309,23 @@
               "territories": [
                 "__NATIONWIDE__"
               ]
+            },
+            {
+              "name": "Goodyear online shop (goodyear.de/shop)",
+              "owner": "Goodyear",
+              "volume": "direct to consumers since a December 2019 pilot, fitting at partner retailers; current status not confirmed",
+              "model": "Manufacturer online shop (Goodyear)",
+              "territories": [
+                "__NATIONWIDE__"
+              ]
             }
           ],
           "flowBox": "onl"
         }
       ],
       "flatEntities": [],
-      "noteBadge": null,
-      "note": null,
+      "noteBadge": "caution",
+      "note": "Caveat Market and channel shares are BRV 2024 figures: 47.5M tyres in all, of which the consumer segment is about 45.1M (41.0M cars and 4x4 plus 4.1M vans), with channel shares of 71.3 / 19.8 / 3.4 / 5.5%. The wholesale versus direct split (about 75 / 25 of sell-in), imports (2.0M) and exports (1.5M) are modelled assumptions from the research, not published figures, and an earlier version of the model gave quite different values.",
       "marketAccessNote": "Wholesaler-led market. Reifen Göggel and the Pneuhage Group (Interpneu, Reifen Center Wolf, Gewe) already dominate independent-trade supply and are the fastest single-relationship route to volume. Michelin, Continental and Hankook already control their own downstream (Ihle, Vergölst, Reifen Müller) — not viable access routes for a competing brand.",
       "territoryDefs": [
         {
