@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-14T05:36:31Z",
+  "generatedAt": "2026-10-14T12:02:17Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -2975,184 +2975,212 @@
         "market": {
           "asOf": "2024",
           "by": "research",
-          "source": "Syndicat du Pneu/GfK 2024 sell-out (TC4), +3.4%. This is the Syndicat's panel figure, not total French replacement consumption (the research puts the full market at about 42M; see notes).",
-          "tier": "Published",
-          "value": 17.211
+          "source": "Research estimate, medium confidence: total passenger-car (tourisme plus 4x4/SUV, vans excluded) replacement sell-in in France in 2024, 37.1M (range 35.3-39.2M). It is the Europool sell-in of 28.9M plus an estimated 8.2M of non-pool imports. In TC4 units (cars, 4x4/SUV and vans) the same estimate is 40.7M (38.7-42.9M). Cross-checks, all quoted by the research and not checked: ADEME's 42.2M light-vehicle replacement tyres placed on the market in 2022 (cited by the Syndicat du Pneu), a vehicle-km wear model (about 540bn km x 4 tyres / 45-55k km of tread life = 39-48M, the research's arithmetic) and the market-share claims of Allopneus and Distri Cash. Replaces the earlier 17.211M, which is the Syndicat du Pneu/GfK sell-out of two panelled channels only (see Sources and notes).",
+          "tier": "Estimate",
+          "value": 37.1
         },
         "industry": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research: pool share of about 75% applied to the 17.2M panel, a normalised figure rather than a real pool volume. The published 2024 sell-in of manufacturers into the trade is 31.74M, a different scope.",
-          "tier": "Estimate",
-          "value": 13.0
-        },
-        "direct": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Research: about 46% of the 17.2M reaches the channels straight from manufacturers or through central-purchasing arrangements. Range 40-52%. Manufacturer-owned networks (Speedy, First Stop, BestDrive, Euromaster, Vulco) support a sizeable direct route.",
-          "tier": "Estimate",
-          "value": 8.0
-        },
-        "toWs": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Industry 13.0 minus direct 8.0. Modelled.",
-          "tier": "Estimate",
-          "value": 5.0
+          "source": "Europool sell-in to the French trade in 2024: 31.744M TC4 tyres, +4.5%, the Syndicat du Pneu/GfK 'sell-in' from manufacturers to resellers (checked on Journal de l'Automobile and J2R). The research's split, quoted from L'argus and the Syndicat and not checked, is tourisme 25.64M, 4x4/SUV 3.29M and camionnette 2.81M (these add up to 31.74M); tourisme plus 4x4/SUV gives 28.9M of passenger-car tyres. Europool covers members with EU industrial activity; the Syndicat says not every manufacturer reports to Europool, so non-EU, mostly Asian, suppliers are outside it (research quote, not checked). Replaces the earlier 13.0M, which was normalised onto the 17.2M panel.",
+          "tier": "Derived",
+          "value": 28.9
         },
         "import": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research: net non-pool imports, normalised onto the 17.2M panel (about 10.3M on the full-market basis). Treat this box as net imports. Gross customs flows are not comparable (see notes).",
+          "source": "Research estimate, low-medium confidence, range 6.5-10.3M: non-pool imports (non-declaring, mostly Asian budget brands), about 22% of the total (range 18-26%); 8.95M on the TC4 basis. Support: budget brands were 19.1% of the 2024 market (J2R, checked); the research cites ADEME's 2022 gap between 42.2M placed on the market and about 31.6M of Europool sell-in (about 25%; the 2022 sell-in of 31.625M is confirmed on Journal de l'Automobile, the ADEME figure is not checked) and the European Commission's finding that China supplied 28% of EU passenger and light-truck tyre consumption in 2024 (not checked). This estimate is the main driver of the full-market figure. Replaces the earlier 4.2M. The model has no imports-to-direct flow, so all 8.2M is shown going through wholesale (see the box note).",
           "tier": "Estimate",
-          "value": 4.2
+          "value": 8.2
         },
         "export": {
           "asOf": "2024",
           "by": "research",
-          "source": "Netted into the import box. No public dataset isolates wholesaler re-exports of replacement car and van tyres, so no standalone export figure is shown.",
+          "source": "Model convention. The research treats exports and re-exports by French wholesalers (Distri Cash, for example) as not zero but unquantified, a possible 0.3-1.0M overstatement within the total. ADEME counts the first placer on the market, so the placement figures are not a clean net of exports. Replaces the earlier netting of exports into the import box.",
           "tier": "Estimate",
           "value": 0.0
+        },
+        "direct": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, low confidence: about 58% of the 37.1M reaches the channels directly (21.6M). That is 19.9M of Europool volume (manufacturer-owned networks such as Euromaster, Speedy, First Stop, BestDrive and Allopneus, and the central purchasing of auto-centres) plus about 1.7M of non-pool volume bought direct by networks and online sellers. The model has no imports-to-direct flow, so the whole 21.6M is shown as the direct box and the import box goes entirely through wholesale; pool to wholesale therefore reads 7.3M (the research has 9.0M). Equals the sum of the channel direct figures. Replaces the earlier 8.0M (46% of the 17.2M).",
+          "tier": "Estimate",
+          "value": 21.6
         },
         "ch.auto.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "2024 channel share (27.9%) scaled onto the 17.2M panel. A modelled allocation, not an observed volume.",
+          "source": "Research estimate, medium-high confidence: the Syndicat du Pneu/GfK panel sell-out of auto-centres and fast-fitters, 8.86M TC4 (27.9% of the 31.74M sell-in; research figure, not checked), times about 97% passenger car = 8.6M. Hypermarket auto-centres are counted here (the Syndicat's centres auto are 'issus de la grande distribution'); Leclerc's panel coverage is not confirmed. Replaces the earlier 4.80M, which applied the 27.9% share to the 17.2M.",
           "tier": "Estimate",
-          "value": 4.8
+          "value": 8.6
         },
         "ch.auto.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: 35% via wholesale. Triangulated from channel structure and manufacturer ownership; no public French split exists.",
+          "source": "Research estimate, about 12% via wholesale (was 35%). Auto-centres buy mostly direct or through central purchasing. Calibrated so the channels add up to 15.5M via wholesale and 21.6M direct. Not published.",
           "tier": "Estimate",
-          "value": 1.7
+          "value": 1.0
         },
         "ch.auto.dir": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: channel total minus via wholesale. 35% assumed via wholesale.",
+          "source": "Research estimate: channel total minus via wholesale. Central purchasing and direct supply to Norauto, Midas, Feu Vert, Speedy and the Leclerc and ITM centres. Not published.",
           "tier": "Estimate",
-          "value": 3.1
+          "value": 7.6
         },
         "ch.auto.prv": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: channel total minus commercial. About 10% commercial.",
+          "source": "Research estimate of private demand by channel, about 78% overall (29.0M of 37.1M, the same as the earlier 78%). No French source publishes private versus commercial by channel; the only evidence is the GfK figure cited by the Syndicat du Pneu that about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked).",
           "tier": "Estimate",
-          "value": 4.3
+          "value": 7.6
         },
         "ch.auto.com": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: about 10% commercial. Not published; wide error band.",
+          "source": "Research estimate of commercial demand by channel, about 22% overall (8.1M of 37.1M). No French source publishes it by channel. Highest at pneumaticiens (about 54%: Euromaster is about 40 / 60 private versus commercial, fleet and leasing heavy) and lowest at online and auto-centres (about 8% and 12%).",
           "tier": "Estimate",
-          "value": 0.5
+          "value": 1.0
         },
         "ch.deal.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "2024 channel share (about 28%) scaled onto the 17.2M panel. A modelled allocation, not an observed volume.",
+          "source": "Research residual, low confidence: car dealers and independent repairers (MRA), which are not in the Syndicat's panel. On the Syndicat's own pool-only basis this block is 8.85M TC4, about 8.3M passenger car, and the Syndicat itself estimates 8-9M (research quote, not checked). On the full-market basis, dealers and MRA (14.0M) plus foreign online (2.5M) make 16.5M non-panel, about 8.2M more than on the Syndicat's convention, which the research attributes to non-pool volume reaching garages through wholesalers. This is the biggest uncertainty in the model. MRA still hold the first replacement of 4x4/SUV tyres (J2R, checked). Replaces the earlier 4.82M.",
           "tier": "Estimate",
-          "value": 4.82
+          "value": 14.0
         },
         "ch.deal.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: 85% via wholesale (long tail of independent multibrand garages). Triangulated from channel structure and manufacturer ownership; no public French split exists.",
+          "source": "Research estimate, about 79% via wholesale (was 85%): a long tail of independent multibrand garages and dealers supplied by wholesalers such as Distri Cash, AAG and PHE. OEM parts programmes are the other route. Not published.",
           "tier": "Estimate",
-          "value": 4.1
+          "value": 11.0
         },
         "ch.deal.dir": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: channel total minus via wholesale. 85% assumed via wholesale (long tail of independent multibrand garages).",
+          "source": "Research estimate: channel total minus via wholesale. OEM parts programmes and direct importer supply. Not published.",
           "tier": "Estimate",
-          "value": 0.7
+          "value": 3.0
         },
         "ch.deal.prv": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: channel total minus commercial. About 15% commercial.",
+          "source": "Research estimate of private demand by channel, about 78% overall (29.0M of 37.1M, the same as the earlier 78%). No French source publishes private versus commercial by channel; the only evidence is the GfK figure cited by the Syndicat du Pneu that about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked).",
           "tier": "Estimate",
-          "value": 4.1
+          "value": 11.2
         },
         "ch.deal.com": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: about 15% commercial. Not published; wide error band.",
+          "source": "Research estimate of commercial demand by channel, about 22% overall (8.1M of 37.1M). No French source publishes it by channel. Highest at pneumaticiens (about 54%: Euromaster is about 40 / 60 private versus commercial, fleet and leasing heavy) and lowest at online and auto-centres (about 8% and 12%).",
           "tier": "Estimate",
-          "value": 0.7
+          "value": 2.8
         },
         "ch.spec.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "2024 channel share (26.3%) scaled onto the 17.2M panel. A modelled allocation, not an observed volume.",
+          "source": "Research estimate, medium-low confidence: the panel sell-out of tyre specialists (pneumaticiens), 8.35M TC4 (26.3% of the sell-in; research figure, not checked), times about 80% passenger car = 6.9M, because camionnette is concentrated in pneumaticiens. GfK data cited by the Syndicat say about 4M tourisme tyres were sold B2B by pneumaticiens in 2023 (research, not checked). Replaces the earlier 4.52M.",
           "tier": "Estimate",
-          "value": 4.52
+          "value": 6.9
         },
         "ch.spec.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: 50% via wholesale. Triangulated from channel structure and manufacturer ownership; no public French split exists.",
+          "source": "Research estimate, about 17% via wholesale (was 50%). Euromaster, First Stop, Côté Route, Eurotyre and BestDrive are manufacturer-led and buy direct; Point S buys through Viasso's central purchasing. Not published.",
           "tier": "Estimate",
-          "value": 2.2
+          "value": 1.2
         },
         "ch.spec.dir": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: channel total minus via wholesale. 50% assumed via wholesale.",
+          "source": "Research estimate: channel total minus via wholesale. Manufacturer-led networks (Euromaster, First Stop, Côté Route, Eurotyre, BestDrive) and Point S through Viasso. Not published.",
           "tier": "Estimate",
-          "value": 2.3
+          "value": 5.7
         },
         "ch.spec.prv": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: channel total minus commercial. About 50% commercial (fleet and rental b2b).",
+          "source": "Research estimate of private demand by channel, about 78% overall (29.0M of 37.1M, the same as the earlier 78%). No French source publishes private versus commercial by channel; the only evidence is the GfK figure cited by the Syndicat du Pneu that about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked).",
           "tier": "Estimate",
-          "value": 2.3
+          "value": 3.2
         },
         "ch.spec.com": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: about 50% commercial (fleet and rental B2B). Strongest evidence of the four: GfK data cited by the Syndicat du Pneu say about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens.",
+          "source": "Research estimate of commercial demand by channel, about 22% overall (8.1M of 37.1M). No French source publishes it by channel. Highest at pneumaticiens (about 54%: Euromaster is about 40 / 60 private versus commercial, fleet and leasing heavy) and lowest at online and auto-centres (about 8% and 12%).",
           "tier": "Estimate",
-          "value": 2.2
+          "value": 3.7
         },
         "ch.onl.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "2024 channel share (about 18%) scaled onto the 17.2M panel. A modelled allocation, not an observed volume.",
+          "source": "Research estimate, medium confidence: French pure players' panel sell-out of 5.68M TC4 (+21.9% in 2024; J2R and Journal de l'Automobile report about 5.6M, checked) times about 88% passenger car = 5.1M. French pure players only: foreign e-tailers are not panelled and sit in the foreign online box. Replaces the earlier 3.10M, which applied the 18% share to the 17.2M.",
           "tier": "Estimate",
-          "value": 3.1
+          "value": 5.1
         },
         "ch.onl.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: 40% via wholesale. Triangulated from channel structure and manufacturer ownership; no public French split exists.",
+          "source": "Research estimate, about 25% via wholesale (was 40%). Allopneus buys direct from manufacturers and 1001pneus sources through Massa. Not published.",
           "tier": "Estimate",
-          "value": 1.2
+          "value": 1.3
         },
         "ch.onl.dir": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: channel total minus via wholesale. 40% assumed via wholesale.",
+          "source": "Research estimate: channel total minus via wholesale. Allopneus buys direct from manufacturers. Not published.",
           "tier": "Estimate",
-          "value": 1.9
+          "value": 3.8
         },
         "ch.onl.prv": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: channel total minus commercial. About 10% commercial.",
+          "source": "Research estimate of private demand by channel, about 78% overall (29.0M of 37.1M, the same as the earlier 78%). No French source publishes private versus commercial by channel; the only evidence is the GfK figure cited by the Syndicat du Pneu that about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked).",
           "tier": "Estimate",
-          "value": 2.8
+          "value": 4.7
         },
         "ch.onl.com": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: about 10% commercial. Not published; wide error band.",
+          "source": "Research estimate of commercial demand by channel, about 22% overall (8.1M of 37.1M). No French source publishes it by channel. Highest at pneumaticiens (about 54%: Euromaster is about 40 / 60 private versus commercial, fleet and leasing heavy) and lowest at online and auto-centres (about 8% and 12%).",
           "tier": "Estimate",
-          "value": 0.3
+          "value": 0.4
+        },
+        "ch.fon.tot": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research residual split, low confidence: foreign e-tailers and marketplaces (123pneus by Delticom, for example) are not panelled by the Syndicat, so they sit inside the non-panel plug. The 2.5M is an allocation, not a measurement. Delticom has a voluntary Aliapur agreement for tyres its clients place on the French market (research, not checked). New channel in this version.",
+          "tier": "Estimate",
+          "value": 2.5
+        },
+        "ch.fon.ws": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate, 40% via wholesale, a residual split. Not published.",
+          "tier": "Estimate",
+          "value": 1.0
+        },
+        "ch.fon.dir": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate: channel total minus via wholesale. Not published.",
+          "tier": "Estimate",
+          "value": 1.5
+        },
+        "ch.fon.prv": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate of private demand by channel, about 78% overall (29.0M of 37.1M, the same as the earlier 78%). No French source publishes private versus commercial by channel; the only evidence is the GfK figure cited by the Syndicat du Pneu that about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked).",
+          "tier": "Estimate",
+          "value": 2.3
+        },
+        "ch.fon.com": {
+          "asOf": "2024",
+          "by": "research",
+          "source": "Research estimate of commercial demand by channel, about 22% overall (8.1M of 37.1M). No French source publishes it by channel. Highest at pneumaticiens (about 54%: Euromaster is about 40 / 60 private versus commercial, fleet and leasing heavy) and lowest at online and auto-centres (about 8% and 12%).",
+          "tier": "Estimate",
+          "value": 0.2
         }
       },
       "channels": [
@@ -3173,7 +3201,12 @@
         },
         {
           "id": "onl",
-          "name": "Pure-play online",
+          "name": "French pure-play online",
+          "source": ""
+        },
+        {
+          "id": "fon",
+          "name": "Foreign online sellers & marketplaces",
           "source": ""
         }
       ],
@@ -3181,27 +3214,31 @@
       "groups": [],
       "iso": "FR",
       "meta": {
-        "boxNote": "Boxes are the channels as named under \"By channel\". Industry and non-pool imports are normalised onto the 17.2M panel, so they are not the real pool or import volumes, and export is netted into imports. Pure-play online is 3.1M here (the 18% share on 17.2M); trade press quotes 5.6M, which fits the same share on the 31.7M sell-in basis. Finer boxes can be added in the editor.",
+        "boxNote": "Boxes are the channels as named under \"By channel\". Industry is Europool's published sell-in (28.9M of passenger-car tyres); the import box is the research's estimate of non-pool supply (8.2M), not gross customs imports. The research sends about 1.7M of the non-pool volume straight to channels. The model has no such flow, so the whole 8.2M is shown going through wholesale and that 1.7M sits in the direct box instead; pool to wholesale therefore reads 7.3M, not the research's 9.0M. Export is set to zero; the research sees 0.3-1.0M of possible re-exports. Dealers and independent repairers and foreign online are residuals, not measurements. Private and commercial are research estimates by channel and no source publishes them.",
+        "scopeNote": "The 37.1M is a passenger-car (tourisme plus 4x4/SUV) estimate of total replacement sell-in, not the 17.2M shown before. That 17.2M is the Syndicat du Pneu/GfK 2024 sell-out of two panelled channels (auto-centres and pneumaticiens) in TC4 units (cars, 4x4/SUV and vans); it leaves out French pure players, dealers and independent repairers and foreign online sellers. In TC4 units the same total estimate is 40.7M. Europool's published sell-in (31.74M TC4, 28.9M passenger car) is the pool; the non-pool 8.2M is an estimate (range 6.5-10.3M). The three panelled channels are measured; dealers and independent repairers (14.0M) and foreign online (2.5M) are the plug.",
         "seasons": {
           "allSeason": 37,
-          "source": "Syndicat du Pneu/GfK 2024 via trade press",
-          "summer": null,
-          "winter": null
-        },
-        "scopeNote": "17.2M is the Syndicat du Pneu/GfK panel sell-out, not total French replacement consumption. The research behind these boxes puts the full market at about 42M (range 40-44M) and manufacturer sell-in at 31.7M. The channel boxes are the published 2024 channel shares scaled onto the 17.2M panel."
+          "summer": 53,
+          "winter": 10,
+          "source": "Syndicat du Pneu/GfK 2024 via J2R"
+        }
       },
       "refs": [
-        "Syndicat du Pneu / GfK 2024: 17.211M consumer (TC4) tyres reached drivers (sell-out, +3.4%), as reported by Journal de l'Automobile",
-        "The same release gives 31.744M tyres sold by manufacturers into the trade (sell-in, +4.5%). The sources reviewed describe the 17.2M as sell-out through the Syndicat's panel. An April 2020 L'Argus article on the earlier 18.2M figure says that panel covered specialist wholesalers, car centres and fast-fitters only. Research reading for 2024: 17.2M is about auto-centres (8.86M) plus pneumaticiens (about 8.35M), so it leaves out dealers/MRA and most pure players.",
-        "Channel volumes on the dashboard (4.80 / 4.82 / 4.52 / 3.10M) are the 2024 channel shares scaled onto 17.2M, so they are modelled allocations. The research, citing L'Argus and the Syndicat du Pneu, gives the 2024 channel volumes on the 31.74M basis as auto-centres 8.86M, dealers/agents/MRA 8.85M, pneumaticiens about 8.35M and pure players 5.68M. Not independently verified here.",
-        "All-season tyres were 37% of the French market in 2024 (trade press)",
-        "Online discrepancy: trade press reports pure players at 5.6M units (+21.9%) while this model shows 3.1M. The research explains it as the same 17.9% share applied to 31.74M (5.68M) versus 17.2M (3.08M). That reading fits the arithmetic, but the press articles do not state the basis of the 5.6M.",
-        "Full-market estimate (research, not used for the boxes): about 42M replacement car, 4x4 and van tyres in 2024, range 40-44M. It is anchored on ADEME's 42.2M replacement tyres for 2022, a Europool series of about 32M and budget imports (19-20% of sales, doubled in a decade). The 42M is an inference, not a published 2024 count. The ADEME and Europool figures were not independently verified here. Switching the whole France model to this base would change the card header and every channel volume.",
-        "Wholesale versus direct splits are triangulated estimates: about 54% via wholesale overall (range 48-60%), built from 35% auto-centres, 85% dealers and independent repairers, 50% specialists and 40% online. No public French dataset gives this split. Context from the research: Distri Cash sold about 6.5M tyres in 2024 (not verified; J2R Auto reports 5.5M for 2022), so the wholesale route is large.",
-        "Private versus commercial is about 78% / 22% (range 74-82% private). Only the specialist figure has direct evidence. The mixes for the other channels are estimates.",
-        "UN Comtrade / WITS 2024, HS 401110, as quoted by the research: France gross imports about 55.1M and exports about 20.2M passenger tyres. Not usable for the import and export boxes, because gross customs flows include OE supply and intra-group movements. Not checked here."
+        "Method (replaced with the newest France research file, October 2026): the model is rebuilt on a passenger-car sell-in basis. Market 37.1M (was 17.2M), Europool pool 28.9M (was 13.0M), non-pool imports 8.2M (was 4.2M), wholesale 15.5M (was 9.2M), direct 21.6M (was 8.0M). The 27.9 / 28.0 / 26.3 / 18.0% channel shares used before are real published shares, but of the 31.74M sell-in and not of 17.2M, so applying them to 17.2M understated every channel by about 45%. The flow now has five channels: foreign online sellers are a new box.",
+        "What the 17.2M is (checked on Journal de l'Automobile and J2R, March 2025): the Syndicat du Pneu/GfK reports 17.211M TC4 tyres (cars, 4x4/SUV and vans) sold 'des revendeurs aux utilisateurs' (sell-out, +3.4%) and 31.744M sold 'des manufacturiers aux revendeurs' (sell-in, +4.5%); pure players sold about 5.6M (+21.9%). The research reads the 17.2M as the sell-out of two panelled channels only, auto-centres (8.86M) plus pneumaticiens (8.35M) = 17.21M, leaving out French pure players (5.68M, reported separately), dealers and independent repairers (MRA) and foreign e-tailers. I could not find the Syndicat's wording on panel scope or the 8.86M and 8.35M in the pages I could open. The check I could make is that the earlier file's channel shares of 27.9% and 26.3% (not re-checked) of 31.744M also give 17.2M. The research adds that 2025 fits the same reading (8.861M + 7.887M = 16.748M against 16.747M published; not checked).",
+        "Scope changes between years (research, partly checked): J2R reports 21.5M TC4 tyres sold in 2023 (-1.4%) and Journal de l'Automobile reports 16.493M of sell-out and 31.625M of sell-in for 2022 (February 2023), so the headline basis has changed more than once. The research reads the 2023 figure (21.3M in its version) as including pure players, the 2024 headline as excluding them, and the H1 2026 sell-out of 9.99M as including them again (not checked). Check the scope before comparing years. H1 2026: TC4 volumes were down 0.2% (J2R, 29 September 2026, checked); the research puts Europool sell-in at 14.6M.",
+        "Bridge for 2024 (research, million tyres, TC4 / passenger car): panel sell-out of auto-centres and pneumaticiens 17.21 / about 15.5, plus French pure players 5.68 / 5.1 = 22.89 / about 20.6 for all panelled channels, plus the Syndicat's residual for dealers and MRA 8.85 / 8.3 = Europool sell-in 31.74 / 28.9, plus non-pool imports 8.95 / 8.2 = total 40.7 / 37.1. For 2025 the research's central case is 40.0M TC4 and 36.4M passenger car (range 34.6-38.4M), with Europool sell-in of 30.58M (-4.4%), panel sell-out of 16.75M plus 5.09M of pure players (-10.3%) and a residual of about 8.74M. None of the 2025 figures is checked.",
+        "Wholesale versus direct is not published for France. The research's reconciled flows (low confidence): wholesale about 15.5M, of which about 9.0M pool and 6.5M non-pool; direct about 21.6M, of which 19.9M pool and about 1.7M non-pool. The model has no imports-to-direct flow, so it shows all 8.2M of non-pool supply through wholesale and the whole 21.6M as the direct box; pool to wholesale therefore reads 7.3M, and the wholesale and direct totals are the research's. The earlier file had 5.0M of pool plus 4.2M of imports through wholesale (9.2M, 54%) and 8.0M direct (46%).",
+        "Wholesalers (research; J2R checked): Distri Cash is the research's number one French tyre wholesaler and was missing from the earlier model. J2R (9 January 2024, checked) reports 5.5M tyres sold in 2022, revenue of EUR 480M in 2022, about EUR 550M expected for 2023 and 27 locations. Not found: the research's EUR 600M group revenue for 2024 (+20%, including parts), 10,000 clients, 715+ staff, 11+ agencies in about 85 départements (which conflicts with J2R's 27 locations), a 10% market share, a 3.5M-tyre figure and the statutory EUR 430.3M for Distri Cash Accessoires (Pappers, per the research). The research proposes 4-5M TC4 for Distri Cash, below the 5.5M J2R reported for 2022 (all tyre types, probably); the earlier file said about 6.5M for 2024. DPI (Doumerc Pneus) shows revenue of only about EUR 4.3M (research), so it is probably not a major wholesaler. Groupe Massa (1001pneus) and Alzura Tyres (ex-Tyre24) are named by the research as relevant; AAG, Autodis, Copadex, Chrono SLPA, PHE and Mobivia's Exadis are named only.",
+        "Retail and network players (research; no player publishes French tyre units, so every volume is an estimate scaled so that each channel sums to its panel-measured total). Checked: Feu Vert was acquired by Bassac, which completed the purchase of 100% of the holding company Financière Ramsès I SAS from Alpha Private Equity on 24 February 2026 (fusacq), with revenue of EUR 663M for the year to September 2025; the research's 350 centres (167 owned, 183 franchised), EUR 935M under the banner and PDG Thierry Sinquin staying were not found. Euromaster: ac-franchise (25 August 2026) says more than 470 centres, 222 of them franchised, with 250 targeted by 2027; the research says 485 centres (235 franchised) plus 1,100 mobile units, EUR 632.4M of revenue in 2024 and a net loss of EUR 2.1M, which I could not find. Midas: Mavis's June 2025 purchase of Midas from TBC covers about 1,200 locations in the United States and Canada, and the release does not mention Europe or France (checked); the research says Midas France has been Mobivia's since 2004 (not checked), which corrects the earlier note that Mavis bought Midas International. Siligom joined the FleetPartner alliance (BestDrive, Eurotyre, Feu Vert; 950 points of sale with Siligom, over 200 of them Siligom's) on 1 January 2024 (ac-franchise, checked); the research says Viasso is now Point S only, which I could not find stated. Allopneus: owned by Michelin (Auto Infos, checked); the 3.4M tyres, EUR 307M of revenue and 'près de 10%' share were not found; Auto Infos mentions an alliance with Feu Vert. Not checked: Speedy about 1.0-1.2M (4.5% share and over 1M tyres in 2016, EUR 281M in 2018), Norauto 410 centres, Point S 660, First Stop 330-350 centres, Côté Route (Bridgestone, Eurofleet), Eurotyre over 230, BestDrive about 210 (100% franchise), 1001pneus (Groupe Massa, 0.8M tyres in 6 countries). Not verified even by the research: Roady, L'Auto E.Leclerc, Profil Plus, Vulco, PRODY and 'Pneuwyz', so the 'Pneuwyz' entry is replaced by 1001pneus.",
+        "Structure corrections (research): the Eurogom group no longer exists as a structure (it split in 2015), so Siligom, Eurotyre and Côté Route are shown separately. Côté Route belongs to Bridgestone (Eurofleet), not to Eurogom. Eurofleet is Speedy, First Stop and Côté Route (about 900 centres); FleetPartner is BestDrive, Eurotyre, Feu Vert (leasing only) and Siligom (about 950 points of sale); Viasso is Point S. Euromaster is shown with 470-485 centres, not about 650.",
+        "Private versus commercial is about 78% / 22% (private 7.6 + 11.2 + 3.2 + 4.7 + 2.3 = 29.0M; commercial 1.0 + 2.8 + 3.7 + 0.4 + 0.2 = 8.1M). Only the pneumaticien figure has any evidence: GfK data cited by the Syndicat du Pneu say about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked). Channel mixes are estimates.",
+        "Season mix and prices: J2R (checked) reports 2024 sales of summer 53%, all-season 37% (+19.2%) and winter 10%, with an average TC4 price of EUR 113 including VAT, and premium 50%, quality 21.5% and budget 19.1% of the market. Journal de l'Automobile attributes the 53 / 37 / 10 split to SUV tyres, so the scope is not certain; the research reads it as panel tourisme. Research, not checked: all-season reached 42% in 2025 (summer 49%, winter 9%), overtook summer in the second half of 2025 and reached 46% in the first half of 2026 (summer 49%, winter 5%); B-brands fell 16.5% in H1 2025 and 6.7% in H1 2026 while tradebrands grew; H1 2026 prices were EUR 101 for B-brands, EUR 89.20 for tradebrands and EUR 64.60 for budget.",
+        "Trade policy (checked on Sicurauto): Commission Implementing Regulation (EU) 2026/1540, published 7 July 2026 and in force from 8 July with no retroactive effect, sets definitive anti-dumping duties on Chinese passenger-car and light-truck tyres from 4.3% (Hankook's Chinese entities) to 45.3% (residual rate), for five years, with 24.4% for the cooperating producers. The research adds that a parallel anti-subsidy case is due in December 2026 (not checked).",
+        "Trade data, kept from the earlier file: UN Comtrade / WITS 2024, HS 401110, as quoted by the research: France gross imports about 55.1M and exports about 20.2M passenger tyres. Not usable for the import and export boxes, because gross customs flows include OE supply and intra-group movements. Not checked here. The research also notes that Customs HS 401110 unit data for France were not obtained for the non-pool estimate.",
+        "Discrepancies the research asks us to carry: (1) the non-panel block is 8.3M passenger car on the Syndicat's convention but about 16.5M on the full-market basis, so either non-pool imports are below about 22% or dealers, MRA and foreign online are larger than the Syndicat assumes (ADEME's 2022 gap of about 25% and the 20% budget share support the larger figure; ADEME's scope may include retreads and used tyres, which would overstate it); (2) SUV tyres are about 10% of Europool sell-in but only 5.6% of panel sell-out volumes, which suggests they go disproportionately to dealers and online; (3) camionnette sell-in for 2024 is quoted at 2.0M by Zepros and 2.81M by L'argus and the Syndicat, and only 2.81M adds up to 31.74M; (4) Aliapur's collection figures (555 kt in 2024, 400 kt in 2025) are inconsistent, so ADEME tonnage (+6.2% in 2024) is used only as a growth cross-check."
       ],
-      "scope": "Consumer replacement tyres (car, van, 4x4; TC4)",
+      "scope": "Passenger-car replacement tyres (cars and 4x4/SUV, excludes vans; sell-in)",
       "unit": "million tyres",
       "year": 2024
     },
