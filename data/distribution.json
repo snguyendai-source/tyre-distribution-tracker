@@ -1299,94 +1299,182 @@
     },
     {
       "country": "Spain",
-      "meta": "ADINE / MITECO 2024 · consumer replacement (PC + van + 4×4/SUV)",
+      "meta": "ADINE / MITECO 2024 · consumer replacement (PC + van + 4×4/SUV); PC only 17.9M",
       "total": "~21.1M",
-      "totalLabel": "units",
+      "totalLabel": "units, 2024 (PC + van + 4×4/SUV)",
       "channels": [],
       "flatEntities": [
-        {
-          "name": "Confortauto",
-          "model": "Specialist tyre retail chain",
-          "territories": [
-            "__NATIONWIDE__"
-          ]
-        },
-        {
-          "name": "Euromaster España (Michelin)",
-          "model": "Manufacturer-owned franchise (Michelin)",
-          "territories": [
-            "__NATIONWIDE__"
-          ]
-        },
-        {
-          "name": "First Stop (Bridgestone)",
-          "model": "Manufacturer-owned franchise (Bridgestone)",
-          "territories": [
-            "__NATIONWIDE__"
-          ]
-        },
-        {
-          "name": "Rodi Motor Services",
-          "model": "Specialist tyre retail chain",
-          "territories": [
-            "NE"
-          ]
-        },
-        {
-          "name": "Norauto España",
-          "model": "Fast-fit / auto-centre chain",
-          "territories": [
-            "__NATIONWIDE__"
-          ]
-        },
-        {
-          "name": "Feu Vert",
-          "model": "Fast-fit / auto-centre chain",
-          "territories": []
-        },
-        {
-          "name": "Point S España",
-          "model": "Buying group / cooperative",
-          "territories": [
-            "__NATIONWIDE__"
-          ]
-        },
-        {
-          "name": "Vulco (Goodyear)",
-          "model": "Manufacturer-owned franchise (Goodyear)",
-          "territories": [
-            "__NATIONWIDE__"
-          ]
-        },
-        {
-          "name": "Aurgi",
-          "model": "Specialist tyre retail chain",
-          "territories": [
-            "CE",
-            "NE",
-            "SSW"
-          ]
-        },
         {
           "name": "Neumáticos Soledad",
           "model": "Wholesaler / distributor",
           "territories": [
             "__NATIONWIDE__"
-          ]
+          ],
+          "scale": {
+            "value": 409,
+            "metric": "M EUR group revenue, 2024",
+            "label": "Grupo Soledad EUR 409M consolidated in 2024 (+1.6%), Neumáticos Soledad SL EUR 355.96M (Alicante Plaza, checked); includes retail, truck and exports; units not published, est. 3.5-4.0M tyres of all types (research estimate); operates in Spain, Portugal, France and Morocco; owns Confortauto"
+          },
+          "owner": "Independent"
         },
         {
           "name": "Grupo Andrés",
           "model": "Wholesaler / distributor",
           "territories": [],
           "owner": "Independent",
-          "volume": null
+          "volume": null,
+          "scale": {
+            "value": 385,
+            "metric": "M EUR group revenue, 2024",
+            "label": "Group EUR 385M in 2024 (+11.5%), tyre division about EUR 360M; about 4.0M tyres of all types in 2023 (company and CEO interview, research, not checked); largest pure independent distributor; 5 warehouses, more than 1M tyres in stock, 57 countries; exclusive Anlas, Rebel, Kingstar"
+          }
         },
         {
           "name": "NEX",
           "model": "Wholesaler / distributor (Euromaster/Rodi joint venture)",
           "territories": [],
           "owner": "Euromaster (Michelin) / Rodi, 50/50",
-          "volume": null
+          "volume": null,
+          "scale": {
+            "value": 290.4,
+            "metric": "M EUR group revenue, 2024",
+            "label": "EUR 290.4M in 2024, +13.8% (Infocap via the research, not checked); 3.6M tyres per its own site, year not stated; 25 warehouses, 26,500 delivery points; Nex Tyres SL formed in 2014 as a 50/50 Euromaster/Rodi venture (Tyrepress, checked); absorbed Don Tyre and Palacios; Michelin-linked, exclusive Maxxis"
+          }
+        },
+        {
+          "name": "Top Recambios",
+          "model": "Wholesaler / distributor",
+          "territories": [
+            "__NATIONWIDE__"
+          ],
+          "scale": {
+            "value": 238.4,
+            "metric": "M EUR group revenue, 2024",
+            "label": "EUR 238.4M in 2023 (Infocap; EUR 260.6M in another ranking; research, not checked); Valencia, parts and tyres so the tyre share is unknown; exclusive import brands CEAT, Lanvigator, Radar"
+          }
+        },
+        {
+          "name": "Recacor",
+          "model": "Wholesaler / distributor",
+          "territories": [
+            "SSW"
+          ],
+          "scale": {
+            "value": 131.5,
+            "metric": "M EUR group revenue, 2024",
+            "label": "EUR 131.5M in 2024 (Infocap estimate), EUR 114.1M in 2023 (research, not checked); Córdoba, regional (Andalusia), multibrand"
+          }
+        },
+        {
+          "name": "Grupo Total Neumáticos",
+          "model": "Wholesaler / distributor",
+          "territories": [
+            "__NATIONWIDE__"
+          ],
+          "scale": {
+            "value": 43.4,
+            "metric": "M EUR group revenue, 2024",
+            "label": "EUR 43.4M in 2023 (Infocap; research, not checked); buying and distribution group"
+          }
+        },
+        {
+          "name": "Euromaster España (Michelin)",
+          "model": "Manufacturer-owned franchise (Michelin)",
+          "territories": [
+            "__NATIONWIDE__"
+          ],
+          "owner": "Michelin",
+          "volume": "443 workshops",
+          "scale": {
+            "value": 1.6,
+            "metric": "est. M consumer tyres a year",
+            "label": "443 workshops in Spain, 540 in Iberia; revenue EUR 430M in 2024 (+8%) incl. franchises, Iberia above EUR 508M (Motor16, checked); about 1.6M light-vehicle tyres, derived from a 2025 company release of more than 1.7M (not checked); its own 'more than 6%' share would imply only about 1.26M; strong in fleet and commercial; buys from Michelin and NEX"
+          }
+        },
+        {
+          "name": "Rodi Motor Services",
+          "model": "Specialist tyre retail chain",
+          "territories": [
+            "NE"
+          ],
+          "owner": "Rodi Metro",
+          "volume": "180+ outlets",
+          "scale": {
+            "value": 0.85,
+            "metric": "est. M consumer tyres a year",
+            "label": "180+ outlets in Spain, Portugal and Andorra; revenue EUR 307.8M in 2025, about EUR 278M in 2024 (research, not checked); est. 0.7-1.0M tyres including truck, assuming 25-35% of revenue is tyres (low confidence); co-owner of NEX"
+          }
+        },
+        {
+          "name": "Norauto España",
+          "model": "Fast-fit / auto-centre chain",
+          "territories": [
+            "__NATIONWIDE__"
+          ],
+          "owner": "Mobivia",
+          "volume": "91 autocentros",
+          "scale": {
+            "value": 0.7,
+            "metric": "est. M consumer tyres a year",
+            "label": "revenue EUR 243.5M in 2024 (registry; EUR 240M in FY Oct-23/Sep-24; research, not checked); est. about 0.7M tyres, assuming about 30% of revenue is tyres at EUR 101.5 a tyre (low confidence); private-label tyres bought direct as well as through wholesalers"
+          }
+        },
+        {
+          "name": "Feu Vert",
+          "model": "Fast-fit / auto-centre chain",
+          "territories": [],
+          "volume": "95-105 outlets",
+          "scale": {
+            "value": 0.4,
+            "metric": "est. M consumer tyres a year",
+            "label": "revenue EUR 139.0M (registry, probably 2024, may include Portugal; research, not checked); est. about 0.4M tyres, same method as Norauto (low confidence)"
+          }
+        },
+        {
+          "name": "Aurgi + Motortown",
+          "model": "Fast-fit / auto-centre chain",
+          "territories": [
+            "CE",
+            "NE",
+            "SSW"
+          ],
+          "owner": "Grupo Mutua (research, not checked)",
+          "volume": "62 + 48 outlets (Motortown in El Corte Inglés car parks); revenue EUR 71.4M, probably 2023; units not estimated"
+        },
+        {
+          "name": "First Stop (Bridgestone)",
+          "model": "Manufacturer-owned franchise (Bridgestone)",
+          "territories": [
+            "__NATIONWIDE__"
+          ],
+          "owner": "Bridgestone",
+          "volume": "607 outlets in Iberia, end-2025 (48 added in Spain in 2025); no volume published"
+        },
+        {
+          "name": "Vulco (Goodyear)",
+          "model": "Manufacturer-owned franchise (Goodyear)",
+          "territories": [
+            "__NATIONWIDE__"
+          ],
+          "owner": "Goodyear",
+          "volume": "about 290 outlets in Spain and Portugal (2026); no volume published"
+        },
+        {
+          "name": "Point S España",
+          "model": "Buying group / cooperative",
+          "territories": [
+            "__NATIONWIDE__"
+          ],
+          "volume": "57 outlets end-2025, 72 by mid-2026, target 90; manufacturer-neutral, multi-source"
+        },
+        {
+          "name": "Confortauto",
+          "model": "Specialist tyre retail chain",
+          "territories": [
+            "__NATIONWIDE__"
+          ],
+          "owner": "Grupo Soledad",
+          "volume": "700+ workshops in Spain and Portugal (64 own), co-branded with Hankook; its volume is inside Soledad's wholesale volume, so it is not added again"
         },
         {
           "name": "Vialider",
@@ -1394,14 +1482,26 @@
           "territories": []
         },
         {
-          "name": "Recacor",
-          "model": "Specialist tyre retail chain",
-          "territories": []
+          "name": "Delticom (neumaticos-online.es)",
+          "model": "Online retailer",
+          "territories": [
+            "__NATIONWIDE__"
+          ],
+          "owner": "Delticom AG",
+          "volume": "imports directly as a pure player; Spanish volume not disclosed"
+        },
+        {
+          "name": "Oponeo",
+          "model": "Online retailer",
+          "territories": [
+            "__NATIONWIDE__"
+          ],
+          "volume": "877 partner garages for fitting (research, not checked); imports directly; Spanish volume not disclosed"
         }
       ],
-      "noteBadge": "hard",
-      "note": "Hard Spain has the strongest official data of this batch: MITECO's producer register recorded 24,559,740 new replacement tyres in 2024 (+9.6%) , split PC 17,934,194 (73%) + van/4×4/SUV 3,124,549 (12.7%) + truck & bus 1,532,446 (6.2%, see TBR tab) + moto 1,325,375 (5.4%). ADINE's Distripool wholesale panel (PwC-audited) shows the consumer segment up 10.1% in 2024 — but this is a product-segment split (by tyre type), not a retail-channel split; no independent-vs-dealer-vs-online percentage is published.",
-      "marketAccessNote": "Spain is highly distributor-led. Grupo Soledad and Grupo Andrés are the two strongest independent wholesale gateways, while NEX (the Euromaster/Rodi 50/50 joint venture) is a major strategic wholesaler but not an independent one. Soledad is especially strong in imported and multibrand supply, Grupo Andrés in large independent national distribution, and NEX in high-frequency delivery to professional workshops and the Euromaster/Rodi network. A new entrant should approach these three before trying fragmented workshop-by-workshop coverage.",
+      "noteBadge": "caution",
+      "note": "Caveat The market total is published: ADINE's analysis of the MITECO producer register counts 24,559,740 new replacement tyres in 2024 (+9.6%), of which passenger cars 17,934,194 and vans, 4×4 and SUV 3,124,549 (checked). The consumer total of 21.06M is the headline because MITECO's passenger-car line is not like-for-like with Europool's; the passenger-car-only cut (17.93M) is secondary. The Europool pool (14.775M, +2%) and the GfK channel shares are second-hand and not checked. Everything below the market figure (wholesale versus direct, channel shares, player volumes) is an estimate of low to medium confidence. Wholesalers publish revenue, not tyre units, so they are ranked on group revenue; retail volumes are derived from revenue and are indicative only.",
+      "marketAccessNote": "Spain is wholesaler-led: about 70% of consumer tyres (14.7M of 21.06M) pass through a wholesaler, and manufacturer-affiliated networks (Euromaster, First Stop, Vulco) are fed directly. Three groups are the main gateways: Grupo Soledad (EUR 409M group revenue in 2024, includes retail), Grupo Andrés (the largest pure, manufacturer-independent distributor, about EUR 360M from tyres) and NEX (EUR 290M; a 50/50 Euromaster/Rodi venture, so Michelin-linked, not independent). Soledad's Confortauto network is co-branded with Hankook and NEX is Michelin-linked, so for a challenger brand the cleanest routes are Andrés plus the manufacturer-neutral networks (Point S, and the autocentros Norauto, Feu Vert and Aurgi/Motortown). Dealers (about 2.0M tyres) buy through OEM parts programmes and wholesalers' dealer desks. Confortauto is Soledad's network, so it is counted once, inside Soledad.",
       "territoryDefs": [
         {
           "code": "SSW",
