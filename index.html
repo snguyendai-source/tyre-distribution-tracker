@@ -232,6 +232,27 @@
   .channel-split button.jump{ margin-left:auto; }
   .fv-jump{ cursor:pointer; }
   .fv-jump:hover rect{ stroke-width:2.2; }
+  .fv-hit-l{ cursor:help; } .fv-hit-l:hover{ stroke:rgba(27,35,51,.12); }
+  .fv-hit-r{ cursor:help; } .fv-hit-r:hover{ fill:rgba(43,108,176,.10); }
+  .fv-strip{ display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 2px; }
+  .fv-chip{ display:inline-flex; align-items:center; gap:6px; padding:5px 11px; border:1px solid var(--hairline); border-radius:999px; background:#fff; font-size:12px; color:var(--ink-soft); cursor:help; }
+  .fv-chip b{ font-family:var(--mono); font-size:13px; color:var(--ink); }
+  .fv-chip:hover{ border-color:#2B6CB0; background:#F2F7FD; }
+  .fv-tip-t{ cursor:help; }
+  .fv-tip{ position:fixed; z-index:10000; display:none; max-width:460px; min-width:280px; background:#fff; color:var(--ink); border:1px solid #BFC7D8; border-radius:10px; box-shadow:0 10px 30px rgba(22,35,58,.25); padding:12px 14px 11px; font-size:12px; line-height:1.5; pointer-events:none; }
+  .fv-tip .tip-h{ display:flex; align-items:center; flex-wrap:wrap; gap:8px; font-size:13px; font-weight:700; }
+  .fv-tip .tip-v{ margin:3px 0 0; font-family:var(--mono); font-size:19px; font-weight:700; }
+  .fv-tip .tip-v small{ font-family:var(--sans); font-size:11.5px; font-weight:400; color:var(--ink-soft); margin-left:6px; }
+  .fv-tip .tip-sec{ margin:9px 0 3px; font-size:10px; font-weight:700; letter-spacing:.6px; text-transform:uppercase; color:var(--ink-soft); }
+  .fv-tip .tip-lead{ font-weight:600; margin-bottom:2px; }
+  .fv-tip .tip-src{ color:#2A3347; }
+  .fv-tip .tip-by{ margin-top:3px; font-size:11px; color:var(--ink-soft); }
+  .fv-tip .tip-f{ margin:2px 0 0; padding:5px 8px; background:#F4F6FA; border-radius:6px; font-family:var(--mono); font-size:11.5px; line-height:1.5; }
+  .fv-tip ul{ margin:0; padding:0; list-style:none; }
+  .fv-tip li{ margin:2px 0; padding-left:16px; position:relative; font-size:11.5px; }
+  .fv-tip li .ck{ position:absolute; left:0; font-weight:700; }
+  .fv-tip li.ok .ck{ color:#2F6F62; } .fv-tip li.bad .ck{ color:#C0392B; }
+  .fv-tip .tip-foot{ margin-top:9px; padding-top:7px; border-top:1px solid var(--hairline); font-size:11px; color:var(--ink-soft); }
   @keyframes jumpflash{ 0%,70%{ box-shadow:0 0 0 3px rgba(232,161,0,.7); } 100%{ box-shadow:0 0 0 0 rgba(232,161,0,0); } }
   @keyframes jumpflashsvg{ 0%,70%{ stroke:#E8A100; stroke-width:4; } }
   .jump-flash{ animation:jumpflash 2.4s ease-out; }
@@ -949,9 +970,7 @@ function flowFor(countryName){
   const f=fs.find(x=>x.country===countryName&&x.channels&&x.channels.length); if(!f) return null;
   return Object.keys(flowSolve(f).val).some(k=>k.startsWith('ch.')||k.startsWith('g.')) ? f : null;
 }
-function flowSolve(flow){
-  const val={}, tier={};
-  for(const [id,c] of Object.entries(flow.cells||{})){ if(c&&c.value!=null&&!isNaN(c.value)){ val[id]=Number(c.value); tier[id]=c.tier||'Team'; } }
+function flowCons(flow){
   const ids=flow.channels.map(c=>c.id);
   const T=i=>'ch.'+i+'.tot', W=i=>'ch.'+i+'.ws', D=i=>'ch.'+i+'.dir', P=i=>'ch.'+i+'.prv', C=i=>'ch.'+i+'.com';
   const cons=[];
@@ -967,6 +986,12 @@ function flowSolve(flow){
   cons.push([...ids.map(i=>[C(i),1]),['comAll',-1]]);
   (flow.groups||[]).forEach(g=>{ cons.push([...g.members.map(i=>[T(i),1]),['g.'+g.id,-1]]); });
   if((flow.groups||[]).length) cons.push([...flow.groups.map(g=>['g.'+g.id,1]),['market',-1]]);
+  return cons;
+}
+function flowSolve(flow){
+  const val={}, tier={}, how={};
+  for(const [id,c] of Object.entries(flow.cells||{})){ if(c&&c.value!=null&&!isNaN(c.value)){ val[id]=Number(c.value); tier[id]=c.tier||'Team'; } }
+  const cons=flowCons(flow);
   let changed=true, loops=0;
   while(changed&&loops++<100){
     changed=false;
@@ -975,12 +1000,12 @@ function flowSolve(flow){
       const known=k.filter(([id])=>id in val).reduce((a,[id,co])=>a+co*val[id],0);
       const [uid,uco]=unk[0]; const x=-known/uco;
       if(x<-0.0005) continue;
-      val[uid]=Math.round(Math.max(0,x)*1000)/1000; tier[uid]='Derived'; changed=true;
+      val[uid]=Math.round(Math.max(0,x)*1000)/1000; tier[uid]='Derived'; how[uid]=k; changed=true;
     }
   }
   const tol=Math.max(0.1,0.01*(val.market||0)), conflicts=[];
   cons.forEach(k=>{ if(k.every(([id])=>id in val)){ const s=k.reduce((a,[id,co])=>a+co*val[id],0); if(Math.abs(s)>tol) conflicts.push({k,res:Math.round(s*100)/100}); } });
-  return {val,tier,conflicts};
+  return {val,tier,conflicts,how};
 }
 function fvFmt(v){
   if(v==null) return '—';
@@ -1005,45 +1030,52 @@ function renderFlowView(c, flow){
   const T=i=>'ch.'+i+'.tot', Wc=i=>'ch.'+i+'.ws', D=i=>'ch.'+i+'.dir', P=i=>'ch.'+i+'.prv', Cm=i=>'ch.'+i+'.com';
   const RED='#C0392B', BLUE='#2B5BD9', GREY='#9AA3B5', INK='#1B2333';
   const has=id=>id in val;
+  const T0=i=>'ch.'+i+'.tot', W0=i=>'ch.'+i+'.ws', D0=i=>'ch.'+i+'.dir', P0=i=>'ch.'+i+'.prv', C0=i=>'ch.'+i+'.com';
+  const LB={market:'Replacement market',industry:'Industry (ETRMA pool)',toWs:'Industry sold to wholesale',direct:'Direct from the manufacturers to the channels',import:'Wholesale import (non-pool)',export:'Export',wsDom:'Wholesale sold in '+c.country,prvAll:'Private demand, all channels',comAll:'Commercial demand, all channels'};
+  flow.channels.forEach(ch=>{ const nm=nameOf(ch); LB[T0(ch.id)]=nm+' \u00b7 total'; LB[W0(ch.id)]=nm+' \u00b7 via wholesale'; LB[D0(ch.id)]=nm+' \u00b7 direct'; LB[P0(ch.id)]=nm+' \u00b7 private'; LB[C0(ch.id)]=nm+' \u00b7 commercial'; });
+  (flow.groups||[]).forEach(g=>{ LB['g.'+g.id]=g.name; });
+  FV_TIP[c.country]={flow,labels:LB};
+  const hr=(x,y,w,h,id)=>`<path class="fv-tip-t fv-hit-r" data-fid="${id}" d="M${x} ${y}h${w}v${h}h${-w}z" fill="transparent"/>`;
+  const hl=(d,id)=>`<path class="fv-tip-t fv-hit-l" data-fid="${id}" d="${d}" fill="none" stroke="transparent" stroke-width="16" stroke-linejoin="round" pointer-events="stroke"/>`;
   const dot=(x,y,id)=>has(id)?`<circle cx="${x}" cy="${y}" r="3.2" fill="${FV_COL[tier[id]]||'#999'}"/>`:'';
   const maxFlow=Math.max(1,val.toWs||0,val.direct||0,...flow.channels.flatMap(ch=>[val[Wc(ch.id)]||0,val[D(ch.id)]||0]));
   const sw=v=>v==null?1.2:Math.max(1.8,Math.min(11,1.8+(v/maxFlow)*9));
-  const line=(d,col,id,arrow)=>`<path d="${d}" fill="none" stroke="${col}" stroke-width="${sw(val[id])}" ${has(id)?'':'stroke-dasharray="4 3"'} ${arrow?'marker-end="url(#fvArr)"':''} stroke-linejoin="round"/>`;
+  const line=(d,col,id,arrow)=>`<path d="${d}" fill="none" stroke="${col}" stroke-width="${sw(val[id])}" ${has(id)?'':'stroke-dasharray="4 3"'} ${arrow?'marker-end="url(#fvArr)"':''} stroke-linejoin="round"/>`+hl(d,id);
   let s='';
   s+=`<defs><marker id="fvArr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>`;
   const node=(x,y,w,h,fill,stroke,title,id,sub)=>{
     const h1=has(id);
-    return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" fill="${fill}" stroke="${stroke}" ${h1?'':'stroke-dasharray="4 3"'}/>`
+    return `<g class="fv-tip-t" data-fid="${id}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" fill="${fill}" stroke="${stroke}" ${h1?'':'stroke-dasharray="4 3"'}/>`
       +`<text x="${x+w/2}" y="${y+19}" text-anchor="middle" style="font-size:12px;font-weight:700;fill:${INK}">${esc(title)}</text>`
       +`<text x="${x+w/2}" y="${y+(sub?h-26:h-14)}" text-anchor="middle" style="font-size:${h1?17:13}px;font-weight:700;fill:${h1?INK:'#8A93A8'}">${h1?fvFmt(val[id])+'M':'needs input'}</text>`
-      +(sub?`<text x="${x+w/2}" y="${y+h-9}" text-anchor="middle" style="font-size:10px;fill:#6B7487">${esc(sub)}</text>`:'')+dot(x+w-12,y+h-(sub?32:20),id);
+      +(sub?`<text x="${x+w/2}" y="${y+h-9}" text-anchor="middle" style="font-size:10px;fill:#6B7487">${esc(sub)}</text>`:'')+dot(x+w-12,y+h-(sub?32:20),id)+'</g>';
   };
   const indX=130, indW=320, impX=W-130-320, wsW=320, wsX=W/2-160, wsY=170, wsH=78;
   s+=node(indX,24,indW,60,'#E8EEFB',BLUE,'Industry (ETRMA pool)','industry');
   s+=node(impX,24,320,60,'#FBE6D2','#B5701E','Wholesale import (non-pool)','import');
-  s+=`<g class="fv-jump" data-jump="ws" data-jump-target="ws"><title>Click to see who the wholesalers are</title>`+node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+c.country,'wsDom','to wholesale + imports − exports')+`<text x="${wsX+10}" y="${wsY+wsH-9}" style="font-size:10px;fill:#9A5B1E;text-decoration:underline">who? ›</text></g>`;
+  s+=`<g class="fv-jump" data-jump="ws" data-jump-target="ws">`+node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+c.country,'wsDom','to wholesale + imports − exports')+`<text x="${wsX+10}" y="${wsY+wsH-9}" style="font-size:10px;fill:#9A5B1E;text-decoration:underline">who? ›</text></g>`;
   s+=node(wsX+wsW+40,wsY+14,150,50,'#F2F3F7',GREY,'Export','export');
   const indCx=indX+indW/2, impCx=impX+160;
   s+=line(`M${indCx} 84 V127 H${wsX+90} V${wsY-4}`,RED,'toWs',true);
   s+=line(`M${impCx} 84 V127 H${wsX+230} V${wsY-4}`,RED,'import',true);
   s+=line(`M${wsX+wsW} ${wsY+39} H${wsX+wsW+36}`,GREY,'export',true);
-  s+=`<text x="${(indCx+wsX+90)/2}" y="120" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${RED}">to wholesale ${has('toWs')?fvFmt(val.toWs)+'M':'—'}</text>`;
-  s+=`<text x="${(impCx+wsX+230)/2}" y="120" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${RED}">imports ${has('import')?fvFmt(val.import)+'M':'—'}</text>`;
+  s+=`<g class="fv-tip-t" data-fid="toWs"><text x="${(indCx+wsX+90)/2}" y="120" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${RED}">to wholesale ${has('toWs')?fvFmt(val.toWs)+'M':'—'}</text></g>`;
+  s+=`<g class="fv-tip-t" data-fid="import"><text x="${(impCx+wsX+230)/2}" y="120" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${RED}">imports ${has('import')?fvFmt(val.import)+'M':'—'}</text></g>`;
   const dirX=indX+80;
-  s+=`<g class="fv-jump" data-jump="direct" data-jump-target="direct"><title>Click for the direct layer</title><rect x="${dirX-8}" y="186" width="150" height="46" fill="transparent"/>`
+  s+=`<g class="fv-jump fv-tip-t" data-fid="direct" data-jump="direct" data-jump-target="direct"><rect x="${dirX-8}" y="186" width="150" height="46" fill="transparent"/>`
     +line(`M${dirX} 84 V294`,BLUE,'direct',false)
     +`<text x="${dirX+10}" y="200" style="font-size:11px;font-weight:700;fill:${BLUE}">direct ${has('direct')?fvFmt(val.direct)+'M':'—'}</text>`
     +`<text x="${dirX+10}" y="214" style="font-size:10px;fill:#6B7487">industry to channels</text></g>`;
   const redY=276, bluY=294, topY=338;
   const rx=i=>mid(i)-OFF, bx=i=>mid(i)+OFF;
-  s+=`<path d="M${W/2} ${wsY+wsH} V${redY}" fill="none" stroke="${RED}" stroke-width="${sw(val.wsDom)}" ${has('wsDom')?'':'stroke-dasharray="4 3"'}/>`;
+  s+=`<path d="M${W/2} ${wsY+wsH} V${redY}" fill="none" stroke="${RED}" stroke-width="${sw(val.wsDom)}" ${has('wsDom')?'':'stroke-dasharray="4 3"'}/>`+hl(`M${W/2} ${wsY+wsH} V${redY}`,'wsDom');
   s+=`<path d="M${rx(0)} ${redY} H${rx(n-1)}" fill="none" stroke="${RED}" stroke-width="2"/>`;
   s+=`<path d="M${Math.min(bx(0),dirX)} ${bluY} H${bx(n-1)}" fill="none" stroke="${BLUE}" stroke-width="2"/>`;
   flow.channels.forEach((ch,i)=>{
     s+=line(`M${rx(i)} ${redY} V${topY-4}`,RED,Wc(ch.id),true);
     s+=line(`M${bx(i)} ${bluY} V${topY-4}`,BLUE,D(ch.id),true);
     const x=lx(i), known=has(T(ch.id));
-    s+=`<g class="fv-jump" data-jump="${(c.channels||[]).some(x=>x.flowBox===ch.id)?'ch:'+esc(ch.id):'retail'}" data-jump-target="ch:${esc(ch.id)}"><title>Click to see who is in this channel</title>`;
+    s+=`<g class="fv-jump" data-jump="${(c.channels||[]).some(x=>x.flowBox===ch.id)?'ch:'+esc(ch.id):'retail'}" data-jump-target="ch:${esc(ch.id)}">`;
     s+=`<rect x="${x}" y="${topY}" width="${CW}" height="118" rx="8" fill="#fff" stroke="${BLUE}" ${known?'':'stroke-dasharray="4 3"'}/>`;
     fvWrap(nameOf(ch),Math.max(13,Math.floor((CW-12)/6.3))).slice(0,3).forEach((t,k)=>{ s+=`<text x="${x+CW/2}" y="${topY+16+k*12}" text-anchor="middle" style="font-size:10.5px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
     [['Total',T(ch.id),INK,86],['via wholesale',Wc(ch.id),RED,88],['direct',D(ch.id),BLUE,90]].forEach(([lab,id,col],k)=>{
@@ -1056,6 +1088,9 @@ function renderFlowView(c, flow){
       const y=topY+146+k*15;
       s+=`<text x="${x+7}" y="${y}" style="font-size:9.5px;fill:#5B6478">${lab}</text><text x="${x+CW-17}" y="${y}" text-anchor="end" style="font-size:11px;font-weight:700;fill:${has(id)?INK:'#9AA3B5'}">${has(id)?fvFmt(val[id]):'—'}</text>`+dot(x+CW-9,y-4,id);
     });
+    s+=hr(x,topY,CW,48,T(ch.id));
+    [T(ch.id),Wc(ch.id),D(ch.id)].forEach((id,k)=>{ s+=hr(x,topY+55+k*17,CW,16,id); });
+    [P(ch.id),Cm(ch.id)].forEach((id,k)=>{ s+=hr(x,topY+136+k*15,CW,15,id); });
     s+='</g>';
   });
   const gy=topY+184;
@@ -1070,7 +1105,7 @@ function renderFlowView(c, flow){
         const lines=fvWrap(g.name,Math.max(10,Math.floor((x2-x1)/5.4)));
         lines.slice(0,3).forEach((t,k)=>{ s+=`<text x="${(x1+x2)/2}" y="${gy+22+k*12}" text-anchor="middle" style="font-size:10px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
         const gid='g.'+g.id;
-        s+=`<text x="${(x1+x2)/2}" y="${gy+22+Math.min(lines.length,3)*12+2}" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${has(gid)?INK:'#9AA3B5'}">${has(gid)?fvFmt(val[gid])+'M':'—'}</text>`+(has(gid)?dot((x1+x2)/2+30,gy+22+Math.min(lines.length,3)*12-2,gid):'');
+        s+=`<text x="${(x1+x2)/2}" y="${gy+22+Math.min(lines.length,3)*12+2}" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${has(gid)?INK:'#9AA3B5'}">${has(gid)?fvFmt(val[gid])+'M':'—'}</text>`+(has(gid)?dot((x1+x2)/2+30,gy+22+Math.min(lines.length,3)*12-2,gid):'')+hr(x1,gy+8,x2-x1,Math.min(lines.length,3)*12+24,gid);
       }
     });
   });
@@ -1086,11 +1121,116 @@ function renderFlowView(c, flow){
   const hasEst=Object.values(tier).includes('Estimate');
   const legend=[['Published','#2F6F62'],['Derived','#B5701E'],...(hasEst?[['Estimate (not published)','#2B6CB0']]:[]),['Team input','#5B3E96']].map(([l,col])=>`<span class="fv-dot" style="background:${col}"></span>${l}`).join(' &nbsp; ');
   const estNote=hasEst?' Blue dots are benchmark estimates, not published figures; the method is under Sources and notes.':'';
-  return `<p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels.${seasons}</p>
+  const chip=(id,lab)=>has(id)?`<span class="fv-chip fv-tip-t" data-fid="${id}">${lab} <b>${fvFmt(val[id])}M</b><span class="fv-dot" style="background:${FV_COL[tier[id]]||'#999'};margin:0"></span></span>`:'';
+  const strip=[['market','Replacement market'],['prvAll','Private'],['comAll','Commercial']].map(([id,l])=>chip(id,l)).join('');
+  return `<div class="fv-wrap" data-fcountry="${esc(c.country)}"><p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels. <b>Hover any box, line or figure to see how that number was reached.</b>${seasons}</p>
+    ${strip?`<div class="fv-strip">${strip}</div>`:''}
     <div class="fv-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
     <p class="tv-note">Dot colour: ${legend}.${estNote} <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
-    ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}`;
+    ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}</div>`;
 }
+
+/* ---------- flow model: hover pop-up that explains the basis of each number ---------- */
+const FV_TIP={};
+const FV_KIND={tot:'total',ws:'via wholesale',dir:'direct',prv:'private',com:'commercial'};
+function fvTerms(k,val,L,skip){
+  const out=[], sums={};
+  for(const [id,co] of k){
+    if(id===skip) continue;
+    const m=/^ch\.[^.]+\.(tot|ws|dir|prv|com)$/.exec(id);
+    if(m){
+      const key=m[1]+'|'+co; let g=sums[key];
+      if(!g){ g=sums[key]={sum:true,kind:m[1],co,n:0,v:0,id}; out.push(g); }
+      g.n++; g.v+=val[id];
+    } else out.push({label:L[id]||id,v:val[id],co});
+  }
+  return out.map(t=>t.sum?{label:t.n>1?`sum of the ${t.n} channels' ${FV_KIND[t.kind]} figures`:(L[t.id]||t.id),v:t.v,co:t.co}:t);
+}
+function fvJoin(T){ return T.map((t,i)=>{ const neg=t.co<0; return (i===0?(neg?'− ':''):(neg?' − ':' + '))+t.label+' '+fvFmt(t.v); }).join(''); }
+function fvEq(k,val,L){
+  const T=fvTerms(k,val,L); if(T.length<2) return null;
+  const first=T[0]; let text;
+  if(Math.abs(first.co)===1 && !/^sum of/.test(first.label)){
+    text=first.label+' '+fvFmt(first.v)+' = '+fvJoin(T.slice(1).map(t=>({...t,co:-t.co*first.co})));
+  } else {
+    const pos=T.filter(t=>t.co>0), neg=T.filter(t=>t.co<0);
+    text=(pos.length?pos:neg).map(t=>t.label+' '+fvFmt(t.v)).join(' + ')+' = '+(pos.length?neg:[]).map(t=>t.label+' '+fvFmt(t.v)).join(' + ');
+  }
+  return text;
+}
+function fvTipHtml(country,id,clickable){
+  const Tp=FV_TIP[country]; if(!Tp) return '';
+  const flow=Tp.flow, L=Tp.labels, R=flowSolve(flow), val=R.val, tier=R.tier, how=R.how, cell=(flow.cells||{})[id], esc=escapeHtml;
+  const label=L[id]||id;
+  if(!(id in val)) return `<div class="tip-h">${esc(label)}</div><div class="tip-src" style="margin-top:6px">No figure has been published or entered for this box yet, so it shows a dash. The model does not guess a number where there is no basis for one.</div>`;
+  const t=tier[id], v=val[id], mk=val.market;
+  let ctx='';
+  const mc=/^ch\.([^.]+)\.(ws|dir|prv|com)$/.exec(id);
+  if(mc && ('ch.'+mc[1]+'.tot') in val && val['ch.'+mc[1]+'.tot']>0) ctx=Math.round(100*v/val['ch.'+mc[1]+'.tot'])+'% of this channel';
+  else if(id!=='market' && mk>0) ctx=Math.round(100*v/mk)+'% of the market';
+  let h=`<div class="tip-h">${esc(label)} ${tierPill(t)}</div><div class="tip-v">${fvFmt(v)}M<small>${esc(flow.unit&&flow.unit!=='million tyres'?flow.unit:'tyres')}${ctx?' · '+ctx:''}</small></div>`;
+  const entered=cell&&cell.value!=null&&!isNaN(cell.value);
+  h+=`<div class="tip-sec">Where this number comes from</div>`;
+  if(entered){
+    const lead={Published:'Published figure, from a named source.',Derived:'Calculated from published figures.',Estimate:'Estimate, not a published figure.',Team:'Team input.'}[cell.tier]||'Entered figure.';
+    h+=`<div class="tip-lead">${esc(lead)}</div><div class="tip-src">${cell.source?esc(String(cell.source).length>1500?String(cell.source).slice(0,1500).replace(/\s+\S*$/,'')+' … (full text under Sources and notes)':String(cell.source).trim().replace(/([^.!?)'"”])$/,'$1.')):'No source note has been recorded for this figure.'}</div>`;
+    const by=[cell.by?(cell.by==='research'?'entered from the country research':'entered by '+cell.by):'',cell.asOf?('data year '+cell.asOf):''].filter(Boolean).join(', ');
+    if(by) h+=`<div class="tip-by">${esc(by.charAt(0).toUpperCase()+by.slice(1))}.</div>`;
+  } else if(how[id]){
+    const k=how[id], uco=k.find(([i])=>i===id)[1];
+    const T=fvTerms(k.map(([i,co])=>[i,-co/uco]),val,L,id);
+    h+=`<div class="tip-lead">Calculated, not entered directly.</div><div class="tip-f">${esc(L[id]+' '+fvFmt(v)+' = '+fvJoin(T))}</div>`;
+    const ins=k.filter(([i])=>i!==id).map(([i])=>i);
+    const tiers={}; ins.forEach(i=>{ tiers[tier[i]]=(tiers[tier[i]]||0)+1; });
+    const mix=Object.entries(tiers).map(([a,n])=>n+' '+a).join(', ');
+    h+=`<div class="tip-by">Built from ${ins.length} other figure${ins.length===1?'':'s'} (${esc(mix)}). A calculated figure is only as reliable as its inputs; hover those boxes to see the basis of each one.</div>`;
+  }
+  const checks=[], sig=k=>k.map(([i,co])=>i+':'+co).join('|'), usedSig=how[id]?sig(how[id]):'';
+  flowCons(flow).forEach(k=>{
+    if(!k.some(([i])=>i===id)||sig(k)===usedSig) return;
+    if(!k.every(([i])=>i in val)) return;
+    const txt=fvEq(k,val,L); if(!txt) return;
+    const res=k.reduce((a,[i,co])=>a+co*val[i],0), tol=Math.max(0.1,0.01*(val.market||0));
+    checks.push([Math.abs(res)<=tol,txt,res]);
+  });
+  if(checks.length){
+    h+=`<div class="tip-sec">Does it add up?</div><ul>`+checks.slice(0,4).map(([ok,txt,res])=>`<li class="${ok?'ok':'bad'}"><span class="ck">${ok?'✓':'!'}</span>${esc(txt)}${ok?'':' (off by '+fvFmt(Math.abs(res))+')'}</li>`).join('')+`</ul>`;
+  }
+  h+=`<div class="tip-foot">${clickable?'Click to see who is behind this number in the By channel tab. ':''}The full method and caveats are under Sources and notes below the diagram.</div>`;
+  return h;
+}
+(function(){
+  const tip=document.createElement('div'); tip.className='fv-tip'; tip.setAttribute('role','tooltip'); document.body.appendChild(tip);
+  let cur=null;
+  const hide=()=>{ cur=null; tip.style.display='none'; };
+  const place=e=>{
+    const pad=14, vw=document.documentElement.clientWidth, vh=window.innerHeight, w=tip.offsetWidth, h=tip.offsetHeight;
+    let x=e.clientX+pad, y=e.clientY+pad;
+    if(x+w>vw-8) x=Math.max(8,e.clientX-w-pad);
+    if(y+h>vh-8) y=Math.max(8,Math.min(e.clientY-h-pad,vh-h-8));
+    tip.style.left=x+'px'; tip.style.top=y+'px';
+  };
+  document.addEventListener('mouseover',e=>{
+    const el=e.target.closest&&e.target.closest('[data-fid]');
+    if(!el){ return; }
+    const wrap=el.closest('.fv-wrap'); if(!wrap) return;
+    if(el===cur) return;
+    let html=''; try{ html=fvTipHtml(wrap.dataset.fcountry,el.dataset.fid,!!el.closest('[data-jump]')); }catch(err){ html=''; }
+    if(!html){ hide(); return; }
+    cur=el; tip.innerHTML=html; tip.style.display='block'; place(e);
+  });
+  document.addEventListener('mousemove',e=>{ if(cur) place(e); });
+  document.addEventListener('mouseout',e=>{
+    if(!cur) return;
+    const to=e.relatedTarget;
+    if(to&&to.closest){ const nx=to.closest('[data-fid]'); if(nx===cur) return; }
+    hide();
+  });
+  document.addEventListener('scroll',hide,true);
+  document.addEventListener('touchstart',e=>{ if(!(e.target.closest&&e.target.closest('[data-fid]'))) hide(); },{passive:true});
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') hide(); });
+})();
+
 
 function treeFor(countryName){
   const ts = (window.__sellin && window.__sellin.trees) || [];
