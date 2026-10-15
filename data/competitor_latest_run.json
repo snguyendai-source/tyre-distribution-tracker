@@ -1,23 +1,29 @@
 {
-  "runAt": "2026-10-14T11:28:18.928542+00:00",
-  "totalNew": 2,
+  "runAt": "2026-10-15T11:05:07.192528+00:00",
+  "totalNew": 3,
   "entitiesChecked": 26,
   "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Nokian Tyres": [
+    "Goodyear": [
       {
-        "title": "Nokian Tyres posts big profit miss as Trump's tariffs drive uncertainty - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdG5hSzRsLVNCYUpkRnMwdG5OY1B3UTNUWHBvYnpGc2RMcS1kWjZUdVQ3NlBWTmhYTGY2eW9HTlBwVVBtRHg4N3dua3dGT0JBOGUydFVDTDNGaUJZYmV2SHA3aExyQ29Ca0dPVmdRV0dnS25FY09aZjltQ1JYaHg2aDUzdmFQZElraXVIUkRuVTJFeklxZXlEVGY4WnYyOEZBbFcyY2VUMExxT0twRGlydzRTamhKWTR0Mnc?oc=5",
-        "pubDate": "Tue, 06 May 2025 07:00:00 GMT",
-        "category": "Nordic"
+        "title": "365 Days Of Confidence: Goodyear's All-Season Portfolio Keeps Drivers Moving - https://news.goodyear.eu/",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRnZhSTAyOWx4aXQza0pHX2lqd0Foa1huUElMTFB1bS1IRGxhbXJoQXM2NHVXcGZmbTdJcmtqYm9SUWFSWGpKbkdzRHhvcWdySUZxOFB1QWxCRldzS1diWkxCY1NWTEJ6NC1hZE9VMUYxWXR5dTE2cnMwVllzVlhLUUh3eldlT2FPalFBVXdhck5qTTlSaHVpRm1POEE2QUM5QXc?oc=5",
+        "pubDate": "Thu, 15 Oct 2026 08:00:00 GMT",
+        "category": "Premium global"
+      },
+      {
+        "title": "Goodyear finds new bicycle tyre distribution for Germany and Austria - Bike Europe",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQjBYM21lQ1prTEpnenRtYzVXdHlkZzBSWGp3STdCckFLWWpxWjFXZkZDeDFlQ2ZFYkJkYVRfaTlfOGhGc2lVY3FaYy00YVR6Wjl3VDd1T0RHWHdBSmkzYnEyUjFUWkFranl3SURITFFJRzk3dE5GVEdENkpyM0RaZUIyV0NiN3h2VHJEb0p2NFB4NUx4SzRkNHVzbG1RaEU?oc=5",
+        "pubDate": "Tue, 13 Oct 2026 12:30:00 GMT",
+        "category": "Premium global"
       }
     ],
-    "Maxxis Tyres": [
+    "Double Coin": [
       {
-        "title": "Review: Maxxis Aggressor 2.5in WT DoubleDown Tyre - Singletrack World Magazine",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcDNDcGxzNFIwbzhnYjdGRi1fdDlyeS1XNkJaRnp1VGpIS1Y1UHVxb28tODF0aUgycklDWXZVdmFPYlNlQVNyYkd4U1RyWlBVRGphNzZWMDQxckJrRk9KOFpTV2FxbGRKSjJocEJKVDByQ0hETDlZVzIxeEZxYjNzNEo4clBZbk55aXM5MVlJdw?oc=5",
-        "pubDate": "Wed, 06 Feb 2019 08:00:00 GMT",
-        "category": "Taiwanese"
+        "title": "Double Coin Adds Two 29-Inch Sizes to REM2 OTR Tire Lineup - Traction News",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4wXy14ZEdrZzJMczAteVA5Wm1GNEdpZ0pMVXFSS3JlcWU0SXNXRFhLYUVYLVlhZE9RU1FwOGZsdDVDYkQ4cE1JdEd5X3pJc1JWeDVEYWE5VmZwTnNFZHEzSGtMWG4?oc=5",
+        "pubDate": "Thu, 08 Oct 2026 06:47:44 GMT",
+        "category": "Chinese"
       }
     ]
   }

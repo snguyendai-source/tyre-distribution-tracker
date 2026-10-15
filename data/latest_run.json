@@ -1,25 +1,59 @@
 {
-  "runAt": "2026-10-14T11:28:18.928542+00:00",
-  "totalNew": 2,
+  "runAt": "2026-10-15T11:05:07.192528+00:00",
+  "totalNew": 6,
   "entitiesChecked": 118,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 5,
   "newItemsByEntity": {
-    "Allopneus": [
+    "Premio": [
       {
-        "title": "Half a Million Verified Tyre Reviews and Counting - DriverReviews Celebrates a Major Milestone in Real-World Driving Insight - DriverReviews",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBzcDZzVTNKTlltZE1DbHl4eThPQ1VvZlVpN2JMcmtLRWxvNXFSdF9VajA2SU9peFFIVGxWODdTY1V6MUZxWTZLZTJNQTkyUkRZLUF3dTdIM3dnTnhIZGFHNHl4ZV8wbkNDbkhJQUdqMnQ?oc=5",
-        "pubDate": "Fri, 21 Nov 2025 08:00:00 GMT",
+        "title": "Pedro Acosta proposes MotoGP tyre-pressure rule change - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRXVBR0dTQk9rSXl4aDFFTG9MUWlQRUlJSnJEUmNMeklaWUlSZ3FPX3FUUXgtQnVGbnRfUFNJTjJjb3daOG95ZGNFakprZU91SlBScWhXR1JHYUNWMjZvVEJnWnEtZkhaT3NJRDlKZDN6OHd1VzZBR3IxN1NsUk5UbzhvMHppUEluM2NoV2xjUjVQQ3NIQ1pVYUE5ZjRCQ3c1dDJJWExGQktpaWt2THRGYURaSWljUQ?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 12:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Speedy": [
+      {
+        "title": "Bridgestone Drives Premium Performance Through Tyres and Beyond at the Olympic and Paralympic Games Paris 2024 - Bridgestone EMEA newsroom",
+        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOdTNWX0Y0YnhDQ21LcF9TRFcxX3JQQ2lPMF9ZLUc4WXhNMnpGYUlTcmRZSFJEZy1QZEJ4TEZRNGRfM0dHWHNMTjF6OGhuaW5OaHItS1NLRm5XRDBmdlAwUE1aR0NKcWhnSi11UTJldlVnSFZzWnNuRDNISjBMeUlaV0t4TFU2aGtoTjJzX0k2MXhtdF8wV2tVYzgtNXhjeTU5Y1Jha2t3bk9jU09oMDVySGc4TXNab0Y2TjZkblZOV1JnMUZMMHotUjRmUmJMSDB4SUxuaXRJT0drbjFnSW44YnFfVQ?oc=5",
+        "pubDate": "Tue, 02 Jul 2024 07:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
     "Kwik Fit": [
       {
-        "title": "Kwik Fit initiates ‘Kwik Chat’, encourages customers to use MOT time to check in on loved ones - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQ054QW9OR3E1UHJWcURiOFZaUXVSRVUzR2FvM3VOakJmejNWeUpZRzJ3UzhaZVZvM0N6bjZycFp2clJrdE1WdzFlSlFRWTljY3pGcmlCR2ZNcU9pVkF0R1F4MVd4Qkc0ZWdXMVlaX180bWoxX2k0dE12Uy00S1dZVGpQY0FFZlhZdFFsZE1RZTUzc0R1VjVtSEdYVkwyaFpLY3Y3TTdJTGdxaERxejc0ZmRVcHVnM0JJRmZaQ19kV19tVzZx?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 15:42:47 GMT",
+        "title": "Kwik Fit preparing for upswing in EV purchases - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWEtZdE1kazFmZ3ZyZ0RKYWp4TzBNaG5COW5RUWVDcDJPWF9LWTd5eUdrOHVIb3JnejZjODc4YzhqdFFnUlZ1ZHRmUHo1Q3ZsbzdQOFFpT2hEcVktZ2UxMGp1NUcteDdMYTZpLXItdW4zdmtHendybmZIcFQ2VTZxMEdDbHNoSFZM?oc=5",
+        "pubDate": "Thu, 15 Oct 2026 09:33:43 GMT",
         "country": "UK",
         "cluster": "North-West"
+      }
+    ],
+    "Blackcircles": [
+      {
+        "title": "Blackcircles.com expands mobile tyre fitting fleet with 13 new vans - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLUtIOGtCeUZ3OW5LZ1pqdFhTbTFLZTF2MXZLa2lLZVdQVWdoaG9HOTdpRkpmbFN2azhfVjhBYlJ1TndFZ2hNS3VDbmxiNjF6R3RieFZXSG1yaFhabkM5TFl5Q0dHVHJJUUZKWF9JTklZVUlvbERNWFQxa2E4RXhObHZmNWgtR0NKTXk2Sm1jT0FGYTZGZzdzS29WTGVxcFEzZXpOVA?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 16:46:56 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      },
+      {
+        "title": "Blackcircles expands mobile tyre fitting to 12 new cities - Business Motoring",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWWJBMmtQcnlUelJTV3RLU2FmS3VVU3doN0s4QTZ4cTJJVEJfallvRFlEdjFCWXViaFZXWTQyUXNCbFhubUxkWHBhQzZsS0Iwd3h2Q1FDSDhYak8yYVJ3czJEQVZXTFRhOVF1M3ltbGV5SlBHeDZWR3FlYXI0ZmF2WmhrRmtOOGZjZkIyQlpmOWpKSmc?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 14:46:26 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Fintyre": [
+      {
+        "title": "Fintyre rolls to profitability on a transformed supply chain - NTT Data",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONmthczZBREswNXpKNnEycnZ3Z3pnOWRGeVlZSW95dlpfTHlXRHExanB0bHRYSFVnRHR3SjhSOGdZU0pxc1FYQVI0R3RoSEhVc3BTd1hQNmdzQ0pjR3JvS2dFdUhIVEo2UTE4cHpCMHZUQ0RGQWg2YTB3LThiNkJ6M3hkTldMdkowNmNlVWc3TS0xaG5DOEQ1RHFxTDhhZWltSDZVUlNoOWZ4eERPWUxBc0Zn?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 06:53:15 GMT",
+        "country": "Italy",
+        "cluster": "South-West"
       }
     ]
   }
