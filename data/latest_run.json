@@ -1,59 +1,34 @@
 {
-  "runAt": "2026-10-15T11:05:07.192528+00:00",
-  "totalNew": 6,
+  "runAt": "2026-10-16T11:00:31.674386+00:00",
+  "totalNew": 3,
   "entitiesChecked": 118,
-  "entitiesWithNews": 5,
+  "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Premio": [
+    "Emil Frey": [
       {
-        "title": "Pedro Acosta proposes MotoGP tyre-pressure rule change - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRXVBR0dTQk9rSXl4aDFFTG9MUWlQRUlJSnJEUmNMeklaWUlSZ3FPX3FUUXgtQnVGbnRfUFNJTjJjb3daOG95ZGNFakprZU91SlBScWhXR1JHYUNWMjZvVEJnWnEtZkhaT3NJRDlKZDN6OHd1VzZBR3IxN1NsUk5UbzhvMHppUEluM2NoV2xjUjVQQ3NIQ1pVYUE5ZjRCQ3c1dDJJWExGQktpaWt2THRGYURaSWljUQ?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 12:00:00 GMT",
+        "title": "Emil Frey Lexus Racing snatches dramatic maiden victory with final-lap pass at Circuit Paul Ricard 1000km - GT World Challenge Europe Powered by AWS",
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQdUwyMU1rQ2g1Wld0cTNQeTNrNVR2NG9PdjBMSm40cVNnX19pLUZBRjJZZGxjVkpqYnFmRnlDQXpSdEdwSlM3RDByQVRkU1E5WDB5RzY3R1FjUUJHdXZxMHNXbk9PTC1yc1hPNFZOaXlQd21kbjNjaTRSeS0zNVhiX0dfS093V0E1dmhDOHlzNkRiYTg2TkF2c05QN2VvM2NxeXF0ZUpwUWZQckF5UEZFTUI4eUR2MEVVNWFxMnhNbU5lanhMdVBJRVIzLUQ4cDFOQnlJalRGMzE3dy1VeU54U0k4ZW1raXVRZmlBYlpB?oc=5",
+        "pubDate": "Sun, 03 Jun 2018 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Speedy": [
+    "Hedin Group": [
       {
-        "title": "Bridgestone Drives Premium Performance Through Tyres and Beyond at the Olympic and Paralympic Games Paris 2024 - Bridgestone EMEA newsroom",
-        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOdTNWX0Y0YnhDQ21LcF9TRFcxX3JQQ2lPMF9ZLUc4WXhNMnpGYUlTcmRZSFJEZy1QZEJ4TEZRNGRfM0dHWHNMTjF6OGhuaW5OaHItS1NLRm5XRDBmdlAwUE1aR0NKcWhnSi11UTJldlVnSFZzWnNuRDNISjBMeUlaV0t4TFU2aGtoTjJzX0k2MXhtdF8wV2tVYzgtNXhjeTU5Y1Jha2t3bk9jU09oMDVySGc4TXNab0Y2TjZkblZOV1JnMUZMMHotUjRmUmJMSDB4SUxuaXRJT0drbjFnSW44YnFfVQ?oc=5",
-        "pubDate": "Tue, 02 Jul 2024 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
+        "title": "Hedin Mobility Group awarded three honours at the inaugural Masters Europe Awards - Cision News",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbGxaSXBJOGVaekVIbExlR2VfLTAtdFNfcl8wNWNaZmROWUF4OWVXcG01T0dRWGJrNHJqNVlMeU1XQVlLbm52eXBKS1hFYVVOV3lJM040RFEyYmZtbFcwZFZkYVRxdmlPUXY3NmZtNTdNTEdpUGtJcFFyZUxMY1RSVE9XakNxWFNpUEV5aWNkMC1JSW9INGxMYmpWVkdNY3hKX2pWeHlEVnY5TmR5TndmYW04X3ZJTVRoQnBiejhLaTRDQU93c0ZqY2djc2VJSG1HUEh6eW5WWVdGZG43NFhhSA?oc=5",
+        "pubDate": "Fri, 13 Dec 2024 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
       }
     ],
-    "Kwik Fit": [
+    "Vianor": [
       {
-        "title": "Kwik Fit preparing for upswing in EV purchases - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWEtZdE1kazFmZ3ZyZ0RKYWp4TzBNaG5COW5RUWVDcDJPWF9LWTd5eUdrOHVIb3JnejZjODc4YzhqdFFnUlZ1ZHRmUHo1Q3ZsbzdQOFFpT2hEcVktZ2UxMGp1NUcteDdMYTZpLXItdW4zdmtHendybmZIcFQ2VTZxMEdDbHNoSFZM?oc=5",
-        "pubDate": "Thu, 15 Oct 2026 09:33:43 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ],
-    "Blackcircles": [
-      {
-        "title": "Blackcircles.com expands mobile tyre fitting fleet with 13 new vans - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLUtIOGtCeUZ3OW5LZ1pqdFhTbTFLZTF2MXZLa2lLZVdQVWdoaG9HOTdpRkpmbFN2azhfVjhBYlJ1TndFZ2hNS3VDbmxiNjF6R3RieFZXSG1yaFhabkM5TFl5Q0dHVHJJUUZKWF9JTklZVUlvbERNWFQxa2E4RXhObHZmNWgtR0NKTXk2Sm1jT0FGYTZGZzdzS29WTGVxcFEzZXpOVA?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 16:46:56 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      },
-      {
-        "title": "Blackcircles expands mobile tyre fitting to 12 new cities - Business Motoring",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWWJBMmtQcnlUelJTV3RLU2FmS3VVU3doN0s4QTZ4cTJJVEJfallvRFlEdjFCWXViaFZXWTQyUXNCbFhubUxkWHBhQzZsS0Iwd3h2Q1FDSDhYak8yYVJ3czJEQVZXTFRhOVF1M3ltbGV5SlBHeDZWR3FlYXI0ZmF2WmhrRmtOOGZjZkIyQlpmOWpKSmc?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 14:46:26 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ],
-    "Fintyre": [
-      {
-        "title": "Fintyre rolls to profitability on a transformed supply chain - NTT Data",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONmthczZBREswNXpKNnEycnZ3Z3pnOWRGeVlZSW95dlpfTHlXRHExanB0bHRYSFVnRHR3SjhSOGdZU0pxc1FYQVI0R3RoSEhVc3BTd1hQNmdzQ0pjR3JvS2dFdUhIVEo2UTE4cHpCMHZUQ0RGQWg2YTB3LThiNkJ6M3hkTldMdkowNmNlVWc3TS0xaG5DOEQ1RHFxTDhhZWltSDZVUlNoOWZ4eERPWUxBc0Zn?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 06:53:15 GMT",
-        "country": "Italy",
-        "cluster": "South-West"
+        "title": "Nokian Tyres to Announce Financial Results Oct. 27 - Modern Tire Dealer",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSDFKSzVFYXQxR2RacG5sRlAwYm9MTUR4dW5GNzd2VFc5R3NxZHFwb3I2NGNEXzB0bzFtV3hmZmg2UjQ0ZEZFM0pwSFFNSjREWVlobjZMbFcyQW9zcXlpbng2aE1NbC10cndjZ29nZVVRZGhLMXpVZFhmZktMSTlRS0I5ZVdvdFQzd1JOUVNHanlnOUVTVXRhdlROT3dnb2xxQXZVdnFJLTcxZw?oc=5",
+        "pubDate": "Thu, 15 Oct 2026 19:19:21 GMT",
+        "country": "Hungary",
+        "cluster": "South-East"
       }
     ]
   }
