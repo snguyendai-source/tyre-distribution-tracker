@@ -1,51 +1,29 @@
 {
-  "runAt": "2026-10-16T11:00:31.674386+00:00",
-  "totalNew": 6,
+  "runAt": "2026-10-17T10:22:06.387932+00:00",
+  "totalNew": 3,
   "entitiesChecked": 26,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Hankook": [
+    "Linglong Tire": [
       {
-        "title": "Hankook and Schmitz Cargobull announce original equipment partnership - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPeUlmcGdobjNWaUZhUHlQT1cxUzZBdVY5OFAzNERwMW1Kc2tydmd3b0YyNGV5dHQwd3REbnZickhRcHFEdUNIS1QxMWR2cFl3a0NTTzlldlBRUU51SVJKM25jaXZkV3JCR2g5d0JULTl3UXJoRTh1S18xWnFFZV85dS1ZZ3pueDFtelFQSE10WDZlblFmTUlaZElQa2FRay1Oc3NFWWJ2cy1ha0JnSmpBOVVzWERWWllXZ01PNElZYTAzclhDMjVnZmk1WmNXTkhmd1VXYzZFZWRNVzdudEprZUVzcmdGT2ZzVkdPZjh3djFVektBUmlB?oc=5",
-        "pubDate": "Mon, 14 Sep 2026 07:00:00 GMT",
-        "category": "Korean"
+        "title": "U.S. blocks imports from Linglong Serbia plant; tire maker says allegations ‘incomprehensible’ - Rubber News",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSkpBWDlrVXRabkVPWWVxQUJOOF90M1JUX3JSM3R3eHVUaTFxSndhRlQxQUF6QzVmWmFld1VQcUdXaU9TcWRhRG9KM2xnYVRlc3VkQ0F0VVV3TGh6Vzh2dm5TSjFJUExpZHpnRDN2ZDE2R1lDbE9YbWd2aGVIU3pkMGVRQ1gzLUtGVnplOVRoX08yMDltX0poWA?oc=5",
+        "pubDate": "Tue, 23 Dec 2025 08:00:00 GMT",
+        "category": "Chinese"
       }
     ],
-    "Yokohama Rubber": [
+    "Double Coin": [
       {
-        "title": "Yokohama Rubber to Supply a GEOLANDAR Tire as the Official Tire for the New FIA Extreme H World Cup, the World’s First Hydrogen Motorsport - Traction News",
-        "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOTUhrSzZlVFNYNzI5ZnJZUE1rMklRX2xFVkNQYzZUUTltelZfQVYxaUtTdlRLX1E3c2l2SjFXaGpuODNVNEVka2VzQXZoMUxoLWc1dW40Q2cwTWlwenM4NDdlZVU2alQtWTJBM1laMEhMd3U3dWk5YzlnMXhuSmlKdmJNSlF4MW10SXk0eUxISlFVR2M1Z3VLNGw4dFdOT1ZtVlB2ZE93d3M1RHVWcHJlaDM2eDE3aFYwb1pMV21tTE0wY3BhY3ZHckRnZl9JU25BOVNDQzQzYnhmRlhsal81NTFka09KZUhTS2VMSGtOWlBZWGVMVl9vWFdn?oc=5",
-        "pubDate": "Fri, 26 Sep 2025 07:00:00 GMT",
-        "category": "Japanese"
-      }
-    ],
-    "Toyo Tires": [
-      {
-        "title": "Kono named GM of Toyo Tires’ EMEA sales team - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1QMVRXdDc2Y09SdEJUZWgtTGdiVzBaaFVKUEkwbDYzQ0ZuaEZRWTJobUd6aTRhVkVscU04YzlkSE1YSHRXRFpuWU42UQ?oc=5",
-        "pubDate": "Fri, 02 Oct 2026 13:43:35 GMT",
-        "category": "Japanese"
-      }
-    ],
-    "MRF Tyres": [
-      {
-        "title": "MRF Tyres great on gravel for first 2025 ERC supplier win - FIA European Rally Championship",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSVNWbkY5czZ3T0VodllGdlZITDV2Y1BLUFhjLXF6enhmVTJLOFNFS212LVM3SHk2S2RDOFlSOUdXSThPd29sX2VlYXUzY0p3M05UT1Z5cG91SjRocnlrMHZ6YXB2U2ZuRkJKN09oTnJ6SHRnMlo4WThRLTIxT09KamFLbThtWDZnaHdv?oc=5",
-        "pubDate": "Tue, 13 May 2025 07:00:00 GMT",
-        "category": "Indian"
+        "title": "Hankook to supply OE tire on all Scania trucks - Traction News",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9DTnVlb2xhbGQwcW5HVEFjM1BBUF9WU0Q3N0M2OTVJWjdjanJyeUpVM0QwajhyamFad2hsdUJZRnplQTFWOHFPYzBXdVdFczA2MElDZm1mYkZqUS1UVkdkTi0ya2R6MnJhekhPV0p2QUFVNl9C?oc=5",
+        "pubDate": "Wed, 31 Jan 2018 08:00:00 GMT",
+        "category": "Chinese"
       },
       {
-        "title": "Team MRF Tyres bags European Rally Championship Award - ET Auto",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcE55R0ZBUjhBTTNIU2lGQ1E4LUFQbmRGa0dwOEhTZnp0U0FJdU5NZ1R3czNfa1h5dVlXT0VySzRBM3hUeXFacEc2RC00WGVPbzZHc29oRXh2bl9NRWF2M3d2Z0FDNzNpd2tCNDJPMko1TkR3ZTlvMmEyb2paS09IcE5LcHpNa3NwamVqM21mS0U4QnZVbE16V1lFZS1RZlhTY0RYdUVwOU1JZmlwdks2eW52eUg5QdIBuwFBVV95cUxPT283cThmaC1TQ2dQRC1SNVE0Zy0yWnhzdUJjRG5FZVNONUdxMFMwM1gyTG1IWWExYzF6V1VobDZzV21SVWVncDZKNTdNRDFJV2lLbU1qMkpjZmhsN3BMVFNYbDQwdTNlcHA1UXBQb2RWUVVadnlrQk14MFlBQTdKOTB3MHNQRk9rVnY2RkpsZVhQX0FDbEhNakI3TGxUaThJWDVQZWJiODNqTkxvZ3hCY1FHQmdCcUpybF9F?oc=5",
-        "pubDate": "Mon, 12 Dec 2022 08:00:00 GMT",
-        "category": "Indian"
-      },
-      {
-        "title": "MRF Tyres seals European Rally Championship title for second year running - Autocar India",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMnJ1cGROZk5YZXhaMklVRkR6MHpuQWVXamJScGJYWklSbUJRWER2bGs2TnotRmhGRnpZMkZQYi1qS2VDRFNuNzVQdWlzWE5wZWdidGhLSGI5S09GNkx5N3RQUmlCTE5jT0RybzJoVjNtWlRNUURuNGsxMWFIV3NEMXk1T2phRXRWVHNrUzAxV09ScHBsZFgzaHhVcVBIOC1qcVVhaTRB0gGrAUFVX3lxTE1CMHVLY0dlRlJEOU55U2p1UHMtU2VWTHFYOWV6MzE1STRKOUVFSzBZSFVCUU5hMnhhWGFVRlR1X09qRkFpRUFYVWptU1VwSDF0Rm04NXZUQTNOYVVfWEJsZEd1bE1FWDN2Sk1mYnRJcUgxbXZGa0E0NXlqbTlnY19kaEJyRWY4bVFNaWRuaGZHamw0MGtOS3lRTWtyRTVXRFdPcFJEY2cyYkY1RQ?oc=5",
-        "pubDate": "Sat, 19 Aug 2023 07:00:00 GMT",
-        "category": "Indian"
+        "title": "Continental Tire unveils its latest all-season ultra-high performance tire - Traction News",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZDRQX0hycmRDN3FVMHIxVU5aZG5OV2F0MTl0aVY3LVRkdW5DbndkRm1TTHVFUVo2LVBtcjFGTVhSVEp2Y2w4cG1UZ3pfOW8xNVZHa0hBTzVnR08xSERhUHI1UTFsejY0WUxYb21pcF9sd054WFpUQnBaQ0ZuZ3JMV3FpSFZrOXZ3TUZHU0UyY0U0d3k0Umh1NWUzN1g3T0JQMExTbGhRdw?oc=5",
+        "pubDate": "Tue, 02 Feb 2021 08:00:00 GMT",
+        "category": "Chinese"
       }
     ]
   }
