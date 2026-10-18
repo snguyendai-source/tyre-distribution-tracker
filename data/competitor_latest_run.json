@@ -1,28 +1,46 @@
 {
-  "runAt": "2026-10-17T10:22:06.387932+00:00",
-  "totalNew": 3,
+  "runAt": "2026-10-18T10:38:35.981615+00:00",
+  "totalNew": 5,
   "entitiesChecked": 26,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 5,
   "newItemsByEntity": {
-    "Linglong Tire": [
+    "Continental": [
       {
-        "title": "U.S. blocks imports from Linglong Serbia plant; tire maker says allegations ‘incomprehensible’ - Rubber News",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSkpBWDlrVXRabkVPWWVxQUJOOF90M1JUX3JSM3R3eHVUaTFxSndhRlQxQUF6QzVmWmFld1VQcUdXaU9TcWRhRG9KM2xnYVRlc3VkQ0F0VVV3TGh6Vzh2dm5TSjFJUExpZHpnRDN2ZDE2R1lDbE9YbWd2aGVIU3pkMGVRQ1gzLUtGVnplOVRoX08yMDltX0poWA?oc=5",
-        "pubDate": "Tue, 23 Dec 2025 08:00:00 GMT",
+        "title": "Continental: Tyres made from 80 % sustainable materials | KLOEPFEL by EPSA - Kloepfel Consulting",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdkRfVzBRMmRtLXViVWhDNEM2V3BNRzdNWWltZXppT3MwczdDdmV6ZHhPeWM0R1prRkM1eFpTUVhiNElEaXFyX0RiMVRkU1NuMUIwMGlOWFh5VTExaWtsS3M2Z284NGh0azVuaEpxYUNFRHMyZ21YQV94N21OZlUzT0ZhVEJPdnBaQUE?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Hankook": [
+      {
+        "title": "Hankook Presents First Pre-Production Tire From New Hungary Commercial Vehicle Line - Traction News",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBERUdWVVhxVVIwNzRDM1ZfRjlsejFrVEJ1bFJvX3VrbzhtZldFNkx5MFppcmV1TU04cEN6OEVPbTEwU1RQOTdYV1RndmR6YVQtTUYwN2g0UEExZ1ZHaXBqQ2wzT1U3M1J2Sm80WWZCWDRNdkYwdG1uN2k1SQ?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 07:00:00 GMT",
+        "category": "Korean"
+      }
+    ],
+    "Sailun Tire": [
+      {
+        "title": "Sailun begins passenger tire production at Cambodia plant - Rubber News",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTjF6TTZuZkRERDFLaGNDNG1DUUpXMVRmaXd5SVoteGVqVVU4a2VJaEpLNC1sR2g2czE4MTMyY3dyMkJkc3MwQXd0a0N6RDlNLVNvVC0wQ0J1UnprNUxvMUJuZnV3YnY5RUJDUFNGUkdyUWpZZmNyTHNScU40N3hVdS1NRUlBZk1VcnV2QUd5T1M?oc=5",
+        "pubDate": "Tue, 30 Nov 2021 08:00:00 GMT",
         "category": "Chinese"
       }
     ],
     "Double Coin": [
       {
-        "title": "Hankook to supply OE tire on all Scania trucks - Traction News",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9DTnVlb2xhbGQwcW5HVEFjM1BBUF9WU0Q3N0M2OTVJWjdjanJyeUpVM0QwajhyamFad2hsdUJZRnplQTFWOHFPYzBXdVdFczA2MElDZm1mYkZqUS1UVkdkTi0ya2R6MnJhekhPV0p2QUFVNl9C?oc=5",
-        "pubDate": "Wed, 31 Jan 2018 08:00:00 GMT",
+        "title": "Coker Tire adds new size to BFGoodrich Silvertown radial tire line - Traction News",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQ054YXcySjlWS01qRERScy1yRld2UkttOGRRUHQ0d0liRE5rNldMUGtTTWZLNm1oYmVUaVltdWZDR0JYNWozOVZQWFplc0pSSTFpdVBFdG1IcGcyaDRpM0llVkhFWHE1MGlFTEdkN0E3dWVIdFIxTU5iV3pHaWoxRWlQSHh3X0ZpTzAyRmFJVjd0UWhTWVRfVnhEeEQ?oc=5",
+        "pubDate": "Mon, 01 Mar 2021 08:00:00 GMT",
         "category": "Chinese"
-      },
+      }
+    ],
+    "Aeolus Tyre": [
       {
-        "title": "Continental Tire unveils its latest all-season ultra-high performance tire - Traction News",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZDRQX0hycmRDN3FVMHIxVU5aZG5OV2F0MTl0aVY3LVRkdW5DbndkRm1TTHVFUVo2LVBtcjFGTVhSVEp2Y2w4cG1UZ3pfOW8xNVZHa0hBTzVnR08xSERhUHI1UTFsejY0WUxYb21pcF9sd054WFpUQnBaQ0ZuZ3JMV3FpSFZrOXZ3TUZHU0UyY0U0d3k0Umh1NWUzN1g3T0JQMExTbGhRdw?oc=5",
-        "pubDate": "Tue, 02 Feb 2021 08:00:00 GMT",
+        "title": "Aeolus Tyre to show international customers ‘clear strategic direction’ - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVFY4OGxEaVdMaHVvdkNzZ0tSNEpfdjV0RkRPYnRDMS1BMldqY1NzUmdQdlplTmo3ejFaX0dtNUljc1JSOExsa2dadHp0T0gyZGN0Y2tYQXhDZ2JsaXlfR2FnN2NNYWxjZ1pUc1h2V2xFRTFGdjRLQVdNMHc1UzFXcHU0SXdVNzB3V0d2YjdCTFRsRVBOTm1Ha2FRbWhNckdBMHpieU5LYw?oc=5",
+        "pubDate": "Thu, 05 May 2016 07:00:00 GMT",
         "category": "Chinese"
       }
     ]

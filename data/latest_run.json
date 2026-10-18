@@ -1,23 +1,32 @@
 {
-  "runAt": "2026-10-17T10:22:06.387932+00:00",
-  "totalNew": 2,
+  "runAt": "2026-10-18T10:38:35.981615+00:00",
+  "totalNew": 3,
   "entitiesChecked": 118,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Reifen Müller": [
+    "Point S France": [
       {
-        "title": "New owner for insolvent Reifen Ihle’s retreading operation - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQS10ckJWSVhKVXdNYjV5NW42WXhzSTN6NWloamF1OUhUOElNaUVBWlFXRnhUVFFuQUx1dWhfdkN1LU1tVDFJLVdJUnM4SmY2VE1EVFZST1JQT0hOWXEwblkyU2FUeVMwNVhUbDNIdGZuTHRFclQ0cEtxb21WUlJrU05ORjdydlJoWVYxN1JVSERsazMtUmJv?oc=5",
-        "pubDate": "Mon, 15 Dec 2014 08:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
+        "title": "Welcome back Michelin – Point S France selling market-leading tyre brand again - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNTBEVGJ3RHRqNGZxUDMtMmZfQW9MR0Z1ZjVGeUVuUmo3REc1anZSLXVCNU53WUhBU1RFZGc2NjV1TDdobmdCSERCZ3k1OS1PX05id1NHYXI1SjR2NlhyVExaazg1WnkyU244VU1hdEVUX2FNb1FDWXZyZlpEYXJZM2h2VElLME1XZEQ1QUtwdFI4ZlFYRWVRdnBSejRyRUtqZ3lQekpVb1hHZ0xlNUVObw?oc=5",
+        "pubDate": "Wed, 03 Feb 2016 08:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
       }
     ],
-    "Kwik Fit": [
+    "Euro Repar": [
       {
-        "title": "Kwik Fit’s top tips for looking after your tyres - Motability Scheme",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVEJzTGI4RGg3NHE1bHB4MTU1R2QxcmxBd2FuZXFQdDM3UXZyRnNiZFc0VGhSYXd2clQ1VUZzcVVsWUFzMTU1UWZtWFBSdG9HU1hXV1BSQXpHdkJXb1RJNmJlNkNvajRlS196RmNjTGxadVdvQkJmVTR1dmtJUjlJaXcwZkpRRnNkNEc3d1RpVnpnekxnN2thb05lNA?oc=5",
-        "pubDate": "Fri, 10 Apr 2026 07:00:00 GMT",
+        "title": "Charles Hurst's new Fast Fit service revs up across Northern Ireland - Car Dealer Magazine",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTmVpRWxxYkRHemlBSE1idGRJc05ydkY5NGlWaVFQbG1sWmRUaXFuSnE5SS1sZVBzc3RYeTY0eGdzUUF1dTZiQmd0VnRpVk4zd2Y5MUJ2R2xoR1Y1TWlpcUIwT1hyUzhBMmEtVlFHaTQ2OEJVX1NHSjVuQ1JwYTFqcEw4SXFJWENjUk9ubHhGY3IwemVrVDlodE93dDhfZm1nemhqT2NR?oc=5",
+        "pubDate": "Tue, 01 Oct 2019 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
+    "Bandvulc": [
+      {
+        "title": "Bandvulc unveils next-generation BD5 drive tyre - Fleet Transport",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1RWGVfejN0dV9NaHYxdlRCb2JrNFNEd1RJWXVCcHNrU2tvdGozVC16U3V6cUxCUjRlemd5T3BxLWFsdVhGSVBqV0VzTnJEdW9Rb1BRSnU3MkE1VHpqMGt5aEJSZVdqcG8yYzdNa0pNYTFoMmfSAXhBVV95cUxOd1pIRXJsUTFaZGI3eWVyajNoVGdCOHdTSGdETENVMTh4YnNmVHJyNFVuOG04enJCUk1GVjZfQWpkWU91b2ZmMFc0ZWp2akR4SnF4U0J0eXZHaV8yVnZXZDdYY3ZkX0ZMZzB1X09RY3R4aWtzTHREOEU?oc=5",
+        "pubDate": "Tue, 05 Jul 2022 12:47:45 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
