@@ -1104,9 +1104,9 @@
             "__NATIONWIDE__"
           ],
           "scale": {
-            "value": 3.65,
+            "value": 3.25,
             "metric": "est. M PCR tyres a year",
-            "label": "est. 3.3-4.0M tyres a year, 60-75% of Dutch passenger-car wholesale (research estimate, low-medium confidence). Operating companies per the ACM: Inter-Sprint, Van den Ban, Tyreteam, Banden Express, Reedijk, Inter Tyre Holland, Wheel Tyre; owns PBG since 2021"
+            "label": "2026 basis: est. 2.9-3.6M domestic tyres a year, about 60% of the 5.35M wholesale node (research estimate, medium-low confidence; was 3.3-4.0M). Based on EW Top 500 revenue of EUR 1.93bn, mostly exports and other EU countries (not checked). Operating companies per the ACM: Inter-Sprint, Van den Ban, Tyreteam, Banden Express, Reedijk, Inter Tyre Holland, Wheel Tyre; owns PBG since 2021"
           }
         },
         {
@@ -1116,9 +1116,9 @@
             "__NATIONWIDE__"
           ],
           "scale": {
-            "value": 1.2,
+            "value": 1.1,
             "metric": "est. M PCR tyres a year",
-            "label": "est. 1.0-1.4M domestic tyres a year (research estimate); supplies LKQ Fource and Tyfoon; much more shipped for export"
+            "label": "2026 basis: est. 0.9-1.3M domestic tyres a year, including volume sold on to LKQ Fource (research estimate, low confidence; was 1.0-1.4M); hundreds of containers a month go abroad"
           }
         },
         {
@@ -1128,9 +1128,9 @@
             "3"
           ],
           "scale": {
-            "value": 0.7,
+            "value": 0.55,
             "metric": "est. M PCR tyres a year",
-            "label": "est. 0.5-0.9M domestic tyres a year (research estimate), mostly an export business"
+            "label": "2026 basis: est. 0.4-0.7M domestic tyres a year, mostly an export business (research estimate, low confidence; was 0.5-0.9M); 139 employees per Tracxn, July 2026"
           }
         },
         {
@@ -1140,9 +1140,9 @@
             "__NATIONWIDE__"
           ],
           "scale": {
-            "value": 1.2,
+            "value": 1.15,
             "metric": "est. M PCR tyres a year",
-            "label": "est. 1.0-1.4M tyres a year (research estimate); 12 depots, 3 deliveries a day, dealers and garages only"
+            "label": "2026 basis: est. 1.0-1.3M tyres a year, including Reedijk (research estimate, medium-low confidence); 12 depots, 3 deliveries a day, 100+ vans, dealers and garages only"
           }
         },
         {
@@ -1152,9 +1152,9 @@
             "__NATIONWIDE__"
           ],
           "scale": {
-            "value": 0.45,
+            "value": 0.4,
             "metric": "est. M PCR tyres a year",
-            "label": "est. 0.3-0.6M tyres a year (research estimate); PBG (Pon Banden Groep) was bought in 2021; dealer market"
+            "label": "2026 basis: est. 0.3-0.5M tyres a year (research estimate, low confidence; was 0.3-0.6M); PBG (Pon Banden Groep) was bought in 2021; dealer market, focused on dealers since 2021"
           }
         },
         {
@@ -1167,7 +1167,7 @@
           "scale": {
             "value": 0.4,
             "metric": "est. M PCR tyres a year",
-            "label": "est. 0.3-0.5M tyres a year, net (research estimate); second-tier wholesaler to independent garages, supplied mostly by Inter-Sprint, so not additive to Global Automotive"
+            "label": "2026 basis: est. 0.3-0.5M tyres a year, pass-through: inside Global Automotive (mostly supplied by Inter-Sprint), so do not add to it (research estimate, low confidence)"
           }
         },
         {
@@ -1180,7 +1180,7 @@
           "scale": {
             "value": 0.2,
             "metric": "est. M PCR tyres a year",
-            "label": "est. 0.1-0.3M tyres a year (research estimate); second-tier wholesaler, Tyfoon is supplied from Inter-Sprint"
+            "label": "2026 basis: est. 0.1-0.3M tyres a year, largely Tyfoon private label bought through import (research estimate, low confidence); second-tier wholesaler"
           }
         },
         {
@@ -1193,7 +1193,7 @@
           "scale": {
             "value": 0.85,
             "metric": "est. M PCR tyres a year",
-            "label": "165 outlets (kwik-fit.nl); est. 0.65-1.0M tyres a year at 4,000-6,000 an outlet, mostly bought direct (research estimate, low-medium confidence)"
+            "label": "2026 basis: 165 outlets on kwik-fit.nl; Autointernationaal (6 Sept 2026) says 160 today and BNR (7 Sept 2026) has director Paul Traas planning growth by almost 10% to 175 (checked). Est. 0.70-1.0M tyres a year (was 0.65-1.0M), mostly bought direct (research estimate, medium confidence)"
           }
         },
         {
@@ -1206,7 +1206,7 @@
           "scale": {
             "value": 0.6,
             "metric": "est. M PCR tyres a year",
-            "label": "about 170 outlets (a Folderz list shows 176), 95 of which also serve truck, industrial and agri; est. 0.45-0.75M tyres a year, counting Distri24 and Heuver's Profile outlets (research estimate, low confidence)"
+            "label": "2026 basis: about 170 outlets in the Netherlands (a Folderz list shows 176); 'more than 200 outlets in Belgium and the Netherlands' including truck sites (research, not checked). Est. 0.45-0.75M tyres a year, counting Distri24 and Heuver's Profile outlets (research estimate, low-medium confidence)"
           }
         },
         {
@@ -1218,7 +1218,7 @@
           "scale": {
             "value": 0.5,
             "metric": "est. M PCR tyres a year",
-            "label": "80 own plus 26 partner locations (March 2025, research, not checked); est. 0.35-0.6M tyres a year, 60-70% lease and fleet, bought direct from Michelin and A-brands (research estimate, low confidence)"
+            "label": "2026 basis: 80 own plus 26 partner locations (March 2025) and about 120,000 lease wheel swaps a year (research, not checked); est. 0.35-0.6M tyres a year, about 65% commercial, bought direct from Michelin and A-brands (research estimate, medium-low confidence)"
           }
         },
         {
@@ -1230,7 +1230,7 @@
           "scale": {
             "value": 0.4,
             "metric": "est. M PCR tyres a year",
-            "label": "about 400-415 independent workshops (research, not checked; the earlier card said over 425); est. 0.3-0.5M tyres a year at about 750 a workshop (research estimate, low confidence)"
+            "label": "2026 basis: about 400-415 independent workshops (research, not checked; the earlier card said over 425); est. 0.3-0.5M tyres a year at about 750 a workshop (research estimate, low confidence)"
           }
         },
         {
@@ -1242,7 +1242,7 @@
           "scale": {
             "value": 0.35,
             "metric": "est. M PCR tyres a year",
-            "label": "400+ garages (research, not checked); est. 0.25-0.45M tyres a year, may overlap Bosch Car Service (research estimate, low confidence)"
+            "label": "2026 basis: 400+ garages (research, not checked); est. 0.25-0.45M tyres a year of fitted volume, the same tyres as Fource's sell-in, so not additive; may overlap Bosch Car Service (research estimate, low confidence)"
           }
         },
         {
@@ -1254,7 +1254,7 @@
           "scale": {
             "value": 0.1,
             "metric": "est. M PCR tyres a year",
-            "label": "outlet count not verified; est. 0.05-0.15M tyres a year (research estimate, very low confidence)"
+            "label": "2026 basis: outlet count not verified; est. 0.05-0.15M tyres a year (research estimate, very low confidence)"
           }
         },
         {
@@ -1273,7 +1273,7 @@
           "volume": "12-13 Profile outlets (research, not checked); their volume is counted under Profile"
         },
         {
-          "name": "ReifenDirekt.nl (Delticom)",
+          "name": "Autobandenmarkt.nl (Delticom)",
           "model": "Online retailer (Delticom)",
           "territories": [
             "__NATIONWIDE__"
@@ -1281,16 +1281,16 @@
           "scale": {
             "value": 0.225,
             "metric": "est. M PCR tyres a year",
-            "label": "Delticom Netherlands, ReifenDirekt.nl and Autobandenmarkt.nl together: est. 0.15-0.3M tyres a year (research estimate, very low confidence); Delticom group revenue EUR 482M and GMV EUR 597M in 2024, Netherlands not disclosed"
+            "label": "2026 basis: Delticom Netherlands: autobandenmarkt.nl, banden-giga.nl, bandenprijzen24.nl and probanden.nl together (shop list from the research, not checked; the research says ReifenDirekt.nl is not the Dutch shop). Est. 0.15-0.3M tyres a year, part of which may sit in the foreign-webshop layer (research estimate, low confidence). Delticom group revenue EUR 484M and GMV EUR 601M in 2025 (annual report, checked); the Netherlands is not disclosed"
           }
         },
         {
-          "name": "Autobandenmarkt / Bandenmarkt",
+          "name": "Banden-giga.nl, Bandenprijzen24.nl, Probanden.nl (Delticom)",
           "model": "Online retailer (Delticom)",
           "territories": [
             "__NATIONWIDE__"
           ],
-          "volume": "counted together with ReifenDirekt.nl under Delticom Netherlands"
+          "volume": "counted together with Autobandenmarkt.nl under Delticom Netherlands"
         },
         {
           "name": "BandenConcurrent",
@@ -1301,13 +1301,13 @@
           "scale": {
             "value": 0.225,
             "metric": "est. M PCR tyres a year",
-            "label": "claims to be the largest online car-tyre supplier in the Netherlands, with fitting at 2,000+ partner garages (research, not checked); est. 0.15-0.3M tyres a year (research estimate, low confidence)"
+            "label": "2026 basis: claims to be the largest online car-tyre supplier in the Netherlands, with fitting at 2,000+ partner garages; all-season 62.4% of its sales (research, not checked). Est. 0.15-0.3M tyres a year (research estimate, low confidence)"
           }
         }
       ],
       "noteBadge": "caution",
-      "note": "Caveat The market, wholesale and direct figures are modelled from RecyBEM's 2024 placement of 9.99M tyres of all types, net of exports (checked), at an assumed 80% passenger cars. VACO has about 300 members and 650 outlets but publishes no unit total or channel split. No wholesaler or retailer publishes Dutch tyre volumes, so every player figure is a research estimate (outlets times an assumed throughput, or a share of the wholesale total) with low to medium confidence. Read the ranges and the ranking as indicative, not measured.",
-      "marketAccessNote": "Wholesale for passenger-car tyres is concentrated in one group. Global Automotive Investments Holding (Inter-Sprint, Van den Ban, Banden Express, PBG/Mega Tyre, Reedijk) is estimated by the research at 60-75% of Dutch wholesale, so treat it as one key account; LKQ Fource and Alliance Automotive (Tyfoon) mostly resell tyres from Inter-Sprint to independent garages. Sell-out is fragmented across a dense service network: Kwik Fit (165 outlets), Profile (about 170), Euromaster (about 106 own and partner locations, owned by Michelin) and Bosch Car Service (about 400-415 workshops). Kwik Fit, Profile/Distri24 and the lease intermediaries are the largest buyers a brand can approach directly; Euromaster is Michelin-owned. Heuver is a major tyre group and Profile retailer, but its wholesale business is truck, agricultural and earthmoving, so it is not a passenger-car wholesale gateway.",
+      "note": "Caveat The market, wholesale and direct figures are modelled from RecyBEM's 2024 placement of 9.99M tyres of all types, net of exports (checked), at an assumed 80% passenger cars. The flow model now also shows the gross layer: about 7.1M passenger-car tyres of pool sell-in, of which about 1.5M is re-exported by Dutch hubs. That is how a 9M Europool figure (consumer scope, 2026) fits an 8.0M domestic market. The flow model is 2024; the player volumes below are the research's 2026 basis (wholesale node 5.35M against 5.25M in 2024). No wholesaler or retailer publishes Dutch tyre volumes, so every player figure is a research estimate (outlets times an assumed throughput, or a share of the wholesale total) with low to medium confidence. Read the ranges and the ranking as indicative, not measured.",
+      "marketAccessNote": "Wholesale for passenger-car tyres is concentrated in one group. Global Automotive Investments Holding (Inter-Sprint, Van den Ban, Banden Express, PBG/Mega Tyre, Reedijk) is estimated by the research at about 60% of the Dutch wholesale node (2.9-3.6M tyres), so treat it as one key account; the remaining 1.5-2.2M sits with other wholesalers and importers. LKQ Fource and Alliance Automotive (Tyfoon) mostly resell tyres from Inter-Sprint to independent garages, so their volume is not additive. Sell-out is fragmented across a dense service network: Kwik Fit (165 outlets, planning to grow to 175), Profile (about 170), Euromaster (about 106 own and partner locations, owned by Michelin, about 65% commercial) and Bosch Car Service (about 400-415 workshops). Kwik Fit, Profile/Distri24 and the lease intermediaries are the largest buyers a brand can approach directly; Euromaster is Michelin-owned. Heuver is a major tyre group and Profile retailer, but its wholesale business is truck, agricultural and earthmoving, so it is not a passenger-car wholesale gateway.",
       "territoryDefs": [
         {
           "code": "1",

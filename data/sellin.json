@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-14T12:02:17Z",
+  "generatedAt": "2026-10-19T23:39:27Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -3478,77 +3478,77 @@
         "market": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate for passenger-car tyres only, not a VACO figure (VACO publishes no unit total). RecyBEM's 2024 monitor (checked) shows 9,990,534 tyres placed on the Dutch market, net of 1,874,255 exported with restitution, for car, light-van, caravan and trailer tyres. The research takes 80% as passenger cars: 7.99M (range 7.6-8.2M, from a parc-and-mileage cross-check of 76-82%). The 80% is an assumption, not a published share. RecyBEM expects real placements of at least 10.9M, and the research puts unrecorded passenger-car demand (cross-border online, scrap-car tyres, extra sets) at about 0.5-0.7M outside this figure. Unchanged from the earlier 8.0M.",
+          "source": "Research estimate for passenger-car tyres only, not a VACO figure (VACO publishes no unit total). RecyBEM's 2024 monitor (checked) shows 11,864,789 tyres declared and 9,990,534 placed on the Dutch market after 1,874,255 were exported with restitution, for car, light-van, caravan and trailer tyres. The research takes 80% as passenger cars: 7.99M. The 80 / 16 / 4 split between cars, vans and other is an assumption, because RecyBEM does not publish placements by tyre type. Domestic demand is higher than this figure: RecyBEM expects at least 10.9M for 2024 (checked), and the research puts passenger-car tyres bought from foreign webshops, which are never declared, at about 0.7-0.75M outside the 8.0M. On the same basis the research has 8.2M for 2026. Unchanged from the earlier 8.0M.",
           "tier": "Estimate",
           "value": 8.0
         },
         "industry": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research model, low confidence: the part of the 8.0M supplied by the major-brand (industry pool) manufacturers, range 5.4-6.5M. Not a published ETRMA or Tyres Europe country figure. The research's only cross-check is that the Netherlands is slightly under 3% of the 223.3M European consumer replacement sell-in (ETRMA, not checked), which caps pool consumer tyres (cars, light trucks, 4x4) at below about 6.7M. Replaces the earlier 6.5M.",
+          "source": "Research estimate, medium confidence (the research labels it Derived; it is Estimate here because the passenger-car share is assumed). Gross pool sell-in to Dutch-invoiced customers, passenger cars, 2024: RecyBEM's regular-method gross declarations of 8,890,956 tyres (11,864,789 declared minus 2,954,121 'import only' minus 19,712 one-off; arithmetic checked) times 0.96 for consumer scope times 0.833 for passenger cars. It is gross: it includes about 1.5M that Dutch hubs re-export (see the Export box), so it is not domestic sales. That is why it is higher than the 6.0M shown before, which the research reads as domestic pool only (5.62M). Read this way, Europool's Netherlands figure of 9M (your internal 2026 number, consumer scope) reconciles as 5.62 domestic pool + 1.12 vans and other + 1.80 re-export + 0.46 growth to 2026. The Europool definition (scope, invoice-to or ship-to country, period) is not confirmed.",
           "tier": "Estimate",
-          "value": 6.0
+          "value": 7.12
         },
         "import": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, range 1.5-2.6M: non-pool and parallel imports. Import-only RecyBEM members first-placed 2,954,121 tyres of all types in 2024 (checked), about 2.36M at 80%, but those members also import major brands, so that is not a measure of non-pool supply. The research sends about 0.36M of the 2.0M straight to channels (e-tailers and garages buying from German or Belgian wholesalers). The model has no imports-to-channel flow, so all 2.0M is shown going through wholesale and the direct box is 0.36M higher instead. Replaces the earlier 1.5M.",
+          "source": "Research estimate, medium confidence, range plus or minus 0.3M: non-pool and parallel imports. RecyBEM 'import only' members (295 members, about 70% of the membership; checked) first-placed 2,954,121 tyres of all types in 2024, and 116 one-off declarants placed 19,712 (checked). Together 2,973,833 times 0.96 times 0.833 is 2.38M passenger-car tyres. The category overlaps: 'import only' volume includes pool brands bought abroad (parallel imports), and the regular method includes some non-pool imports by large wholesalers. Replaces the earlier 2.0M. The research sends 0.35M of it straight to channels. The model has no imports-to-channel flow, so all 2.38M is shown going through wholesale and that 0.35M sits in the direct box instead.",
           "tier": "Estimate",
-          "value": 2.0
+          "value": 2.38
         },
         "export": {
           "asOf": "2024",
           "by": "research",
-          "source": "Model convention, as in the research (0.00 by definition). RecyBEM's 9,990,534 placements are already net of 1,874,255 tyres (all types, 38 members) exported with restitution. Customs data show tens of millions of passenger-car tyres imported and exported (sources differ, see Sources and notes) because the Netherlands is a European distribution and re-export hub; those flows include manufacturer distribution centres and cannot be netted against domestic sales. It does not mean the Netherlands exported nothing.",
+          "source": "Research estimate, medium confidence: re-export by Dutch hubs, passenger cars, 2024. RecyBEM refunded the fee on 1,874,255 tyres of all types exported by 38 members (checked); at 80% passenger cars that is 1.50M. Restitution applies to fee-paid tyres bought in the Netherlands and exported, which is the pattern of a hub that buys from manufacturers and re-exports. 'Import only' members cannot claim restitution (the research's reading of the rules, not checked), so all of it sits with the regular-method declarers. Replaces the earlier export of 0.00, which was a convention because the market is already net of exports. It is shown now so that the pool box can be compared with Europool's gross sell-in. Customs trade flows (see Sources and notes) are far larger and are not netted here.",
           "tier": "Estimate",
-          "value": 0.0
+          "value": 1.5
         },
         "direct": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, range 2.2-3.0M: 2.20M of pool volume sold direct plus 0.36M of non-pool imports bought direct by e-tailers and garages. The model has no imports-direct flow, so the whole 2.56M is shown as the direct box and the wholesale side gets all 2.0M of imports (see the import box). Equals the sum of the channel direct figures. Replaces the earlier 2.75M.",
+          "source": "Research estimate, medium confidence: 2.40M of pool volume sold direct plus 0.35M of non-pool imports bought direct by e-tailers and garages. The model has no imports-to-channel flow, so the whole 2.75M is the direct box and the wholesale side receives all 2.38M of imports. 'Industry sold to wholesale' therefore reads 4.37M, 0.35M lower than the research's pool to wholesale of 3.22M plus re-export of 1.50M (4.72M). Equals the sum of the channel direct figures. Replaces the earlier 2.56M. The research has 2.85M for 2026.",
           "tier": "Estimate",
-          "value": 2.56
+          "value": 2.75
         },
         "ch.spec.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: 75% of the market (6.0M, was 5.8M). Includes fast-fit chains, tyre specialists and independent garages. WESP garage-panel data (via Aftersales Magazine, October 2023, not checked) put universal garages at about 30-35% of an estimated 10M annual tyre replacements; the research's player build-up implies about 34% of the total market. Network sizes: Kwik Fit 165 outlets (checked), Profile about 170 (a Folderz list shows 176), Euromaster about 106 own and partner locations, Bosch Car Service about 400-415 (research figures, not checked). They overlap, so they cannot be added up.",
+          "source": "Research estimate, medium confidence: 5.95M, 74% of the 8.0M (was 6.0M at 75%). Includes fast-fit chains, tyre specialists and independent garages. Network sizes (research figures, mostly not checked): Kwik Fit 165 outlets on its website (checked; Autointernationaal, 6 Sept 2026, says 160 today and BNR, 7 Sept 2026, quotes director Paul Traas on growing by almost 10% to 175, both checked), Profile about 170, Euromaster about 106 own and partner locations, Bosch Car Service about 400-415. They overlap, so they cannot be added up. WESP garage-panel data (via Aftersales Magazine, October 2023, not checked) put universal garages at about 30-35% of an estimated 10M annual tyre replacements.",
           "tier": "Estimate",
-          "value": 6.0
+          "value": 5.95
         },
         "ch.spec.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, about 70% via wholesale. Calibrated so the channels add up to 5.44M via wholesale and 2.56M direct. No Dutch source publishes procurement routes by channel.",
+          "source": "Research estimate, medium confidence, about 69% via wholesale (was 70%). Calibrated so the channels add up to 5.25M via wholesale and 2.75M direct. No Dutch source publishes procurement routes by channel.",
           "tier": "Estimate",
-          "value": 4.2
+          "value": 4.08
         },
         "ch.spec.dir": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: channel total minus via wholesale. Kwik Fit buys mostly direct (the research assumes 65-75%) and Euromaster buys direct from Michelin and other A-brands. Not published.",
+          "source": "Research estimate, medium confidence: channel total minus via wholesale (1.87M, was 1.80M). Kwik Fit buys mostly direct (the research assumes 65-75%) and Euromaster buys direct from Michelin and other A-brands. Not published.",
           "tier": "Estimate",
-          "value": 1.8
+          "value": 1.87
         },
         "ch.spec.prv": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate of private passenger-car demand by channel. Commercial demand is set at about 24% (1.95M of 8.0M), so private is about 76% (6.05M). The channel split is not published.",
+          "source": "Research estimate, medium confidence, of private passenger-car demand by channel. Commercial demand is about 24% (1.94M of 8.0M), so private is about 76% (6.06M); earlier 6.05M and 1.95M. The channel split is not published.",
           "tier": "Estimate",
-          "value": 4.55
+          "value": 4.5
         },
         "ch.spec.com": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate of company, lease and fleet passenger-car demand (not vans) by channel, about 24% overall (1.95M, was 1.62M and 20%). Anchored on VNA's lease fleet (checked: 859,700 business-lease and 247,900 private-lease cars at end-2024) and mileage; more weight at Euromaster, Kwik Fit Zakelijk and Profile's central lease business, and at dealers. The channel split is not published.",
+          "source": "Research estimate, medium confidence, of company, lease and fleet passenger-car demand (not vans) by channel, about 24% overall (1.94M). Anchored on VNA's lease fleet (checked: 873,500 business-lease and 241,800 private-lease cars at end-2025, 859,700 and 247,900 at end-2024) and mileage (VNA, checked: cars returned at contract end averaged 25,100 km for business lease and 13,300 km for private lease in 2025; privately owned cars about 11,100 km per CBS, checked earlier). On that basis lease cars are about 21-22% of car kilometres, and lease cars also run seasonal two-set fitments. More weight at Euromaster (about 65% commercial), Kwik Fit Zakelijk, Profile's central lease business and dealers. The channel split is not published.",
           "tier": "Estimate",
           "value": 1.45
         },
         "ch.deal.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: 13% of the market (1.05M, was 1.08M). Dealer share is described as 'in the doldrums' (ICDP, cited by the research, not checked). No dealer-group volumes were found.",
+          "source": "Research estimate, medium confidence: 13% of the market (1.05M, unchanged). Dealer share is described as 'in the doldrums' (ICDP, cited by the research, not checked). No dealer-group volumes were found.",
           "tier": "Estimate",
           "value": 1.05
         },
@@ -3569,28 +3569,28 @@
         "ch.deal.prv": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate of private passenger-car demand by channel. Commercial demand is set at about 24% (1.95M of 8.0M), so private is about 76% (6.05M). The channel split is not published.",
+          "source": "Research estimate, medium confidence, of private passenger-car demand by channel. Commercial demand is about 24% (1.94M of 8.0M), so private is about 76% (6.06M); earlier 6.05M and 1.95M. The channel split is not published.",
           "tier": "Estimate",
-          "value": 0.65
+          "value": 0.63
         },
         "ch.deal.com": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate of company, lease and fleet passenger-car demand (not vans) by channel, about 24% overall (1.95M, was 1.62M and 20%). Anchored on VNA's lease fleet (checked: 859,700 business-lease and 247,900 private-lease cars at end-2024) and mileage; more weight at Euromaster, Kwik Fit Zakelijk and Profile's central lease business, and at dealers. The channel split is not published.",
+          "source": "Research estimate, medium confidence, of company, lease and fleet passenger-car demand (not vans) by channel, about 24% overall (1.94M). Anchored on VNA's lease fleet (checked: 873,500 business-lease and 241,800 private-lease cars at end-2025, 859,700 and 247,900 at end-2024) and mileage (VNA, checked: cars returned at contract end averaged 25,100 km for business lease and 13,300 km for private lease in 2025; privately owned cars about 11,100 km per CBS, checked earlier). On that basis lease cars are about 21-22% of car kilometres, and lease cars also run seasonal two-set fitments. More weight at Euromaster (about 65% commercial), Kwik Fit Zakelijk, Profile's central lease business and dealers. The channel split is not published.",
           "tier": "Estimate",
-          "value": 0.4
+          "value": 0.42
         },
         "ch.ret.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: 1.9% of the market (0.15M, was 0.24M). Low confidence. The research found no material Dutch hypermarket or petrol tyre-fitting presence, and parts stores such as Fource act as distributors to garages, not as retailers.",
+          "source": "Research estimate, low confidence: 1.9% of the market (0.15M, unchanged). The research found no material Dutch hypermarket or petrol tyre-fitting presence, and parts stores such as Fource act as distributors to garages, not as retailers.",
           "tier": "Estimate",
           "value": 0.15
         },
         "ch.ret.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, about 80% via wholesale. Calibrated to the wholesale and direct totals. Not published.",
+          "source": "Research estimate, low confidence, about 80% via wholesale. Calibrated to the wholesale and direct totals. Not published.",
           "tier": "Estimate",
           "value": 0.12
         },
@@ -3604,51 +3604,51 @@
         "ch.ret.prv": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate of private passenger-car demand by channel. Commercial demand is set at about 24% (1.95M of 8.0M), so private is about 76% (6.05M). The channel split is not published.",
+          "source": "Research estimate, medium confidence, of private passenger-car demand by channel. Commercial demand is about 24% (1.94M of 8.0M), so private is about 76% (6.06M); earlier 6.05M and 1.95M. The channel split is not published.",
           "tier": "Estimate",
           "value": 0.13
         },
         "ch.ret.com": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate of company, lease and fleet passenger-car demand (not vans) by channel, about 24% overall (1.95M, was 1.62M and 20%). Anchored on VNA's lease fleet (checked: 859,700 business-lease and 247,900 private-lease cars at end-2024) and mileage; more weight at Euromaster, Kwik Fit Zakelijk and Profile's central lease business, and at dealers. The channel split is not published.",
+          "source": "Research estimate, medium confidence, of company, lease and fleet passenger-car demand (not vans) by channel, about 24% overall (1.94M). Anchored on VNA's lease fleet (checked: 873,500 business-lease and 241,800 private-lease cars at end-2025, 859,700 and 247,900 at end-2024) and mileage (VNA, checked: cars returned at contract end averaged 25,100 km for business lease and 13,300 km for private lease in 2025; privately owned cars about 11,100 km per CBS, checked earlier). On that basis lease cars are about 21-22% of car kilometres, and lease cars also run seasonal two-set fitments. More weight at Euromaster (about 65% commercial), Kwik Fit Zakelijk, Profile's central lease business and dealers. The channel split is not published.",
           "tier": "Estimate",
           "value": 0.02
         },
         "ch.onl.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: 10% of the market (0.80M, was 0.88M), counted as the seller of record. The research puts recorded domestic online at 0.65-0.95M and keeps purchases from foreign webshops in the 0.5-0.7M outside-the-figure memo. An old VACO/GfK study found only about 4% of private buyers used a webshop (2019, too old to use).",
+          "source": "Research estimate, low-medium confidence: 0.85M, 11% of the 8.0M (was 0.80M), counted as the seller of record and declared in the Netherlands. The research keeps a further 0.75M of private passenger-car purchases from foreign webshops outside the 8.0M, because they are not declared to RecyBEM (RecyBEM notes foreign online sales as a growing gap). Part of Delticom's Dutch volume may sit in that layer. An old VACO/GfK study found only about 4% of private buyers used a webshop (2019, too old to use).",
           "tier": "Estimate",
-          "value": 0.8
+          "value": 0.85
         },
         "ch.onl.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, about 53% via wholesale. Calibrated to the wholesale and direct totals. Not published.",
+          "source": "Research estimate, low-medium confidence, about 41% via wholesale (was 53%). Calibrated to the wholesale and direct totals; the research raises the direct share because e-tailers buy from manufacturers and from German and Belgian wholesalers. Not published.",
           "tier": "Estimate",
-          "value": 0.42
+          "value": 0.35
         },
         "ch.onl.dir": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: channel total minus via wholesale. Includes cross-border sellers that buy from German warehouses (Delticom). Not published.",
+          "source": "Research estimate, low-medium confidence: channel total minus via wholesale (0.50M, was 0.38M, 59% of the channel). Includes cross-border sellers that buy from German warehouses (Delticom) and the 0.35M of non-pool imports that the research sends straight to channels. Not published.",
           "tier": "Estimate",
-          "value": 0.38
+          "value": 0.5
         },
         "ch.onl.prv": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate of private passenger-car demand by channel. Commercial demand is set at about 24% (1.95M of 8.0M), so private is about 76% (6.05M). The channel split is not published.",
+          "source": "Research estimate, medium confidence, of private passenger-car demand by channel. Commercial demand is about 24% (1.94M of 8.0M), so private is about 76% (6.06M); earlier 6.05M and 1.95M. The channel split is not published.",
           "tier": "Estimate",
-          "value": 0.72
+          "value": 0.8
         },
         "ch.onl.com": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate of company, lease and fleet passenger-car demand (not vans) by channel, about 24% overall (1.95M, was 1.62M and 20%). Anchored on VNA's lease fleet (checked: 859,700 business-lease and 247,900 private-lease cars at end-2024) and mileage; more weight at Euromaster, Kwik Fit Zakelijk and Profile's central lease business, and at dealers. The channel split is not published.",
+          "source": "Research estimate, medium confidence, of company, lease and fleet passenger-car demand (not vans) by channel, about 24% overall (1.94M). Anchored on VNA's lease fleet (checked: 873,500 business-lease and 241,800 private-lease cars at end-2025, 859,700 and 247,900 at end-2024) and mileage (VNA, checked: cars returned at contract end averaged 25,100 km for business lease and 13,300 km for private lease in 2025; privately owned cars about 11,100 km per CBS, checked earlier). On that basis lease cars are about 21-22% of car kilometres, and lease cars also run seasonal two-set fitments. More weight at Euromaster (about 65% commercial), Kwik Fit Zakelijk, Profile's central lease business and dealers. The channel split is not published.",
           "tier": "Estimate",
-          "value": 0.08
+          "value": 0.05
         }
       },
       "channels": [
@@ -3677,20 +3677,22 @@
       "groups": [],
       "iso": "NL",
       "meta": {
-        "boxNote": "Boxes are the channels as named under \"By channel\". The import box is the 2.0M of non-pool supply, shown going through wholesale, not gross imports. The research sends 0.36M of it straight to channels; the model has no such flow, so that volume sits in the direct box instead and direct is 0.36M higher than the research's pool-only figure. Export is set to zero because RecyBEM's placement figure is already net of 1.87M tyres exported with restitution; customs data show tens of millions of passenger-car tyres imported and exported because the Netherlands is a European distribution and re-export hub. Online is the seller of record. Private and commercial (company, lease and fleet cars, not vans) are modelled from lease-fleet and mileage data, and the channel split is not published.",
-        "scopeNote": "The 8.0M is a passenger-car-only estimate. RecyBEM's 2024 placement of 9,990,534 tyres (net of 1,874,255 exported with restitution) also covers light-van, caravan and trailer tyres, so the research takes 80% of it (range 76-82%). The research puts unrecorded cross-border and leakage demand at about 0.5-0.7M outside the 8.0M. Everything below the market figure is modelled, not published.",
+        "boxNote": "Boxes are the channels as named under \"By channel\". Industry is gross pool sell-in to Dutch-invoiced customers (7.12M), including about 1.5M that Dutch hubs re-export, so it compares with Europool's gross figure and not with domestic sales; Export is that re-export layer, and the 8.0M market is net of it. The import box is the 2.38M of non-pool and parallel imports, shown going through wholesale. The research sends 0.35M of it straight to channels; the model has no such flow, so that volume sits in the direct box and 'industry sold to wholesale' (4.37M) reads 0.35M lower than the research's pool to wholesale plus re-export (4.72M). Online is the seller of record and leaves out about 0.75M bought from foreign webshops. Private and commercial (company, lease and fleet cars, not vans) are modelled from lease-fleet and mileage data, and the channel split is not published.",
+        "scopeNote": "The 8.0M is a passenger-car-only estimate. RecyBEM's 2024 placement of 9,990,534 tyres (net of 1,874,255 exported with restitution) also covers light-van, caravan and trailer tyres, so the research takes 80% of it. The 80 / 16 / 4 split between passenger cars, vans and light trucks, and caravan, trailer and other is an assumption, because RecyBEM does not publish placements by tyre type. About 0.7-0.75M passenger-car tyres bought from foreign webshops are not declared and sit outside the 8.0M. Everything below the market figure is modelled, not published. On the same basis the research's 2026 figures are: market 8.2M, domestic pool 5.85M, imports 2.35M, re-export 1.65M, wholesale 5.35M, direct 2.85M, private 6.2M and commercial 2.0M.",
         "seasons": {}
       },
       "refs": [
-        "Method (replaced with the newest Netherlands research file, October 2026): the supply flows, channel totals, wholesale versus direct split and private versus commercial split now follow the research's reconciled 2024 table (specialists and garages 6.0M, dealers 1.05M, other retail 0.15M, online 0.80M, 8.0M in total), replacing the earlier 72.5 / 13.5 / 3 / 11% shares and the 6.5M pool plus 1.5M non-pool supply. No Dutch source publishes sell-out by these channels or supply routes, so everything below the market figure is an estimate.",
-        "Market size (checked on RecyBEM's AVV-monitor autobanden 2024, dated 31 July 2025, figures as of 22 July 2025 and open to correction): 11,864,789 tyres declared, of which 1,874,255 were exported with restitution (38 exporting members), leaving 9,990,534 placed on the Dutch market (9,970,822 by members and 19,712 by one-off declarants). The scope is car, light-van, caravan and trailer tyres, new or used. 10,532,036 tyres were collected, 106% of placements. RecyBEM expects the final 2024 figure to reach at least 10.9M, because not every first placement was paid for; foreign webshops are named elsewhere as a growing gap, but the monitor does not link them to the 10.9M. The research takes 80% as passenger cars (7.99M, range 7.6-8.2M) from a parc-and-mileage cross-check of 76-82% (about 9.25M cars on CBS StatLine, about 1.1M vans, caravan and trailer tyres 3-4%; research figures, not checked). The 80% is an assumption. RecyBEM's February 2026 newsletter (quoted by the research, not checked) puts 2025 at about 9.9M, so 2024 was normal to strong, not a peak. The VACO/GfK 2019 estimate of about 8.5M for cars and light vans is dated.",
-        "Parc, mileage and lease fleet: Dutch passenger cars drove about 122 billion km in 2024, privately owned cars about 11,100 km and company cars about 20,300 km each (CBS, checked earlier), and the parc passed 9.4M cars on 1 January 2026. VNA's Autoleasemarkt in cijfers 2025 (checked) shows 859,700 business-lease cars, 247,900 private-lease cars and 260,400 lease vans at end-2024 (873,500, 241,800 and 256,600 at end-2025). Realised annual mileage at contract end was 26,300 km for business-lease cars and 13,800 km for private-lease cars in 2024 (25,100 and 13,300 in 2025). Lease cars are about 12% of the parc and, by my calculation at the 2024 mileages, about 21% of car kilometres; other company fleets come on top. The research sets commercial demand at about 24% (1.95M, up from 20% and 1.62M). It reads lease cars alone as 1.6-1.8M tyres of demand, which I reproduced at about 1.7M. Not published by channel.",
-        "Customs versus domestic balance: gross trade is large and sources disagree, none of it checked. UN Comtrade (quoted in the earlier research) shows 31.746M passenger-car tyres (HS 401110) imported and 21.160M exported in 2024. The research quotes WITS at 21.36M exported in 2023 and IndexBox at 17M exported in 2025, down 33.8%, which implies about 25.7M in 2024 (the research's own arithmetic), and IndexBox average prices of $71 an imported tyre and $91 an exported tyre in 2024. These flows include manufacturer distribution centres and re-export, so they describe a European hub and are not netted against domestic sales. RecyBEM's placement figure is already net of 1.87M tyres (all types) exported with restitution, which is why export is zero here.",
-        "Wholesale versus direct is a modelled split, not a published figure. The research's reconciled flows: pool 6.0M (range 5.4-6.5M) plus non-pool imports 2.0M (1.5-2.6M) make 8.0M. Of the pool, 3.80M goes to wholesale and 2.20M direct; of the imports, 1.64M goes to wholesale and 0.36M direct. That gives wholesale 5.44M (5.0-5.8M) and direct 2.56M (2.2-3.0M), 68 / 32. The model has no imports-direct flow, so it shows all 2.0M of imports through wholesale and 2.56M as the direct box; pool to wholesale therefore reads 3.44M (the research has 3.80M), and the wholesale and direct totals are the research's. Evidence for the import level is thin: import-only RecyBEM members first-placed 2,954,121 tyres of all types (checked), about 2.36M at 80%, but they also import major brands, so that is not non-pool volume; ETRMA's reported 17% rise in 2024 passenger and light-truck imports into the EU27 and UK (quoted by the research, not checked) is a general trend. The earlier split was 6.5M pool, 1.5M imports, 3.75M to wholesale and 2.75M direct (66 / 34). The research quotes the ACM's 2021 merger decision as saying most tyres are sold via wholesalers; I did not find that sentence on the ACM summary page.",
-        "Wholesale layer: Inter-Sprint's own site says it supplies tyre specialists, wholesalers and parts distributors. The research quotes about 2.7M tyres in stock and more than 17,000 SKUs (a 2022 trade article reported about 2.8M and 16,000), but I could not confirm the current figures. Heuver's own site presents it as a B2B wholesaler for truck, agricultural and earthmoving tyres and does not mention passenger-car tyres, so it is not shown as a passenger-car wholesaler. The research counts Heuver's 12-13 Profile outlets as retail inside Profile (not checked).",
-        "Global Automotive Investments Holding (checked on the ACM decision of 10 March 2021 and Tyrepress): the group's operating companies are Inter-Sprint, Van den Ban Autobanden, Tyreteam, Banden Express, Reedijk Banden Import, Inter Tyre Holland and Wheel Tyre, and the ACM cleared its purchase of PBG (Pon Banden Groep, with Mega Tyre and Summa) from Pon Holdings that year. The research estimates the group at 60-75% of Dutch passenger-car wholesale (3.3-4.0M tyres): Banden Express 20-25%, Inter-Sprint 20-25%, Van den Ban 10-15%, PBG 5-10%. LKQ Fource (5-8%, mostly supplied by Inter-Sprint, so not additive) and Alliance Automotive Benelux with Tyfoon (2-5%) sit below it, and other wholesalers and import-only declarants hold 15-25%. These are share-of-node estimates with no company accounts behind them. Group revenue above EUR 1.5bn in 2022 is quoted by the research, not checked; Tyrepress reported 2019 profits above EUR 30M. The research calls it a Visser family holding, which I could not confirm. Van den Ban's '6.5M tyres a year' comes from an undated recruitment text, Inter-Sprint's 'hundreds of containers a month' from a logistics supplier's case study, and Van den Ban's revenue figures (EUR 380.9M for FY 6/2019, EUR 673.1M for '2025' on Vainu) have unclear scope. The Moerdijk and Hellevoetsluis hubs probably move more than 10M tyres of all types a year (research, low confidence), which is European distribution and not Dutch sell-in.",
-        "Retail and online players: no player publishes Dutch unit volumes, so every figure is a research estimate (outlets times an assumed throughput, or a share of the channel) with low to medium confidence. Kwik Fit 0.65-1.0M (165 outlets, checked on kwik-fit.nl; Kwik Fit's European franchising page says over 180 centres, scope unclear). Profile and Distri24 0.45-0.75M (about 170 outlets per the research; a Folderz list shows 176; 95 also serve truck, industrial and agri). Euromaster 0.35-0.6M, 60-70% lease and fleet (80 own plus 26 partner locations in March 2025, or 90 plus 14 in 2024; not checked). Bosch Car Service 0.3-0.5M (about 400-415 workshops per the research; the earlier card said over 425; not checked). Autobandenpartner (LKQ Fource, 400+ garages) 0.25-0.45M, which may overlap Bosch. AutoCrew 0.05-0.15M. Other independent tyre specialists (200-250 firms) 0.9-1.5M and other garages 1.7-2.1M, the balance. Online: Delticom 0.15-0.3M (group revenue EUR 482M and GMV EUR 597M in 2024, checked; the Netherlands is not disclosed), BandenConcurrent 0.15-0.3M, other e-tailers 0.2-0.35M; banden.nl is a comparison site and is excluded. Dealers: no group-level volumes were found. At EUR 65-80 a tyre, sell-in is about EUR 520-640M; WESP retail prices (about EUR 110-125) conflict across articles and were not checked.",
-        "Latest signals: BOVAG's August 2025 sample found almost 39% of cars on all-season tyres. That is a fleet fitment share, not a replacement sales mix. RecyBEM notes that private purchases from foreign online sellers can fall outside the Dutch placement statistics, so the online box is partly invisible in official data."
+        "Method (replaced with the newest Netherlands research file, October 2026): the research reconciles the 9M Europool 'excluding import' figure with RecyBEM's declarations. The market (8.0M), the channel shares and the private versus commercial split are unchanged in substance. What changes is the supply side: the gross layer is now shown (pool sell-in 7.12M and hub re-export 1.50M, replacing a 6.0M domestic pool and an export of zero), non-pool and parallel imports rise from 2.0M to 2.38M, direct from 2.56M to 2.75M, and wholesale from 5.44M to 5.25M. The online channel moves to 0.85M (direct share 59%) and specialists to 5.95M. No Dutch source publishes sell-out by these channels or supply routes, so everything below the market figure is an estimate.",
+        "How the 9M Europool figure fits (research, medium confidence): 9M fits only as gross pool sell-in, consumer scope (car, SUV/4x4 and van), invoiced to Netherlands-registered customers and including about 2M tyres that Dutch hubs re-export. Bridge in million tyres, consumer scope: domestic pool 6.74 + re-export 1.80 = 8.54 gross in 2024, + 0.46 growth to 2026 = about 9.0. At passenger-car share (83.3% of consumer) that is 7.12M gross, 5.62M domestic and 1.50M re-export in 2024, and 7.50M, 5.85M and 1.65M in 2026. The research rejects 9M as domestic consumer pool, because 9.0M plus about 2.85M imports would be about 11.9M declared against RecyBEM's 9.99M placed (2024); it also rejects a much larger domestic market as the explanation, because the leaks RecyBEM names (foreign webshops, tyres from scrapped cars) are non-pool. The alternative reading, 9M as passenger-car only, would need about 1.5M pool tyres invoiced to Dutch entities but shipped abroad without declaration (possible for export hubs, not evidenced). Get the Europool definition sheet (scope, invoice-to or ship-to country, period) before using 9M as the market.",
+        "Market size (checked on RecyBEM's AVV-monitor autobanden 2024, dated 31 July 2025, figures as of 22 July 2025 and open to correction): 11,864,789 tyres declared, of which 1,874,255 were exported with restitution (38 exporting members), leaving 9,990,534 placed on the Dutch market (9,970,822 by members and 19,712 by 116 one-off declarants). 295 members used the 'import only' declaration (about 70% of the membership) and placed 2,954,121 tyres; that leaves regular-method gross of 8,890,956 and net of 7,016,701 (arithmetic checked). The report lists 'Gegevens ETRMA' among the controls the environment inspectorate (ILT) described for checking declarations, but does not say how the data is used, so the research's step that regular declarations match pool sell-in is its own inference. RecyBEM expects the final 2024 figure to reach at least 10.9M. Later figures are from RecyBEM newsletters quoted by the research and not checked: about 9.9M placed and 10.4M collected in 2025, and 6.45M placed (6.94M collected) in January-August 2026 against 6.22M a year earlier (+3.7%), which the research projects to about 10.25M for 2026 using the 62.8% January-August share of 2025. The research notes that RecyBEM's 2025 newsletters are internally inconsistent (December 2025 swaps 8.5M placed and 8M collected; January 2026 gives the same 8.0M to end-November as to end-October) and treats the February 2026 full-year figure as authoritative.",
+        "Parc, mileage and lease fleet: the Dutch passenger-car parc was just over 9.4M cars on 1 January 2026, 1.8% more than a year earlier, 87.7% (nearly 8.3M) registered to private owners (CBS, checked). VNA's Autoleasemarkt in cijfers 2025 (checked) shows 873,500 business-lease cars (+1.6%), 241,800 private-lease cars (-2.5%), 256,600 lease vans and 1,371,900 in total at end-2025 (859,700, 247,900 and 260,400 at end-2024). Cars returned at contract end averaged 25,100 km a year (business lease) and 13,300 km (private lease) in 2025 (VNA, checked); privately owned cars drove about 11,100 km in 2024 (CBS, checked earlier). On that basis lease is about 21-22% of car kilometres, and with the seasonal two-set fitments the research puts commercial demand at about 24% of passenger-car tyres. Not published by channel.",
+        "Customs versus domestic balance: gross trade is large and sources disagree, none of it checked. UN Comtrade (quoted in the earlier research) shows 31.746M passenger-car tyres (HS 401110) imported and 21.160M exported in 2024. The research quotes WITS at 21.36M exported in 2023 and IndexBox at 17M exported in 2025, down 33.8%, which implies about 25.7M in 2024 (the research's own arithmetic). These flows include manufacturer distribution centres and re-export, so they describe a European hub and are much larger than the 1.5M re-export layer, which is the part RecyBEM refunded. They are not netted against domestic sales.",
+        "Wholesale versus direct is a modelled split, not a published figure. The research's reconciled 2024 flows, passenger cars: pool gross 7.12M, re-export 1.50M, domestic pool 5.62M (3.22M to wholesale, 2.40M direct) plus non-pool and parallel imports 2.38M (2.03M to wholesale, 0.35M direct) make 8.0M, with wholesale 5.25M and direct 2.75M (66 / 34, was 68 / 32). The model has no imports-to-channel flow, so it shows all 2.38M of imports through wholesale and 2.75M as the direct box; 'industry sold to wholesale' therefore reads 4.37M, not the research's 3.22M plus 1.50M. The research's 2026 figures are 5.35M wholesale and 2.85M direct. The pool and import split is a range of plus or minus 0.3M, because 'import only' volume includes pool brands bought abroad. The research quotes the ACM's 2021 merger decision as saying most tyres are sold via wholesalers; I did not find that sentence on the ACM summary page.",
+        "Wholesale layer (2026 basis, wholesale node 5.35M; volume passed from one wholesaler to another is not added twice): Global Automotive Investments Holding is cut to 2.9-3.6M domestic, about 60% of the node (was 3.3-4.0M), because the node is smaller than assumed and Fource volume must not be counted twice. The research bases this on EW Top 500 revenue of EUR 1.93bn (2025 edition) and EUR 1.8bn (2023), mostly exports and other EU countries (not checked). Inter-Sprint 0.9-1.3M, including volume to Fource (stock quoted at 2.7-3.8M tyres depending on the source, hundreds of containers a month go abroad; I could not confirm current figures). Banden Express with Reedijk 1.0-1.3M (12 depots, deliveries 3 times a day, 100+ vans; not checked). Van den Ban 0.4-0.7M, mostly export (139 employees per Tracxn, July 2026; revenue figures of unclear scope). PBG / Mega Tyre 0.3-0.5M. LKQ Fource and Autobandenpartner 0.3-0.5M is pass-through inside Global Automotive and is not added. Alliance Automotive Benelux with Tyfoon 0.1-0.3M, largely Tyfoon private label imported. Other wholesalers and importers 1.5-2.2M is the remainder (derived, low confidence). Heuver's own site presents it as a B2B wholesaler for truck, agricultural and earthmoving tyres and does not mention passenger-car tyres, so it is not shown as a passenger-car wholesaler.",
+        "Global Automotive Investments Holding (checked on the ACM decision of 10 March 2021 and Tyrepress): the group's operating companies are Inter-Sprint, Van den Ban Autobanden, Tyreteam, Banden Express, Reedijk Banden Import, Inter Tyre Holland and Wheel Tyre, and the ACM cleared its purchase of PBG (Pon Banden Groep, with Mega Tyre and Summa) from Pon Holdings that year. Its Dutch share of wholesale is a share-of-node estimate with no company accounts behind it: the 2023-2025 KvK accounts were filed but sit behind a paywall and were not reviewed, and group revenue covers the whole group across Europe, so it is not a Dutch volume.",
+        "Retail and online players (2026 basis): no player publishes Dutch unit volumes, so every figure is a research estimate (outlets times an assumed throughput, or a share of the channel) with low to medium confidence. Kwik Fit 0.70-1.0M (165 outlets on kwik-fit.nl; Autointernationaal, 6 Sept 2026, says 160 today and BNR, 7 Sept 2026, has director Paul Traas planning growth by almost 10% to 175; both checked, and the research notes the conflict between the website figure and the 160). Profile and Distri24 0.45-0.75M ('more than 200 outlets in Belgium and the Netherlands' including truck sites per the research, about 170 in the Netherlands; not checked). Euromaster 0.35-0.6M, about 65% commercial (80 own plus 26 partner locations in March 2025 and about 120,000 lease wheel swaps a year; not checked). Bosch Car Service 0.3-0.5M (no new data). Autobandenpartner garages 0.25-0.45M of fitted volume, the same tyres as Fource's sell-in. AutoCrew 0.05-0.15M. Online: Delticom Netherlands 0.15-0.3M, which the research places under autobandenmarkt.nl, banden-giga.nl, bandenprijzen24.nl and probanden.nl (not ReifenDirekt.nl; the shop list is not checked), part of which may sit in the foreign-webshop layer. Delticom group revenue was EUR 484M in 2025 (EUR 482M in 2024) and GMV EUR 601M (EUR 597M), with 2026 guidance of EUR 480-520M (annual report, checked; the release names no countries, so the Netherlands is not disclosed). The research adds Q1 2026 revenue of EUR 99M (-6.1%), not checked. BandenConcurrent 0.15-0.3M (all-season 62.4% of its sales per the research, not checked). Dealers: no group-level volumes were found.",
+        "Latest signals: Tyres Europe (checked) reports European consumer replacement sell-in up 3% in Q2 2026 to 51.987M and up 2% in H1 to 110.133M; all-season was up 15% in Q2 and 9% in H1, summer down 1% and winter down 5%. Its Q1 2026 figure was 58.144M units against 57.499M (+1%; research, not checked); the research flags a typo in the Tyres Europe news index ('Q2 2026 vs Q1 2025, +1%'). EU27 and UK imports of passenger and light-truck tyres were down 6% to 67M units in January-May 2026, with China down 24% to 39M and its share falling from 72% to 58% (Tyres Europe, checked). The EU's definitive anti-dumping duties on Chinese passenger-car and light-truck tyres (Implementing Regulation (EU) 2026/1540, dated 6 July 2026, in force 8 July, checked) range from 4.3% to 45.3%, with 24.4% for the other cooperating Chinese producers (checked on Sicurauto); China supplied nearly 93M units, 28% of the EU market, in 2024 (checked). BOVAG's August 2025 sample found almost 39% of cars on all-season tyres, a fleet fitment share and not a replacement sales mix. RecyBEM notes that private purchases from foreign online sellers can fall outside the Dutch placement statistics.",
+        "Caveats from the research: the 80 / 16 / 4 scope split and the 0.96 consumer factor are assumed, so every passenger-car figure carries that uncertainty; the pool and import categories overlap (see above); group figures such as Global Automotive's revenue are not Dutch volumes; and the research did not find RecyBEM's AVV-monitor for 2025, so it suggests asking RecyBEM or Band & Milieu for the 2025 split by declaration method. For Vredestein the research recommends tagging its own invoices by ship-to country (to get its own re-export ratio against the market-wide 22%, 1.87 / 8.54), using RecyBEM's monthly Bandenbalans as the domestic check, and treating the 60% concentration at Global Automotive as a key-account risk."
       ],
       "scope": "Passenger-car replacement tyres (excludes vans, trailer and caravan tyres)",
       "unit": "million tyres",
