@@ -942,7 +942,8 @@
             "value": 650,
             "metric": "branches",
             "label": "~650+ branches"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Kwik Fit (~600, ETEL/Itochu)",
@@ -954,7 +955,8 @@
             "value": 600,
             "metric": "branches",
             "label": "~600 branches"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Protyre (186+, Micheldever/Sumitomo)",
@@ -966,7 +968,8 @@
             "value": 186,
             "metric": "branches",
             "label": "186+ branches"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "First Stop UK (150, Bridgestone — targeting 220)",
@@ -978,14 +981,16 @@
             "value": 150,
             "metric": "branches",
             "label": "150 branches (targeting 220)"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "HiQ (Goodyear franchise)",
           "model": "Manufacturer-owned franchise (Goodyear)",
           "territories": [
             "__NATIONWIDE__"
-          ]
+          ],
+          "flowChannel": "spec"
         },
         {
           "name": "Point S UK (300+ independent centres)",
@@ -997,21 +1002,24 @@
             "value": 300,
             "metric": "centres",
             "label": "300+ independent centres"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Bosch Car Service UK",
           "model": "Independent multi-brand workshop network",
           "territories": [
             "__NATIONWIDE__"
-          ]
+          ],
+          "flowChannel": "spec"
         },
         {
           "name": "Blackcircles (Michelin, online)",
           "model": "Manufacturer-owned online retailer (Michelin)",
           "territories": [
             "__NATIONWIDE__"
-          ]
+          ],
+          "flowChannel": "onl"
         },
         {
           "name": "Micheldever Tyre Services",
@@ -1057,19 +1065,22 @@
             "value": 604,
             "metric": "garages",
             "label": "part of Halfords' 604-garage estate (up from 372)"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Lodge Tyres (Halfords)",
           "model": "Fast-fit / auto-centre chain",
           "territories": [
             "__NATIONWIDE__"
-          ]
+          ],
+          "flowChannel": "spec"
         },
         {
           "name": "F1 Autocentres",
           "model": "Fast-fit / auto-centre chain",
-          "territories": []
+          "territories": [],
+          "flowChannel": "spec"
         }
       ],
       "noteBadge": null,
@@ -1194,7 +1205,8 @@
             "value": 0.85,
             "metric": "est. M PCR tyres a year",
             "label": "2026 basis: 165 outlets on kwik-fit.nl; Autointernationaal (6 Sept 2026) says 160 today and BNR (7 Sept 2026) has director Paul Traas planning growth by almost 10% to 175 (checked). Est. 0.70-1.0M tyres a year (was 0.65-1.0M), mostly bought direct (research estimate, medium confidence)"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Profile Tyrecenter (Dutch-origin multi-brand network)",
@@ -1207,7 +1219,8 @@
             "value": 0.6,
             "metric": "est. M PCR tyres a year",
             "label": "2026 basis: about 170 outlets in the Netherlands (a Folderz list shows 176); 'more than 200 outlets in Belgium and the Netherlands' including truck sites (research, not checked). Est. 0.45-0.75M tyres a year, counting Distri24 and Heuver's Profile outlets (research estimate, low-medium confidence)"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Euromaster Nederland (Michelin)",
@@ -1219,7 +1232,8 @@
             "value": 0.5,
             "metric": "est. M PCR tyres a year",
             "label": "2026 basis: 80 own plus 26 partner locations (March 2025) and about 120,000 lease wheel swaps a year (research, not checked); est. 0.35-0.6M tyres a year, about 65% commercial, bought direct from Michelin and A-brands (research estimate, medium-low confidence)"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Bosch Car Service Nederland",
@@ -1231,7 +1245,8 @@
             "value": 0.4,
             "metric": "est. M PCR tyres a year",
             "label": "2026 basis: about 400-415 independent workshops (research, not checked; the earlier card said over 425); est. 0.3-0.5M tyres a year at about 750 a workshop (research estimate, low confidence)"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Autobandenpartner garages (LKQ Fource)",
@@ -1243,7 +1258,8 @@
             "value": 0.35,
             "metric": "est. M PCR tyres a year",
             "label": "2026 basis: 400+ garages (research, not checked); est. 0.25-0.45M tyres a year of fitted volume, the same tyres as Fource's sell-in, so not additive; may overlap Bosch Car Service (research estimate, low confidence)"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "AutoCrew (Bosch-supplied)",
@@ -1255,13 +1271,15 @@
             "value": 0.1,
             "metric": "est. M PCR tyres a year",
             "label": "2026 basis: outlet count not verified; est. 0.05-0.15M tyres a year (research estimate, very low confidence)"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Distri24 (Profile)",
           "model": "Buying group / cooperative",
           "territories": [],
-          "volume": "central purchasing for the Profile network; its volume is counted under Profile"
+          "volume": "central purchasing for the Profile network; its volume is counted under Profile",
+          "flowChannel": "spec"
         },
         {
           "name": "Heuver Banden",
@@ -1270,7 +1288,8 @@
             "2",
             "4"
           ],
-          "volume": "12-13 Profile outlets (research, not checked); their volume is counted under Profile"
+          "volume": "12-13 Profile outlets (research, not checked); their volume is counted under Profile",
+          "flowChannel": "spec"
         },
         {
           "name": "Autobandenmarkt.nl (Delticom)",
@@ -1282,7 +1301,8 @@
             "value": 0.225,
             "metric": "est. M PCR tyres a year",
             "label": "2026 basis: Delticom Netherlands: autobandenmarkt.nl, banden-giga.nl, bandenprijzen24.nl and probanden.nl together (shop list from the research, not checked; the research says ReifenDirekt.nl is not the Dutch shop). Est. 0.15-0.3M tyres a year, part of which may sit in the foreign-webshop layer (research estimate, low confidence). Delticom group revenue EUR 484M and GMV EUR 601M in 2025 (annual report, checked); the Netherlands is not disclosed"
-          }
+          },
+          "flowChannel": "onl"
         },
         {
           "name": "Banden-giga.nl, Bandenprijzen24.nl, Probanden.nl (Delticom)",
@@ -1290,7 +1310,8 @@
           "territories": [
             "__NATIONWIDE__"
           ],
-          "volume": "counted together with Autobandenmarkt.nl under Delticom Netherlands"
+          "volume": "counted together with Autobandenmarkt.nl under Delticom Netherlands",
+          "flowChannel": "onl"
         },
         {
           "name": "BandenConcurrent",
@@ -1302,7 +1323,8 @@
             "value": 0.225,
             "metric": "est. M PCR tyres a year",
             "label": "2026 basis: claims to be the largest online car-tyre supplier in the Netherlands, with fitting at 2,000+ partner garages; all-season 62.4% of its sales (research, not checked). Est. 0.15-0.3M tyres a year (research estimate, low confidence)"
-          }
+          },
+          "flowChannel": "onl"
         }
       ],
       "noteBadge": "caution",
@@ -1336,31 +1358,38 @@
       "flatEntities": [
         {
           "name": "Euromaster Belgium (Michelin)",
-          "model": "Manufacturer-owned franchise (Michelin)"
+          "model": "Manufacturer-owned franchise (Michelin)",
+          "flowChannel": "spec"
         },
         {
           "name": "First Stop (Bridgestone)",
-          "model": "Manufacturer-owned franchise (Bridgestone)"
+          "model": "Manufacturer-owned franchise (Bridgestone)",
+          "flowChannel": "spec"
         },
         {
           "name": "Point S Belgium",
-          "model": "Buying group / cooperative"
+          "model": "Buying group / cooperative",
+          "flowChannel": "spec"
         },
         {
           "name": "Profile Tyrecenter Belgium",
-          "model": "Buying group / cooperative"
+          "model": "Buying group / cooperative",
+          "flowChannel": "spec"
         },
         {
           "name": "Vulco (Goodyear-affiliated)",
-          "model": "Manufacturer-owned franchise (Goodyear)"
+          "model": "Manufacturer-owned franchise (Goodyear)",
+          "flowChannel": "spec"
         },
         {
           "name": "Bosch Car Service",
-          "model": "Independent multi-brand workshop network"
+          "model": "Independent multi-brand workshop network",
+          "flowChannel": "spec"
         },
         {
           "name": "D'Ieteren (dominant VW-group dealer/importer — OE-service channel)",
-          "model": "Consolidated OEM dealer group"
+          "model": "Consolidated OEM dealer group",
+          "flowChannel": "deal"
         },
         {
           "name": "Deldo Autobanden",
@@ -1377,7 +1406,8 @@
         },
         {
           "name": "Groupauto Belgium (Benelux)",
-          "model": "Buying group / cooperative"
+          "model": "Buying group / cooperative",
+          "flowChannel": "spec"
         }
       ],
       "noteBadge": "caution",
@@ -1476,7 +1506,8 @@
             "value": 1.6,
             "metric": "est. M consumer tyres a year",
             "label": "443 workshops in Spain, 540 in Iberia; revenue EUR 430M in 2024 (+8%) incl. franchises, Iberia above EUR 508M (Motor16, checked); about 1.6M light-vehicle tyres, derived from a 2025 company release of more than 1.7M (not checked); its own 'more than 6%' share would imply only about 1.26M; strong in fleet and commercial; buys from Michelin and NEX"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Rodi Motor Services",
@@ -1490,7 +1521,8 @@
             "value": 0.85,
             "metric": "est. M consumer tyres a year",
             "label": "180+ outlets in Spain, Portugal and Andorra; revenue EUR 307.8M in 2025, about EUR 278M in 2024 (research, not checked); est. 0.7-1.0M tyres including truck, assuming 25-35% of revenue is tyres (low confidence); co-owner of NEX"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Norauto España",
@@ -1504,7 +1536,8 @@
             "value": 0.7,
             "metric": "est. M consumer tyres a year",
             "label": "revenue EUR 243.5M in 2024 (registry; EUR 240M in FY Oct-23/Sep-24; research, not checked); est. about 0.7M tyres, assuming about 30% of revenue is tyres at EUR 101.5 a tyre (low confidence); private-label tyres bought direct as well as through wholesalers"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Feu Vert",
@@ -1515,7 +1548,8 @@
             "value": 0.4,
             "metric": "est. M consumer tyres a year",
             "label": "revenue EUR 139.0M (registry, probably 2024, may include Portugal; research, not checked); est. about 0.4M tyres, same method as Norauto (low confidence)"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Aurgi + Motortown",
@@ -1526,7 +1560,8 @@
             "SSW"
           ],
           "owner": "Grupo Mutua (research, not checked)",
-          "volume": "62 + 48 outlets (Motortown in El Corte Inglés car parks); revenue EUR 71.4M, probably 2023; units not estimated"
+          "volume": "62 + 48 outlets (Motortown in El Corte Inglés car parks); revenue EUR 71.4M, probably 2023; units not estimated",
+          "flowChannel": "spec"
         },
         {
           "name": "First Stop (Bridgestone)",
@@ -1535,7 +1570,8 @@
             "__NATIONWIDE__"
           ],
           "owner": "Bridgestone",
-          "volume": "607 outlets in Iberia, end-2025 (48 added in Spain in 2025); no volume published"
+          "volume": "607 outlets in Iberia, end-2025 (48 added in Spain in 2025); no volume published",
+          "flowChannel": "spec"
         },
         {
           "name": "Vulco (Goodyear)",
@@ -1544,7 +1580,8 @@
             "__NATIONWIDE__"
           ],
           "owner": "Goodyear",
-          "volume": "about 290 outlets in Spain and Portugal (2026); no volume published"
+          "volume": "about 290 outlets in Spain and Portugal (2026); no volume published",
+          "flowChannel": "spec"
         },
         {
           "name": "Point S España",
@@ -1552,7 +1589,8 @@
           "territories": [
             "__NATIONWIDE__"
           ],
-          "volume": "57 outlets end-2025, 72 by mid-2026, target 90; manufacturer-neutral, multi-source"
+          "volume": "57 outlets end-2025, 72 by mid-2026, target 90; manufacturer-neutral, multi-source",
+          "flowChannel": "spec"
         },
         {
           "name": "Confortauto",
@@ -1561,12 +1599,14 @@
             "__NATIONWIDE__"
           ],
           "owner": "Grupo Soledad",
-          "volume": "700+ workshops in Spain and Portugal (64 own), co-branded with Hankook; its volume is inside Soledad's wholesale volume, so it is not added again"
+          "volume": "700+ workshops in Spain and Portugal (64 own), co-branded with Hankook; its volume is inside Soledad's wholesale volume, so it is not added again",
+          "flowChannel": "spec"
         },
         {
           "name": "Vialider",
           "model": "Specialist tyre retail chain",
-          "territories": []
+          "territories": [],
+          "flowChannel": "spec"
         },
         {
           "name": "Delticom (neumaticos-online.es)",
@@ -1575,7 +1615,8 @@
             "__NATIONWIDE__"
           ],
           "owner": "Delticom AG",
-          "volume": "imports directly as a pure player; Spanish volume not disclosed"
+          "volume": "imports directly as a pure player; Spanish volume not disclosed",
+          "flowChannel": "onl"
         },
         {
           "name": "Oponeo",
@@ -1583,7 +1624,8 @@
           "territories": [
             "__NATIONWIDE__"
           ],
-          "volume": "877 partner garages for fitting (research, not checked); imports directly; Spanish volume not disclosed"
+          "volume": "877 partner garages for fitting (research, not checked); imports directly; Spanish volume not disclosed",
+          "flowChannel": "onl"
         }
       ],
       "noteBadge": "caution",
@@ -1622,31 +1664,38 @@
             "value": 350,
             "metric": "centres",
             "label": "350+ centres"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Driver (Prometeon/Pirelli-linked franchise)",
-          "model": "Manufacturer-owned franchise (Pirelli)"
+          "model": "Manufacturer-owned franchise (Pirelli)",
+          "flowChannel": "spec"
         },
         {
           "name": "Pneus Expert",
-          "model": "Specialist tyre retail chain"
+          "model": "Specialist tyre retail chain",
+          "flowChannel": "spec"
         },
         {
           "name": "Point S Italia",
-          "model": "Buying group / cooperative"
+          "model": "Buying group / cooperative",
+          "flowChannel": "spec"
         },
         {
           "name": "First Stop (Bridgestone)",
-          "model": "Manufacturer-owned franchise (Bridgestone)"
+          "model": "Manufacturer-owned franchise (Bridgestone)",
+          "flowChannel": "spec"
         },
         {
           "name": "Norauto / Feu Vert",
-          "model": "Fast-fit / auto-centre chain"
+          "model": "Fast-fit / auto-centre chain",
+          "flowChannel": "spec"
         },
         {
           "name": "Bosch Car Service",
-          "model": "Independent multi-brand workshop network"
+          "model": "Independent multi-brand workshop network",
+          "flowChannel": "spec"
         },
         {
           "name": "Franco Gomme (Fintyre)",
@@ -1771,19 +1820,22 @@
             "value": 69,
             "metric": "branches",
             "label": "69 branches and 68 specialist workshops, a national auto accessories, workshop and tyre retailer"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "A.T.U (exited Austria Feb 2024 — sold to Lucky Car)",
           "model": "Manufacturer-owned franchise (Mobivia) — historical, no longer present",
-          "territories": []
+          "territories": [],
+          "flowChannel": "spec"
         },
         {
           "name": "Euromaster Austria (Michelin)",
           "model": "Manufacturer-owned franchise (Michelin)",
           "territories": [
             "__NATIONWIDE__"
-          ]
+          ],
+          "flowChannel": "spec"
         },
         {
           "name": "Point S Austria",
@@ -1795,28 +1847,32 @@
             "value": 60,
             "metric": "locations",
             "label": "60+ service locations per its website (a 2022 UTA release quoted 100 locations)"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "First Stop (Bridgestone)",
           "model": "Manufacturer-owned franchise (Bridgestone)",
           "territories": [
             "__NATIONWIDE__"
-          ]
+          ],
+          "flowChannel": "spec"
         },
         {
           "name": "Bosch Car Service",
           "model": "Independent multi-brand workshop network",
           "territories": [
             "__NATIONWIDE__"
-          ]
+          ],
+          "flowChannel": "spec"
         },
         {
           "name": "ReifenDirekt.at / Reifen.at (Delticom)",
           "model": "Online retailer (Delticom)",
           "territories": [
             "__NATIONWIDE__"
-          ]
+          ],
+          "flowChannel": "onl"
         },
         {
           "name": "BestDrive by Continental (formerly Profi Reifen and Reifen John)",
@@ -1828,14 +1884,16 @@
             "value": 50,
             "metric": "workshops",
             "label": "50+ workshops (Profi Reifen and Reifen John, renamed BestDrive from 2022)"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Reifentotal.at",
           "model": "Online retailer",
           "territories": [
             "__NATIONWIDE__"
-          ]
+          ],
+          "flowChannel": "onl"
         },
         {
           "name": "Lucky Car",
@@ -1847,7 +1905,8 @@
           },
           "territories": [
             "__NATIONWIDE__"
-          ]
+          ],
+          "flowChannel": "spec"
         },
         {
           "name": "AUTO PLUS Reifen (Denzel Group)",
@@ -1927,11 +1986,13 @@
             "value": 74,
             "metric": "franchise shops",
             "label": "~73-75 franchise shops"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "First Stop (Bridgestone)",
-          "model": "Manufacturer-owned franchise (Bridgestone)"
+          "model": "Manufacturer-owned franchise (Bridgestone)",
+          "flowChannel": "spec"
         },
         {
           "name": "Gumi Pont / Gumi.hu network (150+ service points)",
@@ -1940,7 +2001,8 @@
             "value": 150,
             "metric": "service points",
             "label": "150+ service points"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Gumik.hu (400+ contracted partners)",
@@ -1949,11 +2011,13 @@
             "value": 400,
             "metric": "contracted partners",
             "label": "400+ contracted partners"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Vianor (Nokian)",
-          "model": "Multi-brand retail network (Nokian-affiliated)"
+          "model": "Multi-brand retail network (Nokian-affiliated)",
+          "flowChannel": "spec"
         },
         {
           "name": "AKH – Abroncs Kereskedőház (gumi.hu)",
@@ -1963,15 +2027,18 @@
         },
         {
           "name": "UNIX Autó Kft",
-          "model": "Buying group / cooperative"
+          "model": "Buying group / cooperative",
+          "flowChannel": "spec"
         },
         {
           "name": "AD Auto Total Kft",
-          "model": "Buying group / cooperative"
+          "model": "Buying group / cooperative",
+          "flowChannel": "spec"
         },
         {
           "name": "Premio Hungary (Goodyear)",
-          "model": "Manufacturer-owned franchise (Goodyear)"
+          "model": "Manufacturer-owned franchise (Goodyear)",
+          "flowChannel": "spec"
         }
       ],
       "noteBadge": "caution",
@@ -1989,56 +2056,67 @@
           "name": "ESA (buying cooperative for Swiss garages)",
           "model": "Buying group / cooperative",
           "owner": "Burgdorf, founded 1930",
-          "volume": "about 7,000 co-owners; est. ~0.8M tyres a year (research estimate)"
+          "volume": "about 7,000 co-owners; est. ~0.8M tyres a year (research estimate)",
+          "flowChannel": "spec"
         },
         {
           "name": "Swiss Tyre Group GmbH",
           "model": "Buying group / cooperative",
           "owner": "Independent tyre dealers, founded 2006",
-          "volume": "17 shareholders, 25 sales points (own site); est. ~0.15M tyres a year (research estimate)"
+          "volume": "17 shareholders, 25 sales points (own site); est. ~0.15M tyres a year (research estimate)",
+          "flowChannel": "spec"
         },
         {
           "name": "Point S Suisse",
           "model": "Buying group / cooperative",
-          "volume": "network size not confirmed (the research could not verify it)"
+          "volume": "network size not confirmed (the research could not verify it)",
+          "flowChannel": "spec"
         },
         {
           "name": "Euromaster Suisse (Michelin)",
           "model": "Manufacturer-owned franchise (Michelin)",
-          "volume": "~30 centres (research, not checked)"
+          "volume": "~30 centres (research, not checked)",
+          "flowChannel": "spec"
         },
         {
           "name": "First Stop (Bridgestone)",
           "model": "Manufacturer-owned franchise (Bridgestone)",
-          "volume": "72+ centres (research, not checked)"
+          "volume": "72+ centres (research, not checked)",
+          "flowChannel": "spec"
         },
         {
           "name": "BestDrive by Continental (formerly Adam Touring and Pneu Egger)",
           "model": "Manufacturer-owned franchise (Continental)",
           "owner": "Contitrade Schweiz AG (Continental)",
-          "volume": "renamed from Adam Touring and Pneu Egger during 2023; 70+ workshops (research, not checked)"
+          "volume": "renamed from Adam Touring and Pneu Egger during 2023; 70+ workshops (research, not checked)",
+          "flowChannel": "spec"
         },
         {
           "name": "Premio Switzerland",
           "model": "Manufacturer-owned franchise (Goodyear)",
-          "volume": "85 partners (research, not checked)"
+          "volume": "85 partners (research, not checked)",
+          "flowChannel": "spec"
         },
         {
           "name": "Emil Frey (Switzerland's largest dealer group, HQ Zürich)",
-          "model": "Consolidated OEM dealer group"
+          "model": "Consolidated OEM dealer group",
+          "flowChannel": "deal"
         },
         {
           "name": "Bosch Car Service",
-          "model": "Independent multi-brand workshop network"
+          "model": "Independent multi-brand workshop network",
+          "flowChannel": "spec"
         },
         {
           "name": "reifen.com",
           "model": "Online retailer (Apollo)",
-          "owner": "Apollo Tyres (Reifencom GmbH, bought 2015)"
+          "owner": "Apollo Tyres (Reifencom GmbH, bought 2015)",
+          "flowChannel": "onl"
         },
         {
           "name": "ReifenDirekt.ch (Delticom)",
-          "model": "Online retailer (Delticom)"
+          "model": "Online retailer (Delticom)",
+          "flowChannel": "onl"
         },
         {
           "name": "Pneuhage",
@@ -2083,23 +2161,28 @@
             "value": 71,
             "metric": "outlets",
             "label": "71 outlets pre-acquisition, ~500 employees"
-          }
+          },
+          "flowChannel": "spec"
         },
         {
           "name": "Euromaster — exited Denmark end-2023/early-2024",
-          "model": "Manufacturer-owned franchise (Michelin)"
+          "model": "Manufacturer-owned franchise (Michelin)",
+          "flowChannel": "spec"
         },
         {
           "name": "Point S Denmark",
-          "model": "Buying group / cooperative"
+          "model": "Buying group / cooperative",
+          "flowChannel": "spec"
         },
         {
           "name": "First Stop (Bridgestone)",
-          "model": "Manufacturer-owned franchise (Bridgestone)"
+          "model": "Manufacturer-owned franchise (Bridgestone)",
+          "flowChannel": "spec"
         },
         {
           "name": "Vianor (Nokian)",
-          "model": "Multi-brand retail network (Nokian-affiliated)"
+          "model": "Multi-brand retail network (Nokian-affiliated)",
+          "flowChannel": "spec"
         },
         {
           "name": "NDI Group (Nordisk Dæk Import)",
@@ -2115,7 +2198,8 @@
         },
         {
           "name": "Vulkan Dæk A/S",
-          "model": "Fast-fit / auto-centre chain"
+          "model": "Fast-fit / auto-centre chain",
+          "flowChannel": "spec"
         }
       ],
       "noteBadge": "caution",
@@ -2157,31 +2241,36 @@
         {
           "name": "Euromaster Poland (Michelin)",
           "model": "Manufacturer-owned franchise (Michelin)",
-          "territories": []
+          "territories": [],
+          "flowChannel": "spec"
         },
         {
           "name": "Premio Poland (Goodyear)",
           "model": "Manufacturer-owned franchise (Goodyear)",
-          "territories": []
+          "territories": [],
+          "flowChannel": "spec"
         },
         {
           "name": "Bosch Car Service Poland",
           "model": "Independent multi-brand workshop network",
-          "territories": []
+          "territories": [],
+          "flowChannel": "spec"
         },
         {
           "name": "Oponeo.pl",
           "model": "Online retailer",
           "territories": [],
           "owner": "Oponeo.pl S.A.",
-          "volume": "2024 group revenue PLN 2.11bn, up 13% (Poland PLN 1.79bn, all products); the research claims over 30% of tyres, not confirmed"
+          "volume": "2024 group revenue PLN 2.11bn, up 13% (Poland PLN 1.79bn, all products); the research claims over 30% of tyres, not confirmed",
+          "flowChannel": "onl"
         },
         {
           "name": "Motointegrator.pl (Inter Cars)",
           "model": "Online retailer (Inter Cars)",
           "territories": [],
           "owner": "Inter Cars S.A.",
-          "volume": "the research lists it as a separate wholesaler, but it is an Inter Cars online project (Auto Swiat, 2014)"
+          "volume": "the research lists it as a separate wholesaler, but it is an Inter Cars online project (Auto Swiat, 2014)",
+          "flowChannel": "onl"
         }
       ],
       "noteBadge": "caution",
