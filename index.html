@@ -831,8 +831,11 @@ function renderChannelLayers(c, flow, ci){
   const allEnts=[...(c.channels||[]).flatMap(ch=>ch.entities||[]), ...(c.flatEntities||[])];
   const wsEnts=allEnts.filter(e=>isWholesaleModel(e.model));
   const hasCh=!!(c.channels&&c.channels.length);
+  const retailFlat=(c.flatEntities||[]).filter(e=>!isWholesaleModel(e.model));
+  const fcIds=flow?flow.channels.map(fc=>fc.id):[];
+  const grouped=!!(flow&&!hasCh&&retailFlat.some(e=>fcIds.includes(e.flowChannel)));
   let h='';
-  if(flow) h+=`<p class="lv-intro">Same layers as the flow model. Tyres reach the channels either <b style="color:#C0392B">through wholesale</b> or <b style="color:#2B5BD9">direct from the manufacturers</b>. Wholesalers are listed once, in the wholesale layer, and not repeated in the channels below.</p>`;
+  if(flow) h+=`<p class="lv-intro">Same layers${grouped?' and the same channel headers':''} as the flow model. Tyres reach the channels either <b style="color:#C0392B">through wholesale</b> or <b style="color:#2B5BD9">direct from the manufacturers</b>. Wholesalers are listed once, in the wholesale layer, and not repeated in the channels below.${grouped?' Each retailer, network or online seller is listed once, under the channel it mainly sells through, so you can see which players sit behind each box of the flow model.':''}</p>`;
   if(c.note || (c.flatEntities && c.flatEntities.length)){
     h+=`<div class="note-box" style="margin-bottom:10px;">${badgeHtml(c.noteBadge)} ${esc((c.note||'').replace(/^(Gap|Hard|Value only|Not units|Outdated|Caveat)\s*/,''))}</div>`;
   }
@@ -889,15 +892,43 @@ function renderChannelLayers(c, flow, ci){
       </details>`;
     }).join('');
   }
-  // --- retail entities not assigned to a channel (flat countries, or leftovers) ---
-  const retailFlat=(c.flatEntities||[]).filter(e=>!isWholesaleModel(e.model));
-  if(retailFlat.length || (flow && !hasCh)){
-    const strip=(flow&&!hasCh)
+  // --- flat countries: group the named retail players under the flow model's own channel headers ---
+  let leftovers=retailFlat;
+  if(grouped){
+    const lead=(s,max)=>{ s=String(s||'').trim(); if(s.length<=max) return s; const re=/[.!?]\s+(?=[A-Z0-9(])/g; let m, end=-1; while((m=re.exec(s))){ const e=m.index+1; if(e>max) break; end=e; } return end>0?s.slice(0,end):s.slice(0,max).replace(/\s+\S*$/,'')+' …'; };
+    h+=`<div class="layer-cap">Channels · where the tyres reach the end customer${has('market')?` · ${fvFmt(val.market)}M`:''}</div>`;
+    h+=flow.channels.map(fc=>{
+      const T='ch.'+fc.id+'.tot', W='ch.'+fc.id+'.ws', D='ch.'+fc.id+'.dir';
+      const ents=retailFlat.filter(e=>e.flowChannel===fc.id);
+      const share=(has(T)&&val.market>0)?Math.round(100*val[T]/val.market):0;
+      const cell=(flow.cells||{})[T];
+      const split=`<div class="channel-split">${has(W)&&has(D)
+        ? `<span><b class="ch-ws">${fvFmt(val[W])}M</b> via wholesale</span><span>·</span><span><b class="ch-dir">${fvFmt(val[D])}M</b> direct</span>`
+        : '<span class="ch-miss">wholesale vs direct split: needs input</span>'}${goto('ch:'+fc.id)}</div>`;
+      return `<details class="channel" data-jump-target="ch:${esc(fc.id)}" open>
+        <summary>
+          <div class="channel-name">${esc(fc.name)}</div>
+          <div class="channel-bar-wrap"><div class="channel-bar-track"><div class="channel-bar-fill" style="width:${Math.min(share,100)}%"></div></div></div>
+          <div class="channel-share">${has(T)?share+'%':''}</div>
+          <div class="channel-vol">${has(T)?fvFmt(val[T])+'M':'needs input'}</div>
+          ${split}
+        </summary>
+        <div class="channel-body">
+          ${cell&&cell.source?`<div class="channel-source">${tierPill(tier[T])} Size of this channel: ${esc(lead(cell.source,300))}</div>`:''}
+          ${ents.length?chipListHtml(ents):'<p class="layer-empty">No players named for this channel yet.</p>'}
+        </div>
+      </details>`;
+    }).join('');
+    leftovers=retailFlat.filter(e=>!fcIds.includes(e.flowChannel));
+  }
+  // --- retail entities not assigned to a channel (flat countries without grouping, or leftovers) ---
+  if(leftovers.length || (flow && !hasCh && !grouped)){
+    const strip=(flow&&!hasCh&&!grouped)
       ? flow.channels.filter(fc=>has('ch.'+fc.id+'.tot')).map(fc=>`${esc(fc.name)} <b>${fvFmt(val['ch.'+fc.id+'.tot'])}M</b>`).join(' · ') : '';
     h+=`<div class="layer-block layer-retail" data-jump-target="retail">
-      <div class="layer-head"><div class="layer-title">${!flow?'Other named entities (not wholesale)':(hasCh?'Other named retail and networks':'Retail, networks and online')}</div>${flow&&!hasCh&&flow.channels.length?goto('ch:'+flow.channels[0].id):''}</div>
+      <div class="layer-head"><div class="layer-title">${!flow?'Other named entities (not wholesale)':((hasCh||grouped)?'Other named retail and networks':'Retail, networks and online')}</div>${flow&&!hasCh&&!grouped&&flow.channels.length?goto('ch:'+flow.channels[0].id):''}</div>
       ${strip?`<p class="layer-sub">Channel sizes in the flow model${flow&&has('market')?` (${fvFmt(val.market)}M in total)`:''}: ${strip}. The names below are not yet assigned to a channel.</p>`:''}
-      ${retailFlat.length?chipListHtml(retailFlat):'<p class="layer-empty">No retail names yet.</p>'}
+      ${leftovers.length?chipListHtml(leftovers):'<p class="layer-empty">No retail names yet.</p>'}
     </div>`;
   }
   return h;
@@ -1034,7 +1065,10 @@ function renderFlowView(c, flow){
   const LB={market:'Replacement market',industry:'Industry (ETRMA pool)',toWs:'Industry sold to wholesale',direct:'Direct from the manufacturers to the channels',import:'Wholesale import (non-pool)',export:'Export',wsDom:'Wholesale sold in '+c.country,prvAll:'Private demand, all channels',comAll:'Commercial demand, all channels'};
   flow.channels.forEach(ch=>{ const nm=nameOf(ch); LB[T0(ch.id)]=nm+' \u00b7 total'; LB[W0(ch.id)]=nm+' \u00b7 via wholesale'; LB[D0(ch.id)]=nm+' \u00b7 direct'; LB[P0(ch.id)]=nm+' \u00b7 private'; LB[C0(ch.id)]=nm+' \u00b7 commercial'; });
   (flow.groups||[]).forEach(g=>{ LB['g.'+g.id]=g.name; });
-  FV_TIP[c.country]={flow,labels:LB};
+  const FE={};
+  (c.flatEntities||[]).forEach(e=>{ if(e.flowChannel&&e.name&&!isWholesaleModel(e.model)) (FE[e.flowChannel]=FE[e.flowChannel]||[]).push(e.name); });
+  (c.channels||[]).forEach(ch=>{ if(ch.flowBox) FE[ch.flowBox]=(ch.entities||[]).filter(e=>e.name&&!isWholesaleModel(e.model)).map(e=>e.name); });
+  FV_TIP[c.country]={flow,labels:LB,ents:FE};
   const hr=(x,y,w,h,id)=>`<path class="fv-tip-t fv-hit-r" data-fid="${id}" d="M${x} ${y}h${w}v${h}h${-w}z" fill="transparent"/>`;
   const hl=(d,id)=>`<path class="fv-tip-t fv-hit-l" data-fid="${id}" d="${d}" fill="none" stroke="transparent" stroke-width="16" stroke-linejoin="round" pointer-events="stroke"/>`;
   const dot=(x,y,id)=>has(id)?`<circle cx="${x}" cy="${y}" r="3.2" fill="${FV_COL[tier[id]]||'#999'}"/>`:'';
@@ -1075,7 +1109,7 @@ function renderFlowView(c, flow){
     s+=line(`M${rx(i)} ${redY} V${topY-4}`,RED,Wc(ch.id),true);
     s+=line(`M${bx(i)} ${bluY} V${topY-4}`,BLUE,D(ch.id),true);
     const x=lx(i), known=has(T(ch.id));
-    s+=`<g class="fv-jump" data-jump="${(c.channels||[]).some(x=>x.flowBox===ch.id)?'ch:'+esc(ch.id):'retail'}" data-jump-target="ch:${esc(ch.id)}">`;
+    s+=`<g class="fv-jump" data-jump="${((c.channels||[]).some(x=>x.flowBox===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel))?'ch:'+esc(ch.id):'retail'}" data-jump-target="ch:${esc(ch.id)}">`;
     s+=`<rect x="${x}" y="${topY}" width="${CW}" height="118" rx="8" fill="#fff" stroke="${BLUE}" ${known?'':'stroke-dasharray="4 3"'}/>`;
     fvWrap(nameOf(ch),Math.max(13,Math.floor((CW-12)/6.3))).slice(0,3).forEach((t,k)=>{ s+=`<text x="${x+CW/2}" y="${topY+16+k*12}" text-anchor="middle" style="font-size:10.5px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
     [['Total',T(ch.id),INK,86],['via wholesale',Wc(ch.id),RED,88],['direct',D(ch.id),BLUE,90]].forEach(([lab,id,col],k)=>{
@@ -1184,6 +1218,12 @@ function fvTipHtml(country,id,clickable){
     const tiers={}; ins.forEach(i=>{ tiers[tier[i]]=(tiers[tier[i]]||0)+1; });
     const mix=Object.entries(tiers).map(([a,n])=>n+' '+a).join(', ');
     h+=`<div class="tip-by">Built from ${ins.length} other figure${ins.length===1?'':'s'} (${esc(mix)}). A calculated figure is only as reliable as its inputs; hover those boxes to see the basis of each one.</div>`;
+  }
+  const cm=/^ch\.([^.]+)\.(tot|ws|dir|prv|com)$/.exec(id), pl=cm&&Tp.ents&&Tp.ents[cm[1]];
+  if(pl&&pl.length){
+    h+=`<div class="tip-sec">Named players in this channel (${pl.length})</div><div class="tip-src">${pl.slice(0,8).map(esc).join(', ')}${pl.length>8?` and ${pl.length-8} more`:''}</div><div class="tip-by">Listed in full under By channel. A player is listed once, under the channel it mainly sells through, so its volume is not split across channels.</div>`;
+  } else if(cm&&cm[2]==='tot'&&Tp.ents&&Object.keys(Tp.ents).some(k=>Tp.ents[k]&&Tp.ents[k].length)){
+    h+=`<div class="tip-sec">Named players in this channel</div><div class="tip-src">None named yet.</div>`;
   }
   const checks=[], sig=k=>k.map(([i,co])=>i+':'+co).join('|'), usedSig=how[id]?sig(how[id]):'';
   flowCons(flow).forEach(k=>{
