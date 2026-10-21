@@ -253,6 +253,39 @@
   .fv-tip li .ck{ position:absolute; left:0; font-weight:700; }
   .fv-tip li.ok .ck{ color:#2F6F62; } .fv-tip li.bad .ck{ color:#C0392B; }
   .fv-tip .tip-foot{ margin-top:9px; padding-top:7px; border-top:1px solid var(--hairline); font-size:11px; color:var(--ink-soft); }
+  .fv-tip .tip-what{ margin:4px 0 2px; font-size:11.5px; color:var(--ink-soft); font-style:italic; }
+  .fv-tip ol.tip-how{ margin:0; padding-left:18px; }
+  .fv-tip ol.tip-how li{ padding-left:0; margin:3px 0; font-size:12px; position:static; list-style:decimal; }
+  .fv-tip .tip-q{ margin:4px 0 6px; padding:5px 8px; border-left:3px solid #B5701E; background:#FBF6EE; border-radius:0 6px 6px 0; }
+  .fv-tip .tip-qt{ font-size:12px; color:#2A3347; }
+  .fv-tip .tip-qen{ margin-top:2px; font-size:11px; color:var(--ink-soft); }
+  .fv-tip .tip-qby{ margin-top:2px; font-size:10.5px; color:var(--ink-soft); }
+  .fv-tip .tip-sure{ font-size:11.5px; }
+  .fv-tip .tip-warn{ margin-top:8px; padding:6px 8px; background:#FFF6E0; border:1px solid #EBCB8B; border-radius:6px; font-size:11.5px; line-height:1.45; }
+  .fv-tip{ max-height:calc(100vh - 16px); overflow:hidden; }
+  .fv-lv{ display:inline-block; padding:1px 8px; border-radius:10px; font-size:10.5px; font-weight:700; letter-spacing:.3px; text-transform:uppercase; margin-right:6px; }
+  .fv-walk{ margin:10px 0 12px; border:1px solid var(--hairline); border-radius:10px; background:#fff; padding:10px 14px; }
+  .fv-walk>summary{ cursor:pointer; font-weight:700; font-size:13px; color:var(--ink); }
+  .fw-list{ margin:10px 0 4px; padding:0; list-style:none; counter-reset:fw; }
+  .fw-list li{ position:relative; padding:3px 0 9px 34px; font-size:12.5px; line-height:1.55; color:#2A3347; }
+  .fw-list li::before{ counter-increment:fw; content:counter(fw); position:absolute; left:0; top:3px; width:22px; height:22px; border-radius:50%; background:#E8EEFB; color:#2B5BD9; font-weight:700; font-size:12px; display:flex; align-items:center; justify-content:center; }
+  .fw-list li.fw-open::before{ background:#F2F3F7; color:#8A93A8; }
+  .fw-why{ display:block; color:var(--ink-soft); font-size:11.5px; margin-top:1px; }
+  .fw-gloss,.fw-note{ font-size:11.5px; color:var(--ink-soft); margin:6px 0 0; line-height:1.5; }
+  .fv-basis summary,.fv-quotes summary{ cursor:pointer; font-weight:600; }
+  .fv-tbl-wrap{ overflow-x:auto; margin-top:6px; }
+  .fv-tbl{ border-collapse:collapse; width:100%; min-width:780px; font-size:11.5px; }
+  .fv-tbl th{ text-align:left; font-size:10px; text-transform:uppercase; letter-spacing:.4px; color:var(--ink-soft); padding:5px 8px; border-bottom:1px solid var(--hairline); }
+  .fv-tbl td{ padding:5px 8px; border-top:1px solid #EEF0F5; vertical-align:top; color:#2A3347; }
+  .fv-tbl td.n{ font-family:var(--mono); font-weight:700; text-align:right; white-space:nowrap; }
+  .fv-tbl td.w{ white-space:nowrap; }
+  .fv-tbl tr.sec td{ background:#F5F6FA; font-weight:700; font-size:10.5px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:.4px; }
+  .fq-ref{ color:#2B5BD9; font-weight:700; text-decoration:none; margin-right:4px; }
+  .fv-qlist{ margin:8px 0 0; padding-left:24px; font-size:12px; line-height:1.5; color:#2A3347; }
+  .fv-qlist li{ margin:0 0 10px; padding:2px 4px; border-radius:6px; }
+  .fv-qlist li.flash{ background:#FFF6E0; }
+  .fq-en,.fq-by,.fq-note,.fq-used{ font-size:11px; color:var(--ink-soft); }
+  .fq-by a{ color:#2B5BD9; }
   @keyframes jumpflash{ 0%,70%{ box-shadow:0 0 0 3px rgba(232,161,0,.7); } 100%{ box-shadow:0 0 0 0 rgba(232,161,0,0); } }
   @keyframes jumpflashsvg{ 0%,70%{ stroke:#E8A100; stroke-width:4; } }
   .jump-flash{ animation:jumpflash 2.4s ease-out; }
@@ -1157,10 +1190,13 @@ function renderFlowView(c, flow){
   const estNote=hasEst?' Blue dots are benchmark estimates, not published figures; the method is under Sources and notes.':'';
   const chip=(id,lab)=>has(id)?`<span class="fv-chip fv-tip-t" data-fid="${id}">${lab} <b>${fvFmt(val[id])}M</b><span class="fv-dot" style="background:${FV_COL[tier[id]]||'#999'};margin:0"></span></span>`:'';
   const strip=[['market','Replacement market'],['prvAll','Private'],['comAll','Commercial']].map(([id,l])=>chip(id,l)).join('');
-  return `<div class="fv-wrap" data-fcountry="${esc(c.country)}"><p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels. <b>Hover any box, line or figure to see how that number was reached.</b>${seasons}</p>
+  const walkHtml=fvWalkHtml(c,flow,R,nameOf), basis=fvBasisHtml(c,flow,R,LB,nameOf);
+  return `<div class="fv-wrap" data-fcountry="${esc(c.country)}"><p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels. <b>Hover any box, line or figure to see how that number was reached.</b> The step-by-step walk-through is just below, and a table of every figure with its source quotes sits under the diagram.${seasons}</p>
     ${strip?`<div class="fv-strip">${strip}</div>`:''}
+    ${walkHtml}
     <div class="fv-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
     <p class="tv-note">Dot colour: ${legend}.${estNote} <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
+    ${basis.table}${basis.qlist}
     ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}</div>`;
 }
 
@@ -1192,32 +1228,115 @@ function fvEq(k,val,L){
   }
   return text;
 }
+/* ---------- plain-language explanations: flow.explain (per figure) and flow.quotes ---------- */
+const FV_LV={High:'#1F6350',Medium:'#9A5B1E',Low:'#A5342A'}, FV_LVBG={High:'#DCEEE7',Medium:'#FBE6D2',Low:'#FBE3E0'};
+function fvExpl(flow,id,val){
+  const e=(flow.explain||{})[id]; if(!e) return null;
+  if(e.v!=null && val[id]!=null && Math.abs(Number(e.v)-Number(val[id]))>0.0005) return {stale:true,v:e.v};
+  return e;
+}
+function fvLvPill(s){ if(!s||!s.l) return ''; return `<span class="fv-lv" style="color:${FV_LV[s.l]||'#555'};background:${FV_LVBG[s.l]||'#eee'}">${escapeHtml(s.l)}</span>`; }
+function fvWhat(flow,id,L,country0){
+  const e=(flow.explain||{})[id]; if(e&&e.what) return e.what;
+  const country=fvThe(country0);
+  const nm=String(L[id]||id).replace(/ · [^·]+$/,'');
+  const m=/^ch\.[^.]+\.(tot|ws|dir|prv|com)$/.exec(id);
+  if(m) return {tot:`All tyres sold through ${nm}, wholesale and direct together.`,ws:`The part of ${nm}'s tyres that reaches it through wholesalers (red line).`,dir:`The part of ${nm}'s tyres that reaches it straight from the manufacturer (blue line).`,prv:`The part of ${nm}'s tyres bought by private owners.`,com:`The part of ${nm}'s tyres bought by companies, leasing firms and fleets.`}[m[1]];
+  if(id.indexOf('g.')===0) return `A published total for a group of channels: ${nm}.`;
+  return ({market:`How many replacement tyres consumers in ${country} fit in one year. Scope: ${flow.scope||'consumer replacement tyres'}.`,
+    industry:`What the big manufacturers that report to ETRMA (the “pool”) sold into ${country} in a year. This is sell-in: manufacturer to trade, not trade to drivers.`,
+    toWs:`The part of the pool's sales that goes to wholesalers and distributors rather than straight to workshops, dealers or online sellers.`,
+    direct:`Tyres that go straight from the manufacturer (or its own networks) to the sales channel, with no independent wholesaler in between.`,
+    import:`Tyres that wholesalers buy from outside the pool, mostly non-pool brands and parallel imports. It is not the customs import figure, which also counts factory and original-equipment flows.`,
+    export:`Tyres that wholesalers or hubs in ${country} sell on abroad. They are in the supply figures but are not fitted in ${country}.`,
+    wsDom:`Everything wholesalers sold inside ${country}: what they receive from the pool plus imports, minus exports.`,
+    prvAll:`Replacement tyres for privately owned cars, all channels together.`,
+    comAll:`Replacement tyres for company, lease and fleet vehicles, all channels together.`})[id]||'';
+}
+function fvThe(c){ return /^(Netherlands|United Kingdom)$/.test(c)?'the '+c:c; }
+function fvSafeUrl(u){ return (typeof u==='string' && /^https?:\/\//i.test(u)) ? u : ''; }
+function fvQuoteTip(flow,keys,max){
+  const Q=flow.quotes||{}, esc=escapeHtml, ks=(keys||[]).filter(k=>Q[k]);
+  let h=ks.slice(0,max).map(k=>{
+    const q=Q[k]; let t=String(q.q); if(t.length>230) t=t.slice(0,230).replace(/\s+\S*$/,'')+' …';
+    const tbl=q.kind==='table', tag=q.role==='context'?' · context only':'';
+    return `<div class="tip-q"><div class="tip-qt">${tbl?'':'“'}${esc(t)}${tbl?'':'”'}</div>`
+      +(q.en?`<div class="tip-qen">In English: ${esc(q.en)}</div>`:'')
+      +`<div class="tip-qby">${esc(q.by)}${tbl?' · table row':''}${tag}</div></div>`;
+  }).join('');
+  if(ks.length>max) h+=`<div class="tip-by">+ ${ks.length-max} more quote${ks.length-max===1?'':'s'} in the table below the diagram.</div>`;
+  return h;
+}
+const FV_PLAIN={
+  pool:'Every tyre the pool sells goes one of two ways: to a wholesaler or straight to a channel. So industry = to wholesale + direct.',
+  wsdom:'Wholesalers sell what they receive from the pool plus what they import, minus what they send abroad.',
+  mkt:'The market is served either by wholesalers or by direct deliveries. So market = wholesale sold + direct.',
+  pc:'Every tyre goes to a private or a commercial customer. So market = private + commercial.',
+  chws:'A channel gets its tyres either through wholesale or direct. So channel total = via wholesale + direct.',
+  chpc:'A channel’s customers are private or commercial. So channel total = private + commercial.',
+  sumws:'The via-wholesale figures of all channels must add up to the wholesale sold in the country.',
+  sumdir:'The direct figures of all channels must add up to the direct total.',
+  sumtot:'The channels together must add up to the market.',
+  sumprv:'The private figures of all channels must add up to the private total.',
+  sumcom:'The commercial figures of all channels must add up to the commercial total.',
+  group:'A published group total is the sum of its member channels.'};
+function fvKind(k){
+  const ids=k.map(x=>x[0]), has=i=>ids.indexOf(i)>=0, cnt=re=>ids.filter(i=>re.test(i)).length;
+  if(has('industry')&&has('toWs')&&has('direct')) return 'pool';
+  if(has('wsDom')&&has('toWs')&&has('import')) return 'wsdom';
+  if(has('market')&&has('wsDom')&&has('direct')) return 'mkt';
+  if(has('market')&&has('prvAll')&&has('comAll')) return 'pc';
+  if(ids.some(i=>/^g\./.test(i))) return 'group';
+  if(ids.length===3&&ids.every(i=>/^ch\./.test(i))) return ids.some(i=>/\.ws$/.test(i))?'chws':'chpc';
+  if(cnt(/^ch\..*\.ws$/)>1) return 'sumws';
+  if(cnt(/^ch\..*\.dir$/)>1) return 'sumdir';
+  if(cnt(/^ch\..*\.tot$/)>1) return 'sumtot';
+  if(cnt(/^ch\..*\.prv$/)>1) return 'sumprv';
+  if(cnt(/^ch\..*\.com$/)>1) return 'sumcom';
+  return '';
+}
 function fvTipHtml(country,id,clickable){
   const Tp=FV_TIP[country]; if(!Tp) return '';
   const flow=Tp.flow, L=Tp.labels, R=flowSolve(flow), val=R.val, tier=R.tier, how=R.how, cell=(flow.cells||{})[id], esc=escapeHtml;
-  const label=L[id]||id;
-  if(!(id in val)) return `<div class="tip-h">${esc(label)}</div><div class="tip-src" style="margin-top:6px">No figure has been published or entered for this box yet, so it shows a dash. The model does not guess a number where there is no basis for one.</div>`;
+  const label=L[id]||id, what=fvWhat(flow,id,L,country);
+  if(!(id in val)) return `<div class="tip-h">${esc(label)}</div>${what?`<div class="tip-what">${esc(what)}</div>`:''}<div class="tip-src" style="margin-top:6px">No figure has been published or entered for this box yet, so it shows a dash. The model does not guess a number where there is no basis for one. It can be filled in the private sell-in editor, and the boxes it connects to will then update.</div>`;
   const t=tier[id], v=val[id], mk=val.market;
   let ctx='';
   const mc=/^ch\.([^.]+)\.(ws|dir|prv|com)$/.exec(id);
   if(mc && ('ch.'+mc[1]+'.tot') in val && val['ch.'+mc[1]+'.tot']>0) ctx=Math.round(100*v/val['ch.'+mc[1]+'.tot'])+'% of this channel';
   else if(id!=='market' && mk>0) ctx=Math.round(100*v/mk)+'% of the market';
   let h=`<div class="tip-h">${esc(label)} ${tierPill(t)}</div><div class="tip-v">${fvFmt(v)}M<small>${esc(flow.unit&&flow.unit!=='million tyres'?flow.unit:'tyres')}${ctx?' · '+ctx:''}</small></div>`;
+  if(what) h+=`<div class="tip-what">${esc(what)}</div>`;
   const entered=cell&&cell.value!=null&&!isNaN(cell.value);
-  h+=`<div class="tip-sec">Where this number comes from</div>`;
-  if(entered){
-    const lead={Published:'Published figure, from a named source.',Derived:'Calculated from published figures.',Estimate:'Estimate, not a published figure.',Team:'Team input.'}[cell.tier]||'Entered figure.';
-    h+=`<div class="tip-lead">${esc(lead)}</div><div class="tip-src">${cell.source?esc(String(cell.source).length>1500?String(cell.source).slice(0,1500).replace(/\s+\S*$/,'')+' … (full text under Sources and notes)':String(cell.source).trim().replace(/([^.!?)'"”])$/,'$1.')):'No source note has been recorded for this figure.'}</div>`;
-    const by=[cell.by?(cell.by==='research'?'entered from the country research':'entered by '+cell.by):'',cell.asOf?('data year '+cell.asOf):''].filter(Boolean).join(', ');
-    if(by) h+=`<div class="tip-by">${esc(by.charAt(0).toUpperCase()+by.slice(1))}.</div>`;
-  } else if(how[id]){
-    const k=how[id], uco=k.find(([i])=>i===id)[1];
-    const T=fvTerms(k.map(([i,co])=>[i,-co/uco]),val,L,id);
-    h+=`<div class="tip-lead">Calculated, not entered directly.</div><div class="tip-f">${esc(L[id]+' '+fvFmt(v)+' = '+fvJoin(T))}</div>`;
-    const ins=k.filter(([i])=>i!==id).map(([i])=>i);
-    const tiers={}; ins.forEach(i=>{ tiers[tier[i]]=(tiers[tier[i]]||0)+1; });
-    const mix=Object.entries(tiers).map(([a,n])=>n+' '+a).join(', ');
-    h+=`<div class="tip-by">Built from ${ins.length} other figure${ins.length===1?'':'s'} (${esc(mix)}). A calculated figure is only as reliable as its inputs; hover those boxes to see the basis of each one.</div>`;
+  const ex=fvExpl(flow,id,val);
+  if(ex&&!ex.stale){
+    if(ex.how&&ex.how.length) h+=`<div class="tip-sec">How we got there</div><ol class="tip-how">${ex.how.map(s=>`<li>${esc(s)}</li>`).join('')}</ol>`;
+    h+=`<div class="tip-sec">Where it comes from</div>`;
+    if(ex.src) h+=`<div class="tip-src">${esc(ex.src)}</div>`;
+    const qh=fvQuoteTip(flow,ex.q,2);
+    if(qh) h+=qh;
+    else if(entered&&cell.tier==='Published') h+=`<div class="tip-by">No quote kept: the original source could not be opened or quoted.</div>`;
+    else if(entered&&cell.tier==='Estimate') h+=`<div class="tip-by">No published source to quote: this is an estimate or assumption.</div>`;
+    if(ex.sure) h+=`<div class="tip-sec">How sure are we</div><div class="tip-sure">${fvLvPill(ex.sure)}${esc(ex.sure.w||'')}</div>`;
+    if(ex.check) h+=`<div class="tip-warn"><b>Heads-up.</b> ${esc(ex.check)}</div>`;
+  } else {
+    if(ex&&ex.stale) h+=`<div class="tip-warn">The written explanation for this box was made for ${esc(fvFmt(ex.v))}M and is hidden because the figure has changed since. The original source note is shown instead.</div>`;
+    h+=`<div class="tip-sec">Where this number comes from</div>`;
+    if(entered){
+      const lead={Published:'Published figure, from a named source.',Derived:'Calculated from published figures.',Estimate:'Estimate, not a published figure.',Team:'Team input.'}[cell.tier]||'Entered figure.';
+      h+=`<div class="tip-lead">${esc(lead)}</div><div class="tip-src">${cell.source?esc(String(cell.source).length>900?String(cell.source).slice(0,900).replace(/\s+\S*$/,'')+' … (full text under Sources and notes)':String(cell.source).trim().replace(/([^.!?)'"”])$/,'$1.')):'No source note has been recorded for this figure.'}</div>`;
+      const by=[cell.by?(cell.by==='research'?'entered from the country research':'entered by '+cell.by):'',cell.asOf?('data year '+cell.asOf):''].filter(Boolean).join(', ');
+      if(by) h+=`<div class="tip-by">${esc(by.charAt(0).toUpperCase()+by.slice(1))}.</div>`;
+    } else if(how[id]){
+      const k=how[id], uco=k.find(([i])=>i===id)[1];
+      const T=fvTerms(k.map(([i,co])=>[i,-co/uco]),val,L,id);
+      const pl=FV_PLAIN[fvKind(k)];
+      h+=`<div class="tip-lead">Calculated, not entered directly.</div>${pl?`<div class="tip-src">${esc(pl)}</div>`:''}<div class="tip-f">${esc(L[id]+' '+fvFmt(v)+' = '+fvJoin(T))}</div>`;
+      const ins=k.filter(([i])=>i!==id).map(([i])=>i);
+      const tiers={}; ins.forEach(i=>{ tiers[tier[i]]=(tiers[tier[i]]||0)+1; });
+      const mix=Object.entries(tiers).map(([a,n])=>n+' '+a).join(', ');
+      h+=`<div class="tip-by">Built from ${ins.length} other figure${ins.length===1?'':'s'} (${esc(mix)}). A calculated figure is only as reliable as its inputs; hover those boxes to see the basis of each one.</div>`;
+    }
   }
   const cm=/^ch\.([^.]+)\.(tot|ws|dir|prv|com)$/.exec(id), pl=cm&&Tp.ents&&Tp.ents[cm[1]];
   if(pl&&pl.length){
@@ -1225,20 +1344,90 @@ function fvTipHtml(country,id,clickable){
   } else if(cm&&cm[2]==='tot'&&Tp.ents&&Object.keys(Tp.ents).some(k=>Tp.ents[k]&&Tp.ents[k].length)){
     h+=`<div class="tip-sec">Named players in this channel</div><div class="tip-src">None named yet.</div>`;
   }
+  const L2=Object.assign({},L);
+  if(cm){ const nmx={tot:'total',ws:'via wholesale',dir:'direct',prv:'private',com:'commercial'}; Object.keys(nmx).forEach(kk=>{ L2['ch.'+cm[1]+'.'+kk]='this channel\u2019s '+nmx[kk]; }); }
   const checks=[], sig=k=>k.map(([i,co])=>i+':'+co).join('|'), usedSig=how[id]?sig(how[id]):'';
   flowCons(flow).forEach(k=>{
     if(!k.some(([i])=>i===id)||sig(k)===usedSig) return;
     if(!k.every(([i])=>i in val)) return;
-    const txt=fvEq(k,val,L); if(!txt) return;
+    const txt=fvEq(k,val,L2); if(!txt) return;
     const res=k.reduce((a,[i,co])=>a+co*val[i],0), tol=Math.max(0.1,0.01*(val.market||0));
     checks.push([Math.abs(res)<=tol,txt,res]);
   });
   if(checks.length){
-    h+=`<div class="tip-sec">Does it add up?</div><ul>`+checks.slice(0,4).map(([ok,txt,res])=>`<li class="${ok?'ok':'bad'}"><span class="ck">${ok?'✓':'!'}</span>${esc(txt)}${ok?'':' (off by '+fvFmt(Math.abs(res))+')'}</li>`).join('')+`</ul>`;
+    h+=`<div class="tip-sec">Does it add up?</div><ul>`+checks.slice(0,3).map(([ok,txt,res])=>`<li class="${ok?'ok':'bad'}"><span class="ck">${ok?'✓':'!'}</span>${esc(txt)}${ok?'':' (off by '+fvFmt(Math.abs(res))+')'}</li>`).join('')+`</ul>`;
   }
-  h+=`<div class="tip-foot">${clickable?'Click to see who is behind this number in the By channel tab. ':''}The full method and caveats are under Sources and notes below the diagram.</div>`;
+  h+=`<div class="tip-foot">${clickable?'Click to see who is behind this number in the By channel tab. ':''}Every figure, with its source quotes, is in the table below the diagram.</div>`;
   return h;
 }
+/* ---------- flow model: step-by-step walk-through and figure-by-figure table ---------- */
+function fvWalkHtml(c,flow,R,nameOf){
+  const val=R.val, tier=R.tier, esc=escapeHtml, has=id=>id in val;
+  const f=id=>'<b>'+fvFmt(val[id])+'M</b>';
+  const sh=id=>{ const e=fvExpl(flow,id,val); return (e&&!e.stale&&e.short)?`<span class="fw-why">${esc(e.short)}</span>`:''; };
+  const calc=id=>{ const ce=(flow.cells||{})[id]; return !(ce&&ce.value!=null); };
+  const cty=esc(fvThe(c.country)), steps=[];
+  if(has('market')) steps.push(`<b>The market.</b> About ${f('market')} replacement tyres were fitted in ${cty} (${esc(flow.scope||'')}, ${esc(String(flow.year||''))}).${sh('market')}`);
+  if(has('industry')) steps.push(`<b>What the big brands supplied.</b> The manufacturers that report to ETRMA (the “pool”) sold about ${f('industry')} into ${cty}. This is sell-in: manufacturer to trade, not trade to drivers.${sh('industry')}`);
+  const routes=[];
+  if(has('direct')) routes.push(`${f('direct')} goes straight from the manufacturers to the channels (blue lines)${calc('direct')?', calculated as industry minus the wholesale part':''}`);
+  if(has('toWs')) routes.push(`${f('toWs')} goes to wholesalers (red lines)${calc('toWs')?', calculated as industry minus direct':''}`);
+  if(routes.length) steps.push(`<b>Two routes to the channels.</b> ${routes.join('; ')}.${sh('direct')}${sh('toWs')}`);
+  if(has('wsDom')){
+    const fm=[]; if(has('import')) fm.push(`buy ${f('import')} from outside the pool (mostly non-pool brands and parallel imports)`); if(has('export')) fm.push(`sell ${f('export')} abroad`);
+    const calcTxt=(has('toWs')&&has('import')&&has('export'))?` (${fvFmt(val.toWs)} + ${fvFmt(val.import)} − ${fvFmt(val.export)})`:'';
+    steps.push(`<b>Wholesalers add imports and send some abroad.</b> ${fm.length?'They also '+fm.join(' and ')+'. ':''}So wholesalers sold ${f('wsDom')} inside ${cty}${calcTxt}.${sh('import')}${sh('export')}`);
+  }
+  if(has('market')&&has('wsDom')&&has('direct')){
+    const sum=val.wsDom+val.direct, tol=Math.max(0.1,0.01*val.market), ok=Math.abs(sum-val.market)<=tol;
+    steps.push(`<b>Does it close?</b> ${f('wsDom')} via wholesale + ${f('direct')} direct = <b>${fvFmt(sum)}M</b>, ${ok?'which matches the market of '+f('market')+' ✓':'but the market is '+f('market')+', so these figures do not fully agree'}.`);
+  }
+  const chs=(flow.channels||[]).filter(ch=>has('ch.'+ch.id+'.tot'));
+  if(chs.length) steps.push(`<b>The channels.</b> The market is shared across ${chs.length} sales channels: ${chs.map(ch=>`${esc(nameOf(ch))} <b>${fvFmt(val['ch.'+ch.id+'.tot'])}M</b>`).join(', ')}. Each channel gets its tyres through wholesale or direct, which are the red and blue lines in the diagram.`);
+  if(has('prvAll')||has('comAll')){
+    const p=[]; if(has('prvAll')) p.push(`${f('prvAll')} goes to private owners`); if(has('comAll')) p.push(`${f('comAll')} to companies, leasing firms and fleets`);
+    steps.push(`<b>Private or commercial?</b> ${p.join(' and ')}.${sh('prvAll')}${sh('comAll')}`);
+  }
+  const open=[['industry','the pool volume'],['direct','direct deliveries'],['toWs','sales to wholesale'],['import','imports'],['export','exports'],['wsDom','wholesale sold'],['prvAll','private demand'],['comAll','commercial demand']].filter(([id])=>!has(id)).map(x=>x[1]);
+  if(open.length) steps.push(`<span class="fw-openmark"></span><b>Still open.</b> No figure yet for ${open.join(', ')}. They need ETRMA or national data; nothing is guessed in the meantime.`);
+  const note=(flow.meta&&flow.meta.walkNote)?`<p class="fw-note"><b>Good to know.</b> ${esc(flow.meta.walkNote)}</p>`:'';
+  return `<details class="lv-more fv-walk" open><summary>How the numbers fit together, step by step</summary><ol class="fw-list">${steps.map((s,i)=>`<li${/fw-openmark/.test(s)?' class="fw-open"':''}>${s}</li>`).join('')}</ol>`
+    +`<p class="fw-gloss"><b>Words used here.</b> Sell-in = what manufacturers sell to the trade. Sell-out = what shops sell to drivers. The pool = the big manufacturers that report to ETRMA / Europool. Non-pool = everyone else, mostly Asian brands and parallel imports. Channel = where drivers buy or have tyres fitted.</p>${note}</details>`;
+}
+const FV_TIERLAB={Published:'Published',Derived:'Derived',Estimate:'Estimate',Team:'Team input'};
+function fvBasisHtml(c,flow,R,L,nameOf){
+  const val=R.val, tier=R.tier, esc=escapeHtml, Q=flow.quotes||{};
+  const order=[], num={}, used={};
+  const rows=[];
+  const sec=t=>rows.push({sec:t});
+  const add=id=>{ if(!(id in val)) return; rows.push({id}); const e=fvExpl(flow,id,val); if(e&&!e.stale) (e.q||[]).forEach(k=>{ if(Q[k]){ if(!(k in num)){ num[k]=order.length+1; order.push(k); } (used[k]=used[k]||[]).push(L[id]||id); } }); };
+  sec('Market and supply'); ['market','industry','direct','toWs','import','export','wsDom'].forEach(add);
+  if(['prvAll','comAll'].some(id=>id in val)){ sec('Customers'); ['prvAll','comAll'].forEach(add); }
+  (flow.groups||[]).forEach(g=>{ if(('g.'+g.id) in val){ sec('Published channel groups'); add('g.'+g.id); } });
+  (flow.channels||[]).forEach(ch=>{ const ids=['tot','ws','dir','prv','com'].map(k=>'ch.'+ch.id+'.'+k).filter(id=>id in val); if(ids.length){ sec('Channel: '+nameOf(ch)); ids.forEach(add); } });
+  const body=rows.map(r=>{
+    if(r.sec) return `<tr class="sec"><td colspan="6">${esc(r.sec)}</td></tr>`;
+    const id=r.id, e=fvExpl(flow,id,val), ok=e&&!e.stale, ce=(flow.cells||{})[id];
+    let short='Calculated from the other figures.'; if(ok&&e.short) short=e.short; else if(ce&&ce.source){ const mm=String(ce.source).match(/^[\s\S]*?[.!?](?=\s|$)/); short=(mm?mm[0]:String(ce.source)).slice(0,170); }
+    const refs=ok?(e.q||[]).filter(k=>Q[k]).map(k=>`<a href="#" class="fq-ref" data-qn="${num[k]}">[${num[k]}]</a>`).join(''):'';
+    const t=tier[id];
+    return `<tr><td>${esc(L[id]||id)}</td><td class="n">${fvFmt(val[id])}</td><td class="w"><span class="fv-dot" style="background:${FV_COL[t]||'#999'}"></span>${esc(FV_TIERLAB[t]||t||'')}</td><td>${esc(short)}${ok&&e.check?' <b>(heads-up in the pop-up)</b>':''}</td><td class="w">${refs||'<span style="color:#9AA3B5">no quote</span>'}</td><td>${ok&&e.sure?fvLvPill(e.sure):''}</td></tr>`;
+  }).join('');
+  const n=rows.filter(r=>r.id).length, nq=rows.filter(r=>r.id&&(()=>{const e=fvExpl(flow,r.id,val);return e&&!e.stale&&(e.q||[]).some(k=>Q[k]);})()).length;
+  const table=`<details class="lv-more fv-basis"><summary>Every figure: how it was reached and where it comes from (${n} figures, ${nq} with a source quote)</summary><div class="fv-tbl-wrap"><table class="fv-tbl"><thead><tr><th>Figure</th><th>M tyres</th><th>Type</th><th>In plain words</th><th>Source quote</th><th>How sure</th></tr></thead><tbody>${body}</tbody></table></div><p class="tv-note">Quotes are word for word, in the original language where the source is not English, with an English translation underneath. A figure without a quote has no published source I could open: it is an estimate, an assumption, or a source I could not reach. Hover a figure in the diagram for the full step-by-step explanation.</p></details>`;
+  const qlist=order.length?`<details class="lv-more fv-quotes"><summary>Quotes from the sources (${order.length})</summary><ol class="fv-qlist">${order.map(k=>{
+      const q=Q[k], u=fvSafeUrl(q.u), tbl=q.kind==='table';
+      return `<li data-qn="${num[k]}"><div class="fq-t">${tbl?'':'“'}${esc(q.q)}${tbl?'':'”'}</div>${q.en?`<div class="fq-en">In English: ${esc(q.en)}</div>`:''}<div class="fq-by">${esc(q.by)}${tbl?' · table row':''}${q.role==='context'?' · context only, not the basis of a number':''}${u?` · <a href="${esc(u)}" target="_blank" rel="noopener noreferrer">open the source ↗</a>`:' · no link available'}</div>${q.note?`<div class="fq-note">${esc(q.note)}</div>`:''}<div class="fq-used">Used for: ${esc((used[k]||[]).slice(0,6).join('; '))}${(used[k]||[]).length>6?' and '+((used[k]||[]).length-6)+' more':''}</div></li>`; }).join('')}</ol></details>`:'';
+  return {table,qlist};
+}
+document.addEventListener('click',e=>{
+  const a=e.target.closest&&e.target.closest('a.fq-ref'); if(!a) return;
+  e.preventDefault();
+  const wrap=a.closest('.fv-wrap'); if(!wrap) return;
+  const li=wrap.querySelector('.fv-qlist li[data-qn="'+a.dataset.qn+'"]'); if(!li) return;
+  const d=li.closest('details'); if(d) d.open=true;
+  li.scrollIntoView({behavior:'smooth',block:'center'}); li.classList.add('flash'); setTimeout(()=>li.classList.remove('flash'),1800);
+});
 (function(){
   const tip=document.createElement('div'); tip.className='fv-tip'; tip.setAttribute('role','tooltip'); document.body.appendChild(tip);
   let cur=null;
