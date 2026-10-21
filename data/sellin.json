@@ -2948,7 +2948,20 @@
      "summer": 26,
      "winter": 38
     },
-    "walkNote": "Only the market and the channel shares are published (BRV). The pool, imports, direct and wholesale boxes are modelled. Cross-border wholesale trade is not netted, so exports are set to zero."
+    "walkNote": "Only the market and the channel shares are published (BRV). The pool, imports, direct and wholesale boxes are modelled. Cross-border wholesale trade is not netted, so exports are set to zero.",
+    "walkWhy": {
+     "channels": {
+      "v": 41.0,
+      "why": "These are BRV's own 2024 channel shares (specialists 71.3%, dealers 19.8%, Fachmärkte 3.4%, online 5.5%), applied to its car market. They are published, not assumed.",
+      "pub": true,
+      "val": "See the BRV quotes. Online is the least comparable: BRV counts the point of sale, while Delticom's wider view is just under 13% of European tyres.",
+      "vq": [
+       "brv_spec",
+       "brv_deal",
+       "delti_online"
+      ]
+     }
+    }
    },
    "refs": [
     "BRV replacement market 2024 (checked on the BRV press release of 20 March 2025): about 47.5M tyres, up 6.8%. The consumer segment is about 45M (95%, up 7.1%), made up of about 41.0M cars and 4x4 (up 7.4%) and 4.1M vans (up 5%). Trucks are 2.465M. Channel shares for cars: tyre specialists including independent workshops 71.3% (69.5% in 2023), dealers and brand workshops 19.8%, Fachmärkte 3.4%, B2C online 5.5% (6.7%). The season mix (all-season about 36%, winter 38%, summer about 26%) is for cars and vans together. BRV figures are association estimates of sales to consumers, not a census. 2025 (BRV press release of 30 March 2026, checked): about 46.6M tyres (down 1.9%), consumer segment about 44.1M (down 2.1%), cars just over 40M (down 1.9%), vans just over 3.9M (down 4.2%), trucks about 2.52M; all-season was the only car type that grew (up 6.1%); car channel shares 72.5 / 19.1 / 3.0 / 5.5%. The research adds that car summer sales fell 4.0% and winter 7.8%, which BRV blames on pull-forward buying in 2024 after the snowflake-symbol rule from October 2024, and that BRV forecasts consumer sales down 2.2% in 2026 if the Middle East situation eases. I did not check those last points.",
@@ -2986,7 +2999,12 @@
      "sure": {
       "l": "High",
       "w": "Published by BRV. The 47.5M total was confirmed again in the news article above; the 41.0M cars-and-4x4 line comes from the BRV press release, checked earlier but not re-found today."
-     }
+     },
+     "why": "BRV is the one body that counts the whole German replacement market, so its figure is the natural anchor. The only choice made is to leave out vans and trucks, so the total matches BRV's own channel shares.",
+     "val": "The BRV total (47.5M) is confirmed in the quoted article. Sanity check: 41.0M ÷ 49.3M cars on the road (KBA) = 0.83 tyres per car, in line with Spain (0.80) and Austria (0.86) in this dashboard.",
+     "vq": [
+      "kba_cars"
+     ]
     },
     "industry": {
      "v": 31,
@@ -3005,7 +3023,9 @@
      "sure": {
       "l": "Low",
       "w": "wdk compares percentage changes, not volumes, so the level is an assumption. Replace it with your own ETRMA Germany pool figure if you have one."
-     }
+     },
+     "why": "If manufacturers' deliveries and consumer sales move together (wdk says they did in 2024), the pool's volume is the market minus what importers outside the pool supply. Neither part is published, so both are judgements.",
+     "val": "Quickest check: ETRMA's Germany pool figure, as you supplied for the Netherlands. Until then the only test is that pool 31.0M + imports 10.0M = BRV's 41.0M, which holds by construction, so it is not independent proof."
     },
     "import": {
      "v": 10,
@@ -3022,7 +3042,9 @@
      "sure": {
       "l": "Low",
       "w": "The 30% is a ceiling by segment, not a published average, so the 10M is a judgement call."
-     }
+     },
+     "why": "Wdk says importers outside the pool already take up to 30% of some segments. That is a ceiling for the busiest segments, so the research uses a lower overall share of 24%.",
+     "val": "wdk's 30% is a ceiling for some segments, not an average, so the 24% cannot be confirmed from published data. Check: ETRMA's pool volume for Germany; market minus pool is the non-pool volume."
     },
     "export": {
      "v": 0,
@@ -3036,7 +3058,9 @@
      "sure": {
       "l": "Low",
       "w": "A convention, not a measurement."
-     }
+     },
+     "why": "A figure with no source is safer left at zero than guessed. The cost is that cross-border wholesale, for example sales to Austria or Switzerland, is not netted.",
+     "val": "Customs data (87.8M tyres imported and 53.1M exported in 2024, UN Comtrade as quoted, not checked) are mostly factory and original-equipment flows, far too big to be this box. Ask your German distributors how much they re-export."
     },
     "direct": {
      "v": 16.3,
@@ -3053,7 +3077,13 @@
      "sure": {
       "l": "Low",
       "w": "Nothing published confirms the 60 / 40 split."
-     }
+     },
+     "why": "Wholesalers are now the manufacturers' biggest customer (wdk), but chains, dealer networks and online sellers also buy direct, and manufacturers are pushing direct sales (Roland Berger). A split of about 60% wholesale and 40% direct reflects both.",
+     "val": "Both quotes support the direction, neither gives a percentage. The research range is 55–65% via wholesale. Best check: your own German sell-in split between wholesalers and direct accounts.",
+     "vq": [
+      "rb_direct",
+      "rb_link"
+     ]
     },
     "toWs": {
      "v": 14.7,
@@ -3065,7 +3095,13 @@
      "sure": {
       "l": "Low",
       "w": "Both inputs are estimates."
-     }
+     },
+     "why": "Wholesalers are now the manufacturers' biggest customer (wdk), but chains, dealer networks and online sellers also buy direct, and manufacturers are pushing direct sales (Roland Berger). A split of about 60% wholesale and 40% direct reflects both.",
+     "val": "Both quotes support the direction, neither gives a percentage. The research range is 55–65% via wholesale. Best check: your own German sell-in split between wholesalers and direct accounts.",
+     "vq": [
+      "rb_direct",
+      "rb_link"
+     ]
     },
     "wsDom": {
      "v": 24.7,
@@ -3098,7 +3134,12 @@
       "l": "High",
       "w": "A published share from BRV, applied to BRV's own car market."
      },
-     "what": "Tyre specialists, fast-fit chains and independent workshops (BRV: Fachhandel und freie Werkstätten)."
+     "what": "Tyre specialists, fast-fit chains and independent workshops (BRV: Fachhandel und freie Werkstätten).",
+     "why": "These are BRV's own published 2024 channel shares, applied to BRV's own car market. Nothing is assumed here.",
+     "val": "The quote is the source. The same share is in the BRV press release of 20 March 2025 (checked earlier).",
+     "vq": [
+      "brv_spec"
+     ]
     },
     "ch.spec.ws": {
      "v": 17.5,
@@ -3112,7 +3153,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Carried over from the earlier model and rescaled so that all channels add up to the 24.7M that wholesalers sold and the 16.3M that goes direct. Those two totals carry the real assumption (60 / 40).",
+     "val": "No source publishes how each German channel buys. Ask your German sales team which channels they serve direct and which through wholesalers."
     },
     "ch.spec.dir": {
      "v": 11.7,
@@ -3124,7 +3167,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.spec.prv": {
      "v": 22.5,
@@ -3138,7 +3182,12 @@
      "sure": {
       "l": "Low",
       "w": "BRV does not publish this; the research estimated it."
-     }
+     },
+     "why": "The research estimates that about 24% of car-tyre demand is company, lease and fleet (cars only; vans, which lean commercial, are left out).",
+     "val": "KBA data show 5.7M of 49.3M cars (about 12%) are registered to businesses. Company cars drive further. If they drive about twice as far (Dutch figures: 25,100 km for business-lease cars against 11,100 km for private cars) they account for about 23% of kilometres, close to 24%. A BRV managing director put fleet and leasing at about 17.5% around 2018 (as quoted by the research, not checked).",
+     "vq": [
+      "kba_com"
+     ]
     },
     "ch.spec.com": {
      "v": 6.7,
@@ -3150,7 +3199,8 @@
      "sure": {
       "l": "Low",
       "w": "BRV does not publish this; the research estimated it."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.tot": {
      "v": 8.1,
@@ -3167,7 +3217,12 @@
       "l": "High",
       "w": "A published share from BRV. The article gives “knapp 20 Prozent”; the exact 19.8% is from the BRV press release, checked earlier."
      },
-     "what": "Car dealers and brand-tied workshops."
+     "what": "Car dealers and brand-tied workshops.",
+     "why": "BRV's own published 2024 share (\"knapp 20 Prozent\", exactly 19.8% in the press release), applied to BRV's car market. Nothing is assumed here.",
+     "val": "The quote is the source. The exact 19.8% comes from the BRV press release of 20 March 2025 (checked earlier), not from the article.",
+     "vq": [
+      "brv_deal"
+     ]
     },
     "ch.deal.ws": {
      "v": 5.7,
@@ -3181,7 +3236,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Carried over from the earlier model and rescaled so that all channels add up to the 24.7M that wholesalers sold and the 16.3M that goes direct. Those two totals carry the real assumption (60 / 40).",
+     "val": "No source publishes how each German channel buys. Ask your German sales team which channels they serve direct and which through wholesalers."
     },
     "ch.deal.dir": {
      "v": 2.4,
@@ -3193,7 +3250,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.prv": {
      "v": 5.3,
@@ -3207,7 +3265,12 @@
      "sure": {
       "l": "Low",
       "w": "BRV does not publish this; the research estimated it."
-     }
+     },
+     "why": "The research estimates that about 24% of car-tyre demand is company, lease and fleet (cars only; vans, which lean commercial, are left out).",
+     "val": "KBA data show 5.7M of 49.3M cars (about 12%) are registered to businesses. Company cars drive further. If they drive about twice as far (Dutch figures: 25,100 km for business-lease cars against 11,100 km for private cars) they account for about 23% of kilometres, close to 24%. A BRV managing director put fleet and leasing at about 17.5% around 2018 (as quoted by the research, not checked).",
+     "vq": [
+      "kba_com"
+     ]
     },
     "ch.deal.com": {
      "v": 2.8,
@@ -3219,7 +3282,8 @@
      "sure": {
       "l": "Low",
       "w": "BRV does not publish this; the research estimated it."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.fach.tot": {
      "v": 1.4,
@@ -3233,7 +3297,9 @@
       "l": "High",
       "w": "A published BRV share. The news article above does not repeat the 3.4%, so there is no quote here."
      },
-     "what": "Fachmärkte: BRV describes them as chains such as A.T.U. and Pit-Stop."
+     "what": "Fachmärkte: BRV describes them as chains such as A.T.U. and Pit-Stop.",
+     "why": "BRV's own published 2024 share for Fachmärkte (chains such as A.T.U. and Pit-Stop), applied to BRV's car market.",
+     "val": "From the BRV press release of 20 March 2025 (checked earlier). The news article quoted for the other shares does not repeat the 3.4%, so no quote is kept for it."
     },
     "ch.fach.ws": {
      "v": 0.3,
@@ -3247,7 +3313,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Carried over from the earlier model and rescaled so that all channels add up to the 24.7M that wholesalers sold and the 16.3M that goes direct. Those two totals carry the real assumption (60 / 40).",
+     "val": "No source publishes how each German channel buys. Ask your German sales team which channels they serve direct and which through wholesalers."
     },
     "ch.fach.dir": {
      "v": 1.1,
@@ -3259,7 +3327,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.fach.prv": {
      "v": 1.3,
@@ -3273,7 +3342,12 @@
      "sure": {
       "l": "Low",
       "w": "BRV does not publish this; the research estimated it."
-     }
+     },
+     "why": "The research estimates that about 24% of car-tyre demand is company, lease and fleet (cars only; vans, which lean commercial, are left out).",
+     "val": "KBA data show 5.7M of 49.3M cars (about 12%) are registered to businesses. Company cars drive further. If they drive about twice as far (Dutch figures: 25,100 km for business-lease cars against 11,100 km for private cars) they account for about 23% of kilometres, close to 24%. A BRV managing director put fleet and leasing at about 17.5% around 2018 (as quoted by the research, not checked).",
+     "vq": [
+      "kba_com"
+     ]
     },
     "ch.fach.com": {
      "v": 0.1,
@@ -3285,7 +3359,8 @@
      "sure": {
       "l": "Low",
       "w": "BRV does not publish this; the research estimated it."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.tot": {
      "v": 2.3,
@@ -3300,7 +3375,12 @@
       "w": "A published BRV share, but it is counted at the point of sale, so it understates tyres that were ordered online and fitted at a workshop."
      },
      "check": "BRV counts a tyre at the point of sale, so tyres bought online but fitted at a workshop sit under specialists. Online-originated demand could be 4–5M (research estimate). Delticom's annual report says experts put the online share at just under 13% (not checked).",
-     "what": "Online sellers, counted where the tyre is sold (BRV point-of-sale view)."
+     "what": "Online sellers, counted where the tyre is sold (BRV point-of-sale view).",
+     "why": "BRV's published 5.5% counts tyres where they are sold. Online-originated demand is wider, because tyres ordered online but fitted at a workshop are counted under specialists.",
+     "val": "Delticom's annual report puts online at just under 13% of European tyres sold to consumers in 2022 (experts, unnamed). It is a wider measure (where the order was placed), so the two do not conflict, but BRV's 5.5% is best read as the low end.",
+     "vq": [
+      "delti_online"
+     ]
     },
     "ch.onl.ws": {
      "v": 1.2,
@@ -3314,7 +3394,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Carried over from the earlier model and rescaled so that all channels add up to the 24.7M that wholesalers sold and the 16.3M that goes direct. Those two totals carry the real assumption (60 / 40).",
+     "val": "No source publishes how each German channel buys. Ask your German sales team which channels they serve direct and which through wholesalers."
     },
     "ch.onl.dir": {
      "v": 1.1,
@@ -3326,7 +3408,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.prv": {
      "v": 2.2,
@@ -3340,7 +3423,12 @@
      "sure": {
       "l": "Low",
       "w": "BRV does not publish this; the research estimated it."
-     }
+     },
+     "why": "The research estimates that about 24% of car-tyre demand is company, lease and fleet (cars only; vans, which lean commercial, are left out).",
+     "val": "KBA data show 5.7M of 49.3M cars (about 12%) are registered to businesses. Company cars drive further. If they drive about twice as far (Dutch figures: 25,100 km for business-lease cars against 11,100 km for private cars) they account for about 23% of kilometres, close to 24%. A BRV managing director put fleet and leasing at about 17.5% around 2018 (as quoted by the research, not checked).",
+     "vq": [
+      "kba_com"
+     ]
     },
     "ch.onl.com": {
      "v": 0.1,
@@ -3352,7 +3440,8 @@
      "sure": {
       "l": "Low",
       "w": "BRV does not publish this; the research estimated it."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "prvAll": {
      "v": 31.3,
@@ -3364,7 +3453,12 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "The research estimates that about 24% of car-tyre demand is company, lease and fleet (cars only; vans, which lean commercial, are left out).",
+     "val": "KBA data show 5.7M of 49.3M cars (about 12%) are registered to businesses. Company cars drive further. If they drive about twice as far (Dutch figures: 25,100 km for business-lease cars against 11,100 km for private cars) they account for about 23% of kilometres, close to 24%. A BRV managing director put fleet and leasing at about 17.5% around 2018 (as quoted by the research, not checked).",
+     "vq": [
+      "kba_com"
+     ]
     },
     "comAll": {
      "v": 9.7,
@@ -3377,7 +3471,12 @@
      "sure": {
       "l": "Low",
       "w": "Not published. The research puts it at about 23% for cars only."
-     }
+     },
+     "why": "The research estimates that about 24% of car-tyre demand is company, lease and fleet (cars only; vans, which lean commercial, are left out).",
+     "val": "KBA data show 5.7M of 49.3M cars (about 12%) are registered to businesses. Company cars drive further. If they drive about twice as far (Dutch figures: 25,100 km for business-lease cars against 11,100 km for private cars) they account for about 23% of kilometres, close to 24%. A BRV managing director put fleet and leasing at about 17.5% around 2018 (as quoted by the research, not checked).",
+     "vq": [
+      "kba_com"
+     ]
     }
    },
    "quotes": {
@@ -3427,6 +3526,46 @@
      "u": "https://www.rolandberger.com/en/Insights/Publications/Automotive-aftermarket-difficult-terrain-for-tyre-wholesalers.html",
      "en": "In Germany there are around 50 tyre wholesalers; the top 7 of them hold a market share of about 75 percent.",
      "role": "context"
+    },
+    "kba_cars": {
+     "q": "Mit 49,3 Millionen Pkw stellen Personenkraftwagen weiterhin den Löwenanteil am Gesamtbestand",
+     "by": "firmenauto.de, citing the Kraftfahrt-Bundesamt (KBA), 8 Mar 2025",
+     "u": "https://www.firmenauto.de/branche/fahrzeugbestand-2025-flottenentwicklung-privatmarkt/",
+     "en": "With 49.3 million cars, passenger cars still make up the lion's share of the total stock.",
+     "role": "check",
+     "note": "Used only for a sanity check: tyres sold per car on the road."
+    },
+    "kba_com": {
+     "q": "sank die Zahl der gewerblich zugelassenen Fahrzeuge um 0,1 Prozent auf 5,7 Millionen",
+     "by": "firmenauto.de, citing the Kraftfahrt-Bundesamt (KBA), 8 Mar 2025",
+     "u": "https://www.firmenauto.de/branche/fahrzeugbestand-2025-flottenentwicklung-privatmarkt/",
+     "en": "the number of commercially registered vehicles fell by 0.1 percent to 5.7 million",
+     "role": "check",
+     "note": "The same sentence says private cars rose 0.6% to 43.6 million. So 5.7M of 49.3M cars, about 12%, are registered to businesses."
+    },
+    "rb_link": {
+     "q": "ist auch im Reifenersatzmarkt der Großhandel das Bindeglied zwischen Herstellern und Einzelhandel.",
+     "by": "Roland Berger, Nov 2018",
+     "u": "https://www.rolandberger.com/en/Insights/Publications/Automotive-aftermarket-difficult-terrain-for-tyre-wholesalers.html",
+     "en": "in the tyre replacement market too, wholesale is the link between manufacturers and retail.",
+     "role": "check",
+     "note": "Supports the direction (wholesale matters), not the size of the split."
+    },
+    "rb_direct": {
+     "q": "Daneben drängen die Hersteller vehement in den Direktvertrieb",
+     "by": "Roland Berger, Nov 2018",
+     "u": "https://www.rolandberger.com/en/Insights/Publications/Automotive-aftermarket-difficult-terrain-for-tyre-wholesalers.html",
+     "en": "In addition, manufacturers are pushing hard into direct sales.",
+     "role": "check",
+     "note": "Supports the direction (direct deliveries are growing), not the size of the split."
+    },
+    "delti_online": {
+     "q": "Experten schätzen, dass 2022 europaweit knapp 13 % der Reifen online an Endverbraucher verkauft wurden.",
+     "by": "Delticom annual report 2022",
+     "u": "https://reifenpresse.de/wp-content/uploads/2023/03/Delticom-2022.pdf",
+     "en": "Experts estimate that in 2022 just under 13% of tyres across Europe were sold online to end consumers.",
+     "role": "check",
+     "note": "The experts are not named. Europe-wide and by where the order was placed, so not the same measure as BRV's German point-of-sale share."
     }
    }
   },
@@ -3682,7 +3821,18 @@
      "winter": 10,
      "source": "Syndicat du Pneu/GfK 2024 via J2R"
     },
-    "walkNote": "The model has no flow for non-pool imports going straight to the channels. So all 8.2M of imports are shown going through wholesale, and the 1.7M that really goes direct sits in the Direct box. That is why “industry sold to wholesale” reads 7.3M, not the research's 9.0M. Wholesale (15.5M) and direct (21.6M) are the research's totals."
+    "walkNote": "The model has no flow for non-pool imports going straight to the channels. So all 8.2M of imports are shown going through wholesale, and the 1.7M that really goes direct sits in the Direct box. That is why “industry sold to wholesale” reads 7.3M, not the research's 9.0M. Wholesale (15.5M) and direct (21.6M) are the research's totals.",
+    "walkWhy": {
+     "channels": {
+      "v": 37.1,
+      "why": "Three channels are measured by the Syndicat du Pneu/GfK panel (auto-centres, tyre specialists, French pure players). Dealers and independent repairers and foreign webshops are plugs that fill the gap to the 37.1M market.",
+      "val": "The panel headline and the pure-player figure are in the quotes kept. The channel split of the panel is the research's reading and was not checked. The dealer plug is the biggest uncertainty.",
+      "vq": [
+       "jda_sellout",
+       "j2r_pure"
+      ]
+     }
+    }
    },
    "refs": [
     "Method (replaced with the newest France research file, October 2026): the model is rebuilt on a passenger-car sell-in basis. Market 37.1M (was 17.2M), Europool pool 28.9M (was 13.0M), non-pool imports 8.2M (was 4.2M), wholesale 15.5M (was 9.2M), direct 21.6M (was 8.0M). The 27.9 / 28.0 / 26.3 / 18.0% channel shares used before are real published shares, but of the 31.74M sell-in and not of 17.2M, so applying them to 17.2M understated every channel by about 45%. The flow now has five channels: foreign online sellers are a new box.",
@@ -3721,7 +3871,12 @@
      "sure": {
       "l": "Medium",
       "w": "The 28.9M pool part is published and checked. The 8.2M of non-pool imports is the main uncertainty: it moves the market between about 35M and 39M."
-     }
+     },
+     "why": "The pool's sell-in is a hard number, but it leaves out budget brands that do not report to it, so the market would be understated. The research adds those as an estimate.",
+     "val": "Sanity check: 37.1M ÷ 39.3M cars (SDES, 1 Jan 2024) = 0.94 tyres per car, high next to Germany (0.83) and Spain (0.80) in this dashboard. The pool alone is 0.74, so the 8.2M non-pool add-on is the part to challenge. The research also cites ADEME (42.2M light-vehicle tyres placed on the market in 2022, vans included) and a mileage model (39–48M), neither checked.",
+     "vq": [
+      "sdes_cars"
+     ]
     },
     "industry": {
      "v": 28.9,
@@ -3740,7 +3895,9 @@
      "sure": {
       "l": "Medium",
       "w": "The 31.74M total is published and checked. The van deduction (2.81M) is quoted by the research and not checked."
-     }
+     },
+     "why": "It is the only published count of what the main brands sold into France, so it is used as it is. Vans are taken out with the research's split by vehicle type, because this model covers cars and 4x4/SUV.",
+     "val": "Both sell-in quotes are kept with this figure. The split by type (cars 25.64M + 4x4/SUV 3.29M + vans 2.81M = 31.74M) is quoted by the research from L'argus and the Syndicat du Pneu, and was not checked."
     },
     "import": {
      "v": 8.2,
@@ -3758,7 +3915,9 @@
      "sure": {
       "l": "Low",
       "w": "The main driver of the full-market figure, with a range of 6.5–10.3M."
-     }
+     },
+     "why": "Two separate hints point to about a fifth of the market being non-pool brands: budget brands' 19.1% share (J2R) and ADEME's gap of about 25% in 2022. The research settles on 22%.",
+     "val": "The 19.1% budget share is in the quotes kept. The ADEME gap was not checked. Research range 6.5–10.3M. To challenge it: ask Apollo's French distributors what share of their volume is non-pool brands."
     },
     "export": {
      "v": 0,
@@ -3772,7 +3931,9 @@
      "sure": {
       "l": "Low",
       "w": "A convention, not a measurement."
-     }
+     },
+     "why": "French wholesalers such as Distri Cash do re-export, but it is small and unmeasured, so zero is cleaner than guessing within the research's 0.3–1.0M.",
+     "val": "Customs data (about 55.1M tyres imported and 20.2M exported in 2024, UN Comtrade as quoted, not checked) include factory flows and cannot be used for this box."
     },
     "direct": {
      "v": 21.6,
@@ -3786,7 +3947,9 @@
      "sure": {
       "l": "Low",
       "w": "Nothing published confirms the split."
-     }
+     },
+     "why": "In France many fitting chains are owned or supplied by manufacturers (Euromaster, Speedy, First Stop, BestDrive, Allopneus) and the big auto-centres buy centrally, so a large part of the market skips wholesalers. Independent garages and dealers are the main wholesale customers.",
+     "val": "No source publishes it, and the research rates it low confidence. It shows how large manufacturer-owned networks are: Euromaster alone has more than 470 centres (ac-franchise, 25 Aug 2026). Best check: your own French sell-in by account type."
     },
     "toWs": {
      "v": 7.3,
@@ -3799,7 +3962,9 @@
      "sure": {
       "l": "Low",
       "w": "Both inputs are estimates, and the model's one-flow simplification lowers it by about 1.7M versus the research."
-     }
+     },
+     "why": "In France many fitting chains are owned or supplied by manufacturers (Euromaster, Speedy, First Stop, BestDrive, Allopneus) and the big auto-centres buy centrally, so a large part of the market skips wholesalers. Independent garages and dealers are the main wholesale customers.",
+     "val": "No source publishes it, and the research rates it low confidence. It shows how large manufacturer-owned networks are: Euromaster alone has more than 470 centres (ac-franchise, 25 Aug 2026). Best check: your own French sell-in by account type."
     },
     "wsDom": {
      "v": 15.5,
@@ -3826,7 +3991,12 @@
       "l": "Medium",
       "w": "A measured panel figure, but quoted by the research and not checked."
      },
-     "what": "Auto-centres and fast-fitters such as Norauto, Midas, Feu Vert and Speedy, including hypermarket auto-centres."
+     "what": "Auto-centres and fast-fitters such as Norauto, Midas, Feu Vert and Speedy, including hypermarket auto-centres.",
+     "why": "The Syndicat du Pneu/GfK panel measures what auto-centres sell, so this is the most solid channel number in the France model. Only the 97% car share is assumed.",
+     "val": "The panel headline is public (quote kept: 17.211M sell-out). The research's split into 8.86M for auto-centres and 8.35M for tyre specialists is not in the pages I could open.",
+     "vq": [
+      "jda_sellout"
+     ]
     },
     "ch.auto.ws": {
      "v": 1,
@@ -3840,7 +4010,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "The research reasons network by network: auto-centres and manufacturer-led networks buy mostly direct (12–17% via wholesale), independent garages and dealers mainly through wholesalers such as Distri Cash (79%). The figures are then set so that all channels add up to 15.5M via wholesale and 21.6M direct.",
+     "val": "Nobody publishes it by channel. What is checked: Distri Cash sold 5.5M tyres in 2022 with 27 locations (J2R, 9 Jan 2024), so wholesale is large. The split is the research's."
     },
     "ch.auto.dir": {
      "v": 7.6,
@@ -3853,7 +4025,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.auto.prv": {
      "v": 7.6,
@@ -3867,7 +4040,9 @@
      "sure": {
       "l": "Low",
       "w": "No French source publishes it by channel; the research estimated it."
-     }
+     },
+     "why": "A 78 / 22 private / commercial split carried over from the earlier model. Commercial is highest at tyre specialists (about 54%, fleet- and leasing-heavy networks such as Euromaster) and lowest at online (8%) and auto-centres (12%).",
+     "val": "Only the specialist figure has any evidence: GfK, cited by the Syndicat du Pneu, says about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked)."
     },
     "ch.auto.com": {
      "v": 1,
@@ -3879,7 +4054,8 @@
      "sure": {
       "l": "Low",
       "w": "No French source publishes it by channel; the research estimated it."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.tot": {
      "v": 14,
@@ -3894,7 +4070,9 @@
       "l": "Low",
       "w": "The biggest uncertainty in the model: a plug, not a measurement."
      },
-     "what": "Car dealers and independent repairers (the “MRA” trade)."
+     "what": "Car dealers and independent repairers (the “MRA” trade).",
+     "why": "A plug: dealers and independent repairers are not in the panel, so this channel takes whatever is left to reach the market total.",
+     "val": "The biggest uncertainty in the France model. On the Syndicat's own pool-only basis this block is about 8–9M (research quote, not checked) against 14.0M here. The gap is non-pool volume that the research assumes reaches garages through wholesalers."
     },
     "ch.deal.ws": {
      "v": 11,
@@ -3908,7 +4086,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "The research reasons network by network: auto-centres and manufacturer-led networks buy mostly direct (12–17% via wholesale), independent garages and dealers mainly through wholesalers such as Distri Cash (79%). The figures are then set so that all channels add up to 15.5M via wholesale and 21.6M direct.",
+     "val": "Nobody publishes it by channel. What is checked: Distri Cash sold 5.5M tyres in 2022 with 27 locations (J2R, 9 Jan 2024), so wholesale is large. The split is the research's."
     },
     "ch.deal.dir": {
      "v": 3,
@@ -3921,7 +4101,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.prv": {
      "v": 11.2,
@@ -3935,7 +4116,9 @@
      "sure": {
       "l": "Low",
       "w": "No French source publishes it by channel; the research estimated it."
-     }
+     },
+     "why": "A 78 / 22 private / commercial split carried over from the earlier model. Commercial is highest at tyre specialists (about 54%, fleet- and leasing-heavy networks such as Euromaster) and lowest at online (8%) and auto-centres (12%).",
+     "val": "Only the specialist figure has any evidence: GfK, cited by the Syndicat du Pneu, says about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked)."
     },
     "ch.deal.com": {
      "v": 2.8,
@@ -3947,7 +4130,8 @@
      "sure": {
       "l": "Low",
       "w": "No French source publishes it by channel; the research estimated it."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.spec.tot": {
      "v": 6.9,
@@ -3962,7 +4146,9 @@
       "w": "A measured panel figure, but quoted by the research and not checked."
      },
      "check": "The research says “about 80% cars”, which would give 6.7M. The model uses 6.9M so that the two panelled channels add up to the research's 15.5M of car tyres (8.6 + 6.9).",
-     "what": "Tyre specialists (“pneumaticiens”) such as Euromaster, First Stop, Côté Route and Point S."
+     "what": "Tyre specialists (“pneumaticiens”) such as Euromaster, First Stop, Côté Route and Point S.",
+     "why": "The same panel measures tyre specialists. They also fit many vans, so the research keeps about 80% of their volume as cars.",
+     "val": "Same panel caveat as for auto-centres. GfK data cited by the Syndicat du Pneu say about 4M car tyres were sold B2B by pneumaticiens in 2023 (research, not checked)."
     },
     "ch.spec.ws": {
      "v": 1.2,
@@ -3976,7 +4162,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "The research reasons network by network: auto-centres and manufacturer-led networks buy mostly direct (12–17% via wholesale), independent garages and dealers mainly through wholesalers such as Distri Cash (79%). The figures are then set so that all channels add up to 15.5M via wholesale and 21.6M direct.",
+     "val": "Nobody publishes it by channel. What is checked: Distri Cash sold 5.5M tyres in 2022 with 27 locations (J2R, 9 Jan 2024), so wholesale is large. The split is the research's."
     },
     "ch.spec.dir": {
      "v": 5.7,
@@ -3989,7 +4177,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.spec.prv": {
      "v": 3.2,
@@ -4003,7 +4192,9 @@
      "sure": {
       "l": "Low",
       "w": "No French source publishes it by channel; the research estimated it."
-     }
+     },
+     "why": "A 78 / 22 private / commercial split carried over from the earlier model. Commercial is highest at tyre specialists (about 54%, fleet- and leasing-heavy networks such as Euromaster) and lowest at online (8%) and auto-centres (12%).",
+     "val": "Only the specialist figure has any evidence: GfK, cited by the Syndicat du Pneu, says about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked)."
     },
     "ch.spec.com": {
      "v": 3.7,
@@ -4015,7 +4206,8 @@
      "sure": {
       "l": "Low",
       "w": "No French source publishes it by channel; the research estimated it."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.tot": {
      "v": 5.1,
@@ -4034,7 +4226,12 @@
       "w": "The 5.6M and +21.9% are published and checked; the car-only cut is the research's."
      },
      "check": "The research says “about 88% cars”, which would give 5.0M. The model uses 5.1M, as in the research's bridge.",
-     "what": "French online-only sellers such as Allopneus and 1001pneus."
+     "what": "French online-only sellers such as Allopneus and 1001pneus.",
+     "why": "The panel also measures French pure players, so this is a measured figure. Only the 88% car share is assumed.",
+     "val": "The published figure is in the quotes kept: about 5.6M units, up 21.9% (J2R, 5 Mar 2025).",
+     "vq": [
+      "j2r_pure"
+     ]
     },
     "ch.onl.ws": {
      "v": 1.3,
@@ -4048,7 +4245,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "The research reasons network by network: auto-centres and manufacturer-led networks buy mostly direct (12–17% via wholesale), independent garages and dealers mainly through wholesalers such as Distri Cash (79%). The figures are then set so that all channels add up to 15.5M via wholesale and 21.6M direct.",
+     "val": "Nobody publishes it by channel. What is checked: Distri Cash sold 5.5M tyres in 2022 with 27 locations (J2R, 9 Jan 2024), so wholesale is large. The split is the research's."
     },
     "ch.onl.dir": {
      "v": 3.8,
@@ -4061,7 +4260,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.prv": {
      "v": 4.7,
@@ -4075,7 +4275,9 @@
      "sure": {
       "l": "Low",
       "w": "No French source publishes it by channel; the research estimated it."
-     }
+     },
+     "why": "A 78 / 22 private / commercial split carried over from the earlier model. Commercial is highest at tyre specialists (about 54%, fleet- and leasing-heavy networks such as Euromaster) and lowest at online (8%) and auto-centres (12%).",
+     "val": "Only the specialist figure has any evidence: GfK, cited by the Syndicat du Pneu, says about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked)."
     },
     "ch.onl.com": {
      "v": 0.4,
@@ -4087,7 +4289,8 @@
      "sure": {
       "l": "Low",
       "w": "No French source publishes it by channel; the research estimated it."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.fon.tot": {
      "v": 2.5,
@@ -4101,7 +4304,9 @@
       "l": "Low",
       "w": "An allocation, not a measurement."
      },
-     "what": "Foreign online sellers and marketplaces selling to French customers (for example 123pneus by Delticom)."
+     "what": "Foreign online sellers and marketplaces selling to French customers (for example 123pneus by Delticom).",
+     "why": "A plug: foreign webshops (for example 123pneus by Delticom) are not in the French panel, so 2.5M is an allocation, not a measurement.",
+     "val": "No published figure. I found no French unit volume for them."
     },
     "ch.fon.ws": {
      "v": 1,
@@ -4115,7 +4320,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "The research reasons network by network: auto-centres and manufacturer-led networks buy mostly direct (12–17% via wholesale), independent garages and dealers mainly through wholesalers such as Distri Cash (79%). The figures are then set so that all channels add up to 15.5M via wholesale and 21.6M direct.",
+     "val": "Nobody publishes it by channel. What is checked: Distri Cash sold 5.5M tyres in 2022 with 27 locations (J2R, 9 Jan 2024), so wholesale is large. The split is the research's."
     },
     "ch.fon.dir": {
      "v": 1.5,
@@ -4127,7 +4334,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.fon.prv": {
      "v": 2.3,
@@ -4141,7 +4349,9 @@
      "sure": {
       "l": "Low",
       "w": "No French source publishes it by channel; the research estimated it."
-     }
+     },
+     "why": "A 78 / 22 private / commercial split carried over from the earlier model. Commercial is highest at tyre specialists (about 54%, fleet- and leasing-heavy networks such as Euromaster) and lowest at online (8%) and auto-centres (12%).",
+     "val": "Only the specialist figure has any evidence: GfK, cited by the Syndicat du Pneu, says about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked)."
     },
     "ch.fon.com": {
      "v": 0.2,
@@ -4153,7 +4363,8 @@
      "sure": {
       "l": "Low",
       "w": "No French source publishes it by channel; the research estimated it."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "prvAll": {
      "v": 29,
@@ -4165,7 +4376,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "A 78 / 22 private / commercial split carried over from the earlier model. Commercial is highest at tyre specialists (about 54%, fleet- and leasing-heavy networks such as Euromaster) and lowest at online (8%) and auto-centres (12%).",
+     "val": "Only the specialist figure has any evidence: GfK, cited by the Syndicat du Pneu, says about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked)."
     },
     "comAll": {
      "v": 8.1,
@@ -4177,7 +4390,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "A 78 / 22 private / commercial split carried over from the earlier model. Commercial is highest at tyre specialists (about 54%, fleet- and leasing-heavy networks such as Euromaster) and lowest at online (8%) and auto-centres (12%).",
+     "val": "Only the specialist figure has any evidence: GfK, cited by the Syndicat du Pneu, says about 4M of roughly 25M car tyres in 2023 were sold B2B by pneumaticiens (research, not checked)."
     }
    },
    "quotes": {
@@ -4213,6 +4428,14 @@
      "by": "J2R, 5 Mar 2025 (Syndicat du Pneu / GfK data)",
      "u": "https://j2rauto.com/rechange/le-marche-du-pneu-reprend-enfin-des-couleurs",
      "en": "But it is above all the budget segment that is booming, with a market share that has doubled since 2014 and now reaches 19.1%."
+    },
+    "sdes_cars": {
+     "q": "Au 1er janvier 2024, 39,3 millions de voitures sont en circulation en France.",
+     "by": "SDES (French transport ministry statistics), 23 Sep 2024",
+     "u": "https://www.statistiques.developpement-durable.gouv.fr/393-millions-de-voitures-en-circulation-en-france-au-1er-janvier-2024",
+     "en": "On 1 January 2024, 39.3 million cars were on the road in France.",
+     "role": "check",
+     "note": "Used only for a sanity check: tyres per car."
     }
    }
   },
@@ -4430,7 +4653,14 @@
     "boxNote": "No channel split is published for the UK, so the four channel totals are benchmark estimates. The import box is modelled non-pool supply, not customs imports, and export is a balancing item. Red and blue show where the tyre is physically stocked and delivered, so a tyre bought on a manufacturer contract but delivered by a distributor counts as via wholesale. Private and commercial are a car versus van mileage proxy, so read them as passenger and LCV. Finer boxes can be added in the editor.",
     "scopeNote": "The card header's 28.4M is an older GfK/NTDA estimate; this model's 29.0M is an estimate from the number of cars on the road. The wholesale, direct, import and export figures are research estimates anchored on BTMA's H1 2024 EuroPool sales.",
     "seasons": {},
-    "walkNote": "Red and blue show where the tyre is physically stocked and delivered, not who holds the contract. No UK channel split is published, so the four channel totals are benchmark shares. Private and commercial mean cars and vans."
+    "walkNote": "Red and blue show where the tyre is physically stocked and delivered, not who holds the contract. No UK channel split is published, so the four channel totals are benchmark shares. Private and commercial mean cars and vans.",
+    "walkWhy": {
+     "channels": {
+      "v": 29.0,
+      "why": "No UK channel split is published, so the four shares come from the German BRV split and the French panel, adjusted only for what Mintel says qualitatively: independents dominate, franchised dealers are losing share, online is growing.",
+      "val": "Replace with GfK/NTDA or your own UK channel data. The research allows about ±6 points per channel."
+     }
+    }
    },
    "refs": [
     "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
@@ -4464,7 +4694,12 @@
       "l": "Low",
       "w": "An estimate, and the car count behind it does not match the official figure (see the heads-up)."
      },
-     "check": "The Department for Transport shows 33.97M licensed cars at the end of 2024 (plus 4.79M vans), not 36.2M. At 0.80 tyres per car, 33.97M cars give 27.2M, about 1.8M below the 29.0M used here. The number has not been changed. Tell me if you want it rebased."
+     "check": "The Department for Transport shows 33.97M licensed cars at the end of 2024 (plus 4.79M vans), not 36.2M. At 0.80 tyres per car, 33.97M cars give 27.2M, about 1.8M below the 29.0M used here. The number has not been changed. Tell me if you want it rebased.",
+     "why": "With no UK sales statistic, the number of cars times a typical tyres-per-car rate is the standard way to size a market. 0.8 a year is the research's benchmark, and an older GfK/NTDA study landed nearby.",
+     "val": "Sanity check on DfT's own table (33.967M cars, quote kept): 0.85 tyres per car, still in the normal range (Germany 0.83, Austria 0.86). An older GfK/NTDA study put the market at 28.4M, close to 29.0M. See the heads-up: the 36.2M car count itself does not match DfT.",
+     "vq": [
+      "dft_cars"
+     ]
     },
     "industry": {
      "v": 18.7,
@@ -4482,7 +4717,9 @@
      "sure": {
       "l": "Medium",
       "w": "The half-year figure is published; doubling it is an assumption. The article credits BTMA citing Astutus Research and does not use the word EuroPool."
-     }
+     },
+     "why": "The only hard UK pool number found is a half-year figure from BTMA/EuroPool members, so doubling it is the simplest way to get a full year. The range allows for seasonality.",
+     "val": "The half-year figure is published (quote kept). The doubling is the assumption: fitting peaks mean H1 is not exactly half a year. Check against BTMA's full-year figure when it is available."
     },
     "direct": {
      "v": 8,
@@ -4496,7 +4733,9 @@
      "sure": {
       "l": "Low",
       "w": "No UK source reports a direct versus wholesale split."
-     }
+     },
+     "why": "The research counts a tyre as direct only if it is stocked and delivered by the manufacturer's own organisation. Stock held by distributors (Micheldever, Stapleton's, Bond) counts as wholesale, which keeps direct to about 28%.",
+     "val": "Not published, and the research rates routing as its lowest-confidence area. Tyrepress (as quoted by the research) reports Halfords selling its Viking distribution arm to Bond while keeping direct-sourcing benefits, which shows how blurred \"direct\" and \"wholesale\" are. Best check: your own UK sell-in by account type."
     },
     "toWs": {
      "v": 10.7,
@@ -4508,7 +4747,9 @@
      "sure": {
       "l": "Low",
       "w": "Both inputs are estimates."
-     }
+     },
+     "why": "The research counts a tyre as direct only if it is stocked and delivered by the manufacturer's own organisation. Stock held by distributors (Micheldever, Stapleton's, Bond) counts as wholesale, which keeps direct to about 28%.",
+     "val": "Not published, and the research rates routing as its lowest-confidence area. Tyrepress (as quoted by the research) reports Halfords selling its Viking distribution arm to Bond while keeping direct-sourcing benefits, which shows how blurred \"direct\" and \"wholesale\" are. Best check: your own UK sell-in by account type."
     },
     "import": {
      "v": 11,
@@ -4523,7 +4764,9 @@
      "sure": {
       "l": "Low",
       "w": "It depends on the 29.0M market, which is itself an estimate."
-     }
+     },
+     "why": "If the pool sold 18.7M and the market is 29.0M, somebody else supplied the rest. the trade press ties that gap to low-cost imports.",
+     "val": "BTMA links its members' volumes to low-cost imports, particularly from China and Vietnam (European Rubber Journal). GfK's 2023 UK mix of 45% budget tyres (research, not checked) points the same way."
     },
     "export": {
      "v": 0.7,
@@ -4536,7 +4779,9 @@
      "sure": {
       "l": "Low",
       "w": "Not a published statistic."
-     }
+     },
+     "why": "A small balancing item so the flow closes. Nobody publishes UK re-exports.",
+     "val": "Not a published statistic, lowest confidence. Customs figures cannot be used because they include factory and original-equipment flows."
     },
     "wsDom": {
      "v": 21,
@@ -4565,7 +4810,9 @@
       "l": "Low",
       "w": "A placeholder share with an error of about ±6 points."
      },
-     "what": "Tyre specialists, fast-fit chains and independent garages."
+     "what": "Tyre specialists, fast-fit chains and independent garages.",
+     "why": "There is no published channel split for the United Kingdom, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. Independent garages dominate in the UK and fast-fit networks are stable or growing (Mintel, qualitative).",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether the United Kingdom follows them cannot: the research allows an error of about ±6 points. Replace with your own United Kingdom channel data when you have it. Mintel's UK report is qualitative only; its numbers are behind a paywall."
     },
     "ch.spec.ws": {
      "v": 16.6,
@@ -4579,7 +4826,9 @@
      "sure": {
       "l": "Low",
       "w": "Channel routing has the lowest confidence of all the UK figures."
-     }
+     },
+     "why": "Inferred from market structure: independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Share via wholesale: specialists 82%, dealers 55%, other retail 78%, online 39%. The figures are set so all channels add up to 21.0M via wholesale and 8.0M direct.",
+     "val": "No UK source reports it. 50:50 for online is also defensible (research). Micheldever's 6.0M a year is the research's figure (Sumitomo Rubber agreed to buy it in 2017)."
     },
     "ch.spec.dir": {
      "v": 3.7,
@@ -4591,7 +4840,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.spec.prv": {
      "v": 15.9,
@@ -4605,7 +4855,9 @@
      "sure": {
       "l": "Low",
       "w": "A proxy for cars versus vans, placed mostly in the specialist channel by judgement."
-     }
+     },
+     "why": "Not a customer split but a mileage proxy: vans are about 18.6% of car-plus-van miles in Great Britain (DfT 2024), so that share of tyres is treated as commercial. Read \"private\" as cars and \"commercial\" as vans.",
+     "val": "DfT 2024 vehicle miles: 256.1bn for cars and taxis, 58.5bn for vans (as quoted by the research, not checked). Company cars sit inside \"cars\", so true commercial demand is higher."
     },
     "ch.spec.com": {
      "v": 4.4,
@@ -4617,7 +4869,8 @@
      "sure": {
       "l": "Low",
       "w": "A proxy for cars versus vans, placed mostly in the specialist channel by judgement."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.tot": {
      "v": 3.48,
@@ -4633,7 +4886,9 @@
       "l": "Low",
       "w": "A placeholder share with an error of about ±6 points."
      },
-     "what": "Car dealers and brand-tied workshops."
+     "what": "Car dealers and brand-tied workshops.",
+     "why": "There is no published channel split for the United Kingdom, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. Franchised dealers have been losing share (Mintel, qualitative).",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether the United Kingdom follows them cannot: the research allows an error of about ±6 points. Replace with your own United Kingdom channel data when you have it. Mintel's UK report is qualitative only; its numbers are behind a paywall."
     },
     "ch.deal.ws": {
      "v": 1.9,
@@ -4647,7 +4902,9 @@
      "sure": {
       "l": "Low",
       "w": "Channel routing has the lowest confidence of all the UK figures."
-     }
+     },
+     "why": "Inferred from market structure: independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Share via wholesale: specialists 82%, dealers 55%, other retail 78%, online 39%. The figures are set so all channels add up to 21.0M via wholesale and 8.0M direct.",
+     "val": "No UK source reports it. 50:50 for online is also defensible (research). Micheldever's 6.0M a year is the research's figure (Sumitomo Rubber agreed to buy it in 2017)."
     },
     "ch.deal.dir": {
      "v": 1.6,
@@ -4659,7 +4916,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.prv": {
      "v": 3.1,
@@ -4673,7 +4931,9 @@
      "sure": {
       "l": "Low",
       "w": "A proxy for cars versus vans, placed mostly in the specialist channel by judgement."
-     }
+     },
+     "why": "Not a customer split but a mileage proxy: vans are about 18.6% of car-plus-van miles in Great Britain (DfT 2024), so that share of tyres is treated as commercial. Read \"private\" as cars and \"commercial\" as vans.",
+     "val": "DfT 2024 vehicle miles: 256.1bn for cars and taxis, 58.5bn for vans (as quoted by the research, not checked). Company cars sit inside \"cars\", so true commercial demand is higher."
     },
     "ch.deal.com": {
      "v": 0.4,
@@ -4685,7 +4945,8 @@
      "sure": {
       "l": "Low",
       "w": "A proxy for cars versus vans, placed mostly in the specialist channel by judgement."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.ret.tot": {
      "v": 1.16,
@@ -4701,7 +4962,9 @@
       "l": "Low",
       "w": "A placeholder share with an error of about ±6 points."
      },
-     "what": "Other retail: parts stores, hypermarkets and petrol stations."
+     "what": "Other retail: parts stores, hypermarkets and petrol stations.",
+     "why": "There is no published channel split for the United Kingdom, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. No UK-specific information was found, so the benchmark is kept as is.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether the United Kingdom follows them cannot: the research allows an error of about ±6 points. Replace with your own United Kingdom channel data when you have it."
     },
     "ch.ret.ws": {
      "v": 0.9,
@@ -4715,7 +4978,9 @@
      "sure": {
       "l": "Low",
       "w": "Channel routing has the lowest confidence of all the UK figures."
-     }
+     },
+     "why": "Inferred from market structure: independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Share via wholesale: specialists 82%, dealers 55%, other retail 78%, online 39%. The figures are set so all channels add up to 21.0M via wholesale and 8.0M direct.",
+     "val": "No UK source reports it. 50:50 for online is also defensible (research). Micheldever's 6.0M a year is the research's figure (Sumitomo Rubber agreed to buy it in 2017)."
     },
     "ch.ret.dir": {
      "v": 0.3,
@@ -4727,7 +4992,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.ret.prv": {
      "v": 1.1,
@@ -4741,7 +5007,9 @@
      "sure": {
       "l": "Low",
       "w": "A proxy for cars versus vans, placed mostly in the specialist channel by judgement."
-     }
+     },
+     "why": "Not a customer split but a mileage proxy: vans are about 18.6% of car-plus-van miles in Great Britain (DfT 2024), so that share of tyres is treated as commercial. Read \"private\" as cars and \"commercial\" as vans.",
+     "val": "DfT 2024 vehicle miles: 256.1bn for cars and taxis, 58.5bn for vans (as quoted by the research, not checked). Company cars sit inside \"cars\", so true commercial demand is higher."
     },
     "ch.ret.com": {
      "v": 0.1,
@@ -4753,7 +5021,8 @@
      "sure": {
       "l": "Low",
       "w": "A proxy for cars versus vans, placed mostly in the specialist channel by judgement."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.tot": {
      "v": 4.06,
@@ -4769,7 +5038,9 @@
       "l": "Low",
       "w": "A placeholder share with an error of about ±6 points."
      },
-     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted)."
+     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted).",
+     "why": "There is no published channel split for the United Kingdom, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. Online is a growing but smaller channel (Mintel, qualitative).",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether the United Kingdom follows them cannot: the research allows an error of about ±6 points. Replace with your own United Kingdom channel data when you have it. Mintel's UK report is qualitative only; its numbers are behind a paywall."
     },
     "ch.onl.ws": {
      "v": 1.6,
@@ -4783,7 +5054,9 @@
      "sure": {
       "l": "Low",
       "w": "Channel routing has the lowest confidence of all the UK figures."
-     }
+     },
+     "why": "Inferred from market structure: independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Share via wholesale: specialists 82%, dealers 55%, other retail 78%, online 39%. The figures are set so all channels add up to 21.0M via wholesale and 8.0M direct.",
+     "val": "No UK source reports it. 50:50 for online is also defensible (research). Micheldever's 6.0M a year is the research's figure (Sumitomo Rubber agreed to buy it in 2017)."
     },
     "ch.onl.dir": {
      "v": 2.5,
@@ -4795,7 +5068,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.prv": {
      "v": 3.6,
@@ -4809,7 +5083,9 @@
      "sure": {
       "l": "Low",
       "w": "A proxy for cars versus vans, placed mostly in the specialist channel by judgement."
-     }
+     },
+     "why": "Not a customer split but a mileage proxy: vans are about 18.6% of car-plus-van miles in Great Britain (DfT 2024), so that share of tyres is treated as commercial. Read \"private\" as cars and \"commercial\" as vans.",
+     "val": "DfT 2024 vehicle miles: 256.1bn for cars and taxis, 58.5bn for vans (as quoted by the research, not checked). Company cars sit inside \"cars\", so true commercial demand is higher."
     },
     "ch.onl.com": {
      "v": 0.5,
@@ -4821,7 +5097,8 @@
      "sure": {
       "l": "Low",
       "w": "A proxy for cars versus vans, placed mostly in the specialist channel by judgement."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "prvAll": {
      "v": 23.7,
@@ -4833,7 +5110,9 @@
      "sure": {
       "l": "Low",
       "w": "A proxy, not an observed split."
-     }
+     },
+     "why": "Not a customer split but a mileage proxy: vans are about 18.6% of car-plus-van miles in Great Britain (DfT 2024), so that share of tyres is treated as commercial. Read \"private\" as cars and \"commercial\" as vans.",
+     "val": "DfT 2024 vehicle miles: 256.1bn for cars and taxis, 58.5bn for vans (as quoted by the research, not checked). Company cars sit inside \"cars\", so true commercial demand is higher."
     },
     "comAll": {
      "v": 5.4,
@@ -4846,7 +5125,9 @@
      "sure": {
       "l": "Low",
       "w": "A proxy, not an observed split."
-     }
+     },
+     "why": "Not a customer split but a mileage proxy: vans are about 18.6% of car-plus-van miles in Great Britain (DfT 2024), so that share of tyres is treated as commercial. Read \"private\" as cars and \"commercial\" as vans.",
+     "val": "DfT 2024 vehicle miles: 256.1bn for cars and taxis, 58.5bn for vans (as quoted by the research, not checked). Company cars sit inside \"cars\", so true commercial demand is higher."
     }
    },
    "quotes": {
@@ -5078,7 +5359,14 @@
     "boxNote": "Boxes are the channels as named under \"By channel\". Industry is ETRMA pool sell-in (9.41M, rolling year 2026), which is gross: it includes tyres invoiced to Dutch customers that are re-exported, so it does not compare directly with domestic sales. Export (2.41M) closes the flow: it is ETRMA industry plus imports minus the 9.84M market, and holds about 2.0M of re-export that the research estimates plus about 0.4M by which ETRMA is above what RecyBEM implies (your choice to place the gap here). The market is net of it. The import box is the 2.84M of non-pool and parallel imports, shown going through wholesale. The research sends about 0.42M of it straight to channels; the model has no such flow, so that volume sits in the direct box and 'industry sold to wholesale' (5.99M) reads 0.42M lower than ETRMA pool minus the direct pool volume (6.41M). The research gives the channel, wholesale versus direct and private versus commercial splits for cars only, so those figures are its 2026 car numbers multiplied by 1.2, which assumes vans and light trucks follow the car shares (vans lean commercial, so commercial is probably understated). Online is the seller of record and leaves out the undeclared foreign-webshop purchases (part of about 0.85M of undeclared leakage that also includes tyres from scrapped cars). Private and commercial are modelled from lease-fleet and mileage data, and the channel split is not published.",
     "scopeNote": "Period: rolling year RY2026 (I read it as the 12 months to September 2026). Industry is ETRMA's Pool Market Data for the Netherlands, 9,406,575 tyres, supplied by you (RY2025 9,465,749, -0.6%); it covers cars, SUV/4x4, vans and light trucks together (ETRMA PCT). The market (9.84M) is the research's 2026 projection of RecyBEM placements (about 10.25M tyres of all types) times 0.96 for the same consumer scope, leaving out caravan, trailer and other tyres; the 80 / 16 / 4 split between cars and SUV/4x4, vans and light trucks, and other is an assumption, because RecyBEM does not publish placements by tyre type. About 0.85M consumer tyres that RecyBEM does not see (foreign webshops, tyres from scrapped cars) sit outside it, so total domestic demand is about 10.69M. Everything below the industry figure is modelled, not published. For comparison, the 2024 version of this flow had industry 8.54M (a research estimate from RecyBEM declarations), market 9.59M, imports 2.85M and export 1.80M.",
     "seasons": {},
-    "walkNote": "Industry is ETRMA's pool figure (9.41M), which is gross and includes tyres that are re-exported. Export (2.41M) closes the flow, and includes the 0.41M by which ETRMA is above RecyBEM, placed there at your instruction. The research gives channel, route and private / commercial splits for cars only, so those figures are its car numbers × 1.2."
+    "walkNote": "Industry is ETRMA's pool figure (9.41M), which is gross and includes tyres that are re-exported. Export (2.41M) closes the flow, and includes the 0.41M by which ETRMA is above RecyBEM, placed there at your instruction. The research gives channel, route and private / commercial splits for cars only, so those figures are its car numbers × 1.2.",
+    "walkWhy": {
+     "channels": {
+      "v": 9.84,
+      "why": "The research gives channel shares for cars only (74 / 13 / 1.8 / 11%). They are scaled × 1.2 so that vans and light trucks follow the same split.",
+      "val": "No Dutch channel panel is published. Replace with NIQ-GfK or your own Netherlands channel data."
+     }
+    }
    },
    "refs": [
     "Scope and method (rebuilt October 2026): the Netherlands flow now covers cars, SUV/4x4, vans and light trucks together as passenger-car replacement, which is ETRMA's PCT scope, on a 2026 rolling-year basis (RY2026). The industry box is ETRMA's own Pool Market Data for the Netherlands (9,406,575 tyres in RY2026), supplied by you. The supply side below it comes from the research (RecyBEM data) for 2026 in the same consumer scope: market 9.84M, non-pool and parallel imports 2.84M and domestic pool about 7.00M. Export (2.41M) is the balancing figure: ETRMA 9.41 + imports 2.84 - market 9.84. The research gives the channel, wholesale versus direct and private versus commercial splits for cars only, so those are its 2026 car figures multiplied by 1.2 (cars are 83.3% of the consumer scope: 8.2M cars x 1.2 = 9.84M). That assumes vans and light trucks follow the same channel and route shares as cars. Vans lean commercial, so the commercial share (24%, from the car data) is probably understated. Caravan, trailer and other tyres (4% of RecyBEM placements, an assumption) stay out. No Dutch source publishes sell-out by these channels or supply routes, so everything below the industry figure is an estimate. Earlier versions of this flow: cars only for 2024 (market 8.0M, industry 7.12M), then consumer scope for 2024 (market 9.59M, industry 8.54M, a research estimate from RecyBEM declarations).",
@@ -5114,7 +5402,12 @@
      "sure": {
       "l": "Medium",
       "w": "The 2024 actual is published and checked; 2026 is a projection, and the 96% consumer share is assumed. Its period (calendar 2026) differs slightly from the ETRMA rolling year."
-     }
+     },
+     "why": "RecyBEM is the closest thing to a full count of tyres placed on the Dutch market, because its members declare them. The 2026 level is projected from this year's trend, and a 96% factor keeps only consumer tyres.",
+     "val": "The 2024 actual is published (quote kept: 9,990,534 tyres, all types). Sanity check: 9.84M ÷ 9.4M cars (CBS, 1 Jan 2026) = 1.05 tyres per car, the highest in this dashboard. Vans and light trucks are in the 9.84M but not in the car count, so the like-for-like figure is lower.",
+     "vq": [
+      "cbs_cars"
+     ]
     },
     "industry": {
      "v": 9.41,
@@ -5132,7 +5425,9 @@
      "sure": {
       "l": "High",
       "w": "Published ETRMA data. Still to confirm: that RY2026 means the 12 months to September 2026, and whether ETRMA allocates by invoice-to or ship-to country."
-     }
+     },
+     "why": "It is ETRMA's own published pool figure for the Netherlands, supplied by you, so nothing is assumed.",
+     "val": "The table row is in the quotes kept. Still to confirm with ETRMA: that RY2026 means the 12 months to September 2026, and whether tyres are counted by invoice-to or ship-to country."
     },
     "import": {
      "v": 2.84,
@@ -5150,7 +5445,9 @@
      "sure": {
       "l": "Medium",
       "w": "Based on declared figures, but the category overlaps with pool imports."
-     }
+     },
+     "why": "RecyBEM has a group of members that only import, and the research treats their declared volume as the closest published proxy for supply from outside the pool.",
+     "val": "The 2024 figure is a published and checked RecyBEM number (quote kept). What is assumed: the 0.96 consumer share and the flat 2026 level. Pool brands bought abroad are also in this figure, so it overlaps with the pool."
     },
     "export": {
      "v": 2.41,
@@ -5168,7 +5465,9 @@
      "sure": {
       "l": "Low",
       "w": "A balancing figure. Customs trade flows are far larger and are not netted here."
-     }
+     },
+     "why": "Dutch hubs re-export a lot, so something has to absorb the gap between ETRMA's gross pool sales plus imports and the Dutch market. Export is the balancing box, and RecyBEM's 2024 refunded exports show it is the right order of magnitude. The extra 0.41M is parked here at your instruction.",
+     "val": "RecyBEM refunded the fee on 1,874,255 exported tyres in 2024 (1.80M for consumer scope; quote kept), the same order of magnitude as the 2.0M. The 0.41M cannot be checked: if it really belongs in imports or in the Dutch market, export would be about 2.0M."
     },
     "direct": {
      "v": 3.42,
@@ -5182,7 +5481,9 @@
      "sure": {
       "l": "Medium",
       "w": "The research rates its car split medium; the × 1.2 for vans and light trucks is an assumption."
-     }
+     },
+     "why": "In the Netherlands the big fitting chains (Kwik Fit, Euromaster) buy mostly straight from manufacturers, while independent garages and dealers are served mainly through wholesalers. The research's car split is applied to vans and light trucks too.",
+     "val": "No Dutch source publishes it. Directional support (research, not checked): Kwik Fit buys mostly direct and Euromaster buys direct from Michelin and other A-brands. Best check: your own Netherlands sell-in by account type."
     },
     "toWs": {
      "v": 5.99,
@@ -5195,7 +5496,9 @@
      "sure": {
       "l": "Medium",
       "w": "Both inputs are research-backed, but one is an estimate."
-     }
+     },
+     "why": "In the Netherlands the big fitting chains (Kwik Fit, Euromaster) buy mostly straight from manufacturers, while independent garages and dealers are served mainly through wholesalers. The research's car split is applied to vans and light trucks too.",
+     "val": "No Dutch source publishes it. Directional support (research, not checked): Kwik Fit buys mostly direct and Euromaster buys direct from Michelin and other A-brands. Best check: your own Netherlands sell-in by account type."
     },
     "wsDom": {
      "v": 6.42,
@@ -5223,7 +5526,9 @@
       "l": "Medium",
       "w": "A research estimate backed by network sizes and a garage-panel share (not checked)."
      },
-     "what": "Fast-fit chains, tyre specialists and independent garages (Kwik Fit, Profile, Euromaster, Bosch Car Service and others)."
+     "what": "Fast-fit chains, tyre specialists and independent garages (Kwik Fit, Profile, Euromaster, Bosch Car Service and others).",
+     "why": "Most Dutch tyres are fitted by chains, specialists and independent garages, so this is by far the biggest channel. The research sizes it for cars and scales it up for vans and light trucks.",
+     "val": "Network sizes (research, mostly not checked): Kwik Fit about 165 outlets, Profile about 170, Euromaster about 106, Bosch Car Service about 400. No Dutch panel share is published."
     },
     "ch.spec.ws": {
      "v": 4.96,
@@ -5237,7 +5542,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Not published. The research's car split × 1.2: Kwik Fit and Euromaster buy mostly direct, dealers are supplied mainly through Banden Express and PBG (both Global Automotive), and online sellers buy from manufacturers and from German and Belgian wholesalers.",
+     "val": "No Dutch source publishes how channels buy. Ask your Netherlands sales team."
     },
     "ch.spec.dir": {
      "v": 2.36,
@@ -5250,7 +5557,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.spec.prv": {
      "v": 5.52,
@@ -5264,7 +5572,13 @@
      "sure": {
       "l": "Medium",
       "w": "Anchored on checked lease-fleet and mileage data, but the channel split is not published and vans are assumed to follow cars."
-     }
+     },
+     "why": "About 24% commercial: company, lease and fleet cars. It is the research's figure for cars, anchored on the lease fleet and on mileage, applied to vans and light trucks too.",
+     "val": "Rough check (my arithmetic): CBS says 12.3% of cars belong to companies (87.7% are private). Business-lease cars drive about 25,100 km a year against about 11,100 km for privately owned cars (VNA and CBS, as quoted by the research), so company cars would account for about 24% of kilometres, which matches the 24% used here. Vans lean commercial, so the true share is probably higher.",
+     "vq": [
+      "cbs_priv",
+      "vna_biz"
+     ]
     },
     "ch.spec.com": {
      "v": 1.8,
@@ -5276,7 +5590,8 @@
      "sure": {
       "l": "Medium",
       "w": "Anchored on checked lease-fleet and mileage data, but the channel split is not published and vans are assumed to follow cars."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.tot": {
      "v": 1.26,
@@ -5291,7 +5606,9 @@
       "l": "Medium",
       "w": "A research estimate; no dealer-group volumes were found."
      },
-     "what": "Car dealers and brand-tied workshops."
+     "what": "Car dealers and brand-tied workshops.",
+     "why": "Dealers mostly fit tyres on their own customers' cars at service time, so their share is modest (13% for cars) and described as under pressure.",
+     "val": "ICDP describes the dealer share as \"in the doldrums\" (cited by the research, not checked). No dealer-group volumes were found."
     },
     "ch.deal.ws": {
      "v": 0.84,
@@ -5305,7 +5622,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Not published. The research's car split × 1.2: Kwik Fit and Euromaster buy mostly direct, dealers are supplied mainly through Banden Express and PBG (both Global Automotive), and online sellers buy from manufacturers and from German and Belgian wholesalers.",
+     "val": "No Dutch source publishes how channels buy. Ask your Netherlands sales team."
     },
     "ch.deal.dir": {
      "v": 0.42,
@@ -5318,7 +5637,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.prv": {
      "v": 0.74,
@@ -5332,7 +5652,13 @@
      "sure": {
       "l": "Medium",
       "w": "Anchored on checked lease-fleet and mileage data, but the channel split is not published and vans are assumed to follow cars."
-     }
+     },
+     "why": "About 24% commercial: company, lease and fleet cars. It is the research's figure for cars, anchored on the lease fleet and on mileage, applied to vans and light trucks too.",
+     "val": "Rough check (my arithmetic): CBS says 12.3% of cars belong to companies (87.7% are private). Business-lease cars drive about 25,100 km a year against about 11,100 km for privately owned cars (VNA and CBS, as quoted by the research), so company cars would account for about 24% of kilometres, which matches the 24% used here. Vans lean commercial, so the true share is probably higher.",
+     "vq": [
+      "cbs_priv",
+      "vna_biz"
+     ]
     },
     "ch.deal.com": {
      "v": 0.52,
@@ -5344,7 +5670,8 @@
      "sure": {
       "l": "Medium",
       "w": "Anchored on checked lease-fleet and mileage data, but the channel split is not published and vans are assumed to follow cars."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.ret.tot": {
      "v": 0.18,
@@ -5358,7 +5685,9 @@
       "l": "Low",
       "w": "A small residual with no direct source."
      },
-     "what": "Other retail: parts stores, hypermarkets and petrol stations."
+     "what": "Other retail: parts stores, hypermarkets and petrol stations.",
+     "why": "A small residual (1.8%): the research found no material hypermarket or petrol-station tyre fitting in the Netherlands, and parts stores act as distributors to garages.",
+     "val": "No source for the exact share. The residual keeps the channels adding up to the market."
     },
     "ch.ret.ws": {
      "v": 0.14,
@@ -5372,7 +5701,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Not published. The research's car split × 1.2: Kwik Fit and Euromaster buy mostly direct, dealers are supplied mainly through Banden Express and PBG (both Global Automotive), and online sellers buy from manufacturers and from German and Belgian wholesalers.",
+     "val": "No Dutch source publishes how channels buy. Ask your Netherlands sales team."
     },
     "ch.ret.dir": {
      "v": 0.04,
@@ -5384,7 +5715,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.ret.prv": {
      "v": 0.16,
@@ -5398,7 +5730,13 @@
      "sure": {
       "l": "Medium",
       "w": "Anchored on checked lease-fleet and mileage data, but the channel split is not published and vans are assumed to follow cars."
-     }
+     },
+     "why": "About 24% commercial: company, lease and fleet cars. It is the research's figure for cars, anchored on the lease fleet and on mileage, applied to vans and light trucks too.",
+     "val": "Rough check (my arithmetic): CBS says 12.3% of cars belong to companies (87.7% are private). Business-lease cars drive about 25,100 km a year against about 11,100 km for privately owned cars (VNA and CBS, as quoted by the research), so company cars would account for about 24% of kilometres, which matches the 24% used here. Vans lean commercial, so the true share is probably higher.",
+     "vq": [
+      "cbs_priv",
+      "vna_biz"
+     ]
     },
     "ch.ret.com": {
      "v": 0.02,
@@ -5410,7 +5748,8 @@
      "sure": {
       "l": "Medium",
       "w": "Anchored on checked lease-fleet and mileage data, but the channel split is not published and vans are assumed to follow cars."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.tot": {
      "v": 1.08,
@@ -5425,7 +5764,9 @@
       "l": "Low",
       "w": "No Dutch online unit share is published. An old VACO/GfK study (2019) found about 4% of private buyers used a webshop, which is too old to use."
      },
-     "what": "Online sellers declared in the Netherlands (the seller of record)."
+     "what": "Online sellers declared in the Netherlands (the seller of record).",
+     "why": "Online sellers are counted by the seller of record that declares in the Netherlands, so foreign webshops are outside the 11% and show up only in the separate 0.85M gap.",
+     "val": "No Dutch online unit share is published. An old VACO/GfK study (2019) found about 4% of private buyers used a webshop, which is too old to use. RecyBEM notes foreign online sales as a growing gap (about 0.85M outside the market)."
     },
     "ch.onl.ws": {
      "v": 0.48,
@@ -5439,7 +5780,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Not published. The research's car split × 1.2: Kwik Fit and Euromaster buy mostly direct, dealers are supplied mainly through Banden Express and PBG (both Global Automotive), and online sellers buy from manufacturers and from German and Belgian wholesalers.",
+     "val": "No Dutch source publishes how channels buy. Ask your Netherlands sales team."
     },
     "ch.onl.dir": {
      "v": 0.6,
@@ -5452,7 +5795,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.prv": {
      "v": 1.02,
@@ -5466,7 +5810,13 @@
      "sure": {
       "l": "Medium",
       "w": "Anchored on checked lease-fleet and mileage data, but the channel split is not published and vans are assumed to follow cars."
-     }
+     },
+     "why": "About 24% commercial: company, lease and fleet cars. It is the research's figure for cars, anchored on the lease fleet and on mileage, applied to vans and light trucks too.",
+     "val": "Rough check (my arithmetic): CBS says 12.3% of cars belong to companies (87.7% are private). Business-lease cars drive about 25,100 km a year against about 11,100 km for privately owned cars (VNA and CBS, as quoted by the research), so company cars would account for about 24% of kilometres, which matches the 24% used here. Vans lean commercial, so the true share is probably higher.",
+     "vq": [
+      "cbs_priv",
+      "vna_biz"
+     ]
     },
     "ch.onl.com": {
      "v": 0.06,
@@ -5478,7 +5828,8 @@
      "sure": {
       "l": "Medium",
       "w": "Anchored on checked lease-fleet and mileage data, but the channel split is not published and vans are assumed to follow cars."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "prvAll": {
      "v": 7.44,
@@ -5494,7 +5845,13 @@
      "sure": {
       "l": "Medium",
       "w": "Anchored on lease-fleet and mileage data; see the commercial figure."
-     }
+     },
+     "why": "About 24% commercial: company, lease and fleet cars. It is the research's figure for cars, anchored on the lease fleet and on mileage, applied to vans and light trucks too.",
+     "val": "Rough check (my arithmetic): CBS says 12.3% of cars belong to companies (87.7% are private). Business-lease cars drive about 25,100 km a year against about 11,100 km for privately owned cars (VNA and CBS, as quoted by the research), so company cars would account for about 24% of kilometres, which matches the 24% used here. Vans lean commercial, so the true share is probably higher.",
+     "vq": [
+      "cbs_priv",
+      "vna_biz"
+     ]
     },
     "comAll": {
      "v": 2.4,
@@ -5512,7 +5869,13 @@
      "sure": {
       "l": "Medium",
       "w": "Anchored on checked lease-fleet data, but probably understated for vans."
-     }
+     },
+     "why": "About 24% commercial: company, lease and fleet cars. It is the research's figure for cars, anchored on the lease fleet and on mileage, applied to vans and light trucks too.",
+     "val": "Rough check (my arithmetic): CBS says 12.3% of cars belong to companies (87.7% are private). Business-lease cars drive about 25,100 km a year against about 11,100 km for privately owned cars (VNA and CBS, as quoted by the research), so company cars would account for about 24% of kilometres, which matches the 24% used here. Vans lean commercial, so the true share is probably higher.",
+     "vq": [
+      "cbs_priv",
+      "vna_biz"
+     ]
     }
    },
    "quotes": {
@@ -5571,6 +5934,14 @@
      "u": "https://www.cbs.nl/nl-nl/visualisaties/verkeer-en-vervoer/vervoermiddelen-en-infrastructuur/personenautos",
      "en": "87.7 percent of all passenger cars are registered to a private individual, the rest are owned by a company.",
      "role": "context"
+    },
+    "cbs_cars": {
+     "q": "Op 1 januari 2026 waren er ruim 9,4 miljoen personenauto’s, 1,8 procent meer dan een jaar eerder.",
+     "by": "CBS (page updated 11 Mar 2026)",
+     "u": "https://www.cbs.nl/nl-nl/visualisaties/verkeer-en-vervoer/vervoermiddelen-en-infrastructuur/personenautos",
+     "en": "On 1 January 2026 there were more than 9.4 million passenger cars, 1.8 percent more than a year earlier.",
+     "role": "check",
+     "note": "Used only for a sanity check: tyres per car."
     }
    }
   },
@@ -5641,7 +6012,14 @@
     "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
     "scopeNote": "",
     "seasons": {},
-    "walkNote": "Only the market and the four channel totals are filled. The pool, imports, exports, wholesale and direct boxes need ETRMA or Belgian data. Nothing is guessed for them."
+    "walkNote": "Only the market and the four channel totals are filled. The pool, imports, exports, wholesale and direct boxes need ETRMA or Belgian data. Nothing is guessed for them.",
+    "walkWhy": {
+     "channels": {
+      "v": 4.6,
+      "why": "No Belgian channel split is published, so the four shares come from the German BRV split and the French panel, lightly adjusted (structure close to the Netherlands and France, dealers slightly above the Dutch level).",
+      "val": "Nothing published to test it against. Replace with your own Belgian channel data; the research allows about ±6 points per channel."
+     }
+    }
    },
    "refs": [
     "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
@@ -5668,7 +6046,12 @@
       "l": "Low",
       "w": "An estimate, and the car count behind it does not match the official figure (see the heads-up)."
      },
-     "check": "Statbel counts 6,089,564 passenger cars on 1 August 2024, not about 5.8M. At 0.80 tyres per car that gives about 4.9M, roughly 0.3M above the 4.6M used here. The number has not been changed. Tell me if you want it rebased."
+     "check": "Statbel counts 6,089,564 passenger cars on 1 August 2024, not about 5.8M. At 0.80 tyres per car that gives about 4.9M, roughly 0.3M above the 4.6M used here. The number has not been changed. Tell me if you want it rebased.",
+     "why": "With no Belgian sales statistic, the car count times a typical tyres-per-car rate is the usual way to size a market. The research uses 0.80 a year, in line with Germany (0.83) and Spain (0.80), where markets are published.",
+     "val": "Sanity check: 4.6M ÷ 6.09M cars (Statbel, quote kept) = 0.76 tyres per car, a little below Germany (0.83). The car count behind the estimate does not match Statbel; see the heads-up.",
+     "vq": [
+      "statbel"
+     ]
     },
     "ch.spec.tot": {
      "v": 3.266,
@@ -5684,7 +6067,9 @@
       "l": "Low",
       "w": "A placeholder share with an error of about ±6 points."
      },
-     "what": "Tyre specialists, fast-fit chains and independent garages."
+     "what": "Tyre specialists, fast-fit chains and independent garages.",
+     "why": "There is no published channel split for Belgium, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. The structure is close to the Netherlands and France.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Belgium follows them cannot: the research allows an error of about ±6 points. Replace with your own Belgium channel data when you have it."
     },
     "ch.deal.tot": {
      "v": 0.69,
@@ -5700,7 +6085,9 @@
       "l": "Low",
       "w": "A placeholder share with an error of about ±6 points."
      },
-     "what": "Car dealers and brand-tied workshops."
+     "what": "Car dealers and brand-tied workshops.",
+     "why": "There is no published channel split for Belgium, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. The dealer share is slightly above the Dutch level.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Belgium follows them cannot: the research allows an error of about ±6 points. Replace with your own Belgium channel data when you have it."
     },
     "ch.ret.tot": {
      "v": 0.092,
@@ -5716,7 +6103,9 @@
       "l": "Low",
       "w": "A placeholder share with an error of about ±6 points."
      },
-     "what": "Other retail: parts stores, hypermarkets and petrol stations."
+     "what": "Other retail: parts stores, hypermarkets and petrol stations.",
+     "why": "There is no published channel split for Belgium, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. No Belgian-specific information was found, so the benchmark is kept as is.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Belgium follows them cannot: the research allows an error of about ±6 points. Replace with your own Belgium channel data when you have it."
     },
     "ch.onl.tot": {
      "v": 0.552,
@@ -5732,7 +6121,9 @@
       "l": "Low",
       "w": "A placeholder share with an error of about ±6 points."
      },
-     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted)."
+     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted).",
+     "why": "There is no published channel split for Belgium, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. No Belgian-specific information was found, so the benchmark is kept as is.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Belgium follows them cannot: the research allows an error of about ±6 points. Replace with your own Belgium channel data when you have it."
     }
    },
    "quotes": {
@@ -5945,7 +6336,14 @@
     "boxNote": "Boxes are the channels as named under \"By channel\". The import box is net non-pool supply, the 6.3M gap between the 21.06M market and the Europool pool, not gross imports (Asian consumer-tyre imports alone were about 13.4M, and they include pool brands made in Asia). The research sends 0.50M of the non-pool volume straight to channels (online pure players and autocentro private labels). The model has no such flow, so the whole 6.3M is shown going through wholesale and that 0.50M sits in the direct box instead; pool to wholesale therefore reads 8.4M, not the research's 8.9M. Export is set to zero because the MITECO figure is already net of exports; the research sees 0.2-0.5M of Europool volume as possibly re-exported. Online is the seller of record, so orders fitted at a workshop sit in the online box. Private and commercial are a planning assumption only.",
     "scopeNote": "The market size is the MITECO producer register total as analysed by ADINE: 17.934M passenger-car plus 3.125M van, 4x4 and SUV new replacement tyres. The research recommends the 21.06M consumer total as the headline because MITECO's passenger-car line is not like-for-like with Europool's (SUV-fitment tyres sit partly in 'turismo'). A passenger-car-only cut of 17.93M is a secondary view and is not in the flow. Everything below the market and Europool figures is modelled: about 6.3M (30%) of the market sits outside the Europool pool.",
     "seasons": {},
-    "walkNote": "Only the market (the ministry register) and the Europool figure are published. Everything below is modelled. The register and Europool do not classify tyres in exactly the same way, so the 6.3M non-pool gap is partly a classification difference. The model has no flow for imports going straight to channels, so “industry sold to wholesale” reads 8.4M, not the research's 8.9M."
+    "walkNote": "Only the market (the ministry register) and the Europool figure are published. Everything below is modelled. The register and Europool do not classify tyres in exactly the same way, so the 6.3M non-pool gap is partly a classification difference. The model has no flow for imports going straight to channels, so “industry sold to wholesale” reads 8.4M, not the research's 8.9M.",
+    "walkWhy": {
+     "channels": {
+      "v": 21.06,
+      "why": "The research's reconciled 2024 flow: specialists, fast-fit and garages 82%, dealers 9.5%, other retail 2.4%, online 6.2%. It is built from GiPA/Ganvam workshop shares and GfK panel shares.",
+      "val": "The GiPA and GfK figures are quoted by the research and were not checked. No all-channel Spanish split is published."
+     }
+    }
    },
    "refs": [
     "Method (replaced with the newest Spain research file, October 2026): the supply flows, channel totals, wholesale versus direct split and private versus commercial split now follow the research's reconciled 2024 flow, version 1 (passenger car, van and 4x4/SUV together, the research's recommended headline): specialists, fast-fit and garages 17.26M, dealers 2.00M, other retail 0.50M, online 1.30M, 21.06M in total, replacing the earlier 80 / 9.5 / 3 / 7.5% shares. Only the market and Europool totals are published; everything below them is an estimate. The research's passenger-car-only version 2 (MITECO turismo, 17.93M) is a secondary cut and is not in the flow.",
@@ -5981,7 +6379,12 @@
       "l": "Medium",
       "w": "Published register data, but the split comes from ADINE's analysis; the PDF's own unit rows differ (see the heads-up)."
      },
-     "check": "The MITECO PDF I opened lists different unit rows for the same two groups (cars 15,191,656 and vans / 4x4 / SUV 3,679,718, together 18.87M), and its unit rows do not add up to its own 24,559,740 total, while its tonnes do. The tonnes match ADINE's split. I kept ADINE's figures because they add up exactly. If you prefer the PDF's rows, the market would be about 18.9M. Not changed."
+     "check": "The MITECO PDF I opened lists different unit rows for the same two groups (cars 15,191,656 and vans / 4x4 / SUV 3,679,718, together 18.87M), and its unit rows do not add up to its own 24,559,740 total, while its tonnes do. The tonnes match ADINE's split. I kept ADINE's figures because they add up exactly. If you prefer the PDF's rows, the market would be about 18.9M. Not changed.",
+     "why": "Spain has an official count: the ministry's register of tyre producers (MITECO), analysed by ADINE, records the new replacement tyres that producers placed on the Spanish market in 2024. It is a sell-in measure, used as a proxy for the market.",
+     "val": "Sanity check: 21.06M ÷ 26.47M cars (ANFAC, quote kept) = 0.80 tyres per car, in line with Germany (0.83) in this dashboard. Caveat: the unit rows in the MITECO PDF do not add up to ADINE's figure; see the heads-up.",
+     "vq": [
+      "anfac_cars"
+     ]
     },
     "industry": {
      "v": 14.775,
@@ -5995,7 +6398,9 @@
      "sure": {
       "l": "Medium",
       "w": "Labelled published, but I could not find the release to verify it."
-     }
+     },
+     "why": "The pool (Europool, the ETRMA member brands) reports its own Spanish sales through Europneus, so this is a reported figure rather than a model. It is quoted by the research.",
+     "val": "I could not find the Europneus release, so this is unchecked. A Goodyear Spain executive says import brands are \"four in ten\" tyres sold (sell-out basis, via Europneus, not checked), which would put the pool nearer 12.64M than 14.78M. The research suggests 40% as an upper sensitivity."
     },
     "import": {
      "v": 6.284,
@@ -6011,7 +6416,9 @@
       "l": "Low",
       "w": "It depends on a market and a pool figure that are not like-for-like, and it is not published."
      },
-     "check": "A conflicting claim: import brands are “cuatro de cada diez” (four in ten) of the tyres sold, according to Goodyear Spain's head of consumer sales via Europneus, on a sell-out basis (not checked). The research suggests showing 40% as an upper sensitivity."
+     "check": "A conflicting claim: import brands are “cuatro de cada diez” (four in ten) of the tyres sold, according to Goodyear Spain's head of consumer sales via Europneus, on a sell-out basis (not checked). The research suggests showing 40% as an upper sensitivity.",
+     "why": "Once the official market count and the pool's reported sales are fixed, whatever is left must have come from brands outside the pool. That residual is 6.28M (30% of the market), so it is only as good as those two figures.",
+     "val": "Asian consumer-tyre imports were 13.4M in 2024 (ADINE, as quoted by the research, not checked), but they include Asian-made pool brands, so they cannot be compared directly. Goodyear's \"four in ten\" would make the non-pool part larger."
     },
     "export": {
      "v": 0,
@@ -6024,7 +6431,9 @@
      "sure": {
       "l": "Low",
       "w": "A convention, not a measurement."
-     }
+     },
+     "why": "Set to zero because the ministry register counts tyres placed on the Spanish market, so it is already net of exports.",
+     "val": "Exports exist but are small next to 21M: Neumáticos Soledad had about EUR 32M (9%) of foreign sales in 2024 (EUR 355.96M in total; Alicante Plaza, checked). The research puts possible re-exports of pool volume at 0.2–0.5M."
     },
     "direct": {
      "v": 6.38,
@@ -6038,7 +6447,9 @@
      "sure": {
       "l": "Low",
       "w": "No Spanish source publishes the wholesale / direct split."
-     }
+     },
+     "why": "Manufacturer-owned or affiliated networks (Euromaster, First Stop, Vulco), dealers and key accounts are supplied directly, while independent garages, the largest group of fitters, buy mainly through distributors. That is why 30% of the market (6.38M) is assumed to go direct. Online pure players and autocentro private labels add to it by importing directly.",
+     "val": "Not published; the research rates it low confidence. Euromaster España has 443 workshops in Spain (Motor16, checked), which shows how large the manufacturer-owned networks are. Best check: your own Spanish sell-in by account type."
     },
     "toWs": {
      "v": 8.395,
@@ -6051,7 +6462,9 @@
      "sure": {
       "l": "Low",
       "w": "Both inputs are estimates."
-     }
+     },
+     "why": "Manufacturer-owned or affiliated networks (Euromaster, First Stop, Vulco), dealers and key accounts are supplied directly, while independent garages, the largest group of fitters, buy mainly through distributors. That is why 30% of the market (6.38M) is assumed to go direct. Online pure players and autocentro private labels add to it by importing directly.",
+     "val": "Not published; the research rates it low confidence. Euromaster España has 443 workshops in Spain (Motor16, checked), which shows how large the manufacturer-owned networks are. Best check: your own Spanish sell-in by account type."
     },
     "wsDom": {
      "v": 14.679,
@@ -6079,7 +6492,9 @@
       "l": "Medium",
       "w": "Two independent surveys point the same way, but they are quoted by the research and I have not checked them."
      },
-     "what": "Independent specialists, fast-fit chains and autocentros, and general garages."
+     "what": "Independent specialists, fast-fit chains and autocentros, and general garages.",
+     "why": "GiPA/Ganvam attribute 88% of tyre changes to specialists (37%), independent mechanics (40%) and autocentros (11%). The research sets 82% after allowing for tyres bought online and fitted there.",
+     "val": "Those shares are as quoted by the research and were not checked. GfK puts specialists at 47% and autocentros at 13.4% of its panel volume, which is a different measure."
     },
     "ch.spec.ws": {
      "v": 12.86,
@@ -6093,7 +6508,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Set channel by channel: manufacturer-affiliated networks (Euromaster, First Stop, Vulco) are fed directly, independent garages mostly through wholesalers, and dealers 50 / 50 as a placeholder. The figures are set so that all channels add up to 14.68M via wholesale and 6.38M direct. Share of each channel via wholesale: specialists 75%, dealers 50%, other retail 64%, online 38%.",
+     "val": "No Spanish source publishes procurement routes. Grupo Soledad's EUR 409M group revenue in 2024 (Alicante Plaza, checked) shows wholesalers are large, but not their share."
     },
     "ch.spec.dir": {
      "v": 4.4,
@@ -6106,7 +6523,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.spec.prv": {
      "v": 14.3,
@@ -6120,7 +6538,9 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "A planning assumption of about 83% private and 17% commercial. Fleet and renting maintenance is often routed to networks and dealers, so those channels get more commercial weight.",
+     "val": "No Spanish private versus commercial split is published, and the research gives no outside figure to test it against."
     },
     "ch.spec.com": {
      "v": 2.96,
@@ -6132,7 +6552,8 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.tot": {
      "v": 2,
@@ -6147,7 +6568,9 @@
       "l": "Medium",
       "w": "A panel share applied to the whole market."
      },
-     "what": "Car dealers and official brand workshops."
+     "what": "Car dealers and official brand workshops.",
+     "why": "GfK's share for official workshops (\"talleres oficiales\") of tyre volume, 9.5%, applied to the whole market.",
+     "val": "GfK has it falling from 9.9% to 9.5% by July 2024 and 9.3% by October 2025; GiPA had about 10% in 2017 (research, not checked). GfK's panel covers only about 53% of the ministry volume, so applying its share to the whole market is itself an assumption."
     },
     "ch.deal.ws": {
      "v": 1,
@@ -6161,7 +6584,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Set channel by channel: manufacturer-affiliated networks (Euromaster, First Stop, Vulco) are fed directly, independent garages mostly through wholesalers, and dealers 50 / 50 as a placeholder. The figures are set so that all channels add up to 14.68M via wholesale and 6.38M direct. Share of each channel via wholesale: specialists 75%, dealers 50%, other retail 64%, online 38%.",
+     "val": "No Spanish source publishes procurement routes. Grupo Soledad's EUR 409M group revenue in 2024 (Alicante Plaza, checked) shows wholesalers are large, but not their share."
     },
     "ch.deal.dir": {
      "v": 1,
@@ -6174,7 +6599,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.prv": {
      "v": 1.5,
@@ -6188,7 +6614,9 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "A planning assumption of about 83% private and 17% commercial. Fleet and renting maintenance is often routed to networks and dealers, so those channels get more commercial weight.",
+     "val": "No Spanish private versus commercial split is published, and the research gives no outside figure to test it against."
     },
     "ch.deal.com": {
      "v": 0.5,
@@ -6200,7 +6628,8 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.ret.tot": {
      "v": 0.5,
@@ -6214,7 +6643,9 @@
       "l": "Low",
       "w": "A small residual with no direct source."
      },
-     "what": "Other retail: parts stores, hypermarkets and petrol stations."
+     "what": "Other retail: parts stores, hypermarkets and petrol stations.",
+     "why": "A small residual (2.4%): GfK counts hypermarket tyre centres as autocentros, and parts stores mainly sell to garages.",
+     "val": "No source. Low confidence."
     },
     "ch.ret.ws": {
      "v": 0.32,
@@ -6228,7 +6659,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Set channel by channel: manufacturer-affiliated networks (Euromaster, First Stop, Vulco) are fed directly, independent garages mostly through wholesalers, and dealers 50 / 50 as a placeholder. The figures are set so that all channels add up to 14.68M via wholesale and 6.38M direct. Share of each channel via wholesale: specialists 75%, dealers 50%, other retail 64%, online 38%.",
+     "val": "No Spanish source publishes procurement routes. Grupo Soledad's EUR 409M group revenue in 2024 (Alicante Plaza, checked) shows wholesalers are large, but not their share."
     },
     "ch.ret.dir": {
      "v": 0.18,
@@ -6240,7 +6673,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.ret.prv": {
      "v": 0.45,
@@ -6254,7 +6688,9 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "A planning assumption of about 83% private and 17% commercial. Fleet and renting maintenance is often routed to networks and dealers, so those channels get more commercial weight.",
+     "val": "No Spanish private versus commercial split is published, and the research gives no outside figure to test it against."
     },
     "ch.ret.com": {
      "v": 0.05,
@@ -6266,7 +6702,8 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.tot": {
      "v": 1.3,
@@ -6281,7 +6718,9 @@
       "w": "No published online unit share."
      },
      "check": "Online-bought tyres are usually fitted at partner garages (Oponeo lists 877), which GiPA's workshop shares already include, so this box may double-count.",
-     "what": "Online sellers, counted by the seller of record."
+     "what": "Online sellers, counted by the seller of record.",
+     "why": "No Spanish online unit share is published. The research sets 6.2%, a little above the only figure found (under 5% by value, 2019). No other basis is stated.",
+     "val": "That 2019 figure is a manufacturer's estimate per the research (Europneus), not checked. Online-bought tyres are usually fitted at partner garages that the workshop shares already count, so this box risks double counting."
     },
     "ch.onl.ws": {
      "v": 0.5,
@@ -6295,7 +6734,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Set channel by channel: manufacturer-affiliated networks (Euromaster, First Stop, Vulco) are fed directly, independent garages mostly through wholesalers, and dealers 50 / 50 as a placeholder. The figures are set so that all channels add up to 14.68M via wholesale and 6.38M direct. Share of each channel via wholesale: specialists 75%, dealers 50%, other retail 64%, online 38%.",
+     "val": "No Spanish source publishes procurement routes. Grupo Soledad's EUR 409M group revenue in 2024 (Alicante Plaza, checked) shows wholesalers are large, but not their share."
     },
     "ch.onl.dir": {
      "v": 0.8,
@@ -6308,7 +6749,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.prv": {
      "v": 1.18,
@@ -6322,7 +6764,9 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "A planning assumption of about 83% private and 17% commercial. Fleet and renting maintenance is often routed to networks and dealers, so those channels get more commercial weight.",
+     "val": "No Spanish private versus commercial split is published, and the research gives no outside figure to test it against."
     },
     "ch.onl.com": {
      "v": 0.12,
@@ -6334,7 +6778,8 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "prvAll": {
      "v": 17.43,
@@ -6346,7 +6791,9 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption."
-     }
+     },
+     "why": "A planning assumption of about 83% private and 17% commercial. Fleet and renting maintenance is often routed to networks and dealers, so those channels get more commercial weight.",
+     "val": "No Spanish private versus commercial split is published, and the research gives no outside figure to test it against."
     },
     "comAll": {
      "v": 3.63,
@@ -6358,7 +6805,9 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption."
-     }
+     },
+     "why": "A planning assumption of about 83% private and 17% commercial. Fleet and renting maintenance is often routed to networks and dealers, so those channels get more commercial weight.",
+     "val": "No Spanish private versus commercial split is published, and the research gives no outside figure to test it against."
     }
    },
    "quotes": {
@@ -6368,6 +6817,14 @@
      "u": "https://www.miteco.gob.es/content/dam/miteco/es/calidad-y-evaluacion-ambiental/sgresiduos/neumaticos/2601123%20Sistema%20información%20neumáticos%202024.pdf",
      "note": "Row read from the PDF: new replacement tyres 24,559,740 units and 290,992.8 tonnes; the other columns are used and retreaded tyres, declared separately.",
      "kind": "table"
+    },
+    "anfac_cars": {
+     "q": "lo que supone más de 16,6 millones de turismos sobre los 26,47 millones que hay en circulación",
+     "by": "ANFAC annual report, as reported by Motor16, 17 Aug 2025",
+     "u": "https://www.motor16.com/noticias/coches-viejos-comunidades-parque-antiguo/",
+     "en": "which means more than 16.6 million cars out of the 26.47 million in circulation",
+     "role": "check",
+     "note": "Used only for a sanity check: tyres per car. The 26.47M is for 2024."
     }
    }
   },
@@ -6522,7 +6979,17 @@
     "boxNote": "Boxes are the channels as named under \"By channel\". The import box is the research's 4.1M estimate of non-pool wholesale imports (about 3.4M sold in Italy plus 0.7M re-exported), not customs imports: Italy imported 35.7M and exported 18.5M passenger-car tyres in 2024 (UN Comtrade, as quoted by the research), which include factory, original-equipment and intra-group flows. The export box is the research's 0.7M estimate of re-export by independent distributors. Online means the consumer buys online, not a gommista ordering through a wholesaler's B2B portal.",
     "scopeNote": "The 27.0M is anchored on GfK's specialist-dealer sell-out (19.68M) divided by an assumed 72.9% specialist share. The research calls it passenger-car only, but GfK's earlier Italian releases include light-truck and 4x4/SUV tyres, so read it as a consumer-tyre figure like the other countries. The card header shows tonnes (MASE, all tyre types), which is not comparable. The research does not cover private versus commercial demand, so those boxes still need input.",
     "seasons": {},
-    "walkNote": "Only the specialist channel has a measured anchor. The other three channels, the pool and every route split are model allocations. Private versus commercial is not covered, so those boxes are blank."
+    "walkNote": "Only the specialist channel has a measured anchor. The other three channels, the pool and every route split are model allocations. Private versus commercial is not covered, so those boxes are blank.",
+    "walkWhy": {
+     "channels": {
+      "v": 27.0,
+      "why": "Specialists 72.9%, dealers 15.7%, other retail 2.6%, online 8.8%. Only the specialist channel is measured (NIQ-GfK); the others are what is left of the market.",
+      "val": "Replace with NIQ-GfK channel data for dealers and online if you have it. The quote kept is the older GfK series for specialists.",
+      "vq": [
+       "pn_2022"
+      ]
+     }
+    }
    },
    "refs": [
     "Method (replaced with the Italy research file): the channel volumes follow the research's model of 72.9 / 15.7 / 2.6 / 8.8%, replacing the earlier benchmark of 68 / 12 / 3 / 17% on a 33M market. Only the specialist total has a measured anchor; the other three channels and every route split are modelled allocations.",
@@ -6557,7 +7024,9 @@
       "l": "Low",
       "w": "The 72.9% share is an assumption. The older GfK series I could open (19.7M in 2022) only confirms the order of magnitude."
      },
-     "check": "The research calls this passenger-car only, but GfK's Italian releases include light-truck and 4x4/SUV tyres, so read it as a consumer-tyre figure like the other countries."
+     "check": "The research calls this passenger-car only, but GfK's Italian releases include light-truck and 4x4/SUV tyres, so read it as a consumer-tyre figure like the other countries.",
+     "why": "Only one part of the Italian market is measured: the NIQ-GfK specialist-dealer channel (19.68M tyres in 2024). The research scales it up to the whole market by assuming that specialists sell 72.9% of all tyres.",
+     "val": "The GfK series is quoted for 2022 (19.7M, cars, light trucks and 4x4/SUV). A 69–77% specialist share gives 25.6–28.5M; for comparison, the German specialist share (BRV) is 71.3%, in the same range, but Italy's is an assumption. Sanity check: 27.0M ÷ about 41M cars (research, not checked) = 0.65 tyres per car, the lowest in this dashboard, so the market is not obviously overstated."
     },
     "industry": {
      "v": 23.6,
@@ -6570,7 +7039,9 @@
      "sure": {
       "l": "Low",
       "w": "Medium-low confidence in the research itself; replace it with ETRMA data for Italy if you have it."
-     }
+     },
+     "why": "No pool figure is published for Italy, so the research models it as the part of the market the manufacturers' Italian entities supply (23.6M, about 87%; range 22–25M). The rest is non-pool supply, which NIQ-GfK does measure in part (see imports).",
+     "val": "Replace with ETRMA's Italy pool figure if you can get it, as you did for the Netherlands."
     },
     "toWs": {
      "v": 13.2,
@@ -6583,7 +7054,9 @@
      "sure": {
       "l": "Low",
       "w": "Not observed."
-     }
+     },
+     "why": "Italy has a few large national wholesalers (Fintyre, Univergomma, Magri, Zuin and others). The research estimated how much they can carry and treats the pool volume they cannot carry as going direct: 13.2M via wholesale and 10.4M direct. It is a residual, not an observed figure.",
+     "val": "Fintyre's own site says it sells more than 6M tyres a year (all tyre types; checked). The research's wholesaler volumes (Fintyre about 4.5M, Univergomma 3.1M, Magri 1.5M, Zuin 1.0M) are estimates, not company figures. Nobody publishes the split."
     },
     "import": {
      "v": 4.1,
@@ -6597,7 +7070,9 @@
      "sure": {
       "l": "Low",
       "w": "Informed by a figure I could not find."
-     }
+     },
+     "why": "NIQ-GfK measures how much of specialist-dealer volume comes from non-pool (\"extrapool\") brands (14.7% in 2025, which implies about 11.7% in 2024), so that is the one measured anchor. The research extends it to online and other retail (about 3.4M consumed in Italy) and adds 0.7M re-exported.",
+     "val": "The extrapool share is as quoted by the research; I could not find the March 2026 release. What is confirmed: the EU imposed anti-dumping duties of 4.3–45.3% on Chinese car and light-truck tyres on 7 July 2026 (Eunews). China supplied about 28% of EU consumption in 2024 (research)."
     },
     "export": {
      "v": 0.7,
@@ -6610,7 +7085,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "Independent distributors re-export some volume, but nobody publishes it, so the research puts in a small balancing figure: 0.7M (range 0.3–1.2M).",
+     "val": "Customs show 18.47M passenger-car tyres exported in 2024 (UN Comtrade, as quoted, not checked), but that is mostly factory exports, which this flow leaves out."
     },
     "direct": {
      "v": 10.4,
@@ -6622,7 +7099,9 @@
      "sure": {
       "l": "Low",
       "w": "Both inputs are model estimates."
-     }
+     },
+     "why": "Italy has a few large national wholesalers (Fintyre, Univergomma, Magri, Zuin and others). The research estimated how much they can carry and treats the pool volume they cannot carry as going direct: 13.2M via wholesale and 10.4M direct. It is a residual, not an observed figure.",
+     "val": "Fintyre's own site says it sells more than 6M tyres a year (all tyre types; checked). The research's wholesaler volumes (Fintyre about 4.5M, Univergomma 3.1M, Magri 1.5M, Zuin 1.0M) are estimates, not company figures. Nobody publishes the split."
     },
     "wsDom": {
      "v": 16.6,
@@ -6653,7 +7132,12 @@
       "l": "Medium",
       "w": "The only measured channel, but the 2025 release itself was not found."
      },
-     "what": "Specialists, fast-fit chains and independent garages (GfK's specialist tyre-dealer channel)."
+     "what": "Specialists, fast-fit chains and independent garages (GfK's specialist tyre-dealer channel).",
+     "why": "Anchored on the only measured figure: the NIQ-GfK specialised tyre-dealer channel (19.6M in 2025, down 0.4%, which implies 19.68M in 2024).",
+     "val": "The quote kept shows the same GfK series for 2022 (19.7M, also down 0.4%). I could not find the March 2026 release, and the scope may include light trucks.",
+     "vq": [
+      "pn_2022"
+     ]
     },
     "ch.spec.ws": {
      "v": 13.3,
@@ -6667,7 +7151,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 16.6M via wholesale and 10.4M direct. Share of each channel via wholesale: specialists 68%, dealers 38%, other retail 71%, online 51%.",
+     "val": "No Italian source publishes procurement routes by channel. Lowest confidence for online and other retail."
     },
     "ch.spec.dir": {
      "v": 6.38,
@@ -6679,7 +7165,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.tot": {
      "v": 4.25,
@@ -6693,7 +7180,9 @@
       "l": "Low",
       "w": "A residual allocation."
      },
-     "what": "Car dealers and brand-tied workshops."
+     "what": "Car dealers and brand-tied workshops.",
+     "why": "Dealers are not measured, so they take a share of what is left after the specialist channel: 7.32M. How that remainder is split between dealers, other retail and online is the research's judgement.",
+     "val": "No public source for dealer volumes (research range 3.5–5.0M)."
     },
     "ch.deal.ws": {
      "v": 1.6,
@@ -6707,7 +7196,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 16.6M via wholesale and 10.4M direct. Share of each channel via wholesale: specialists 68%, dealers 38%, other retail 71%, online 51%.",
+     "val": "No Italian source publishes procurement routes by channel. Lowest confidence for online and other retail."
     },
     "ch.deal.dir": {
      "v": 2.65,
@@ -6719,7 +7210,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.ret.tot": {
      "v": 0.7,
@@ -6732,7 +7224,9 @@
       "l": "Low",
       "w": "A residual with no source."
      },
-     "what": "Other retail: parts stores, hypermarkets and petrol stations."
+     "what": "Other retail: parts stores, hypermarkets and petrol stations.",
+     "why": "The smallest slice of the unmeasured remainder, set by the research as a residual (2.6% of the market).",
+     "val": "No source. Low confidence (research range 0.4–1.0M)."
     },
     "ch.ret.ws": {
      "v": 0.5,
@@ -6746,7 +7240,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 16.6M via wholesale and 10.4M direct. Share of each channel via wholesale: specialists 68%, dealers 38%, other retail 71%, online 51%.",
+     "val": "No Italian source publishes procurement routes by channel. Lowest confidence for online and other retail."
     },
     "ch.ret.dir": {
      "v": 0.2,
@@ -6758,7 +7254,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.tot": {
      "v": 2.37,
@@ -6772,7 +7269,9 @@
       "l": "Low",
       "w": "A residual with no source."
      },
-     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted)."
+     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted).",
+     "why": "8.8% of the market, where \"online\" means the consumer bought online, not a garage ordering through a wholesaler's B2B portal. It replaces an earlier 17%, which rested on trade claims of very high online volumes that the research then judged unreliable.",
+     "val": "No reliable Italian figure. Trade claims of very high online volumes come from sponsored articles and were not used."
     },
     "ch.onl.ws": {
      "v": 1.2,
@@ -6786,7 +7285,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 16.6M via wholesale and 10.4M direct. Share of each channel via wholesale: specialists 68%, dealers 38%, other retail 71%, online 51%.",
+     "val": "No Italian source publishes procurement routes by channel. Lowest confidence for online and other retail."
     },
     "ch.onl.dir": {
      "v": 1.17,
@@ -6798,7 +7299,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     }
    },
    "quotes": {
@@ -6967,7 +7469,14 @@
     "boxNote": "Boxes are the channels as named under \"By channel\". The import box is the research's 1.70M estimate of non-pool supply entering wholesale, not gross customs imports (9.06M passenger-car tyres in 2024), and the export box is its 0.80M estimate of re-export through wholesalers, not the 1.30M customs figure. Direct means any route that bypasses an independent Austrian wholesaler: manufacturer supply, manufacturer-owned networks such as BestDrive (Continental), central accounts and cross-border e-commerce.",
     "scopeNote": "The 4.5M is a passenger-car-only estimate, slightly below the earlier 4.6M, which also included vans and 4x4s. No complete public Austrian sell-out series exists, so everything below the market figure is modelled, not published. The research does not cover private versus commercial demand, so those boxes still need input.",
     "seasons": {},
-    "walkNote": "No complete public Austrian sell-out series exists, so everything below the market figure is modelled, not published. Private versus commercial is not covered, so those boxes are blank."
+    "walkNote": "No complete public Austrian sell-out series exists, so everything below the market figure is modelled, not published. Private versus commercial is not covered, so those boxes are blank.",
+    "walkWhy": {
+     "channels": {
+      "v": 4.5,
+      "why": "No Austrian channel split is published, so the research keeps the earlier benchmark shape of 72 / 18 / 3 / 7% (anchored on the German BRV split) and rescales it to 4.5M.",
+      "val": "Network sizes support a large specialist channel (Forstinger 69 branches, Point S over 60, Lucky Car over 60, BestDrive over 50). Replace with your own Austrian channel data when you have it."
+     }
+    }
    },
    "refs": [
     "Method (replaced with the Austria research file): every figure is a model estimate for passenger-car tyres only. The channel shares of 72 / 18 / 3 / 7% are kept from the earlier benchmark and rescaled from 4.6M (car, van and 4x4) to 4.5M. No public Austrian source gives a sell-out total or a channel split.",
@@ -6998,7 +7507,12 @@
      "sure": {
       "l": "Low",
       "w": "An estimate. The car stock only shows it is plausible."
-     }
+     },
+     "why": "Nothing counts all Austrian tyre sales, so the research builds a bottom-up estimate for cars only (4.5M, range 4.3–4.7M) and checks it against the car stock.",
+     "val": "Sanity check: 4.5M ÷ 5.23M cars (Statistics Austria, end 2024, as quoted by the research) = 0.86 tyres per car. The end-2025 stock of 5.29M is in the quotes kept. GfK's retail panel counted almost 3.6M in 2018 but does not cover all channels.",
+     "vq": [
+      "stat_at"
+     ]
     },
     "industry": {
      "v": 3.6,
@@ -7011,7 +7525,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published; replace it with ETRMA data for Austria if you have it."
-     }
+     },
+     "why": "No pool figure is published for Austria, so the research models the major brands' supply as about 3.6M (80% of the market, range 3.2–3.9M). The remainder is non-pool supply entering through importers and wholesale.",
+     "val": "Replace with ETRMA's Austria pool figure if you can get it, as you did for the Netherlands."
     },
     "toWs": {
      "v": 0.75,
@@ -7024,7 +7540,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "Direct here means any route that bypasses an independent wholesaler: manufacturer-owned networks such as BestDrive (Continental) and Euromaster (Michelin), central accounts and cross-border e-commerce. The research assumes these routes carry most of the pool volume: 2.85M direct (79%) and only 0.75M via wholesale.",
+     "val": "The ownership facts are checked (Continental's 2022 release on renaming Profi Reifen and Reifen John to BestDrive); the volumes are modelled. Auto Plus (Denzel) with more than 2,000 dealer partners (Denzel, 2022) shows independent wholesale exists too."
     },
     "import": {
      "v": 1.7,
@@ -7037,7 +7555,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "Brands outside the pool reach Austrian fitters through importers and wholesalers, so the research estimates the volume entering wholesale that way: 1.7M (range 1.4–2.1M). It is not customs imports.",
+     "val": "UN Comtrade (as quoted, not checked) shows 9.06M passenger-car tyres imported in 2024, which includes original equipment, distributor stock and re-export, so it cannot be used for this box."
     },
     "export": {
      "v": 0.8,
@@ -7050,7 +7570,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "Some tyres imported into Austria leave again through wholesalers and importers, so the research includes a re-export estimate of 0.80M (range 0.6–1.0M).",
+     "val": "Customs show 1.30M passenger-car tyres exported in 2024 (as quoted, not checked). The rest of that figure is manufacturer logistics and stock movements outside this flow."
     },
     "direct": {
      "v": 2.85,
@@ -7063,7 +7585,9 @@
      "sure": {
       "l": "Low",
       "w": "Both inputs are model estimates."
-     }
+     },
+     "why": "Direct here means any route that bypasses an independent wholesaler: manufacturer-owned networks such as BestDrive (Continental) and Euromaster (Michelin), central accounts and cross-border e-commerce. The research assumes these routes carry most of the pool volume: 2.85M direct (79%) and only 0.75M via wholesale.",
+     "val": "The ownership facts are checked (Continental's 2022 release on renaming Profi Reifen and Reifen John to BestDrive); the volumes are modelled. Auto Plus (Denzel) with more than 2,000 dealer partners (Denzel, 2022) shows independent wholesale exists too."
     },
     "wsDom": {
      "v": 1.65,
@@ -7090,7 +7614,9 @@
       "l": "Low",
       "w": "A placeholder share."
      },
-     "what": "Tyre specialists, fast-fit chains and independent garages."
+     "what": "Tyre specialists, fast-fit chains and independent garages.",
+     "why": "There is no published channel split for Austria, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. The research keeps the earlier benchmark shape of 72 / 18 / 3 / 7%, rescaled to 4.5M.",
+     "val": "Network sizes quoted by the research from the networks' own sites support a large specialist channel: Forstinger 69 branches, Point S over 60, Lucky Car over 60, BestDrive over 50. They overlap, so they cannot be added up. No shares are published."
     },
     "ch.spec.ws": {
      "v": 1.32,
@@ -7104,7 +7630,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 1.65M via wholesale and 2.85M direct. Share of each channel via wholesale: specialists 41%, dealers 19%, other retail 57%, online 32%.",
+     "val": "No Austrian source publishes procurement routes by channel."
     },
     "ch.spec.dir": {
      "v": 1.92,
@@ -7117,7 +7645,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.tot": {
      "v": 0.81,
@@ -7131,7 +7660,9 @@
       "l": "Low",
       "w": "A placeholder share."
      },
-     "what": "Car dealers and brand-tied workshops."
+     "what": "Car dealers and brand-tied workshops.",
+     "why": "There is no published channel split for Austria, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. Kept from the earlier benchmark shape.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Austria follows them cannot: the research allows an error of about ±6 points. Replace with your own Austria channel data when you have it."
     },
     "ch.deal.ws": {
      "v": 0.15,
@@ -7145,7 +7676,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 1.65M via wholesale and 2.85M direct. Share of each channel via wholesale: specialists 41%, dealers 19%, other retail 57%, online 32%.",
+     "val": "No Austrian source publishes procurement routes by channel."
     },
     "ch.deal.dir": {
      "v": 0.66,
@@ -7158,7 +7691,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.ret.tot": {
      "v": 0.14,
@@ -7172,7 +7706,9 @@
       "l": "Low",
       "w": "A placeholder share."
      },
-     "what": "Other retail: parts stores, hypermarkets and petrol stations."
+     "what": "Other retail: parts stores, hypermarkets and petrol stations.",
+     "why": "There is no published channel split for Austria, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. Low confidence; no Austrian source.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Austria follows them cannot: the research allows an error of about ±6 points. Replace with your own Austria channel data when you have it."
     },
     "ch.ret.ws": {
      "v": 0.08,
@@ -7186,7 +7722,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 1.65M via wholesale and 2.85M direct. Share of each channel via wholesale: specialists 41%, dealers 19%, other retail 57%, online 32%.",
+     "val": "No Austrian source publishes procurement routes by channel."
     },
     "ch.ret.dir": {
      "v": 0.06,
@@ -7199,7 +7737,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.tot": {
      "v": 0.31,
@@ -7213,7 +7752,9 @@
       "l": "Low",
       "w": "A placeholder share."
      },
-     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted)."
+     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted).",
+     "why": "There is no published channel split for Austria, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. Low confidence; no Austrian source.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Austria follows them cannot: the research allows an error of about ±6 points. Replace with your own Austria channel data when you have it."
     },
     "ch.onl.ws": {
      "v": 0.1,
@@ -7227,7 +7768,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 1.65M via wholesale and 2.85M direct. Share of each channel via wholesale: specialists 41%, dealers 19%, other retail 57%, online 32%.",
+     "val": "No Austrian source publishes procurement routes by channel."
     },
     "ch.onl.dir": {
      "v": 0.21,
@@ -7240,7 +7783,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     }
    },
    "quotes": {
@@ -7405,7 +7949,14 @@
     "boxNote": "Boxes are the channels as named under \"By channel\". The import box is the research's 1.10M estimate of non-pool imports feeding Hungarian wholesalers, and the export box its 0.25M estimate of distributor re-export. Neither is customs data, which includes original-equipment supply, factories and regional stock, because Hungary is a large tyre production hub. Online is the order origin, wherever the tyre is fitted.",
     "scopeNote": "The card header's 3.1M is HTA's 2018 total for all tyre categories, including light-commercial tyres. This model's 2.85M is a 2024 estimate for passenger cars plus SUV/4x4 only. The research does not cover private versus commercial demand, so those boxes still need input.",
     "seasons": {},
-    "walkNote": "The import and export boxes are the research's estimates of non-pool distributor flows, not customs data (Hungary is a large tyre-production hub). Private versus commercial is not covered, so those boxes are blank."
+    "walkNote": "The import and export boxes are the research's estimates of non-pool distributor flows, not customs data (Hungary is a large tyre-production hub). Private versus commercial is not covered, so those boxes are blank.",
+    "walkWhy": {
+     "channels": {
+      "v": 2.85,
+      "why": "No Hungarian channel split is published, so the research keeps the earlier benchmark shares of 70 / 10 / 5 / 15% (anchored on the German BRV split) and rescales them to 2.85M.",
+      "val": "HTA names specialist workshops, traditional retailers and online as the main routes and calls online the fastest-growing, but publishes no shares. Replace with your own Hungarian channel data."
+     }
+    }
    },
    "refs": [
     "Method (replaced with the Hungary research file): the market and every flow and channel figure are modelled for passenger-car plus SUV/4x4 tyres, excluding light commercial. The channel shares of 70 / 10 / 5 / 15% are kept from the earlier benchmark and rescaled from 2.8M to 2.85M. No Hungarian source publishes sell-out by channel.",
@@ -7441,7 +7992,13 @@
       "l": "Low",
       "w": "No 2024 figure is published. The estimate scales a 2018 figure."
      },
-     "check": "The 3.1M on the old card header is the 2018 total for all tyre categories, including light commercial. This model's 2.85M is for passenger cars plus SUV/4x4 only."
+     "check": "The 3.1M on the old card header is the 2018 total for all tyre categories, including light commercial. This model's 2.85M is for passenger cars plus SUV/4x4 only.",
+     "why": "HTA's 2018 data (2.42M cars plus 0.18M SUV, about 2.6M) adjusted by the research to 2024: a car stock about 17% larger, but weaker demand since the post-Covid price shock. That gives 2.85M (range 2.65–3.05M).",
+     "val": "The 2018 figures are published (quotes kept). Sanity check: 2.85M ÷ 4.26M cars (KSH, end 2024, as quoted by the research) = 0.67 tyres per car, below Germany (0.83). The 2024 figure is an inference, not a published number.",
+     "vq": [
+      "hta_pc",
+      "hta_suv"
+     ]
     },
     "industry": {
      "v": 2,
@@ -7454,7 +8011,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "No pool figure is published for Hungary, so the research models what the manufacturers' Hungarian sales entities supply: about 2.0M (70% of the market, range 1.8–2.15M). It is not an HTA figure.",
+     "val": "Replace with ETRMA's Hungary pool figure if you can get it, as you did for the Netherlands."
     },
     "toWs": {
      "v": 1.25,
@@ -7466,7 +8025,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "Distributors and reseller networks (AKH, MARSO) are an established route to Hungarian fitters, while large accounts are supplied directly. The research therefore sends 63% of the pool volume (1.25M) through distributors and 0.75M direct (range 1.10–1.40M via distributors).",
+     "val": "Not published. AKH says it sells more than one million tyres a year and had 200+ reseller partners; MARSO has 1,000+ resellers (Világgazdaság, checked). AKH's deputy CEO put its market share at about 10% in 2022, so treat the research's wholesaler volumes as upper-end estimates."
     },
     "import": {
      "v": 1.1,
@@ -7479,7 +8040,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "Non-pool and budget brands reach Hungarian fitters through importers and distributors, so the research estimates the volume feeding wholesale at 1.1M (range 0.9–1.3M).",
+     "val": "Customs data are not used: Hungary is a major tyre production hub (HTA: 34.1M tyres produced in 2022, as quoted), so import statistics include factory and original-equipment flows."
     },
     "export": {
      "v": 0.25,
@@ -7492,7 +8055,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "Distributors re-export some volume, so the research includes a small estimate of 0.25M (range 0.15–0.40M). Nobody publishes it.",
+     "val": "Customs exports are not used for the same reason: they are mostly factory output, several times the replacement market."
     },
     "direct": {
      "v": 0.75,
@@ -7504,7 +8069,9 @@
      "sure": {
       "l": "Low",
       "w": "Both inputs are model estimates."
-     }
+     },
+     "why": "Distributors and reseller networks (AKH, MARSO) are an established route to Hungarian fitters, while large accounts are supplied directly. The research therefore sends 63% of the pool volume (1.25M) through distributors and 0.75M direct (range 1.10–1.40M via distributors).",
+     "val": "Not published. AKH says it sells more than one million tyres a year and had 200+ reseller partners; MARSO has 1,000+ resellers (Világgazdaság, checked). AKH's deputy CEO put its market share at about 10% in 2022, so treat the research's wholesaler volumes as upper-end estimates."
     },
     "wsDom": {
      "v": 2.1,
@@ -7531,7 +8098,9 @@
       "l": "Low",
       "w": "A placeholder share."
      },
-     "what": "Tyre specialists, fast-fit chains and independent garages."
+     "what": "Tyre specialists, fast-fit chains and independent garages.",
+     "why": "There is no published channel split for Hungary, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. HTA names specialist workshops, traditional retailers and online as the main routes but publishes no unit split.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Hungary follows them cannot: the research allows an error of about ±6 points. Replace with your own Hungary channel data when you have it."
     },
     "ch.spec.ws": {
      "v": 1.65,
@@ -7545,7 +8114,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 2.1M via wholesale and 0.75M direct. Share of each channel via wholesale: specialists 83%, dealers 34%, other retail 79%, online 57%.",
+     "val": "No Hungarian source publishes procurement routes by channel. Lowest confidence for online and other retail."
     },
     "ch.spec.dir": {
      "v": 0.35,
@@ -7557,7 +8128,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.tot": {
      "v": 0.29,
@@ -7571,7 +8143,9 @@
       "l": "Low",
       "w": "A placeholder share."
      },
-     "what": "Car dealers and brand-tied workshops."
+     "what": "Car dealers and brand-tied workshops.",
+     "why": "There is no published channel split for Hungary, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Hungary follows them cannot: the research allows an error of about ±6 points. Replace with your own Hungary channel data when you have it."
     },
     "ch.deal.ws": {
      "v": 0.1,
@@ -7585,7 +8159,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 2.1M via wholesale and 0.75M direct. Share of each channel via wholesale: specialists 83%, dealers 34%, other retail 79%, online 57%.",
+     "val": "No Hungarian source publishes procurement routes by channel. Lowest confidence for online and other retail."
     },
     "ch.deal.dir": {
      "v": 0.19,
@@ -7597,7 +8173,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.ret.tot": {
      "v": 0.14,
@@ -7611,7 +8188,9 @@
       "l": "Low",
       "w": "A placeholder share."
      },
-     "what": "Other retail: parts stores, hypermarkets and petrol stations."
+     "what": "Other retail: parts stores, hypermarkets and petrol stations.",
+     "why": "There is no published channel split for Hungary, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. Low confidence; no Hungarian source.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Hungary follows them cannot: the research allows an error of about ±6 points. Replace with your own Hungary channel data when you have it."
     },
     "ch.ret.ws": {
      "v": 0.11,
@@ -7625,7 +8204,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 2.1M via wholesale and 0.75M direct. Share of each channel via wholesale: specialists 83%, dealers 34%, other retail 79%, online 57%.",
+     "val": "No Hungarian source publishes procurement routes by channel. Lowest confidence for online and other retail."
     },
     "ch.ret.dir": {
      "v": 0.03,
@@ -7637,7 +8218,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.tot": {
      "v": 0.42,
@@ -7651,7 +8233,9 @@
       "l": "Low",
       "w": "A placeholder share."
      },
-     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted)."
+     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted).",
+     "why": "There is no published channel split for Hungary, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. HTA calls online the fastest-growing channel but publishes no share.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Hungary follows them cannot: the research allows an error of about ±6 points. Replace with your own Hungary channel data when you have it."
     },
     "ch.onl.ws": {
      "v": 0.24,
@@ -7665,7 +8249,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 2.1M via wholesale and 0.75M direct. Share of each channel via wholesale: specialists 83%, dealers 34%, other retail 79%, online 57%.",
+     "val": "No Hungarian source publishes procurement routes by channel. Lowest confidence for online and other retail."
     },
     "ch.onl.dir": {
      "v": 0.18,
@@ -7677,7 +8263,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     }
    },
    "quotes": {
@@ -7920,7 +8507,14 @@
     "boxNote": "Boxes are the channels as named under \"By channel\". Switzerland has no tyre production, so the industry box is what the manufacturers' Swiss sales companies supply. The import box is the research's 1.80M estimate of non-pool supply entering wholesale (cross-border EU wholesalers, B2B platforms and online sourcing), not customs imports, which the research quotes at 7.15M passenger-car tyres for 2024. The export box is its 0.20M estimate of re-export. Online is the seller of record. Private and commercial are a planning assumption of about 75 / 25.",
     "scopeNote": "The 6.5M is a model estimate (range 5.9-7.0M) for passenger-car and SUV/4x4 replacement tyres, light commercial excluded. It replaces an earlier 4.1M parc-based figure that also covered vans. No Swiss association publishes a unit total or a channel split, so every figure below the market is modelled, not published. Private versus commercial is a planning assumption of about 75 / 25, not data.",
     "seasons": {},
-    "walkNote": "No Swiss association publishes a unit total or a channel split, so every figure is modelled. The import box is non-pool supply entering wholesale, not customs imports."
+    "walkNote": "No Swiss association publishes a unit total or a channel split, so every figure is modelled. The import box is non-pool supply entering wholesale, not customs imports.",
+    "walkWhy": {
+     "channels": {
+      "v": 6.5,
+      "why": "No Swiss association publishes a channel split, so the research models about 65 / 23 / 2 / 10% of the 6.5M market.",
+      "val": "Nothing published to test it against. ESA's roughly 7,000 co-owner garages (Wikipedia, checked) support a large garage channel. Replace with your own Swiss channel data."
+     }
+    }
    },
    "refs": [
     "Method (replaced with the Switzerland research file): the market and every flow and channel figure are modelled for passenger-car plus SUV/4x4 replacement tyres, light commercial excluded. The earlier benchmark shares (65 / 18 / 3 / 7% of a 4.1M parc-based figure) are replaced by the research's model of about 65 / 23 / 2 / 10% of 6.5M. No Swiss association publishes a unit total, a sell-out series or a channel split.",
@@ -7954,7 +8548,12 @@
       "l": "Low",
       "w": "Customs imports can include stock building, cross-border trade and tyres that never reach Swiss drivers."
      },
-     "check": "6.5M on about 4.80M cars is 1.35 tyres per car a year, well above Austria (0.87) and the Netherlands (0.85) here. Even the low end of the range (5.9M, about 1.23 per car) is above the neighbours. Treat 6.5M as the research's central case, not a confirmed number."
+     "check": "6.5M on about 4.80M cars is 1.35 tyres per car a year, well above Austria (0.87) and the Netherlands (0.85) here. Even the low end of the range (5.9M, about 1.23 per car) is above the neighbours. Treat 6.5M as the research's central case, not a confirmed number.",
+     "why": "Switzerland makes no tyres, so customs imports are the natural anchor: 7.15M new passenger-car tyres in 2024. The research then removes exports, tyres for Liechtenstein, stock build and non-car use to reach what Swiss drivers consumed: 6.5M (range 5.9–7.0M). The customs figures are UN Comtrade/WITS as quoted by the research, not checked.",
+     "val": "Sanity check: 6.5M ÷ 4.83M cars (BFS, quote kept) = 1.35 tyres per car, far above Germany (0.83) and Austria (0.86) in this dashboard. Even the 5.9M low end is 1.22, so the lower end of the research range looks more plausible.",
+     "vq": [
+      "bfs"
+     ]
     },
     "industry": {
      "v": 4.9,
@@ -7967,7 +8566,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "Every tyre sold in Switzerland is imported, either by a manufacturer's Swiss sales entity or by an importer. The research models the manufacturers' entities as supplying about 4.9M (75% of the market).",
+     "val": "Not published. Replace with ETRMA's Switzerland pool figure if you can get it, as you did for the Netherlands."
     },
     "toWs": {
      "v": 2.4,
@@ -7979,7 +8580,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "Manufacturer-owned networks are supplied directly (for example Continental's Contitrade Schweiz, whose Adam Touring and Pneu Egger brands became BestDrive), while independent garages and co-operatives such as ESA buy through wholesale. The research puts 2.5M (51% of the pool volume) direct and 2.4M via wholesale.",
+     "val": "The BestDrive ownership fact is checked (Continental release, 17 Nov 2022); the volumes are modelled. ESA, the motor-trade cooperative, reported record sales of CHF 416.9M in 2022 (Wirtschaftszeit, checked), which shows a large wholesale layer but not the split."
     },
     "import": {
      "v": 1.8,
@@ -7992,7 +8595,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "Brands outside the pool reach Swiss fitters through cross-border EU wholesalers and B2B platforms, and online pure players source abroad. The research puts that supply entering Swiss wholesale at 1.8M. It is not customs imports.",
+     "val": "Customs show 7.15M passenger-car tyres imported in 2024 (as quoted by the research, not checked), which covers everything, so it cannot be used for this box."
     },
     "export": {
      "v": 0.2,
@@ -8004,7 +8609,9 @@
      "sure": {
       "l": "Low",
       "w": "Not published."
-     }
+     },
+     "why": "Swiss wholesalers re-export a little, so the research includes a small estimate of 0.20M.",
+     "val": "Customs exports of 0.27M passenger-car tyres in 2024 (as quoted, not checked) are the reference."
     },
     "direct": {
      "v": 2.5,
@@ -8017,7 +8624,9 @@
      "sure": {
       "l": "Low",
       "w": "Both inputs are model estimates."
-     }
+     },
+     "why": "Manufacturer-owned networks are supplied directly (for example Continental's Contitrade Schweiz, whose Adam Touring and Pneu Egger brands became BestDrive), while independent garages and co-operatives such as ESA buy through wholesale. The research puts 2.5M (51% of the pool volume) direct and 2.4M via wholesale.",
+     "val": "The BestDrive ownership fact is checked (Continental release, 17 Nov 2022); the volumes are modelled. ESA, the motor-trade cooperative, reported record sales of CHF 416.9M in 2022 (Wirtschaftszeit, checked), which shows a large wholesale layer but not the split."
     },
     "wsDom": {
      "v": 4,
@@ -8044,7 +8653,9 @@
       "l": "Low",
       "w": "A modelled share."
      },
-     "what": "Tyre specialists, fast-fit chains and independent garages."
+     "what": "Tyre specialists, fast-fit chains and independent garages.",
+     "why": "No Swiss association publishes a channel split, so this is the research's own model (65% of the market). The research includes fast-fit chains, tyre specialists and independent garages, among them the ESA co-owner garages.",
+     "val": "ESA has about 7,000 co-owner garages (Wikipedia, checked), which supports a large garage and specialist channel. No shares are published."
     },
     "ch.spec.ws": {
      "v": 2.53,
@@ -8058,7 +8669,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 4.0M via wholesale and 2.5M direct. Share of each channel via wholesale: specialists 60%, dealers 60%, other retail 100%, online 69%.",
+     "val": "No Swiss source publishes procurement routes by channel."
     },
     "ch.spec.dir": {
      "v": 1.7,
@@ -8070,7 +8683,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.spec.prv": {
      "v": 3.05,
@@ -8084,7 +8698,9 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "A planning assumption: about 75% of replacement demand is private and 25% company, lease and fleet, applied to each channel with more weight at dealers.",
+     "val": "No Swiss source splits replacement tyres this way, and the research gives no outside figure to test it against."
     },
     "ch.spec.com": {
      "v": 1.18,
@@ -8096,7 +8712,8 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.tot": {
      "v": 1.49,
@@ -8110,7 +8727,9 @@
       "l": "Low",
       "w": "A modelled share."
      },
-     "what": "Car dealers and brand-tied workshops."
+     "what": "Car dealers and brand-tied workshops.",
+     "why": "No Swiss association publishes a channel split, so this is the research's own model (23% of the market). Car dealers and brand workshops, including large dealer groups such as Emil Frey.",
+     "val": "Emil Frey is named as a large dealer group. No dealer volumes are published."
     },
     "ch.deal.ws": {
      "v": 0.89,
@@ -8124,7 +8743,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 4.0M via wholesale and 2.5M direct. Share of each channel via wholesale: specialists 60%, dealers 60%, other retail 100%, online 69%.",
+     "val": "No Swiss source publishes procurement routes by channel."
     },
     "ch.deal.dir": {
      "v": 0.6,
@@ -8136,7 +8757,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.deal.prv": {
      "v": 1.04,
@@ -8150,7 +8772,9 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "A planning assumption: about 75% of replacement demand is private and 25% company, lease and fleet, applied to each channel with more weight at dealers.",
+     "val": "No Swiss source splits replacement tyres this way, and the research gives no outside figure to test it against."
     },
     "ch.deal.com": {
      "v": 0.45,
@@ -8162,7 +8786,8 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.ret.tot": {
      "v": 0.13,
@@ -8176,7 +8801,9 @@
       "l": "Low",
       "w": "A modelled share."
      },
-     "what": "Other retail: parts stores, hypermarkets and petrol stations."
+     "what": "Other retail: parts stores, hypermarkets and petrol stations.",
+     "why": "No Swiss association publishes a channel split, so this is the research's own model (2% of the market).",
+     "val": "Nothing published to test it against."
     },
     "ch.ret.ws": {
      "v": 0.13,
@@ -8190,7 +8817,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 4.0M via wholesale and 2.5M direct. Share of each channel via wholesale: specialists 60%, dealers 60%, other retail 100%, online 69%.",
+     "val": "No Swiss source publishes procurement routes by channel."
     },
     "ch.ret.dir": {
      "v": 0,
@@ -8202,7 +8831,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.ret.prv": {
      "v": 0.13,
@@ -8216,7 +8846,9 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "A planning assumption: about 75% of replacement demand is private and 25% company, lease and fleet, applied to each channel with more weight at dealers.",
+     "val": "No Swiss source splits replacement tyres this way, and the research gives no outside figure to test it against."
     },
     "ch.ret.com": {
      "v": 0,
@@ -8228,7 +8860,8 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.tot": {
      "v": 0.65,
@@ -8242,7 +8875,9 @@
       "l": "Low",
       "w": "A modelled share."
      },
-     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted)."
+     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted).",
+     "why": "No Swiss association publishes a channel split, so this is the research's own model (10% of the market). Counted as the seller of record.",
+     "val": "Nothing published to test it against."
     },
     "ch.onl.ws": {
      "v": 0.45,
@@ -8256,7 +8891,9 @@
      "sure": {
       "l": "Low",
       "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
-     }
+     },
+     "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 4.0M via wholesale and 2.5M direct. Share of each channel via wholesale: specialists 60%, dealers 60%, other retail 100%, online 69%.",
+     "val": "No Swiss source publishes procurement routes by channel."
     },
     "ch.onl.dir": {
      "v": 0.2,
@@ -8268,7 +8905,8 @@
      "sure": {
       "l": "Low",
       "w": "Only as good as the via-wholesale assumption it is built from."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
     },
     "ch.onl.prv": {
      "v": 0.62,
@@ -8282,7 +8920,9 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "A planning assumption: about 75% of replacement demand is private and 25% company, lease and fleet, applied to each channel with more weight at dealers.",
+     "val": "No Swiss source splits replacement tyres this way, and the research gives no outside figure to test it against."
     },
     "ch.onl.com": {
      "v": 0.03,
@@ -8294,7 +8934,8 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption, not data."
-     }
+     },
+     "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
     },
     "prvAll": {
      "v": 4.84,
@@ -8306,7 +8947,9 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption."
-     }
+     },
+     "why": "A planning assumption: about 75% of replacement demand is private and 25% company, lease and fleet, applied to each channel with more weight at dealers.",
+     "val": "No Swiss source splits replacement tyres this way, and the research gives no outside figure to test it against."
     },
     "comAll": {
      "v": 1.66,
@@ -8318,7 +8961,9 @@
      "sure": {
       "l": "Low",
       "w": "A planning assumption."
-     }
+     },
+     "why": "A planning assumption: about 75% of replacement demand is private and 25% company, lease and fleet, applied to each channel with more weight at dealers.",
+     "val": "No Swiss source splits replacement tyres this way, and the research gives no outside figure to test it against."
     }
    },
    "quotes": {
@@ -8399,7 +9044,14 @@
     "boxNote": "No channel split is published for this country, so the boxes are standard channels and every channel figure is an estimate (see Sources and notes). Replace them with your own numbers in the editor.",
     "scopeNote": "",
     "seasons": {},
-    "walkNote": "Only the market and the four channel totals are filled. The pool, imports, exports, wholesale and direct boxes need ETRMA or Danish data. Nothing is guessed for them."
+    "walkNote": "Only the market and the four channel totals are filled. The pool, imports, exports, wholesale and direct boxes need ETRMA or Danish data. Nothing is guessed for them.",
+    "walkWhy": {
+     "channels": {
+      "v": 2.2,
+      "why": "No Danish channel split is published, so the four shares come from the German BRV split and the French panel, with no country-specific change.",
+      "val": "Nothing published to test it against. Replace with your own Danish channel data; the research allows about ±6 points per channel."
+     }
+    }
    },
    "refs": [
     "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
@@ -8426,7 +9078,12 @@
       "l": "Low",
       "w": "An estimate, and the car count behind it does not match the official figure (see the heads-up)."
      },
-     "check": "Statistics Denmark counts 2,864,900 passenger cars at 1 January 2025, not about 2.7M. At 0.80 tyres per car that gives about 2.3M, roughly 0.1M above the 2.2M used here. The number has not been changed. Tell me if you want it rebased."
+     "check": "Statistics Denmark counts 2,864,900 passenger cars at 1 January 2025, not about 2.7M. At 0.80 tyres per car that gives about 2.3M, roughly 0.1M above the 2.2M used here. The number has not been changed. Tell me if you want it rebased.",
+     "why": "With no Danish sales statistic found, the car count times a typical tyres-per-car rate is the usual way to size a market. The research uses 0.80 a year, in line with Germany (0.83) and Spain (0.80), where markets are published.",
+     "val": "Sanity check: 2.2M ÷ 2.86M cars (Danmarks Statistik, quote kept) = 0.77 tyres per car, a little below Germany (0.83). The car count behind the estimate does not match the official figure; see the heads-up.",
+     "vq": [
+      "dst"
+     ]
     },
     "ch.spec.tot": {
      "v": 1.496,
@@ -8442,7 +9099,9 @@
       "l": "Low",
       "w": "A placeholder share with an error of about ±6 points."
      },
-     "what": "Tyre specialists, fast-fit chains and independent garages."
+     "what": "Tyre specialists, fast-fit chains and independent garages.",
+     "why": "There is no published channel split for Denmark, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. The research notes a consolidating chain structure (not checked).",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Denmark follows them cannot: the research allows an error of about ±6 points. Replace with your own Denmark channel data when you have it."
     },
     "ch.deal.tot": {
      "v": 0.308,
@@ -8458,7 +9117,9 @@
       "l": "Low",
       "w": "A placeholder share with an error of about ±6 points."
      },
-     "what": "Car dealers and brand-tied workshops."
+     "what": "Car dealers and brand-tied workshops.",
+     "why": "There is no published channel split for Denmark, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. No Danish-specific information was found, so the benchmark is kept as is.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Denmark follows them cannot: the research allows an error of about ±6 points. Replace with your own Denmark channel data when you have it."
     },
     "ch.ret.tot": {
      "v": 0.088,
@@ -8474,7 +9135,9 @@
       "l": "Low",
       "w": "A placeholder share with an error of about ±6 points."
      },
-     "what": "Other retail: parts stores, hypermarkets and petrol stations."
+     "what": "Other retail: parts stores, hypermarkets and petrol stations.",
+     "why": "There is no published channel split for Denmark, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. No Danish-specific information was found, so the benchmark is kept as is.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Denmark follows them cannot: the research allows an error of about ±6 points. Replace with your own Denmark channel data when you have it."
     },
     "ch.onl.tot": {
      "v": 0.308,
@@ -8490,7 +9153,9 @@
       "l": "Low",
       "w": "A placeholder share with an error of about ±6 points."
      },
-     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted)."
+     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted).",
+     "why": "There is no published channel split for Denmark, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. Online is assumed to be moderate.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Denmark follows them cannot: the research allows an error of about ±6 points. Replace with your own Denmark channel data when you have it."
     }
    },
    "quotes": {
@@ -8571,7 +9236,17 @@
     "boxNote": "Boxes are the channels as named under \"By channel\". Channel sizes keep the earlier benchmark shares of 60 / 6 / 2 / 32% rescaled to 16.9M, so the online box is the least certain. The industry, wholesale, import and export boxes are blank on purpose: the research's 13-14M imports and 3-4M domestic supply are customs-style totals, not the non-pool wholesale imports this model uses.",
     "scopeNote": "The 16.9M is the research's 2024 figure for passenger-car tyres from a market report I could not open, so whether vans and SUVs are inside it is not confirmed. It replaces an earlier 11M estimate that included vans. The card header's older $1.77B is a value-only figure. The research gives no wholesale or direct split, no private versus commercial split and no usable import or export figures, so those boxes still need input.",
     "seasons": {},
-    "walkNote": "The research gives no wholesale or direct split, no private versus commercial split and no usable import or export figures, so those boxes need input. Its 13–14M imports and 3–4M domestic supply are customs-style totals, not the non-pool wholesale imports this model uses."
+    "walkNote": "The research gives no wholesale or direct split, no private versus commercial split and no usable import or export figures, so those boxes need input. Its 13–14M imports and 3–4M domestic supply are customs-style totals, not the non-pool wholesale imports this model uses.",
+    "walkWhy": {
+     "channels": {
+      "v": 16.9,
+      "why": "The 60 / 6 / 2 / 32% shares are the earlier benchmark (anchored on the German BRV and French splits), rescaled to 16.9M. The research gives no channel split of its own.",
+      "val": "Only online has an outside data point: an analyst puts Oponeo alone at about 25% of Polish tyre sales (quote kept). The other three have none.",
+      "vq": [
+       "pko_oponeo"
+      ]
+     }
+    }
    },
    "refs": [
     "Method (Poland research file added): only the market figure comes from the research. The four channel totals keep the earlier benchmark shares of 60 / 6 / 2 / 32% (anchored on the published German and French splits) rescaled from 11M to 16.9M. The research is an early draft: it ends with next steps that were not carried out, so there are no wholesale or direct figures, no private versus commercial split and no distributor volumes.",
@@ -8599,7 +9274,9 @@
       "l": "Low",
       "w": "I could not confirm the figure or whether vans are inside it. The public IndexBox page for Poland shows only unit prices."
      },
-     "check": "PZPO, the Polish tyre industry association, reports its members' sales to distributors, which is a sell-in measure and gives growth rates rather than a market level. It does not confirm the 16.9M."
+     "check": "PZPO, the Polish tyre industry association, reports its members' sales to distributors, which is a sell-in measure and gives growth rates rather than a market level. It does not confirm the 16.9M.",
+     "why": "The research cites a market report that puts Poland's passenger-car tyre market at about 16.945M units in 2024. I could not open that report.",
+     "val": "Sanity check: 16.9M ÷ about 20M real cars (Samar) = 0.84 tyres per car, in line with Germany (0.83) and Austria (0.86). PZPO's member sales are growth rates for sell-in, not a market level, so they do not confirm it."
     },
     "ch.spec.tot": {
      "v": 10.14,
@@ -8613,7 +9290,9 @@
       "l": "Low",
       "w": "A placeholder share."
      },
-     "what": "Tyre specialists, fast-fit chains and independent garages."
+     "what": "Tyre specialists, fast-fit chains and independent garages.",
+     "why": "There is no published channel split for Poland, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. The research's own figures (independent chains plus online 25–35%, workshops and dealers the rest) do not map onto these boxes.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Poland follows them cannot: the research allows an error of about ±6 points. Replace with your own Poland channel data when you have it."
     },
     "ch.deal.tot": {
      "v": 1.01,
@@ -8627,7 +9306,9 @@
       "l": "Low",
       "w": "A placeholder share."
      },
-     "what": "Car dealers and brand-tied workshops."
+     "what": "Car dealers and brand-tied workshops.",
+     "why": "There is no published channel split for Poland, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Poland follows them cannot: the research allows an error of about ±6 points. Replace with your own Poland channel data when you have it."
     },
     "ch.ret.tot": {
      "v": 0.34,
@@ -8641,7 +9322,9 @@
       "l": "Low",
       "w": "A placeholder share."
      },
-     "what": "Other retail: parts stores, hypermarkets and petrol stations."
+     "what": "Other retail: parts stores, hypermarkets and petrol stations.",
+     "why": "There is no published channel split for Poland, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist.",
+     "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Poland follows them cannot: the research allows an error of about ±6 points. Replace with your own Poland channel data when you have it."
     },
     "ch.onl.tot": {
      "v": 5.41,
@@ -8656,10 +9339,24 @@
       "w": "Lowest confidence for online."
      },
      "check": "This box may be too high. The earlier benchmark rested on Oponeo alone holding about 25% (not confirmed), and the research's 25–35% covers independent chains and online together.",
-     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted)."
+     "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted).",
+     "why": "Carried over from the earlier benchmark (32%), which rested on online sellers such as Oponeo holding a large share of Polish tyre sales.",
+     "val": "An analyst estimate (DM PKO BP, 2024) puts Oponeo alone at about 25% of tyre sales in Poland. The basis (units or value) is not stated, and the research's 25–35% covers independent chains and online together, so 32% is plausible but unconfirmed.",
+     "vq": [
+      "pko_oponeo"
+     ]
     }
    },
-   "quotes": {}
+   "quotes": {
+    "pko_oponeo": {
+     "q": "Szacujemy, że udział Oponeo w sprzedaży opon w Polsce wynosi około 25%.",
+     "by": "DM PKO BP (broker research on Oponeo), May 2025",
+     "u": "https://www.bm.pkobp.pl/analizy-i-rekomendacje/analizy-fundamentalne/oponeo/oponeo-trzymaj-maj-2025",
+     "en": "We estimate that Oponeo's share of tyre sales in Poland is about 25%.",
+     "role": "check",
+     "note": "An analyst estimate for 2024. It does not say whether the share is by units or by value, and Oponeo is an online-first retailer that also sells through fitting partners."
+    }
+   }
   }
  ]
 }
