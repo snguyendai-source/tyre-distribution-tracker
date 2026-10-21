@@ -1,45 +1,65 @@
 {
-  "runAt": "2026-10-20T11:09:48.914333+00:00",
-  "totalNew": 5,
+  "runAt": "2026-10-21T11:25:40.368751+00:00",
+  "totalNew": 8,
   "entitiesChecked": 26,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 5,
   "newItemsByEntity": {
-    "Nokian Tyres": [
+    "Bridgestone": [
       {
-        "title": "Sentury to produce Nokian tires for Central European market - Tire Technology International",
-        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObEdTWjM4LTIwQy01Q2lYUUVFUUR3WUc0bkMtR3hKRUxEaVpRZjJZYTIxaTF5RWwtQ181ZEZtMDRSYk9uNGVjdGdyM1RleWFwazVOTk9KU1VGRlB3UXNObm5WMlA3a3BnZmNINDZGV0JGTGZfS2VvLWJiSFkzYjNPaV96TExVcUNub01LbDFGM1MzN1pFZXFGNUNGRWRMYllyc0pzdVZ3dEZSSGJCVU40dWZULVZENExQVDJ2LVVGWWViZ3BzZ2dtSWtQY1UtRkhqZ1VaUg?oc=5",
-        "pubDate": "Tue, 20 Dec 2022 08:00:00 GMT",
-        "category": "Nordic"
+        "title": "Bridgestone tightens its grip on Europe - Automotive Logistics",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQejY0Yk9jV2loX0lVMnFSalhVa1lDX3J4Um94R08xMDhENTFqUm50WVVKMHVfaFp3MFpsYjU3aE95TnhGRjZnUW43R2xiU2RCcmxCbF9abmVqWUE3WXN4Z2JJY2lESEpPcVJvZURmS29DaXFNS2NxTmVUWDJLTGdtc3hjRmxvTUh3dUkwS0pzbWdqckJsdVBKdFFxbFVfTmZQQ0R6SXFmSEt3VTQ?oc=5",
+        "pubDate": "Tue, 24 Jan 2023 08:00:00 GMT",
+        "category": "Premium global"
+      },
+      {
+        "title": "Bridgestone Launches Premium Sports BATTLAX RACING STREET RS12 Motorcycle Tyre - Bridgestone EMEA newsroom",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbzZOM1hvSnhPaTVJM2VJN29qdEdOR1lIUjdOU1doV2lUT25heHVmdUIwWTZPOWQ4YXIycHRPZGVycTNLWXFFTG9vSE5DRkVlSXJDY09wTmJSLXhBSExudXplUF9QRE5KbEVIcDNsTUJ4OHlGUU5MaV81NVFUSGJuTW5talFFLTFQeE45WGUtc3N2WEJZSGVTaUFtSjk5d245RzdzZU1obTJ1MlppTGJ0MFNvc1BPMjlj?oc=5",
+        "pubDate": "Thu, 30 Oct 2025 07:00:00 GMT",
+        "category": "Premium global"
       }
     ],
-    "Sailun Tire": [
+    "Hankook": [
       {
-        "title": "Sailun Tire finds ERange EV success electrifying - Rubber News",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZldMU2RSZHJJdkxTRVAtRGx4a05JWWprVGItSDJpd1lFV3RwNGhLS05kWWtEU25RMHZ4TmN0cC1VM0RJRjFMTFM2N2o0M2JmXzN4Vm9FcTlmWE5FNEpOQ0pseEY4REVPYnhoTjFMNzdZTjg4QzlKZ2MwSlg3WEx4Wjdfd1hWZDJa?oc=5",
-        "pubDate": "Thu, 22 Jun 2023 07:00:00 GMT",
-        "category": "Chinese"
+        "title": "Hankook Tyre UK to exclusively sponsor Transport Association Traffic Managers’ & Engineers’ Conference 2026 - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxPSE5rMVFNcExEWUEwdjFmRmhmTXh1em5RUXJheEZTMXdtT092X1Y0OHhXWXdrSnY2NHZfSk1vV1plNGlNUjdDZzk5Z2NaQUVDdi1iTmJ1VmFTTlZHR3VmbmVLenFvcmNMaGlia1RuQWVLdENva2pXRTVRUnZYYWRMdjFqR1pSWTBXdnZLeGRLeTNKb2lLTXkxMlQ5ZjB6ckRVMi1WeUlPc2ExdWJ4Ui1xd3I5RGlqUWFQR2xDTWlST0tiaUtMSzY4QzY5b0hTQ0ZCc040UDEzMG1sVF96c29pNGpqbzlhczRpYXN4Qkl1a0xkQXcySzUzc293MEdwQTM5Nkt3QmVsRVJaZ0hVZVI5TndVMUUzd2IzRXZKSTNFM0tuV1V0WFcwZnNFVGc4YzJxWTJnUzVMVkhsVzk3Q3FuZlZhNktaYlBObGhyWFh1a2hLcXVCNVNUQ3JGSzk4TWplaDBJ?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 07:00:00 GMT",
+        "category": "Korean"
       }
     ],
-    "Triangle Tyre": [
+    "Linglong Tire": [
       {
-        "title": "Triangle Tyre ready to unveil new off-the-road products - HUB-4.COM",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdVhkVFoxZEc4U0lvZXBJQWlLRTF5bFlEX2h4YmpXTkwwdE45VTk5VGRHZTZfQ0lhNDlPa3pQeWdaM3dnR0ROOWMxVzY0YXFkQTlJd21MdUZJRlI5TkFKOEQwUzJCaG1keVZmcndJUjJqMzRnUS1CTFoxVzNOWkY3enRXMTFmX2hFbXc?oc=5",
-        "pubDate": "Tue, 15 Jul 2025 07:00:00 GMT",
+        "title": "Highest standards – Linglong responds to VW customer forum gripes - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcXhLWHoyZXRmMnJEQnhVTldZcW1aU0oxN2lGZDhEc2lfQXNDRlF1RENCZUlwaFF5RGRWaWdCRVd2eVRBU28zVzRmNlFXRWVkTlpHbm5GXzhNZ2V6R3FlMmhUVDVqY01FWFJBZVB0dXdIX09TaUpOemhfYVJuZlZCZTk1MGJPMHRXN3hnMFA2SkJ4ZXVaTElpWk13bnBadEk?oc=5",
+        "pubDate": "Wed, 30 Jul 2025 07:00:00 GMT",
         "category": "Chinese"
       },
       {
-        "title": "Demand overtaking supply: Triangle Europe’s contribution to the global picture - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPblJ1ekNkaEZDUmZFWjlPMWM0c1ZmMTU0aDJkb3M0aThDc1FjZ08wbl9BRENVUjZ5dC01ejZpMHRROHFXLWVFa1JzbjVDWmxFWWlBMV9PSmNQZXBmcFJTN0RjMFMyRHF5dmNTdGh4UGtXeHQ2ZmhhbEtaLW1JbFdPVzNPcTFZX2ZOWTRtOEtuMXFDUHlxRUhWMThGWW93dTJEWVh5QWJMOUVReU9JTEZQQg?oc=5",
-        "pubDate": "Thu, 27 Jun 2024 07:00:00 GMT",
+        "title": "Linglong Tire joins ETRMA - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJM2ZUbEY5VEU0SnlkdDRsWjlnclh2TGhubGJvNWpZcmhGU2ZzWm95RFd0Y1BFeXpWelc1cThNbnRjMmJEZmEtM3Z5UFVyY2d5OWd4ald5dHdQX2JsWVljLXQ1OHBxNVJjUFFtWQ?oc=5",
+        "pubDate": "Mon, 04 Nov 2024 08:00:00 GMT",
         "category": "Chinese"
       }
     ],
-    "Maxxis Tyres": [
+    "Prometeon Tyre Group": [
       {
-        "title": "Maxxis Launches Rekon Race: An XC tyre for modern XC courses - Singletrack World Magazine",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQU1owN0dFeURZSlFYSzR4SElTUDZGTlctOFJnaTVQMUxHNi1acU1wUUFFQ0t4c2sxLVFqQ3JGMU43b0lzUWlKamVnRFhEN2lNaDVxeGNoWXNQTEdncWdYUC1xMktwVkdLU2ZTNEk0ZUpUUmhiWjV2UmVXb0RxSnROcERNVmtxYTU0dWRsRVZsZDF2T0RMOWhLVGNwZnZhUQ?oc=5",
-        "pubDate": "Thu, 28 Jun 2018 07:00:00 GMT",
-        "category": "Taiwanese"
+        "title": "Prometeon Tire Group to Invest USD 115 Million in Turkey - Tires & Parts News",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbVJCbGhTZUR5NWpBUVJkMWhMNzVIemRNbWdQQVhCdnFnRDNtUTZKYmpFeUF0dzhtTE1NMEFlWFpGOG5tTUxUSVhzcTNHZ083bnFQbGRPWl9nbXFURE96eWtJYTZ3UDhXMjJiZmpMN1lydnllbDNJRUFHdlQ3WWg5MVV5YXdlWW9pNFo0MkJPRXVha3ZibG1rOWNB?oc=5",
+        "pubDate": "Sun, 11 Nov 2018 08:00:00 GMT",
+        "category": "Industrial/TBR"
+      },
+      {
+        "title": "Production begins for Prometeon-branded tyres - Transport Engineer",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVDF4QWlHWnNkUjJFU0tjNlFZeVBPS2diVWJEV1JIRkVIc19Ob0hETEM4a1VEWkE5QjhxM1NiMms3V0pvTUhTREVWbFVTSkdvbHJlcFVXM1U4Z3NuVk9Eal9vVURwNDZCMGF6dG9KQU54aDVsSkNxTFdrajdwUEZmWGhzSGduUUlRSEFRYUZJZVg4T2tlblktSmN0SQ?oc=5",
+        "pubDate": "Mon, 10 Mar 2025 07:00:00 GMT",
+        "category": "Industrial/TBR"
+      }
+    ],
+    "CEAT": [
+      {
+        "title": "CEAT Expands Chennai Plant to Make Premium Tyres for India and Global Markets - Motorindia",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPM3JlWTFyTEk2c0w4OFZYeGhzT2o0YTl0XzNYNE00U2N0NUxCTmhoN1BSbUV0ZEVkTWgwUDktR29tQ3JqLTB4RHVuUWlMdzNBbTJURnBQQW1XbUxneHFUTVBxYjZVazZrZjdLT2hPOXNvX3JYdmhqSFRDMHJXaDk0azhEa3FCeWtMbmlkTS0tN2lMaU90WmctQU1qeTJ6VHl3OXVIam9Td2t1emFvWi1V?oc=5",
+        "pubDate": "Thu, 01 Oct 2026 06:53:28 GMT",
+        "category": "Indian"
       }
     ]
   }

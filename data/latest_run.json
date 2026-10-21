@@ -1,59 +1,52 @@
 {
-  "runAt": "2026-10-20T11:09:48.914333+00:00",
-  "totalNew": 6,
+  "runAt": "2026-10-21T11:25:40.368751+00:00",
+  "totalNew": 5,
   "entitiesChecked": 118,
   "entitiesWithNews": 5,
   "newItemsByEntity": {
-    "Norauto": [
+    "Premio": [
       {
-        "title": "Norauto contributes to the low-carbon strategy of fleets - Flottes Automobiles",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBJeGt1Q1ZyeUF0R0xzc0llSHBWbXZpR1poUk44aE9HekZZMGxjVTFEekNJYWdXUEZJR3JXN1d4NW9NeVFuUVZSQXRRNnhvN3k5OXc?oc=5",
-        "pubDate": "Mon, 21 Nov 2022 08:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
+        "title": "Russell tops FP1 as cars hit Madring for first time - Formula 1",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOSnJQU3FEQzl5SERaeGdLU29sT1J5OVBtTjBjU3p1SnpRTDEyOVd6cVVLS3ZWZlZieVJ0bC04bElBRjdobi1fa3FjNVVCVC1oNk9QQU1oNUdFdGtfRmNLQ1JSQ0FDUGRnMUhsTVpjb0t3ejVUVlVXX1F1WmhyXzFaZG5HdTNtcnRsblV5dEVXNTNLLXlqaW85SktaVENCUHhabzMzRzdkbnRQMC0zNW05SExWTVJYSVVWcGpVdWhEV1hhNFlHei13aGJ1b3ZFZTF3bUxYZzhLYw?oc=5",
+        "pubDate": "Fri, 11 Sep 2026 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
       }
     ],
-    "Feu Vert": [
+    "Halfords Autocentres": [
       {
-        "title": "Winter tyres: all-season is a must - Flottes Automobiles",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5CQTFMXzQ5dkh3cC1kR2xPRENwMElfU1cxcnJEbHNyV2ZzU2F2MXFOOEx6aXpxdFJ1WlRsSkNFVlpEOHZCR0pHMzBFbXladjVWcWVfMk1NcTM?oc=5",
-        "pubDate": "Fri, 17 Oct 2025 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
+        "title": "Halfords hails ‘strong trading’ in last 26 weeks - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTEgxVHNfMWlaRG0wNkM3N3lBZ0lYRU5KUjdSWGthOWhZWS01VGVKWjE4VTdmd29VT0xVb25rTHB3R1doUmlsTWFGcXVxU1hSUGJoVWhiSkdZeldmdndQcHhaQXN2YjJtRkVSSk1jcTdrdHpmTjRuNHdXN196MWhKODl0WEtKbHlG?oc=5",
+        "pubDate": "Wed, 21 Oct 2026 09:40:50 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ],
     "Kwik Fit": [
       {
-        "title": "Kwik Fit preparing for upswing in EV purchases - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1oTG5aSElNTzYxUEJ5a0dVUmhpdUstU3Q3Y2ZCTFVxM2VrdDhLX3RUU21mSmRfRjBnNUVOQnI2RjZHalNDcktMZkR3Zw?oc=5",
-        "pubDate": "Thu, 15 Oct 2026 09:33:43 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      },
-      {
-        "title": "Family tyre-fitting business in Spilsby celebrates further expansion - LincolnshireWorld",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNm1BUjBydzhwVVJLQi1CWHUtbXNJVk1ubXhldl9qZmM5ZjRTVGhyQlplZ053OHNhbFRLMlc3YzVIUVVseVNWR3dUczRId2J4YV9ZN28tRkNodGQ2OERIWDVwR2x5dk9RcGlzWVJDTVRFamVjLVMwd0R4a3lNRUlJRW1MclVTb3Zhc3Jxa1E5dWtLTFgzclhDdjNRVXUyNmYzeTFYbEpwbTlpeVBpdm94UlZIcVpVZFJFSi1J?oc=5",
-        "pubDate": "Mon, 19 Oct 2026 09:36:00 GMT",
+        "title": "Bridgestone announces partnership with Kwik Fit commit to a longer-term and even bigger presence at The British Motor Show - Bridgestone EMEA newsroom",
+        "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPMU1XazB2M01XbldoT3BSdWVWelNFTXpzSFc5VG1oaFFXd2FIY1pUMlpwQmlhXzBpaExvMGlGWkhWOFBxQnd6a2c4NmowNnBnN09aTGpyRlRnTkt3WUxvY0IxUWtEVHdoY0htRDVVSmMycnNJUjE2RFlfelRncXpuWVdXM2xQNU95a1p2M0ZENUJkeVNtN3JKcC1Xak9aaFFMS3ZLQzJONFdYRDQ4NWYwdFM0SFBuZFdObGdUYU1WN3ZfcDkxQ0M0V3NIek9VTFg0aVlnNVc4MmdaOTN2U0lEMERpSmVPNVNLdWc?oc=5",
+        "pubDate": "Thu, 07 Mar 2024 08:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Blackcircles": [
+    "HiQ Tyres": [
       {
-        "title": "Blackcircles celebrates 25 years - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1BQWRmMnZnNXE5MkFIVlBWVG9rRUJHWmdPczhXZ0ppQ2FoOEQxRm4xdjZnblczdkhaQnJ5al85NzlsVThjdGJzTTM0S1Uxd1h2cVpPeGo1bTd1dF80cUNjS0cydmxBRHNtaFVNNlVla2ZFS1llOVE?oc=5",
-        "pubDate": "Mon, 19 Oct 2026 17:32:46 GMT",
+        "title": "HiQ: more than a third of tyres are worn past legal limit - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUjVuVGs0NzRTR0NwMTBvNXg2MzVfY0k4MFROSy1XbHAzUUhjREt1Tl9GTHAyMWx1amVLN2NpMVBOcTgwSDM2aEpidzBjM1FZNU1rVHozYW5SWFFpaVpkaEJWa2F6VnduSHVQY1dLaDV2R21qV0RfOXk4SUZlYWZWQVl5V01qQzJncm91RktYTnFHN3hwYVE?oc=5",
+        "pubDate": "Mon, 02 Sep 2024 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Vianor": [
+    "Genan Holding": [
       {
-        "title": "Point S Dealer Acquires 10 Stores - Modern Tire Dealer",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQjZ6QVp0OTBEYzRVNS1sYnhiazR0c3ZMWElfNC1tcGpWT3M5Qm8xeUFvVGhLclQ2UWFUTDNWN2J5T2hqOGpyQmxIbHB2YUxQd1NQVjc5MUFUcDdLeS1kVTdEQlRoMmVXaHhfcFZnVzYwVTdrTmczLUFOS1VkeXpLY0g2aHdXR3lqalhpMzBRaXlUT21uUE5FcGg1WER0aTl6ZlRJbjc5RWU?oc=5",
-        "pubDate": "Tue, 01 Sep 2020 07:00:00 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
+        "title": "Tire Recycling Market Size to be Worth USD 9.07 Billion by 2035; Growth is Driven by rising circular economy initiatives and increasing scrap tire recovery globally | SNS Insider - Business Upturn",
+        "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPUFp4Q2pXQWpDd2VFYW5taTU2X1ZHbERvel9iNVR1OGcyQUZMc3hTeUxaZ2ljNGJVUDhjdjFlaHBOZEhpcGNERWpVR2JlQjBhZS10UHRZYllQd3NHS2hPUGFxQk1aY0dCZVhKWmp6WjQ5X0NaeHY2S0NPaTNlT3MwTk9vazB5VGw0Z3BKSXE2cGJONWR2VmxPNFp2SlhrN1BRdk1xcFd1LWpXbVZIRzVYR0VldHc2cjV0d3llN0JWM3pxSHdJOVUyZzN6TllnV3h2Wkg2YkF3NDFILVlfMURhcklIR2llbDJDUTBKZE45WjV0LUo5STJLVEtZZm9fU3Z1YnVQYWtvaTFkSjdJeG15U1FEQUgtdnhoWl9ZOHRGQnBoa1g0RFRWVjdBamNja3ZOTFJmZGZEdVNidw?oc=5",
+        "pubDate": "Fri, 15 May 2026 07:00:00 GMT",
+        "country": "Denmark",
+        "cluster": "Central"
       }
     ]
   }
