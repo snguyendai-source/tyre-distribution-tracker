@@ -1103,9 +1103,9 @@
     },
     {
       "country": "Netherlands",
-      "meta": "RecyBEM 2024 · consumer replacement tyres: cars, vans, light trucks, 4x4 (VACO publishes no unit total)",
-      "total": "~9.6M",
-      "totalLabel": "units, 2024 estimate (cars, vans, light trucks, 4x4)",
+      "meta": "ETRMA Pool RY2026 + RecyBEM · consumer replacement tyres: cars, vans, light trucks, 4x4 (VACO publishes no unit total)",
+      "total": "~9.8M",
+      "totalLabel": "units, RY2026 estimate (cars, vans, light trucks, 4x4)",
       "channels": [],
       "flatEntities": [
         {
@@ -1328,7 +1328,7 @@
         }
       ],
       "noteBadge": "caution",
-      "note": "Caveat The market, wholesale and direct figures are modelled from RecyBEM's 2024 placement of 9.99M tyres of all types, net of exports (checked), at an assumed 96% consumer scope: cars, SUV/4x4, vans and light trucks together (ETRMA's PCT scope), leaving out caravan, trailer and other tyres. The flow model shows the gross layer: about 8.5M tyres of pool sell-in, of which about 1.8M is re-exported by Dutch hubs. That is how a 9M Europool figure (2026, same scope) fits a 9.6M domestic market. The research gives channel splits for cars only, so the channel, wholesale versus direct and private versus commercial figures are its car numbers multiplied by 1.2, which assumes vans and light trucks follow the car shares. The flow model is 2024; the player volumes below are the research's 2026 ranges for passenger cars, also multiplied by 1.2 (wholesale node about 6.4M against 6.3M in 2024). No wholesaler or retailer publishes Dutch tyre volumes, so every player figure is a research estimate (outlets times an assumed throughput, or a share of the wholesale total) with low to medium confidence. Read the ranges and the ranking as indicative, not measured.",
+      "note": "Caveat The industry figure (9.41M) is ETRMA's own Pool Market Data for the Netherlands, rolling year 2026 (RY2025 9.47M, -0.6%). The market (9.8M), wholesale, direct and export figures are modelled from RecyBEM data and the research. The 9.84M market is RecyBEM's projected 2026 placements (about 10.25M tyres of all types) at an assumed 96% consumer scope: cars, SUV/4x4, vans and light trucks together (ETRMA's PCT scope), leaving out caravan, trailer and other tyres. ETRMA is gross pool sell-in, so it includes about 2.4M tyres that Dutch hubs re-export. That is the balancing figure of the flow model: about 2.0M of it is the research's estimate and the rest is the amount by which ETRMA is above what RecyBEM implies. The research gives channel splits for cars only, so the channel, wholesale versus direct and private versus commercial figures are its 2026 car numbers multiplied by 1.2, which assumes vans and light trucks follow the car shares. The player volumes below are the research's 2026 ranges for passenger cars, also multiplied by 1.2, on the same basis as the flow model (wholesale node about 6.4M). No wholesaler or retailer publishes Dutch tyre volumes, so every player figure is a research estimate (outlets times an assumed throughput, or a share of the wholesale total) with low to medium confidence. Read the ranges and the ranking as indicative, not measured.",
       "marketAccessNote": "Wholesale is concentrated in one group. Global Automotive Investments Holding (Inter-Sprint, Van den Ban, Banden Express, PBG/Mega Tyre, Reedijk) is estimated by the research at about 60% of the Dutch wholesale node (3.5-4.3M tyres in the consumer scope), so treat it as one key account; the remaining 1.8-2.6M sits with other wholesalers and importers. LKQ Fource and Alliance Automotive (Tyfoon) mostly resell tyres from Inter-Sprint to independent garages, so their volume is not additive. Sell-out is fragmented across a dense service network: Kwik Fit (165 outlets, planning to grow to 175), Profile (about 170), Euromaster (about 106 own and partner locations, owned by Michelin, about 65% commercial) and Bosch Car Service (about 400-415 workshops). Kwik Fit, Profile/Distri24 and the lease intermediaries are the largest buyers a brand can approach directly; Euromaster is Michelin-owned. Heuver is a major tyre group and Profile retailer, but its wholesale business is truck, agricultural and earthmoving, so it is not a passenger-car wholesale gateway.",
       "territoryDefs": [
         {
