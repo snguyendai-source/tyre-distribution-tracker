@@ -286,6 +286,13 @@
   .fv-qlist li.flash{ background:#FFF6E0; }
   .fq-en,.fq-by,.fq-note,.fq-used{ font-size:11px; color:var(--ink-soft); }
   .fq-by a{ color:#2B5BD9; }
+  .fv-tip{ width:max-content; max-width:min(540px,calc(100vw - 16px)); }
+  .fv-tip .tip-why{ font-size:12px; color:#2A3347; line-height:1.45; }
+  .fw-w{ display:block; font-size:11.5px; line-height:1.5; color:#2A3347; margin-top:3px; }
+  .fw-w b{ color:var(--ink); }
+  .fw-c{ color:var(--ink-soft); padding-left:8px; border-left:2px solid #DCE3F2; }
+  .fv-wy{ margin-top:4px; font-size:11px; line-height:1.45; color:var(--ink-soft); }
+  .fv-wy b{ color:#2A3347; }
   @keyframes jumpflash{ 0%,70%{ box-shadow:0 0 0 3px rgba(232,161,0,.7); } 100%{ box-shadow:0 0 0 0 rgba(232,161,0,0); } }
   @keyframes jumpflashsvg{ 0%,70%{ stroke:#E8A100; stroke-width:4; } }
   .jump-flash{ animation:jumpflash 2.4s ease-out; }
@@ -1190,7 +1197,7 @@ function renderFlowView(c, flow){
   const estNote=hasEst?' Blue dots are benchmark estimates, not published figures; the method is under Sources and notes.':'';
   const chip=(id,lab)=>has(id)?`<span class="fv-chip fv-tip-t" data-fid="${id}">${lab} <b>${fvFmt(val[id])}M</b><span class="fv-dot" style="background:${FV_COL[tier[id]]||'#999'};margin:0"></span></span>`:'';
   const strip=[['market','Replacement market'],['prvAll','Private'],['comAll','Commercial']].map(([id,l])=>chip(id,l)).join('');
-  const walkHtml=fvWalkHtml(c,flow,R,nameOf), basis=fvBasisHtml(c,flow,R,LB,nameOf);
+  const QN=fvQuoteNums(flow,R,LB), walkHtml=fvWalkHtml(c,flow,R,nameOf,QN), basis=fvBasisHtml(c,flow,R,LB,nameOf,QN);
   return `<div class="fv-wrap" data-fcountry="${esc(c.country)}"><p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels. <b>Hover any box, line or figure to see how that number was reached.</b> The step-by-step walk-through is just below, and a table of every figure with its source quotes sits under the diagram.${seasons}</p>
     ${strip?`<div class="fv-strip">${strip}</div>`:''}
     ${walkHtml}
@@ -1253,16 +1260,23 @@ function fvWhat(flow,id,L,country0){
     prvAll:`Replacement tyres for privately owned cars, all channels together.`,
     comAll:`Replacement tyres for company, lease and fleet vehicles, all channels together.`})[id]||'';
 }
+/* on a short screen, drop the least important blocks of the pop-up first so nothing is cut off mid-sentence */
+function fvFitTip(tip){
+  for(let p=1;p<=4;p++){
+    if(tip.scrollHeight<=tip.clientHeight+1) return;
+    tip.querySelectorAll('.tip-opt[data-p="'+p+'"]').forEach(n=>n.remove());
+  }
+}
 function fvThe(c){ return /^(Netherlands|United Kingdom)$/.test(c)?'the '+c:c; }
 function fvSafeUrl(u){ return (typeof u==='string' && /^https?:\/\//i.test(u)) ? u : ''; }
-function fvQuoteTip(flow,keys,max){
+function fvQuoteTip(flow,keys,max,compact){
   const Q=flow.quotes||{}, esc=escapeHtml, ks=(keys||[]).filter(k=>Q[k]);
   let h=ks.slice(0,max).map(k=>{
-    const q=Q[k]; let t=String(q.q); if(t.length>230) t=t.slice(0,230).replace(/\s+\S*$/,'')+' …';
-    const tbl=q.kind==='table', tag=q.role==='context'?' · context only':'';
+    const q=Q[k]; let t=String(compact&&q.en?q.en:q.q); if(t.length>230) t=t.slice(0,230).replace(/\s+\S*$/,'')+' …';
+    const tbl=q.kind==='table', tag=q.role==='context'?' · context only':(q.role==='check'?' · used as a check':'');
     return `<div class="tip-q"><div class="tip-qt">${tbl?'':'“'}${esc(t)}${tbl?'':'”'}</div>`
-      +(q.en?`<div class="tip-qen">In English: ${esc(q.en)}</div>`:'')
-      +`<div class="tip-qby">${esc(q.by)}${tbl?' · table row':''}${tag}</div></div>`;
+      +(q.en&&!compact?`<div class="tip-qen">In English: ${esc(q.en)}</div>`:'')
+      +`<div class="tip-qby">${esc(q.by)}${tbl?' · table row':''}${compact&&q.en?' · English translation, original in the table below':''}${tag}</div></div>`;
   }).join('');
   if(ks.length>max) h+=`<div class="tip-by">+ ${ks.length-max} more quote${ks.length-max===1?'':'s'} in the table below the diagram.</div>`;
   return h;
@@ -1311,12 +1325,16 @@ function fvTipHtml(country,id,clickable){
   const ex=fvExpl(flow,id,val);
   if(ex&&!ex.stale){
     if(ex.how&&ex.how.length) h+=`<div class="tip-sec">How we got there</div><ol class="tip-how">${ex.how.map(s=>`<li>${esc(s)}</li>`).join('')}</ol>`;
+    if(ex.why) h+=`<div class="tip-sec">${t==='Published'?'Why we use this figure':'Why we assume this'}</div><div class="tip-why">${esc(ex.why)}</div>`;
     h+=`<div class="tip-sec">Where it comes from</div>`;
     if(ex.src) h+=`<div class="tip-src">${esc(ex.src)}</div>`;
-    const qh=fvQuoteTip(flow,ex.q,2);
+    const qk=(ex.q||[]).filter(k=>(flow.quotes||{})[k]), vqx=(ex.vq||[]).filter(k=>(flow.quotes||{})[k]);
+    const maxQ=vqx.some(k=>!qk.includes(k))?1:2, shownQ=qk.slice(0,maxQ), vqShow=vqx.filter(k=>!shownQ.includes(k));
+    const qh=fvQuoteTip(flow,ex.q,maxQ);
     if(qh) h+=qh;
     else if(entered&&cell.tier==='Published') h+=`<div class="tip-by">No quote kept: the original source could not be opened or quoted.</div>`;
     else if(entered&&cell.tier==='Estimate') h+=`<div class="tip-by">No published source to quote: this is an estimate or assumption.</div>`;
+    if(ex.val||vqShow.length){ h+=`<div class="tip-sec">How to check it</div>`; if(ex.val) h+=`<div class="tip-src">${esc(ex.val)}</div>`; const vh=fvQuoteTip(flow,vqShow,1,true); if(vh) h+=`<div class="tip-opt" data-p="4">${vh}</div>`; }
     if(ex.sure) h+=`<div class="tip-sec">How sure are we</div><div class="tip-sure">${fvLvPill(ex.sure)}${esc(ex.sure.w||'')}</div>`;
     if(ex.check) h+=`<div class="tip-warn"><b>Heads-up.</b> ${esc(ex.check)}</div>`;
   } else {
@@ -1340,7 +1358,7 @@ function fvTipHtml(country,id,clickable){
   }
   const cm=/^ch\.([^.]+)\.(tot|ws|dir|prv|com)$/.exec(id), pl=cm&&Tp.ents&&Tp.ents[cm[1]];
   if(pl&&pl.length){
-    h+=`<div class="tip-sec">Named players in this channel (${pl.length})</div><div class="tip-src">${pl.slice(0,8).map(esc).join(', ')}${pl.length>8?` and ${pl.length-8} more`:''}</div><div class="tip-by">Listed in full under By channel. A player is listed once, under the channel it mainly sells through, so its volume is not split across channels.</div>`;
+    h+=`<div class="tip-opt" data-p="2"><div class="tip-sec">Named players in this channel (${pl.length})</div><div class="tip-src">${pl.slice(0,8).map(esc).join(', ')}${pl.length>8?` and ${pl.length-8} more`:''}</div><div class="tip-by">Listed in full under By channel. A player is listed once, under the channel it mainly sells through, so its volume is not split across channels.</div></div>`;
   } else if(cm&&cm[2]==='tot'&&Tp.ents&&Object.keys(Tp.ents).some(k=>Tp.ents[k]&&Tp.ents[k].length)){
     h+=`<div class="tip-sec">Named players in this channel</div><div class="tip-src">None named yet.</div>`;
   }
@@ -1355,38 +1373,66 @@ function fvTipHtml(country,id,clickable){
     checks.push([Math.abs(res)<=tol,txt,res]);
   });
   if(checks.length){
-    h+=`<div class="tip-sec">Does it add up?</div><ul>`+checks.slice(0,3).map(([ok,txt,res])=>`<li class="${ok?'ok':'bad'}"><span class="ck">${ok?'✓':'!'}</span>${esc(txt)}${ok?'':' (off by '+fvFmt(Math.abs(res))+')'}</li>`).join('')+`</ul>`;
+    h+=`<div class="tip-opt" data-p="3"><div class="tip-sec">Does it add up?</div><ul>`+checks.slice(0,3).map(([ok,txt,res])=>`<li class="${ok?'ok':'bad'}"><span class="ck">${ok?'✓':'!'}</span>${esc(txt)}${ok?'':' (off by '+fvFmt(Math.abs(res))+')'}</li>`).join('')+`</ul></div>`;
   }
-  h+=`<div class="tip-foot">${clickable?'Click to see who is behind this number in the By channel tab. ':''}Every figure, with its source quotes, is in the table below the diagram.</div>`;
+  h+=`<div class="tip-foot tip-opt" data-p="1">${clickable?'Click to see who is behind this number in the By channel tab. ':''}Every figure, with its source quotes, is in the table below the diagram.</div>`;
   return h;
 }
 /* ---------- flow model: step-by-step walk-through and figure-by-figure table ---------- */
-function fvWalkHtml(c,flow,R,nameOf){
+function fvWalkWhy(flow,val){
+  const w=flow.meta&&flow.meta.walkWhy&&flow.meta.walkWhy.channels; if(!w) return null;
+  const chs=(flow.channels||[]).filter(ch=>('ch.'+ch.id+'.tot') in val);
+  if(!chs.length) return null;
+  const sum=chs.reduce((a,ch)=>a+val['ch.'+ch.id+'.tot'],0);
+  return Math.abs(sum-Number(w.v))<=0.001?w:null;
+}
+function fvQuoteNums(flow,R,L){
+  const val=R.val, Q=flow.quotes||{}, order=[], num={}, used={};
+  const reg=(keys,label)=>(keys||[]).forEach(k=>{ if(!Q[k]) return; if(!(k in num)){ num[k]=order.length+1; order.push(k); } (used[k]=used[k]||[]).push(label); });
+  const ids=['market','industry','direct','toWs','import','export','wsDom','prvAll','comAll'];
+  (flow.groups||[]).forEach(g=>ids.push('g.'+g.id));
+  (flow.channels||[]).forEach(ch=>['tot','ws','dir','prv','com'].forEach(k=>ids.push('ch.'+ch.id+'.'+k)));
+  ids.forEach(id=>{ if(!(id in val)) return; const e=fvExpl(flow,id,val); if(e&&!e.stale){ reg(e.q,L[id]||id); reg(e.vq,L[id]||id); } });
+  const ww=fvWalkWhy(flow,val); if(ww) reg(ww.vq,'the channel shares');
+  return {order,num,used};
+}
+function fvRefs(keys,flow,QN){
+  const Q=flow.quotes||{}, seen={};
+  return (keys||[]).filter(k=>Q[k]&&QN.num[k]&&!seen[k]&&(seen[k]=1)).map(k=>`<a href="#" class="fq-ref" data-qn="${QN.num[k]}">[${QN.num[k]}]</a>`).join('');
+}
+function fvWalkHtml(c,flow,R,nameOf,QN){
   const val=R.val, tier=R.tier, esc=escapeHtml, has=id=>id in val;
   const f=id=>'<b>'+fvFmt(val[id])+'M</b>';
   const sh=id=>{ const e=fvExpl(flow,id,val); return (e&&!e.stale&&e.short)?`<span class="fw-why">${esc(e.short)}</span>`:''; };
   const calc=id=>{ const ce=(flow.cells||{})[id]; return !(ce&&ce.value!=null); };
+  const wyH=(e,pub,tag)=>`${e.why?`<span class="fw-w"><b>${pub?'Why we use it':'Why we assume this'}${tag?' · '+tag:''}:</b> ${esc(e.why)}</span>`:''}${(e.val||(e.vq&&e.vq.length))?`<span class="fw-w fw-c"><b>How to check it${tag?' · '+tag:''}:</b> ${esc(e.val||'')} ${fvRefs(e.vq,flow,QN)}</span>`:''}`;
+  const wy=(ids,tag)=>{
+    const list=(Array.isArray(ids)?ids:[ids]).filter(id=>{ const e=fvExpl(flow,id,val); return id in val&&e&&!e.stale&&(e.why||e.val); });
+    if(!list.length) return '';
+    const id=list.find(i=>tier[i]==='Estimate')||list[0];
+    return wyH(fvExpl(flow,id,val),tier[id]==='Published',tag);
+  };
   const cty=esc(fvThe(c.country)), steps=[];
-  if(has('market')) steps.push(`<b>The market.</b> About ${f('market')} replacement tyres were fitted in ${cty} (${esc(flow.scope||'')}, ${esc(String(flow.year||''))}).${sh('market')}`);
-  if(has('industry')) steps.push(`<b>What the big brands supplied.</b> The manufacturers that report to ETRMA (the “pool”) sold about ${f('industry')} into ${cty}. This is sell-in: manufacturer to trade, not trade to drivers.${sh('industry')}`);
+  if(has('market')) steps.push(`<b>The market.</b> About ${f('market')} replacement tyres were fitted in ${cty} (${esc(flow.scope||'')}, ${esc(String(flow.year||''))}).${sh('market')}${wy('market')}`);
+  if(has('industry')) steps.push(`<b>What the big brands supplied.</b> The manufacturers that report to ETRMA (the “pool”) sold about ${f('industry')} into ${cty}. This is sell-in: manufacturer to trade, not trade to drivers.${sh('industry')}${wy('industry')}`);
   const routes=[];
   if(has('direct')) routes.push(`${f('direct')} goes straight from the manufacturers to the channels (blue lines)${calc('direct')?', calculated as industry minus the wholesale part':''}`);
   if(has('toWs')) routes.push(`${f('toWs')} goes to wholesalers (red lines)${calc('toWs')?', calculated as industry minus direct':''}`);
-  if(routes.length) steps.push(`<b>Two routes to the channels.</b> ${routes.join('; ')}.${sh('direct')}${sh('toWs')}`);
+  if(routes.length) steps.push(`<b>Two routes to the channels.</b> ${routes.join('; ')}.${sh('direct')}${sh('toWs')}${wy(['direct','toWs'])}`);
   if(has('wsDom')){
     const fm=[]; if(has('import')) fm.push(`buy ${f('import')} from outside the pool (mostly non-pool brands and parallel imports)`); if(has('export')) fm.push(`sell ${f('export')} abroad`);
     const calcTxt=(has('toWs')&&has('import')&&has('export'))?` (${fvFmt(val.toWs)} + ${fvFmt(val.import)} − ${fvFmt(val.export)})`:'';
-    steps.push(`<b>Wholesalers add imports and send some abroad.</b> ${fm.length?'They also '+fm.join(' and ')+'. ':''}So wholesalers sold ${f('wsDom')} inside ${cty}${calcTxt}.${sh('import')}${sh('export')}`);
+    steps.push(`<b>Wholesalers add imports and send some abroad.</b> ${fm.length?'They also '+fm.join(' and ')+'. ':''}So wholesalers sold ${f('wsDom')} inside ${cty}${calcTxt}.${sh('import')}${sh('export')}${wy('import','imports')}${wy('export','exports')}`);
   }
   if(has('market')&&has('wsDom')&&has('direct')){
     const sum=val.wsDom+val.direct, tol=Math.max(0.1,0.01*val.market), ok=Math.abs(sum-val.market)<=tol;
     steps.push(`<b>Does it close?</b> ${f('wsDom')} via wholesale + ${f('direct')} direct = <b>${fvFmt(sum)}M</b>, ${ok?'which matches the market of '+f('market')+' ✓':'but the market is '+f('market')+', so these figures do not fully agree'}.`);
   }
   const chs=(flow.channels||[]).filter(ch=>has('ch.'+ch.id+'.tot'));
-  if(chs.length) steps.push(`<b>The channels.</b> The market is shared across ${chs.length} sales channels: ${chs.map(ch=>`${esc(nameOf(ch))} <b>${fvFmt(val['ch.'+ch.id+'.tot'])}M</b>`).join(', ')}. Each channel gets its tyres through wholesale or direct, which are the red and blue lines in the diagram.`);
+  if(chs.length) steps.push(`<b>The channels.</b> The market is shared across ${chs.length} sales channels: ${chs.map(ch=>`${esc(nameOf(ch))} <b>${fvFmt(val['ch.'+ch.id+'.tot'])}M</b>`).join(', ')}. Each channel gets its tyres through wholesale or direct, which are the red and blue lines in the diagram.${(()=>{ const ww=fvWalkWhy(flow,val); return ww?wyH(ww,!!ww.pub,''):''; })()}`);
   if(has('prvAll')||has('comAll')){
     const p=[]; if(has('prvAll')) p.push(`${f('prvAll')} goes to private owners`); if(has('comAll')) p.push(`${f('comAll')} to companies, leasing firms and fleets`);
-    steps.push(`<b>Private or commercial?</b> ${p.join(' and ')}.${sh('prvAll')}${sh('comAll')}`);
+    steps.push(`<b>Private or commercial?</b> ${p.join(' and ')}.${sh('prvAll')}${sh('comAll')}${wy(['comAll','prvAll'])}`);
   }
   const open=[['industry','the pool volume'],['direct','direct deliveries'],['toWs','sales to wholesale'],['import','imports'],['export','exports'],['wsDom','wholesale sold'],['prvAll','private demand'],['comAll','commercial demand']].filter(([id])=>!has(id)).map(x=>x[1]);
   if(open.length) steps.push(`<span class="fw-openmark"></span><b>Still open.</b> No figure yet for ${open.join(', ')}. They need ETRMA or national data; nothing is guessed in the meantime.`);
@@ -1395,12 +1441,12 @@ function fvWalkHtml(c,flow,R,nameOf){
     +`<p class="fw-gloss"><b>Words used here.</b> Sell-in = what manufacturers sell to the trade. Sell-out = what shops sell to drivers. The pool = the big manufacturers that report to ETRMA / Europool. Non-pool = everyone else, mostly Asian brands and parallel imports. Channel = where drivers buy or have tyres fitted.</p>${note}</details>`;
 }
 const FV_TIERLAB={Published:'Published',Derived:'Derived',Estimate:'Estimate',Team:'Team input'};
-function fvBasisHtml(c,flow,R,L,nameOf){
+function fvBasisHtml(c,flow,R,L,nameOf,QN){
   const val=R.val, tier=R.tier, esc=escapeHtml, Q=flow.quotes||{};
-  const order=[], num={}, used={};
+  const order=QN.order, num=QN.num, used=QN.used;
   const rows=[];
   const sec=t=>rows.push({sec:t});
-  const add=id=>{ if(!(id in val)) return; rows.push({id}); const e=fvExpl(flow,id,val); if(e&&!e.stale) (e.q||[]).forEach(k=>{ if(Q[k]){ if(!(k in num)){ num[k]=order.length+1; order.push(k); } (used[k]=used[k]||[]).push(L[id]||id); } }); };
+  const add=id=>{ if(id in val) rows.push({id}); };
   sec('Market and supply'); ['market','industry','direct','toWs','import','export','wsDom'].forEach(add);
   if(['prvAll','comAll'].some(id=>id in val)){ sec('Customers'); ['prvAll','comAll'].forEach(add); }
   (flow.groups||[]).forEach(g=>{ if(('g.'+g.id) in val){ sec('Published channel groups'); add('g.'+g.id); } });
@@ -1409,15 +1455,15 @@ function fvBasisHtml(c,flow,R,L,nameOf){
     if(r.sec) return `<tr class="sec"><td colspan="6">${esc(r.sec)}</td></tr>`;
     const id=r.id, e=fvExpl(flow,id,val), ok=e&&!e.stale, ce=(flow.cells||{})[id];
     let short='Calculated from the other figures.'; if(ok&&e.short) short=e.short; else if(ce&&ce.source){ const mm=String(ce.source).match(/^[\s\S]*?[.!?](?=\s|$)/); short=(mm?mm[0]:String(ce.source)).slice(0,170); }
-    const refs=ok?(e.q||[]).filter(k=>Q[k]).map(k=>`<a href="#" class="fq-ref" data-qn="${num[k]}">[${num[k]}]</a>`).join(''):'';
+    const refs=ok?fvRefs([].concat(e.q||[],e.vq||[]),flow,QN):'';
     const t=tier[id];
-    return `<tr><td>${esc(L[id]||id)}</td><td class="n">${fvFmt(val[id])}</td><td class="w"><span class="fv-dot" style="background:${FV_COL[t]||'#999'}"></span>${esc(FV_TIERLAB[t]||t||'')}</td><td>${esc(short)}${ok&&e.check?' <b>(heads-up in the pop-up)</b>':''}</td><td class="w">${refs||'<span style="color:#9AA3B5">no quote</span>'}</td><td>${ok&&e.sure?fvLvPill(e.sure):''}</td></tr>`;
+    return `<tr><td>${esc(L[id]||id)}</td><td class="n">${fvFmt(val[id])}</td><td class="w"><span class="fv-dot" style="background:${FV_COL[t]||'#999'}"></span>${esc(FV_TIERLAB[t]||t||'')}</td><td>${esc(short)}${ok&&e.check?' <b>(heads-up in the pop-up)</b>':''}${ok&&(e.why||e.val)?`<div class="fv-wy">${e.why?`<div><b>Why:</b> ${esc(e.why)}</div>`:''}${e.val?`<div><b>Check:</b> ${esc(e.val)}</div>`:''}</div>`:''}</td><td class="w">${refs||'<span style="color:#9AA3B5">no quote</span>'}</td><td>${ok&&e.sure?fvLvPill(e.sure):''}</td></tr>`;
   }).join('');
-  const n=rows.filter(r=>r.id).length, nq=rows.filter(r=>r.id&&(()=>{const e=fvExpl(flow,r.id,val);return e&&!e.stale&&(e.q||[]).some(k=>Q[k]);})()).length;
-  const table=`<details class="lv-more fv-basis"><summary>Every figure: how it was reached and where it comes from (${n} figures, ${nq} with a source quote)</summary><div class="fv-tbl-wrap"><table class="fv-tbl"><thead><tr><th>Figure</th><th>M tyres</th><th>Type</th><th>In plain words</th><th>Source quote</th><th>How sure</th></tr></thead><tbody>${body}</tbody></table></div><p class="tv-note">Quotes are word for word, in the original language where the source is not English, with an English translation underneath. A figure without a quote has no published source I could open: it is an estimate, an assumption, or a source I could not reach. Hover a figure in the diagram for the full step-by-step explanation.</p></details>`;
+  const n=rows.filter(r=>r.id).length, nq=rows.filter(r=>r.id&&(()=>{const e=fvExpl(flow,r.id,val);return e&&!e.stale&&([].concat(e.q||[],e.vq||[])).some(k=>Q[k]);})()).length;
+  const table=`<details class="lv-more fv-basis"><summary>Every figure: how it was reached and where it comes from (${n} figures, ${nq} with a source quote)</summary><div class="fv-tbl-wrap"><table class="fv-tbl"><thead><tr><th>Figure</th><th>M tyres</th><th>Type</th><th>In plain words</th><th>Source quote</th><th>How sure</th></tr></thead><tbody>${body}</tbody></table></div><p class="tv-note">Quotes are word for word, in the original language where the source is not English, with an English translation underneath. A figure without a quote has no published source I could open: it is an estimate, an assumption, or a source I could not reach. <b>Why</b> is the reasoning behind an assumption. <b>Check</b> is a source or a sanity check you can use to test it. Hover a figure in the diagram for the full step-by-step explanation.</p></details>`;
   const qlist=order.length?`<details class="lv-more fv-quotes"><summary>Quotes from the sources (${order.length})</summary><ol class="fv-qlist">${order.map(k=>{
       const q=Q[k], u=fvSafeUrl(q.u), tbl=q.kind==='table';
-      return `<li data-qn="${num[k]}"><div class="fq-t">${tbl?'':'“'}${esc(q.q)}${tbl?'':'”'}</div>${q.en?`<div class="fq-en">In English: ${esc(q.en)}</div>`:''}<div class="fq-by">${esc(q.by)}${tbl?' · table row':''}${q.role==='context'?' · context only, not the basis of a number':''}${u?` · <a href="${esc(u)}" target="_blank" rel="noopener noreferrer">open the source ↗</a>`:' · no link available'}</div>${q.note?`<div class="fq-note">${esc(q.note)}</div>`:''}<div class="fq-used">Used for: ${esc((used[k]||[]).slice(0,6).join('; '))}${(used[k]||[]).length>6?' and '+((used[k]||[]).length-6)+' more':''}</div></li>`; }).join('')}</ol></details>`:'';
+      return `<li data-qn="${num[k]}"><div class="fq-t">${tbl?'':'“'}${esc(q.q)}${tbl?'':'”'}</div>${q.en?`<div class="fq-en">In English: ${esc(q.en)}</div>`:''}<div class="fq-by">${esc(q.by)}${tbl?' · table row':''}${q.role==='context'?' · context only, not the basis of a number':(q.role==='check'?' · a cross-check, not the basis of a number':'')}${u?` · <a href="${esc(u)}" target="_blank" rel="noopener noreferrer">open the source ↗</a>`:' · no link available'}</div>${q.note?`<div class="fq-note">${esc(q.note)}</div>`:''}<div class="fq-used">Used for: ${esc((used[k]||[]).slice(0,6).join('; '))}${(used[k]||[]).length>6?' and '+((used[k]||[]).length-6)+' more':''}</div></li>`; }).join('')}</ol></details>`:'';
   return {table,qlist};
 }
 document.addEventListener('click',e=>{
@@ -1446,7 +1492,7 @@ document.addEventListener('click',e=>{
     if(el===cur) return;
     let html=''; try{ html=fvTipHtml(wrap.dataset.fcountry,el.dataset.fid,!!el.closest('[data-jump]')); }catch(err){ html=''; }
     if(!html){ hide(); return; }
-    cur=el; tip.innerHTML=html; tip.style.display='block'; place(e);
+    cur=el; tip.innerHTML=html; tip.style.display='block'; fvFitTip(tip); place(e);
   });
   document.addEventListener('mousemove',e=>{ if(cur) place(e); });
   document.addEventListener('mouseout',e=>{
