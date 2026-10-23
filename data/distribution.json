@@ -1968,16 +1968,16 @@
     },
     {
       "country": "Hungary",
-      "meta": "HTA (Hungarian Tire Association)",
-      "total": "~2.85M",
-      "totalLabel": "units, 2024 estimate (passenger car + SUV)",
+      "meta": "ETRMA Pool RY2026 + HTA 2018 · consumer replacement tyres: cars, vans, light trucks, 4x4 (no recent HTA unit total found)",
+      "total": "~3.5M",
+      "totalLabel": "units, RY2026 estimate (cars, vans, light trucks, 4x4)",
       "channels": [],
       "flatEntities": [
         {
           "name": "MARSO Kft.",
           "model": "Wholesaler / distributor",
           "owner": "Nyíregyháza HQ",
-          "volume": "1,000+ resellers and ~30 own stores (2020); est. 0.55-0.70M PCR a year (research estimate)"
+          "volume": "1,000+ resellers and ~30 own stores (2020); est. 0.55-0.70M PCR a year (research estimate, set against the earlier 2.85M market)"
         },
         {
           "name": "Point S Hungary (~73-75 franchise shops)",
@@ -2023,7 +2023,7 @@
           "name": "AKH – Abroncs Kereskedőház (gumi.hu)",
           "model": "Wholesaler / distributor",
           "owner": "Hungarian family-owned",
-          "volume": "says 1M+ tyres a year; claims 2,000+ resellers (not confirmed); est. 0.65-0.80M PCR a year (research estimate)"
+          "volume": "says 1M+ tyres a year; claims 2,000+ resellers (not confirmed); est. 0.65-0.80M PCR a year (research estimate, set against the earlier 2.85M market)"
         },
         {
           "name": "UNIX Autó Kft",
@@ -2042,7 +2042,7 @@
         }
       ],
       "noteBadge": "caution",
-      "note": "Outdated HTA's last published unit data are for 2018: 3.1M tyres in total (+9.7%), of which passenger-car 2.42M, SUV 0.182M and light commercial 0.258M. HTA has not published a Hungary-specific 2024 figure; recent communications cite European percentages. The 2.85M in the flow model is a passenger-car plus SUV estimate (range 2.65-3.05M), not a published number. Do not substitute Germany's 47.5M/+6.8% figure for Hungary. No channel split is published; HTA states online is the fastest-growing channel (qualitative only).",
+      "note": "Caveat The industry figure (2.54M) is ETRMA's own Pool Market Data for Hungary, rolling year 2026 (RY2025 2.55M, -0.5%), covering cars, SUV/4x4, vans and light trucks. The market (3.5M), wholesale, direct, import and export figures are modelled. The 3.48M market is the balancing figure of the flow model: ETRMA pool 2.54M plus 1.21M of non-pool and budget imports minus 0.27M of re-export. It is higher than the research's own scaled estimate (3.13M) because ETRMA is 0.34M above the pool the research assumed; that gap was left in the market. Imports, re-export and the wholesale split are the research's 2024 estimates for cars and SUV/4x4, widened by 1.099 for vans and light trucks. HTA's last published unit data are for 2018 and are manufacturers' sell-in only: 3.1M tyres in total (+9.7%), of which passenger-car 2.42M, SUV 0.182M and light commercial 0.258M; no later HTA unit figures were found. Do not substitute Germany's 47.5M/+6.8% figure for Hungary. No channel split is published; HTA states online is the fastest-growing channel (qualitative only). The wholesaler volumes below (AKH, MARSO) are the research's earlier estimates, set against the 2.85M market, and have not been rescaled.",
       "marketAccessNote": "AKH and MARSO are Hungary's two dominant independent tyre-distribution gateways. AKH says it is the largest player in the market and sells more than one million tyres a year; MARSO is a nationwide wholesaler with more than 1,000 resellers and about 30 own stores. Neither is clearly ahead on the evidence, and there is no third independent wholesaler of comparable scale. Major manufacturers also run Hungarian sales entities, so large-account business is split between distributors and the manufacturers' own direct sales. Apollo already has a Hungarian sales entity and a new Győr distribution centre to build on directly."
     },
     {
