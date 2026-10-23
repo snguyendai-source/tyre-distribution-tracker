@@ -298,6 +298,48 @@
   .jump-flash{ animation:jumpflash 2.4s ease-out; }
   g.jump-flash{ animation:none; }
   g.jump-flash rect{ animation:jumpflashsvg 2.4s ease-out; }
+
+  /* ---- wholesale check tab ---- */
+  .wv{ display:inline-block; padding:2px 9px; border-radius:20px; font-size:11px; font-weight:700; white-space:nowrap; background:var(--slate-bg); color:var(--slate-ink); }
+  .wv-good{ background:var(--teal-bg); color:var(--teal-ink); }
+  .wv-ok{ background:#E3EEF9; color:#1F4E79; }
+  .wv-gap{ background:var(--slate-bg); color:var(--slate-ink); }
+  .wv-flag{ background:var(--amber-bg); color:var(--amber-ink); }
+  .wsc h2{ margin:0 0 8px; font-size:15px; }
+  .wsc p{ font-size:12.5px; line-height:1.55; margin:0 0 8px; }
+  .wsc ul{ margin:4px 0 0; padding-left:18px; font-size:12.5px; line-height:1.55; }
+  .wsc li{ margin-bottom:5px; }
+  .wsc-tbl{ border-collapse:collapse; width:100%; min-width:760px; font-size:12px; }
+  .wsc-tbl th{ text-align:left; font-size:10px; text-transform:uppercase; letter-spacing:.4px; color:var(--ink-soft); padding:6px 8px; border-bottom:1px solid var(--hairline); }
+  .wsc-tbl td{ padding:7px 8px; border-top:1px solid #EEF0F5; vertical-align:top; color:#2A3347; }
+  .wsc-tbl td.n{ font-family:var(--mono); font-weight:700; }
+  .wsc-tbl .nb{ white-space:nowrap; }
+  #top-dist.wsc-on > .note-box, #top-dist.wsc-on .dist-toolbar .legend{ display:none; }
+  .wsc-tbl td small, .wsc small.u{ display:block; font-weight:400; font-family:var(--sans); color:var(--ink-soft); font-size:10.5px; }
+  .wsc-tbl tr.wsc-row{ cursor:pointer; }
+  .wsc-tbl tr.wsc-row:hover td{ background:#F7F8FB; }
+  .wsc-corr{ border-left:3px solid var(--amber-ink); background:#FFF8F1; border-radius:0 8px 8px 0; padding:10px 14px; margin-bottom:10px; }
+  .wsc-corr b{ display:block; font-size:12.5px; margin-bottom:3px; }
+  .wsc-corr p{ margin:0; }
+  details.wsc-c{ background:var(--panel); border:1px solid var(--hairline); border-radius:10px; margin-bottom:10px; overflow:hidden; }
+  details.wsc-c > summary{ list-style:none; cursor:pointer; padding:13px 16px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  details.wsc-c > summary::-webkit-details-marker{ display:none; }
+  details.wsc-c > summary::before{ content:"▸"; color:var(--teal); font-size:12px; transition:transform .15s ease; flex:0 0 auto; }
+  details.wsc-c[open] > summary::before{ transform:rotate(90deg); }
+  details.wsc-c .wsc-name{ font-weight:700; font-size:14px; }
+  details.wsc-c .wsc-live{ font-family:var(--mono); font-size:11.5px; color:var(--ink-soft); margin-left:auto; }
+  .wsc-body{ padding:0 16px 14px; }
+  .wsc-q{ margin:5px 0 0; padding:5px 9px; border-left:2px solid var(--hairline); font-size:11.5px; color:#2A3347; background:#FAFBFC; }
+  .wsc-q i{ color:var(--ink-soft); }
+  .wsc-cav{ margin-top:5px; font-size:11.5px; color:var(--amber-ink); }
+  .wsc-mk{ font-weight:700; color:var(--teal-ink); }
+  .wsc-mk.no{ color:var(--ink-soft); }
+  .wsc-lab{ display:inline-block; font-size:9.5px; font-weight:700; letter-spacing:.3px; padding:1px 7px; border-radius:20px; border:1px solid var(--hairline); color:var(--slate-ink); background:#fff; }
+  .wsc-lab.PUBLISHED{ border-color:var(--teal); color:var(--teal-ink); background:var(--teal-bg); }
+  .wsc-lab.DERIVED{ border-color:#C9A24A; color:var(--amber-ink); background:var(--amber-bg); }
+  .wsc-lab.CLAIM{ border-color:#B9A5DD; color:#5B3E96; background:#EDE7F6; }
+  .layer-check{ font-size:11.5px; color:var(--ink-soft); margin:6px 0 2px; display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+  @media (max-width:760px){ details.wsc-c .wsc-live{ margin-left:0; width:100%; } }
   .dist-toolbar{ display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
   .legend{ display:flex; gap:14px; flex-wrap:wrap; font-size:11.5px; color:var(--ink-soft); }
   .legend span{ display:inline-flex; align-items:center; gap:5px; }
@@ -468,6 +510,7 @@
     <nav class="subtabs">
       <button data-sub="pc" class="active">Passenger car</button>
       <button data-sub="tbr">Truck &amp; bus (TBR)</button>
+      <button data-sub="wsc">Wholesale check</button>
     </nav>
     <div class="legend">
       <span><span class="swatch" style="background:var(--teal-ink)"></span> Hard % / published</span>
@@ -479,6 +522,7 @@
   <div class="note-box">Country → channel → named entity, with estimated sell-out volume where a real source publishes one. Where it doesn't, entities are listed without a forced number — see the color legend above for what's sourced vs. modeled vs. a gap.</div>
   <div class="subpanel active" id="sub-pc"><p class="skeleton">Loading…</p></div>
   <div class="subpanel" id="sub-tbr"><p class="skeleton">Loading…</p></div>
+  <div class="subpanel" id="sub-wsc"><p class="skeleton">Loading…</p></div>
 </div>
 
 <div class="toppanel" id="top-comp">
@@ -639,8 +683,10 @@ async function init(){
     const dist = await loadJSON('data/distribution.json');
     window.__distData = dist;
     try{ window.__sellin = await loadJSON('data/sellin.json'); }catch(e){ window.__sellin = null; } // optional file
+    try{ window.__wsc = await loadJSON('data/wholesale_check.json'); }catch(e){ window.__wsc = null; } // optional file
     document.getElementById('sub-pc').innerHTML = renderDistSegment(dist.pc, 'PCR');
     document.getElementById('sub-tbr').innerHTML = renderDistSegment(dist.tbr, 'TBR');
+    renderWholesaleCheck();
   }catch(e){
     document.getElementById('sub-pc').innerHTML = '<p class="skeleton">Could not load distribution data.</p>';
     console.error(e);
@@ -811,7 +857,74 @@ document.querySelectorAll('nav.subtabs button').forEach(btn=>{
     document.querySelectorAll('.subpanel').forEach(p=>p.classList.remove('active'));
     btn.classList.add('active');
     document.getElementById('sub-'+btn.dataset.sub).classList.add('active');
+    document.getElementById('top-dist').classList.toggle('wsc-on', btn.dataset.sub==='wsc');
   });
+});
+
+
+// ---------- wholesale check tab ----------
+function wscRange(lo,hi,dp){
+  if(lo==null) return '—';
+  const f=v=>(Math.round(v*Math.pow(10,dp||1))/Math.pow(10,dp||1)).toFixed(dp||1).replace(/\.0+$/,'');
+  return (hi==null||hi===lo)?f(lo)+'M':f(lo)+'–'+f(hi)+'M';
+}
+function wscLive(country){
+  const fl=(window.__sellin&&window.__sellin.flows)||[], f=fl.find(x=>x.country===country); if(!f) return null;
+  try{ const v=flowSolve(f).val; return (typeof v.wsDom==='number')?{ws:v.wsDom,mk:v.market}:null; }catch(e){ return null; }
+}
+function wscChipHtml(country){
+  const W=window.__wsc; if(!W) return '';
+  const k=(W.countries||[]).find(x=>x.country===country); if(!k) return '';
+  return `<div class="layer-check"><span class="wv wv-${escapeHtml(k.vclass)}">${escapeHtml(k.verdict)}</span> Cross-check against the biggest wholesalers, October 2026. <button class="jump" data-wsc="${escapeHtml(k.iso)}">see the Wholesale check ›</button></div>`;
+}
+function renderWholesaleCheck(){
+  const host=document.getElementById('sub-wsc'); if(!host) return;
+  const W=window.__wsc;
+  if(!W){ host.innerHTML='<p class="skeleton">The wholesale check data could not be loaded.</p>'; return; }
+  const esc=escapeHtml;
+  const lab=l=>`<span class="wsc-lab ${esc(l)}">${esc(l)}</span>`;
+  const mk=c=>`<span class="wsc-mk${c?'':' no'}" title="${c?'Opened and checked by us':'Quoted by the research run; page not re-opened'}">${c?'✓':'○'}</span>`;
+  let h='<div class="wsc">';
+  // intro + findings
+  h+=`<div class="card"><h2>${esc(W.title)}: do the biggest wholesalers support the wholesale layer?</h2><p>${esc(W.intro)}</p><ul>${(W.findings||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`;
+  // summary table
+  const rows=(W.countries||[]).map(k=>{
+    const L=wscLive(k.country);
+    const layer=L?`<span class="nb">${fvFmt(L.ws)}M</span><small>${Math.round(100*L.ws/L.mk)}% of the ${fvFmt(L.mk)}M market</small>`:'not in the flow yet';
+    const named=(k.sumLo!=null)?`<span class="nb">${wscRange(k.sumLo,k.sumHi)}</span><small>${esc(k.sumNote||'')}</small>`:(k.indicative?`<small>${esc(k.indicative.note)} ${wscRange(k.indicative.lo,k.indicative.hi)} of ${fvFmt(k.indicative.of)}M.</small>`:'—');
+    let cov='—';
+    if(L&&k.sumLo!=null){ const a=Math.round(100*k.sumLo/L.ws), b=Math.round(100*k.sumHi/L.ws); cov=(a===b)?a+'%':a+'–'+b+'%'; }
+    return `<tr class="wsc-row" data-wsc="${esc(k.iso)}"><td><b>${esc(k.country)}</b></td><td class="n">${layer}</td><td class="n">${named}</td><td class="n"><span class="nb">${cov}</span></td><td><span class="wv wv-${esc(k.vclass)}">${esc(k.verdict)}</span></td><td>${esc(k.confidence||'')}</td></tr>`;
+  }).join('');
+  h+=`<div class="card"><h2>At a glance</h2><div class="fv-tbl-wrap"><table class="wsc-tbl"><thead><tr><th>Country</th><th>Wholesale layer in the dashboard (live)</th><th>Named wholesalers, tyres a year</th><th>Share of the layer</th><th>Verdict</th><th>Evidence</th></tr></thead><tbody>${rows}</tbody></table></div><p style="margin-top:8px;color:var(--ink-soft)">Click a row to open that country below. Company figures cover all tyre types and include exports and some own retail, so read them as ceilings, not exact matches.</p></div>`;
+  // corrections
+  h+=`<div class="card"><h2>Corrections and open conflicts</h2>${(W.corrections||[]).map(c=>`<div class="wsc-corr"><b>${esc(c.t)}</b><p>${esc(c.x)}</p></div>`).join('')}</div>`;
+  // per country
+  h+=`<div class="card" style="padding-bottom:6px"><h2>Country by country</h2><p style="color:var(--ink-soft)">${(W.marks||[]).map(m=>`<b>${esc(m.mark)}</b> ${esc(m.text)}`).join(' &nbsp; ')}</p></div>`;
+  h+=(W.countries||[]).map(k=>{
+    const L=wscLive(k.country);
+    const named=(k.named||[]).map(n=>{
+      const q=n.quote?`<div class="wsc-q">“${esc(n.quote)}”${n.en?` <i>(${esc(n.en)})</i>`:''}</div>`:'';
+      const cav=n.caveat?`<div class="wsc-cav">${esc(n.caveat)}</div>`:'';
+      return `<tr><td><b>${esc(n.name)}</b><small>${esc(n.owner||'')}</small></td><td>${esc(n.fig)}</td><td class="n"><span class="nb">${wscRange(n.lo,n.hi)}</span><small>${esc(n.unit||'')}</small></td><td>${esc(n.year||'')}</td><td>${lab(n.label)}</td><td>${mk(n.chk)} ${esc(n.basis||'')}<small class="u">Source: ${esc(n.src||'')}</small>${q}${cav}</td></tr>`;
+    }).join('');
+    const ev=(k.evidence||[]).map(e=>`<li>${mk(e.chk)} <b>${esc(e.t)}.</b> ${esc(e.x)}</li>`).join('');
+    const gaps=(k.gaps||[]).map(g=>`<li>${esc(g)}</li>`).join('');
+    return `<details class="wsc-c" id="wsc-${esc(k.iso)}"><summary><span class="wsc-name">${esc(k.country)}</span><span class="wv wv-${esc(k.vclass)}">${esc(k.verdict)}</span><span class="wsc-live">${L?`dashboard layer ${fvFmt(L.ws)}M of ${fvFmt(L.mk)}M`:'no wholesale figure in the flow yet'}</span></summary><div class="wsc-body"><p>${esc(k.headline)}</p>${k.sumLo!=null?`<p style="color:var(--ink-soft)">Named group: ${wscRange(k.sumLo,k.sumHi)} a year. ${esc(k.sumNote||'')}</p>`:''}${k.indicative?`<p style="color:var(--ink-soft)">Indicative layer from the research run: ${wscRange(k.indicative.lo,k.indicative.hi)} of the ${fvFmt(k.indicative.of)}M market. ${esc(k.indicative.note)}</p>`:''}${named?`<div class="fv-tbl-wrap"><table class="wsc-tbl"><thead><tr><th>Wholesaler</th><th>What was found</th><th>Tyres a year</th><th>Year</th><th>Label</th><th>Basis, source and quote</th></tr></thead><tbody>${named}</tbody></table></div>`:''}${ev?`<p style="margin-top:10px"><b>Other evidence</b></p><ul>${ev}</ul>`:''}${gaps?`<p style="margin-top:10px"><b>Not found</b></p><ul>${gaps}</ul>`:''}</div></details>`;
+  }).join('');
+  // method + labels + next best
+  h+=`<div class="card"><h2>How to read this</h2><ul>${(W.method||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p style="margin-top:10px"><b>Labels</b></p><ul>${(W.labels||[]).map(l=>`<li>${lab(l.label)} ${esc(l.text)}</li>`).join('')}</ul><p style="margin-top:10px"><b>Next best sources</b></p><ul>${(W.nextBest||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`;
+  h+='</div>';
+  host.innerHTML=h;
+}
+function openWholesaleCheck(iso){
+  const btn=document.querySelector('nav.subtabs button[data-sub="wsc"]'); if(btn) btn.click();
+  const d=document.getElementById('wsc-'+iso);
+  if(d){ d.open=true; requestAnimationFrame(()=>{ try{ d.scrollIntoView({behavior:'smooth',block:'start'}); }catch(_){} d.classList.add('jump-flash'); setTimeout(()=>d.classList.remove('jump-flash'),2400); }); }
+}
+document.addEventListener('click',(e)=>{
+  const t=e.target.closest('[data-wsc]'); if(!t) return;
+  e.preventDefault(); openWholesaleCheck(t.dataset.wsc);
 });
 
 // ---------- distribution & sell-out rendering ----------
@@ -885,6 +998,7 @@ function renderChannelLayers(c, flow, ci){
   if(flow || wsEnts.length) h+=`<div class="layer-block layer-ws" data-jump-target="ws">
     <div class="layer-head"><div class="layer-title">Wholesale sold in ${esc(c.country)}</div>${flow?`<div class="layer-vol">${volHtml('wsDom')}</div>`:''}${goto('ws')}</div>
     ${formula}
+    ${flow?wscChipHtml(c.country):''}
     <p class="layer-sub">Distributors that buy from the manufacturers and importers and resell to the channels below${wsEnts.length?` (${wsEnts.length} named)`:''}.</p>
     ${wholesaleListHtml(wsEnts)}
   </div>`;
