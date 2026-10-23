@@ -1,35 +1,7 @@
 {
-  "runAt": "2026-10-22T11:25:45.804594+00:00",
-  "totalNew": 3,
+  "runAt": "2026-10-23T11:15:29.503955+00:00",
+  "totalNew": 0,
   "entitiesChecked": 118,
-  "entitiesWithNews": 3,
-  "newItemsByEntity": {
-    "Premio": [
-      {
-        "title": "Italian Grand Prix: Driver Tyre Strategies - Pitpass",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5BUXhMdUFmMkxORzEzQnVLbks0bDZ6NldVOW1HTG11UWQ5aGJOd3FsUm4yT091WExwNEQ3Z2hfenQzZXQyaGN5bHd4b2h5bmVzSmtjVGo2OWVIY0llQXFMM29XTzlOVmc0c3JLekpjWGZ2WkJKOUhQaEJ6Yw?oc=5",
-        "pubDate": "Mon, 07 Sep 2026 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Vianor": [
-      {
-        "title": "Nokian shifts tyre retail model focus - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1OWWMzVU9nRHJ2THNPQ2dLNkhGN0RIWDd3bDdxRVg3VFVSbmZDTlVudjgyOGk2RmxCTS01VG5PZGRGdnJkNURWbGlhaFNtdjk0aDAwa1RIR19mOEdXN1hXV1FEMlNrcFQ0bGJHTlRhZVlocGRjWmc3cURReDE?oc=5",
-        "pubDate": "Tue, 22 Sep 2020 07:00:00 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
-      }
-    ],
-    "Genan Holding": [
-      {
-        "title": "Waste Tyre Recycling Plant Setup Cost 2026: Feasibility Study Report, CapEx, OpEx, Investment & Business Plan - openPR.com",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORXVENzM2UFFkd3RhNnhfN1dQRVpRRU5NaF9OVkwyS3RfYW5aYXpBNlFkQzA5SVBtM3V2RmZEYWsxZTVpcUh1eThBUTI4U0JNS1hOWEVKa0YzWE1iRGdqZlJpejZnVHJDTnJPTEFHR2k1VU5IX3BDNUtBZlVhc0w2MlhOV05ndW92ZGJxaDZtalpyYzR0eS03YmkwZWw?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 07:00:00 GMT",
-        "country": "Denmark",
-        "cluster": "Central"
-      }
-    ]
-  }
+  "entitiesWithNews": 0,
+  "newItemsByEntity": {}
 }
