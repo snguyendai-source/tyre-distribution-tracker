@@ -24,7 +24,7 @@
               "scale": {
                 "value": 490,
                 "metric": "EUR M revenue 2022",
-                "label": "2022 revenue about EUR 490M (firm's own data, Neue Reifenzeitung 8/2024); about 5.8M tyres of all types at an assumed EUR 85 a tyre (research conversion)"
+                "label": "2022 revenue about EUR 490M (firm's own data, Neue Reifenzeitung 8/2024); about 5.8M tyres of all types at an assumed EUR 85 a tyre (research conversion). Wholesale check (Oct 2026): a second source (DDW, via the research run) shows revenue of €256M, which would give 2.6–4.3M tyres; not resolved."
               }
             },
             {
@@ -38,7 +38,7 @@
               "scale": {
                 "value": 286,
                 "metric": "EUR M revenue 2022",
-                "label": "2022 wholesale revenue EUR 286M; group EUR 508M (Neue Reifenzeitung 8/2024); about 6M tyres of all types in 2022 (auto.news, via the research, not checked)"
+                "label": "2022 wholesale revenue EUR 286M; group EUR 508M (Neue Reifenzeitung 8/2024); about 6M tyres of all types in 2022 (auto.news, via the research, not checked). Wholesale check (Oct 2026): the research run put 2022 revenue near €600M against the €508M for the group above; not resolved."
               }
             },
             {
@@ -61,7 +61,7 @@
               "scale": {
                 "value": 543,
                 "metric": "EUR M revenue 2022",
-                "label": "2022 wholesale revenue EUR 543M; group EUR 908M (Neue Reifenzeitung 8/2024)"
+                "label": "2022 wholesale revenue EUR 543M; group EUR 908M (Neue Reifenzeitung 8/2024). Wholesale check (Oct 2026): group revenue €1.15bn in 2024 (Reifenpresse, via the research run, not re-opened)."
               }
             },
             {
@@ -443,7 +443,7 @@
               "scale": {
                 "value": 600,
                 "metric": "M EUR group revenue 2024",
-                "label": "group revenue about EUR 600M in 2024 incl. parts (+20%; research, not checked); J2R (Jan 2024, checked) reported 5.5M tyres and EUR 480M revenue for 2022 and 27 locations; est. 4-5M tyres (research); direct from manufacturers plus exclusive Asian brands (Sailun, Rovelo, Tracmax, Evergreen, Westlake, Roadking) and CEAT"
+                "label": "group revenue about EUR 600M in 2024 incl. parts (+20%; research, not checked); J2R (Jan 2024, checked) reported 5.5M tyres and EUR 480M revenue for 2022 and 27 locations; est. 4-5M tyres (research); direct from manufacturers plus exclusive Asian brands (Sailun, Rovelo, Tracmax, Evergreen, Westlake, Roadking) and CEAT. Wholesale check (Oct 2026): the 5.5M tyres for 2022 was re-checked in J2R, 15 Jul 2023. Later figures from the research run, not re-opened: 6.5M tyres and €573M (Zepros), or 6M and €625M including €90M of parts; an older Auto Infos item said 3.5M, about 10% share."
               }
             },
             {
@@ -1023,15 +1023,16 @@
         },
         {
           "name": "Micheldever Tyre Services",
-          "model": "Wholesaler / distributor",
+          "model": "Manufacturer-owned wholesaler (Sumitomo)",
           "territories": [
             "__NATIONWIDE__"
           ],
           "scale": {
-            "value": 6000,
-            "metric": "wholesale clients",
-            "label": "supplies 6,000+ retailers, ~6M tyres/year"
-          }
+            "value": 6.5,
+            "metric": "M tyres a year handled (all types)",
+            "label": "handles 6.5M tyres a year (Fleet News, iQ issue June 2026, checked); its own 184 Protyre centres fit 1.35M of these, so about 5.2M go to other trade customers; 1,600 independent partners, 80% of that business with 250 'tier one' operators; owned by Sumitomo Rubber Industries (Dunlop) since 2017. Earlier note: about 6M a year and 6,000+ retailers (older company wording, not re-checked)"
+          },
+          "owner": "Sumitomo Rubber Industries (since 2017)"
         },
         {
           "name": "Bond International",
@@ -1040,10 +1041,11 @@
             "__NATIONWIDE__"
           ],
           "scale": {
-            "value": 11,
-            "metric": "distribution centres",
-            "label": "11 distribution centres"
-          }
+            "value": 6.5,
+            "metric": "est. M tyres a year (derived, range 5–8M)",
+            "label": "derived 5–8M tyres a year, all types: 2024 turnover £417M (Supply Chain World, 28 Aug 2025, checked) and 'one tyre every six seconds' on its own website, about 5.3M a year (Tyrepress directory, checked). A research-run claim of 16.8M tyres handled is not supported by either page. 11 distribution centres on its website, five in the 2025 interview"
+          },
+          "owner": "Independent family company (management buyout 2019)"
         },
         {
           "name": "Stapleton's (Tyre Services)",
@@ -1085,7 +1087,7 @@
       ],
       "noteBadge": null,
       "note": "No published channel-level % split exists for the UK — GfK/Tyrepress rank chains by branch count, not by volume or share, so no channel or entity volume is shown here to avoid implying precision that isn't there.",
-      "marketAccessNote": "Consolidating fast: Halfords' acquisition run (National Tyres, Lodge, Universal) is concentrating buying decisions into fewer, larger hands. Micheldever (parent of Protyre) and Bond International are the two dominant independent wholesalers, and a more efficient entry point than pursuing individual retail chains one by one.",
+      "marketAccessNote": "Consolidating fast: Halfords' acquisition run (National Tyres, Lodge, Universal) is concentrating buying decisions into fewer, larger hands. Micheldever (parent of Protyre, owned by Sumitomo since 2017) and Bond International (independent, family-owned) are the two dominant wholesalers, and a more efficient entry point than pursuing individual retail chains one by one.",
       "territoryDefs": [
         {
           "code": "T1",
@@ -1117,7 +1119,7 @@
           "scale": {
             "value": 3.9,
             "metric": "est. M tyres a year (cars, vans, 4x4)",
-            "label": "2026 basis, cars, vans and 4x4: est. 3.5-4.3M tyres a year (research range for passenger cars 2.9-3.6M, scaled by 1.2); about 60% of the wholesale node of about 6.4M (research estimate, medium-low confidence). Based on EW Top 500 revenue of EUR 1.93bn, mostly exports and other EU countries (not checked). Operating companies per the ACM: Inter-Sprint, Van den Ban, Tyreteam, Banden Express, Reedijk, Inter Tyre Holland, Wheel Tyre; owns PBG since 2021"
+            "label": "2026 basis, cars, vans and 4x4: est. 3.5-4.3M tyres a year (research range for passenger cars 2.9-3.6M, scaled by 1.2); about 60% of the wholesale node of about 6.4M (research estimate, medium-low confidence). Based on EW Top 500 revenue of EUR 1.93bn, mostly exports and other EU countries (not checked). Operating companies per the ACM: Inter-Sprint, Van den Ban, Tyreteam, Banden Express, Reedijk, Inter Tyre Holland, Wheel Tyre; owns PBG since 2021. Wholesale check (Oct 2026): the domestic figure cannot be tested from company revenue, which is mostly export; see the Wholesale check tab."
           }
         },
         {
@@ -1129,7 +1131,7 @@
           "scale": {
             "value": 1.32,
             "metric": "est. M tyres a year (cars, vans, 4x4)",
-            "label": "2026 basis, cars, vans and 4x4: est. 1.1-1.6M tyres a year (research range for passenger cars 0.9-1.3M, scaled by 1.2), domestic, including volume sold on to LKQ Fource (research estimate, low confidence); hundreds of containers a month go abroad"
+            "label": "2026 basis, cars, vans and 4x4: est. 1.1-1.6M tyres a year (research range for passenger cars 0.9-1.3M, scaled by 1.2), domestic, including volume sold on to LKQ Fource (research estimate, low confidence); hundreds of containers a month go abroad. Wholesale check (Oct 2026): company revenue is mostly export, so it cannot test the domestic figure. Inter-Sprint revenue €947M in FY2023/24, all types (Trends, via the research run, not re-opened); about 2.8M tyres in its warehouse (Tyrepress, 24 Oct 2022, checked)."
           }
         },
         {
@@ -1397,7 +1399,7 @@
           "scale": {
             "value": 2,
             "metric": "M+ tyres in stock",
-            "label": "2M+ tyres in stock, sells to 64 countries"
+            "label": "2M+ tyres in stock, sells to 64 countries. Wholesale check (Oct 2026), research run, not re-opened: revenue €506M (2024) and €530M (2025); “net geen 8 miljoen autobanden” a year; Belgium is about 8% of revenue (€30M of €386M in 2021), so about 0.4–0.7M tyres a year domestically."
           }
         },
         {
@@ -1430,7 +1432,7 @@
           "scale": {
             "value": 409,
             "metric": "M EUR group revenue, 2024",
-            "label": "Grupo Soledad EUR 409M consolidated in 2024 (+1.6%), Neumáticos Soledad SL EUR 355.96M (Alicante Plaza, checked); includes retail, truck and exports; units not published, est. 3.5-4.0M tyres of all types (research estimate); operates in Spain, Portugal, France and Morocco; owns Confortauto"
+            "label": "Grupo Soledad EUR 409M consolidated in 2024 (+1.6%), Neumáticos Soledad SL EUR 355.96M (Alicante Plaza, checked); includes retail, truck and exports; units not published, est. 3.5-4.0M tyres of all types (research estimate); operates in Spain, Portugal, France and Morocco; owns Confortauto. Wholesale check (Oct 2026): Grupo Soledad €409M in 2024 re-checked (Alicante Plaza, 10 Jan 2026); national revenue €323.92M (2024) and €341.85M (2025) per the research run, not re-opened."
           },
           "owner": "Independent"
         },
@@ -1443,7 +1445,7 @@
           "scale": {
             "value": 385,
             "metric": "M EUR group revenue, 2024",
-            "label": "Group EUR 385M in 2024 (+11.5%), tyre division about EUR 360M; about 4.0M tyres of all types in 2023 (company and CEO interview, research, not checked); largest pure independent distributor; 5 warehouses, more than 1M tyres in stock, 57 countries; exclusive Anlas, Rebel, Kingstar"
+            "label": "Group EUR 385M in 2024 (+11.5%), tyre division about EUR 360M; about 4.0M tyres of all types in 2023 (Tyrepress, 27 Jun 2024: “In 2023, the company sold 4 million tyres”; checked); largest pure independent distributor; 5 warehouses, more than 1M tyres in stock, 57 countries; exclusive Anlas, Rebel, Kingstar"
           }
         },
         {
@@ -1455,7 +1457,7 @@
           "scale": {
             "value": 290.4,
             "metric": "M EUR group revenue, 2024",
-            "label": "EUR 290.4M in 2024, +13.8% (Infocap via the research, not checked); 3.6M tyres per its own site, year not stated; 25 warehouses, 26,500 delivery points; Nex Tyres SL formed in 2014 as a 50/50 Euromaster/Rodi venture (Tyrepress, checked); absorbed Don Tyre and Palacios; Michelin-linked, exclusive Maxxis"
+            "label": "EUR 290.4M in 2024, +13.8% (Infocap via the research, not checked); 3.6M tyres per its own site, year not stated; 25 warehouses, 26,500 delivery points; Nex Tyres SL formed in 2014 as a 50/50 Euromaster/Rodi venture (Tyrepress, checked); absorbed Don Tyre and Palacios; Michelin-linked, exclusive Maxxis. Wholesale check (Oct 2026): the research run quoted Europneus 2024 as more than 2.5M tyres and more than €200M, which conflicts with the figures above; not resolved."
           }
         },
         {
@@ -1730,7 +1732,7 @@
           "scale": {
             "value": 4.5,
             "metric": "M PCR tyres a year (estimate)",
-            "label": "over 6M tyres a year across all categories (own site); est. ~4.5M PCR (research estimate, range 4.0-5.0M)"
+            "label": "over 6M tyres a year across all categories (own site); est. ~4.5M PCR (research estimate, range 4.0-5.0M). Wholesale check (Oct 2026), research run, not re-opened: “oltre 5 milioni di pneumatici venduti ogni anno” (Pneurama) and revenue about €408M in 2024; the company's own site says over 6M."
           }
         },
         {
@@ -1739,7 +1741,7 @@
           "scale": {
             "value": 3.1,
             "metric": "M PCR tyres a year (estimate)",
-            "label": "2023 revenue above €335M (Tyrepress); est. ~3.1M PCR (research estimate, range 2.6-3.6M)"
+            "label": "2023 revenue above €335M (Tyrepress); est. ~3.1M PCR (research estimate, range 2.6-3.6M). Wholesale check (Oct 2026): 2023 revenue above €335M re-checked (Tyrepress, 24 Jul 2024), which also says production value surpassed €350M. The research run quoted T24 Economia as “cinque milioni di pezzi venduti nel 2024 e 350 milioni di fatturato” (not re-opened); the €350M may be production value."
           }
         },
         {
@@ -1977,7 +1979,7 @@
           "name": "MARSO Kft.",
           "model": "Wholesaler / distributor",
           "owner": "Nyíregyháza HQ",
-          "volume": "1,000+ resellers and ~30 own stores (2020); est. 0.55-0.70M PCR a year (research estimate, set against the earlier 2.85M market)"
+          "volume": "1,000+ resellers and ~30 own stores (2020); total revenue HUF 41.7bn in 2024 (research run, not re-opened); derived domestic 0.7–1.3M tyres a year, all types (wholesale check, Oct 2026)"
         },
         {
           "name": "Point S Hungary (~73-75 franchise shops)",
@@ -2023,7 +2025,7 @@
           "name": "AKH – Abroncs Kereskedőház (gumi.hu)",
           "model": "Wholesaler / distributor",
           "owner": "Hungarian family-owned",
-          "volume": "says 1M+ tyres a year; claims 2,000+ resellers (not confirmed); est. 0.65-0.80M PCR a year (research estimate, set against the earlier 2.85M market)"
+          "volume": "says “évente több mint egymillió abroncsot értékesít”; a 2021 bond document says “Évente közel 1,4 millió db” and export about 20% of revenue (research run, not re-opened); group turnover nearly HUF 30bn in 2020 (vg.hu, 26 May 2021, checked); derived domestic 0.8–1.1M tyres a year, all types (wholesale check, Oct 2026); claims 2,000+ resellers (not confirmed; vg.hu mentions 200+ partners in its service programme)"
         },
         {
           "name": "UNIX Autó Kft",
@@ -2186,7 +2188,8 @@
         },
         {
           "name": "NDI Group (Nordisk Dæk Import)",
-          "model": "Wholesaler / distributor"
+          "model": "Wholesaler / distributor",
+          "volume": "Wholesale check (Oct 2026), research run, not re-opened: revenue DKK 3.238bn in 2024/25; described as “Danmarks største dækimportør”. Tyre volume not derived, because the split between Denmark and other markets is not known."
         },
         {
           "name": "Nordic Tyre Group",
@@ -2220,7 +2223,7 @@
           "scale": {
             "value": 250,
             "metric": "PL branches",
-            "label": "250+ Polish branches, 600+ across 21 countries (group revenue ~€2.18B, all product lines)"
+            "label": "250+ Polish branches, 600+ across 21 countries (group revenue ~€2.18B, all product lines). Wholesale check (Oct 2026), research run, not re-opened: the product line that mixes tyres with batteries and oils was PLN 4,326.7M, 22.2% of group revenue; tyres cannot be separated."
           }
         },
         {
@@ -2230,13 +2233,14 @@
           "scale": {
             "value": 16,
             "metric": "branches",
-            "label": "16 branches, 5,000+ regular clients"
+            "label": "16 branches, 5,000+ regular clients. Wholesale check (Oct 2026), research run, not re-opened: “przekracza 3 mln rocznie” and revenue PLN 847M in 2024."
           }
         },
         {
           "name": "JMK Sp. z o.o.",
           "model": "Wholesaler / distributor",
-          "territories": []
+          "territories": [],
+          "volume": "Wholesale check (Oct 2026), research run, not re-opened: revenue PLN 193.4M in 2025, which converts to about 0.5–0.8M tyres a year."
         },
         {
           "name": "Euromaster Poland (Michelin)",

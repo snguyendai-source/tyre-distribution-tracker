@@ -2978,7 +2978,8 @@
         "Player volumes revised in the latest research file (all research estimates, low confidence). Vergölst is now about 1.7M tyres (range 1.4-2.2M) and Euromaster about 1.3M (1.0-1.8M), down from 2.7M and 4M, built from revenue instead of outlets: Vergölst revenue about EUR 330M with over 450 locations including franchise partners (Vergölst press release, 2024, checked); Euromaster revenue EUR 316.3M in 2023 with 228 own and 144 franchise locations then (research, not checked), and about 400 own and franchise locations in December 2024 (Euromaster press release, checked). The research converts revenue to tyres assuming tyre sales are about 65% of specialist revenue (BRV operating comparison 2023) and about EUR 95 net per tyre. That arithmetic gives about 2.3M tyres for Vergölst (330 x 0.65 / 95) and 2.2M for Euromaster, above the research's own ranges. A strong truck and fleet mix at Euromaster could explain a lower passenger-car figure, but I could not verify it. Driver / Pneumobil (0.4M) and REIFF (0.3M) are not re-verified. A.T.U.: about 525-529 branches and revenue of about EUR 1bn across all activities (research, revenue not checked). Its tyre volume could equal or exceed the whole 1.4M Fachmärkte channel, so BRV may count part of it under workshops; range 1.0-2.5M. Wholesale volumes use an assumed EUR 85 per tyre (from one Best4Tires data point: EUR 508M group revenue over about 6M tyres in 2022, via auto.news, not checked): Göggel about 5.8M tyres of all types, Pneuhage wholesale about 8.4M of all types and countries including supply to its own outlets, which risks double counting.",
         "Ownership and list corrections. First Stop in Germany is run by Pneuhage: in 2016 Bridgestone agreed a joint venture in which Pneuhage takes 75% (Tyrepress), and Pneuhage was to run the 47 First Stop branches from 2017 (Eurotransport); I could not confirm whether Bridgestone still holds a stake. Reifen Ehrhardt is a Pneuhage brand (27 branches in 2017). Neither is listed here as Bridgestone. Reifen Burkhardt, a family wholesaler in south-west Germany with storage for 250,000 tyres and wheels, was bought by Goodyear (announced 27 July 2022, Tyrepress; a law-firm news item of October 2022 suggests it closed, not checked). It was missing from the card and is now listed as a Goodyear-owned wholesaler. Ihle: Tyrepress reported Michelin's takeover in September 2014 (merger review pending then); the research cites 2015, which matches Michelin's purchase of a second wholesaler, Meyer Lissendorf near Cologne, in July 2015, so 2014 stands for Ihle. Tyre24 / Alzura, Saitow and Gettygo are B2B platforms, not stocking wholesalers, so their volume is counted through the wholesalers behind them. Other wholesaler names from the NRZ ranking tags (the ranks are behind a paywall): Bohnenkamp (mostly agricultural and industrial), Baierlacher, Meyer Lissendorf, Gamma, Rad-Center Derkum, Reifenvertrieb24, Grasdorf. Not checked: Pneuhage group revenue of EUR 1.15bn in 2024 and wholesale growth of 32% in 2023, and Reifen1+ with 687 dealers and 721 locations and First Stop with 200+ franchisees.",
         "Online: BRV counts 5.5% of car tyres (2.3M) at the point of sale. The research quotes Delticom's annual report for 2024 as saying experts put the online share of tyres sold in Germany at just under 13% (the same figure is given for Europe and the experts are not named); I could not open the report to check. Delticom's Germany segment revenue of EUR 241.4M in 2023 (Montega, via the research, not checked) would, at EUR 75-95 a tyre, be 2.5-3.2M tyres on its own, more than BRV's whole online channel. The research's explanation is that BRV records tyres bought online but fitted at a workshop under the specialist channel, so online-originated demand could be 4-5M (research estimate). The model keeps BRV's point-of-sale 2.3M.",
-        "Trade policy and concentration (quoted by the research; I confirmed only that the regulation exists): Commission Implementing Regulation (EU) 2026/1540 sets definitive anti-dumping duties on passenger-car and light-lorry tyres from China; the research gives 4.3% to 45.3%, in force from 8 July 2026 for five years, with a parallel anti-subsidy investigation due to conclude in December 2026, and quotes Agence Europe on nearly 93M Chinese units in 2024, a 28% share of EU consumption. These measures could shift volume between pool and non-pool brands. Wholesale concentration: Roland Berger (2018) counted about 50 wholesalers, with the top 7 holding about 75%; the research puts Pneuhage, Göggel and Best4Tires at about 20M tyres combined across all types and countries."
+        "Trade policy and concentration (quoted by the research; I confirmed only that the regulation exists): Commission Implementing Regulation (EU) 2026/1540 sets definitive anti-dumping duties on passenger-car and light-lorry tyres from China; the research gives 4.3% to 45.3%, in force from 8 July 2026 for five years, with a parallel anti-subsidy investigation due to conclude in December 2026, and quotes Agence Europe on nearly 93M Chinese units in 2024, a 28% share of EU consumption. These measures could shift volume between pool and non-pool brands. Wholesale concentration: Roland Berger (2018) counted about 50 wholesalers, with the top 7 holding about 75%; the research puts Pneuhage, Göggel and Best4Tires at about 20M tyres combined across all types and countries.",
+        "Wholesale cross-check (October 2026): The five biggest names plausibly carry about 60% of the 24.7M wholesale layer. Nothing points to the layer being too high. See the Wholesale check tab for the figures, sources and caveats."
       ],
       "scope": "Passenger-car replacement tyres (cars and 4x4, excludes vans)",
       "unit": "million tyres",
@@ -3117,7 +3118,8 @@
           "sure": {
             "l": "Low",
             "w": "Built from estimates. The Roland Berger quote (2018) is context only: it describes how concentrated wholesale is, not how big it is."
-          }
+          },
+          "val": "Cross-check with the biggest wholesalers (October 2026): Göggel, Best4Tires, Pneuhage, Ihle and Reifen Müller plausibly carry 10–20M of these 24.7M, about 60%. That fits Roland Berger's finding that the top 7 hold about 75% of German tyre wholesale. A sanity check, not an exact test; the details are in the Wholesale check tab."
         },
         "ch.spec.tot": {
           "v": 29.2,
@@ -3847,7 +3849,8 @@
         "Season mix and prices: J2R (checked) reports 2024 sales of summer 53%, all-season 37% (+19.2%) and winter 10%, with an average TC4 price of EUR 113 including VAT, and premium 50%, quality 21.5% and budget 19.1% of the market. Journal de l'Automobile attributes the 53 / 37 / 10 split to SUV tyres, so the scope is not certain; the research reads it as panel tourisme. Research, not checked: all-season reached 42% in 2025 (summer 49%, winter 9%), overtook summer in the second half of 2025 and reached 46% in the first half of 2026 (summer 49%, winter 5%); B-brands fell 16.5% in H1 2025 and 6.7% in H1 2026 while tradebrands grew; H1 2026 prices were EUR 101 for B-brands, EUR 89.20 for tradebrands and EUR 64.60 for budget.",
         "Trade policy (checked on Sicurauto): Commission Implementing Regulation (EU) 2026/1540, published 7 July 2026 and in force from 8 July with no retroactive effect, sets definitive anti-dumping duties on Chinese passenger-car and light-truck tyres from 4.3% (Hankook's Chinese entities) to 45.3% (residual rate), for five years, with 24.4% for the cooperating producers. The research adds that a parallel anti-subsidy case is due in December 2026 (not checked).",
         "Trade data, kept from the earlier file: UN Comtrade / WITS 2024, HS 401110, as quoted by the research: France gross imports about 55.1M and exports about 20.2M passenger tyres. Not usable for the import and export boxes, because gross customs flows include OE supply and intra-group movements. Not checked here. The research also notes that Customs HS 401110 unit data for France were not obtained for the non-pool estimate.",
-        "Discrepancies the research asks us to carry: (1) the non-panel block is 8.3M passenger car on the Syndicat's convention but about 16.5M on the full-market basis, so either non-pool imports are below about 22% or dealers, MRA and foreign online are larger than the Syndicat assumes (ADEME's 2022 gap of about 25% and the 20% budget share support the larger figure; ADEME's scope may include retreads and used tyres, which would overstate it); (2) SUV tyres are about 10% of Europool sell-in but only 5.6% of panel sell-out volumes, which suggests they go disproportionately to dealers and online; (3) camionnette sell-in for 2024 is quoted at 2.0M by Zepros and 2.81M by L'argus and the Syndicat, and only 2.81M adds up to 31.74M; (4) Aliapur's collection figures (555 kt in 2024, 400 kt in 2025) are inconsistent, so ADEME tonnage (+6.2% in 2024) is used only as a growth cross-check."
+        "Discrepancies the research asks us to carry: (1) the non-panel block is 8.3M passenger car on the Syndicat's convention but about 16.5M on the full-market basis, so either non-pool imports are below about 22% or dealers, MRA and foreign online are larger than the Syndicat assumes (ADEME's 2022 gap of about 25% and the 20% budget share support the larger figure; ADEME's scope may include retreads and used tyres, which would overstate it); (2) SUV tyres are about 10% of Europool sell-in but only 5.6% of panel sell-out volumes, which suggests they go disproportionately to dealers and online; (3) camionnette sell-in for 2024 is quoted at 2.0M by Zepros and 2.81M by L'argus and the Syndicat, and only 2.81M adds up to 31.74M; (4) Aliapur's collection figures (555 kt in 2024, 400 kt in 2025) are inconsistent, so ADEME tonnage (+6.2% in 2024) is used only as a growth cross-check.",
+        "Wholesale cross-check (October 2026): One name, Distri Cash, already covers about 35–42% of the 15.5M layer. That is enough to show the layer is not too high, but too little to test it. See the Wholesale check tab for the figures, sources and caveats."
       ],
       "scope": "Passenger-car replacement tyres (cars and 4x4/SUV, excludes vans; sell-in)",
       "unit": "million tyres",
@@ -3977,7 +3980,11 @@
           "sure": {
             "l": "Low",
             "w": "Built from estimates."
-          }
+          },
+          "val": "Cross-check with the biggest wholesalers (October 2026): Distri Cash alone reported more than 5.5M tyres sold in 2022, 35–42% of these 15.5M. The other names publish no volumes, so this shows the layer is not too high but cannot test it.",
+          "vq": [
+            "ws_dc"
+          ]
         },
         "ch.auto.tot": {
           "v": 8.6,
@@ -4436,6 +4443,14 @@
           "en": "On 1 January 2024, 39.3 million cars were on the road in France.",
           "role": "check",
           "note": "Used only for a sanity check: tyres per car."
+        },
+        "ws_dc": {
+          "q": "Historiquement dans la distribution de pneumatiques, Distri Cash en a écoulé plus de 5,5 millions sur l’année.",
+          "en": "Historically in tyre distribution, Distri Cash sold more than 5.5 million over the year.",
+          "by": "J2R Rechange, 15 Jul 2023 (about 2022)",
+          "u": "https://j2rauto.com/rechange/distri-cash-vise-toujours-plus-haut",
+          "role": "check",
+          "note": "One wholesaler's 2022 volume, all tyre types. About 35–42% of the 15.5M wholesale layer."
         }
       }
     },
@@ -4672,7 +4687,8 @@
         "Halfords sold its Viking distribution business to Bond International in FY2024, expecting savings of about 5M GBP a year while keeping the margin benefits of direct sourcing (Tyrepress). It shows why direct versus wholesale is blurry: sourcing can be direct while stock and delivery run through a distributor.",
         "Wholesale versus direct is an inference from market structure, about 72 / 28 with a range of 67-78% wholesale, not a reported percentage. Channel routing has the lowest confidence of all: specialists about 82% via wholesale, dealers 54%, other retail 75%, online 39%.",
         "Ownership (research, not checked): Micheldever and Protyre belong to Sumitomo Rubber, Stapleton's and Kwik Fit sit within Itochu's European Tyre Enterprise, and Blackcircles is Michelin-owned. The large UK wholesalers are therefore not independent in the ownership sense.",
-        "Private versus commercial is a mileage proxy. The research quotes DfT 2024 Great Britain vehicle miles of 256.1bn for cars and taxis and 58.5bn for vans, which puts vans at about 18.6% of the total and about 5.4M of the 29.0M tyres. Not checked here."
+        "Private versus commercial is a mileage proxy. The research quotes DfT 2024 Great Britain vehicle miles of 256.1bn for cars and taxis and 58.5bn for vans, which puts vans at about 18.6% of the total and about 5.4M of the 29.0M tyres. Not checked here.",
+        "Wholesale cross-check (October 2026): Micheldever and Bond together handle roughly 11.5–14.5M tyres, about 55–70% of the 21.0M layer. Part of that layer is manufacturer-owned. See the Wholesale check tab for the figures, sources and caveats."
       ],
       "scope": "Consumer replacement tyres (car, van, 4x4)",
       "unit": "million tyres",
@@ -4794,7 +4810,11 @@
           "sure": {
             "l": "Low",
             "w": "Built from estimates."
-          }
+          },
+          "val": "Cross-check with the biggest wholesalers (October 2026): Micheldever handles 6.5M tyres a year and Bond about 5–8M (derived from £417M turnover), together 11.5–14.5M, or 55–70% of these 21.0M. Micheldever is owned by Sumitomo, so part of this layer is manufacturer-owned.",
+          "vq": [
+            "ws_mich"
+          ]
         },
         "ch.spec.tot": {
           "v": 20.3,
@@ -5149,6 +5169,13 @@
           "role": "context",
           "note": "Licensed cars in the UK at the end of 2024: 33.967 million. The next two columns are the change and the % change on 2023 (read from the table).",
           "kind": "table"
+        },
+        "ws_mich": {
+          "q": "handling 6.5 million tyres a year from budget to premium lines.",
+          "by": "Fleet News, feature on Micheldever (iQ issue, June 2026; the page itself is undated)",
+          "u": "https://www.fleetnews.co.uk/features/micheldever-takes-on-the-big-two-with-fleet-first-smr-push",
+          "role": "check",
+          "note": "All tyre types. The same article says its own Protyre centres fit 1.35M a year, so about 5.2M goes to other trade customers."
         }
       }
     },
@@ -5379,7 +5406,8 @@
         "Global Automotive Investments Holding (checked on the ACM decision of 10 March 2021 and Tyrepress): the group's operating companies are Inter-Sprint, Van den Ban Autobanden, Tyreteam, Banden Express, Reedijk Banden Import, Inter Tyre Holland and Wheel Tyre, and the ACM cleared its purchase of PBG (Pon Banden Groep, with Mega Tyre and Summa) from Pon Holdings that year. Its Dutch share of wholesale is a share-of-node estimate with no company accounts behind it: the 2023-2025 KvK accounts were filed but sit behind a paywall and were not reviewed, and group revenue covers the whole group across Europe, so it is not a Dutch volume.",
         "Retail and online players (2026 basis, the research's car ranges multiplied by 1.2): no player publishes Dutch unit volumes, so every figure is a research estimate (outlets times an assumed throughput, or a share of the channel) with low to medium confidence. Kwik Fit 0.84-1.2M (165 outlets on kwik-fit.nl; Autointernationaal, 6 Sept 2026, says 160 today and BNR, 7 Sept 2026, has director Paul Traas planning growth by almost 10% to 175; both checked, and the research notes the conflict between the website figure and the 160). Profile and Distri24 0.54-0.90M ('more than 200 outlets in Belgium and the Netherlands' including truck sites per the research, about 170 in the Netherlands; not checked). Euromaster 0.42-0.72M, about 65% commercial (80 own plus 26 partner locations in March 2025 and about 120,000 lease wheel swaps a year; not checked). Bosch Car Service 0.36-0.60M (no new data). Autobandenpartner garages 0.30-0.54M of fitted volume, the same tyres as Fource's sell-in. AutoCrew 0.06-0.18M. Online: Delticom Netherlands 0.18-0.36M, which the research places under autobandenmarkt.nl, banden-giga.nl, bandenprijzen24.nl and probanden.nl (not ReifenDirekt.nl; the shop list is not checked), part of which may sit in the foreign-webshop layer. Delticom group revenue was EUR 484M in 2025 (EUR 482M in 2024) and GMV EUR 601M (EUR 597M), with 2026 guidance of EUR 480-520M (annual report, checked; the release names no countries, so the Netherlands is not disclosed). The research adds Q1 2026 revenue of EUR 99M (-6.1%), not checked. BandenConcurrent 0.18-0.36M (all-season 62.4% of its sales per the research, not checked). Dealers: no group-level volumes were found.",
         "Latest signals: Tyres Europe (checked) reports European consumer replacement sell-in up 3% in Q2 2026 to 51.987M and up 2% in H1 to 110.133M; all-season was up 15% in Q2 and 9% in H1, summer down 1% and winter down 5%. Its Q1 2026 figure was 58.144M units against 57.499M (+1%; research, not checked); the research flags a typo in the Tyres Europe news index ('Q2 2026 vs Q1 2025, +1%'). EU27 and UK imports of passenger and light-truck tyres were down 6% to 67M units in January-May 2026, with China down 24% to 39M and its share falling from 72% to 58% (Tyres Europe, checked). The EU's definitive anti-dumping duties on Chinese passenger-car and light-truck tyres (Implementing Regulation (EU) 2026/1540, dated 6 July 2026, in force 8 July, checked) range from 4.3% to 45.3%, with 24.4% for the other cooperating Chinese producers (checked on Sicurauto); China supplied nearly 93M units, 28% of the EU market, in 2024 (checked). BOVAG's August 2025 sample found almost 39% of cars on all-season tyres, a fleet fitment share and not a replacement sales mix. RecyBEM notes that private purchases from foreign online sellers can fall outside the Dutch placement statistics.",
-        "Caveats from the research: the 80 / 16 / 4 scope split and the 0.96 consumer factor are assumed, so every figure carries that uncertainty; the market is a calendar-2026 projection while ETRMA is a rolling year, a difference of about 1%; the channel, route and private versus commercial splits are car figures scaled by 1.2 (see the first note); the pool and import categories overlap; group figures such as Global Automotive's revenue are not Dutch volumes; and the research did not find RecyBEM's AVV-monitor for 2025, so it suggests asking RecyBEM or Band & Milieu for the 2025 split by declaration method. For Vredestein the research recommends tagging its own invoices by ship-to country (to get its own re-export ratio against the market-wide figure: 2.41 / 9.41 = 26% on the RY2026 basis here, or 22% on RecyBEM's 2024 data alone), using RecyBEM's monthly Bandenbalans as the domestic check, and treating the 60% concentration at Global Automotive as a key-account risk."
+        "Caveats from the research: the 80 / 16 / 4 scope split and the 0.96 consumer factor are assumed, so every figure carries that uncertainty; the market is a calendar-2026 projection while ETRMA is a rolling year, a difference of about 1%; the channel, route and private versus commercial splits are car figures scaled by 1.2 (see the first note); the pool and import categories overlap; group figures such as Global Automotive's revenue are not Dutch volumes; and the research did not find RecyBEM's AVV-monitor for 2025, so it suggests asking RecyBEM or Band & Milieu for the 2025 split by declaration method. For Vredestein the research recommends tagging its own invoices by ship-to country (to get its own re-export ratio against the market-wide figure: 2.41 / 9.41 = 26% on the RY2026 basis here, or 22% on RecyBEM's 2024 data alone), using RecyBEM's monthly Bandenbalans as the domestic check, and treating the 60% concentration at Global Automotive as a key-account risk.",
+        "Wholesale cross-check (October 2026): Company data cannot test the 6.42M domestic figure. It does hint that Dutch wholesalers move more tyres across the border than the model's 2.84M in and 2.41M out. See the Wholesale check tab for the figures, sources and caveats."
       ],
       "scope": "Consumer replacement tyres (cars, SUV/4x4, vans and light trucks; excludes caravan and trailer tyres)",
       "unit": "million tyres",
@@ -5511,7 +5539,8 @@
           "sure": {
             "l": "Medium",
             "w": "Built from the figures above."
-          }
+          },
+          "val": "Cross-check with company data (October 2026): not possible. These 6.42M are domestic, after the 2.41M that Dutch wholesalers send abroad, while the biggest wholesaler group's revenue (Inter-Sprint, €947M, mostly export, per the research run) is mostly cross-border. It does hint that imports and re-exports may be larger than the model shows."
         },
         "ch.spec.tot": {
           "v": 7.32,
@@ -6024,7 +6053,8 @@
       "refs": [
         "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
         "Belgium: structure close to the Netherlands and France; dealer share slightly above the Dutch level.",
-        "Market size: Estimate: about 5.8M cars x about 0.80 tyres per car per year. Traxio publishes no unit total"
+        "Market size: Estimate: about 5.8M cars x about 0.80 tyres per car per year. Traxio publishes no unit total",
+        "Wholesale cross-check (October 2026): Deldo is mostly an export business, so it says little about the Belgian layer. The flow has no wholesale figure yet; the research run's indication is shown for reference only. See the Wholesale check tab for the figures, sources and caveats."
       ],
       "scope": "Consumer replacement tyres (car, van, 4x4)",
       "unit": "million tyres",
@@ -6357,7 +6387,8 @@
         "NEX (checked on Tyrepress, December 2014): Nex Tyres SL was set up as a 50 / 50 wholesale partnership of Euromaster Automoción y Servicios and Rodi Metro for car and light-commercial-vehicle tyres, trading from 2015. The research adds that the CNMC authorised it in 2015 and that Rodi bought back Michelin's 20% stake in Rodi in January 2026, with Michelin and Rodi keeping their shareholding links in NEX (not checked). It supplies the Euromaster and Rodi networks and independents, so it is Michelin-linked, not independent.",
         "Retail and network players (research, mostly not checked; no player publishes Spanish tyre units, so volumes are derived from revenue): Euromaster España has 443 workshops in Spain and 540 in Iberia and reported revenue of EUR 430M in 2024 (+8%, Motor16, checked; the article does not say whether this is Spain only, and Iberia is above EUR 508M), with 'more than 6%' of light-vehicle tyres, which would be only about 1.26M tyres. The research's 1.6M comes from a 2025 company release of more than 1.7M light-vehicle tyres (+7%, not checked). Rodi: 180+ outlets, EUR 307.8M in 2025 and about EUR 278M in 2024, est. 0.7-1.0M tyres including truck. Norauto: 91 autocentros, EUR 243.5M, est. 0.7M; Feu Vert: 95-105 outlets, EUR 139.0M, est. 0.4M (both assume about 30% of revenue is tyres at EUR 101.5 a tyre; low confidence). Aurgi and Motortown: 62 + 48 outlets, EUR 71.4M (probably 2023). First Stop: 607 outlets in Iberia (48 added in Spain in 2025; another count implies 552 at end-2024, a third quotes 600). Vulco: 290 in Spain and Portugal. Point S: 57 at end-2025, 72 by mid-2026. Confortauto (700+, 64 own, Hankook co-branded) belongs to Grupo Soledad, so its volume is already inside Soledad's wholesale volume and is not added again. Euromaster's older '500,000 tyres a year' web statement is outdated and not used.",
         "Private versus commercial is a planning assumption of about 83% / 17% (private 14.30 + 1.50 + 0.45 + 1.18 = 17.43M; commercial 2.96 + 0.50 + 0.05 + 0.12 = 3.63M). No Spanish split is published. MITECO's passenger-car versus van split is by vehicle type, not by customer.",
-        "Latest signals (research, not checked unless stated): ADINE's Distripool shows consumer distribution +5.6% in 2025 (the headline is on Posventa; I did not open it) and +5.2% in the first quarter of 2026; GfK sell-out +7% in volume in 2025; Europool +5.5% to May 2026 (about 6.475M). Applying +5.6% to 21.06M gives about 22.2M for 2025 (research estimate, not a MITECO figure). Europool's all-season tyres grew over 10% and 19-inch and larger over 22% in 2024."
+        "Latest signals (research, not checked unless stated): ADINE's Distripool shows consumer distribution +5.6% in 2025 (the headline is on Posventa; I did not open it) and +5.2% in the first quarter of 2026; GfK sell-out +7% in volume in 2025; Europool +5.5% to May 2026 (about 6.475M). Applying +5.6% to 21.06M gives about 22.2M for 2025 (research estimate, not a MITECO figure). Europool's all-season tyres grew over 10% and 19-inch and larger over 22% in 2024.",
+        "Wholesale cross-check (October 2026): Andrés, Soledad and NEX together plausibly carry 42–58% of the 14.7M layer. Nothing points to it being too high. See the Wholesale check tab for the figures, sources and caveats."
       ],
       "scope": "Consumer replacement tyres (car, van, 4x4)",
       "unit": "million tyres",
@@ -6477,7 +6508,11 @@
           "sure": {
             "l": "Low",
             "w": "Built from estimates."
-          }
+          },
+          "val": "Cross-check with the biggest wholesalers (October 2026): Grupo Andrés sold 4M tyres in 2023, Soledad's national revenue implies roughly 3–6M, and NEX reports more than 2.5M. The research run puts these names at 42–58% of these 14.7M, so the layer looks plausible.",
+          "vq": [
+            "ws_andres"
+          ]
         },
         "ch.spec.tot": {
           "v": 17.26,
@@ -6825,6 +6860,13 @@
           "en": "which means more than 16.6 million cars out of the 26.47 million in circulation",
           "role": "check",
           "note": "Used only for a sanity check: tyres per car. The 26.47M is for 2024."
+        },
+        "ws_andres": {
+          "q": "In 2023, the company sold 4 million tyres",
+          "by": "Tyrepress, 27 Jun 2024 (Neumáticos Andrés)",
+          "u": "https://www.tyrepress.com/2024/06/neumaticos-andres-on-international-expansion-trajectory",
+          "role": "check",
+          "note": "All tyre categories, and includes exports."
         }
       }
     },
@@ -7000,7 +7042,8 @@
         "Wholesale versus direct is a modelled split: 13.2M of the 23.6M industry volume goes through wholesale and 10.4M direct, plus 4.1M non-pool imports, less 0.7M re-exported, gives 16.6M wholesale sold in Italy (about 61.5%) and 10.4M direct (about 38.5%). The 13.2M is a residual that reconciles the model, not an observed figure.",
         "Wholesalers (checked): Fintyre's own site states over 6M tyres a year, 2 hubs, 10-12 warehouses and more than 50 brands, through three companies: Fintyre, Franco Gomme and Gexpo Tyre. Tyrepress reported Univergomma's 2023 revenue above 335M EUR (up 5%, car segment growing). Atoka lists Zuin as a tyre and auto-parts wholesaler in San Pietro in Gu with latest declared revenue of 89.4M EUR. Tyre Trends (May 2024) describes Magri Group as a national multi-brand distributor of car, truck and agricultural tyres working with the CDG and Kwik Fit networks.",
         "Wholesale volumes are the research's PCR estimates, converted from all-category disclosures, not company figures: Fintyre about 4.5M (4.0-5.0M), Univergomma 3.1M (2.6-3.6M), Magri 1.5M (0.9-2.0M), Zuin 1.0M (0.8-1.3M), Pneus In 0.6M, Palmeri 0.45M, Intergomma 0.35M, regional importers about 1.2M combined. Not confirmed: Univergomma's 5M pieces in 2024 and 1M tyres in stock, Zuin's 86M EUR for 2024 and 500+ points of sale, Magri's 60% car share of revenue, and the Pneus In, Palmeri, Intergomma, Pneutec, Piùgomme and PR Sud details. Tagliabue Gomme Gross and Carlini Gomme, already on the list, are not covered by the research.",
-        "Latest signals (research, not checked): all-season tyres reached 31.6% of specialist volume in 2025, up from 21.8% in 2020, with all-season volume up 3.0%, summer down 1.8% and winter down 2.0%. Michelin's market indicator shows European replacement demand broadly stable through August 2026. Older carried-over note: trade claims of very high online volumes come from sponsored articles and were not used."
+        "Latest signals (research, not checked): all-season tyres reached 31.6% of specialist volume in 2025, up from 21.8% in 2020, with all-season volume up 3.0%, summer down 1.8% and winter down 2.0%. Michelin's market indicator shows European replacement demand broadly stable through August 2026. Older carried-over note: trade claims of very high online volumes come from sponsored articles and were not used.",
+        "Wholesale cross-check (October 2026): Fintyre and Univergomma alone report about 5M tyres each, and the research run puts the named group near 68% of the 16.6M layer. If anything the layer looks slightly low. See the Wholesale check tab for the figures, sources and caveats."
       ],
       "scope": "Consumer replacement tyres (car, van, 4x4)",
       "unit": "million tyres",
@@ -7114,7 +7157,11 @@
           "sure": {
             "l": "Low",
             "w": "Built from model estimates."
-          }
+          },
+          "val": "Cross-check with the biggest wholesalers (October 2026): Fintyre reports more than 5M tyres a year and Univergomma 5M in 2024, all categories. The research run puts the named group at about 68% of these 16.6M and reads the layer as, if anything, slightly low.",
+          "vq": [
+            "ws_fintyre"
+          ]
         },
         "ch.spec.tot": {
           "v": 19.68,
@@ -7315,6 +7362,13 @@
           "by": "Pneurama, reporting GfK data, 4 Sep 2023",
           "u": "https://www.pneurama.com/en/tyre-market-innovation-rate-and-sales-on-the-rise",
           "note": "The 2022 figure of the same GfK panel. The 2025 NIQ-GfK release the research relies on (19.6M) was not found."
+        },
+        "ws_fintyre": {
+          "q": "oltre 5 milioni di pneumatici venduti ogni anno",
+          "en": "more than 5 million tyres sold every year",
+          "by": "Pneurama, as quoted by the research run (October 2026); page not re-opened",
+          "role": "check",
+          "note": "All tyre categories. The company's own site says more than 6M."
         }
       }
     },
@@ -7487,7 +7541,8 @@
         "Wholesalers (checked): AUTO PLUS Reifen is a subsidiary of Wolfgang Denzel Auto AG and is described by the Denzel Group as one of Austria's leading tyre importers and wholesalers with more than 2,000 dealer partners (Denzel press release, September 2022; Reifenpresse, January 2023). Tire Network's own site calls it a wholesaler for tyres, rims and complete wheels in Austria with over 50,000 tyres in stock, ordered through a members-only B2B shop for dealers and fitting partners; it is registered in Vienna (founded 2022). ARG Reifengrosshandel GmbH is registered in Dornbirn (WKO).",
         "Wholesale volumes are the research's estimates, not company figures: Auto Plus about 0.6M PCR tyres a year (range 0.45-0.8M), Tire Network about 0.15M (0.10-0.20M), ARG about 0.05M domestic (0.03-0.08M), Delticom's Autoreifenonline.at B2B about 0.10M. I could not confirm Auto Plus's 350,000-tyre pre-season stock or 1,500 peak orders a day, or ARG's roughly 50% export quota. Delticom is treated as cross-border supply, not as an Austrian wholesaler. These are passenger-car estimates set against the earlier 4.5M market and have not been rescaled to the consumer scope.",
         "Retail network corrections (checked): Forstinger now states 69 branches and 68 specialist workshops (earlier page: about 111). Lucky Car took over 24 former A.T.U sites in February 2024 (more than 270 jobs) and had 44 locations before, around 70 afterwards per LEADERSNET (the research says 60+). A 2022 Continental release announced that Profi Reifen and Reifen John would be renamed BestDrive over about two years, with over 50 workshops. Point S: the research quotes over 60 service locations from its site, while a 2022 UTA release quoted 100.",
-        "Latest signals (research, not checked): Tyres Europe reports European consumer replacement tyres up 2% in H1 2026, with all-season up 9%, summer down 2% and winter down 5%. Austria's situational winter-equipment rule runs from 1 November to 15 April. The research expects a 2026 run-rate of 4.5-4.6M but does not treat it as a published figure."
+        "Latest signals (research, not checked): Tyres Europe reports European consumer replacement tyres up 2% in H1 2026, with all-season up 9%, summer down 2% and winter down 5%. Austria's situational winter-equipment rule runs from 1 November to 15 April. The research expects a 2026 run-rate of 4.5-4.6M but does not treat it as a published figure.",
+        "Wholesale cross-check (October 2026): No volumes or revenues found for Auto Plus, Tire Network, ARG or Delticom's trade arm. The 1.82M layer is untested. See the Wholesale check tab for the figures, sources and caveats."
       ],
       "scope": "Consumer replacement tyres (cars, SUV/4x4, vans and light trucks)",
       "unit": "million tyres",
@@ -7614,7 +7669,8 @@
           "sure": {
             "l": "Low",
             "w": "Built from model estimates."
-          }
+          },
+          "val": "Cross-check with the biggest wholesalers (October 2026): no volumes or revenues were found for Auto Plus, Tire Network, ARG or Delticom's trade arm, so this figure is untested."
         },
         "ch.spec.tot": {
           "v": 3.56,
@@ -7995,7 +8051,8 @@
         "Wholesale versus direct is a modelled split, not a published figure. The research sent 62.5% of the pool volume through distributors and 37.5% direct (1.25M and 0.75M of 2.0M). Applied to ETRMA's 2.54M that is 1.59M via distributors and 0.95M direct. Add 1.21M of non-pool imports (shown going through wholesale only) and take off 0.27M re-export: wholesalers sold 2.53M in Hungary (73% of the market) and 0.95M went direct (27%). The research's version was 2.10M and 0.75M (74 / 26).",
         "Wholesalers (checked): AKH is a Hungarian family-owned company that says it sells more than one million tyres a year and had more than 200 reseller partners in its service programme (Vilaggazdasag 2021 and 2022). MARSO is a tyre wholesaler with more than 1,000 resellers and 30 stores in 2020, and 2019 revenue of HUF 27.3bn (Vilaggazdasag). Not confirmed: AKH's claims of 2,000 reseller partners and being the largest player, MARSO's 16 regional warehouses, the 2024 domestic sales of HUF 33.0bn (MARSO) and HUF 27.1bn (AKH), and Bridgestone's 2023 move of distribution to MARSO.",
         "Caution on wholesaler volumes: the research estimates 0.65-0.80M PCR for AKH and 0.55-0.70M for MARSO. In 2022 AKH's deputy CEO put its market share at around 10% (Economx), which is hard to reconcile with 23-28% of the earlier 2.85M market (19-24% of the 3.48M now used), so treat these volumes as upper-end estimates. The player ranges were set against the earlier 2.85M market and have not been rescaled. The earlier note that MARSO holds exclusive Michelin and Bridgestone agreements is removed because I found no support for it.",
-        "Manufacturer layer: the research names Apollo, Bridgestone, Continental, Goodyear, Hankook, Michelin and Pirelli as having Hungarian sales entities (HTA, as quoted, not checked). They supply distributors and large accounts directly and sit behind the industry and direct boxes. The Gumi.hu network size differs: this page says 150+ service points, the research 100+ workshop stations. Left as is."
+        "Manufacturer layer: the research names Apollo, Bridgestone, Continental, Goodyear, Hankook, Michelin and Pirelli as having Hungarian sales entities (HTA, as quoted, not checked). They supply distributors and large accounts directly and sit behind the industry and direct boxes. The Gumi.hu network size differs: this page says 150+ service points, the research 100+ workshop stations. Left as is.",
+        "Wholesale cross-check (October 2026): AKH and MARSO together plausibly carry 60–95% of the 2.53M layer, and a bond document puts passenger-tyre wholesale at about 70% of the market, close to the dashboard's 73%. See the Wholesale check tab for the figures, sources and caveats."
       ],
       "scope": "Consumer replacement tyres (cars, SUV/4x4, vans and light trucks)",
       "unit": "million tyres",
@@ -8129,7 +8186,11 @@
           "sure": {
             "l": "Low",
             "w": "Built from model estimates."
-          }
+          },
+          "val": "Cross-check with the biggest wholesalers (October 2026): AKH (about 1.0–1.4M tyres a year, export about 20%) and MARSO together come to roughly 1.5–2.4M domestic, 60–95% of these 2.53M. A 2021 bond document puts passenger-tyre wholesale at about 2.1M of 3M, about 70%, close to the 73% here.",
+          "vq": [
+            "ws_akh"
+          ]
         },
         "ch.spec.tot": {
           "v": 2.44,
@@ -8340,6 +8401,13 @@
           "en": "of which the number of passenger cars was 4.37 million",
           "role": "check",
           "note": "Cars on the road at the end of 2025. Used only for the tyres-per-car check."
+        },
+        "ws_akh": {
+          "q": "Évente közel 1,4 millió db",
+          "en": "Nearly 1.4 million pieces a year",
+          "by": "2021 bond document for AKH, as quoted by the research run (October 2026); page not re-opened",
+          "role": "check",
+          "note": "AKH's total volume; its own site says 'more than one million' a year. Export is about 20% of revenue."
         }
       }
     },
@@ -8569,7 +8637,8 @@
         "Checked: ESA is a cooperative of the Swiss motor trade founded in 1930 in Burgdorf with about 7,000 co-owners (Wikipedia); it reported record sales of CHF 416.9M in its May 2022 results (Wirtschaftszeit), and Wikipedia gives CHF 445.3M for 2023. The research's 2024 figures (CHF 373.8M, 6,906 co-owners, 730 staff) do not match these and are not used. Swiss Tyre Group's own site describes a cooperation of independent tyre dealers founded in 2006 with 17 shareholders and 25 sales points that bundle purchasing (the research said 15 and 19, so the site is used).",
         "Retail networks: Continental's release of 17 November 2022 confirms that Adam Touring and Pneu Egger, the two brands of Contitrade Schweiz AG, a 100% Continental subsidiary, were renamed BestDrive by Continental in a rollout planned for 2023, so the separate Adam Touring entry is merged. The research gives BestDrive 70+ workshops, Euromaster about 30 centres, First Stop 72+ and Premio Switzerland 85 partners; I could not check those counts. The research could not verify Point S Suisse, and Emil Frey and Bosch Car Service were not re-checked.",
         "reifen.com belongs to Apollo (Apollo bought Reifencom GmbH in November 2015, European Rubber Journal and Tyrepress), not to Delticom, so it is now listed separately from ReifenDirekt.ch (Delticom). Pneuhage is a German group and the research found no verified Swiss subsidiary, so it is kept as a cross-border supplier only. Interpneu AG in Ballwil is a small Swiss wholesaler unrelated to Pneuhage's Interpneu.",
-        "Apollo's own presence (research, not checked): Apollo Tyres (Schweiz) AG in Baden is described as Apollo's Swiss sales company with a warehouse, trading under the former Maloya and Vredestein names. The research expects about 6.60M in 2025 and a similar 2026 run-rate; both are estimates with low confidence."
+        "Apollo's own presence (research, not checked): Apollo Tyres (Schweiz) AG in Baden is described as Apollo's Swiss sales company with a warehouse, trading under the former Maloya and Vredestein names. The research expects about 6.60M in 2025 and a similar 2026 run-rate; both are estimates with low confidence.",
+        "Wholesale cross-check (October 2026): No usable wholesaler data. The 62% wholesale share (4.0M of 6.5M) is untested and the research run found it questionable. See the Wholesale check tab for the figures, sources and caveats."
       ],
       "scope": "Passenger-car replacement tyres (car + SUV/4x4; excludes light commercial)",
       "unit": "million tyres",
@@ -8682,7 +8751,8 @@
           "sure": {
             "l": "Low",
             "w": "Built from model estimates."
-          }
+          },
+          "val": "Cross-check with the biggest wholesalers (October 2026): no usable wholesaler volumes were found for Switzerland, so this share is untested."
         },
         "ch.spec.tot": {
           "v": 4.23,
@@ -9099,7 +9169,8 @@
       "refs": [
         "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
         "Denmark: consolidating chain structure after Euromaster's exit; online assumed moderate.",
-        "Market size: Estimate: about 2.7M cars x about 0.80 tyres per car per year. No Danish unit total found"
+        "Market size: Estimate: about 2.7M cars x about 0.80 tyres per car per year. No Danish unit total found",
+        "Wholesale cross-check (October 2026): NDI Group is described as Denmark's largest tyre importer, but only group revenue is known. The flow has no wholesale figure yet. See the Wholesale check tab for the figures, sources and caveats."
       ],
       "scope": "Consumer replacement tyres (car, van, 4x4)",
       "unit": "million tyres",
@@ -9298,7 +9369,8 @@
         "Imports and domestic supply (not used in the model): the research says 75-85% of replacement tyres are imported, about 13-14M imported plus 3-4M domestic, but elsewhere quotes 15-17M imports, which does not fit. These are customs-style totals and do not map onto this model's non-pool wholesale import box, so the import and export boxes are left blank. The public IndexBox page also shows Germany, China and Hungary together at about 50% of import value (year not labelled).",
         "Channels: the research quotes IndexBox for independent chains and online sellers at 25-35% of replacement sales, with workshops and dealers the rest (about 11-12M tyres), and says Oponeo.pl claims more than 30% on its own. I could not confirm that. Oponeo's 2024 results give no unit sales or market share: group revenue PLN 2.11bn (up 13%), of which Poland PLN 1.79bn and the parent's domestic sales PLN 1.46bn, covering all products. A 30% share would be about 5M tyres, which would imply under PLN 290 a tyre even if nothing else were sold. It would also exceed the research's own 25-35% for chains and online together. Do not rely on either share.",
         "Wholesalers: Inter Cars is the main aftermarket distributor, but the research gives no tyre volume for it. Motointegrator.pl is an Inter Cars online project (Auto Swiat, October 2014), so the research's 'Moto-Integrator' is not a separate player, and I could not confirm its 'Helios / MotaParts network' claim. S-Trading, TB Tyres, Europa, Europart and Quick Service are named without data and I could not confirm any as a tyre wholesaler or chain, so they are not added. The manufacturers' Polish sales entities (Michelin, Continental, Goodyear, Pirelli) are named; Euromaster and Premio are already listed.",
-        "Not used: the research's 'mid and budget brands are 55-65% of volume' and its value figures (about $1.93B for all tyres, so about $1.5B for passenger cars). They are not units, and the earlier card header's $1.77B differs. An older figure, about 10% of roughly 10M tyres sold online in 2013 (Motointegrator report, October 2014), is too old to use."
+        "Not used: the research's 'mid and budget brands are 55-65% of volume' and its value figures (about $1.93B for all tyres, so about $1.5B for passenger cars). They are not units, and the earlier card header's $1.77B differs. An older figure, about 10% of roughly 10M tyres sold online in 2013 (Motointegrator report, October 2014), is too old to use.",
+        "Wholesale cross-check (October 2026): The three named wholesalers sum to about 3.3–6.5M tyres, against a research-run indication of 7–11M for the whole layer. The flow has no wholesale figure yet. See the Wholesale check tab for the figures, sources and caveats."
       ],
       "scope": "Passenger-car replacement tyres (scope of the source report not confirmed)",
       "unit": "million tyres",

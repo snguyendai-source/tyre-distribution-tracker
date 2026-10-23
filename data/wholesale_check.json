@@ -1,0 +1,683 @@
+{
+ "schema": 1,
+ "generatedAt": "2026-10-23",
+ "title": "Wholesale check",
+ "intro": "A sanity check on the wholesale layer in the flow model: do the biggest wholesalers in each country sell roughly what the layer says? The dashboard layer in the table is live from the flow model. The company figures come from a separate research run in October 2026, and we re-opened a selection of the sources ourselves.",
+ "findings": [
+  "No country shows a wholesale layer that looks too high. For Hungary, Germany, the UK, Spain and Italy the biggest named wholesalers plausibly carry 40–95% of the layer, which is what a concentrated trade should show.",
+  "Hungary has the closest independent match: a bond document puts passenger-tyre wholesale at about 70% of the market, against 73% in the dashboard.",
+  "France, Austria, Switzerland, Belgium, Denmark and Poland cannot be tested yet, because the named wholesalers publish too little. The gaps are listed below.",
+  "The Netherlands cannot be tested from company data, and may be pointing at understated import and re-export flows. That is a question for the model, not a finding.",
+  "Nothing in the model was changed by this check. It adds evidence, caveats and corrections only."
+ ],
+ "corrections": [
+  {
+   "t": "Netherlands: a mistake in the research brief",
+   "x": "The brief given to the research run described the Dutch wholesale layer as including re-exports. It does not: the dashboard's 6.42M is domestic, after taking off the 2.41M that Dutch wholesalers send abroad. The report's verdict that the NL figure was “far off, too low” rests on that wrong description and is withdrawn. What company data can say about the Netherlands is shown in its own block."
+  },
+  {
+   "t": "United Kingdom: ownership",
+   "x": "Bond International is an independent family company; only Micheldever is owned by a manufacturer (Sumitomo, since 2017). The earlier note calling both “independent” is corrected on the card."
+  },
+  {
+   "t": "United Kingdom: Bond's volume",
+   "x": "The research run reported 16.8 million tyres handled and one tyre every 3.5 seconds. The two Bond pages we opened say one tyre every six seconds and give 2024 turnover of £417M. The new estimate is 5–8M, and the 16.8M is not used."
+  },
+  {
+   "t": "Figures that disagree, still open",
+   "x": "Distri Cash 6.0M against 6.5M (and 5.5M in 2022); NEX 2.5M and €200M+ against 3.6M and €290.4M; Göggel €490M against €256M; Best4Tires about €600M against €508M; Bond 11 distribution centres against five."
+  }
+ ],
+ "method": [
+  "The test: add up what the biggest wholesalers say they sell and compare it with the wholesale layer in the flow model. If they alone exceeded the layer, the layer would be too low. If they covered a tiny share of a layer that should be concentrated, it might be too high.",
+  "It is a sanity check, not a measurement. Company figures cover all tyre types (cars, trucks, motorbikes, agricultural), include exports and some own retail, and use different years. So they are ceilings for domestic passenger-car wholesale, not exact matches.",
+  "Where only revenue is known, tyres are derived at €60–100 a tyre. That range is wide on purpose."
+ ],
+ "labels": [
+  {
+   "label": "PUBLISHED",
+   "text": "A number printed on a page."
+  },
+  {
+   "label": "DERIVED",
+   "text": "Our arithmetic on a published revenue or rate; the working is shown."
+  },
+  {
+   "label": "CLAIM",
+   "text": "A company statement, or a figure the research run quoted that we have not seen on the page ourselves."
+  }
+ ],
+ "marks": [
+  {
+   "mark": "✓",
+   "text": "Opened and checked by us. The pages were read through a page-reading tool, so check the wording before quoting it outside."
+  },
+  {
+   "mark": "○",
+   "text": "Quoted by the research run. We have not opened the page."
+  }
+ ],
+ "nextBest": [
+  "Neue Reifenzeitung's 2024 wholesaler ranking (paywalled)",
+  "Annual accounts of Inter-Sprint, Deldo and Bond (Companies House)",
+  "Trade-association channel data (Traxio, Tyre Industry bodies)",
+  "Austrian and Swiss company registers"
+ ],
+ "countries": [
+  {
+   "country": "Germany",
+   "verdict": "roughly consistent",
+   "vclass": "ok",
+   "headline": "The five biggest names plausibly carry about 60% of the 24.7M wholesale layer. Nothing points to the layer being too high.",
+   "sumLo": 10.0,
+   "sumHi": 20.0,
+   "sumNote": "Research run's range for the named group's domestic car tyres. The company figures below are larger because they include trucks, exports and own retail.",
+   "confidence": "Medium",
+   "named": [
+    {
+     "name": "Reifen Göggel",
+     "owner": "Independent",
+     "fig": "Revenue about €490M",
+     "lo": 4.9,
+     "hi": 8.2,
+     "unit": "tyres a year, all types",
+     "year": "2022",
+     "label": "DERIVED",
+     "basis": "€490M ÷ €100 to €60 a tyre.",
+     "src": "Reifenpresse, via Schwäbische Zeitung (research run); same figure on the card from Neue Reifenzeitung 8/2024",
+     "chk": false,
+     "caveat": "DDW shows €256M instead, which would give 2.6–4.3M tyres. Not resolved."
+    },
+    {
+     "name": "Best4Tires",
+     "owner": "Independent",
+     "fig": "“annähernd 6 Millionen Reifen”",
+     "lo": 5.0,
+     "hi": 6.0,
+     "unit": "tyres a year, all types",
+     "year": "2022",
+     "label": "CLAIM",
+     "basis": "Nearly 6 million tyres; the research run puts revenue near €600M, the card has €508M for the group.",
+     "src": "auto.news (research run)",
+     "chk": false,
+     "quote": "annähernd 6 Millionen Reifen",
+     "en": "nearly 6 million tyres",
+     "caveat": "Revenue €600M (research run) against €508M group revenue (Neue Reifenzeitung 8/2024, on the card)."
+    },
+    {
+     "name": "Pneuhage / Interpneu",
+     "owner": "Pneuhage Group",
+     "fig": "Wholesale revenue €543M (2022); group €1.15bn (2024)",
+     "lo": 5.4,
+     "hi": 9.0,
+     "unit": "tyres a year, all types",
+     "year": "2022",
+     "label": "DERIVED",
+     "basis": "€543M wholesale revenue ÷ €100 to €60. Includes truck tyres, so the car-tyre part is lower.",
+     "src": "Neue Reifenzeitung 8/2024 (card); group figure from Reifenpresse (research run)",
+     "chk": false
+    },
+    {
+     "name": "Ihle (Michelin)",
+     "owner": "Michelin",
+     "fig": "Revenue €167M",
+     "lo": 1.7,
+     "hi": 2.8,
+     "unit": "tyres a year, all types",
+     "year": "2022",
+     "label": "DERIVED",
+     "basis": "€167M ÷ €100 to €60.",
+     "src": "Neue Reifenzeitung 8/2024 (card)",
+     "chk": false
+    },
+    {
+     "name": "Reifen Müller (Hankook)",
+     "owner": "Hankook",
+     "fig": "Revenue about €282M including retail",
+     "lo": 2.8,
+     "hi": 4.7,
+     "unit": "tyres a year, all types",
+     "year": "2022",
+     "label": "DERIVED",
+     "basis": "€282M ÷ €100 to €60. Includes retail, so the wholesale part is lower.",
+     "src": "Neue Reifenzeitung 8/2024 (card)",
+     "chk": false
+    }
+   ],
+   "evidence": [
+    {
+     "t": "Market size check",
+     "x": "BRV puts car-tyre sales at “knapp 41 Millionen Stück” (just under 41 million), which matches the dashboard's 41.0M. It also adds about 4.1M van tyres (kfz-betrieb), which the Germany flow does not include because it is still car-and-4x4 only.",
+     "chk": false
+    },
+    {
+     "t": "Concentration",
+     "x": "Roland Berger (Nov 2018): around 50 tyre wholesalers in Germany, the top 7 holding about 75%. Five names at about 60% fits that.",
+     "chk": true
+    }
+   ],
+   "gaps": [
+    "The 2024 wholesaler ranking in Neue Reifenzeitung is behind a paywall, so the 2024 revenues are not confirmed.",
+    "Reifen Helm, Burkhardt and Ihle publish no tyre volumes."
+   ],
+   "iso": "DE"
+  },
+  {
+   "country": "France",
+   "verdict": "insufficient data",
+   "vclass": "gap",
+   "headline": "One name, Distri Cash, already covers about 35–42% of the 15.5M layer. That is enough to show the layer is not too high, but too little to test it.",
+   "sumLo": 5.5,
+   "sumHi": 6.5,
+   "sumNote": "Distri Cash only. The other eight names on the card publish no tyre volumes.",
+   "confidence": "Low",
+   "named": [
+    {
+     "name": "Distri Cash",
+     "owner": "Family-owned",
+     "fig": "“plus de 5,5 millions” tyres sold; revenue €480M",
+     "lo": 5.5,
+     "hi": 5.5,
+     "unit": "tyres a year, all types",
+     "year": "2022",
+     "label": "PUBLISHED",
+     "basis": "Printed in J2R, 15 Jul 2023: 700,000 more than in 2021.",
+     "src": "J2R Rechange, 15 Jul 2023",
+     "chk": true,
+     "quote": "Historiquement dans la distribution de pneumatiques, Distri Cash en a écoulé plus de 5,5 millions sur l’année.",
+     "en": "Historically in tyre distribution, Distri Cash sold more than 5.5 million over the year."
+    },
+    {
+     "name": "Distri Cash (later figure)",
+     "owner": "Family-owned",
+     "fig": "6.5M tyres and €573M; or 6M and €625M including €90M of parts",
+     "lo": 6.0,
+     "hi": 6.5,
+     "unit": "tyres a year, all types",
+     "year": "2023/24 (year not stated)",
+     "label": "CLAIM",
+     "basis": "Two versions of the same company, both from the research run.",
+     "src": "Zepros (research run)",
+     "chk": false,
+     "caveat": "The two versions differ (6.0M against 6.5M). An older Auto Infos item said 3.5M tyres, about 10% share."
+    }
+   ],
+   "evidence": [
+    {
+     "t": "Share check",
+     "x": "The older Auto Infos item (3.5M tyres = about 10% share) implies a market near 35M, which fits the dashboard's 37.1M.",
+     "chk": false
+    }
+   ],
+   "gaps": [
+    "AAG, Doyen/Autodis, Copadex, Chrono, DPI, Massa, Alzura and Exadis: no tyre volumes found.",
+    "No concentration statistic for French tyre wholesale was found."
+   ],
+   "iso": "FR"
+  },
+  {
+   "country": "United Kingdom",
+   "verdict": "roughly consistent",
+   "vclass": "ok",
+   "headline": "Micheldever and Bond together handle roughly 11.5–14.5M tyres, about 55–70% of the 21.0M layer. Part of that layer is manufacturer-owned.",
+   "sumLo": 11.5,
+   "sumHi": 14.5,
+   "sumNote": "Micheldever 6.5M plus Bond 5–8M, our own re-check. The research run had 10–15M.",
+   "confidence": "Medium",
+   "named": [
+    {
+     "name": "Micheldever Tyre Services",
+     "owner": "Sumitomo Rubber Industries (since 2017)",
+     "fig": "“handling 6.5 million tyres a year”",
+     "lo": 6.5,
+     "hi": 6.5,
+     "unit": "tyres a year handled, all types",
+     "year": "2026 (page undated; Fleet News iQ, June 2026)",
+     "label": "PUBLISHED",
+     "basis": "Of this, its own 184 Protyre centres fit 1.35M a year, so about 5.2M goes to other trade customers.",
+     "src": "Fleet News, feature on Micheldever (iQ issue, Jun 2026)",
+     "chk": true,
+     "quote": "handling 6.5 million tyres a year from budget to premium lines.",
+     "caveat": "The research run quoted “around six million tyres each year to more than 6,000 retailers” (older company wording). The 6.5M above is newer."
+    },
+    {
+     "name": "Bond International",
+     "owner": "Independent family company (management buyout 2019)",
+     "fig": "2024 turnover £417M; “one tyre every six seconds”",
+     "lo": 5.0,
+     "hi": 8.0,
+     "unit": "tyres a year, all types",
+     "year": "2024",
+     "label": "DERIVED",
+     "basis": "One tyre every six seconds is 5.3M a year if counted around the clock. £417M, taken as about €490M, ÷ €100 to €60 gives 4.9–8.2M. Both point to about 5–8M.",
+     "src": "Supply Chain World, 28 Aug 2025 (turnover) and Bond's own website via the Tyrepress directory (the six-second rate)",
+     "chk": true,
+     "quote": "In 2018, our turnover was £162 million, but in 2024, this figure grew to £417 million",
+     "caveat": "The research run reported “16.8 million tyres last year” and “one tyre every 3.5 seconds”. Neither wording appears on the two pages we opened, which say every six seconds. Treated as not supported. The website also says 11 distribution centres, while the August 2025 interview says five."
+    }
+   ],
+   "evidence": [
+    {
+     "t": "Ownership",
+     "x": "Bond is independent and family-owned: “We are proud to have remained an independent family company for over 59 years.” Only Micheldever is manufacturer-owned (Sumitomo, which owns Dunlop). An earlier note on the card called Micheldever independent; that is corrected.",
+     "chk": true
+    },
+    {
+     "t": "Customers",
+     "x": "Micheldever: 1,600 independent partners, 80% of that business with 250 “tier one” operators (Fleet News).",
+     "chk": true
+    }
+   ],
+   "gaps": [
+    "Stapleton's and Group Tyre: no volumes found. Companies House accounts for Bond are the next best source."
+   ],
+   "iso": "UK"
+  },
+  {
+   "country": "Netherlands",
+   "verdict": "cannot be tested",
+   "vclass": "flag",
+   "headline": "Company data cannot test the 6.42M domestic figure. It does hint that Dutch wholesalers move more tyres across the border than the model's 2.84M in and 2.41M out.",
+   "sumLo": null,
+   "sumHi": null,
+   "sumNote": "",
+   "confidence": "Low",
+   "named": [
+    {
+     "name": "Inter-Sprint (Global Automotive Investments)",
+     "owner": "Global Automotive Investments Holding",
+     "fig": "Revenue €947M in FY2023/24, mostly export",
+     "lo": 9.5,
+     "hi": 15.8,
+     "unit": "tyres a year, all types, all countries",
+     "year": "FY2023/24",
+     "label": "DERIVED",
+     "basis": "€947M ÷ €100 to €60. This is the whole group, not the Dutch market, and includes truck and other types, so the true passenger-car count is lower.",
+     "src": "Trends (research run)",
+     "chk": false,
+     "caveat": "The card also carries an EW Top 500 revenue of €1.93bn for the whole holding (not checked)."
+    },
+    {
+     "name": "Inter-Sprint warehouse",
+     "owner": "Global Automotive Investments Holding",
+     "fig": "About 2.8 million tyres in 200,000 m² of warehouse",
+     "lo": 2.8,
+     "hi": 2.8,
+     "unit": "tyres in stock",
+     "year": "2022",
+     "label": "PUBLISHED",
+     "basis": "A stock figure, not a yearly volume.",
+     "src": "Tyrepress, 24 Oct 2022",
+     "chk": true,
+     "quote": "housing around 2.8 million tyres in 200,000 square metres of warehousing"
+    }
+   ],
+   "evidence": [
+    {
+     "t": "What the dashboard figure means",
+     "x": "The 6.42M is domestic: tyres Dutch wholesalers sell in the Netherlands, after taking off the 2.41M they send abroad. Company revenue is mostly export, so it cannot confirm or reject the domestic figure.",
+     "chk": true
+    },
+    {
+     "t": "What the data may be saying",
+     "x": "One group's revenue implies a throughput above the model's 6.42M domestic plus 2.41M export (about 8.8M). The scopes differ, so this is a prompt to look at the import and re-export boxes, not a finding.",
+     "chk": true
+    }
+   ],
+   "gaps": [
+    "Dutch wholesale volumes by company are not published. Annual accounts of Inter-Sprint and Van den Ban are the next best source."
+   ],
+   "iso": "NL"
+  },
+  {
+   "country": "Belgium",
+   "verdict": "insufficient data",
+   "vclass": "gap",
+   "headline": "Deldo is mostly an export business, so it says little about the Belgian layer. The flow has no wholesale figure yet; the research run's indication is shown for reference only.",
+   "sumLo": null,
+   "sumHi": null,
+   "sumNote": "",
+   "confidence": "Low",
+   "indicative": {
+    "lo": 2.0,
+    "hi": 3.0,
+    "of": 4.6,
+    "note": "Research run's indicative layer, built on assumptions, not entered in the flow."
+   },
+   "named": [
+    {
+     "name": "Deldo Autobanden",
+     "owner": "Independent",
+     "fig": "Revenue €506M (2024), €530M (2025); “net geen 8 miljoen autobanden” a year",
+     "lo": 0.4,
+     "hi": 0.7,
+     "unit": "tyres a year, Belgium only",
+     "year": "2024",
+     "label": "DERIVED",
+     "basis": "Belgium is about 8% of revenue (€30M of €386M in 2021) → about €40M ÷ €100 to €60.",
+     "src": "Company accounts and press (research run)",
+     "chk": false,
+     "quote": "net geen 8 miljoen autobanden",
+     "en": "just under 8 million car tyres"
+    }
+   ],
+   "evidence": [],
+   "gaps": [
+    "Forrez: no data. Deldo's annual accounts and the Traxio channel data are the next best sources."
+   ],
+   "iso": "BE"
+  },
+  {
+   "country": "Spain",
+   "verdict": "roughly consistent",
+   "vclass": "ok",
+   "headline": "Andrés, Soledad and NEX together plausibly carry 42–58% of the 14.7M layer. Nothing points to it being too high.",
+   "sumLo": 6.2,
+   "sumHi": 8.5,
+   "sumNote": "Research run's coverage: 42% for the independents, 58% with NEX.",
+   "confidence": "Medium",
+   "named": [
+    {
+     "name": "Grupo Andrés",
+     "owner": "Independent",
+     "fig": "“In 2023, the company sold 4 million tyres”",
+     "lo": 4.0,
+     "hi": 4.0,
+     "unit": "tyres a year, all categories",
+     "year": "2023",
+     "label": "PUBLISHED",
+     "basis": "All categories, including exports; the card's earlier note had this as 'research, not checked'.",
+     "src": "Tyrepress, 27 Jun 2024",
+     "chk": true,
+     "quote": "In 2023, the company sold 4 million tyres"
+    },
+    {
+     "name": "Neumáticos Soledad",
+     "owner": "Independent (Grupo Soledad)",
+     "fig": "Group revenue €409M (2024); Neumáticos Soledad SL €355.96M (2024); national €323.92M (2024), €341.85M (2025)",
+     "lo": 3.2,
+     "hi": 5.7,
+     "unit": "tyres a year, all types",
+     "year": "2024",
+     "label": "DERIVED",
+     "basis": "National revenue ÷ €100 to €60. Includes retail, truck and exports at group level.",
+     "src": "Alicante Plaza, 10 Jan 2026 (group €409M, checked); national figures from the research run",
+     "chk": true,
+     "quote": "el holding de la familia Pérez Vázquez obtuvo una facturación de 409 millones de euros,",
+     "en": "the Pérez Vázquez family holding reached revenue of 409 million euros,"
+    },
+    {
+     "name": "NEX (Euromaster / Rodi)",
+     "owner": "Euromaster (Michelin) / Rodi, 50/50",
+     "fig": "More than 2.5M tyres and more than €200M",
+     "lo": 2.5,
+     "hi": 2.5,
+     "unit": "tyres a year, all types",
+     "year": "2024",
+     "label": "CLAIM",
+     "basis": "Europneus 2024, as quoted by the research run.",
+     "src": "Europneus 2024 (research run)",
+     "chk": false,
+     "caveat": "The card says €290.4M and 3.6M tyres (year not stated). Not resolved."
+    }
+   ],
+   "evidence": [],
+   "gaps": [
+    "Top Recambios, Recacor and Total Neumáticos publish no volumes."
+   ],
+   "iso": "ES"
+  },
+  {
+   "country": "Italy",
+   "verdict": "roughly consistent",
+   "vclass": "ok",
+   "headline": "Fintyre and Univergomma alone report about 5M tyres each, and the research run puts the named group near 68% of the 16.6M layer. If anything the layer looks slightly low.",
+   "sumLo": 11.3,
+   "sumHi": 11.3,
+   "sumNote": "Research run's coverage of about 68%.",
+   "confidence": "Medium",
+   "named": [
+    {
+     "name": "Fintyre group",
+     "owner": "Fintyre Group (Fintyre, Franco Gomme, Gexpo Tyre)",
+     "fig": "“oltre 5 milioni di pneumatici venduti ogni anno”; revenue about €408M (2024)",
+     "lo": 5.0,
+     "hi": 5.0,
+     "unit": "tyres a year, all categories",
+     "year": "2024",
+     "label": "CLAIM",
+     "basis": "Pneurama, as quoted by the research run. The company's own site says more than 6M.",
+     "src": "Pneurama (research run)",
+     "chk": false,
+     "quote": "oltre 5 milioni di pneumatici venduti ogni anno",
+     "en": "more than 5 million tyres sold every year"
+    },
+    {
+     "name": "Univergomma",
+     "owner": "Independent",
+     "fig": "“cinque milioni di pezzi venduti nel 2024 e 350 milioni di fatturato”; revenue above €335M in 2023",
+     "lo": 5.0,
+     "hi": 5.0,
+     "unit": "tyres a year, all categories",
+     "year": "2024",
+     "label": "CLAIM",
+     "basis": "T24 Economia, as quoted by the research run. Tyrepress (checked) gives sales above €335M for 2023 and says the group's production value “surpassed €350 million”, so the €350M may be production value, not sales.",
+     "src": "T24 Economia (research run); Tyrepress, 24 Jul 2024 (checked)",
+     "chk": false,
+     "quote": "cinque milioni di pezzi venduti nel 2024 e 350 milioni di fatturato",
+     "en": "five million pieces sold in 2024 and 350 million in revenue"
+    },
+    {
+     "name": "Tagliabue (TGG)",
+     "owner": "Independent",
+     "fig": "Revenue €143.3M in 2022; swings between years",
+     "lo": null,
+     "hi": null,
+     "unit": "",
+     "year": "2022",
+     "label": "CLAIM",
+     "basis": "Revenue only; no tyre volume.",
+     "src": "Card (earlier research)",
+     "chk": false
+    }
+   ],
+   "evidence": [],
+   "gaps": [
+    "Magri, Zuin and the smaller regional wholesalers publish no volumes."
+   ],
+   "iso": "IT"
+  },
+  {
+   "country": "Austria",
+   "verdict": "insufficient data",
+   "vclass": "gap",
+   "headline": "No volumes or revenues found for Auto Plus, Tire Network, ARG or Delticom's trade arm. The 1.82M layer is untested.",
+   "sumLo": null,
+   "sumHi": null,
+   "sumNote": "",
+   "confidence": "Low",
+   "named": [],
+   "evidence": [],
+   "gaps": [
+    "Auto Plus, Tire Network, ARG, Delticom B2B: nothing published that we could find. Austrian company-register accounts are the next best source."
+   ],
+   "iso": "AT"
+  },
+  {
+   "country": "Hungary",
+   "verdict": "supports the dashboard",
+   "vclass": "good",
+   "headline": "AKH and MARSO together plausibly carry 60–95% of the 2.53M layer, and a bond document puts passenger-tyre wholesale at about 70% of the market, close to the dashboard's 73%.",
+   "sumLo": 1.5,
+   "sumHi": 2.4,
+   "sumNote": "AKH 0.8–1.1M plus MARSO 0.7–1.3M, domestic, derived by the research run.",
+   "confidence": "Medium",
+   "named": [
+    {
+     "name": "AKH – Abroncs Kereskedőház (gumi.hu)",
+     "owner": "Hungarian family-owned",
+     "fig": "“évente több mint egymillió abroncsot értékesít”; 2021 bond document: “Évente közel 1,4 millió db”",
+     "lo": 0.8,
+     "hi": 1.1,
+     "unit": "tyres a year, domestic, all types",
+     "year": "2021",
+     "label": "CLAIM",
+     "basis": "About 1.0–1.4M a year in total, export about 20% of revenue → 0.8–1.1M domestic.",
+     "src": "Company statement and 2021 bond document (research run)",
+     "chk": false,
+     "quote": "évente több mint egymillió abroncsot értékesít",
+     "en": "sells more than one million tyres a year",
+     "caveat": "One page we opened (vg.hu, 26 May 2021) gives group turnover of nearly HUF 30bn (2020) and over 200 reseller partners in its service programme, but no tyre count."
+    },
+    {
+     "name": "MARSO Kft.",
+     "owner": "Nyíregyháza HQ",
+     "fig": "Total revenue HUF 41.7bn (2024)",
+     "lo": 0.7,
+     "hi": 1.3,
+     "unit": "tyres a year, domestic, all types",
+     "year": "2024",
+     "label": "DERIVED",
+     "basis": "Revenue converted at €60–100 a tyre, after removing non-tyre sales.",
+     "src": "Company accounts (research run)",
+     "chk": false
+    }
+   ],
+   "evidence": [
+    {
+     "t": "Strongest support",
+     "x": "The same 2021 bond document puts passenger-tyre wholesale at about 2.1M of about 3M, roughly 70%. The dashboard has 2.53M of 3.48M, 73%.",
+     "chk": false
+    }
+   ],
+   "gaps": [
+    "The bond document is from 2021, before the market was rebuilt on the ETRMA scope."
+   ],
+   "iso": "HU"
+  },
+  {
+   "country": "Switzerland",
+   "verdict": "insufficient data",
+   "vclass": "gap",
+   "headline": "No usable wholesaler data. The 62% wholesale share (4.0M of 6.5M) is untested and the research run found it questionable.",
+   "sumLo": null,
+   "sumHi": null,
+   "sumNote": "",
+   "confidence": "Low",
+   "named": [],
+   "evidence": [],
+   "gaps": [
+    "Pneuhage Switzerland, Interpneu AG, Pneucore, Pneuhaus Leu: no volumes found."
+   ],
+   "iso": "CH"
+  },
+  {
+   "country": "Denmark",
+   "verdict": "insufficient data",
+   "vclass": "gap",
+   "headline": "NDI Group is described as Denmark's largest tyre importer, but only group revenue is known. The flow has no wholesale figure yet.",
+   "sumLo": null,
+   "sumHi": null,
+   "sumNote": "",
+   "confidence": "Low",
+   "indicative": {
+    "lo": 1.0,
+    "hi": 1.5,
+    "of": 2.2,
+    "note": "Research run's indicative layer, an assumption, not entered in the flow."
+   },
+   "named": [
+    {
+     "name": "NDI Group (Nordisk Dæk Import)",
+     "owner": "Independent",
+     "fig": "Revenue DKK 3.238bn (2024/25); “Danmarks største dækimportør”",
+     "lo": null,
+     "hi": null,
+     "unit": "",
+     "year": "2024/25",
+     "label": "CLAIM",
+     "basis": "Revenue only. Not converted to tyres because the split between Denmark and other Nordic markets is not known.",
+     "src": "Company accounts and press (research run)",
+     "chk": false,
+     "quote": "Danmarks største dækimportør",
+     "en": "Denmark's largest tyre importer"
+    }
+   ],
+   "evidence": [],
+   "gaps": [
+    "Nordic Tyre Group and FTZ: nothing found."
+   ],
+   "iso": "DK"
+  },
+  {
+   "country": "Poland",
+   "verdict": "insufficient data",
+   "vclass": "gap",
+   "headline": "The three named wholesalers sum to about 3.3–6.5M tyres, against a research-run indication of 7–11M for the whole layer. The flow has no wholesale figure yet.",
+   "sumLo": 3.3,
+   "sumHi": 6.5,
+   "sumNote": "Handlopex, Inter Cars and JMK together, research run.",
+   "confidence": "Low",
+   "indicative": {
+    "lo": 7.0,
+    "hi": 11.0,
+    "of": 16.9,
+    "note": "Research run's indicative layer, built on assumptions, not entered in the flow."
+   },
+   "named": [
+    {
+     "name": "Handlopex S.A.",
+     "owner": "Independent",
+     "fig": "“przekracza 3 mln rocznie”; revenue PLN 847M (2024)",
+     "lo": 2.0,
+     "hi": 3.3,
+     "unit": "tyres a year",
+     "year": "2024",
+     "label": "CLAIM",
+     "basis": "Company statement as quoted by the research run; the revenue-based range is shown for comparison.",
+     "src": "Company and accounts (research run)",
+     "chk": false,
+     "quote": "przekracza 3 mln rocznie",
+     "en": "exceeds 3 million a year"
+    },
+    {
+     "name": "Inter Cars S.A.",
+     "owner": "Listed group",
+     "fig": "PLN 4,326.7M in a product line that mixes tyres with batteries and oils (22.2% of group revenue)",
+     "lo": null,
+     "hi": null,
+     "unit": "",
+     "year": "2024",
+     "label": "CLAIM",
+     "basis": "Tyres cannot be separated from the other products.",
+     "src": "Group report (research run)",
+     "chk": false
+    },
+    {
+     "name": "JMK Sp. z o.o.",
+     "owner": "Independent",
+     "fig": "Revenue PLN 193.4M (2025)",
+     "lo": 0.5,
+     "hi": 0.8,
+     "unit": "tyres a year",
+     "year": "2025",
+     "label": "DERIVED",
+     "basis": "PLN 193.4M ≈ €45M ÷ €100 to €60.",
+     "src": "Accounts (research run)",
+     "chk": false
+    }
+   ],
+   "evidence": [
+    {
+     "t": "Not wholesale, but relevant",
+     "x": "Oponeo, an online retailer, sold 4,259.1 thousand tyres in Poland in 2024, with an estimated 30–36% market share (research run; basis for the share not stated). It belongs to the online channel, not the wholesale layer.",
+     "chk": false
+    }
+   ],
+   "gaps": [
+    "Inter Cars' tyre volumes are not published separately."
+   ],
+   "iso": "PL"
+  }
+ ]
+}
