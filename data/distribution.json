@@ -1805,9 +1805,9 @@
     },
     {
       "country": "Austria",
-      "meta": "passenger car replacement tyres",
-      "total": "~4.5M",
-      "totalLabel": "units, estimate (passenger car only)",
+      "meta": "ETRMA Pool RY2026 + research estimate · consumer replacement tyres: cars, vans, light trucks, 4x4 (no complete Austrian total published)",
+      "total": "~5.0M",
+      "totalLabel": "units, RY2026 estimate (cars, vans, light trucks, 4x4)",
       "channels": [],
       "flatEntities": [
         {
@@ -1918,7 +1918,7 @@
           "scale": {
             "value": 0.6,
             "metric": "M PCR tyres a year (estimate)",
-            "label": "2,000+ dealer partners; est. ~0.6M PCR tyres a year (research estimate, range 0.45-0.8M)"
+            "label": "2,000+ dealer partners; est. ~0.6M PCR tyres a year (research estimate for passenger cars, range 0.45-0.8M, not rescaled)"
           }
         },
         {
@@ -1931,7 +1931,7 @@
           "scale": {
             "value": 0.15,
             "metric": "M PCR tyres a year (estimate)",
-            "label": "50,000+ tyres in stock; est. ~0.15M PCR tyres a year (research estimate, range 0.10-0.20M)"
+            "label": "50,000+ tyres in stock; est. ~0.15M PCR tyres a year (research estimate for passenger cars, range 0.10-0.20M, not rescaled)"
           }
         },
         {
@@ -1944,12 +1944,12 @@
           "scale": {
             "value": 0.05,
             "metric": "M PCR tyres a year (estimate)",
-            "label": "est. ~0.05M domestic PCR tyres a year (research estimate, low confidence); also exports"
+            "label": "est. ~0.05M domestic PCR tyres a year (research estimate for passenger cars, low confidence, not rescaled); also exports"
           }
         }
       ],
       "noteBadge": "caution",
-      "note": "Caveat Austria publishes no complete PCR unit total or channel split. The 4.5M is a passenger-car-only benchmark estimate (range 4.3-4.7M). The earlier $917M header was a commercial value estimate for the whole Austrian tyre market, so it is not comparable with PCR replacement units. Austria's winter-equipment rule (1 November to 15 April) structurally supports high seasonal and all-season fitment volumes.",
+      "note": "Caveat Austria publishes no complete PCR unit total or channel split. The industry figure (4.90M) is ETRMA's own Pool Market Data for Austria, rolling year 2026 (RY2025 5.50M, -11.0%), covering cars, SUV/4x4, vans and light trucks. The 4.95M market is the research's passenger-car estimate (4.5M, range 4.3-4.7M, 2024) widened by an assumed 10% for vans and light trucks. ETRMA is gross pool sell-in and is 0.94M above the pool the research assumed, almost as large as the whole market, so the Export box (1.82M) is the balancing figure of the flow model: about 0.88M is the research's re-export estimate and the rest is that gap, placed there by choice. The earlier $917M header was a commercial value estimate for the whole Austrian tyre market, so it is not comparable with PCR replacement units. Austria's winter-equipment rule (1 November to 15 April) structurally supports high seasonal and all-season fitment volumes. The wholesaler volumes below are the research's passenger-car estimates and have not been rescaled.",
       "marketAccessNote": "Austria is more concentrated than the previous page suggested. AUTO PLUS Reifen (Denzel Group) is the key tyre importer and wholesale gateway, with more than 2,000 dealer partners and an estimated ~0.6M PCR tyres a year. Tire Network, a Vienna wholesaler founded in 2022, is an emerging second national B2B supplier. At retail, BestDrive by Continental (50+ workshops), Point S (60+ service locations), Lucky Car (60+), Forstinger (69 branches) and Michelin's Euromaster are the main central purchasing entry points. A.T.U exited Austria in February 2024 and Lucky Car took over 24 of its sites, which makes it a materially larger purchasing account than before. Profi Reifen and Reifen John have been rebranded as BestDrive.",
       "territoryDefs": [
         {

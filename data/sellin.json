@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-23T07:31:55Z",
+  "generatedAt": "2026-10-23T07:57:39Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -7323,93 +7323,93 @@
         "market": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate for passenger-car tyres only (vans excluded, SUV tyres included), range 4.3-4.7M. No Austrian source publishes a complete 2024 sell-out total. Cross-check: about 5.2M passenger cars (5.29M at the end of 2025 per ORF, up 54,208 in 2025). Replaces the earlier 4.6M, which also included vans and 4x4s.",
+          "source": "Research estimate, low confidence, widened to the consumer scope: the research's 4.5M for passenger-car tyres (vans excluded, SUV tyres included; range 4.3-4.7M; 2024) x 1.10 for vans and light trucks = 4.95M (range 4.73-5.17M). No Austrian source publishes a complete sell-out total. The 1.10 is an assumption: Statistik Austria counts 581,147 lorries of all classes (+1.6%) against about 5.29M passenger cars at the end of 2025 (checked in its press release), which is 11%; most of the lorries are light vans, but the light-van stock is not in the release and heavy lorries do not use consumer tyres, so treat the factor as about 10% plus or minus 3 points. Sanity check: 4.95M divided by 5.29M cars is 0.94 tyres per car (0.87 for the car-only 4.5M on about 5.2M cars). The research's 2026 run-rate for cars is 4.5-4.6M (its own expectation, not a published figure), which would be 4.95-5.06M here. The dashboard's earlier benchmark of 4.6M covered cars, vans and 4x4 but was a placeholder, so it is not used for the van share. ETRMA does not change this figure: it is gross pool sell-in and is almost as large as the whole market, which is why the Export box is large (see Export). Replaces the earlier 4.5M.",
           "tier": "Estimate",
-          "value": 4.5
+          "value": 4.95
         },
         "industry": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Research model, low-to-medium confidence (range 3.2-3.9M): the part of the 4.5M supplied by the major-brand (industry pool) manufacturers. Not a published ETRMA or Tyres Europe country figure.",
-          "tier": "Estimate",
-          "value": 3.6
+          "asOf": "RY2026",
+          "by": "Simon",
+          "source": "ETRMA Pool Market Data (Europe excl. Turkey, PV, by country, rolling year to September 2026), supplied by you: Austria RY2026 4,899,304 tyres, against 5,503,244 in RY2025 (-11.0%); rounded to 4.90M. This is pool members' sell-in, so it is gross: it includes tyres invoiced to Austrian customers that are re-exported (see the Export box) and is not domestic sales. Scope: ETRMA PV, which you confirm includes 4x4 and light trucks, i.e. cars, SUV/4x4, vans and light trucks. To confirm: whether the table allocates volume by invoice-to or ship-to country, and why the figure fell 11% in a year; the table cannot tell whether that is Austrian demand, hub volumes or a change in reporting. The research's own estimate of this layer was 3.6M for 2024 (passenger cars only, range 3.2-3.9M), 3.96M (3.52-4.29M) on the same scope as ETRMA; ETRMA is 0.94M higher, 0.61M above the top of that range. Replaces the earlier 3.6M.",
+          "tier": "Published",
+          "value": 4.9
         },
         "toWs": {
-          "asOf": "2024",
+          "asOf": "RY2026",
           "by": "research",
-          "source": "Research model (range 0.6-1.0M): the part of the 3.6M industry volume that goes through wholesale. The other 2.85M goes direct to the channels. Not a published figure.",
+          "source": "Calculated, not published: ETRMA industry 4.90M minus the direct volume 3.13M. The direct volume is the research's 2.85M x 1.10 = 3.135M, rounded to 3.13M so the figures tie, and kept at that level on purpose: direct supply is largely manufacturer-owned networks such as BestDrive (Continental) and Euromaster (Michelin), central accounts and cross-border e-commerce, which do not grow just because ETRMA's figure is higher. The extra pool volume therefore goes via wholesale and, as the Export box shows, leaves again. The research's own split of the pool was 0.75M via wholesale and 2.85M direct (21% / 79% of 3.6M). At that ratio ETRMA's 4.90M would give 1.02M via wholesale, and wholesalers would sell only 1.07M in Austria, leaving little room beyond the named wholesalers, whose research estimates add up to about 0.8M. Replaces the earlier 0.75M.",
           "tier": "Estimate",
-          "value": 0.75
+          "value": 1.77
         },
         "import": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate (range 1.4-2.1M) of non-pool supply that enters the wholesale layer. It is not gross customs imports: UN Comtrade (as quoted by the research, not checked) shows 9.056M passenger-car tyres imported in 2024, which includes original-equipment, distributor stock and re-export trade.",
+          "source": "Research estimate (2024, range 1.4-2.1M for passenger cars) of non-pool supply that enters the wholesale layer, 1.70M x 1.10 = 1.87M for the consumer scope (range 1.54-2.31M). The scaling assumes vans and light trucks follow the car pattern. It is not gross customs imports: UN Comtrade (as quoted by the research, not checked) shows 9.056M passenger-car tyres imported in 2024, which includes original-equipment supply, distributor stock and re-export trade. The research did not re-estimate it for 2026. Replaces the earlier 1.70M.",
           "tier": "Estimate",
-          "value": 1.7
+          "value": 1.87
         },
         "export": {
-          "asOf": "2024",
+          "asOf": "RY2026",
           "by": "research",
-          "source": "Research estimate (range 0.6-1.0M) of replacement-market tyres that Austrian wholesalers and importers re-export. Customs data (as quoted by the research, not checked) show 1.296M passenger-car tyres exported in 2024; the rest of that figure is manufacturer logistics and stock movements outside this flow.",
+          "source": "Estimate, not published: it closes the flow so that the boxes add up, ETRMA industry 4.90M + imports 1.87M - market 4.95M = 1.82M. It holds two parts that cannot be separated: about 0.88M that the research estimates for re-export through wholesalers (0.80M for passenger cars x 1.10; range 0.66-1.10M), and about 0.94M by which ETRMA's pool figure is above the research's pool estimate on the same scope (3.96M). You chose to place that gap here, as for the Netherlands: pool volume invoiced to Austria and sold on abroad. The research says Austrian wholesalers re-export part of what they buy and that ARG exports about half its volume (the latter not confirmed). Customs show 1.296M passenger-car tyres exported in 2024 (as quoted by the research, not checked), but that does not bound this box: if ETRMA allocates by invoice-to country, tyres invoiced to Austria and delivered from foreign warehouses never cross the Austrian border. If the gap really belongs in the market or in imports, export would be about 0.88M (the market would be 5.89M, or imports 0.93M). The market is already net of export. Replaces the earlier 0.80M.",
           "tier": "Estimate",
-          "value": 0.8
+          "value": 1.82
         },
         "ch.spec.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: 72% of the market. Includes fast-fit chains, tyre specialists and independent garages. The shape of the split is kept from the earlier benchmark and rescaled to 4.5M. Network sizes, as quoted by the research from the networks' own sites: Point S over 60, BestDrive over 50, Lucky Car over 60, Forstinger 69 branches. They overlap, so they cannot be added up.",
+          "source": "Research benchmark, low confidence: 72% of the market (3.56M of 4.95M). Includes fast-fit chains, tyre specialists and independent garages. The shape is the earlier benchmark (anchored on the German BRV split). Network sizes, as quoted by the research from the networks' own sites: Forstinger 69 branches, Point S over 60, Lucky Car over 60, BestDrive over 50; they overlap, so they cannot be added up. Earlier version: 3.24M of 4.5M.",
           "tier": "Estimate",
-          "value": 3.24
+          "value": 3.56
         },
         "ch.spec.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, about 41% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Austrian source publishes procurement routes by channel.",
+          "source": "Research estimate, about 41% via wholesale. The share is carried over from the research's earlier calibration and nudged by a point or two so the channels add up to 1.82M via wholesale and 3.13M direct. No Austrian source publishes procurement routes by channel.",
           "tier": "Estimate",
-          "value": 1.32
+          "value": 1.45
         },
         "ch.spec.dir": {
           "asOf": "2024",
           "by": "research",
           "source": "Research estimate: channel total minus via wholesale. Direct means any route that bypasses an independent Austrian wholesaler, including manufacturer-owned networks and cross-border e-commerce supply.",
           "tier": "Estimate",
-          "value": 1.92
+          "value": 2.11
         },
         "ch.deal.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: 18% of the market. Kept from the earlier benchmark shape and rescaled to 4.5M. Not a published figure.",
+          "source": "Research benchmark, low confidence: 18% of the market (0.89M of 4.95M), kept from the earlier benchmark shape. Not a published figure. Earlier version: 0.81M of 4.5M.",
           "tier": "Estimate",
-          "value": 0.81
+          "value": 0.89
         },
         "ch.deal.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, about 19% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Austrian source publishes procurement routes by channel.",
+          "source": "Research estimate, about 19% via wholesale. The share is carried over from the research's earlier calibration and nudged by a point or two so the channels add up to 1.82M via wholesale and 3.13M direct. No Austrian source publishes procurement routes by channel.",
           "tier": "Estimate",
-          "value": 0.15
+          "value": 0.17
         },
         "ch.deal.dir": {
           "asOf": "2024",
           "by": "research",
           "source": "Research estimate: channel total minus via wholesale. Direct means any route that bypasses an independent Austrian wholesaler, including manufacturer-owned networks and cross-border e-commerce supply.",
           "tier": "Estimate",
-          "value": 0.66
+          "value": 0.72
         },
         "ch.ret.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: 3% of the market. Kept from the earlier benchmark shape. Low confidence, no Austrian source for it.",
+          "source": "Research benchmark, low confidence: 3% of the market (0.15M of 4.95M), kept from the earlier benchmark shape, with no Austrian source for it. Earlier version: 0.14M of 4.5M.",
           "tier": "Estimate",
-          "value": 0.14
+          "value": 0.15
         },
         "ch.ret.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, about 57% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Austrian source publishes procurement routes by channel. Lowest confidence.",
+          "source": "Research estimate, about 60% via wholesale. The share is carried over from the research's earlier calibration and nudged by a point or two so the channels add up to 1.82M via wholesale and 3.13M direct. No Austrian source publishes procurement routes by channel. Lowest confidence.",
           "tier": "Estimate",
-          "value": 0.08
+          "value": 0.09
         },
         "ch.ret.dir": {
           "asOf": "2024",
@@ -7421,23 +7421,23 @@
         "ch.onl.tot": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate: 7% of the market. Kept from the earlier benchmark shape and rescaled to 4.5M. Low confidence, no Austrian source for it.",
+          "source": "Research benchmark, low confidence: 7% of the market (0.35M of 4.95M), kept from the earlier benchmark shape, with no Austrian source for it. Earlier version: 0.31M of 4.5M.",
           "tier": "Estimate",
-          "value": 0.31
+          "value": 0.35
         },
         "ch.onl.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, about 32% via wholesale. Calibrated so the channels add up to the wholesale and direct totals. No Austrian source publishes procurement routes by channel. Lowest confidence.",
+          "source": "Research estimate, about 31% via wholesale. The share is carried over from the research's earlier calibration and nudged by a point or two so the channels add up to 1.82M via wholesale and 3.13M direct. No Austrian source publishes procurement routes by channel. Lowest confidence.",
           "tier": "Estimate",
-          "value": 0.1
+          "value": 0.11
         },
         "ch.onl.dir": {
           "asOf": "2024",
           "by": "research",
           "source": "Research estimate: channel total minus via wholesale. Direct means any route that bypasses an independent Austrian wholesaler, including manufacturer-owned networks and cross-border e-commerce supply.",
           "tier": "Estimate",
-          "value": 0.21
+          "value": 0.24
         }
       },
       "channels": [
@@ -7466,135 +7466,149 @@
       "groups": [],
       "iso": "AT",
       "meta": {
-        "boxNote": "Boxes are the channels as named under \"By channel\". The import box is the research's 1.70M estimate of non-pool supply entering wholesale, not gross customs imports (9.06M passenger-car tyres in 2024), and the export box is its 0.80M estimate of re-export through wholesalers, not the 1.30M customs figure. Direct means any route that bypasses an independent Austrian wholesaler: manufacturer supply, manufacturer-owned networks such as BestDrive (Continental), central accounts and cross-border e-commerce.",
-        "scopeNote": "The 4.5M is a passenger-car-only estimate, slightly below the earlier 4.6M, which also included vans and 4x4s. No complete public Austrian sell-out series exists, so everything below the market figure is modelled, not published. The research does not cover private versus commercial demand, so those boxes still need input.",
+        "boxNote": "Boxes are the channels as named under \"By channel\". Industry is ETRMA pool sell-in (4.90M, rolling year 2026), which is gross: it includes tyres invoiced to Austrian customers that are re-exported, so it does not compare directly with domestic sales. Export (1.82M) closes the flow, industry + imports - market, and holds about 0.88M of re-export that the research estimates plus about 0.94M by which ETRMA is above the research's pool estimate (your choice to place the gap here). The market is already net of it. The import box is the research's 1.70M estimate of non-pool supply entering wholesale, 1.87M after widening to vans and light trucks. Neither import nor export is customs data (gross customs imports were 9.06M passenger-car tyres and exports 1.30M in 2024, as quoted by the research, not checked). Direct means any route that bypasses an independent Austrian wholesaler: manufacturer supply, manufacturer-owned networks such as BestDrive (Continental), central accounts and cross-border e-commerce.",
+        "scopeNote": "Period: rolling year RY2026 (the 12 months to September 2026). Industry is ETRMA's Pool Market Data for Austria, 4,899,304 tyres, supplied by you (RY2025 5,503,244, -11.0%); it covers cars, SUV/4x4, vans and light trucks together (ETRMA PV, as you confirm). Everything below it is modelled, not published. The research's Austria model (2024) covered passenger cars only (SUV tyres included, vans excluded), so its market (4.5M), imports (1.70M) and direct volume (2.85M) are widened by 1.10 for vans and light trucks, an assumption anchored on Statistik Austria's lorry stock (581,147) against 5.29M cars. Export (1.82M) is the balancing figure, industry + imports - market, and contains the 0.94M by which ETRMA's pool figure is above the research's pool estimate on the same scope (3.96M); you chose to place that gap there. For comparison, the earlier version of this flow had industry 3.6M, market 4.5M and export 0.80M for passenger cars in 2024. The research does not cover private versus commercial demand, so those boxes remain blank.",
         "seasons": {},
-        "walkNote": "No complete public Austrian sell-out series exists, so everything below the market figure is modelled, not published. Private versus commercial is not covered, so those boxes are blank.",
+        "walkNote": "Industry is ETRMA's pool figure (4.90M), gross and including tyres that are re-exported. Export (1.82M) closes the flow and includes the 0.94M by which ETRMA is above the research's own pool estimate, placed there at your choice. The market, imports and direct volume are the research's passenger-car estimates × 1.10 for vans and light trucks. Channel shares are benchmarks. Private versus commercial is not covered, so those boxes are blank.",
         "walkWhy": {
           "channels": {
-            "v": 4.5,
-            "why": "No Austrian channel split is published, so the research keeps the earlier benchmark shape of 72 / 18 / 3 / 7% (anchored on the German BRV split) and rescales it to 4.5M.",
+            "v": 4.95,
+            "why": "No Austrian channel split is published, so the research keeps the earlier benchmark shape of 72 / 18 / 3 / 7% (anchored on the German BRV split) and it is applied here to the 4.95M market.",
             "val": "Network sizes support a large specialist channel (Forstinger 69 branches, Point S over 60, Lucky Car over 60, BestDrive over 50). Replace with your own Austrian channel data when you have it."
           }
         }
       },
       "refs": [
-        "Method (replaced with the Austria research file): every figure is a model estimate for passenger-car tyres only. The channel shares of 72 / 18 / 3 / 7% are kept from the earlier benchmark and rescaled from 4.6M (car, van and 4x4) to 4.5M. No public Austrian source gives a sell-out total or a channel split.",
-        "Market size: the research found no complete 2024 or 2025 Austrian sell-out figure. The GfK retail panel supported by VRO recorded almost 3.6M tyres in 2018 and is not all-channel coverage (I could not open that source). Working range 4.3-4.7M. The parc supports it: the research quotes 5.23M passenger cars at the end of 2024 (Statistics Austria), and ORF reports 5.29M at the end of 2025, up 54,208.",
-        "Customs versus domestic balance: UN Comtrade (as quoted by the research, not checked) shows 9.056M HS 401110 passenger-car tyres imported and 1.296M exported in 2024. Net imports of 7.76M exceed the estimated sell-out because customs data include original-equipment supply, distributor stock and re-export, so they are not used in the import or export boxes.",
-        "Wholesale versus direct is a modelled split, not a published figure: 0.75M of the 3.6M industry volume goes through wholesale and 2.85M goes direct, plus 1.70M of non-pool supply, less 0.80M re-exported, gives 1.65M wholesale sold in Austria (about 37%) and 2.85M direct (about 63%). Direct is broader than factory-to-shop. BestDrive is Continental-owned and Euromaster is Michelin-owned, so a large part of retail is supplied outside independent wholesale.",
+        "Scope and method (rebuilt October 2026): the Austria flow now covers cars, SUV/4x4, vans and light trucks together as passenger-car replacement, which is ETRMA's PV scope as you define it, on a rolling-year basis (RY2026). The industry box is ETRMA's own Pool Market Data for Austria (4,899,304 tyres in RY2026), supplied by you. The rest comes from the research's 2024 Austria model, which covered passenger cars only (SUV tyres included, vans excluded), widened by 1.10 for vans and light trucks: market 4.5M becomes 4.95M, imports 1.70M becomes 1.87M and the direct volume 2.85M becomes 3.13M. The 1.10 is an assumption (Statistik Austria counts 581,147 lorries of all classes against about 5.29M cars at the end of 2025, 11%). Export (1.82M) is the balancing figure: ETRMA 4.90 + imports 1.87 - market 4.95. The channel shares of 72 / 18 / 3 / 7% are kept from the earlier benchmark (anchored on the German BRV split) and applied to 4.95M. No public Austrian source gives a sell-out total or a channel split.",
+        "Market size: the research found no complete 2024 or 2025 Austrian sell-out figure. The GfK retail panel supported by VRO recorded almost 3.6M tyres in 2018 and is not all-channel coverage (I could not open that source). Working range 4.3-4.7M for passenger cars (4.73-5.17M widened by 1.10 to the consumer scope). The parc supports it: the research quotes 5.23M passenger cars at the end of 2024 (Statistics Austria), and ORF reports 5.29M at the end of 2025, up 54,208. Tyres per car: 4.95M / 5.29M = 0.94 (the car-only 4.5M on about 5.2M cars was 0.87).",
+        "How ETRMA's figure fits the research (October 2026): your ETRMA table shows 4,899,304 tyres for Austria in RY2026 and 5,503,244 in RY2025 (-11.0%). The research's own estimate of the same layer, the major brands' supply, was 3.6M for 2024 on passenger cars, or 3.96M (range 3.52-4.29M) on the consumer scope, so ETRMA is about 0.94M (24%) higher and 0.61M above the top of the research's range. ETRMA alone is almost as large as the whole market (4.95M) before any non-pool imports. Bridge in million tyres: ETRMA gross pool 4.90 + non-pool and parallel imports 1.87 = 6.77 supplied; 4.95 is fitted in Austria, so 1.82 leaves again through wholesale (about 0.88 is the research's own re-export estimate and 0.94 is the gap). You chose this. The alternatives were the market at about 5.89M (1.11 tyres per car, 14% above the top of its scaled range of 4.73-5.17M) or imports at about 0.93M (40% below the bottom of their scaled range of 1.54-2.31M); the chosen route puts export about 65% above the top of its 0.66-1.10M range, the largest departure in relative terms, but it is the one that fits ETRMA being gross and swinging 11% in a year. Customs data cannot settle it: Austria's exports were 1.30M passenger-car tyres in 2024 (as quoted, not checked), but if ETRMA allocates by invoice-to country, tyres invoiced to Austria and delivered from abroad never cross the Austrian border. To confirm with ETRMA: that RY2026 means the 12 months to September 2026, whether the table allocates by invoice-to or ship-to country, why Austria fell 11% in a year, and that the PV category matches the cars, SUV/4x4, vans and light trucks you described.",
+        "Customs versus domestic balance: UN Comtrade (as quoted by the research, not checked) shows 9.056M HS 401110 passenger-car tyres imported and 1.296M exported in 2024. Net imports of 7.76M exceed the estimated sell-out because customs data include original-equipment supply, distributor stock and re-export, so they are not used in the import or export boxes. The export box can also exceed the customs figure if ETRMA allocates by invoice-to country.",
+        "Wholesale versus direct is a modelled split, not a published figure. The research's version (2024, passenger cars): 0.75M of the 3.6M pool via wholesale and 2.85M direct, plus 1.70M of non-pool supply, less 0.80M re-exported, gave 1.65M wholesale sold in Austria (about 37%) and 2.85M direct (about 63%). Here the direct volume is kept at the research's level widened by 1.10 (3.13M), and the extra pool volume goes via wholesale: 1.77M via wholesale + 1.87M imports - 1.82M export = 1.82M wholesale sold in Austria (37% of the 4.95M market), and 3.13M direct (63%). Keeping the research's 21 / 79% ratio instead would give 1.02M via wholesale, 3.88M direct and only 1.07M sold by wholesalers in Austria. Direct is broader than factory-to-shop. BestDrive is Continental-owned and Euromaster is Michelin-owned, so a large part of retail is supplied outside independent wholesale.",
         "Wholesalers (checked): AUTO PLUS Reifen is a subsidiary of Wolfgang Denzel Auto AG and is described by the Denzel Group as one of Austria's leading tyre importers and wholesalers with more than 2,000 dealer partners (Denzel press release, September 2022; Reifenpresse, January 2023). Tire Network's own site calls it a wholesaler for tyres, rims and complete wheels in Austria with over 50,000 tyres in stock, ordered through a members-only B2B shop for dealers and fitting partners; it is registered in Vienna (founded 2022). ARG Reifengrosshandel GmbH is registered in Dornbirn (WKO).",
-        "Wholesale volumes are the research's estimates, not company figures: Auto Plus about 0.6M PCR tyres a year (range 0.45-0.8M), Tire Network about 0.15M (0.10-0.20M), ARG about 0.05M domestic (0.03-0.08M), Delticom's Autoreifenonline.at B2B about 0.10M. I could not confirm Auto Plus's 350,000-tyre pre-season stock or 1,500 peak orders a day, or ARG's roughly 50% export quota. Delticom is treated as cross-border supply, not as an Austrian wholesaler.",
+        "Wholesale volumes are the research's estimates, not company figures: Auto Plus about 0.6M PCR tyres a year (range 0.45-0.8M), Tire Network about 0.15M (0.10-0.20M), ARG about 0.05M domestic (0.03-0.08M), Delticom's Autoreifenonline.at B2B about 0.10M. I could not confirm Auto Plus's 350,000-tyre pre-season stock or 1,500 peak orders a day, or ARG's roughly 50% export quota. Delticom is treated as cross-border supply, not as an Austrian wholesaler. These are passenger-car estimates set against the earlier 4.5M market and have not been rescaled to the consumer scope.",
         "Retail network corrections (checked): Forstinger now states 69 branches and 68 specialist workshops (earlier page: about 111). Lucky Car took over 24 former A.T.U sites in February 2024 (more than 270 jobs) and had 44 locations before, around 70 afterwards per LEADERSNET (the research says 60+). A 2022 Continental release announced that Profi Reifen and Reifen John would be renamed BestDrive over about two years, with over 50 workshops. Point S: the research quotes over 60 service locations from its site, while a 2022 UTA release quoted 100.",
         "Latest signals (research, not checked): Tyres Europe reports European consumer replacement tyres up 2% in H1 2026, with all-season up 9%, summer down 2% and winter down 5%. Austria's situational winter-equipment rule runs from 1 November to 15 April. The research expects a 2026 run-rate of 4.5-4.6M but does not treat it as a published figure."
       ],
-      "scope": "Passenger-car replacement tyres (excludes vans; SUV tyres included)",
+      "scope": "Consumer replacement tyres (cars, SUV/4x4, vans and light trucks)",
       "unit": "million tyres",
-      "year": 2024,
+      "year": "RY2026 (rolling year)",
       "explain": {
         "market": {
-          "v": 4.5,
-          "short": "A research estimate of 4.5M passenger-car tyres (range 4.3–4.7M). No complete Austrian sell-out total exists.",
+          "v": 4.95,
+          "short": "The research's car estimate of 4.5M, widened by 10% for vans and light trucks: 4.95M.",
           "how": [
-            "The research found no complete 2024 or 2025 Austrian sell-out figure. A GfK retail panel recorded almost 3.6M tyres in 2018 but does not cover all channels.",
-            "It sets a working range of 4.3–4.7M for passenger-car tyres (vans excluded, SUV tyres included) and uses 4.5M.",
-            "The car stock supports it: 5.23M cars at the end of 2024 (Statistics Austria, as quoted by the research) and about 5.29M at the end of 2025 (confirmed). 4.5M on about 5.2M cars is 0.87 tyres per car a year."
+            "The research found no complete Austrian sell-out total. Its estimate for passenger-car tyres (vans excluded, SUV tyres included) is 4.5M for 2024 (range 4.3–4.7M), checked against the car stock.",
+            "× 1.10 for vans and light trucks = 4.95M (range 4.73–5.17M). The 1.10 is an assumption: Statistik Austria counts 581,147 lorries of all classes against about 5.29M cars, which is 11%.",
+            "ETRMA's pool figure (4.9M) is almost as large as this whole market, so it cannot all be Austrian sales. That is why the Export box is large, rather than the market being raised.",
+            "The research expects a 2026 run-rate of 4.5–4.6M for cars (its own expectation, not a published figure), which would be 4.95–5.06M here."
           ],
-          "src": "Research estimate. No Austrian source publishes a total.",
+          "src": "Research estimate (2024), widened to the consumer scope. No Austrian source publishes a total.",
           "q": [
             "stat_at"
           ],
           "sure": {
             "l": "Low",
-            "w": "An estimate. The car stock only shows it is plausible."
+            "w": "An estimate. The car stock only shows it is plausible, and the 10% for vans and light trucks is an assumption."
           },
-          "why": "Nothing counts all Austrian tyre sales, so the research builds a bottom-up estimate for cars only (4.5M, range 4.3–4.7M) and checks it against the car stock.",
-          "val": "Sanity check: 4.5M ÷ 5.23M cars (Statistics Austria, end 2024, as quoted by the research) = 0.86 tyres per car. The end-2025 stock of 5.29M is in the quotes kept. GfK's retail panel counted almost 3.6M in 2018 but does not cover all channels.",
+          "why": "Nothing counts all Austrian tyre sales, so the research builds an estimate for passenger cars (4.5M, range 4.3–4.7M) and checks it against the car stock. It is widened by 10% to match ETRMA's scope. ETRMA's pool figure did not change it: that figure is gross and, at 4.9M, nearly as large as the whole market before any non-pool imports, so the extra volume is treated as re-export rather than as extra Austrian demand.",
+          "val": "Tyres per car: 4.95M ÷ 5.29M cars (Statistik Austria, quote kept) = 0.94; the car-only version was 0.87. The 10% for vans and light trucks is an assumption: Statistik Austria counts 581,147 lorries of all classes against 5.29M cars (11%), but most are light vans and the light-van stock is not shown. GfK's retail panel counted almost 3.6M tyres in 2018 but does not cover all channels. Best check: your own Austrian sell-in against the share you think pool brands hold.",
           "vq": [
-            "stat_at"
+            "stat_lkw"
           ]
         },
         "industry": {
-          "v": 3.6,
-          "short": "A research model: about 3.6M of the 4.5M comes from pool brands (range 3.2–3.9M).",
+          "v": 4.9,
+          "short": "ETRMA's own number for Austria (rolling year 2026), supplied by you.",
           "how": [
-            "No ETRMA or Tyres Europe country figure for Austria is published.",
-            "The research models the part of the 4.5M that the major-brand pool manufacturers supply: about 3.6M."
+            "ETRMA's Pool Market Data table, which you supplied, shows Austria RY2026 = 4,899,304 tyres (RY2025: 5,503,244, −11.0%).",
+            "It is the pool members' sell-in for cars, SUV/4x4, vans and light trucks together (ETRMA passenger vehicles, as you confirmed).",
+            "It is gross: it includes tyres invoiced to Austrian customers and sold on abroad, so it is not Austrian domestic sales.",
+            "Rounded to 4.90M. The research's own estimate of this layer was 3.6M for 2024 (3.96M on the same scope); ETRMA is 0.94M higher."
           ],
-          "src": "Research model, low-to-medium confidence.",
+          "src": "ETRMA Pool Market Data, supplied by you (screenshot).",
+          "q": [
+            "etrma_at"
+          ],
           "sure": {
-            "l": "Low",
-            "w": "Not published; replace it with ETRMA data for Austria if you have it."
+            "l": "High",
+            "w": "Published ETRMA data. Still to confirm: that RY2026 means the 12 months to September 2026, whether ETRMA allocates by invoice-to or ship-to country, and why the figure fell 11% in a year."
           },
-          "why": "No pool figure is published for Austria, so the research models the major brands' supply as about 3.6M (80% of the market, range 3.2–3.9M). The remainder is non-pool supply entering through importers and wholesale.",
-          "val": "Replace with ETRMA's Austria pool figure if you can get it, as you did for the Netherlands."
+          "check": "ETRMA is almost as large as the whole market (4.95M), so it cannot all be domestic sales. If it allocates by invoice-to country, tyres invoiced to Austria but delivered elsewhere are inside it; that is what the large Export box represents.",
+          "why": "It is ETRMA's own published pool figure, supplied by you, so it replaces the research's model (3.6M for passenger cars in 2024).",
+          "val": "Check it against the ETRMA table (quote kept). Still to confirm with ETRMA: that RY2026 means the 12 months to September 2026, whether volumes are allocated by invoice-to or ship-to country, and why Austria fell 11% in a year when the table cannot say whether that is Austrian demand, hub volumes or a change in reporting."
         },
         "toWs": {
-          "v": 0.75,
-          "short": "Only 0.75M of the pool volume is assumed to go through wholesale.",
+          "v": 1.77,
+          "short": "Calculated: industry 4.9M − direct 3.13M.",
           "how": [
-            "The research models that 0.75M of the 3.6M goes through wholesale (range 0.6–1.0M), and the other 2.85M goes direct.",
-            "That is a low wholesale share because BestDrive is owned by Continental and Euromaster by Michelin, so a large part of retail is supplied outside independent wholesale."
+            "The direct volume is the research's 2.85M × 1.10 = 3.135M, rounded to 3.13M. It is kept at that level on purpose: direct supply is mostly manufacturer-owned networks and central accounts, which do not grow just because ETRMA's figure is higher.",
+            "The rest of the pool, 4.9M − 3.13M = 1.77M, goes via wholesale. As the Export box shows, much of it leaves again.",
+            "The research's own split of the pool was 0.75M via wholesale and 2.85M direct (21% / 79%). At that ratio ETRMA's 4.90M would give 1.02M via wholesale and leave wholesalers selling only 1.07M in Austria."
           ],
-          "src": "Research model.",
+          "src": "Calculated from the ETRMA figure and the research's direct volume. Not published.",
           "sure": {
             "l": "Low",
-            "w": "Not published."
+            "w": "The direct volume is a research model, and the split of the extra pool volume is a choice."
           },
-          "why": "Direct here means any route that bypasses an independent wholesaler: manufacturer-owned networks such as BestDrive (Continental) and Euromaster (Michelin), central accounts and cross-border e-commerce. The research assumes these routes carry most of the pool volume: 2.85M direct (79%) and only 0.75M via wholesale.",
-          "val": "The ownership facts are checked (Continental's 2022 release on renaming Profi Reifen and Reifen John to BestDrive); the volumes are modelled. Auto Plus (Denzel) with more than 2,000 dealer partners (Denzel, 2022) shows independent wholesale exists too."
-        },
-        "import": {
-          "v": 1.7,
-          "short": "About 1.7M of non-pool supply enters wholesale (range 1.4–2.1M).",
-          "how": [
-            "The research estimates the non-pool supply that enters the wholesale layer at 1.7M.",
-            "It is not the customs figure: UN Comtrade (as quoted, not checked) shows 9.056M passenger-car tyres imported in 2024, which includes original-equipment supply, distributor stock and re-export trade."
-          ],
-          "src": "Research estimate.",
-          "sure": {
-            "l": "Low",
-            "w": "Not published."
-          },
-          "why": "Brands outside the pool reach Austrian fitters through importers and wholesalers, so the research estimates the volume entering wholesale that way: 1.7M (range 1.4–2.1M). It is not customs imports.",
-          "val": "UN Comtrade (as quoted, not checked) shows 9.06M passenger-car tyres imported in 2024, which includes original equipment, distributor stock and re-export, so it cannot be used for this box."
-        },
-        "export": {
-          "v": 0.8,
-          "short": "About 0.8M is re-exported by wholesalers (range 0.6–1.0M).",
-          "how": [
-            "The research estimates 0.8M of replacement-market tyres that Austrian wholesalers and importers re-export.",
-            "Customs shows 1.296M passenger-car tyres exported in 2024 (as quoted, not checked); the rest is manufacturer logistics and stock movements outside this flow."
-          ],
-          "src": "Research estimate.",
-          "sure": {
-            "l": "Low",
-            "w": "Not published."
-          },
-          "why": "Some tyres imported into Austria leave again through wholesalers and importers, so the research includes a re-export estimate of 0.80M (range 0.6–1.0M).",
-          "val": "Customs show 1.30M passenger-car tyres exported in 2024 (as quoted, not checked). The rest of that figure is manufacturer logistics and stock movements outside this flow."
+          "why": "Direct supply here is mostly manufacturer-owned networks such as BestDrive (Continental) and Euromaster (Michelin), central accounts and cross-border e-commerce. Those are a fairly fixed set of customers, so the research's direct volume is kept (widened by 1.10) and the extra pool volume goes via wholesale: 1.77M via wholesale and 3.13M direct. For comparison, the research's own wholesale part of the pool was 0.75M for passenger cars (range 0.6–1.0M; 0.83M widened by 1.10); the extra 0.94M of ETRMA volume brings it to 1.77M.",
+          "val": "Not published. The ownership facts are checked (Continental's 2022 release on renaming Profi Reifen and Reifen John to BestDrive); the volumes are modelled. Auto Plus (Denzel) with more than 2,000 dealer partners (Denzel, 2022) shows independent wholesale exists too. The research's estimates for the named wholesalers (Auto Plus about 0.6M, Tire Network 0.15M, ARG 0.05M; Delticom is treated as cross-border supply) add up to about 0.8M, which fits inside the 1.82M that wholesalers sell here."
         },
         "direct": {
-          "v": 2.85,
-          "short": "Calculated: industry 3.6M − to wholesale 0.75M. About 63% of the market.",
+          "v": 3.13,
+          "short": "The research's direct volume, widened: 2.85M × 1.10 = 3.13M.",
           "how": [
-            "The pool's 3.6M minus the 0.75M that goes via wholesale leaves 2.85M direct.",
-            "Direct is broader than factory-to-shop. It means any route that bypasses an independent Austrian wholesaler: manufacturer supply, manufacturer-owned networks such as BestDrive (Continental), central accounts and cross-border e-commerce."
+            "Direct means any route that bypasses an independent Austrian wholesaler: manufacturer supply, manufacturer-owned networks such as BestDrive (Continental), central accounts and cross-border e-commerce.",
+            "The research puts it at 2.85M for passenger cars (about 63% of its 4.5M market). Widened by 1.10 it is 3.13M, which is 63% of the 4.95M market and 4.9M − 1.77M of the pool."
           ],
-          "src": "Calculated from the industry and to-wholesale figures.",
+          "src": "Research estimate (2024), widened to the consumer scope. Not published.",
           "sure": {
             "l": "Low",
-            "w": "Both inputs are model estimates."
+            "w": "Not published; scaled by an assumption."
           },
-          "why": "Direct here means any route that bypasses an independent wholesaler: manufacturer-owned networks such as BestDrive (Continental) and Euromaster (Michelin), central accounts and cross-border e-commerce. The research assumes these routes carry most of the pool volume: 2.85M direct (79%) and only 0.75M via wholesale.",
-          "val": "The ownership facts are checked (Continental's 2022 release on renaming Profi Reifen and Reifen John to BestDrive); the volumes are modelled. Auto Plus (Denzel) with more than 2,000 dealer partners (Denzel, 2022) shows independent wholesale exists too."
+          "why": "Direct means any route that bypasses an independent Austrian wholesaler: manufacturer-owned networks such as BestDrive (Continental) and Euromaster (Michelin), central accounts and cross-border e-commerce. The research assumes these carry most of the supply, about 63% of its market, and the same volume is kept here, widened by 1.10.",
+          "val": "The ownership facts are checked (Continental's 2022 release on renaming Profi Reifen and Reifen John to BestDrive); the volumes are modelled. Best check: your own Austrian sell-in by account type."
+        },
+        "import": {
+          "v": 1.87,
+          "short": "About 1.87M of non-pool supply enters wholesale: the research's 1.70M × 1.10.",
+          "how": [
+            "The research estimates 1.70M of non-pool supply entering the wholesale layer for passenger cars (range 1.4–2.1M, 2024). It is not customs data.",
+            "It is widened to include vans and light trucks: 1.70M × 1.10 = 1.87M (range 1.54–2.31M), assuming they follow the car pattern.",
+            "The model has no flow for imports going straight to the channels, so all of it is shown via wholesale. The research did not re-estimate it for 2026."
+          ],
+          "src": "Research estimate (2024), scaled to the consumer scope.",
+          "sure": {
+            "l": "Low",
+            "w": "Not published; scaled by an assumption, and not re-estimated for 2026."
+          },
+          "check": "It is not the customs figure. UN Comtrade (as quoted, not checked) shows 9.056M passenger-car tyres imported in 2024, including original-equipment supply, distributor stock and re-export trade.",
+          "why": "Brands outside the pool reach Austrian fitters through importers and wholesalers, so the research estimates the volume entering wholesale that way: 1.70M for passenger cars (range 1.4–2.1M), widened to 1.87M for vans and light trucks by assuming they follow the car pattern. It is not customs imports.",
+          "val": "UN Comtrade (as quoted, not checked) shows 9.06M passenger-car tyres imported in 2024, which includes original equipment, distributor stock and re-export, so it cannot be used for this box. The 1.10 widening is an assumption."
+        },
+        "export": {
+          "v": 1.82,
+          "short": "The balancing figure that closes the flow: 4.9M + 1.87M − 4.95M.",
+          "how": [
+            "Export closes the flow: industry 4.9M + imports 1.87M − market 4.95M = 1.82M.",
+            "It holds two parts that cannot be separated. About 0.88M is the research's re-export estimate through wholesalers (0.80M for passenger cars × 1.10; range 0.66–1.10M).",
+            "The other 0.94M is the amount by which ETRMA's pool figure is above the research's pool estimate on the same scope (3.96M). You asked to place that gap here.",
+            "If the gap really belongs in the market or in imports, export would be about 0.88M instead (the market would be 5.89M, or imports 0.93M)."
+          ],
+          "src": "A balancing figure, not published. About 0.88M of it is the research's re-export estimate.",
+          "sure": {
+            "l": "Low",
+            "w": "A balancing figure. Customs exports (1.30M for passenger cars in 2024, as quoted, not checked) do not limit it, because ETRMA may count tyres invoiced to Austria that never cross the Austrian border."
+          },
+          "check": "This is the figure that takes the gap, so it is about twice the research's own re-export estimate.",
+          "why": "Austrian wholesalers re-export part of what they buy, which the research estimates at 0.88M on this scope (0.80M for passenger cars). ETRMA's gross figure is a further 0.94M above the research's pool, so you chose to place that gap here as well: pool volume invoiced to Austria and sold on abroad. That is also why ETRMA can sit almost level with the whole market. This takes export to 1.82M.",
+          "val": "Nobody publishes it. The research says ARG exports about half its volume (not confirmed). Customs show 1.30M passenger-car exports in 2024 (as quoted, not checked), but customs count tyres crossing the border and include manufacturer logistics, while ETRMA may count by invoice-to country, so the two cannot be compared directly. Best check: ask ETRMA which allocation the Austria row uses; your own Austrian sell-in to hubs and neighbouring distributors would show re-export directly."
         },
         "wsDom": {
-          "v": 1.65,
+          "v": 1.82,
           "short": "Calculated: pool to wholesale + imports − exports.",
           "how": [
-            "Wholesalers sold 1.65M in Austria: 0.75M from the pool + 1.7M imports − 0.80M exports (about 37% of the market).",
-            "From the other side: market 4.5M − direct 2.85M = 1.65M. The two agree."
+            "Wholesalers sold 1.82M in Austria: 1.77M from the pool + 1.87M imports − 1.82M exports (37% of the market).",
+            "From the other side: market 4.95M − direct 3.13M = 1.82M. The two agree."
           ],
           "src": "Calculated from the figures above.",
           "sure": {
@@ -7603,42 +7617,42 @@
           }
         },
         "ch.spec.tot": {
-          "v": 3.24,
+          "v": 3.56,
           "short": "72% of the market: a benchmark share, not a measurement.",
           "how": [
-            "No Austrian source publishes a channel split. The research keeps the earlier benchmark shape of 72 / 18 / 3 / 7% and rescales it to the 4.5M market.",
-            "72% × 4.5M = 3.24M. Network sizes quoted by the research from their own sites (Point S over 60, BestDrive over 50, Lucky Car over 60, Forstinger 69) overlap and cannot be added up."
+            "No Austrian source publishes a channel split. The research keeps the earlier benchmark shape of 72 / 18 / 3 / 7%, which is applied here to the 4.95M market.",
+            "72% × 4.95M = 3.56M. Network sizes quoted by the research from their own sites (Point S over 60, BestDrive over 50, Lucky Car over 60, Forstinger 69) overlap and cannot be added up."
           ],
-          "src": "Benchmark estimate rescaled to 4.5M.",
+          "src": "Benchmark estimate applied to 4.95M.",
           "sure": {
             "l": "Low",
             "w": "A placeholder share."
           },
           "what": "Tyre specialists, fast-fit chains and independent garages.",
-          "why": "There is no published channel split for Austria, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. The research keeps the earlier benchmark shape of 72 / 18 / 3 / 7%, rescaled to 4.5M.",
-          "val": "Network sizes quoted by the research from the networks' own sites support a large specialist channel: Forstinger 69 branches, Point S over 60, Lucky Car over 60, BestDrive over 50. They overlap, so they cannot be added up. No shares are published."
+          "why": "There is no published channel split for Austria, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist.",
+          "val": "Network sizes quoted by the research from the networks' own sites support a large specialist channel: Forstinger 69 branches, Point S over 60, Lucky Car over 60, BestDrive over 50. They overlap, so they cannot be added up. No shares are published. Replace with your own Austrian channel data when you have it."
         },
         "ch.spec.ws": {
-          "v": 1.32,
+          "v": 1.45,
           "short": "About 41% of this channel's tyres arrive via wholesalers (modelled).",
           "how": [
-            "Specialists, fast-fit and independent garages gets 3.24M tyres in total.",
-            "Assumed: about 41% of them (1.32M) arrive through wholesalers. Calibrated so the channels add up to the totals.",
-            "The via-wholesale figures of all channels are set so they add up to the 1.65M that wholesalers sold in Austria, and the direct figures to 2.85M."
+            "Specialists, fast-fit and independent garages gets 3.56M tyres in total.",
+            "Assumed: about 41% of them (1.45M) arrive through wholesalers. Carried over from the research's earlier calibration and nudged by a point or two so the channels add up to the totals.",
+            "The via-wholesale figures of all channels are set so they add up to the 1.82M that wholesalers sold in Austria, and the direct figures to 3.13M."
           ],
           "src": "No source publishes how each channel buys its tyres. This is a modelled split from the country research.",
           "sure": {
             "l": "Low",
             "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
           },
-          "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 1.65M via wholesale and 2.85M direct. Share of each channel via wholesale: specialists 41%, dealers 19%, other retail 57%, online 32%.",
+          "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 1.82M via wholesale and 3.13M direct. Share of each channel via wholesale: specialists 41%, dealers 19%, other retail 60%, online 31%.",
           "val": "No Austrian source publishes procurement routes by channel."
         },
         "ch.spec.dir": {
-          "v": 1.92,
+          "v": 2.11,
           "short": "Channel total minus via wholesale (59% of the channel).",
           "how": [
-            "3.24M total − 1.32M via wholesale = 1.92M direct.",
+            "3.56M total − 1.45M via wholesale = 2.11M direct.",
             "Direct means any route that bypasses an independent Austrian wholesaler, including manufacturer-owned networks and cross-border e-commerce supply."
           ],
           "src": "Calculated by the research as the channel total minus the via-wholesale figure. Not published.",
@@ -7649,13 +7663,13 @@
           "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
         },
         "ch.deal.tot": {
-          "v": 0.81,
+          "v": 0.89,
           "short": "18% of the market: a benchmark share, not a measurement.",
           "how": [
-            "No Austrian source publishes a channel split. The research keeps the earlier benchmark shape of 72 / 18 / 3 / 7% and rescales it to the 4.5M market.",
-            "18% × 4.5M = 0.81M. Kept from the earlier benchmark shape."
+            "No Austrian source publishes a channel split. The research keeps the earlier benchmark shape of 72 / 18 / 3 / 7%, which is applied here to the 4.95M market.",
+            "18% × 4.95M = 0.89M. Kept from the earlier benchmark shape."
           ],
-          "src": "Benchmark estimate rescaled to 4.5M.",
+          "src": "Benchmark estimate applied to 4.95M.",
           "sure": {
             "l": "Low",
             "w": "A placeholder share."
@@ -7665,26 +7679,26 @@
           "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Austria follows them cannot: the research allows an error of about ±6 points. Replace with your own Austria channel data when you have it."
         },
         "ch.deal.ws": {
-          "v": 0.15,
+          "v": 0.17,
           "short": "About 19% of this channel's tyres arrive via wholesalers (modelled).",
           "how": [
-            "Car dealers / brand workshops gets 0.81M tyres in total.",
-            "Assumed: about 19% of them (0.15M) arrive through wholesalers. Calibrated so the channels add up to the totals.",
-            "The via-wholesale figures of all channels are set so they add up to the 1.65M that wholesalers sold in Austria, and the direct figures to 2.85M."
+            "Car dealers / brand workshops gets 0.89M tyres in total.",
+            "Assumed: about 19% of them (0.17M) arrive through wholesalers. Carried over from the research's earlier calibration and nudged by a point or two so the channels add up to the totals.",
+            "The via-wholesale figures of all channels are set so they add up to the 1.82M that wholesalers sold in Austria, and the direct figures to 3.13M."
           ],
           "src": "No source publishes how each channel buys its tyres. This is a modelled split from the country research.",
           "sure": {
             "l": "Low",
             "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
           },
-          "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 1.65M via wholesale and 2.85M direct. Share of each channel via wholesale: specialists 41%, dealers 19%, other retail 57%, online 32%.",
+          "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 1.82M via wholesale and 3.13M direct. Share of each channel via wholesale: specialists 41%, dealers 19%, other retail 60%, online 31%.",
           "val": "No Austrian source publishes procurement routes by channel."
         },
         "ch.deal.dir": {
-          "v": 0.66,
+          "v": 0.72,
           "short": "Channel total minus via wholesale (81% of the channel).",
           "how": [
-            "0.81M total − 0.15M via wholesale = 0.66M direct.",
+            "0.89M total − 0.17M via wholesale = 0.72M direct.",
             "Direct means any route that bypasses an independent Austrian wholesaler, including manufacturer-owned networks and cross-border e-commerce supply."
           ],
           "src": "Calculated by the research as the channel total minus the via-wholesale figure. Not published.",
@@ -7695,13 +7709,13 @@
           "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
         },
         "ch.ret.tot": {
-          "v": 0.14,
+          "v": 0.15,
           "short": "3% of the market: a benchmark share, not a measurement.",
           "how": [
-            "No Austrian source publishes a channel split. The research keeps the earlier benchmark shape of 72 / 18 / 3 / 7% and rescales it to the 4.5M market.",
-            "3% × 4.5M = 0.14M. Low confidence; no Austrian source."
+            "No Austrian source publishes a channel split. The research keeps the earlier benchmark shape of 72 / 18 / 3 / 7%, which is applied here to the 4.95M market.",
+            "3% × 4.95M = 0.15M. Low confidence; no Austrian source."
           ],
-          "src": "Benchmark estimate rescaled to 4.5M.",
+          "src": "Benchmark estimate applied to 4.95M.",
           "sure": {
             "l": "Low",
             "w": "A placeholder share."
@@ -7711,26 +7725,26 @@
           "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Austria follows them cannot: the research allows an error of about ±6 points. Replace with your own Austria channel data when you have it."
         },
         "ch.ret.ws": {
-          "v": 0.08,
-          "short": "About 57% of this channel's tyres arrive via wholesalers (modelled).",
+          "v": 0.09,
+          "short": "About 60% of this channel's tyres arrive via wholesalers (modelled).",
           "how": [
-            "Other retail (parts stores, hypermarkets, petrol) gets 0.14M tyres in total.",
-            "Assumed: about 57% of them (0.08M) arrive through wholesalers. Calibrated so the channels add up to the totals.",
-            "The via-wholesale figures of all channels are set so they add up to the 1.65M that wholesalers sold in Austria, and the direct figures to 2.85M."
+            "Other retail (parts stores, hypermarkets, petrol) gets 0.15M tyres in total.",
+            "Assumed: about 60% of them (0.09M) arrive through wholesalers. Carried over from the research's earlier calibration and nudged by a point or two so the channels add up to the totals.",
+            "The via-wholesale figures of all channels are set so they add up to the 1.82M that wholesalers sold in Austria, and the direct figures to 3.13M."
           ],
           "src": "No source publishes how each channel buys its tyres. This is a modelled split from the country research.",
           "sure": {
             "l": "Low",
             "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
           },
-          "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 1.65M via wholesale and 2.85M direct. Share of each channel via wholesale: specialists 41%, dealers 19%, other retail 57%, online 32%.",
+          "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 1.82M via wholesale and 3.13M direct. Share of each channel via wholesale: specialists 41%, dealers 19%, other retail 60%, online 31%.",
           "val": "No Austrian source publishes procurement routes by channel."
         },
         "ch.ret.dir": {
           "v": 0.06,
-          "short": "Channel total minus via wholesale (43% of the channel).",
+          "short": "Channel total minus via wholesale (40% of the channel).",
           "how": [
-            "0.14M total − 0.08M via wholesale = 0.06M direct.",
+            "0.15M total − 0.09M via wholesale = 0.06M direct.",
             "Direct means any route that bypasses an independent Austrian wholesaler, including manufacturer-owned networks and cross-border e-commerce supply."
           ],
           "src": "Calculated by the research as the channel total minus the via-wholesale figure. Not published.",
@@ -7741,13 +7755,13 @@
           "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
         },
         "ch.onl.tot": {
-          "v": 0.31,
+          "v": 0.35,
           "short": "7% of the market: a benchmark share, not a measurement.",
           "how": [
-            "No Austrian source publishes a channel split. The research keeps the earlier benchmark shape of 72 / 18 / 3 / 7% and rescales it to the 4.5M market.",
-            "7% × 4.5M = 0.31M. Low confidence; no Austrian source."
+            "No Austrian source publishes a channel split. The research keeps the earlier benchmark shape of 72 / 18 / 3 / 7%, which is applied here to the 4.95M market.",
+            "7% × 4.95M = 0.35M. Low confidence; no Austrian source."
           ],
-          "src": "Benchmark estimate rescaled to 4.5M.",
+          "src": "Benchmark estimate applied to 4.95M.",
           "sure": {
             "l": "Low",
             "w": "A placeholder share."
@@ -7757,26 +7771,26 @@
           "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Austria follows them cannot: the research allows an error of about ±6 points. Replace with your own Austria channel data when you have it."
         },
         "ch.onl.ws": {
-          "v": 0.1,
-          "short": "About 32% of this channel's tyres arrive via wholesalers (modelled).",
+          "v": 0.11,
+          "short": "About 31% of this channel's tyres arrive via wholesalers (modelled).",
           "how": [
-            "Online gets 0.31M tyres in total.",
-            "Assumed: about 32% of them (0.10M) arrive through wholesalers. Calibrated so the channels add up to the totals.",
-            "The via-wholesale figures of all channels are set so they add up to the 1.65M that wholesalers sold in Austria, and the direct figures to 2.85M."
+            "Online gets 0.35M tyres in total.",
+            "Assumed: about 31% of them (0.11M) arrive through wholesalers. Carried over from the research's earlier calibration and nudged by a point or two so the channels add up to the totals.",
+            "The via-wholesale figures of all channels are set so they add up to the 1.82M that wholesalers sold in Austria, and the direct figures to 3.13M."
           ],
           "src": "No source publishes how each channel buys its tyres. This is a modelled split from the country research.",
           "sure": {
             "l": "Low",
             "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
           },
-          "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 1.65M via wholesale and 2.85M direct. Share of each channel via wholesale: specialists 41%, dealers 19%, other retail 57%, online 32%.",
+          "why": "Calibrated rather than observed, because nobody publishes how each channel buys. The figures are set so that all channels add up to 1.82M via wholesale and 3.13M direct. Share of each channel via wholesale: specialists 41%, dealers 19%, other retail 60%, online 31%.",
           "val": "No Austrian source publishes procurement routes by channel."
         },
         "ch.onl.dir": {
-          "v": 0.21,
-          "short": "Channel total minus via wholesale (68% of the channel).",
+          "v": 0.24,
+          "short": "Channel total minus via wholesale (69% of the channel).",
           "how": [
-            "0.31M total − 0.10M via wholesale = 0.21M direct.",
+            "0.35M total − 0.11M via wholesale = 0.24M direct.",
             "Direct means any route that bypasses an independent Austrian wholesaler, including manufacturer-owned networks and cross-border e-commerce supply."
           ],
           "src": "Calculated by the research as the channel total minus the via-wholesale figure. Not published.",
@@ -7788,6 +7802,12 @@
         }
       },
       "quotes": {
+        "etrma_at": {
+          "q": "AT - Austria | 5,503,244 (RY 2025) | 4,899,304 (RY 2026)",
+          "by": "ETRMA Pool Market Data, Europe excl. Turkey, passenger vehicles, rolling year to September 2026 (the table you supplied)",
+          "note": "Austria, pool members' sales. The category includes 4x4 and light trucks, as you confirmed.",
+          "kind": "table"
+        },
         "stat_at": {
           "q": "70,4 % bzw. rund 5,29 Mio. davon waren Pkw (+1,0 %).",
           "by": "Statistik Austria, press release 14 Jan 2026",
@@ -7795,6 +7815,14 @@
           "en": "70.4% or about 5.29 million of these were passenger cars (+1.0%).",
           "role": "context",
           "note": "Passenger cars on the road in Austria at the end of 2025."
+        },
+        "stat_lkw": {
+          "q": "581 147 Lkw (+1,6 %)",
+          "by": "Statistik Austria, press release 14 Jan 2026",
+          "u": "https://www.statistik.at/fileadmin/announcement/2026/01/20260114KfzNeuzulassungen2025.pdf",
+          "en": "581,147 lorries (+1.6%)",
+          "role": "check",
+          "note": "All lorry classes at the end of 2025, including heavy lorries; the light class N1 is not shown separately. Used only for the 10% assumption for vans and light trucks."
         }
       }
     },
@@ -7815,105 +7843,105 @@
           "value": 2.54
         },
         "toWs": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research split applied to ETRMA's figure, not published. The research sent 62.5% of the pool volume through distributors (1.25M of 2.0M) and 37.5% (0.75M) direct to the channels; its range for the distributor part was 1.10-1.40M, i.e. 55-70% of 2.0M. 62.5% of ETRMA's 2.54M is 1.59M (55-70% would be 1.40-1.78M). The rest of the pool, 0.95M, is the Direct box. Distributors and reseller networks such as AKH and MARSO are an established route to Hungarian fitters; large accounts are supplied directly by the manufacturers' Hungarian sales entities. Replaces the earlier 1.25M.",
           "tier": "Estimate",
           "value": 1.59
         },
         "import": {
-          "asOf": "2026",
+          "asOf": "2024",
           "by": "research",
           "source": "Research estimate (2024, range 0.90-1.30M for cars and SUV/4x4) of non-pool and budget-brand imports that feed Hungarian replacement wholesalers, 1.10M x 1.099 = 1.21M for the wider scope (range 0.99-1.43M). The scaling assumes vans and light trucks follow the car pattern. It is not customs imports, which include original-equipment supply, factories and regional stock, because Hungary is a large tyre production hub. The research did not re-estimate it for 2026. Replaces the earlier 1.10M.",
           "tier": "Estimate",
           "value": 1.21
         },
         "export": {
-          "asOf": "2026",
+          "asOf": "2024",
           "by": "research",
           "source": "Research estimate (2024, range 0.15-0.40M for cars and SUV/4x4) of distributor re-export, 0.25M x 1.099 = 0.27M for the wider scope (range 0.16-0.44M). It is not factory exports: Hungary is a major tyre production and export hub, so customs figures are several times the replacement market. Because ETRMA is gross pool sell-in, this re-export is inside the 2.54M; the pool's Hungarian sales are about 2.27M. The research did not re-estimate it for 2026. Replaces the earlier 0.25M.",
           "tier": "Estimate",
           "value": 0.27
         },
         "ch.spec.tot": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research benchmark, low confidence: 70% of the market (2.44M of 3.48M). Includes fast-fit chains, tyre specialists and independent garages. The shape is kept from the earlier benchmark, which was anchored on the German BRV split; HTA named specialist workshops, traditional retailers and online as the main routes, but no Hungarian unit split is published. Earlier version: 2.00M of 2.85M.",
           "tier": "Estimate",
           "value": 2.44
         },
         "ch.spec.ws": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research estimate, about 82% via wholesale. The share is carried over from the research's earlier calibration and nudged by a point or two so the channels add up to 2.53M via wholesale and 0.95M direct. No Hungarian source publishes procurement routes by channel.",
           "tier": "Estimate",
           "value": 2.0
         },
         "ch.spec.dir": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research estimate: channel total minus via wholesale.",
           "tier": "Estimate",
           "value": 0.44
         },
         "ch.deal.tot": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research benchmark, low confidence: 10% of the market (0.35M of 3.48M), kept from the earlier benchmark. Not a published figure. Earlier version: 0.29M of 2.85M.",
           "tier": "Estimate",
           "value": 0.35
         },
         "ch.deal.ws": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research estimate, about 31% via wholesale. The share is carried over from the research's earlier calibration and nudged by a point or two so the channels add up to 2.53M via wholesale and 0.95M direct. No Hungarian source publishes procurement routes by channel.",
           "tier": "Estimate",
           "value": 0.11
         },
         "ch.deal.dir": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research estimate: channel total minus via wholesale.",
           "tier": "Estimate",
           "value": 0.24
         },
         "ch.ret.tot": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research benchmark, low confidence: 5% of the market (0.17M of 3.48M), kept from the earlier benchmark, with no Hungarian source for it. Earlier version: 0.14M of 2.85M.",
           "tier": "Estimate",
           "value": 0.17
         },
         "ch.ret.ws": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research estimate, about 76% via wholesale. The share is carried over from the research's earlier calibration and nudged by a point or two so the channels add up to 2.53M via wholesale and 0.95M direct. No Hungarian source publishes procurement routes by channel. Lowest confidence.",
           "tier": "Estimate",
           "value": 0.13
         },
         "ch.ret.dir": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research estimate: channel total minus via wholesale.",
           "tier": "Estimate",
           "value": 0.04
         },
         "ch.onl.tot": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research benchmark, low confidence: 15% of the market (0.52M of 3.48M), kept from the earlier benchmark. Online means the order origin, wherever the tyre is fitted. HTA called online the fastest-growing channel but publishes no share. Earlier version: 0.42M of 2.85M.",
           "tier": "Estimate",
           "value": 0.52
         },
         "ch.onl.ws": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research estimate, about 56% via wholesale. The share is carried over from the research's earlier calibration and nudged by a point or two so the channels add up to 2.53M via wholesale and 0.95M direct. No Hungarian source publishes procurement routes by channel. Lowest confidence.",
           "tier": "Estimate",
           "value": 0.29
         },
         "ch.onl.dir": {
-          "asOf": "2026",
+          "asOf": "RY2026",
           "by": "research",
           "source": "Research estimate: channel total minus via wholesale.",
           "tier": "Estimate",
