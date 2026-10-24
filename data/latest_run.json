@@ -1,7 +1,85 @@
 {
-  "runAt": "2026-10-23T11:15:29.503955+00:00",
-  "totalNew": 0,
+  "runAt": "2026-10-24T10:34:33.526839+00:00",
+  "totalNew": 9,
   "entitiesChecked": 118,
-  "entitiesWithNews": 0,
-  "newItemsByEntity": {}
+  "entitiesWithNews": 7,
+  "newItemsByEntity": {
+    "Emil Frey": [
+      {
+        "title": "Aitken to continue in DTM with Emil Frey Ferrari - Motorsport.com",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOb3Rua3BTQkxwc3d4Ml9pc0ktcHdnLVBraExFRFVPYkoyTkE3R0FNUFdZN2lxZGtJazNjeUFpSHpESkZfWUVFbml3U2pjSFJCb241a3otbklHSll3bU50RDRSZG82QmVEdlFod0kwaC12RXhfbGI2WDBVMXQ4RXFxTkNWYS1PcUhGSlNrSENXbzRuclJwYkZVWGFn?oc=5",
+        "pubDate": "Wed, 06 Mar 2024 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "HiQ Tyres": [
+      {
+        "title": "HiQ Tyres & Autocare named Tyre Retailer of the Year 2026 - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObm83UkVYR014Q1NTTkxvVnpDZUtzLUZ4VWZIZ0QtZV9Wdy05eFBMazVWNzlJdllHMUpEaXRGR0pLZkVlX1hxTHEzRWVudXFzSU13V1pQZl9DRGxMbTJFRVZXRmhZcGdzd1ZRVlg3M1Etal80TnZvT2ZYbU9LMmRKNlNoMm9mN3ZqQjhiT3ZqR2FsOFU2?oc=5",
+        "pubDate": "Fri, 23 Oct 2026 09:19:53 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      },
+      {
+        "title": "Continental, HiQ, Pirelli win at NTDA Tyre Industry Awards 2026 - Motor Trade News",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZkEydzVQcC16RFMwMHVXTDhudGR2QkFHd3JuTGxEU19oYUlwb2pKMmxUdlQ4RXNrRll6YUdfcWlOWEc4TzVpTGJPTDBDSGdhM2lTZ0tHWFJ6akRSR2J4TGZxZ0FNaWQ0RFBLaG1pbkg0aVhheXJzYUV0dmdoUmw2VW0yRy1WeHh0aFB5Zzh6NjZpelktT0pxQ2cxWWE3dTBwUWU4el9tVmlhZWVjRVNpQkVkblc?oc=5",
+        "pubDate": "Thu, 22 Oct 2026 14:25:44 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Kwik Fit": [
+      {
+        "title": "Kwik Fit Shifts Gears With American Express Acceptance - Financial IT",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMG4yZTUyMk1OVl9TRHdmbGo2VUlyaDY2RUZXMjBmSmtwOGpaaHZhVnBLRUgtRWJtcWxJNEZKOHVYNFJXaUFDcGpOZVJxUmFOTFFiZWlBVGRMXzh3S21jZ3dvcUNsRVhHTjhtRWQxdjBKZDJfc1c0bzFjMmh2ZUNWS1F0TTMyMVNWbFdSWlZmU3U?oc=5",
+        "pubDate": "Thu, 26 Feb 2026 08:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Blackcircles": [
+      {
+        "title": "Blackcircles CEO sets out vision for the next 25 year - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdnFHRW90V0QzZHlKV3U5OF9zaHpPYmxJZDFaNHNLSGN5VUd0T2ctN2pKYl9laXA2djNid1RkMEYzSmNjbVJ4bTVfdnBoWjYxZklRWFY3My1FZGdiekhQT1hSS0RDYVRTb0d0UWt0c0tYM0NnaVVVUENwdlFRYzlxNmY3Uk9HTm83UkRmbTdNM1lXUQ?oc=5",
+        "pubDate": "Fri, 23 Oct 2026 09:19:53 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      },
+      {
+        "title": "Mike Welch OBE - tyres, entrepreneurship and the scaling-up conundrum - The Scotsman",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWGJBUVgzX2dxTkRzSFBQclBNNW50T2ZtdGI2ME96dWdHRzR1aXlmYTBQT1pFbmhOQXhUU2ZUamNOeTM5U3FhSnJhN1dHZDkxZmlEc0R4RXJSaDRWanFxU25Md1Z6VU5kSTNfSWdJRDRlbXV6NkQ3RWF6Vk1fU1B5Y0ZfdXZIYlFCaEZmUWE2MHc0SVBRa0hQYmMxdW9ZM3M4OFhrTzZJbGtFRzVk?oc=5",
+        "pubDate": "Wed, 12 Aug 2026 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Fintyre": [
+      {
+        "title": "BlueGem rises its stake to 90% in Fintyre, the largest Italian tyres B2B distributor - BeBeez International",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWXBWM0VOWUw2aE1xQl8xbWNjQzJmVVRIZWpTZlNoNTZ1SktvR0t3YzZvUzEySnVIeUh1cjRBUXhRQlQ3bFV1WHJ2OTRvZGVCZnRIRzE2Y1I2cHRPczVlclpDeC1SMlpsZUVORm9lYUN0Yi1KU0ZPNXBZQUQ1V0xILXI3NkNzMU9GNVY1cTZ2U0tkWnhXZ08wLWhicFJ1VFI2Z0R2RUQ2cnc2ak9TYzJZNEJ3?oc=5",
+        "pubDate": "Wed, 08 Jul 2015 07:00:00 GMT",
+        "country": "Italy",
+        "cluster": "South-West"
+      }
+    ],
+    "Vianor": [
+      {
+        "title": "Nokian reports Q1 improvement as it launches groundbreaking winter tire - Tire Business",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeGszc2Fqdm1qU19VN2ROVmpTM1FrRzFkS3o2eERrTDF0M2dWMHd3NE4xZUxBSUtWTVJGd3NfY3lUQWpxNWdjOWNPN0xnbW5CWHNrTTRpQ3VCdDFCWjluNk04Z1dVbFBQSVpZbGZBaTUxOHJQVXFwckx4VDl4VVlrZTVyRmM4bk0?oc=5",
+        "pubDate": "Wed, 22 Apr 2026 07:00:00 GMT",
+        "country": "Hungary",
+        "cluster": "South-East"
+      }
+    ],
+    "Genan Holding": [
+      {
+        "title": "Tire Recycling Industry Report 2025 Featuring Key Players - Liberty Tire, GENAN, ResourceCo, GR, Lehigh Technologies, Entech, Emanuel Tire, BDS Tire Recycling, and Contec - Global Forecasts to 2029 - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZTJpTGlZY21KRmZidmJVMzRDbjlydWRRbGJJdjhVVTFvYzFPQjhXR3ZHZFE2X1BiVU9ra1l0b1FjaGxjc29DVmtUV2hQQXp3UEJwVE5UZ2JWbHdUZWZPLW15blhsbWNpSWd3T3BMVVpaai1qbGZ2bHMyZUctbm5LMWsyTjRmMXA1?oc=5",
+        "pubDate": "Fri, 28 Mar 2025 07:00:00 GMT",
+        "country": "Denmark",
+        "cluster": "Central"
+      }
+    ]
+  }
 }

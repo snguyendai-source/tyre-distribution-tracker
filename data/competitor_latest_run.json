@@ -1,7 +1,78 @@
 {
-  "runAt": "2026-10-23T11:15:29.503955+00:00",
-  "totalNew": 0,
+  "runAt": "2026-10-24T10:34:33.526839+00:00",
+  "totalNew": 10,
   "entitiesChecked": 26,
-  "entitiesWithNews": 0,
-  "newItemsByEntity": {}
+  "entitiesWithNews": 5,
+  "newItemsByEntity": {
+    "Continental": [
+      {
+        "title": "Morgan Stanley bullish on Continental as tyre margins and cash returns rise - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQTVFpVHduMU1rUDhfSnhLSnBRZUx1TV93T2NNUDFCS0ZzTnJBTDQtR21SVHNnV2dlVm9rTHhyUnM1WUx2R1B2OWMxX0dvT2wwdjdPMWR1aE1faHc2ekt5cG5tbTVSVlhUVnBuYTAyUWF2MTJyamUwcHBlNW1hOGJuazdKTVVCV1Q1akNJSWx1YXo3X2o1SVVTbVdhZEVucUZTR0ludTRTOA?oc=5",
+        "pubDate": "Mon, 05 Oct 2026 07:00:00 GMT",
+        "category": "Premium global"
+      },
+      {
+        "title": "4 Tire Brands That Are Owned By European Companies - SlashGear",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GNnRiYjhVU0RSdlFZUk1aT05vamppRjV5Y0JYUENVMEtFUXE2SHdBbVFUZ0NMUFBRZFQ4bW9jZm9pUFlwV1JKT0M5TEw0ck92RlNBSVJSQVZzUjRTYzM4Y1pDVXZ4eGp4ZjdkeUEtWlBWNmlBcEhZZGV2cEpOZm8?oc=5",
+        "pubDate": "Wed, 02 Sep 2026 07:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Pirelli": [
+      {
+        "title": "Pirelli presents the P Zero DHG for GT racing - GT World Challenge Europe Powered by AWS",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcHQzcTY4SmRqM195bGhsSV9lVGxnZmQxaXlPaWJ2UVRHdlpwbWZINE03aHA0MXduUkt0Z0kwX3VZUFhoeUZYUEIyVEpjUXhOdEVsWDFJcWQ1ZDhoYmo1d2h6b0V1aUUySTg0ZzBKM3h6NDBvamgxN1lGRHZUenNVNVdicXpOaDdUUjlxQjUwUWNXRkJ2d0hTWGFFSG11Zw?oc=5",
+        "pubDate": "Mon, 10 Mar 2025 07:00:00 GMT",
+        "category": "Premium global"
+      },
+      {
+        "title": "Pirelli Launches New DHG Tire - Sportscar365",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRzZ2MEx2NFFibzVkRzRwNnlNYUJuZHZkZDNQUkV5alN2R0NpdjhuX1ZoU2ljQjVLQ3JnOVBBT3FCN055S1RFcHlhS2ZYbkE4aVdlajUwVFFZQnFQWjQ3WE1jTUFRa200bVFpcmc4ZWZjYXlZN2ZFN1JuM2stYndEU2pSVzZJQTFXUVE?oc=5",
+        "pubDate": "Mon, 10 Mar 2025 07:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Hankook": [
+      {
+        "title": "Smart Control AW53 and DW53: New truck treads for greater traction and safety in winter conditions - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPSDI0bzVmRnlIVC1GX0FscTNFaU5lbVhIbFNybTRvRlpZX2ZUVmJYcHVyQ0ZEb0toTGMyVTd3el81a0hlZEJwdkxhZ0ZCTTJ3RGVpLUJrNW1IRE1kZ0FJUnFLNjF2NFk4SWxITk5kQ25aQnpQZGo4Ymc3UmljNDBhekJEeEFFV1lEN0I3TnJqeC1DZ3VZVmZ4WU1FSEZ2TWpQeWY1SzA4MGRobFphUkpNVzNLX2VRWTZyS2hyWU8zbWRXcW5DRUR4MWtHMXhCX19xWU9qc3U0U3cwQjhBUUtzSlp2OUZtVnBqYUNkVkN3VVVvdEgzRnlITnlLZFJxNjhOQ1NUUEJsWHpESlI5bTRxREc4MXczaFpmT0NMSHA5aTh2OHVORTk1RGpaRGcwZGc?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 07:00:00 GMT",
+        "category": "Korean"
+      },
+      {
+        "title": "iON FlexClimate – Hankook presents new all-season tyre for electric vehicles - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQdDVMc2d3S3pBY0xsWFoxTENMUmtEVGgxaURLNzBXV2VWY3hONVlya3FIc05IblFOUllpc0EtNmFHaHRZNlhBdFU0eFh2c2lRRGJ2ZWZCazEtOGt0bHpveEVwN01GeGctejM5RW9WaVpQbE9STVZUd3cwSS1uV0p4UjUwVHppZ0pTZmdxN1NXU2JlOUJ2bWpZREVUdTFPUFhpSkRoUXFIem15dlhSaTZ3amM5V3NRX3JTWUM0NC15QVczTTNNQ2FpbDRyLWF0MWxWTV83SXZUSldZWmlSdDRCRUtIQ2RoYlM0Q1BUa1J1eGV2Qkw0T2huVDlWaFhUZw?oc=5",
+        "pubDate": "Sun, 02 Aug 2026 12:46:27 GMT",
+        "category": "Korean"
+      },
+      {
+        "title": "Hankook Motorsport News #6 - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNTnpKdjNqN21fQ1h1YV9SdExXUnlWU3FMWDNQVGRWWjJ0N1otdUtveFJ3SWFya2RXXzFwVURsLVZtdWZwVlVISmpWa0x0dmRmZVJJdk0ybFdxblNtUnFRZGNUeEo4YmtQcDBGdHVGNnFucVFjdUpQR3RGRmd3dGRSbEY4OHc2eTJUa0NQekRHRHdLengyVHhhWjFGV0ZXUkRhbTJBY005STNKQnlmanVTaExENG5LU2hnb3JFeWpTSHlBN1pkVlN0ZEFTYjRBRk9ELVhFYTdrMldOV3EyaGFkVmR1em1mbWFlWXZzWXhySFZoMi1fNUJYSDRhTWpOLWJ0bWlCbWZMS2U0ZTNPb3Z2WjM2aE9fWjZWelpZWUcwNXF1QTRQLXBBd0JLeWUzZXdwUUhIMlI4ZUxyZ2dYMENVOVlWdGFOaWdST2E5aF96UQ?oc=5",
+        "pubDate": "Thu, 01 Oct 2026 07:00:00 GMT",
+        "category": "Korean"
+      },
+      {
+        "title": "Hankook Tyre UK Launches Laufenn365: A new digital platform for tyre accidental damage claims - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQUTY5cDNmSUZDd1A3Tkp4Rm1nODJld2d4YWpLQXBjcHhoa2sydnNWcTMwNnllWFY3VGJ0X1FPR2F2ZWFqMVpYV1RVY0xYWlB3ckRWVndWY0FESG1JQXpRZThVSnJ3bGVPQ2xndW9pNHRJTnpPOUNDN2hMOUtNOGF4QWppREpqQ2FFN29OWFloNUx6bXJGVE9UZXlyZS12QXloNHpjR1N2U21iTjNiUk9Obk1hZWdxc0JqSUt6b0RUVTVETVpaUTE5S2x6bGltdlF3Q1ZYeGRXc1dDZHQ0a2FYbjl5aXlOZGl1N1hDSFlRc2VPVGwyUFlXb1BqWFlVY0xVWHJLTFpiS2Z0Nm1JeERENkpsZWJ3VG90aWRtUVBfOWlNLW03UUZkUHFxQUI3Ykd5RWp1dDEzSERFODFiVW5tclNB?oc=5",
+        "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
+        "category": "Korean"
+      }
+    ],
+    "Sailun Tire": [
+      {
+        "title": "The RoadX RXFrost FX11 Winter Tire Rolls into the USA - Traction News",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMDhXaXh3bEY1OWJ5S2NZcFB6SFRLN0tzUFkyWXZneGQtTVlHRl9EMUllZm5YSUNZSXpwc0YxR3BWRW5oT2dPLXItZ3ZfSi1Hb0oxcWpBS25PQ1djRkhVUmFKdVFTUVgteHcwdFNpcXRway1tczVLdTZ4bFM0dU5qYmIwWnVLcnZlRlA4?oc=5",
+        "pubDate": "Fri, 20 Sep 2024 07:00:00 GMT",
+        "category": "Chinese"
+      }
+    ],
+    "Nankang Rubber": [
+      {
+        "title": "Nankang Rubber Tire stock: Nankang reports TWD 2.38 billion September revenue 270.34 percent higher - ad-hoc-news.de",
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxObHRzZkpGWVBKSFhKSlE1X2YwMjN1UDFTaVhQUkx0cElsdF8tbERqaFJJa3lmQVFramtrUjZYdE84VjBNNUpoWTY1Vm42UDM2RHU0VERQb0l0Q0V6ZHlZQW1MTVdXMWVDSWJNbnFmdTJlLXlQakJkY3IyRFdlWktubkZHSkJ3MUtuZENjUnJFdmVZSzdCODBOTm1LZGE0Q0dnRE9JeGJIcXNMRS1pbWhueWJqTGo4eFhLdTdPSjFQa0tENm5meHpKY0xsOXdGcFpBTmppQk5yODh2YU1nUkxuZjYxNVZZdHRXZXJjcUF3?oc=5",
+        "pubDate": "Fri, 23 Oct 2026 23:55:13 GMT",
+        "category": "Taiwanese"
+      }
+    ]
+  }
 }
