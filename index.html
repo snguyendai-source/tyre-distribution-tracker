@@ -338,6 +338,8 @@
   .wsc-lab.PUBLISHED{ border-color:var(--teal); color:var(--teal-ink); background:var(--teal-bg); }
   .wsc-lab.DERIVED{ border-color:#C9A24A; color:var(--amber-ink); background:var(--amber-bg); }
   .wsc-lab.CLAIM{ border-color:#B9A5DD; color:#5B3E96; background:#EDE7F6; }
+  .wsc-lab.TEAM-INPUT{ border-color:#5B3E96; color:#fff; background:#5B3E96; }
+  .wsc-mk.team{ color:#5B3E96; }
   .layer-check{ font-size:11.5px; color:var(--ink-soft); margin:6px 0 2px; display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
   @media (max-width:760px){ details.wsc-c .wsc-live{ margin-left:0; width:100%; } }
   .dist-toolbar{ display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
@@ -883,8 +885,8 @@ function renderWholesaleCheck(){
   const W=window.__wsc;
   if(!W){ host.innerHTML='<p class="skeleton">The wholesale check data could not be loaded.</p>'; return; }
   const esc=escapeHtml;
-  const lab=l=>`<span class="wsc-lab ${esc(l)}">${esc(l)}</span>`;
-  const mk=c=>`<span class="wsc-mk${c?'':' no'}" title="${c?'Opened and checked by us':'Quoted by the research run; page not re-opened'}">${c?'✓':'○'}</span>`;
+  const lab=l=>`<span class="wsc-lab ${esc(String(l).replace(/\s+/g,'-'))}">${esc(l)}</span>`;
+  const mk=c=>c==='team'?`<span class="wsc-mk team" title="Input from your own team; not published and not verified by us">◆</span>`:`<span class="wsc-mk${c?'':' no'}" title="${c?'Opened and checked by us':'Quoted by the research run; page not re-opened'}">${c?'✓':'○'}</span>`;
   let h='<div class="wsc">';
   // intro + findings
   h+=`<div class="card"><h2>${esc(W.title)}: do the biggest wholesalers support the wholesale layer?</h2><p>${esc(W.intro)}</p><ul>${(W.findings||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`;
