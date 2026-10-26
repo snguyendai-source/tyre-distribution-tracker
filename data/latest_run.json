@@ -1,25 +1,105 @@
 {
-  "runAt": "2026-10-25T10:59:41.488690+00:00",
-  "totalNew": 2,
+  "runAt": "2026-10-26T12:32:36.182674+00:00",
+  "totalNew": 12,
   "entitiesChecked": 118,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 7,
   "newItemsByEntity": {
-    "Premio": [
+    "Vergölst": [
       {
-        "title": "Pirelli abandons unusual Austin tyre strategy as 55°C heat threatens F1 teams - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWmlXZDIxTVB1WlNoYmNvUnc3Y29NalJxUmlhNDBHcEJHeEt2RzQ3T3NVamZlU0p1emdDMzI4Q2oxbEJfRDVWTlNkQlNic0FmdEhpQnNhblpacGJQMHNDeWR1MjljLURyXzBaUFpvaE5sOTFURERJUWZpVUxmLUtJeVdIZXBQdFBmakhub0VvdWV2d3NjTi1LNGVLWWg4QVpSZFRzUXc3ZjZqaXppdmcycERrWjJoZDQ?oc=5",
-        "pubDate": "Wed, 21 Oct 2026 19:00:00 GMT",
+        "title": "Conti-buying-Austrian-tire-dealership-Reifen-John - Tire Business",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRFFsbU9scXhucXVadUxmWGp4TjU4OThhV1E4WE01dlk2UkQ0QU1UZVlTaGR1bTAxYi12SnFkR0NoRGtHU1BFMjJiLS14RmU1TDcxcjhQb2pPc0JhajRRT0dqX0hrVk9MOFo0djE4SzAxSWJPRTdWeTRBM3hpaFh6aU1BZjFhalNpa0RMME1QbS16LUhTU01VTjRqYW54cERNVjdzRmdkOVFPcEcyRWpz?oc=5",
+        "pubDate": "Mon, 03 Dec 2018 08:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
+    "Emil Frey": [
+      {
+        "title": "Emil Frey Lexus Racing makes its debut at Blancpain GT Series Sprint Cup at Nürburgring - GT World Challenge Europe Powered by AWS",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMjd4Mlpja2hJZFByWXpEZ21QRVNLdkc4dWRXSEdlOHlIemRPVENJNFcxazBLdFJqNS02dU01U2ZBaFYxeTI3QXR3UWVFbk56NnZ0OE9PRUNrLWt5dG9DeUlXeWlWY09OMWFvcE9BR3JjZjlSRnZrTm5qVFVhcnBNU2pINy10cGUwOVNHY1I5djhGQnduaHdnN3N1Q2ZST1JScDdyV09GN1pvc1JUVmZrU0FLajhvMWkxZTE2X0doSzhYMTNqcm95dFV0d2pYT3pXQ21Ba0htRTRyNHFVUU1j?oc=5",
+        "pubDate": "Wed, 06 Sep 2017 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "Latest Assetto Corsa Competizione update adds Circuit Zolder & Emil Frey Jaguar G3 - Team VVV",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSjBBNzFWeTdkVlUtNzVveDlLaWQzbDRmMkNSeG43S1ZidmkwNFhvajFzbnFpZV9FdjZvdmIwaG9zczEzdHhNTDBDLVJwR1poYXozakZ0TXphSEJsNmpXcHJkUmxjVTdrSDVpVkh6dGlLREVfaFpPLUF5SlZlYkxNT2RyRWMyVE11NEtHallKVlg1SElwM2RjSk1TRWhQTE94TWU5alFlREVoVm1FLVM2cg?oc=5",
+        "pubDate": "Thu, 17 Jan 2019 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      },
+      {
+        "title": "TVS Motor Company partners with Emil Frey for key European markets - Autocar Professional",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPcFlGOGpiS05SdFN6ZnFEZWJpRW9yZGhSV3k2ZXNJMXR3N29DY1Z0SXc0bVNpd2VQZHBYaGViMS1zbkYxbWZxUS1teWVrV0Q2ckI4ZmVUN3dweDQzMVJLWnc2bnQ2NDZOckR4ajA4SHN0anNpRTB3Um5aaFlJSWhxWDBKaWFBdURYbmxwRjBNNjNZTVEtcGYyeGVBSnl0Uk56WnJFZHFYSdIBrwFBVV95cUxQNmRlUHg0dEhxbmpmb1V5OElpckVBNFhNNGdBWjNucTBoY2tVWGdJSnhBc2ktUVBNYWlUbVFzSXVOY1B5enJoZjh3VlVyNmU0RV85b0dldFN0T1kwQTRFUjNpRjh0UlZRVDltZnZUOWFtMWRwOXNaOXU2QmdCbERQTDNIb2xNQXlva2ZJOGJuY0ZkNmpobFdyeGY1SlpzMHZKTnkwbGh4VDAyOFA4Rkxn?oc=5",
+        "pubDate": "Thu, 16 Nov 2023 12:30:34 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Speedy": [
+      {
+        "title": "Maxxis Reaver Review | A Speedy 40c Gravel Tyre - Flow Mountain Bike",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQkVqQVBubG03UmM1eEs1UlVRSXJ4OWhYOTd0R0EtMS12R3BCQmtNVHVPRURpVldFOGxVbXRCVTlKUkF2OENISlNPQ3lYXzdUWjZwYm00VjFvSVl1Y1ByaGRGSGtmWG5UcW1DeE5NNVFtbkFHN1RuOXNvSEdJeEpIVXhQRGZ6aTR4aGNsZVlMckhiNmM?oc=5",
+        "pubDate": "Mon, 04 Sep 2023 17:55:39 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      },
+      {
+        "title": "Panaracer GravelKing X1 TLR tyre review: speedy, supple and durable but tricky to fit - BikeRadar",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSGNqNDNpWFNoUmtDTUUxNzBVaUl2ZGVsX0I5T0g1dWhDTFE2b09jTzczcG1MZVMxeW5FVlhyNlVWdE9kMElONUsyS0ZzdGx4THBaeEJ1a3dNclB1eC1sMWR1Vi0tZ0wwaHV5RUUybU0wbTVHeHRZWTJxZ083dnJfOUdfcllWeUhVY3NRWC1sRGpnZzBlQW9iLThxUlVoODd0Y0NZ?oc=5",
+        "pubDate": "Mon, 28 Apr 2025 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      },
+      {
+        "title": "Bridgestone to acquire Speedy France retail network - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPelRnak9Ud1lubGZScEFGMUtyWW1LM2I5bXZQQ09RcFFvbS11b2QydmpQbnEtTVM5TXp1NjZZTGd6NnprWS1ma3R0cTBQUVRScGpmTnQ0R3ZHdTU3WFVHZ3BmbmNrVWpCcWlkNjlWVmlaTGFTVXhzQXRSM05naFNFVGRLaGxSQWJFUmx4TUxEUQ?oc=5",
+        "pubDate": "Tue, 31 May 2016 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      },
+      {
+        "title": "Best gravel tyres: Speedy off-road rubber from £29 - Expert Reviews",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRdTV5a3hFLXVpSlZEUTFiLThCMXdDVkJnUjlYSHVuM1ZrVkItWFdsNjB5TTJsZm5KdUpWZVR2OFZRUEtmZ0RjcjlKWDMzUXdwZ1diZVNnZjNNZHFqWGtrYzNhelQxZEp5Nmc?oc=5",
+        "pubDate": "Thu, 03 Apr 2025 21:08:22 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
+    "Feu Vert": [
+      {
+        "title": "Boeing 737 MAX 10 : Alaska Airlines attend le feu vert de la FAA d’ici quelques jours - Air Journal",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSFRQYW1DWjhKaTh0MG90ejhGNnpyTnlyRGc1NXI0d1V0YTdOakJfSFJKUWFXYklocTVTX0VicXF6TlhoV0hnVmFQTzByLTBXcWtsdFVFdE5uZTEzaGJCSGhrT0FERVhfMTZCNlpWOTZVQVZta2M5YnVTVFVUeHFNMGlFaGZIeThTTEpYNnhnTmJ6N2hLaTFVbHZuOWltRFdOUWlUNENQQVB3TlFCdWlRWFJHb1d2RjFEWjlmRThYZG5LSGdHWWQ0bFQzRVpJZw?oc=5",
+        "pubDate": "Fri, 25 Sep 2026 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
+      }
+    ],
     "Kwik Fit": [
       {
-        "title": "Kwik Fit accepts American Express - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1wTlc3Mk04ajdQOTdjX3pkTUpGanp3UElXM3FpWE9pb3MyVkVueEo0dHcxREdfRWM3ekhWX1JWVS1PWXo2UUpJekRUbU5XT1lsdG5sdzlFMnkyV1hfTlh6cVU3ZFVUV3c5aFFEYWNZcTk5MnBSUUFB?oc=5",
-        "pubDate": "Fri, 27 Feb 2026 08:00:00 GMT",
+        "title": "Kwik-Fit bought by Japanese company - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQ3B3MXhNX1FqOEljVjVHSGZkM3JBQmloSE84XzFGSHduU1VBUkZlakVMa2J6eng1YllfN1J4cHNZLUNURzFjLWo4TjRyN3ZYTHduTWV3TnNnSHhEblRYTWh0c1pqdHo3V3Rvd1AwcnhEMWlGb1MwYTkwMU1KOHZleUF0b0xkUU1hQ0NnZk1Qcw?oc=5",
+        "pubDate": "Thu, 03 Mar 2011 08:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
+      }
+    ],
+    "Bandvulc": [
+      {
+        "title": "Bandvulc launches Deliverymaster 5 - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBsRGdKV1RXQ21XTDVDZTJES3kxRmdwanpTeG9KbW9vWmFlMnR2NEZOempHVEZhNjV6RGJ4MXdaSlU3b0h2OWRBVXI0NXhwdlBnaGNkTUVGM0JfbWE1RXZBZjRENFdaQTQ1VGtHcWx6UzdkV1c3ZnU2c2JySQ?oc=5",
+        "pubDate": "Mon, 13 Apr 2026 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
+      }
+    ],
+    "Vianor": [
+      {
+        "title": "Scrap tyres can be disposed of free of charge - www.tallinn.ee",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA5Y2xJc0Y4U0d5Qld0Ymd3XzItb3kzMGJIdjhSYkdCVm1BQnY5Z21venY0cF9NWlN1LTVtZUlyZEkxVVljVFpDU1Jzbm5mME9TVTdxVHJmUFlNRFY2ZmxOMmlHV2l0M2hEcVJhYUk4WnVjZ1JjUGZJd2pR?oc=5",
+        "pubDate": "Tue, 29 Mar 2022 07:00:00 GMT",
+        "country": "Hungary",
+        "cluster": "South-East"
       }
     ]
   }
