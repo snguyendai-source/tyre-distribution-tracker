@@ -7,7 +7,7 @@
   "No country shows a wholesale layer that looks too high. For Hungary, Germany, the UK, Spain and Italy the biggest named wholesalers plausibly carry 40–95% of the layer, which is what a concentrated trade should show.",
   "Hungary has the closest independent match: a bond document puts passenger-tyre wholesale at about 70% of the market, against 73% in the dashboard.",
   "France, Switzerland, Belgium, Denmark and Poland cannot be tested yet, because the named wholesalers publish too little. The gaps are listed below.",
-  "Austria (updated 26 Oct 2026 after colleague feedback) cannot be confirmed. The named domestic wholesalers add up to about 0.8–1.3M against the 1.82M layer, so 0.5–1.0M is unexplained. Whether that is foreign wholesalers and buying-group stock, and whether they count as wholesale here, is a decision for you.",
+  "Austria (updated 26 Oct 2026) is plausible but low confidence. With the sales team's 0.6M for Reifen NL, the named domestic wholesalers add up to about 1.35–1.75M against the 1.82M layer, 74–96%. Without that figure they add up to about 0.8–1.3M. Reifen NL is one unpublished figure, so treat the result as provisional.",
   "The Netherlands cannot be tested from company data, and may be pointing at understated import and re-export flows. That is a question for the model, not a finding.",
   "Nothing in the model was changed by this check. It adds evidence, caveats and corrections only."
  ],
@@ -58,6 +58,10 @@
   {
    "label": "CLAIM",
    "text": "A company statement, or a figure the research run quoted that we have not seen on the page ourselves."
+  },
+  {
+   "label": "TEAM INPUT",
+   "text": "A figure from your own sales team. Not published and not verified by us."
   }
  ],
  "marks": [
@@ -68,6 +72,10 @@
   {
    "mark": "○",
    "text": "Quoted by the research run. We have not opened the page."
+  },
+  {
+   "mark": "◆",
+   "text": "Input from your own team. Not published and not verified by us."
   }
  ],
  "nextBest": [
@@ -502,12 +510,12 @@
   },
   {
    "country": "Austria",
-   "verdict": "cannot be confirmed",
-   "vclass": "gap",
-   "headline": "The named domestic wholesalers add up to about 0.8–1.3M tyres, 44–71% of the 1.82M layer. The rest could be foreign wholesalers or the central stock of buying groups, so whether 1.82M holds depends on what counts as wholesale. Low confidence.",
-   "sumLo": 0.8,
-   "sumHi": 1.3,
-   "sumNote": "Auto Plus 0.6–0.95M, Tire Network 0.10–0.15M, ARG about 0.05M, plus small amounts for Reifen NL and Tyrol Pneu. Derived by the research run; the Auto Plus and Tire Network parts rest on assumed stock turns.",
+   "verdict": "plausible, low confidence",
+   "vclass": "ok",
+   "headline": "With the sales team's 0.6M for Reifen NL, the named domestic wholesalers add up to about 1.35–1.75M tyres, 74–96% of the 1.82M layer. That is plausible for a concentrated trade, but it rests on one unpublished team figure and on stock-turn assumptions for Auto Plus and Tire Network. Low confidence.",
+   "sumLo": 1.35,
+   "sumHi": 1.75,
+   "sumNote": "Auto Plus 0.6–0.95M, Reifen NL 0.6M (sales team), Tire Network 0.10–0.15M and ARG about 0.05M. Tyrol Pneu and Interpneu are not counted (no volumes). Without the Reifen NL figure the sum is about 0.8–1.3M.",
    "confidence": "Low",
    "named": [
     {
@@ -555,16 +563,16 @@
     {
      "name": "Reifen NL GmbH",
      "owner": "Family-owned, Rüstorf (Upper Austria)",
-     "fig": "No volume published. Supplies tyre dealers, car dealers, petrol stations and independent workshops",
-     "lo": null,
-     "hi": null,
-     "unit": "",
-     "year": "2024",
-     "label": "CLAIM",
-     "basis": "Named by your colleague. Company register data (research run): registered 31 Aug 2024 as successor to E&R&N GmbH; the company says it has worked in the trade for over 18 years.",
-     "src": "Company register and company pages (research run)",
-     "chk": false,
-     "caveat": "Nothing was found on its size. Too small to change the total on any reasonable guess."
+     "fig": "Sales team estimate: 600,000 passenger-car tyres of sell-out a year. No company figure published",
+     "lo": 0.6,
+     "hi": 0.6,
+     "unit": "passenger-car tyres a year",
+     "year": "2026",
+     "label": "TEAM INPUT",
+     "basis": "Input from your sales team on 26 Oct 2026. Not published and not checked against any company source. Named by your colleague. Register data (research run): registered 31 Aug 2024 as successor to E&R&N GmbH; the company says it has worked in the trade for over 18 years.",
+     "src": "Your sales team; company register and company pages (research run)",
+     "chk": "team",
+     "caveat": "A single unpublished figure. If Reifen NL buys part of its tyres from other Austrian wholesalers such as Auto Plus, those tyres are counted twice in the sum. We read it on the dashboard's passenger-car scope (cars, SUV/4x4, vans, light trucks) with no rescaling; please say if the team meant cars only."
     },
     {
      "name": "Tyrol Pneu Räder & Tuning GmbH",
@@ -595,13 +603,18 @@
    ],
    "evidence": [
     {
-     "t": "Why the gap is open",
-     "x": "Between the named domestic names (0.8–1.3M) and the 1.82M layer sit about 0.5–1.0M. Candidates are deliveries by foreign wholesalers (Interpneu, Delticom's trade arm), the central stock of buying groups, and regional distributors nobody has named. No source publishes how concentrated Austrian wholesale is.",
-     "chk": false
+     "t": "What the sales-team figure does",
+     "x": "Reifen NL at 0.6M lifts the named group from about 0.8–1.3M to 1.35–1.75M. That leaves 0.07–0.47M of the 1.82M unexplained, instead of 0.5–1.0M. The remainder could be foreign wholesalers (Interpneu, Delticom's trade arm), buying-group central stock or small regional distributors. No source publishes how concentrated Austrian wholesale is.",
+     "chk": "team"
     },
     {
-     "t": "If foreign wholesalers and buying-group stock do not count",
-     "x": "The research run reads the evidence as pointing to about 1.0–1.4M, which would move about 0.4–0.8M from “via wholesale” to “direct” in the specialists channel. That is the research run's reading, not a measurement. Nothing in the model was changed.",
+     "t": "Size and double counting",
+     "x": "Reifen NL would be about as large as the floor of Auto Plus, yet it publishes no size and the company was registered only in Aug 2024. That is possible if it is a long-standing business under a new legal entity, but it is one unpublished figure. If it buys from other wholesalers, the sum above counts those tyres twice.",
+     "chk": "team"
+    },
+    {
+     "t": "Earlier research reading superseded",
+     "x": "The research run's earlier reading, that the evidence pointed to about 1.0–1.4M if foreign wholesalers and buying-group stock do not count, assumed Reifen NL was small. It no longer holds if the 0.6M is right.",
      "chk": false
     },
     {
@@ -616,6 +629,7 @@
     }
    ],
    "gaps": [
+    "Reifen NL: only the sales team's figure. Ask the team for its basis (own sales, a customer list or market intelligence) and whether it includes vans and light trucks.",
     "Auto Plus has no audited volume. The Austrian company register (Firmenbuch) accounts for AUTO PLUS Fahrzeugzubehör GmbH and Reifen NL GmbH are the next best source.",
     "No published figure for how concentrated Austrian wholesale is.",
     "Delticom's trade arm and Interpneu: no Austria-specific volume.",
