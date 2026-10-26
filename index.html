@@ -865,6 +865,7 @@ document.querySelectorAll('nav.subtabs button').forEach(btn=>{
 // ---------- wholesale check tab ----------
 function wscRange(lo,hi,dp){
   if(lo==null) return '—';
+  if(!dp){ const h=v=>v!=null&&Math.abs(v*10-Math.round(v*10))>1e-6; dp=(h(lo)||h(hi))?2:1; }
   const f=v=>(Math.round(v*Math.pow(10,dp||1))/Math.pow(10,dp||1)).toFixed(dp||1).replace(/\.0+$/,'');
   return (hi==null||hi===lo)?f(lo)+'M':f(lo)+'–'+f(hi)+'M';
 }
