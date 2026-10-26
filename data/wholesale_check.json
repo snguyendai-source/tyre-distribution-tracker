@@ -1,12 +1,13 @@
 {
  "schema": 1,
- "generatedAt": "2026-10-23",
+ "generatedAt": "2026-10-26",
  "title": "Wholesale check",
  "intro": "A sanity check on the wholesale layer in the flow model: do the biggest wholesalers in each country sell roughly what the layer says? The dashboard layer in the table is live from the flow model. The company figures come from a separate research run in October 2026, and we re-opened a selection of the sources ourselves.",
  "findings": [
   "No country shows a wholesale layer that looks too high. For Hungary, Germany, the UK, Spain and Italy the biggest named wholesalers plausibly carry 40–95% of the layer, which is what a concentrated trade should show.",
   "Hungary has the closest independent match: a bond document puts passenger-tyre wholesale at about 70% of the market, against 73% in the dashboard.",
-  "France, Austria, Switzerland, Belgium, Denmark and Poland cannot be tested yet, because the named wholesalers publish too little. The gaps are listed below.",
+  "France, Switzerland, Belgium, Denmark and Poland cannot be tested yet, because the named wholesalers publish too little. The gaps are listed below.",
+  "Austria (updated 26 Oct 2026 after colleague feedback) cannot be confirmed. The named domestic wholesalers add up to about 0.8–1.3M against the 1.82M layer, so 0.5–1.0M is unexplained. Whether that is foreign wholesalers and buying-group stock, and whether they count as wholesale here, is a decision for you.",
   "The Netherlands cannot be tested from company data, and may be pointing at understated import and re-export flows. That is a question for the model, not a finding.",
   "Nothing in the model was changed by this check. It adds evidence, caveats and corrections only."
  ],
@@ -22,6 +23,18 @@
   {
    "t": "United Kingdom: Bond's volume",
    "x": "The research run reported 16.8 million tyres handled and one tyre every 3.5 seconds. The two Bond pages we opened say one tyre every six seconds and give 2024 turnover of £417M. The new estimate is 5–8M, and the 16.8M is not used."
+  },
+  {
+   "t": "Austria: how your colleague's list was sorted",
+   "x": "Wholesale: AUTO PLUS and Reifen NL. Buying groups (independent member companies that pool their purchases): Point S, Top Reifen Team and EFR. BestDrive (Continental), Euromaster (Michelin), Forstinger and Lucky Car are chains or franchise networks that buy centrally, so they stay in the retail layer, where they already were. Car dealers: Porsche Inter Auto and Pappas. “BMW dealer” is generic, so we added the two largest BMW/MINI groups the research found, Denzel and Unterberger. Please confirm which one was meant."
+  },
+  {
+   "t": "Austria: Point S market share",
+   "x": "The research run gave Point S's “about 20%” as a current claim. The only dated source we opened (2015) calls 20% a medium-term target and gives 17% as the actual consumer share. It is not used as a measured share."
+  },
+  {
+   "t": "Austria: figures that disagree",
+   "x": "Point S: 60+ locations (website, per the research run), 80+ (a member site) and 100 (2022 UTA release). BestDrive: 50+ workshops against about 60 locations. Porsche Inter Auto: over 50 dealerships (its employer profile, checked), 45 (research run) and over 40 sites (LinkedIn). Pappas: 21 sites (research run) against 33 branches in 2015 (Autohaus, checked). Denzel revenue: €1.165bn against more than €1.4bn."
   },
   {
    "t": "Figures that disagree, still open",
@@ -489,17 +502,124 @@
   },
   {
    "country": "Austria",
-   "verdict": "insufficient data",
+   "verdict": "cannot be confirmed",
    "vclass": "gap",
-   "headline": "No volumes or revenues found for Auto Plus, Tire Network, ARG or Delticom's trade arm. The 1.82M layer is untested.",
-   "sumLo": null,
-   "sumHi": null,
-   "sumNote": "",
+   "headline": "The named domestic wholesalers add up to about 0.8–1.3M tyres, 44–71% of the 1.82M layer. The rest could be foreign wholesalers or the central stock of buying groups, so whether 1.82M holds depends on what counts as wholesale. Low confidence.",
+   "sumLo": 0.8,
+   "sumHi": 1.3,
+   "sumNote": "Auto Plus 0.6–0.95M, Tire Network 0.10–0.15M, ARG about 0.05M, plus small amounts for Reifen NL and Tyrol Pneu. Derived by the research run; the Auto Plus and Tire Network parts rest on assumed stock turns.",
    "confidence": "Low",
-   "named": [],
-   "evidence": [],
+   "named": [
+    {
+     "name": "AUTO PLUS Reifen (Denzel Group)",
+     "owner": "Wolfgang Denzel Auto AG",
+     "fig": "Says: about 2,500 customers, 350,000 tyres in stock, and “soon 1 million tyres” sold through its partners",
+     "lo": 0.6,
+     "hi": 0.95,
+     "unit": "consumer tyres a year",
+     "year": "2026",
+     "label": "DERIVED",
+     "basis": "350,000 tyres in stock × 2–3 turns a year, less 5–15% for non-consumer tyres. The turns and the deduction are the research run's assumptions, not company figures; it reads 0.6M as a floor.",
+     "src": "Sponsored Auto & Wirtschaft article of 6 Oct 2026 and company pages (research run)",
+     "chk": false,
+     "caveat": "The “1 million” comes from a sponsored article. It is not clear whether it is per year or cumulative, or whether it covers all tyre types. Earlier estimate on the card was 0.6M (range 0.45–0.8M)."
+    },
+    {
+     "name": "Tire Network GmbH",
+     "owner": "Independent (Vienna, founded 2022)",
+     "fig": "“über 50.000 lagernde Reifen”; no volume published",
+     "lo": 0.1,
+     "hi": 0.15,
+     "unit": "consumer tyres a year",
+     "year": "2026",
+     "label": "DERIVED",
+     "basis": "50,000 tyres in stock × 2–3 turns a year. The turns are an assumption.",
+     "src": "Company site (research run)",
+     "chk": false,
+     "quote": "über 50.000 lagernde Reifen",
+     "en": "more than 50,000 tyres in stock"
+    },
+    {
+     "name": "ARG Reifengrosshandel",
+     "owner": "Independent (Dornbirn)",
+     "fig": "No volume published",
+     "lo": 0.05,
+     "hi": 0.05,
+     "unit": "domestic tyres a year",
+     "year": "",
+     "label": "CLAIM",
+     "basis": "The research run's own estimate, low confidence; ARG also exports.",
+     "src": "Research run estimate",
+     "chk": false
+    },
+    {
+     "name": "Reifen NL GmbH",
+     "owner": "Family-owned, Rüstorf (Upper Austria)",
+     "fig": "No volume published. Supplies tyre dealers, car dealers, petrol stations and independent workshops",
+     "lo": null,
+     "hi": null,
+     "unit": "",
+     "year": "2024",
+     "label": "CLAIM",
+     "basis": "Named by your colleague. Company register data (research run): registered 31 Aug 2024 as successor to E&R&N GmbH; the company says it has worked in the trade for over 18 years.",
+     "src": "Company register and company pages (research run)",
+     "chk": false,
+     "caveat": "Nothing was found on its size. Too small to change the total on any reasonable guess."
+    },
+    {
+     "name": "Tyrol Pneu Räder & Tuning GmbH",
+     "owner": "Achleitner Group (Tyrol)",
+     "fig": "Rim importer with 13 own retail branches; balance-sheet total €9.68M (31 Aug 2025)",
+     "lo": null,
+     "hi": null,
+     "unit": "",
+     "year": "2025",
+     "label": "CLAIM",
+     "basis": "Added by the research run, not on your colleague's list. No tyre volume found.",
+     "src": "Company register (research run)",
+     "chk": false
+    },
+    {
+     "name": "Interpneu / Reifen1+ (Pneuhage Group)",
+     "owner": "Pneuhage Group (Germany)",
+     "fig": "Cross-border supplier; 7 Austrian partners at the start in 2025",
+     "lo": null,
+     "hi": null,
+     "unit": "",
+     "year": "2025",
+     "label": "CLAIM",
+     "basis": "Added by the research run. An example of the open question: tyres a German group delivers into Austria are not part of the domestic names above.",
+     "src": "Company announcement (research run)",
+     "chk": false
+    }
+   ],
+   "evidence": [
+    {
+     "t": "Why the gap is open",
+     "x": "Between the named domestic names (0.8–1.3M) and the 1.82M layer sit about 0.5–1.0M. Candidates are deliveries by foreign wholesalers (Interpneu, Delticom's trade arm), the central stock of buying groups, and regional distributors nobody has named. No source publishes how concentrated Austrian wholesale is.",
+     "chk": false
+    },
+    {
+     "t": "If foreign wholesalers and buying-group stock do not count",
+     "x": "The research run reads the evidence as pointing to about 1.0–1.4M, which would move about 0.4–0.8M from “via wholesale” to “direct” in the specialists channel. That is the research run's reading, not a measurement. Nothing in the model was changed.",
+     "chk": false
+    },
+    {
+     "t": "Point S market share",
+     "x": "Point S says it holds about 20% of the market (its website, per the research run; not re-opened). The only dated source we opened, Auto & Wirtschaft of 1 Sep 2015, gives a traditional consumer-segment share of 17%, 60 locations and 50 shareholders, and calls 20% a medium-term target. We do not use 20% as a measured share. The page also lists 2026 events in its sidebar, so the date should be checked against the original.",
+     "chk": true
+    },
+    {
+     "t": "Retail names checked",
+     "x": "Lucky Car: 62 locations and revenue just under €80M in 2025, up from about €70M (Leadersnet, 24 Mar 2026). It took over 24 former A.T.U sites and grew from €45M to €70M in 2024 (Leadersnet, 31 Mar 2025). Porsche Inter Auto's employer profile says “über 50 Autohäuser” in Austria. Pappas: an Autohaus item of 22 Jan 2016 gave 33 branches in seven companies.",
+     "chk": true
+    }
+   ],
    "gaps": [
-    "Auto Plus, Tire Network, ARG, Delticom B2B: nothing published that we could find. Austrian company-register accounts are the next best source."
+    "Auto Plus has no audited volume. The Austrian company register (Firmenbuch) accounts for AUTO PLUS Fahrzeugzubehör GmbH and Reifen NL GmbH are the next best source.",
+    "No published figure for how concentrated Austrian wholesale is.",
+    "Delticom's trade arm and Interpneu: no Austria-specific volume.",
+    "Top Reifen Team, EFR, Forstinger's revenue and Euromaster's partner count come from the research run only; the pages could not be reached by our page reader."
    ],
    "iso": "AT"
   },

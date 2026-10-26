@@ -7528,7 +7528,7 @@
           "channels": {
             "v": 4.95,
             "why": "No Austrian channel split is published, so the research keeps the earlier benchmark shape of 72 / 18 / 3 / 7% (anchored on the German BRV split) and it is applied here to the 4.95M market.",
-            "val": "Network sizes support a large specialist channel (Forstinger 69 branches, Point S over 60, Lucky Car over 60, BestDrive over 50). Replace with your own Austrian channel data when you have it."
+            "val": "Network sizes support a large specialist channel (Forstinger 69 branches, Lucky Car 62 locations, Point S over 60, BestDrive over 50 or about 60). Replace with your own Austrian channel data when you have it."
           }
         }
       },
@@ -7542,7 +7542,8 @@
         "Wholesale volumes are the research's estimates, not company figures: Auto Plus about 0.6M PCR tyres a year (range 0.45-0.8M), Tire Network about 0.15M (0.10-0.20M), ARG about 0.05M domestic (0.03-0.08M), Delticom's Autoreifenonline.at B2B about 0.10M. I could not confirm Auto Plus's 350,000-tyre pre-season stock or 1,500 peak orders a day, or ARG's roughly 50% export quota. Delticom is treated as cross-border supply, not as an Austrian wholesaler. These are passenger-car estimates set against the earlier 4.5M market and have not been rescaled to the consumer scope.",
         "Retail network corrections (checked): Forstinger now states 69 branches and 68 specialist workshops (earlier page: about 111). Lucky Car took over 24 former A.T.U sites in February 2024 (more than 270 jobs) and had 44 locations before, around 70 afterwards per LEADERSNET (the research says 60+). A 2022 Continental release announced that Profi Reifen and Reifen John would be renamed BestDrive over about two years, with over 50 workshops. Point S: the research quotes over 60 service locations from its site, while a 2022 UTA release quoted 100.",
         "Latest signals (research, not checked): Tyres Europe reports European consumer replacement tyres up 2% in H1 2026, with all-season up 9%, summer down 2% and winter down 5%. Austria's situational winter-equipment rule runs from 1 November to 15 April. The research expects a 2026 run-rate of 4.5-4.6M but does not treat it as a published figure.",
-        "Wholesale cross-check (October 2026): No volumes or revenues found for Auto Plus, Tire Network, ARG or Delticom's trade arm. The 1.82M layer is untested. See the Wholesale check tab for the figures, sources and caveats."
+        "Wholesale cross-check (October 2026, updated 26 Oct after colleague feedback): The named domestic wholesalers add up to about 0.8–1.3M tyres, 44–71% of the 1.82M layer. The rest could be foreign wholesalers or the central stock of buying groups, so whether 1.82M holds depends on what counts as wholesale. Low confidence. See the Wholesale check tab for the figures, sources and caveats.",
+        "Austria update (26 Oct 2026, colleague feedback plus a new research run): the card now names Reifen NL, Tyrol Pneu and Interpneu as wholesalers; Point S, Top Reifen Team and EFR as buying groups; and Porsche Inter Auto, Pappas, Denzel and Unterberger as car-dealer groups. AUTO PLUS is now shown as 0.6–0.95M consumer tyres a year (derived from its stated 350,000-tyre stock and an assumed 2–3 turns a year), which replaces the earlier 0.45–0.8M above. Checked by us: Lucky Car 62 locations and just under €80M revenue in 2025 (Leadersnet, 24 Mar 2026); Point S's 2015 figures of 60 locations and a 17% consumer share, with 20% as a target (Auto & Wirtschaft, 1 Sep 2015); Porsche Inter Auto 'über 50 Autohäuser' (its employer profile). Everything else new is quoted by the research run and its pages were not re-opened. No model number was changed."
       ],
       "scope": "Consumer replacement tyres (cars, SUV/4x4, vans and light trucks)",
       "unit": "million tyres",
@@ -7668,16 +7669,16 @@
           "src": "Calculated from the figures above.",
           "sure": {
             "l": "Low",
-            "w": "Built from model estimates."
+            "w": "Built from model estimates. The named wholesalers cover only 44–71% of it."
           },
-          "val": "Cross-check with the biggest wholesalers (October 2026): no volumes or revenues were found for Auto Plus, Tire Network, ARG or Delticom's trade arm, so this figure is untested."
+          "val": "Cross-check with the biggest wholesalers (October 2026): the named domestic wholesalers add up to about 0.8–1.3M tyres, 44–71% of these 1.82M (Auto Plus 0.6–0.95M and Tire Network 0.10–0.15M, both derived from assumed stock turns; ARG about 0.05M; Reifen NL publishes no volume). The other 0.5–1.0M could be foreign wholesalers or the central stock of buying groups. If those should not count as wholesale here, the research run reads the evidence as about 1.0–1.4M. Low confidence; the Wholesale check tab has the details."
         },
         "ch.spec.tot": {
           "v": 3.56,
           "short": "72% of the market: a benchmark share, not a measurement.",
           "how": [
             "No Austrian source publishes a channel split. The research keeps the earlier benchmark shape of 72 / 18 / 3 / 7%, which is applied here to the 4.95M market.",
-            "72% × 4.95M = 3.56M. Network sizes quoted by the research from their own sites (Point S over 60, BestDrive over 50, Lucky Car over 60, Forstinger 69) overlap and cannot be added up."
+            "72% × 4.95M = 3.56M. Network sizes (Point S over 60, BestDrive over 50, Lucky Car 62, Forstinger 69) overlap and cannot be added up."
           ],
           "src": "Benchmark estimate applied to 4.95M.",
           "sure": {
@@ -7686,7 +7687,7 @@
           },
           "what": "Tyre specialists, fast-fit chains and independent garages.",
           "why": "There is no published channel split for Austria, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist.",
-          "val": "Network sizes quoted by the research from the networks' own sites support a large specialist channel: Forstinger 69 branches, Point S over 60, Lucky Car over 60, BestDrive over 50. They overlap, so they cannot be added up. No shares are published. Replace with your own Austrian channel data when you have it."
+          "val": "Network sizes support a large specialist channel: Forstinger 69 branches, Lucky Car 62 locations (Leadersnet, 24 Mar 2026, checked), Point S over 60, BestDrive over 50 or about 60. They overlap, so they cannot be added up. Point S's “about 20% share” is a 2015 target, not a measured share (Auto & Wirtschaft, 1 Sep 2015, checked). No shares are published. Replace with your own Austrian channel data when you have it."
         },
         "ch.spec.ws": {
           "v": 1.45,
@@ -7732,7 +7733,10 @@
           },
           "what": "Car dealers and brand-tied workshops.",
           "why": "There is no published channel split for Austria, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. Kept from the earlier benchmark shape.",
-          "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Austria follows them cannot: the research allows an error of about ±6 points. Replace with your own Austria channel data when you have it."
+          "val": "Cross-check (October 2026): BRV puts car dealers and brand workshops in Germany at just under 20% of 2024 sales (quote below). 20% of Austria's 4.95M would be about 1.0M, against 0.89M here. The research run also quotes BRV at 19.1% for 2025 and 23% for 2020 (not re-opened), which would give 0.95–1.14M. So 0.89M sits a little below Germany's share. Whether Austria follows Germany cannot be tested: no Austrian split is published and the dealer groups publish no tyre volumes. Replace with your own Austria channel data when you have it.",
+          "vq": [
+            "brv_deal_at"
+          ]
         },
         "ch.deal.ws": {
           "v": 0.17,
@@ -7879,6 +7883,14 @@
           "en": "581,147 lorries (+1.6%)",
           "role": "check",
           "note": "All lorry classes at the end of 2025, including heavy lorries; the light class N1 is not shown separately. Used only for the 10% assumption for vans and light trucks."
+        },
+        "brv_deal_at": {
+          "q": "Autohäuser und markengebundene Werkstätten behaupten mit knapp 20 Prozent ihren Anteil am Reifenmarkt.",
+          "en": "Car dealers and brand-tied workshops hold their share of the tyre market at just under 20 percent.",
+          "by": "BRV (German tyre trade association), reported by autohaus.de, 21 Mar 2025",
+          "u": "https://www.autohaus.de/nachrichten/autohandel/reifenmarkt-waechst-deutlich-starker-trend-zum-ganzjahresreifen-3631452",
+          "role": "check",
+          "note": "Germany, 2024. Whether Austria follows the German split cannot be tested."
         }
       }
     },

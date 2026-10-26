@@ -1821,7 +1821,7 @@
           "scale": {
             "value": 69,
             "metric": "branches",
-            "label": "69 branches and 68 specialist workshops, a national auto accessories, workshop and tyre retailer"
+            "label": "69 branches and 68 specialist workshops, a national auto accessories, workshop and tyre retailer. Revenue about €75M in the financial year 2025 and over 400 staff (company press release of 12 Aug 2026, as quoted by the research run; page not re-opened)"
           },
           "flowChannel": "spec"
         },
@@ -1837,7 +1837,8 @@
           "territories": [
             "__NATIONWIDE__"
           ],
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "volume": "More than 30 franchise partners; two more joined in Jan–Feb 2026 (research run, not re-opened)"
         },
         {
           "name": "Point S Austria",
@@ -1848,9 +1849,10 @@
           "scale": {
             "value": 60,
             "metric": "locations",
-            "label": "60+ service locations per its website (a 2022 UTA release quoted 100 locations)"
+            "label": "60+ service locations per its website (research run); a member site says 80+ and a 2022 UTA release said 100. The only dated source we opened (Auto & Wirtschaft, 1 Sep 2015) gives 50 shareholders and 60 locations, a traditional consumer-segment share of 17% and calls 20% a medium-term target. Its website is said to claim about 20%; we do not use that as a measured share"
           },
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "owner": "Reifen Partner GmbH Point-S (Salzburg), independent member companies"
         },
         {
           "name": "First Stop (Bridgestone)",
@@ -1885,7 +1887,7 @@
           "scale": {
             "value": 50,
             "metric": "workshops",
-            "label": "50+ workshops (Profi Reifen and Reifen John, renamed BestDrive from 2022)"
+            "label": "50+ workshops (Profi Reifen and Reifen John, renamed BestDrive from 2022); other sources say about 60 locations. Calls itself the largest tyre specialist retailer in Austria (company claim, research run, not re-opened). No revenue found"
           },
           "flowChannel": "spec"
         },
@@ -1901,9 +1903,9 @@
           "name": "Lucky Car",
           "model": "Independent multi-brand workshop network",
           "scale": {
-            "value": 60,
+            "value": 62,
             "metric": "locations",
-            "label": "60+ locations (44 before it took over 24 former A.T.U sites in Feb 2024)"
+            "label": "62 locations in all federal states and revenue just under €80M in 2025, up from about €70M in 2024 (Leadersnet, 24 Mar 2026, checked). It took over 24 former A.T.U sites in Feb 2024 and grew from €45M to €70M that year (Leadersnet, 31 Mar 2025, checked). Its tyre web portal runs on the AUTO PLUS system, which suggests part of its tyre buying goes through AUTO PLUS (research run's inference, not published)"
           },
           "territories": [
             "__NATIONWIDE__"
@@ -1918,9 +1920,9 @@
           ],
           "owner": "Wolfgang Denzel Auto AG (Denzel Group)",
           "scale": {
-            "value": 0.6,
-            "metric": "M PCR tyres a year (estimate)",
-            "label": "2,000+ dealer partners; est. ~0.6M PCR tyres a year (research estimate for passenger cars, range 0.45-0.8M, not rescaled)"
+            "value": 0.78,
+            "metric": "est. M consumer tyres a year (derived, range 0.6–0.95M)",
+            "label": "derived 0.6–0.95M consumer tyres a year, midpoint shown: a stated stock of 350,000 tyres × an assumed 2–3 turns a year, less 5–15% for non-consumer tyres (research run; the turns are an assumption, and 0.6M is read as a floor). Says about 2,500 customers and “soon 1 million tyres” sold through its partners (sponsored Auto & Wirtschaft article, 6 Oct 2026, research run, not re-opened; per year or cumulative is unclear). Earlier card estimate: 0.6M, range 0.45–0.8M"
           }
         },
         {
@@ -1931,9 +1933,9 @@
           ],
           "owner": "Independent (Vienna, founded 2022)",
           "scale": {
-            "value": 0.15,
-            "metric": "M PCR tyres a year (estimate)",
-            "label": "50,000+ tyres in stock; est. ~0.15M PCR tyres a year (research estimate for passenger cars, range 0.10-0.20M, not rescaled)"
+            "value": 0.125,
+            "metric": "est. M consumer tyres a year (derived, range 0.10–0.15M)",
+            "label": "50,000+ tyres in stock; derived 0.10–0.15M consumer tyres a year, midpoint shown: stock × an assumed 2–3 turns a year (research run; no volume published)"
           }
         },
         {
@@ -1948,11 +1950,86 @@
             "metric": "M PCR tyres a year (estimate)",
             "label": "est. ~0.05M domestic PCR tyres a year (research estimate for passenger cars, low confidence, not rescaled); also exports"
           }
+        },
+        {
+          "name": "Reifen NL GmbH",
+          "model": "Wholesaler / distributor",
+          "territories": [],
+          "owner": "Family-owned, Rüstorf (Upper Austria)",
+          "volume": "No volume published. Supplies tyre dealers, car dealers, petrol stations and independent workshops; registered Aug 2024 as successor to E&R&N GmbH. Named by a colleague; register data from the research run, not re-opened"
+        },
+        {
+          "name": "Tyrol Pneu Räder & Tuning GmbH",
+          "model": "Wholesaler / distributor",
+          "territories": [
+            "W"
+          ],
+          "owner": "Achleitner Group (Tyrol)",
+          "volume": "Rim importer with 13 own retail branches; no tyre volume found (research run, not re-opened)"
+        },
+        {
+          "name": "Interpneu / Reifen1+ (Pneuhage Group)",
+          "model": "Wholesaler / distributor",
+          "territories": [],
+          "owner": "Pneuhage Group (Germany)",
+          "volume": "Cross-border supplier; 7 Austrian partners at the start in 2025. Deliveries from Germany are the open question for the wholesale layer (research run, not re-opened)"
+        },
+        {
+          "name": "Top Reifen Team",
+          "model": "Buying group / cooperative",
+          "territories": [],
+          "owner": "15 independent member companies (Seekirchen, Salzburg)",
+          "volume": "90+ branches, focus on fleet and leasing customers; formed in 1998. In 2017 it set up a 50/50 purchasing company with Point S (whether it still operates is not confirmed) (research run, not re-opened)",
+          "flowChannel": "spec"
+        },
+        {
+          "name": "EFR (Einkaufsgesellschaft Freier Reifenfachhändler)",
+          "model": "Buying group / cooperative",
+          "territories": [],
+          "owner": "Germany and Austria",
+          "volume": "More than 260 shareholders with over 300 outlets in Germany and Austria together, no Austria-only split; Austrian members include Reifen Edtmayer, Pongruber and Reifendiskont (research run, not re-opened)",
+          "flowChannel": "spec"
+        },
+        {
+          "name": "Porsche Inter Auto",
+          "model": "Consolidated OEM dealer group",
+          "territories": [
+            "__NATIONWIDE__"
+          ],
+          "owner": "Porsche Holding Salzburg (Volkswagen group)",
+          "volume": "Over 50 dealerships in Austria per its employer profile (jobs.at, checked); the research run found 45 and “over 40 sites” on LinkedIn. Brands include Porsche, Volkswagen, Audi, SEAT, Škoda, Cupra, Bentley and Lamborghini",
+          "flowChannel": "deal"
+        },
+        {
+          "name": "Pappas Group",
+          "model": "Consolidated OEM dealer group",
+          "territories": [],
+          "owner": "Pappas Holding, Salzburg (Mercedes-Benz cars and trucks)",
+          "volume": "21 sales and service sites (research run, not re-opened); an Autohaus item of 22 Jan 2016 gave 33 branches in seven companies (checked, dated)",
+          "flowChannel": "deal"
+        },
+        {
+          "name": "Denzel Group (BMW / MINI)",
+          "model": "Consolidated OEM dealer group",
+          "territories": [],
+          "owner": "Wolfgang Denzel Auto AG (also owns AUTO PLUS Reifen)",
+          "volume": "About 11 BMW/MINI sites among 21 sites across brands (research run, not re-opened). That its dealerships buy tyres through AUTO PLUS is our inference, not published. Named for the colleague's generic “BMW dealer”; please confirm which group was meant",
+          "flowChannel": "deal"
+        },
+        {
+          "name": "Unterberger Group (BMW / MINI)",
+          "model": "Consolidated OEM dealer group",
+          "territories": [
+            "W"
+          ],
+          "owner": "Unterberger Group, Kufstein (Austria and Germany)",
+          "volume": "27 sites in Austria and Germany; revenue €561M in 2025 including real estate and holdings, of which the car division €532M (research run, not re-opened). Named for the colleague's generic “BMW dealer”; please confirm which group was meant",
+          "flowChannel": "deal"
         }
       ],
       "noteBadge": "caution",
-      "note": "Caveat Austria publishes no complete PCR unit total or channel split. The industry figure (4.90M) is ETRMA's own Pool Market Data for Austria, rolling year 2026 (RY2025 5.50M, -11.0%), covering cars, SUV/4x4, vans and light trucks. The 4.95M market is the research's passenger-car estimate (4.5M, range 4.3-4.7M, 2024) widened by an assumed 10% for vans and light trucks. ETRMA is gross pool sell-in and is 0.94M above the pool the research assumed, almost as large as the whole market, so the Export box (1.82M) is the balancing figure of the flow model: about 0.88M is the research's re-export estimate and the rest is that gap, placed there by choice. The earlier $917M header was a commercial value estimate for the whole Austrian tyre market, so it is not comparable with PCR replacement units. Austria's winter-equipment rule (1 November to 15 April) structurally supports high seasonal and all-season fitment volumes. The wholesaler volumes below are the research's passenger-car estimates and have not been rescaled.",
-      "marketAccessNote": "Austria is more concentrated than the previous page suggested. AUTO PLUS Reifen (Denzel Group) is the key tyre importer and wholesale gateway, with more than 2,000 dealer partners and an estimated ~0.6M PCR tyres a year. Tire Network, a Vienna wholesaler founded in 2022, is an emerging second national B2B supplier. At retail, BestDrive by Continental (50+ workshops), Point S (60+ service locations), Lucky Car (60+), Forstinger (69 branches) and Michelin's Euromaster are the main central purchasing entry points. A.T.U exited Austria in February 2024 and Lucky Car took over 24 of its sites, which makes it a materially larger purchasing account than before. Profi Reifen and Reifen John have been rebranded as BestDrive.",
+      "note": "Caveat Austria publishes no complete PCR unit total or channel split. The industry figure (4.90M) is ETRMA's own Pool Market Data for Austria, rolling year 2026 (RY2025 5.50M, -11.0%), covering cars, SUV/4x4, vans and light trucks. The 4.95M market is the research's passenger-car estimate (4.5M, range 4.3-4.7M, 2024) widened by an assumed 10% for vans and light trucks. ETRMA is gross pool sell-in and is 0.94M above the pool the research assumed, almost as large as the whole market, so the Export box (1.82M) is the balancing figure of the flow model: about 0.88M is the research's re-export estimate and the rest is that gap, placed there by choice. The earlier $917M header was a commercial value estimate for the whole Austrian tyre market, so it is not comparable with PCR replacement units. Austria's winter-equipment rule (1 November to 15 April) structurally supports high seasonal and all-season fitment volumes. The AUTO PLUS and Tire Network volumes below are now derived on the consumer scope (see their notes); ARG's is still the research's passenger-car estimate and has not been rescaled. On 26 Oct 2026 the card was extended after feedback from a colleague: Reifen NL, Top Reifen Team, EFR and four car-dealer groups were added, and the AUTO PLUS range was widened. The Wholesale check tab shows what could and could not be verified.",
+      "marketAccessNote": "Austria is more concentrated than the previous page suggested. AUTO PLUS Reifen (Denzel Group) is the key tyre importer and wholesale gateway, with about 2,500 customers by its own account and an estimated 0.6–0.95M consumer tyres a year (derived, wide range). Tire Network, a Vienna wholesaler founded in 2022, is an emerging second national B2B supplier, and Reifen NL (Upper Austria) is a smaller wholesaler with no published size. At retail, three buying groups pool purchases for independent tyre dealers (Point S, Top Reifen Team and EFR), while BestDrive by Continental (50+ workshops), Lucky Car (62 locations), Forstinger (69 branches) and Michelin's Euromaster are chains or franchise networks that buy centrally. Car-dealer groups (Porsche Inter Auto, Pappas, and Denzel and Unterberger for BMW/MINI) are the main route into the dealer channel. A.T.U exited Austria in February 2024 and Lucky Car took over 24 of its sites, which makes it a materially larger purchasing account than before. Profi Reifen and Reifen John have been rebranded as BestDrive.",
       "territoryDefs": [
         {
           "code": "E",
