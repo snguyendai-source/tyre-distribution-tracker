@@ -223,6 +223,13 @@
   .tv-outlets{ display:flex; flex-direction:column; gap:6px; margin-top:6px; }
   .tv-out{ border:1.5px solid #2B5BD9; border-radius:8px; padding:6px 8px; background:#fff; color:#1B2333; font-weight:600; }
   .tv-feeds{ margin-top:8px; font-size:10.5px; color:#2B5BD9; border:1px dashed #2B5BD9; border-radius:6px; padding:3px 6px; }
+  .fv-modes{ display:flex; gap:6px; margin:10px 0 4px; }
+  .fv-modes button{ border:1px solid var(--hairline); background:#fff; border-radius:999px; padding:4px 13px; font-size:12px; font-weight:600; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
+  .fv-modes button.on{ background:var(--teal); border-color:var(--teal); color:#fff; }
+  .fv-wrap .fv-sankey{ display:none; }
+  .fv-wrap[data-mode="sankey"] .fv-sankey{ display:block; }
+  .fv-wrap[data-mode="sankey"] .fv-boxes{ display:none; }
+  .sk-link{ transition:fill-opacity .12s; } .sk-link:hover{ fill-opacity:.55; }
   .tv-note{ font-size:11.5px; color:var(--ink-soft); margin:8px 0 0; line-height:1.5; }
   .tv-legend{ font-size:11px; color:var(--ink-soft); margin-top:6px; }
   .tv-legend .pct{ font-size:10px; padding:1px 8px; margin:0 4px 0 8px; }
@@ -1286,6 +1293,61 @@ function fvWrap(s,max){
   String(s).split(/\s+/).forEach(w=>{ if((cur+' '+w).trim().length>max){ if(cur) lines.push(cur); cur=w; } else cur=(cur+' '+w).trim(); });
   if(cur) lines.push(cur); return lines;
 }
+const SK_COUNTRIES=['France']; // Sankey view of the flow model; other countries follow after approval
+function fvSankeyHtml(c, flow, R, nameOf){
+  const val=R.val, esc=escapeHtml, has=id=>id in val, v=id=>has(id)?val[id]:0;
+  const T=i=>'ch.'+i+'.tot', Wc=i=>'ch.'+i+'.ws', D=i=>'ch.'+i+'.dir';
+  const RED='#C0392B', BLUE='#2B5BD9', SLATE='#4A5A6A', GREY='#9AA3B5', INK='#1B2333';
+  const W=1240, H=640, TOP=84, BOT=30, GAP=14, NW=16, COLX=[34,344,654,984];
+  const chs=flow.channels, N={}, cols=[[],[],[],[]], L=[];
+  const add=(id,col,name,value,color,fid)=>{ N[id]={id,col,name,value,color,fid,out:[],inn:[]}; cols[col].push(N[id]); };
+  add('ind',0,'Industry (ETRMA pool)',v('industry'),'#1B3A8C','industry');
+  add('imp',0,'Wholesale import (non-pool)',v('import'),'#B5701E','import');
+  add('dir',1,'Direct from the manufacturers',v('direct'),BLUE,'direct');
+  add('ws',1,'Wholesale sold in '+c.country,v('wsDom'),RED,'wsDom');
+  chs.forEach(ch=>add('c'+ch.id,2,nameOf(ch),v(T(ch.id)),'#3B4A6B',T(ch.id)));
+  if(v('export')>0) add('exp',2,'Export',v('export'),GREY,'export');
+  const chSum=chs.reduce((a,ch)=>a+v(T(ch.id)),0);
+  add('fin',3,'Final consumers',has('market')?v('market'):chSum,'#2F6F62','market');
+  const link=(a,b,value,color,fid)=>{ if(!(value>0)) return; const l={a:N[a],b:N[b],value,color,fid}; L.push(l); N[a].out.push(l); N[b].inn.push(l); };
+  link('ind','ws',v('toWs'),RED,'toWs'); link('ind','dir',v('direct'),BLUE,'direct'); link('imp','ws',v('import'),RED,'import');
+  chs.forEach(ch=>{ link('ws','c'+ch.id,v(Wc(ch.id)),RED,Wc(ch.id)); link('dir','c'+ch.id,v(D(ch.id)),BLUE,D(ch.id)); link('c'+ch.id,'fin',v(T(ch.id)),SLATE,T(ch.id)); });
+  link('ws','exp',v('export'),GREY,'export');
+  const sum=a=>a.reduce((x,l)=>x+l.value,0);
+  Object.values(N).forEach(n=>{ n.nv=Math.max(n.value,sum(n.inn),sum(n.out),0.0001); });
+  const avail=H-TOP-BOT;
+  const k=Math.min(...cols.map(cl=>(avail-(cl.length-1)*GAP)/cl.reduce((a,n)=>a+n.nv,0)));
+  cols.forEach((cl,ci)=>{
+    const tot=cl.reduce((a,n)=>a+Math.max(3,n.nv*k),0)+(cl.length-1)*GAP; let y=TOP+(avail-tot)/2;
+    cl.forEach(n=>{ n.h=Math.max(3,n.nv*k); n.y=y; n.x=COLX[ci]; y+=n.h+GAP; });
+  });
+  Object.values(N).forEach(n=>{
+    let o=0; n.out.sort((p,q)=>p.b.y-q.b.y).forEach(l=>{ l.th=Math.max(1,l.value*k); l.y0=n.y+o; o+=l.th; });
+    let i=0; n.inn.sort((p,q)=>p.a.y-q.a.y).forEach(l=>{ l.th=Math.max(1,l.value*k); l.y1=n.y+i; i+=l.th; });
+  });
+  let s=`<rect x="0" y="0" width="${W}" height="${H}" fill="#fff"/>`;
+  const heads=[['MANUFACTURERS AND IMPORTERS','who makes the tyres'],['WHOLESALE OR DIRECT','how the tyres reach the channels'],['CHANNELS','where the tyres are sold'],['FINAL CONSUMERS','drivers and fleets']];
+  heads.forEach(([t,sub],i)=>{ const x=COLX[i];
+    s+=`<circle cx="${x+9}" cy="30" r="9" fill="${INK}"/><text x="${x+9}" y="34" text-anchor="middle" style="font-size:11px;font-weight:700;fill:#fff">${i+1}</text>`
+      +`<text x="${x+25}" y="29" style="font-size:9.5px;font-weight:700;letter-spacing:.4px;fill:${INK}">${t}</text><text x="${x+25}" y="42" style="font-size:9.5px;fill:#6B7487">${sub}</text>`; });
+  L.forEach(l=>{
+    const x0=l.a.x+NW, x1=l.b.x, xm=(x0+x1)/2, y0=l.y0, y1=l.y1, t=l.th;
+    s+=`<path class="sk-link fv-tip-t" data-fid="${l.fid}" data-mx="${xm}" data-my="${(y0+y1)/2+t/2}" fill="${l.color}" fill-opacity=".30" d="M${x0} ${y0} C${xm} ${y0} ${xm} ${y1} ${x1} ${y1} L${x1} ${y1+t} C${xm} ${y1+t} ${xm} ${y0+t} ${x0} ${y0+t} Z"/>`;
+  });
+  cols.forEach(cl=>{
+    let lastB=-1e9;
+    cl.forEach(n=>{
+      const lines=fvWrap(n.name,30).slice(0,2), lh=12, hh=lines.length*lh+18;
+      let ty=n.y+n.h/2-hh/2; if(ty<lastB+4) ty=lastB+4; lastB=ty+hh;
+      const w=Math.max(...lines.map(x=>x.length))*6.3+14;
+      s+=`<g class="fv-tip-t" data-fid="${n.fid}"><rect x="${n.x}" y="${n.y}" width="${NW}" height="${n.h}" rx="2" fill="${n.color}"/>`
+        +`<rect x="${n.x+NW+4}" y="${ty}" width="${w}" height="${hh}" rx="4" fill="#fff" fill-opacity=".85"/>`;
+      lines.forEach((t,j)=>{ s+=`<text x="${n.x+NW+10}" y="${ty+13+j*lh}" style="font-size:11px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
+      s+=`<text x="${n.x+NW+10}" y="${ty+13+lines.length*lh+3}" style="font-size:13px;font-weight:700;fill:${INK}">${fvFmt(n.value)}M</text></g>`;
+    });
+  });
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.country)} tyre flow as a Sankey diagram">${s}</svg>`;
+}
 function renderFlowView(c, flow){
   const R=flowSolve(flow), val=R.val, tier=R.tier, esc=escapeHtml;
   const nameOf=ch=>{ const dc=(c.channels||[]).find(x=>x.flowBox===ch.id); return dc?dc.name:ch.name; };
@@ -1414,11 +1476,14 @@ function renderFlowView(c, flow){
   const estNote=hasEst?' Blue dots are benchmark estimates, not published figures; the method is under Sources and notes.':'';
   const chip=(id,lab)=>has(id)?`<span class="fv-chip fv-tip-t" data-fid="${id}">${lab} <b>${fvFmt(val[id])}M</b><span class="fv-dot" style="background:${FV_COL[tier[id]]||'#999'};margin:0"></span></span>`:'';
   const strip=[['market','Replacement market'],['prvAll','Private'],['comAll','Commercial']].map(([id,l])=>chip(id,l)).join('');
+  const sk=SK_COUNTRIES.includes(c.country)?fvSankeyHtml(c,flow,R,nameOf):'';
   const QN=fvQuoteNums(flow,R,LB), walkHtml=fvWalkHtml(c,flow,R,nameOf,QN), basis=fvBasisHtml(c,flow,R,LB,nameOf,QN);
-  return `<div class="fv-wrap" data-fcountry="${esc(c.country)}"><p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels.${vc?' Read the diagram from top to bottom: manufacturers and importers, wholesale, the channels that sell the tyres, and the final consumers who buy them.':''} <b>Hover any box, line or figure to see how that number was reached.</b> The step-by-step walk-through is just below, and a table of every figure with its source quotes sits under the diagram.${seasons}</p>
+  return `<div class="fv-wrap" data-fcountry="${esc(c.country)}" data-mode="boxes"><p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels.${vc?' Read the diagram from top to bottom: manufacturers and importers, wholesale, the channels that sell the tyres, and the final consumers who buy them.':''} <b>Hover any box, line or figure to see how that number was reached.</b> The step-by-step walk-through is just below, and a table of every figure with its source quotes sits under the diagram.${seasons}</p>
     ${strip?`<div class="fv-strip">${strip}</div>`:''}
     ${walkHtml}
-    <div class="fv-scroll"><svg width="${svgW}" height="${H}" viewBox="0 0 ${svgW} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
+    ${sk?`<div class="fv-modes" role="group" aria-label="Diagram style"><button type="button" class="on" data-mode="boxes">Boxes and lines</button><button type="button" data-mode="sankey">Sankey</button></div>`:''}
+    <div class="fv-scroll fv-boxes"><svg width="${svgW}" height="${H}" viewBox="0 0 ${svgW} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
+    ${sk?`<div class="fv-scroll fv-sankey">${sk}<p class="tv-note">Ribbon width shows volume. Red goes through wholesale, blue goes straight from the manufacturers to the channel, grey leaves each channel for the final consumers. Hover a ribbon or a bar to see how that number was reached.</p></div>`:''}
     <p class="tv-note">Dot colour: ${legend}.${estNote} <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
     ${basis.table}${basis.qlist}
     ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}</div>`;
@@ -1684,6 +1749,7 @@ function fvBasisHtml(c,flow,R,L,nameOf,QN){
   return {table,qlist};
 }
 document.addEventListener('click',e=>{
+  const mb=e.target.closest&&e.target.closest('.fv-modes button'); if(mb){ const w=mb.closest('.fv-wrap'); if(w){ w.dataset.mode=mb.dataset.mode; w.querySelectorAll('.fv-modes button').forEach(x=>x.classList.toggle('on',x===mb)); } return; }
   const a=e.target.closest&&e.target.closest('a.fq-ref'); if(!a) return;
   e.preventDefault();
   const wrap=a.closest('.fv-wrap'); if(!wrap) return;
