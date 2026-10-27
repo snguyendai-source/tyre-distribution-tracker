@@ -157,6 +157,7 @@
   .vol-badge .vb-unit{ font-size:10.5px; color:var(--ink-soft); font-weight:600; }
   .vol-badge .vb-where{ font-size:10px; color:var(--ink-soft); }
   .vol-badge .vb-incl{ font-size:10px; font-weight:700; color:#9A3B2E; }
+  .vb-hint{ font-size:8.5px; font-weight:400; font-style:normal; letter-spacing:.2px; color:#B4BBC6; margin-left:6px; white-space:nowrap; }
   .vol-badge .vb-note{ font-size:10px; color:var(--ink-soft); font-style:italic; }
   .model-chip-block.has-est{ background:#fff; border:1px solid var(--hairline); box-shadow:0 1px 2px rgba(22,35,58,.06); padding:7px 11px 8px; min-width:210px; }
   .layer-ws .model-chip-block.has-est{ border-color:#EBDDBF; }
@@ -996,10 +997,11 @@ const EST_BASIS={'Published':'published figure (page opened and checked by us)',
 function estDp(...vs){ return vs.some(v=>v!=null&&(Number(v)<1||Math.abs(Number(v)*10-Math.round(Number(v)*10))>1e-6))?2:1; }
 function estNum(v,dp){ return Number(v).toFixed(dp==null?estDp(v):dp); }
 function estFig(s){ const dp=estDp(s.lo,s.hi); if(s.open) return estNum(s.lo,dp)+'M+'; if(s.lo===s.hi) return '~'+estNum(s.lo,dp)+'M'; return estNum(s.lo,dp)+'–'+estNum(s.hi,dp)+'M'; }
+function estHint(s,lead){ return s&&s.basis?`<span class="vb-hint">${lead?'· ':''}${escapeHtml(String(s.basis).toLowerCase())}</span>`:''; }
 function estBasisLine(s){ const t=EST_BASIS[s.basis]; return t?('Basis: '+t.charAt(0).toUpperCase()+t.slice(1)+'.'):''; }
 function estBadgeHtml(e, withNote){
   const s=e&&e.est; if(!s) return '';
-  const where=[s.scope,s.year].filter(Boolean).map(escapeHtml).join(' · ');
+  const wh=[s.scope,s.year].filter(Boolean).map(escapeHtml).join(' · '), where=wh+estHint(s,!!wh);
   const note=withNote?[estBasisLine(s),s.note].filter(Boolean).map(escapeHtml).join(' '):'';
   return `<span class="vol-badge"><span class="vb-top"><b class="vb-fig">${escapeHtml(estFig(s))}</b><span class="vb-unit">tyres a year</span></span>${where?`<span class="vb-where">${where}</span>`:''}${s.incl?`<span class="vb-incl">Included in ${escapeHtml(s.incl)}: do not add</span>`:''}${note?`<details class="vb-basis"><summary>Basis and sources</summary><span class="chip-scale">${note}</span></details>`:''}</span>`;
 }
@@ -1014,7 +1016,7 @@ function estPanelHtml(c, ents){
     let nm=String(e.name||''); if(s.incl&&nm.includes(s.incl)) nm=nm.replace(/\s*\([^()]*\)\s*$/,'');
     const sub=[s.scope,s.year].filter(Boolean).join(' · ');
     const lo=Math.round(100*s.lo/mx), hh=Math.round(100*hi(e)/mx);
-    return `<div class="ev-row${s.incl?' ev-incl':''}"><div class="ev-nm">${escapeHtml(nm)}<small>${escapeHtml(sub)}${s.incl?` · included in ${escapeHtml(s.incl)}, do not add`:''}</small></div><div class="ev-bar"><span class="ev-hi" style="width:${Math.max(hh,2)}%"></span><span class="ev-lo" style="width:${Math.max(lo,2)}%"></span></div><div class="ev-fig"><b>${escapeHtml(estFig(s))}</b></div></div>`;
+    return `<div class="ev-row${s.incl?' ev-incl':''}"><div class="ev-nm">${escapeHtml(nm)}<small>${escapeHtml(sub)}${s.incl?` · included in ${escapeHtml(s.incl)}, do not add`:''}${estHint(s,!!(sub||s.incl))}</small></div><div class="ev-bar"><span class="ev-hi" style="width:${Math.max(hh,2)}%"></span><span class="ev-lo" style="width:${Math.max(lo,2)}%"></span></div><div class="ev-fig"><b>${escapeHtml(estFig(s))}</b></div></div>`;
   }).join('');
   const ws=rows.filter(e=>isWholesaleModel(e.model)), rt=rows.filter(e=>!isWholesaleModel(e.model));
   return `<div class="ev-panel"><div class="ev-head"><h4>Estimated tyre volume by account</h4><span class="ev-sub">Million tyres a year. Bars show the low end (solid) to the high end (light) of each range.</span></div>
