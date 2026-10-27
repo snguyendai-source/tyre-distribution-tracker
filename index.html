@@ -1377,7 +1377,30 @@ function renderFlowView(c, flow){
       }
     });
   });
-  const H=(flow.groups||[]).length?gy+100:topY+196;
+  let H=(flow.groups||[]).length?gy+100:topY+196, svgW=W;
+  const vc=!(flow.groups||[]).length; // value-chain view: stage labels + final consumers bar
+  if(vc){
+    const GUT=118, FULL=W+GUT, barY=topY+226, barH=48, MID='#4A5A6A';
+    const bands=[[10,88,'#F3F6FC','1',['MANUFACTURERS','AND IMPORTERS'],'who makes the tyres'],[150,112,'#FFF8EA','2',['WHOLESALE'],'importers, distributors'],[322,198,'#F2F7FD','3',['CHANNELS'],'where the tyres are sold'],[barY-18,barH+36,'#EAF4EF','4',['FINAL CONSUMERS'],'drivers and fleets']];
+    let b='';
+    bands.forEach(([y,h,fill,num,t,sub])=>{
+      b+=`<rect x="4" y="${y}" width="${FULL-8}" height="${h}" rx="10" fill="${fill}"/>`;
+      b+=`<circle cx="20" cy="${y+22}" r="9" fill="${INK}"/><text x="20" y="${y+26}" text-anchor="middle" style="font-size:11px;font-weight:700;fill:#fff">${num}</text>`;
+      t.forEach((l,k)=>{ b+=`<text x="36" y="${y+20+k*12}" style="font-size:9.5px;font-weight:700;letter-spacing:.4px;fill:${INK}">${l}</text>`; });
+      b+=`<text x="36" y="${y+22+t.length*12}" style="font-size:9.5px;fill:#6B7487">${sub}</text>`;
+    });
+    [[98,150],[262,322],[520,barY-18]].forEach(([a,z])=>{ const m=(a+z)/2; b+=`<path d="M14 ${m-4} L20 ${m+3} L26 ${m-4}" fill="none" stroke="#9AA3B5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>`; });
+    let arr='';
+    flow.channels.forEach((ch,i)=>{ arr+=`<path d="M${mid(i)} ${topY+172} V${barY-3} M${mid(i)-6} ${barY-10} L${mid(i)} ${barY-2} L${mid(i)+6} ${barY-10}" fill="none" stroke="${MID}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`; });
+    const mv=has('market')?fvFmt(val.market)+'M tyres a year':'—';
+    const bar=`<g class="fv-tip-t" data-fid="market"><rect x="${X0}" y="${barY}" width="${rowW}" height="${barH}" rx="8" fill="#D9EDE4" stroke="#2F6F62" stroke-width="1.4"/>`
+      +`<text x="${X0+18}" y="${barY+21}" style="font-size:13px;font-weight:700;fill:${INK}">Final consumers</text>`
+      +`<text x="${X0+18}" y="${barY+37}" style="font-size:10.5px;fill:#4A5A6A">the drivers and fleets that buy and fit the replacement tyres</text>`
+      +`<text x="${X0+rowW-18}" y="${barY+30}" text-anchor="end" style="font-size:16px;font-weight:700;fill:${INK}">${esc(mv)}</text>`
+      +`<rect x="${X0}" y="${barY}" width="${rowW}" height="${barH}" fill="transparent"/></g>`;
+    s=b+`<g transform="translate(${GUT},0)">`+s+arr+bar+`</g>`;
+    svgW=FULL; H=barY+barH+34;
+  }
   const coreIds=['market','industry','toWs','direct','import','export','wsDom','prvAll','comAll'];
   const allIds=[...coreIds,...flow.channels.flatMap(ch=>[T(ch.id),Wc(ch.id),D(ch.id),P(ch.id),Cm(ch.id)])];
   const missing=allIds.filter(id=>!has(id)).length;
@@ -1392,10 +1415,10 @@ function renderFlowView(c, flow){
   const chip=(id,lab)=>has(id)?`<span class="fv-chip fv-tip-t" data-fid="${id}">${lab} <b>${fvFmt(val[id])}M</b><span class="fv-dot" style="background:${FV_COL[tier[id]]||'#999'};margin:0"></span></span>`:'';
   const strip=[['market','Replacement market'],['prvAll','Private'],['comAll','Commercial']].map(([id,l])=>chip(id,l)).join('');
   const QN=fvQuoteNums(flow,R,LB), walkHtml=fvWalkHtml(c,flow,R,nameOf,QN), basis=fvBasisHtml(c,flow,R,LB,nameOf,QN);
-  return `<div class="fv-wrap" data-fcountry="${esc(c.country)}"><p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels. <b>Hover any box, line or figure to see how that number was reached.</b> The step-by-step walk-through is just below, and a table of every figure with its source quotes sits under the diagram.${seasons}</p>
+  return `<div class="fv-wrap" data-fcountry="${esc(c.country)}"><p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels.${vc?' Read the diagram from top to bottom: manufacturers and importers, wholesale, the channels that sell the tyres, and the final consumers who buy them.':''} <b>Hover any box, line or figure to see how that number was reached.</b> The step-by-step walk-through is just below, and a table of every figure with its source quotes sits under the diagram.${seasons}</p>
     ${strip?`<div class="fv-strip">${strip}</div>`:''}
     ${walkHtml}
-    <div class="fv-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
+    <div class="fv-scroll"><svg width="${svgW}" height="${H}" viewBox="0 0 ${svgW} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
     <p class="tv-note">Dot colour: ${legend}.${estNote} <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
     ${basis.table}${basis.qlist}
     ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}</div>`;
