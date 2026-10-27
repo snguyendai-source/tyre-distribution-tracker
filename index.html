@@ -151,14 +151,13 @@
   .mixlegend{ font-size:10px; color:var(--ink-soft); margin-top:2px; }
   .mixlegend i{ display:inline-block; width:8px; height:8px; border-radius:2px; margin:0 3px 0 8px; vertical-align:middle; }
   /* account volume estimates */
-  .vol-badge{ display:flex; flex-direction:column; gap:2px; margin:6px 0 3px; padding:6px 9px 6px 10px; border-radius:8px; background:#fff; border:1px solid var(--hairline); border-left:5px solid var(--ac,#6B7A99); }
+  .vol-badge{ display:flex; flex-direction:column; gap:2px; margin:6px 0 3px; padding:6px 9px 6px 10px; border-radius:8px; background:#fff; border:1px solid var(--hairline); border-left:5px solid var(--teal); }
   .vol-badge .vb-top{ display:flex; align-items:baseline; flex-wrap:wrap; gap:3px 7px; }
   .vol-badge .vb-fig{ font-family:var(--mono); font-size:19px; font-weight:800; color:var(--ink); line-height:1.1; letter-spacing:-.3px; }
   .vol-badge .vb-unit{ font-size:10.5px; color:var(--ink-soft); font-weight:600; }
   .vol-badge .vb-where{ font-size:10px; color:var(--ink-soft); }
   .vol-badge .vb-incl{ font-size:10px; font-weight:700; color:#9A3B2E; }
   .vol-badge .vb-note{ font-size:10px; color:var(--ink-soft); font-style:italic; }
-  .vb-tag{ display:inline-block; font-size:9px; font-weight:800; letter-spacing:.3px; text-transform:uppercase; padding:1px 7px; border-radius:20px; white-space:nowrap; }
   .model-chip-block.has-est{ background:#fff; border:1px solid var(--hairline); box-shadow:0 1px 2px rgba(22,35,58,.06); padding:7px 11px 8px; min-width:210px; }
   .layer-ws .model-chip-block.has-est{ border-color:#EBDDBF; }
   details.vb-basis{ margin-top:4px; }
@@ -177,14 +176,12 @@
   .ev-nm{ font-size:12.5px; font-weight:700; line-height:1.25; }
   .ev-nm small{ display:block; font-size:10px; font-weight:500; color:var(--ink-soft); }
   .ev-bar{ position:relative; height:14px; background:#F0F2F6; border-radius:7px; overflow:hidden; }
-  .ev-bar .ev-hi{ position:absolute; left:0; top:0; bottom:0; background:var(--ac); opacity:.30; border-radius:7px; }
-  .ev-bar .ev-lo{ position:absolute; left:0; top:0; bottom:0; background:var(--ac); border-radius:7px; }
+  .ev-bar .ev-hi{ position:absolute; left:0; top:0; bottom:0; background:var(--teal); opacity:.28; border-radius:7px; }
+  .ev-bar .ev-lo{ position:absolute; left:0; top:0; bottom:0; background:var(--teal); border-radius:7px; }
   .ev-fig{ display:flex; align-items:center; justify-content:flex-end; gap:7px; font-family:var(--mono); font-size:14px; }
   .ev-fig b{ font-weight:800; }
   .ev-row.ev-incl .ev-nm{ color:var(--ink-soft); font-weight:600; }
   .ev-row.ev-incl .ev-bar{ background:repeating-linear-gradient(45deg,#F0F2F6,#F0F2F6 4px,#E6E9EF 4px,#E6E9EF 8px); }
-  .ev-legend{ display:flex; flex-wrap:wrap; gap:4px 14px; margin-top:10px; font-size:10.5px; color:var(--ink-soft); }
-  .ev-legend .ev-lg{ display:inline-flex; align-items:center; gap:5px; }
   .ev-foot{ margin-top:8px; font-size:10.5px; color:var(--ink-soft); line-height:1.45; }
   @media (max-width:760px){ .ev-row{ grid-template-columns: 1fr; gap:4px; } .ev-fig{ justify-content:flex-start; } .model-chip-block.has-est{ min-width:0; } }
   .lv-more{ margin-top:8px; font-size:11.5px; color:var(--ink-soft); }
@@ -994,18 +991,17 @@ function isBuyingGroupModel(m){ return /buying|cooperative/i.test(m||''); }
 function isMfrOwnedModel(m){ return /manufacturer-owned/i.test(m||''); }
 const TIER_LABEL={Published:'Published',Derived:'Derived',Estimate:'Estimate',Team:'Team input'};
 function tierPill(t){ const col=FV_COL[t]||'#777'; return `<span class="tierb" style="background:${col}1A;color:${col};border-color:${col}66">${escapeHtml(TIER_LABEL[t]||t||'')}</span>`; }
-// ---- account volume estimates (est): highlighted badge + ranked list per country
-const EST_TAG={'Published':['#1F6350','#DCEEE7','#2F6F62'],'Company claim':['#5B3E96','#EDE7F6','#8B6FC4'],'Derived':['#9A5B1E','#FBE6D2','#C9822B'],'Estimate':['#1F4E8C','#E3ECF8','#2B6CB0'],'Team input':['#FFFFFF','#5B3E96','#5B3E96']};
-const EST_TAG_HELP=[['Published','a figure printed on a page we opened'],['Company claim','a company or media figure we did not re-open'],['Derived','worked out from revenue or stock with a stated assumption'],['Estimate','a research estimate, usually low to medium confidence'],['Team input','from your own sales team, not published']];
+// ---- account volume estimates (est): neutral badge + ranked list per country. How firm each figure is stays in the notes ("Basis and sources").
+const EST_BASIS={'Published':'published figure (page opened and checked by us)','Company claim':'company or media figure, page not re-opened','Derived':'derived from revenue or stock with a stated assumption','Estimate':'research estimate','Team input':'input from the sales team, not published'};
 function estDp(...vs){ return vs.some(v=>v!=null&&(Number(v)<1||Math.abs(Number(v)*10-Math.round(Number(v)*10))>1e-6))?2:1; }
 function estNum(v,dp){ return Number(v).toFixed(dp==null?estDp(v):dp); }
 function estFig(s){ const dp=estDp(s.lo,s.hi); if(s.open) return estNum(s.lo,dp)+'M+'; if(s.lo===s.hi) return '~'+estNum(s.lo,dp)+'M'; return estNum(s.lo,dp)+'–'+estNum(s.hi,dp)+'M'; }
-function estTag(b){ const c=EST_TAG[b]||['#3B4863','#EAECF2','#6B7A99']; return `<span class="vb-tag" style="color:${c[0]};background:${c[1]}">${escapeHtml(b)}</span>`; }
+function estBasisLine(s){ const t=EST_BASIS[s.basis]; return t?('Basis: '+t.charAt(0).toUpperCase()+t.slice(1)+'.'):''; }
 function estBadgeHtml(e, withNote){
   const s=e&&e.est; if(!s) return '';
-  const c=EST_TAG[s.basis]||['#3B4863','#EAECF2','#6B7A99'];
   const where=[s.scope,s.year].filter(Boolean).map(escapeHtml).join(' · ');
-  return `<span class="vol-badge" style="--ac:${c[2]}"><span class="vb-top"><b class="vb-fig">${escapeHtml(estFig(s))}</b><span class="vb-unit">tyres a year</span>${estTag(s.basis)}</span>${where?`<span class="vb-where">${where}</span>`:''}${s.incl?`<span class="vb-incl">Included in ${escapeHtml(s.incl)}: do not add</span>`:''}${withNote&&s.note?`<span class="vb-note">${escapeHtml(s.note)}</span>`:''}</span>`;
+  const note=withNote?[estBasisLine(s),s.note].filter(Boolean).map(escapeHtml).join(' '):'';
+  return `<span class="vol-badge"><span class="vb-top"><b class="vb-fig">${escapeHtml(estFig(s))}</b><span class="vb-unit">tyres a year</span></span>${where?`<span class="vb-where">${where}</span>`:''}${s.incl?`<span class="vb-incl">Included in ${escapeHtml(s.incl)}: do not add</span>`:''}${note?`<details class="vb-basis"><summary>Basis and sources</summary><span class="chip-scale">${note}</span></details>`:''}</span>`;
 }
 function estPanelHtml(c, ents){
   const seen=new Set(), rows=[];
@@ -1014,20 +1010,17 @@ function estPanelHtml(c, ents){
   const hi=e=>e.est.open?e.est.lo:e.est.hi, mx=Math.max(...rows.map(hi));
   const sorter=(a,b)=>hi(b)-hi(a)||b.est.lo-a.est.lo;
   const part=(list)=>list.sort(sorter).map(e=>{
-    const s=e.est, col=(EST_TAG[s.basis]||[0,0,'#6B7A99'])[2];
+    const s=e.est;
     let nm=String(e.name||''); if(s.incl&&nm.includes(s.incl)) nm=nm.replace(/\s*\([^()]*\)\s*$/,'');
     const sub=[s.scope,s.year].filter(Boolean).join(' · ');
     const lo=Math.round(100*s.lo/mx), hh=Math.round(100*hi(e)/mx);
-    return `<div class="ev-row${s.incl?' ev-incl':''}"><div class="ev-nm">${escapeHtml(nm)}<small>${escapeHtml(sub)}${s.incl?` · included in ${escapeHtml(s.incl)}, do not add`:''}</small></div><div class="ev-bar" style="--ac:${col}"><span class="ev-hi" style="width:${Math.max(hh,2)}%"></span><span class="ev-lo" style="width:${Math.max(lo,2)}%"></span></div><div class="ev-fig"><b>${escapeHtml(estFig(s))}</b>${estTag(s.basis)}</div></div>`;
+    return `<div class="ev-row${s.incl?' ev-incl':''}"><div class="ev-nm">${escapeHtml(nm)}<small>${escapeHtml(sub)}${s.incl?` · included in ${escapeHtml(s.incl)}, do not add`:''}</small></div><div class="ev-bar"><span class="ev-hi" style="width:${Math.max(hh,2)}%"></span><span class="ev-lo" style="width:${Math.max(lo,2)}%"></span></div><div class="ev-fig"><b>${escapeHtml(estFig(s))}</b></div></div>`;
   }).join('');
   const ws=rows.filter(e=>isWholesaleModel(e.model)), rt=rows.filter(e=>!isWholesaleModel(e.model));
-  const used=new Set(rows.map(e=>e.est.basis));
-  const legend=EST_TAG_HELP.filter(([k])=>used.has(k)).map(([k,t])=>`<span class="ev-lg">${estTag(k)} ${escapeHtml(t)}</span>`).join('');
-  return `<div class="ev-panel"><div class="ev-head"><h4>Estimated tyre volume by account</h4><span class="ev-sub">Million tyres a year, as stated on each account's card below. Bars show the low end (solid) to the high end (light) of the range.</span></div>
+  return `<div class="ev-panel"><div class="ev-head"><h4>Estimated tyre volume by account</h4><span class="ev-sub">Million tyres a year. Bars show the low end (solid) to the high end (light) of each range.</span></div>
     ${ws.length?`<div class="ev-cap">Wholesalers and distributors</div>${part(ws)}`:''}
     ${rt.length?`<div class="ev-cap">Chains, networks, dealers and online</div>${part(rt)}`:''}
-    <div class="ev-legend">${legend}</div>
-    <div class="ev-foot">Wholesalers also sell to the chains listed, and the scope differs between rows (see the grey line under each name), so these figures are not additive and are best read as a ranking. How each figure was built is on the account's card under “Basis and sources”.</div></div>`;
+    <div class="ev-foot">Wholesalers also sell to the chains listed, and the scope differs between rows (see the grey line under each name), so the figures are not additive and are best read as a ranking. How each figure was built is under “Basis and sources” on the account's card below.</div></div>`;
 }
 function entChip(e, rank){
   const rk=rank?`<span class="chip-rank">#${rank}</span>`:'';
@@ -1035,7 +1028,8 @@ function entChip(e, rank){
   const bg=e.buyingGroup?`<span class="chip-buying-group">🔗 ${escapeHtml(e.buyingGroup)}</span>`:'';
   if(e.est){
     const det=[e.volume,e.scale&&e.scale.label].filter(Boolean).map(escapeHtml);
-    const basis=(det.length||e.est.note)?`<details class="vb-basis"><summary>Basis and sources</summary>${e.est.note?`<span class="chip-scale"><b>Note:</b> ${escapeHtml(e.est.note)}</span>`:''}${det.map(x=>`<span class="chip-scale">${x}</span>`).join('')}</details>`:'';
+    const bl=estBasisLine(e.est);
+    const basis=`<details class="vb-basis"><summary>Basis and sources</summary>${bl?`<span class="chip-scale"><b>${escapeHtml(bl)}</b>${e.est.note?' '+escapeHtml(e.est.note):''}</span>`:(e.est.note?`<span class="chip-scale">${escapeHtml(e.est.note)}</span>`:'')}${det.map(x=>`<span class="chip-scale">${x}</span>`).join('')}</details>`;
     return `<span class="${cls} has-est"><span class="chip-name">${rk}${escapeHtml(e.name)}</span><span class="chip-model">${escapeHtml(e.model||'')}</span>${estBadgeHtml(e)}${e.owner?`<span class="chip-scale">${escapeHtml(e.owner)}</span>`:''}${basis}${bg}</span>`;
   }
   const sub=[e.owner,e.volume].filter(Boolean).map(escapeHtml).join(' · ');
