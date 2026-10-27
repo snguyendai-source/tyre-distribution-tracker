@@ -25,6 +25,14 @@
                 "value": 490,
                 "metric": "EUR M revenue 2022",
                 "label": "2022 revenue about EUR 490M (firm's own data, Neue Reifenzeitung 8/2024); about 5.8M tyres of all types at an assumed EUR 85 a tyre (research conversion). Wholesale check (Oct 2026): a second source (DDW, via the research run) shows revenue of €256M, which would give 2.6–4.3M tyres; not resolved."
+              },
+              "est": {
+                "lo": 5.8,
+                "hi": 5.8,
+                "basis": "Derived",
+                "scope": "all tyre types",
+                "year": "2022",
+                "note": "From revenue of about €490M at an assumed €85 a tyre. A second source shows €256M, which would give 2.6–4.3M."
               }
             },
             {
@@ -39,6 +47,14 @@
                 "value": 286,
                 "metric": "EUR M revenue 2022",
                 "label": "2022 wholesale revenue EUR 286M; group EUR 508M (Neue Reifenzeitung 8/2024); about 6M tyres of all types in 2022 (auto.news, via the research, not checked). Wholesale check (Oct 2026): the research run put 2022 revenue near €600M against the €508M for the group above; not resolved."
+              },
+              "est": {
+                "lo": 6.0,
+                "hi": 6.0,
+                "basis": "Company claim",
+                "scope": "all tyre types",
+                "year": "2022",
+                "note": "Media figure (auto.news, via the research), not checked."
               }
             },
             {
@@ -94,6 +110,13 @@
                 "value": 450,
                 "metric": "locations",
                 "label": "over 450 locations including franchise partners and revenue about EUR 330M (Vergölst press release, 2024). Estimate 1.4-2.2M tyres from revenue (research). Volume is a research estimate, low confidence."
+              },
+              "est": {
+                "lo": 1.4,
+                "hi": 2.2,
+                "basis": "Derived",
+                "scope": "tyres, from revenue",
+                "note": "From revenue of about €330M; low confidence."
               }
             },
             {
@@ -108,6 +131,13 @@
                 "value": 70,
                 "metric": "outlets",
                 "label": "70 outlets (research, not checked). Volume is a research estimate (outlets times an assumed throughput), low confidence."
+              },
+              "est": {
+                "lo": 0.4,
+                "hi": 0.4,
+                "basis": "Estimate",
+                "scope": "tyres",
+                "note": "Outlets times an assumed throughput; low confidence."
               }
             },
             {
@@ -122,6 +152,13 @@
                 "value": 400,
                 "metric": "locations",
                 "label": "about 400 own and franchise locations (Euromaster press release, Dec 2024), 200 of them franchise (Aug 2026); revenue EUR 316.3M in 2023 (research, not checked). Estimate 1.0-1.8M tyres, strong truck and fleet mix (research). Volume is a research estimate, low confidence."
+              },
+              "est": {
+                "lo": 1.0,
+                "hi": 1.8,
+                "basis": "Estimate",
+                "scope": "tyres, strong truck and fleet mix",
+                "note": "Low confidence."
               }
             },
             {
@@ -217,7 +254,14 @@
               "model": "Manufacturer-owned franchise (Bridgestone)",
               "territories": [
                 "__NATIONWIDE__"
-              ]
+              ],
+              "est": {
+                "lo": 0.3,
+                "hi": 0.3,
+                "basis": "Estimate",
+                "scope": "tyres",
+                "note": "Outlets times an assumed throughput; low confidence."
+              }
             },
             {
               "name": "Reifen Burkhardt (Goodyear)",
@@ -334,6 +378,13 @@
                 "value": 530,
                 "metric": "branches",
                 "label": "~530 branches (A.T.U., Nov 2025); revenue about EUR 1bn across all activities (research, not checked); BRV may count part of it under workshops"
+              },
+              "est": {
+                "lo": 1.0,
+                "hi": 2.5,
+                "basis": "Estimate",
+                "scope": "tyres",
+                "note": "Revenue about €1bn across all activities; BRV may count part of it under workshops."
               }
             }
           ],
@@ -444,6 +495,14 @@
                 "value": 600,
                 "metric": "M EUR group revenue 2024",
                 "label": "group revenue about EUR 600M in 2024 incl. parts (+20%; research, not checked); J2R (Jan 2024, checked) reported 5.5M tyres and EUR 480M revenue for 2022 and 27 locations; est. 4-5M tyres (research); direct from manufacturers plus exclusive Asian brands (Sailun, Rovelo, Tracmax, Evergreen, Westlake, Roadking) and CEAT. Wholesale check (Oct 2026): the 5.5M tyres for 2022 was re-checked in J2R, 15 Jul 2023. Later figures from the research run, not re-opened: 6.5M tyres and €573M (Zepros), or 6M and €625M including €90M of parts; an older Auto Infos item said 3.5M, about 10% share."
+              },
+              "est": {
+                "lo": 5.5,
+                "hi": 5.5,
+                "basis": "Published",
+                "scope": "all tyre types",
+                "year": "2022",
+                "note": "J2R, checked. Later figures of 6.0–6.5M were not re-opened."
               }
             },
             {
@@ -498,7 +557,15 @@
               "model": "Wholesaler / distributor",
               "territories": [
                 "__NATIONWIDE__"
-              ]
+              ],
+              "est": {
+                "lo": 0.8,
+                "hi": 0.8,
+                "basis": "Company claim",
+                "scope": "tyres, in 6 countries",
+                "year": "2024",
+                "note": "Research, not checked."
+              }
             },
             {
               "name": "Alzura Tyres (ex-Tyre24)",
@@ -531,7 +598,14 @@
                 "metric": "branches",
                 "label": "~480-500 centres; over 1M tyres and a 4.5% share in 2016, EUR 281M revenue in 2018 (research, not checked); est. 1.0-1.2M passenger-car tyres (research estimate, medium-low confidence)"
               },
-              "buyingGroup": "Eurofleet (with First Stop & Côté Route) — Bridgestone B2B fleet accounts"
+              "buyingGroup": "Eurofleet (with First Stop & Côté Route) — Bridgestone B2B fleet accounts",
+              "est": {
+                "lo": 1.0,
+                "hi": 1.2,
+                "basis": "Estimate",
+                "scope": "passenger-car tyres",
+                "note": "Medium-low confidence."
+              }
             },
             {
               "name": "Norauto",
@@ -545,6 +619,13 @@
                 "value": 410,
                 "metric": "branches",
                 "label": "410 French centres; Mobivia has about 2,000 sites and EUR 4bn of activity (research, not checked); est. 2.0-2.4M passenger-car tyres, scaled to the channel (research estimate, low confidence)"
+              },
+              "est": {
+                "lo": 2.0,
+                "hi": 2.4,
+                "basis": "Estimate",
+                "scope": "passenger-car tyres",
+                "note": "Low confidence."
               }
             },
             {
@@ -559,6 +640,13 @@
                 "value": 360,
                 "metric": "branches",
                 "label": "~350-370 French centres, maintenance-led; Mobivia's since 2004 (research, not checked). Mavis's 2025 purchase of Midas covers the US and Canada only (checked). Est. 0.4-0.6M tyres (low confidence)"
+              },
+              "est": {
+                "lo": 0.4,
+                "hi": 0.6,
+                "basis": "Estimate",
+                "scope": "tyres",
+                "note": "Low confidence."
               }
             },
             {
@@ -574,7 +662,14 @@
                 "metric": "branches",
                 "label": "350 French centres, 167 owned and 183 franchised (research, not checked); Bassac bought 100% of the holding company from Alpha Private Equity on 24 Feb 2026 (checked); group revenue EUR 663M for the year to Sep 2025 (checked), EUR 935M under the banner (research); est. 1.4-1.8M tyres (low confidence); FleetPartner member for leasing"
               },
-              "buyingGroup": "FleetPartner (leasing only, with BestDrive, Eurotyre and Siligom)"
+              "buyingGroup": "FleetPartner (leasing only, with BestDrive, Eurotyre and Siligom)",
+              "est": {
+                "lo": 1.4,
+                "hi": 1.8,
+                "basis": "Estimate",
+                "scope": "tyres",
+                "note": "Low confidence."
+              }
             },
             {
               "name": "Roady",
@@ -589,7 +684,14 @@
                 "metric": "branches",
                 "label": "~230 centres, franchise extension since 2025 (ITM Mobilité); not verified by the research; est. 0.5-0.8M tyres (low confidence)"
               },
-              "buyingGroup": "PRODY (with Profil+) — created 2018"
+              "buyingGroup": "PRODY (with Profil+) — created 2018",
+              "est": {
+                "lo": 0.5,
+                "hi": 0.8,
+                "basis": "Estimate",
+                "scope": "tyres",
+                "note": "Low confidence."
+              }
             },
             {
               "name": "L'Auto E.Leclerc",
@@ -601,7 +703,14 @@
                 "metric": "branches",
                 "label": "~250 centres in the hypermarket auto departments; not verified by the research; est. 0.8-1.2M tyres (low confidence)"
               },
-              "territories": []
+              "territories": [],
+              "est": {
+                "lo": 0.8,
+                "hi": 1.2,
+                "basis": "Estimate",
+                "scope": "tyres",
+                "note": "Low confidence."
+              }
             },
             {
               "name": "Rapid Pare-Brise",
@@ -700,7 +809,14 @@
                 "metric": "branches",
                 "label": "660 French centres; est. 1.2-1.5M passenger-car tyres, about 65 / 35 private versus commercial (Viasso fleets such as EDF and Enedis; research estimate, low confidence)"
               },
-              "buyingGroup": "Viasso (Point S only since 1 Jan 2024, plus OuiGlass for glass; research, not checked)"
+              "buyingGroup": "Viasso (Point S only since 1 Jan 2024, plus OuiGlass for glass; research, not checked)",
+              "est": {
+                "lo": 1.2,
+                "hi": 1.5,
+                "basis": "Estimate",
+                "scope": "passenger-car tyres",
+                "note": "Low confidence."
+              }
             },
             {
               "name": "Euromaster",
@@ -714,6 +830,13 @@
                 "value": 485,
                 "metric": "branches",
                 "label": "485 centres (235 franchised) plus 1,100 mobile units (research, 2026); ac-franchise (Aug 2026, checked) says more than 470 centres, 222 franchised, 250 targeted by 2027; revenue EUR 632.4M in 2024, net -EUR 2.1M (research, not checked); est. 1.4-1.7M passenger-car tyres, about 40 / 60 private versus commercial, fleet and leasing heavy (low confidence)"
+              },
+              "est": {
+                "lo": 1.4,
+                "hi": 1.7,
+                "basis": "Estimate",
+                "scope": "passenger-car tyres",
+                "note": "Low confidence."
               }
             },
             {
@@ -729,7 +852,14 @@
                 "metric": "branches",
                 "label": "~330-350+ centres; over 1M tourisme tyres and EUR 300M revenue in 2018 (research, not checked); est. 0.9-1.1M passenger-car tyres, about 60 / 40 private versus commercial (low confidence)"
               },
-              "buyingGroup": "Eurofleet (with Speedy & Côté Route) — Bridgestone B2B fleet accounts"
+              "buyingGroup": "Eurofleet (with Speedy & Côté Route) — Bridgestone B2B fleet accounts",
+              "est": {
+                "lo": 0.9,
+                "hi": 1.1,
+                "basis": "Estimate",
+                "scope": "passenger-car tyres",
+                "note": "Low confidence."
+              }
             },
             {
               "name": "Profil Plus",
@@ -742,7 +872,14 @@
                 "metric": "branches",
                 "label": "~500 centres, cooperative members; not verified by the research; est. 0.5-0.7M tyres (low confidence)"
               },
-              "buyingGroup": "PRODY (with Roady/Rapid Pare-Brise, ITM Mobilité) — created 2018"
+              "buyingGroup": "PRODY (with Roady/Rapid Pare-Brise, ITM Mobilité) — created 2018",
+              "est": {
+                "lo": 0.5,
+                "hi": 0.7,
+                "basis": "Estimate",
+                "scope": "tyres",
+                "note": "Low confidence."
+              }
             },
             {
               "name": "Siligom",
@@ -757,7 +894,14 @@
                 "metric": "branches",
                 "label": "over 200 centres (checked); about 0.8M tyres of all types and about EUR 165M revenue (undated, research); est. about 0.5M passenger-car tyres (low confidence); left the Eurogom and Viasso structures"
               },
-              "buyingGroup": "FleetPartner (joined 1 Jan 2024, checked; with BestDrive, Eurotyre and Feu Vert)"
+              "buyingGroup": "FleetPartner (joined 1 Jan 2024, checked; with BestDrive, Eurotyre and Feu Vert)",
+              "est": {
+                "lo": 0.5,
+                "hi": 0.5,
+                "basis": "Estimate",
+                "scope": "passenger-car tyres",
+                "note": "Low confidence."
+              }
             },
             {
               "name": "Eurotyre",
@@ -772,7 +916,14 @@
                 "metric": "branches",
                 "label": "over 230 centres; Continental-led (research, not checked); est. about 0.5M passenger-car tyres (low confidence)"
               },
-              "buyingGroup": "FleetPartner (with BestDrive, Feu Vert for leasing and Siligom)"
+              "buyingGroup": "FleetPartner (with BestDrive, Feu Vert for leasing and Siligom)",
+              "est": {
+                "lo": 0.5,
+                "hi": 0.5,
+                "basis": "Estimate",
+                "scope": "passenger-car tyres",
+                "note": "Low confidence."
+              }
             },
             {
               "name": "BestDrive",
@@ -787,7 +938,14 @@
                 "metric": "branches",
                 "label": "~210 centres; 130 company-owned centres were sold to ASC and the network is now 100% franchise (research, not checked); est. 0.4-0.5M passenger-car tyres, B2B-oriented (low confidence)"
               },
-              "buyingGroup": "FleetPartner (with Eurotyre, Feu Vert for leasing and Siligom)"
+              "buyingGroup": "FleetPartner (with Eurotyre, Feu Vert for leasing and Siligom)",
+              "est": {
+                "lo": 0.4,
+                "hi": 0.5,
+                "basis": "Estimate",
+                "scope": "passenger-car tyres",
+                "note": "Low confidence."
+              }
             },
             {
               "name": "Côté Route",
@@ -800,7 +958,14 @@
                 "label": "~83-100 centres, PL and fleet specialist; EUR 150M revenue in 2018 and 0.5M TC4 tyres (research, not checked); est. about 0.35M passenger-car tyres (low confidence)"
               },
               "buyingGroup": "Eurofleet (with First Stop & Speedy) — Bridgestone B2B fleet accounts",
-              "territories": []
+              "territories": [],
+              "est": {
+                "lo": 0.35,
+                "hi": 0.35,
+                "basis": "Estimate",
+                "scope": "passenger-car tyres",
+                "note": "Low confidence."
+              }
             },
             {
               "name": "Vulco",
@@ -815,7 +980,14 @@
                 "metric": "branches",
                 "label": "~250 centres, about 95% franchise; not verified by the research; est. 0.3-0.4M tyres (low confidence)"
               },
-              "buyingGroup": "Commercial partnership with Profil+ (not a shared buying group)"
+              "buyingGroup": "Commercial partnership with Profil+ (not a shared buying group)",
+              "est": {
+                "lo": 0.3,
+                "hi": 0.4,
+                "basis": "Estimate",
+                "scope": "tyres",
+                "note": "Low confidence."
+              }
             },
             {
               "name": "4Fleet",
@@ -846,6 +1018,13 @@
                 "value": 3.1,
                 "metric": "est. M passenger-car tyres",
                 "label": "owned 100% by Michelin since 2021 (Auto Infos, checked); 3.4M tyres of all types, EUR 307M revenue in 2024 and 'près de 10%' of replacement (research, not checked); est. 3.0-3.2M passenger-car tyres, about 93 / 7 private versus commercial; direct from manufacturers"
+              },
+              "est": {
+                "lo": 3.0,
+                "hi": 3.2,
+                "basis": "Estimate",
+                "scope": "passenger-car tyres",
+                "note": "The research also gives 3.4M tyres of all types for 2024."
               }
             },
             {
@@ -860,6 +1039,13 @@
                 "value": 1200,
                 "metric": "partner garages",
                 "label": "about 1,200 partner garages incl. First Stop (about 100) and Euromaster; 0.8M tyres in 6 countries in 2024 (research, not checked); est. 0.5-0.6M tyres in France (medium-low confidence); sourced via Massa wholesale. The earlier 'Pneuwyz' entry could not be verified and is replaced"
+              },
+              "est": {
+                "lo": 0.5,
+                "hi": 0.6,
+                "basis": "Estimate",
+                "scope": "tyres, in France",
+                "note": "Medium-low confidence."
               }
             },
             {
@@ -1032,7 +1218,15 @@
             "metric": "M tyres a year handled (all types)",
             "label": "handles 6.5M tyres a year (Fleet News, iQ issue June 2026, checked); its own 184 Protyre centres fit 1.35M of these, so about 5.2M go to other trade customers; 1,600 independent partners, 80% of that business with 250 'tier one' operators; owned by Sumitomo Rubber Industries (Dunlop) since 2017. Earlier note: about 6M a year and 6,000+ retailers (older company wording, not re-checked)"
           },
-          "owner": "Sumitomo Rubber Industries (since 2017)"
+          "owner": "Sumitomo Rubber Industries (since 2017)",
+          "est": {
+            "lo": 6.5,
+            "hi": 6.5,
+            "basis": "Published",
+            "scope": "all tyre types, handled",
+            "year": "2026",
+            "note": "Fleet News, checked. About 1.35M of this is fitted in its own Protyre centres."
+          }
         },
         {
           "name": "Bond International",
@@ -1045,7 +1239,15 @@
             "metric": "est. M tyres a year (derived, range 5–8M)",
             "label": "derived 5–8M tyres a year, all types: 2024 turnover £417M (Supply Chain World, 28 Aug 2025, checked) and 'one tyre every six seconds' on its own website, about 5.3M a year (Tyrepress directory, checked). A research-run claim of 16.8M tyres handled is not supported by either page. 11 distribution centres on its website, five in the 2025 interview"
           },
-          "owner": "Independent family company (management buyout 2019)"
+          "owner": "Independent family company (management buyout 2019)",
+          "est": {
+            "lo": 5.0,
+            "hi": 8.0,
+            "basis": "Derived",
+            "scope": "all tyre types",
+            "year": "2024",
+            "note": "From turnover of £417M and “one tyre every six seconds”. A 16.8M claim is not supported."
+          }
         },
         {
           "name": "Stapleton's (Tyre Services)",
@@ -1120,6 +1322,14 @@
             "value": 3.9,
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: est. 3.5-4.3M tyres a year (research range for passenger cars 2.9-3.6M, scaled by 1.2); about 60% of the wholesale node of about 6.4M (research estimate, medium-low confidence). Based on EW Top 500 revenue of EUR 1.93bn, mostly exports and other EU countries (not checked). Operating companies per the ACM: Inter-Sprint, Van den Ban, Tyreteam, Banden Express, Reedijk, Inter Tyre Holland, Wheel Tyre; owns PBG since 2021. Wholesale check (Oct 2026): the domestic figure cannot be tested from company revenue, which is mostly export; see the Wholesale check tab."
+          },
+          "est": {
+            "lo": 3.5,
+            "hi": 4.3,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026",
+            "note": "Parent of Inter-Sprint, Van den Ban, Banden Express and PBG. About 60% of the Dutch wholesale node."
           }
         },
         {
@@ -1132,6 +1342,15 @@
             "value": 1.32,
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: est. 1.1-1.6M tyres a year (research range for passenger cars 0.9-1.3M, scaled by 1.2), domestic, including volume sold on to LKQ Fource (research estimate, low confidence); hundreds of containers a month go abroad. Wholesale check (Oct 2026): company revenue is mostly export, so it cannot test the domestic figure. Inter-Sprint revenue €947M in FY2023/24, all types (Trends, via the research run, not re-opened); about 2.8M tyres in its warehouse (Tyrepress, 24 Oct 2022, checked)."
+          },
+          "est": {
+            "lo": 1.1,
+            "hi": 1.6,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026",
+            "note": "Domestic; includes volume sold on to LKQ Fource.",
+            "incl": "Global Automotive Investments Holding"
           }
         },
         {
@@ -1144,6 +1363,15 @@
             "value": 0.66,
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: est. 0.48-0.84M tyres a year (research range for passenger cars 0.4-0.7M, scaled by 1.2), domestic, mostly an export business (research estimate, low confidence); 139 employees per Tracxn, July 2026 (not checked)"
+          },
+          "est": {
+            "lo": 0.48,
+            "hi": 0.84,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026",
+            "note": "Mostly an export business.",
+            "incl": "Global Automotive Investments Holding"
           }
         },
         {
@@ -1156,6 +1384,15 @@
             "value": 1.38,
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: est. 1.2-1.6M tyres a year (research range for passenger cars 1.0-1.3M, scaled by 1.2), including Reedijk (research estimate, medium-low confidence); 12 depots, 3 deliveries a day, 100+ vans, dealers and garages only"
+          },
+          "est": {
+            "lo": 1.2,
+            "hi": 1.6,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026",
+            "note": "Includes Reedijk.",
+            "incl": "Global Automotive Investments Holding"
           }
         },
         {
@@ -1168,6 +1405,14 @@
             "value": 0.48,
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: est. 0.36-0.60M tyres a year (research range for passenger cars 0.3-0.5M, scaled by 1.2) (research estimate, low confidence); PBG (Pon Banden Groep) was bought in 2021; focused on the dealer market since 2021"
+          },
+          "est": {
+            "lo": 0.36,
+            "hi": 0.6,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026",
+            "incl": "Global Automotive Investments Holding"
           }
         },
         {
@@ -1181,6 +1426,15 @@
             "value": 0.48,
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: est. 0.36-0.60M tyres a year (research range for passenger cars 0.3-0.5M, scaled by 1.2), pass-through: inside Global Automotive (mostly supplied by Inter-Sprint), so do not add to it (research estimate, low confidence)"
+          },
+          "est": {
+            "lo": 0.36,
+            "hi": 0.6,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026",
+            "note": "Pass-through, mostly supplied by Inter-Sprint; do not add.",
+            "incl": "Global Automotive Investments Holding"
           }
         },
         {
@@ -1194,6 +1448,14 @@
             "value": 0.24,
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: est. 0.12-0.36M tyres a year (research range for passenger cars 0.1-0.3M, scaled by 1.2), largely Tyfoon private label bought through import (research estimate, low confidence); second-tier wholesaler"
+          },
+          "est": {
+            "lo": 0.12,
+            "hi": 0.36,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026",
+            "note": "Second-tier wholesaler, largely Tyfoon private label."
           }
         },
         {
@@ -1208,7 +1470,14 @@
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: 165 outlets on kwik-fit.nl; Autointernationaal (6 Sept 2026) says 160 today and BNR (7 Sept 2026) has director Paul Traas planning growth by almost 10% to 175 (checked). est. 0.84-1.2M tyres a year (research range for passenger cars 0.7-1.0M, scaled by 1.2), mostly bought direct (research estimate, medium confidence)"
           },
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "est": {
+            "lo": 0.84,
+            "hi": 1.2,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026"
+          }
         },
         {
           "name": "Profile Tyrecenter (Dutch-origin multi-brand network)",
@@ -1222,7 +1491,15 @@
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: about 170 outlets in the Netherlands (a Folderz list shows 176); 'more than 200 outlets in Belgium and the Netherlands' including truck sites (research, not checked). est. 0.54-0.90M tyres a year (research range for passenger cars 0.45-0.75M, scaled by 1.2), counting Distri24 and Heuver's Profile outlets (research estimate, low-medium confidence)"
           },
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "est": {
+            "lo": 0.54,
+            "hi": 0.9,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026",
+            "note": "Counts Distri24 and Heuver’s Profile outlets."
+          }
         },
         {
           "name": "Euromaster Nederland (Michelin)",
@@ -1235,7 +1512,15 @@
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: 80 own plus 26 partner locations (March 2025) and about 120,000 lease wheel swaps a year (research, not checked); est. 0.42-0.72M tyres a year (research range for passenger cars 0.35-0.6M, scaled by 1.2), about 65% commercial, bought direct from Michelin and A-brands (research estimate, medium-low confidence)"
           },
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "est": {
+            "lo": 0.42,
+            "hi": 0.72,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026",
+            "note": "About 65% commercial."
+          }
         },
         {
           "name": "Bosch Car Service Nederland",
@@ -1248,7 +1533,14 @@
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: about 400-415 independent workshops (research, not checked; the earlier card said over 425); est. 0.36-0.60M tyres a year (research range for passenger cars 0.3-0.5M, scaled by 1.2) at about 750 tyres a workshop for cars (research estimate, low confidence)"
           },
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "est": {
+            "lo": 0.36,
+            "hi": 0.6,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026"
+          }
         },
         {
           "name": "Autobandenpartner garages (LKQ Fource)",
@@ -1261,7 +1553,16 @@
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: 400+ garages (research, not checked); est. 0.30-0.54M tyres a year (research range for passenger cars 0.25-0.45M, scaled by 1.2) of fitted volume, the same tyres as Fource's sell-in, so not additive; may overlap Bosch Car Service (research estimate, low confidence)"
           },
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "est": {
+            "lo": 0.3,
+            "hi": 0.54,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026",
+            "note": "Same tyres as Fource’s sell-in; do not add.",
+            "incl": "LKQ Fource"
+          }
         },
         {
           "name": "AutoCrew (Bosch-supplied)",
@@ -1274,7 +1575,15 @@
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: outlet count not verified; est. 0.06-0.18M tyres a year (research range for passenger cars 0.05-0.15M, scaled by 1.2) (research estimate, very low confidence)"
           },
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "est": {
+            "lo": 0.06,
+            "hi": 0.18,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026",
+            "note": "Very low confidence."
+          }
         },
         {
           "name": "Distri24 (Profile)",
@@ -1304,7 +1613,15 @@
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: Delticom Netherlands: autobandenmarkt.nl, banden-giga.nl, bandenprijzen24.nl and probanden.nl together (shop list from the research, not checked; the research says ReifenDirekt.nl is not the Dutch shop). est. 0.18-0.36M tyres a year (research range for passenger cars 0.15-0.3M, scaled by 1.2), part of which may sit in the foreign-webshop layer (research estimate, low confidence). Delticom group revenue EUR 484M and GMV EUR 601M in 2025 (annual report, checked); the Netherlands is not disclosed"
           },
-          "flowChannel": "onl"
+          "flowChannel": "onl",
+          "est": {
+            "lo": 0.18,
+            "hi": 0.36,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026",
+            "note": "Delticom Netherlands’ four shops together."
+          }
         },
         {
           "name": "Banden-giga.nl, Bandenprijzen24.nl, Probanden.nl (Delticom)",
@@ -1326,7 +1643,14 @@
             "metric": "est. M tyres a year (cars, vans, 4x4)",
             "label": "2026 basis, cars, vans and 4x4: claims to be the largest online car-tyre supplier in the Netherlands, with fitting at 2,000+ partner garages; all-season 62.4% of its sales (research, not checked). est. 0.18-0.36M tyres a year (research range for passenger cars 0.15-0.3M, scaled by 1.2) (research estimate, low confidence)"
           },
-          "flowChannel": "onl"
+          "flowChannel": "onl",
+          "est": {
+            "lo": 0.18,
+            "hi": 0.36,
+            "basis": "Estimate",
+            "scope": "cars, vans, 4x4",
+            "year": "2026"
+          }
         }
       ],
       "noteBadge": "caution",
@@ -1400,6 +1724,13 @@
             "value": 2,
             "metric": "M+ tyres in stock",
             "label": "2M+ tyres in stock, sells to 64 countries. Wholesale check (Oct 2026), research run, not re-opened: revenue €506M (2024) and €530M (2025); “net geen 8 miljoen autobanden” a year; Belgium is about 8% of revenue (€30M of €386M in 2021), so about 0.4–0.7M tyres a year domestically."
+          },
+          "est": {
+            "lo": 0.4,
+            "hi": 0.7,
+            "basis": "Derived",
+            "scope": "domestic, all tyre types",
+            "note": "Belgium is about 8% of its revenue; research run, not re-opened."
           }
         },
         {
@@ -1434,7 +1765,15 @@
             "metric": "M EUR group revenue, 2024",
             "label": "Grupo Soledad EUR 409M consolidated in 2024 (+1.6%), Neumáticos Soledad SL EUR 355.96M (Alicante Plaza, checked); includes retail, truck and exports; units not published, est. 3.5-4.0M tyres of all types (research estimate); operates in Spain, Portugal, France and Morocco; owns Confortauto. Wholesale check (Oct 2026): Grupo Soledad €409M in 2024 re-checked (Alicante Plaza, 10 Jan 2026); national revenue €323.92M (2024) and €341.85M (2025) per the research run, not re-opened."
           },
-          "owner": "Independent"
+          "owner": "Independent",
+          "est": {
+            "lo": 3.5,
+            "hi": 4.0,
+            "basis": "Estimate",
+            "scope": "all tyre types",
+            "year": "2024",
+            "note": "From group revenue of €409M; includes retail, truck and exports."
+          }
         },
         {
           "name": "Grupo Andrés",
@@ -1446,6 +1785,14 @@
             "value": 385,
             "metric": "M EUR group revenue, 2024",
             "label": "Group EUR 385M in 2024 (+11.5%), tyre division about EUR 360M; about 4.0M tyres of all types in 2023 (Tyrepress, 27 Jun 2024: “In 2023, the company sold 4 million tyres”; checked); largest pure independent distributor; 5 warehouses, more than 1M tyres in stock, 57 countries; exclusive Anlas, Rebel, Kingstar"
+          },
+          "est": {
+            "lo": 4.0,
+            "hi": 4.0,
+            "basis": "Published",
+            "scope": "all tyre types",
+            "year": "2023",
+            "note": "Tyrepress, checked."
           }
         },
         {
@@ -1458,6 +1805,13 @@
             "value": 290.4,
             "metric": "M EUR group revenue, 2024",
             "label": "EUR 290.4M in 2024, +13.8% (Infocap via the research, not checked); 3.6M tyres per its own site, year not stated; 25 warehouses, 26,500 delivery points; Nex Tyres SL formed in 2014 as a 50/50 Euromaster/Rodi venture (Tyrepress, checked); absorbed Don Tyre and Palacios; Michelin-linked, exclusive Maxxis. Wholesale check (Oct 2026): the research run quoted Europneus 2024 as more than 2.5M tyres and more than €200M, which conflicts with the figures above; not resolved."
+          },
+          "est": {
+            "lo": 3.6,
+            "hi": 3.6,
+            "basis": "Company claim",
+            "scope": "tyres, year not stated",
+            "note": "Own site. A conflicting Europneus figure of 2.5M exists."
           }
         },
         {
@@ -1509,7 +1863,15 @@
             "metric": "est. M consumer tyres a year",
             "label": "443 workshops in Spain, 540 in Iberia; revenue EUR 430M in 2024 (+8%) incl. franchises, Iberia above EUR 508M (Motor16, checked); about 1.6M light-vehicle tyres, derived from a 2025 company release of more than 1.7M (not checked); its own 'more than 6%' share would imply only about 1.26M; strong in fleet and commercial; buys from Michelin and NEX"
           },
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "est": {
+            "lo": 1.6,
+            "hi": 1.6,
+            "basis": "Derived",
+            "scope": "light-vehicle tyres",
+            "year": "2025",
+            "note": "Derived from a company release of more than 1.7M, not checked."
+          }
         },
         {
           "name": "Rodi Motor Services",
@@ -1524,7 +1886,14 @@
             "metric": "est. M consumer tyres a year",
             "label": "180+ outlets in Spain, Portugal and Andorra; revenue EUR 307.8M in 2025, about EUR 278M in 2024 (research, not checked); est. 0.7-1.0M tyres including truck, assuming 25-35% of revenue is tyres (low confidence); co-owner of NEX"
           },
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "est": {
+            "lo": 0.7,
+            "hi": 1.0,
+            "basis": "Derived",
+            "scope": "tyres including truck",
+            "note": "Assumes 25–35% of revenue is tyres; low confidence."
+          }
         },
         {
           "name": "Norauto España",
@@ -1539,7 +1908,14 @@
             "metric": "est. M consumer tyres a year",
             "label": "revenue EUR 243.5M in 2024 (registry; EUR 240M in FY Oct-23/Sep-24; research, not checked); est. about 0.7M tyres, assuming about 30% of revenue is tyres at EUR 101.5 a tyre (low confidence); private-label tyres bought direct as well as through wholesalers"
           },
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "est": {
+            "lo": 0.7,
+            "hi": 0.7,
+            "basis": "Derived",
+            "scope": "consumer tyres",
+            "note": "Assumes about 30% of revenue is tyres at €101.5 a tyre; low confidence."
+          }
         },
         {
           "name": "Feu Vert",
@@ -1551,7 +1927,14 @@
             "metric": "est. M consumer tyres a year",
             "label": "revenue EUR 139.0M (registry, probably 2024, may include Portugal; research, not checked); est. about 0.4M tyres, same method as Norauto (low confidence)"
           },
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "est": {
+            "lo": 0.4,
+            "hi": 0.4,
+            "basis": "Derived",
+            "scope": "consumer tyres",
+            "note": "Same method as Norauto; low confidence."
+          }
         },
         {
           "name": "Aurgi + Motortown",
@@ -1718,6 +2101,13 @@
             "value": 0.6,
             "metric": "M PCR tyres a year (estimate)",
             "label": "est. ~0.6M PCR tyres a year (research estimate, low confidence)"
+          },
+          "est": {
+            "lo": 0.6,
+            "hi": 0.6,
+            "basis": "Estimate",
+            "scope": "passenger-car tyres",
+            "note": "Low confidence."
           }
         },
         {
@@ -1733,6 +2123,13 @@
             "value": 4.5,
             "metric": "M PCR tyres a year (estimate)",
             "label": "over 6M tyres a year across all categories (own site); est. ~4.5M PCR (research estimate, range 4.0-5.0M). Wholesale check (Oct 2026), research run, not re-opened: “oltre 5 milioni di pneumatici venduti ogni anno” (Pneurama) and revenue about €408M in 2024; the company's own site says over 6M."
+          },
+          "est": {
+            "lo": 4.0,
+            "hi": 5.0,
+            "basis": "Estimate",
+            "scope": "passenger-car tyres",
+            "note": "The company says over 5M (Pneurama) and over 6M (own site) across all categories."
           }
         },
         {
@@ -1742,6 +2139,13 @@
             "value": 3.1,
             "metric": "M PCR tyres a year (estimate)",
             "label": "2023 revenue above €335M (Tyrepress); est. ~3.1M PCR (research estimate, range 2.6-3.6M). Wholesale check (Oct 2026): 2023 revenue above €335M re-checked (Tyrepress, 24 Jul 2024), which also says production value surpassed €350M. The research run quoted T24 Economia as “cinque milioni di pezzi venduti nel 2024 e 350 milioni di fatturato” (not re-opened); the €350M may be production value."
+          },
+          "est": {
+            "lo": 2.6,
+            "hi": 3.6,
+            "basis": "Estimate",
+            "scope": "passenger-car tyres",
+            "note": "The company reportedly sold 5M pieces in 2024, all categories."
           }
         },
         {
@@ -1751,6 +2155,13 @@
             "value": 1.5,
             "metric": "M PCR tyres a year (estimate)",
             "label": "national multi-brand distributor (car, truck, agriculture); works with the CDG and Kwik Fit networks; est. ~1.5M PCR (research estimate, range 0.9-2.0M)"
+          },
+          "est": {
+            "lo": 0.9,
+            "hi": 2.0,
+            "basis": "Estimate",
+            "scope": "passenger-car tyres",
+            "note": "Wide range."
           }
         },
         {
@@ -1761,6 +2172,12 @@
             "value": 1.0,
             "metric": "M PCR tyres a year (estimate)",
             "label": "latest declared revenue €89.4M (Atoka); est. ~1.0M PCR (research estimate, range 0.8-1.3M)"
+          },
+          "est": {
+            "lo": 0.8,
+            "hi": 1.3,
+            "basis": "Estimate",
+            "scope": "passenger-car tyres"
           }
         },
         {
@@ -1771,6 +2188,13 @@
             "value": 0.45,
             "metric": "M PCR tyres a year (estimate)",
             "label": "est. ~0.45M PCR tyres a year (research estimate, low confidence)"
+          },
+          "est": {
+            "lo": 0.45,
+            "hi": 0.45,
+            "basis": "Estimate",
+            "scope": "passenger-car tyres",
+            "note": "Low confidence."
           }
         },
         {
@@ -1780,6 +2204,13 @@
             "value": 0.35,
             "metric": "M PCR tyres a year (estimate)",
             "label": "est. ~0.35M PCR tyres a year (research estimate, low confidence)"
+          },
+          "est": {
+            "lo": 0.35,
+            "hi": 0.35,
+            "basis": "Estimate",
+            "scope": "passenger-car tyres",
+            "note": "Low confidence."
           }
         },
         {
@@ -1923,6 +2354,14 @@
             "value": 0.78,
             "metric": "est. M consumer tyres a year (derived, range 0.6–0.95M)",
             "label": "derived 0.6–0.95M consumer tyres a year, midpoint shown: a stated stock of 350,000 tyres × an assumed 2–3 turns a year, less 5–15% for non-consumer tyres (research run; the turns are an assumption, and 0.6M is read as a floor). Says about 2,500 customers and “soon 1 million tyres” sold through its partners (sponsored Auto & Wirtschaft article, 6 Oct 2026, research run, not re-opened; per year or cumulative is unclear). Earlier card estimate: 0.6M, range 0.45–0.8M"
+          },
+          "est": {
+            "lo": 0.6,
+            "hi": 0.95,
+            "basis": "Derived",
+            "scope": "consumer tyres",
+            "year": "2026",
+            "note": "From a stated 350,000-tyre stock and an assumed 2–3 turns a year; 0.6M is read as a floor."
           }
         },
         {
@@ -1936,6 +2375,14 @@
             "value": 0.125,
             "metric": "est. M consumer tyres a year (derived, range 0.10–0.15M)",
             "label": "50,000+ tyres in stock; derived 0.10–0.15M consumer tyres a year, midpoint shown: stock × an assumed 2–3 turns a year (research run; no volume published)"
+          },
+          "est": {
+            "lo": 0.1,
+            "hi": 0.15,
+            "basis": "Derived",
+            "scope": "consumer tyres",
+            "year": "2026",
+            "note": "From 50,000+ tyres in stock and an assumed 2–3 turns a year."
           }
         },
         {
@@ -1949,6 +2396,13 @@
             "value": 0.05,
             "metric": "M PCR tyres a year (estimate)",
             "label": "est. ~0.05M domestic PCR tyres a year (research estimate for passenger cars, low confidence, not rescaled); also exports"
+          },
+          "est": {
+            "lo": 0.05,
+            "hi": 0.05,
+            "basis": "Estimate",
+            "scope": "domestic passenger-car tyres",
+            "note": "Low confidence; also exports."
           }
         },
         {
@@ -1961,6 +2415,14 @@
             "value": 0.6,
             "metric": "M passenger-car tyres a year (sales-team estimate)",
             "label": "estimated sell-out for passenger cars 0.6M tyres a year: input from the sales team (26 Oct 2026), not published and not verified. Read on the dashboard's passenger-car scope with no rescaling. If Reifen NL buys from other Austrian wholesalers, those tyres are also counted in their volumes"
+          },
+          "est": {
+            "lo": 0.6,
+            "hi": 0.6,
+            "basis": "Team input",
+            "scope": "passenger-car tyres",
+            "year": "2026",
+            "note": "From the sales team; not published or verified."
           }
         },
         {
@@ -2061,7 +2523,15 @@
           "name": "MARSO Kft.",
           "model": "Wholesaler / distributor",
           "owner": "Nyíregyháza HQ",
-          "volume": "1,000+ resellers and ~30 own stores (2020); total revenue HUF 41.7bn in 2024 (research run, not re-opened); derived domestic 0.7–1.3M tyres a year, all types (wholesale check, Oct 2026)"
+          "volume": "1,000+ resellers and ~30 own stores (2020); total revenue HUF 41.7bn in 2024 (research run, not re-opened); derived domestic 0.7–1.3M tyres a year, all types (wholesale check, Oct 2026)",
+          "est": {
+            "lo": 0.7,
+            "hi": 1.3,
+            "basis": "Derived",
+            "scope": "domestic, all tyre types",
+            "year": "2024",
+            "note": "From revenue of HUF 41.7bn."
+          }
         },
         {
           "name": "Point S Hungary (~73-75 franchise shops)",
@@ -2107,7 +2577,15 @@
           "name": "AKH – Abroncs Kereskedőház (gumi.hu)",
           "model": "Wholesaler / distributor",
           "owner": "Hungarian family-owned",
-          "volume": "says “évente több mint egymillió abroncsot értékesít”; a 2021 bond document says “Évente közel 1,4 millió db” and export about 20% of revenue (research run, not re-opened); group turnover nearly HUF 30bn in 2020 (vg.hu, 26 May 2021, checked); derived domestic 0.8–1.1M tyres a year, all types (wholesale check, Oct 2026); claims 2,000+ resellers (not confirmed; vg.hu mentions 200+ partners in its service programme)"
+          "volume": "says “évente több mint egymillió abroncsot értékesít”; a 2021 bond document says “Évente közel 1,4 millió db” and export about 20% of revenue (research run, not re-opened); group turnover nearly HUF 30bn in 2020 (vg.hu, 26 May 2021, checked); derived domestic 0.8–1.1M tyres a year, all types (wholesale check, Oct 2026); claims 2,000+ resellers (not confirmed; vg.hu mentions 200+ partners in its service programme)",
+          "est": {
+            "lo": 0.8,
+            "hi": 1.1,
+            "basis": "Derived",
+            "scope": "domestic, all tyre types",
+            "year": "2021",
+            "note": "The company says over 1M a year; a 2021 bond document says nearly 1.4M. Export is about 20% of revenue."
+          }
         },
         {
           "name": "UNIX Autó Kft",
@@ -2141,14 +2619,28 @@
           "model": "Buying group / cooperative",
           "owner": "Burgdorf, founded 1930",
           "volume": "about 7,000 co-owners; est. ~0.8M tyres a year (research estimate)",
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "est": {
+            "lo": 0.8,
+            "hi": 0.8,
+            "basis": "Estimate",
+            "scope": "tyres",
+            "note": "About 7,000 co-owners."
+          }
         },
         {
           "name": "Swiss Tyre Group GmbH",
           "model": "Buying group / cooperative",
           "owner": "Independent tyre dealers, founded 2006",
           "volume": "17 shareholders, 25 sales points (own site); est. ~0.15M tyres a year (research estimate)",
-          "flowChannel": "spec"
+          "flowChannel": "spec",
+          "est": {
+            "lo": 0.15,
+            "hi": 0.15,
+            "basis": "Estimate",
+            "scope": "tyres",
+            "note": "17 shareholders, 25 sales points."
+          }
         },
         {
           "name": "Point S Suisse",
@@ -2212,19 +2704,37 @@
           "name": "Interpneu AG (Switzerland)",
           "model": "Wholesaler / distributor",
           "owner": "Ballwil",
-          "volume": "small; est. ~0.02M tyres a year (research estimate); unrelated to Pneuhage's Interpneu"
+          "volume": "small; est. ~0.02M tyres a year (research estimate); unrelated to Pneuhage's Interpneu",
+          "est": {
+            "lo": 0.02,
+            "hi": 0.02,
+            "basis": "Estimate",
+            "scope": "tyres"
+          }
         },
         {
           "name": "Pneucore AG",
           "model": "Wholesaler / distributor",
           "owner": "Döttingen",
-          "volume": "micro; est. ~0.03M tyres a year (research estimate)"
+          "volume": "micro; est. ~0.03M tyres a year (research estimate)",
+          "est": {
+            "lo": 0.03,
+            "hi": 0.03,
+            "basis": "Estimate",
+            "scope": "tyres"
+          }
         },
         {
           "name": "Pneuhaus Leu AG",
           "model": "Wholesaler / distributor",
           "owner": "Hochdorf",
-          "volume": "small; est. ~0.05M tyres a year (research estimate)"
+          "volume": "small; est. ~0.05M tyres a year (research estimate)",
+          "est": {
+            "lo": 0.05,
+            "hi": 0.05,
+            "basis": "Estimate",
+            "scope": "tyres"
+          }
         }
       ],
       "noteBadge": "caution",
@@ -2316,13 +2826,29 @@
             "value": 16,
             "metric": "branches",
             "label": "16 branches, 5,000+ regular clients. Wholesale check (Oct 2026), research run, not re-opened: “przekracza 3 mln rocznie” and revenue PLN 847M in 2024."
+          },
+          "est": {
+            "lo": 3.0,
+            "hi": 3.0,
+            "basis": "Company claim",
+            "scope": "tyres",
+            "note": "Company statement quoted by the research run, not re-opened; “exceeds 3 million a year”.",
+            "open": true
           }
         },
         {
           "name": "JMK Sp. z o.o.",
           "model": "Wholesaler / distributor",
           "territories": [],
-          "volume": "Wholesale check (Oct 2026), research run, not re-opened: revenue PLN 193.4M in 2025, which converts to about 0.5–0.8M tyres a year."
+          "volume": "Wholesale check (Oct 2026), research run, not re-opened: revenue PLN 193.4M in 2025, which converts to about 0.5–0.8M tyres a year.",
+          "est": {
+            "lo": 0.5,
+            "hi": 0.8,
+            "basis": "Derived",
+            "scope": "tyres",
+            "year": "2025",
+            "note": "From revenue of PLN 193.4M."
+          }
         },
         {
           "name": "Euromaster Poland (Michelin)",
