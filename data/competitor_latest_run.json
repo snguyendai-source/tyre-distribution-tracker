@@ -1,68 +1,74 @@
 {
-  "runAt": "2026-10-27T11:49:38.187994+00:00",
-  "totalNew": 8,
+  "runAt": "2026-10-28T12:24:07.644193+00:00",
+  "totalNew": 9,
   "entitiesChecked": 26,
   "entitiesWithNews": 7,
   "newItemsByEntity": {
-    "Michelin": [
+    "Bridgestone": [
       {
-        "title": "Michelin: Passenger car tire market steady at Q3 stage - European Rubber Journal",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRzdFdGtoTFZYOTFGc2p5TnlBSW95NFlObk14UktsLVNTVzhmNnBiOFh1ZExsNzM4WDBET3lkaTluRTJ4eWpBY05QdzAyNmNwTjJRUkZnc0otYlBBX3VtQkQzYWtZN0dqYXBwQW5IeGt1OTE2aW8zeDI3S1JyVnB4YjQxUjliXzVSdWt0RTVfbE1tdy1KYXk3T0VDWG1hRFNadnctWWZ6VE80YUlRckE?oc=5",
-        "pubDate": "Mon, 26 Oct 2026 07:29:56 GMT",
+        "title": "Bridgestone Chosen as Exclusive Tyre Partner for Historic Lamborghini Fenomeno - Bridgestone EMEA newsroom",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMzl3d2xwS09TbHJZYkt2ZDVPcElZRHlFSDlUQ0toMjJ3NDhoTTRSd2l3MDZjUk9oVVVObV9kVng3OWFBcUVsNEstRi1LNHk5bmNsR1BrUDJIQ0t0WlMzVm5TaEhaaEU1VkZPbHZZVEtKQmU3WmdnaUc1ZHo2M1dZcmlxcmtGX2wyUURYOGo4LWNGNnJPNEQzNUZRVDdiWGk1YXdQVC15dmVGUWFkc2I3SzBtaFM0SlZ1?oc=5",
+        "pubDate": "Tue, 12 May 2026 07:00:00 GMT",
         "category": "Premium global"
       }
     ],
-    "Nexen Tire": [
+    "Pirelli": [
       {
-        "title": "[Exclusive] K-Tire Production Hub Shifts from China to Europe - 매일경제",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBVLW54NnBPX1BfdkhRRE1zaXpFS2VmYlJFeUQyVVY4TXZjRm55TjlJYUVXZ3FiRGdEUWlMVlYyMmNtbGVWbFlaV3pWZVowc3VQMElR?oc=5",
-        "pubDate": "Thu, 18 Jun 2026 07:00:00 GMT",
+        "title": "Celebration time: Pirelli’s ERC Tyre Supplier title, MRF’s win - FIA European Rally Championship",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeXNBVTNGd0d1V1VyZGNHTXMwQ1VXVmFVT2prc0hRWEZkNF9oeFE2Um93bUI3R3A3VXBENWc5aHQyaWYtOVpvZkdJZEtXajBMWnBNdld1OFRqbU5DXy1naV91aEMza2RoelBSTUh2V3c5Qks5U3hGbFdHdTNsRXpXRkpMZHJfZldUR0hPSlVzcFNUOHEtWXc?oc=5",
+        "pubDate": "Tue, 27 Oct 2026 08:00:02 GMT",
+        "category": "Premium global"
+      },
+      {
+        "title": "Europe retains pole position in global tire rankings - European Rubber Journal",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQU0dfd194N3lzYzdVcmg4SFJ0TFROeGJaT0EzbnBDVU1UR3dUdzMteWNERGttaGdTQUhQVWdjWm1jQWlDMHViZ2RuOW05UHhaSXZ5UW1mZ1ZGRTVFR2Y2X2tVZXRyTm1ZWWNxWTFtRHJ0VndpVVJBTjhEQmlQQzR2YjNJNV9mem95Z0pJbnVOVDlySl93aDZ5eG1odENsN3E5RlduYXk1b2t2dkhk?oc=5",
+        "pubDate": "Thu, 08 Oct 2026 07:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Kumho Tire": [
+      {
+        "title": "Kumho Tire eyes Poland, Serbia, Portugal for 1st European plant - KED Global",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1NMVVYOXFVUGhfRHZNdUpJLTJhMERRRzlDMGNnc1c2dlExZDRZcmhuX2pSbTBiWHR3Yi1OaGEwVVNfY2NrUk9IaUs1blRMeHYtazEzZ05Lcm9HUl9HM0tXaHNqb25ReXNZOURPTmVwUQ?oc=5",
+        "pubDate": "Wed, 16 Apr 2025 07:00:00 GMT",
         "category": "Korean"
       }
     ],
-    "Hankook": [
+    "Toyo Tires": [
       {
-        "title": "Hankook Tire participates in Everything Electric UK 2026 - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPVHNwM21ENTFGQl9nYmV0cWtlTGhSZXhmYU5QUm4wWl9ld1dRRTJaLXZRaE9YRlVQR19CX3k1NEtZWnl0dVpQV3d1ZHlqNFNrTVNKRFhlZU5TNFVabG9NUEdPQUl4WXhrRTdtcmg0dXhYU3lpYmNpZTRSalgwTXM0VHA5OVdvOU9BeFVvSVhKZmJNZm5FUHJHX3FCcUpaNVgwMEpieTJfMXNLQzBLQWF1Q3dJeWV3cEYtckJHejVEem1LY3JkSGlTaTliVW9VNC1KRG1ySjJSd2hDclBoZFY2T2xPZw?oc=5",
-        "pubDate": "Sun, 02 Aug 2026 05:15:09 GMT",
-        "category": "Korean"
+        "title": "Inoue to head Toyo Tires’ Asia & Oceania Sales Division - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORnppaV9mN3dURjF0Rko5WmNDdzNQX1lFcTh3VUJYYzF4ZlM2SXl1bnRiVGJMUDhvZUU1c3JpYWdlbDVCVXFvMUExc01Ub1lEWEtwRm14M1FaQ3lyenc1V0VfMnBMaW5OdkZaNW9qZW1jRUpBVTl1cUg2dG9uTThPVVFvSnFnZnB1QkxyUHB0VHY?oc=5",
+        "pubDate": "Wed, 14 Feb 2024 08:00:00 GMT",
+        "category": "Japanese"
+      },
+      {
+        "title": "Toyo Tires appoints Kuribayashi president of European production subsidiary - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTVVSS0ZYLTR6MkUtTGJEUXJwTWJTU2tjVmtER0F3eEZmWFFBQ3pTTnA0bWZvT2tBTlB4MU9kSW9KMVYwcEtLR0lBdWMxM2dtNHl3azU5V1FvSHQ1aTRuSHhBMnhGNDlidk56OTM0X3lpY0V5c2RHcWZuRUI3UGxBSUVTV09YQnNaU2dmcjg1TXhNZk5mTDB6RnRuVjFuR1V2M0FhakluSnBPOGdkNzVF?oc=5",
+        "pubDate": "Mon, 02 Sep 2019 07:00:00 GMT",
+        "category": "Japanese"
       }
     ],
     "Falken Tyres": [
       {
-        "title": "40 years of Falken tyres - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5KR0FiTXp3SGRqWjI5VUVPWURHN3JpZGVaYmdNVS1aSVpOQWJpUmdzdjJFZnlhUDVwVkRFam9GQ2pabGM2bFV3UFdTcVZ6S3ZwVDd3TkN5N2pHVTRLYVdnT3RWeGNzUENRYVlV?oc=5",
-        "pubDate": "Wed, 19 Jul 2023 07:00:00 GMT",
+        "title": "Falken Azenis FK520 approved on Audi Q7, Q9 as OE tyre - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMEpGZUIxNUo3aWR5SGZrU1VGcjVBbnYtS1hYb2JOaHNvZS14WDV0ZEtkeF9TX0NadGxnMVpPOGhJSFpoZUlzbmxzRk03dUpoVFhELTBGZ0MwRTNUMXlqTWV2N01PejBvcXRabjdsYThoR1RENHV6emlDZ0w5b0puS0paYVJFMEZQZVh2QUtMLThaQQ?oc=5",
+        "pubDate": "Wed, 28 Oct 2026 05:01:39 GMT",
         "category": "Japanese"
       }
     ],
-    "Linglong Tire": [
+    "Sailun Tire": [
       {
-        "title": "Linglong’s Serbia tyre factory achieves RSCI certification - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZVE1amg0cVVRTkZKMTNEbWduQmFONG05OFRIRFkxSXRZX2Y4Y2J2X0t3TkZUdzA5dUhucWVJNWt4Smpwbllud1I2MGRSMllKMzRvUUlqUFR6TGZDQ1dBZlJnSkkxcWN1ektUQ1A1ZTBtZVRQd3g0TUZYdDRIeUJSOHRpd2t5TmhEQnpGYnpQb3Bib2pCTTZz?oc=5",
-        "pubDate": "Fri, 07 Mar 2025 08:00:00 GMT",
-        "category": "Chinese"
-      },
-      {
-        "title": "Quality, value & long-term potential – 2 decades of ETD & Linglong Tire - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQV05rSC1XRkkwcUhxZEFvanR1REdtOE81N3pjUU1VelQyQjFqa1N2N2ZOeElBZXhmZmJaZUdJdGRPQnMxMU1FVzJOR2FFRl9KWDZHMW5QeGxIaXFacjlKU2NWNnY4b1J1V3Vwc2dKNzlwamw5ZTBtc2FsVGUxR0pYOGlKQXFtN1h4LVF5VUdoU25CRDQyVjdCX252V3ZzUExs?oc=5",
-        "pubDate": "Wed, 16 Feb 2022 08:00:00 GMT",
+        "title": "Sailun Tires announce expansion to the North American market - Traction News",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMFBuZURMNzRhZ1ZjOVF1TVhQa040WGpfVE1qS1E2QTZsRVV0bFNEamdIdjVPemdRMkhucldoR2EwRlFrX2xOTU1YeTNwOHJZckRDaTB3UDJhU3lkazUzYS12NF9id196S0lRRjFqZFJ6djFKeHJ3MzRjT0VQWnowWlduTTNjVGt4SWpuQVhmeXJydEh4?oc=5",
+        "pubDate": "Wed, 12 May 2021 07:00:00 GMT",
         "category": "Chinese"
       }
     ],
-    "Aeolus Tyre": [
+    "JK Tyre": [
       {
-        "title": "Prices of Chinese tires go up due to the anti-dumping duty imposed by the EU - Trans.INFO",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcl9iOTF2VE52WWJsNFNadVlHSDZQZTY5MjIwMmxHeV8ydHU1M3hUenBuYWVzNC1JR0tfeXdYLTFnYVVGS2dsQ2pSQnFBYTkwX2ZCaTNSRG45NF9lZWtFaVZzTDhXbVZZdFNxSzJOM3dnVW9mZXk3dGN1a0NqN0NQUnJPYWdhVGNqSTJ5bmxJQU1oUTJJMkV6VzF6TkdOb0FGbjJselh3?oc=5",
-        "pubDate": "Wed, 06 Jun 2018 07:00:00 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "MRF Tyres": [
-      {
-        "title": "MRF wins 2026 European Rally Championship - Autocar India",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdGxxZ1A1bVdsT25SVnBFREpLM3U4VlVFRXNfVlJ6TVNRTWhvWDI3OEJUM25sekRWNUllQjlJdV9RWEt1RnI2djhKeU5samVaS0cycEtCbldILUt5djZTWW1oVTc5aHVseXpNZVozb0gtY2QwdlBUdGROV0hkbGRjaVNKNUZNOUtzVTRpLUxWYkZSbzNNRDJyNWtEQdIBoAFBVV95cUxPN3UyTWlMRkZMdFRBWWJPRVNTWmZxSktxOUtlSkVFd2I0X1VibDFsMmZTck9Ra1RNMTZZcklyTEpfRDdneXhtblJ1aXJWZk9tY1kyRy1VR3pFRjBSTVk2TC1JM2wtdTZkNnc1SnpBMkhyMV9UQ3hBc01ObExxTV9CekVHaFBhdUlrWm9vUUNTMTZQNnRtUUVpWW1fbFZ6bllu?oc=5",
-        "pubDate": "Mon, 26 Oct 2026 14:31:27 GMT",
+        "title": "JK Tyre backs 11-year-old karting prodigy Atiqa Mir - SportsMint Media",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQT3FhRk9lam9CTkU0RkZpQ3JUNFI3R3YyeTB3ZGx2V3FSWUhoOUplN3ctcVRleWtTVzZkZ0lxQ2VhSDhzYXltS1VUcjFfMXFOdzZHYjRHOWs3U1psd3RLWkhUdzJUU1FsdURYTWxuNU1Hc3lpSWI0c2xwN05YWlBRd3VrVXl3Ymc?oc=5",
+        "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT",
         "category": "Indian"
       }
     ]
