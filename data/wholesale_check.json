@@ -6,8 +6,9 @@
  "findings": [
   "No country shows a wholesale layer that looks too high. For Hungary, Germany, the UK, Spain and Italy the biggest named wholesalers plausibly carry 40–95% of the layer, which is what a concentrated trade should show.",
   "Hungary has the closest independent match: a bond document puts passenger-tyre wholesale at about 70% of the market, against 73% in the dashboard.",
-  "France, Switzerland, Belgium, Denmark and Poland cannot be tested yet, because the named wholesalers publish too little (Poland also has no wholesale figure in the flow). The gaps are listed below.",
+  "France, Switzerland, Belgium and Denmark cannot be tested yet, because the named wholesalers publish too little. The gaps are listed below.",
   "Austria (updated 26 Oct 2026) is plausible but low confidence. With the sales team's 0.6M for Reifen NL, the named domestic wholesalers add up to about 1.35–1.75M against the 1.82M layer, 74–96%. Without that figure they add up to about 0.8–1.3M. Reifen NL is one unpublished figure, so treat the result as provisional.",
+  "Poland (updated 28 Oct 2026) is plausible but low confidence. Handlopex, Inter Cars and JMK together carry about 31–62% of the 10.5M layer, which is mostly imported non-pool tyres; the layer rests on Poland's customs figure for China and two estimates, so the check cannot confirm it.",
   "The Netherlands cannot be tested from company data, and may be pointing at understated import and re-export flows. That is a question for the model, not a finding.",
   "Nothing in the model was changed by this check. It adds evidence, caveats and corrections only."
  ],
@@ -745,18 +746,18 @@
   },
   {
    "country": "Poland",
-   "verdict": "insufficient data",
-   "vclass": "gap",
-   "headline": "The three named wholesalers sum to about 3.3–6.5M tyres, against a research-run indication of 7–11M for the whole layer. The flow still has no wholesale figure: there is no research split to apply to the Europool figure (11.49M), so it cannot be tested yet.",
+   "verdict": "plausible, low confidence",
+   "vclass": "ok",
+   "headline": "Handlopex, Inter Cars and JMK together plausibly account for 3.3–6.5M tyres (the research run's range; Inter Cars' part is an assumption, not a published volume), 31–62% of the 10.5M wholesale layer. The layer is two thirds imports (8.0M non-pool imports less 3.5M re-export), so the check only says the named firms do not contradict it: the rest would be smaller regional wholesalers and importers of record, including online sellers' own import arms. Low confidence.",
    "sumLo": 3.3,
    "sumHi": 6.5,
-   "sumNote": "Handlopex, Inter Cars and JMK together, research run.",
+   "sumNote": "The research run's total. Handlopex 2.0–3.3M and JMK 0.5–0.8M are shown below; the rest of the range, about 0.8–2.4M, is the research's assumption for Inter Cars, whose tyre volume is not published.",
    "confidence": "Low",
    "indicative": {
-    "lo": 7.0,
-    "hi": 11.0,
-    "of": 16.9,
-    "note": "Research run's indicative layer, built on the earlier unconfirmed 16.9M market and on assumptions, not entered in the flow."
+    "lo": 9.5,
+    "hi": 12.5,
+    "of": 16.0,
+    "note": "Second research run's indication: wholesale sold in Poland about 11.25M (9.5–12.5M) of a 16.0M market, before counting Oponeo's 0.75M foreign sales as a deduction. The flow shows 10.5M after taking them off in the export box."
    },
    "named": [
     {
@@ -768,7 +769,7 @@
      "unit": "tyres a year",
      "year": "2024",
      "label": "CLAIM",
-     "basis": "Company statement as quoted by the research run (not re-opened); the revenue-based range is shown for comparison. Revenue is from KRS filings via Aleo (opened). The registry page lists about 18 warehouses, 549 employees and 5,000+ customers. PLN 847M over 3M tyres is PLN 282 each, plausible for a mix with wheels and truck tyres.",
+     "basis": "Company statement as quoted by the research run (not re-opened); the revenue-based range is shown for comparison: PLN 771-847M over PLN 250-336 a tyre is 2.3-3.4M tyres if all revenue were tyres. Revenue is from KRS filings via Aleo (opened). The registry page lists about 18 warehouses, 549 employees and 5,000+ customers. It also sells wheels, truck, agricultural and original-equipment products.",
      "src": "Company claim (research run); accounts via Aleo (opened)",
      "chk": false,
      "quote": "przekracza 3 mln rocznie",
@@ -805,19 +806,24 @@
    "evidence": [
     {
      "t": "Not wholesale, but relevant",
-     "x": "Oponeo, an online retailer, sold 4,259.1 thousand tyres in Poland in 2024, with an estimated 30–36% market share (research run, not re-opened; basis for the share not stated). That is 30% of the new 14.36M market; an analyst puts it at about 25%. It belongs to the online channel, not the wholesale layer.",
-     "chk": false
+     "x": "Oponeo, an online retailer, sold 4,259.12 thousand tyres in Poland in 2024 (opened and checked) and, per the research run, 4,728.79 thousand in 2025 (not re-opened); about 31% of the 15.99M market. It buys from manufacturers and wholesalers and belongs to the online channel, not the wholesale layer.",
+     "chk": true
     },
     {
      "t": "Structure of the trade, 2019",
      "x": "The CEO of PSO, a Kraków wholesaler, wrote that a few wholesalers remain from several dozen, the two largest each selling well above 2M tyres a year and the others roughly 0.7–1.5M. That fits Handlopex at about 3M but names no second large wholesaler, and it is seven years old.",
      "chk": true
+    },
+    {
+     "t": "Importers of record",
+     "x": "Part of the layer is non-pool imports, 8.0M by the flow. Poland reports 7.03M car tyres imported from China in 2025 (WITS / Comtrade, quoted by the research run, not re-opened). Some of it is imported by online sellers' own arms (Enis is the exclusive Polish distributor of Austone), which the named wholesalers do not cover.",
+     "chk": false
     }
    ],
    "gaps": [
-    "Inter Cars' tyre volumes are not published separately.",
-    "No second large wholesaler is named, and PSO (Kraków) has no published volume or revenue.",
-    "The flow's wholesale and direct boxes need input, so the layer cannot be compared yet."
+    "Inter Cars' tyre volumes are not published separately (Polish sales PLN 8.12bn across all products).",
+    "No second large wholesaler is named, and PSO (Kraków), Auto Partner and Moto-Profil have no published tyre volume.",
+    "The layer rests on the 8.0M import estimate; Eurostat Comext data by partner or a Europool non-pool figure would test it."
    ],
    "iso": "PL"
   }
