@@ -1314,12 +1314,14 @@ function fvSankeyHtml(c, flow, R, nameOf){
   // click-through to the By channel tab: same targets as the boxes diagram (wholesale, direct, channels)
   N.ws.jump='ws'; N.dir.jump='direct';
   chs.forEach(ch=>{ N['c'+ch.id].jump=(((c.channels||[]).some(x=>x.flowBox===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel))?'ch:'+ch.id:'retail'); });
-  const link=(a,b,value,color,fid)=>{ if(!(value>0)) return; const l={a:N[a],b:N[b],value,color,fid}; L.push(l); N[a].out.push(l); N[b].inn.push(l); };
+  // a middle bar whose own figure is missing stays a dashed "needs input" placeholder, and no ribbon is drawn into or out of it
+  ['ws','dir'].forEach(id=>{ if(!has(N[id].fid)) N[id].gap=true; });
+  const link=(a,b,value,color,fid)=>{ if(!(value>0)||N[a].gap||N[b].gap) return; const l={a:N[a],b:N[b],value,color,fid}; L.push(l); N[a].out.push(l); N[b].inn.push(l); };
   link('ind','ws',v('toWs'),RED,'toWs'); link('ind','dir',v('direct'),BLUE,'direct'); link('imp','ws',v('import'),RED,'import');
   chs.forEach(ch=>{ link('ws','c'+ch.id,v(Wc(ch.id)),RED,Wc(ch.id)); link('dir','c'+ch.id,v(D(ch.id)),BLUE,D(ch.id)); link('c'+ch.id,'fin',v(T(ch.id)),SLATE,T(ch.id)); });
   link('ws','exp',v('export'),GREY,'export');
   const sum=a=>a.reduce((x,l)=>x+l.value,0);
-  Object.values(N).forEach(n=>{ n.ph=!has(n.fid)&&!n.inn.length&&!n.out.length; n.nv=n.ph?0.0001:Math.max(n.value,sum(n.inn),sum(n.out),0.0001); });
+  Object.values(N).forEach(n=>{ n.ph=n.gap||(!has(n.fid)&&!n.inn.length&&!n.out.length); n.nv=n.ph?0.0001:Math.max(n.value,sum(n.inn),sum(n.out),0.0001); });
   const avail=H-TOP-BOT;
   const k=Math.min(...cols.map(cl=>(avail-(cl.length-1)*GAP)/cl.reduce((a,n)=>a+n.nv,0)));
   cols.forEach((cl,ci)=>{
