@@ -229,6 +229,7 @@
   .fv-wrap .fv-sankey{ display:none; }
   .fv-wrap[data-mode="sankey"] .fv-sankey{ display:block; }
   .fv-wrap[data-mode="sankey"] .fv-boxes{ display:none; }
+  .fv-sankey .fv-jump:hover > rect:first-of-type{ stroke:#1B2333; stroke-width:2; }
   .sk-link{ transition:fill-opacity .12s; } .sk-link:hover{ fill-opacity:.55; }
   .tv-note{ font-size:11.5px; color:var(--ink-soft); margin:8px 0 0; line-height:1.5; }
   .tv-legend{ font-size:11px; color:var(--ink-soft); margin-top:6px; }
@@ -789,7 +790,9 @@ function jumpTo(countryEl, idx, view, key){
   if(btn && !btn.classList.contains('active')) btn.click();
   const panel = countryEl.querySelector(`.territory-view-block[data-country-idx="${idx}"][data-view-panel="${view}"]`);
   if(!panel) return;
-  const all = Array.from(panel.querySelectorAll('[data-jump-target]'));
+  const every = Array.from(panel.querySelectorAll('[data-jump-target]'));
+  const seen = every.filter(n => n.getClientRects().length > 0);
+  const all = seen.length ? seen : every;
   const t = all.find(n => n.getAttribute('data-jump-target') === key) || (view==='channel' ? all.find(n => n.getAttribute('data-jump-target')==='ws') : null);
   if(!t) return;
   if(t.tagName === 'DETAILS') t.open = true;
@@ -1308,6 +1311,9 @@ function fvSankeyHtml(c, flow, R, nameOf){
   if(v('export')>0) add('exp',2,'Export',v('export'),GREY,'export');
   const chSum=chs.reduce((a,ch)=>a+v(T(ch.id)),0);
   add('fin',3,'Final consumers',has('market')?v('market'):chSum,'#2F6F62','market');
+  // click-through to the By channel tab: same targets as the boxes diagram (wholesale, direct, channels)
+  N.ws.jump='ws'; N.dir.jump='direct';
+  chs.forEach(ch=>{ N['c'+ch.id].jump=(((c.channels||[]).some(x=>x.flowBox===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel))?'ch:'+ch.id:'retail'); });
   const link=(a,b,value,color,fid)=>{ if(!(value>0)) return; const l={a:N[a],b:N[b],value,color,fid}; L.push(l); N[a].out.push(l); N[b].inn.push(l); };
   link('ind','ws',v('toWs'),RED,'toWs'); link('ind','dir',v('direct'),BLUE,'direct'); link('imp','ws',v('import'),RED,'import');
   chs.forEach(ch=>{ link('ws','c'+ch.id,v(Wc(ch.id)),RED,Wc(ch.id)); link('dir','c'+ch.id,v(D(ch.id)),BLUE,D(ch.id)); link('c'+ch.id,'fin',v(T(ch.id)),SLATE,T(ch.id)); });
@@ -1340,7 +1346,7 @@ function fvSankeyHtml(c, flow, R, nameOf){
       const lines=fvWrap(n.name,30).slice(0,2), lh=12, hh=lines.length*lh+18;
       let ty=n.y+n.h/2-hh/2; if(ty<lastB+4) ty=lastB+4; lastB=ty+hh;
       const w=Math.max(...lines.map(x=>x.length))*6.3+14;
-      s+=`<g class="fv-tip-t" data-fid="${n.fid}">${n.ph?`<rect x="${n.x}" y="${n.y}" width="${NW}" height="${n.h}" rx="3" fill="#F5F6FA" stroke="${GREY}" stroke-dasharray="4 3"/>`:`<rect x="${n.x}" y="${n.y}" width="${NW}" height="${n.h}" rx="2" fill="${n.color}"/>`}`
+      s+=`<g class="fv-tip-t${n.jump?' fv-jump':''}" data-fid="${n.fid}"${n.jump?` data-jump="${esc(n.jump)}" data-jump-target="${esc(n.jump)}"`:''}>${n.ph?`<rect x="${n.x}" y="${n.y}" width="${NW}" height="${n.h}" rx="3" fill="#F5F6FA" stroke="${GREY}" stroke-dasharray="4 3"/>`:`<rect x="${n.x}" y="${n.y}" width="${NW}" height="${n.h}" rx="2" fill="${n.color}"/>`}`
         +`<rect x="${n.x+NW+4}" y="${ty}" width="${w}" height="${hh}" rx="4" fill="#fff" fill-opacity=".85"/>`;
       lines.forEach((t,j)=>{ s+=`<text x="${n.x+NW+10}" y="${ty+13+j*lh}" style="font-size:11px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
       s+=n.ph?`<text x="${n.x+NW+10}" y="${ty+13+lines.length*lh+3}" style="font-size:12px;fill:#8A93A8">needs input</text></g>`:`<text x="${n.x+NW+10}" y="${ty+13+lines.length*lh+3}" style="font-size:13px;font-weight:700;fill:${INK}">${fvFmt(n.value)}M</text></g>`;
@@ -1483,7 +1489,7 @@ function renderFlowView(c, flow){
     ${walkHtml}
     ${sk?`<div class="fv-modes" role="group" aria-label="Diagram style"><button type="button" class="on" data-mode="boxes">Boxes and lines</button><button type="button" data-mode="sankey">Sankey</button></div>`:''}
     <div class="fv-scroll fv-boxes"><svg width="${svgW}" height="${H}" viewBox="0 0 ${svgW} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
-    ${sk?`<div class="fv-scroll fv-sankey">${sk}<p class="tv-note">Ribbon width shows volume. Red goes through wholesale, blue goes straight from the manufacturers to the channel, grey leaves each channel for the final consumers. Hover a ribbon or a bar to see how that number was reached.</p></div>`:''}
+    ${sk?`<div class="fv-scroll fv-sankey">${sk}<p class="tv-note">Ribbon width shows volume. Red goes through wholesale, blue goes straight from the manufacturers to the channel, grey leaves each channel for the final consumers. Hover a ribbon or a bar to see how that number was reached. Click the Wholesale bar, the Direct bar or a channel bar to see who is behind it in the By channel tab.</p></div>`:''}
     <p class="tv-note">Dot colour: ${legend}.${estNote} <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
     ${basis.table}${basis.qlist}
     ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}</div>`;
