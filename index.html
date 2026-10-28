@@ -1293,7 +1293,6 @@ function fvWrap(s,max){
   String(s).split(/\s+/).forEach(w=>{ if((cur+' '+w).trim().length>max){ if(cur) lines.push(cur); cur=w; } else cur=(cur+' '+w).trim(); });
   if(cur) lines.push(cur); return lines;
 }
-const SK_COUNTRIES=['France']; // Sankey view of the flow model; other countries follow after approval
 function fvSankeyHtml(c, flow, R, nameOf){
   const val=R.val, esc=escapeHtml, has=id=>id in val, v=id=>has(id)?val[id]:0;
   const T=i=>'ch.'+i+'.tot', Wc=i=>'ch.'+i+'.ws', D=i=>'ch.'+i+'.dir';
@@ -1314,12 +1313,13 @@ function fvSankeyHtml(c, flow, R, nameOf){
   chs.forEach(ch=>{ link('ws','c'+ch.id,v(Wc(ch.id)),RED,Wc(ch.id)); link('dir','c'+ch.id,v(D(ch.id)),BLUE,D(ch.id)); link('c'+ch.id,'fin',v(T(ch.id)),SLATE,T(ch.id)); });
   link('ws','exp',v('export'),GREY,'export');
   const sum=a=>a.reduce((x,l)=>x+l.value,0);
-  Object.values(N).forEach(n=>{ n.nv=Math.max(n.value,sum(n.inn),sum(n.out),0.0001); });
+  Object.values(N).forEach(n=>{ n.ph=!has(n.fid)&&!n.inn.length&&!n.out.length; n.nv=n.ph?0.0001:Math.max(n.value,sum(n.inn),sum(n.out),0.0001); });
   const avail=H-TOP-BOT;
   const k=Math.min(...cols.map(cl=>(avail-(cl.length-1)*GAP)/cl.reduce((a,n)=>a+n.nv,0)));
   cols.forEach((cl,ci)=>{
-    const tot=cl.reduce((a,n)=>a+Math.max(3,n.nv*k),0)+(cl.length-1)*GAP; let y=TOP+(avail-tot)/2;
-    cl.forEach(n=>{ n.h=Math.max(3,n.nv*k); n.y=y; n.x=COLX[ci]; y+=n.h+GAP; });
+    cl.forEach(n=>{ n.h=n.ph?40:Math.max(3,n.nv*k); });
+    const tot=cl.reduce((a,n)=>a+n.h,0)+(cl.length-1)*GAP; let y=TOP+(avail-tot)/2;
+    cl.forEach(n=>{ n.y=y; n.x=COLX[ci]; y+=n.h+GAP; });
   });
   Object.values(N).forEach(n=>{
     let o=0; n.out.sort((p,q)=>p.b.y-q.b.y).forEach(l=>{ l.th=Math.max(1,l.value*k); l.y0=n.y+o; o+=l.th; });
@@ -1340,10 +1340,10 @@ function fvSankeyHtml(c, flow, R, nameOf){
       const lines=fvWrap(n.name,30).slice(0,2), lh=12, hh=lines.length*lh+18;
       let ty=n.y+n.h/2-hh/2; if(ty<lastB+4) ty=lastB+4; lastB=ty+hh;
       const w=Math.max(...lines.map(x=>x.length))*6.3+14;
-      s+=`<g class="fv-tip-t" data-fid="${n.fid}"><rect x="${n.x}" y="${n.y}" width="${NW}" height="${n.h}" rx="2" fill="${n.color}"/>`
+      s+=`<g class="fv-tip-t" data-fid="${n.fid}">${n.ph?`<rect x="${n.x}" y="${n.y}" width="${NW}" height="${n.h}" rx="3" fill="#F5F6FA" stroke="${GREY}" stroke-dasharray="4 3"/>`:`<rect x="${n.x}" y="${n.y}" width="${NW}" height="${n.h}" rx="2" fill="${n.color}"/>`}`
         +`<rect x="${n.x+NW+4}" y="${ty}" width="${w}" height="${hh}" rx="4" fill="#fff" fill-opacity=".85"/>`;
       lines.forEach((t,j)=>{ s+=`<text x="${n.x+NW+10}" y="${ty+13+j*lh}" style="font-size:11px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
-      s+=`<text x="${n.x+NW+10}" y="${ty+13+lines.length*lh+3}" style="font-size:13px;font-weight:700;fill:${INK}">${fvFmt(n.value)}M</text></g>`;
+      s+=n.ph?`<text x="${n.x+NW+10}" y="${ty+13+lines.length*lh+3}" style="font-size:12px;fill:#8A93A8">needs input</text></g>`:`<text x="${n.x+NW+10}" y="${ty+13+lines.length*lh+3}" style="font-size:13px;font-weight:700;fill:${INK}">${fvFmt(n.value)}M</text></g>`;
     });
   });
   return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.country)} tyre flow as a Sankey diagram">${s}</svg>`;
@@ -1476,7 +1476,7 @@ function renderFlowView(c, flow){
   const estNote=hasEst?' Blue dots are benchmark estimates, not published figures; the method is under Sources and notes.':'';
   const chip=(id,lab)=>has(id)?`<span class="fv-chip fv-tip-t" data-fid="${id}">${lab} <b>${fvFmt(val[id])}M</b><span class="fv-dot" style="background:${FV_COL[tier[id]]||'#999'};margin:0"></span></span>`:'';
   const strip=[['market','Replacement market'],['prvAll','Private'],['comAll','Commercial']].map(([id,l])=>chip(id,l)).join('');
-  const sk=SK_COUNTRIES.includes(c.country)?fvSankeyHtml(c,flow,R,nameOf):'';
+  const sk=fvSankeyHtml(c,flow,R,nameOf); // Sankey view of the flow model, shown through a toggle
   const QN=fvQuoteNums(flow,R,LB), walkHtml=fvWalkHtml(c,flow,R,nameOf,QN), basis=fvBasisHtml(c,flow,R,LB,nameOf,QN);
   return `<div class="fv-wrap" data-fcountry="${esc(c.country)}" data-mode="boxes"><p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels.${vc?' Read the diagram from top to bottom: manufacturers and importers, wholesale, the channels that sell the tyres, and the final consumers who buy them.':''} <b>Hover any box, line or figure to see how that number was reached.</b> The step-by-step walk-through is just below, and a table of every figure with its source quotes sits under the diagram.${seasons}</p>
     ${strip?`<div class="fv-strip">${strip}</div>`:''}
