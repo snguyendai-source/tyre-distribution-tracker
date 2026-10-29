@@ -244,6 +244,9 @@
   .terr-empty-note{ font-size:12px; color:var(--ink-soft); padding:8px 0; }
   .market-access-note{ background:#FFF8EC; border:1px solid #F0DDB8; border-radius:8px; padding:10px 14px; margin-bottom:12px; font-size:12.5px; color:var(--ink); line-height:1.5; }
   .market-access-note .label{ font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:#9A6B1E; display:block; margin-bottom:3px; }
+  .note-box .ns-line{ margin:0 0 3px; }
+  .note-box .note-more{ margin-top:6px; font-size:12px; }
+  .note-box .note-more summary{ cursor:pointer; font-weight:600; color:var(--ink-soft); }
   .note-box{ background:#F3F7F6; border:1px solid var(--teal-bg); border-radius:8px; padding:12px 14px; font-size:12.5px; color:var(--ink); line-height:1.55; margin-bottom:16px; }
   /* By channel layers (wholesale -> direct -> channels), mirrors the flow model */
   .layer-block{ border:1px solid var(--hairline); border-radius:10px; padding:12px 14px; margin-bottom:12px; background:#fff; scroll-margin-top:12px; }
@@ -1079,7 +1082,7 @@ function renderChannelLayers(c, flow, ci){
   let h='';
   if(flow) h+=`<p class="lv-intro">Same layers${grouped?' and the same channel headers':''} as the flow model. Tyres reach the channels either <b style="color:#C0392B">through wholesale</b> or <b style="color:#2B5BD9">direct from the manufacturers</b>. Wholesalers are listed once, in the wholesale layer, and not repeated in the channels below.${grouped?' Each retailer, network or online seller is listed once, under the channel it mainly sells through, so you can see which players sit behind each box of the flow model.':''}</p>`;
   if(c.note || (c.flatEntities && c.flatEntities.length)){
-    h+=`<div class="note-box" style="margin-bottom:10px;">${badgeHtml(c.noteBadge)} ${esc((c.note||'').replace(/^(Gap|Hard|Value only|Not units|Outdated|Caveat)\s*/,''))}</div>`;
+    h+=countryNoteHtml(c);
   }
   h+=estPanelHtml(c, allEnts);
   // --- layer 1: wholesale ---
@@ -1200,29 +1203,41 @@ function renderDistSegment(countries, segKey){
     if(treeData) views.push(['tree','Channel tree']);
     if(c.territoryDefs) views.push(['territory','By territory']);
     if(layerHasFigures) views.push(['layer','By layer · sell-in']);
+    const defView = flowData ? 'flow' : 'channel';
     const viewToggleHtml = views.length > 1
-      ? `<div class="view-toggle" data-country-idx="${ci}">${views.map(([v,l],i)=>`<button class="${i===0?'active':''}" data-view="${v}">${l}</button>`).join('')}</div>`
+      ? `<div class="view-toggle" data-country-idx="${ci}">${views.map(([v,l])=>`<button class="${v===defView?'active':''}" data-view="${v}">${l}</button>`).join('')}</div>`
       : '';
     const territoryViewHtml = c.territoryDefs ? renderTerritoryView(c) : '';
     const layerViewHtml = layerHasFigures ? renderLayerView(c, layerRecs) : '';
     const treeViewHtml = treeData ? renderTreeView(c, treeData) : '';
     const flowViewHtml = flowData ? renderFlowView(c, flowData) : '';
 
-    return `<details class="country" ${ci<2 ? 'open':''}>
+    return `<details class="country" ${(flowData || ci<2) ? 'open':''}>
       <summary>
         <div><div class="country-name">${escapeHtml(c.country)}</div><div class="country-meta">${escapeHtml(c.meta||'')}</div></div>
         <div class="country-total">${totalHtml}</div>
       </summary>
       <div class="country-body">
         ${viewToggleHtml}
-        <div class="territory-view-block active" data-view-panel="channel" data-country-idx="${ci}">${channelViewHtml}</div>
+        <div class="territory-view-block${defView==='channel'?' active':''}" data-view-panel="channel" data-country-idx="${ci}">${channelViewHtml}</div>
         <div class="territory-view-block" data-view-panel="territory" data-country-idx="${ci}">${territoryViewHtml}</div>
         <div class="territory-view-block" data-view-panel="layer" data-country-idx="${ci}">${layerViewHtml}</div>
         <div class="territory-view-block" data-view-panel="tree" data-country-idx="${ci}">${treeViewHtml}</div>
-        <div class="territory-view-block" data-view-panel="flow" data-country-idx="${ci}">${flowViewHtml}</div>
+        <div class="territory-view-block${defView==='flow'?' active':''}" data-view-panel="flow" data-country-idx="${ci}">${flowViewHtml}</div>
       </div>
     </details>`;
   }).join('');
+}
+
+// Country note box: short lines (scope, main sources) with the full text folded under "Details and caveats".
+function countryNoteHtml(c){
+  const esc=escapeHtml;
+  const noteFull=esc((c.note||'').replace(/^(Gap|Hard|Value only|Not units|Outdated|Caveat)\s*/,''));
+  if(Array.isArray(c.noteShort)&&c.noteShort.length){
+    const nsLines=c.noteShort.map((t,i)=>{ const k=t.indexOf(':'); const body=(k>0&&k<22)?`<b>${esc(t.slice(0,k))}:</b>${esc(t.slice(k+1))}`:esc(t); return `<div class="ns-line">${i===0?badgeHtml(c.noteBadge)+' ':''}${body}</div>`; }).join('');
+    return `<div class="note-box" style="margin-bottom:10px;">${nsLines}${noteFull?`<details class="lv-more note-more"><summary>Details and caveats</summary>${noteFull}</details>`:''}</div>`;
+  }
+  return `<div class="note-box" style="margin-bottom:10px;">${badgeHtml(c.noteBadge)} ${noteFull}</div>`;
 }
 
 function collectAllEntities(country){
@@ -1486,7 +1501,7 @@ function renderFlowView(c, flow){
   const strip=[['market','Replacement market'],['prvAll','Private'],['comAll','Commercial']].map(([id,l])=>chip(id,l)).join('');
   const sk=fvSankeyHtml(c,flow,R,nameOf); // Sankey view of the flow model, shown through a toggle
   const QN=fvQuoteNums(flow,R,LB), walkHtml=fvWalkHtml(c,flow,R,nameOf,QN), basis=fvBasisHtml(c,flow,R,LB,nameOf,QN);
-  return `<div class="fv-wrap" data-fcountry="${esc(c.country)}" data-mode="boxes"><p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels.${vc?' Read the diagram from top to bottom: manufacturers and importers, wholesale, the channels that sell the tyres, and the final consumers who buy them.':''} <b>Hover any box, line or figure to see how that number was reached.</b> The step-by-step walk-through is just below, and a table of every figure with its source quotes sits under the diagram.${seasons}</p>
+  return `<div class="fv-wrap" data-fcountry="${esc(c.country)}" data-mode="boxes">${(c.noteShort&&c.noteShort.length)?countryNoteHtml(c):''}<p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels.${vc?' Read the diagram from top to bottom: manufacturers and importers, wholesale, the channels that sell the tyres, and the final consumers who buy them.':''} <b>Hover any box, line or figure to see how that number was reached.</b> The step-by-step walk-through is just below, and a table of every figure with its source quotes sits under the diagram.${seasons}</p>
     ${strip?`<div class="fv-strip">${strip}</div>`:''}
     ${walkHtml}
     ${sk?`<div class="fv-modes" role="group" aria-label="Diagram style"><button type="button" class="on" data-mode="boxes">Boxes and lines</button><button type="button" data-mode="sankey">Sankey</button></div>`:''}
