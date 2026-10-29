@@ -467,6 +467,11 @@
           "code": "R5",
           "name": "South"
         }
+      ],
+      "noteShort": [
+        "Scope: car and 4x4 replacement tyres, 2024, 41.0M (vans left out).",
+        "Measured: market and channel shares, BRV, the German tyre trade association (March 2025).",
+        "Estimated: pool, imports and wholesale versus direct (research model, wdk annual report as context); wholesaler and chain volumes are revenue-based and low confidence."
       ]
     },
     {
@@ -1109,6 +1114,11 @@
           "code": "MED",
           "name": "Mediterranean"
         }
+      ],
+      "noteShort": [
+        "Scope: car and 4x4/SUV replacement sell-in, 2024, about 37.1M (range 35.3-39.2M; vans left out).",
+        "Measured: Europool sell-in of 31.74M tyres including vans (Syndicat du Pneu / GfK, 2024), which gives 28.9M for cars and 4x4; the three panelled channels.",
+        "Estimated: about 8.2M non-pool imports, dealers and independents (14.0M, a residual), foreign online, wholesale versus direct and player volumes."
       ]
     },
     {
@@ -1303,6 +1313,11 @@
           "code": "T3",
           "name": "South & Southwest"
         }
+      ],
+      "noteShort": [
+        "Scope: car, van and 4x4 replacement tyres, 2024, about 28.4M (GfK / NTDA); the flow model uses 29.0M.",
+        "Sources: DfT licensing 2024 (36.2M cars x 0.8 tyres per car); BTMA / EuroPool H1 2024 sales for the pool.",
+        "Not found: no published channel or entity volumes, so none is shown."
       ]
     },
     {
@@ -1673,6 +1688,11 @@
           "code": "4",
           "name": "South East"
         }
+      ],
+      "noteShort": [
+        "Scope: car, SUV/4x4, van and light-truck replacement tyres, RY2026, about 9.8M.",
+        "Measured: ETRMA Pool Market Data, 9.41M (rolling year 2026).",
+        "Estimated: market from RecyBEM placements data (9.84M at a 96% consumer scope); re-export, channels and player volumes are research estimates, since no Dutch wholesaler or retailer publishes volumes."
       ]
     },
     {
@@ -1745,7 +1765,11 @@
       ],
       "noteBadge": "caution",
       "note": "Value only No unit total published by Traxio (the mobility federation); the figure above is total market value (all tyres, OE+replacement), not a replacement-only unit count.",
-      "marketAccessNote": "Deldo Autobanden stands out as a major European wholesaler that already stocks Vredestein — this is an existing relationship worth deepening rather than a new door to open."
+      "marketAccessNote": "Deldo Autobanden stands out as a major European wholesaler that already stocks Vredestein — this is an existing relationship worth deepening rather than a new door to open.",
+      "noteShort": [
+        "Scope: no unit total is published (Traxio); the $1,016M header is 2024 market value (TechSci), all tyres incl. original equipment.",
+        "Estimated: 4.6M tyres in the flow model, from about 5.8M cars (Statbel) x 0.8 tyres per car."
+      ]
     },
     {
       "country": "Spain",
@@ -2033,6 +2057,12 @@
           "code": "NE",
           "name": "Northeast / Catalonia-Aragon"
         }
+      ],
+      "noteShort": [
+        "Scope: consumer replacement tyres (cars, vans, 4x4/SUV), 2024, 21.06M (passenger cars alone 17.93M).",
+        "Measured: market from ADINE's analysis of the MITECO producer register (24.56M new replacement tyres of all types, +9.6%).",
+        "Not checked: Europool pool of 14.78M (via Europneus) and the GfK channel shares, both second-hand.",
+        "Estimated: wholesale versus direct and player volumes; wholesalers publish revenue, not tyre units."
       ]
     },
     {
@@ -2234,7 +2264,11 @@
       ],
       "noteBadge": "caution",
       "note": "Not units Italy's official figure (Ministry of Environment, MASE) is reported in tonnes (421,645 t, all tyre types), not units, so the card header is not comparable with unit figures. The flow model uses a 27.0M estimate anchored on GfK's specialist-dealer sell-out instead. No clean all-channel unit total is published.",
-      "marketAccessNote": "Italian wholesale is a few national groups plus a regional tier, not a two-name market. Fintyre Group (Fintyre, Franco Gomme and Gexpo Tyre; over 6M tyres a year across all categories) is the first anchor, followed by Univergomma, Gruppo Magri and Zuin, with Tagliabue Gomme Gross (TGG, €143.3M revenue in 2022) alongside them. Pneus In, Palmeri, Intergomma and regional importers such as Pneutec, Piùgomme and PR Sud make up the next tier, and manufacturers often use several of these at once for territorial coverage. TGG was acquired by Global Automotive Investments Holding BV in Dec 2023/Feb 2024, the same group that owns Van den Ban (already in your Netherlands list), a cross-border relationship worth exploring. Driver (Pirelli-owned, 400+ outlets) is the largest captive network and not an access route for a competing brand."
+      "marketAccessNote": "Italian wholesale is a few national groups plus a regional tier, not a two-name market. Fintyre Group (Fintyre, Franco Gomme and Gexpo Tyre; over 6M tyres a year across all categories) is the first anchor, followed by Univergomma, Gruppo Magri and Zuin, with Tagliabue Gomme Gross (TGG, €143.3M revenue in 2022) alongside them. Pneus In, Palmeri, Intergomma and regional importers such as Pneutec, Piùgomme and PR Sud make up the next tier, and manufacturers often use several of these at once for territorial coverage. TGG was acquired by Global Automotive Investments Holding BV in Dec 2023/Feb 2024, the same group that owns Van den Ban (already in your Netherlands list), a cross-border relationship worth exploring. Driver (Pirelli-owned, 400+ outlets) is the largest captive network and not an access route for a competing brand.",
+      "noteShort": [
+        "Scope: the header is MASE's 2024 figure, 421,645 t of all tyre types, in tonnes, not units.",
+        "Estimated: the flow model uses 27.0M units, GfK's specialist-dealer volume (19.68M, via Pneurama) at an assumed 72.9% share; no all-channel unit total is published."
+      ]
     },
     {
       "country": "Austria",
@@ -2510,6 +2544,11 @@
           "code": "W",
           "name": "West"
         }
+      ],
+      "noteShort": [
+        "Scope: car, SUV/4x4, van and light-truck replacement tyres, about 5.0M (4.95M). No complete Austrian total or channel split is published.",
+        "Measured: ETRMA Pool Market Data, 4.90M (RY2026, down 11.0% on RY2025).",
+        "Estimated: market (research passenger-car estimate of 4.5M plus 10% for vans and light trucks, low confidence), export, wholesale and player volumes."
       ]
     },
     {
@@ -2605,7 +2644,12 @@
       ],
       "noteBadge": "caution",
       "note": "Caveat The industry figure (2.54M) is ETRMA's own Pool Market Data for Hungary, rolling year 2026 (RY2025 2.55M, -0.5%), covering cars, SUV/4x4, vans and light trucks. The market (3.5M), wholesale, direct, import and export figures are modelled. The 3.48M market is the balancing figure of the flow model: ETRMA pool 2.54M plus 1.21M of non-pool and budget imports minus 0.27M of re-export. It is higher than the research's own scaled estimate (3.13M) because ETRMA is 0.34M above the pool the research assumed; that gap was left in the market. Imports, re-export and the wholesale split are the research's 2024 estimates for cars and SUV/4x4, widened by 1.099 for vans and light trucks. HTA's last published unit data are for 2018 and are manufacturers' sell-in only: 3.1M tyres in total (+9.7%), of which passenger-car 2.42M, SUV 0.182M and light commercial 0.258M; no later HTA unit figures were found. Do not substitute Germany's 47.5M/+6.8% figure for Hungary. No channel split is published; HTA states online is the fastest-growing channel (qualitative only). The wholesaler volumes below (AKH, MARSO) are the research's earlier estimates, set against the 2.85M market, and have not been rescaled.",
-      "marketAccessNote": "AKH and MARSO are Hungary's two dominant independent tyre-distribution gateways. AKH says it is the largest player in the market and sells more than one million tyres a year; MARSO is a nationwide wholesaler with more than 1,000 resellers and about 30 own stores. Neither is clearly ahead on the evidence, and there is no third independent wholesaler of comparable scale. Major manufacturers also run Hungarian sales entities, so large-account business is split between distributors and the manufacturers' own direct sales. Apollo already has a Hungarian sales entity and a new Győr distribution centre to build on directly."
+      "marketAccessNote": "AKH and MARSO are Hungary's two dominant independent tyre-distribution gateways. AKH says it is the largest player in the market and sells more than one million tyres a year; MARSO is a nationwide wholesaler with more than 1,000 resellers and about 30 own stores. Neither is clearly ahead on the evidence, and there is no third independent wholesaler of comparable scale. Major manufacturers also run Hungarian sales entities, so large-account business is split between distributors and the manufacturers' own direct sales. Apollo already has a Hungarian sales entity and a new Győr distribution centre to build on directly.",
+      "noteShort": [
+        "Scope: car, SUV/4x4, van and light-truck replacement tyres, RY2026, about 3.5M.",
+        "Measured: ETRMA Pool Market Data, 2.54M. The Hungarian Tyre Association's last unit data are for 2018 (3.1M, manufacturers' sell-in); no channel split is published.",
+        "Estimated: the market is a balancing figure (pool + 1.21M non-pool imports - 0.27M re-export); the wholesale split and wholesaler volumes are research estimates."
+      ]
     },
     {
       "country": "Switzerland",
@@ -2739,7 +2783,12 @@
       ],
       "noteBadge": "caution",
       "note": "Caveat No Swiss association publishes a unit total or channel split. The 6.5M in the flow model is a customs-anchored estimate (range 5.9-7.0M) for passenger-car and SUV/4x4 tyres, not a published number, and it implies about 1.35 tyres per car, well above Austria and the Netherlands, so treat it with caution. Switzerland has no tyre production, so all supply is imported. The earlier import-price claim (about $62 a unit, down 30%) is withdrawn: the research's customs data give about USD 86 a unit, down 2% (quoted, not checked).",
-      "marketAccessNote": "Switzerland has no tyre production, so everything is imported, and the model puts about four in ten tyres on a direct route from the manufacturers. The largest chains are captive: BestDrive (Continental), Euromaster (Michelin), First Stop (Bridgestone) and Premio (Goodyear). The independent trade is served by ESA, the purchasing cooperative of the Swiss motor trade with about 7,000 co-owners, by Swiss Tyre Group (17 shareholders, 25 sales points), by a few small regional wholesalers and by cross-border supply from German wholesalers and online platforms. For Apollo the openings are ESA, Swiss Tyre Group, regional wholesalers and online, including its own reifen.com. Growth here depends on getting listed and priced competitively, not on finding an importer."
+      "marketAccessNote": "Switzerland has no tyre production, so everything is imported, and the model puts about four in ten tyres on a direct route from the manufacturers. The largest chains are captive: BestDrive (Continental), Euromaster (Michelin), First Stop (Bridgestone) and Premio (Goodyear). The independent trade is served by ESA, the purchasing cooperative of the Swiss motor trade with about 7,000 co-owners, by Swiss Tyre Group (17 shareholders, 25 sales points), by a few small regional wholesalers and by cross-border supply from German wholesalers and online platforms. For Apollo the openings are ESA, Swiss Tyre Group, regional wholesalers and online, including its own reifen.com. Growth here depends on getting listed and priced competitively, not on finding an importer.",
+      "noteShort": [
+        "Scope: car and SUV/4x4 replacement tyres, 2024, about 6.5M (range 5.9-7.0M); light commercial left out.",
+        "Estimated: anchored on customs data (UN Comtrade / WITS, as quoted by the research, not checked). Switzerland makes no tyres, so all supply is imported; the figure implies about 1.35 tyres per car, so treat it with caution.",
+        "Not found: no Swiss association publishes a unit total or channel split."
+      ]
     },
     {
       "country": "Denmark",
@@ -2799,13 +2848,17 @@
       ],
       "noteBadge": "caution",
       "note": "Gap No Danish unit total or channel split found. Trade data are price/import-oriented (avg. import price ~$49-57/unit 2024; Germany ~49-58% of imports, Sweden ~10%).",
-      "marketAccessNote": "The most fluid supplier relationships in Europe right now, following Euromaster's 2023-24 exit (split between Super Dæk/NDI and Vulkan Dæk). NDI Group (owner of Super Dæk) is the standout wholesaler to approach while these relationships are actively being reset."
+      "marketAccessNote": "The most fluid supplier relationships in Europe right now, following Euromaster's 2023-24 exit (split between Super Dæk/NDI and Vulkan Dæk). NDI Group (owner of Super Dæk) is the standout wholesaler to approach while these relationships are actively being reset.",
+      "noteShort": [
+        "Not found: no Danish unit total or channel split; trade data show only import prices.",
+        "Estimated: the flow model uses 2.2M tyres, from about 2.7M cars (Danmarks Statistik) x 0.8 tyres per car."
+      ]
     },
     {
       "country": "Poland",
-      "meta": "ETRMA Pool RY2026 + non-pool imports less re-export · consumer replacement tyres: cars, vans, light trucks, 4x4",
+      "meta": "ETRMA Pool RY2026 (measured) + modelled non-pool supply and channels · consumer replacement tyres: cars, vans, light trucks, 4x4",
       "total": "~16.0M",
-      "totalLabel": "units, RY2026 estimate (cars, vans, light trucks, 4x4)",
+      "totalLabel": "units, RY2026 planning estimate (cars, vans, light trucks, 4x4)",
       "channels": [],
       "flatEntities": [
         {
@@ -2813,9 +2866,9 @@
           "model": "Wholesaler / distributor",
           "territories": [],
           "scale": {
-            "value": 250,
-            "metric": "PL branches",
-            "label": "250+ Polish branches, 600+ across 21 countries (group revenue ~€2.18B, all product lines). Wholesale check (Oct 2026), research run, not re-opened: the product line that mixes tyres with batteries and oils was PLN 4,326.7M, 22.2% of group revenue; tyres cannot be separated. Polish sales PLN 8,121.2M in 2025, all products (research run, not re-opened); no tyre volume is published."
+            "value": 242,
+            "metric": "PL branches (parent company)",
+            "label": "242 branches in the parent company and 455 in subsidiaries, 697 in total at 30 June 2026, across 21 countries. Group sales PLN 11.41bn in H1 2026 (+12.8%, BiznesRadar, opened); tyres, batteries and oils together PLN 2.37bn, 20.8% of sales, +16.8% (second research run, report PDF not opened). Tyres cannot be separated, and no tyre volume is disclosed."
           }
         },
         {
@@ -2824,15 +2877,15 @@
           "territories": [],
           "scale": {
             "value": 16,
-            "metric": "branches",
-            "label": "16 branches, 5,000+ regular clients. Wholesale check (Oct 2026), research run, not re-opened: “przekracza 3 mln rocznie” and revenue PLN 847M in 2024."
+            "metric": "sales branches",
+            "label": "16 sales branches, warehouses in 18 Polish cities, 90,000+ m2 of warehouse space and 500,000+ tyres continuously in stock (company website, second research run, not re-opened); 5,000+ regular clients. Revenue PLN 819.3M (2023), 847.4M (2024) and 771.0M (2025), down 9% in 2025, with net losses of PLN 2.0M, 4.7M and 8.4M (KRS filings via Aleo, checked). Passenger, SUV/4x4, LCV, truck, agricultural, industrial and motorcycle tyres."
           },
           "est": {
             "lo": 3.0,
             "hi": 3.0,
             "basis": "Company claim",
-            "scope": "tyres",
-            "note": "Company statement quoted by the research run, not re-opened; “exceeds 3 million a year”. Revenue of PLN 771-847M divided by PLN 250-336 per tyre gives 2.3-3.4M tyres if all revenue were tyres, but Handlopex also sells wheels, truck, agricultural and original-equipment products and has a truck-tyre retread plant. Revenue fell 9% in 2025.",
+            "scope": "all tyre types, older claim, not reconfirmed",
+            "note": "An older company statement quoted by the research run, “exceeds 3 million a year” (not re-opened); the current website gives stock and warehouse figures but no annual volume, so it could not be reconfirmed. It covers all tyre types, not Polish passenger-car throughput. Revenue fell 9% in 2025.",
             "open": true
           }
         },
@@ -2840,15 +2893,7 @@
           "name": "JMK Sp. z o.o.",
           "model": "Wholesaler / distributor",
           "territories": [],
-          "volume": "Wholesale check (Oct 2026), research run, not re-opened: revenue PLN 193.4M in 2025, which converts to about 0.5–0.8M tyres a year.",
-          "est": {
-            "lo": 0.5,
-            "hi": 0.8,
-            "basis": "Derived",
-            "scope": "tyres",
-            "year": "2025",
-            "note": "From revenue of PLN 193.4M."
-          }
+          "volume": "Wholesaler / distributor. Revenue PLN 193.4M in 2025 (research run, not re-opened); tyre throughput is not disclosed."
         },
         {
           "name": "Euromaster Poland (Michelin)",
@@ -2858,15 +2903,7 @@
           "scale": {
             "value": 100,
             "metric": "stationary sites",
-            "label": "over 100 stationary service centres (Euromaster Polska LinkedIn, research run), 100+ fleet partner services and 60+ mobile services (Auto Swiat, October 2018, company-sponsored); about 13,000 leasing vehicles in 2018"
-          },
-          "est": {
-            "lo": 0.3,
-            "hi": 0.5,
-            "basis": "Estimate",
-            "scope": "tyres fitted",
-            "year": "2025",
-            "note": "Research run's estimate from the site count; no company volume is published. Buys directly from the producers (Auto Swiat)."
+            "label": "over 100 stationary service centres (Euromaster Polska LinkedIn, research run), 100+ fleet partner services and 60+ mobile services (Auto Swiat, October 2018, company-sponsored); about 13,000 leasing vehicles in 2018. Buys directly from the producers (Auto Swiat). Tyre volume not published."
           }
         },
         {
@@ -2875,17 +2912,9 @@
           "territories": [],
           "flowChannel": "spec",
           "scale": {
-            "value": 167,
-            "metric": "sites",
-            "label": "167 sites and about 1M customer visits a year (company claim, 2026; Auto Swiat gave 160 in May 2025); supplied directly from Goodyear Group warehouses (Fleet Derby)"
-          },
-          "est": {
-            "lo": 0.4,
-            "hi": 0.7,
-            "basis": "Estimate",
-            "scope": "tyres fitted",
-            "year": "2026",
-            "note": "Research run's estimate: 2.4-4.2 thousand tyres per site. No company tyre volume is published."
+            "value": 160,
+            "metric": "franchise businesses",
+            "label": "more than 160 local franchise businesses (Premio's Polish website); 167 sites and about 1M customer visits a year (company claim, 2026, research run); passenger, LCV and SUV/4x4 tyres; supplied directly from Goodyear Group warehouses (Fleet Derby). Tyre volume not published."
           }
         },
         {
@@ -2894,9 +2923,9 @@
           "territories": [],
           "flowChannel": "spec",
           "scale": {
-            "value": 410,
-            "metric": "company-run stations",
-            "label": "410 company-run stations (Auto Swiat, March 2021); 'more than 400 workshops' on Bosch's site (research run)"
+            "value": 400,
+            "metric": "workshops",
+            "label": "more than 400 workshops (Bosch's Polish website, second research run); 410 company-run stations per Auto Swiat (March 2021); tyre service and fleet servicing. Network count only, no tyre volume."
           }
         },
         {
@@ -2904,7 +2933,7 @@
           "model": "Online retailer",
           "territories": [],
           "owner": "Oponeo.pl S.A.",
-          "volume": "Sold 4,259.12 thousand tyres in Poland in 2024 (checked) and, per the research run, 4,728.79 thousand in 2025 (5.48M with 0.75M abroad; page not re-opened), about 4.9M over the rolling year to mid-2026. Q1 2026 group volume 1,043 thousand, +28.3% (checked); Q2 flat. Group revenue PLN 2.37bn in 2025, +12.1% (domestic PLN 2.06bn; checked); 1,452 partner fitting workshops (March 2026, research run). An analyst puts Oponeo at about 25% of Polish tyre sales (PKO BP, May 2025), BiznesRadar at 36%",
+          "volume": "Sold 4,259.12 thousand tyres in Poland in 2024 (checked) and, per the research run, 4,728.79 thousand in 2025 (5.48M with 0.75M abroad; page not re-opened; to confirm the scope against the annual report's operational table), about 4.9M over the rolling year to mid-2026. Q1 2026 group volume 1,043 thousand, +28.3% (checked); Q2 flat. Group revenue PLN 2.37bn in 2025, +12.1% (domestic PLN 2.06bn; checked); 1,452 partner fitting workshops (March 2026, research run); H1 2026 report published 18 Aug 2026. An analyst puts Oponeo at about 25% of Polish tyre sales (PKO BP, May 2025), BiznesRadar at 36%",
           "flowChannel": "onl",
           "est": {
             "lo": 4.73,
@@ -2912,7 +2941,7 @@
             "basis": "Company claim",
             "scope": "tyres sold in Poland",
             "year": "2025",
-            "note": "The research run's quote of Oponeo's 2025 results; the 2024 equivalent (4.26M) was opened and matches. About 30% of the 15.99M market and 66% of the 7.20M online box; about 4.9M over the rolling year."
+            "note": "Company-reported (the research runs' quote of Oponeo's 2025 results); the 2024 equivalent (4.26M) was opened and matches. Scope to be verified: all tyres sold in Poland, not necessarily passenger-car and light-truck replacement only. About 30% of the 15.99M market and 66% of the 7.20M online box; about 4.9M over the rolling year."
           }
         },
         {
@@ -2940,31 +2969,23 @@
           "model": "Online retailer",
           "territories": [],
           "owner": "Enis S.A. (private, Kraków)",
-          "volume": "Revenue PLN 645.1M in 2025 and PLN 624.3M in 2024; company claim of about 1.5M tyres (2024); about 1.9M at PLN 336 a tyre (Oponeo's 2025 revenue per tyre). Exclusive Polish distributor of Austone. An analyst puts Enis at about 9% of tyre sales (PKO BP, May 2025). Research run, not re-opened",
+          "volume": "Revenue PLN 645.1M in 2025 and PLN 624.3M in 2024; company claim of about 1.5M tyres (2024). Exclusive Polish distributor of Austone. An analyst puts Enis at about 9% of tyre sales (PKO BP, May 2025). Research run, not re-opened. A revenue-derived figure of about 1.9M tyres (PLN 645M at Oponeo's PLN 336 revenue per tyre) is a different quality of evidence and is not used as the volume.",
           "flowChannel": "onl",
           "est": {
             "lo": 1.5,
-            "hi": 1.9,
+            "hi": 1.5,
             "basis": "Company claim",
             "scope": "tyres, Poland",
-            "year": "2024-25",
-            "note": "Low end is the company's claim for 2024; the high end is revenue divided by Oponeo's PLN 336 revenue per tyre. Not re-opened."
+            "year": "2024",
+            "note": "The company's own claim for 2024, not re-opened. Revenue grew 3% to PLN 645M in 2025, so the volume may be a little higher."
           }
         },
         {
           "name": "Allegro sellers, 24opony, OponyExpress, Autodoc and other online sellers",
           "model": "Online retailers and marketplace sellers",
           "territories": [],
-          "volume": "No company volumes found; the research's estimate for the residual online route",
-          "flowChannel": "onl",
-          "est": {
-            "lo": 0.8,
-            "hi": 1.5,
-            "basis": "Estimate",
-            "scope": "tyres, Poland, combined",
-            "year": "RY2026",
-            "note": "Research run's residual estimate so that named online sellers add up to 7.2-8.3M; not a company figure."
-          }
+          "volume": "No company volumes found. The research's residual estimate for this route is 0.8-1.5M tyres, which is a modelling plug, not a company figure.",
+          "flowChannel": "onl"
         },
         {
           "name": "Pneuhage Partner System",
@@ -2986,20 +3007,12 @@
             "metric": "thousand long-term rental vehicles",
             "label": "261-289 thousand long-term rental vehicles (PZWLP, H1 2026 and end-2025; different scopes); companies bought about 69% of the 597k new cars of 2025. Research run, not re-opened"
           },
-          "volume": "Tenders run through Euromaster, Premio, Pneuhage and dealers",
-          "est": {
-            "lo": 0.7,
-            "hi": 0.9,
-            "basis": "Estimate",
-            "scope": "tyres a year, long-term rental fleet only",
-            "year": "2025-26",
-            "note": "261-289 thousand vehicles x 2.5-3 tyres a year. Excludes other company cars and vans: the research puts all commercial demand at 3.0-4.5M tyres, central 3.6M. Tyres go through the channels above, so do not add."
-          }
+          "volume": "Tenders run through Euromaster, Premio, Pneuhage and dealers. Turning vehicles into tyres needs mileage and tyre-life assumptions that no Polish source supplies, so no tyre volume is shown."
         }
       ],
       "noteBadge": "caution",
-      "note": "Caveat The industry figure (11.49M) is ETRMA's own Pool Market Data for Poland, rolling year 2026 (RY2025 11.43M, +0.6%); PZPO's 'about 12M' is most likely the same pool layer. The 16.0M market (15.99M, range 14.5-17.5M) is the pool plus 8.0M non-pool imports (Poland's reported 7.03M car tyres from China in 2025 plus about 1.0M) less 3.5M re-export. It replaces the 14.4M of earlier today, which counted only 2.87M of non-pool tyres. Wholesale, direct, channel and private/commercial splits are estimates built to add up (online 45%, specialists 46%, dealers 7%, other retail 2%; 22.6% commercial). Named volumes: Oponeo about 4.7-4.9M, Enis about 1.5-1.9M, Handlopex about 2.3-3.4M (own claim 3M); Inter Cars' tyre volume is not published. The China import figure was not re-opened. Value figures differ by source ($1.77B on the earlier card, about $1.93B for all tyres) and are not units.",
-      "marketAccessNote": "Online is the largest route: Oponeo.pl sold 4.7M tyres in Poland in 2025 and Enis (SklepOpon) about 1.5-1.9M, together roughly 40% of the market, so they are as important as any wholesaler. Inter Cars is the dominant aftermarket distributor, with 250+ Polish branches, 600+ across 21 countries, its own Q Service Castrol workshop network (about 636 workshops) and the Motointegrator.pl online shop; a relationship here has reach across the wider CEE region, but its tyre volume is not published. Handlopex (revenue PLN 771M in 2025, 2.3-3.4M tyres if all revenue were tyres) and JMK are established secondary wholesalers. Fast-fit networks (Premio 167, Euromaster 100+, Bosch Car Service 400+) and fleet networks (Pneuhage 170+) reach leasing and company customers, about 22.6% of the market by the research estimate. The manufacturers' own Polish sales entities (Michelin, Continental, Goodyear, Pirelli) also supply the trade directly.",
+      "note": "Caveat The industry figure (11.49M; 11,494,066 tyres) is ETRMA's own Pool Market Data for Poland, rolling year 2026 (RY2025 11.43M, +0.55%), the only measured number in the flow; PZPO's 'about 12M' is most likely the same pool layer. The 16.0M market (15.99M, sensitivity 14.5-17.5M) is a planning estimate: the pool plus a gross-import scenario proxy of 8.0M (Poland's reported 7.03M car tyres from China in 2025 plus about 1.0M) less an assumed 3.5M re-export. It replaces the 14.4M of earlier today, which counted only 2.87M of non-pool tyres. Wholesale versus direct, export and the channel base case (online 45%, range 40-45%; specialists 46%, 46-51%; dealers 7%, 5-8%; other retail 2%, 1-3%) are scenario estimates built to add up, and private versus commercial needs input. Company-reported volumes: Oponeo about 4.7M tyres in Poland (2025; scope to be verified), Enis about 1.5M (company claim), Handlopex 3M (older claim, not reconfirmed). Inter Cars' tyre units are not disclosed, and workshop-network tyre volumes are not published, so none is shown. The China import figure was not re-opened. Value figures differ by source ($1.77B on the earlier card, about $1.93B for all tyres) and are not units.",
+      "marketAccessNote": "Online is the largest route: Oponeo.pl sold 4.7M tyres in Poland in 2025 (company-reported) and Enis (SklepOpon) about 1.5M by its own claim, together roughly 40% of the modelled market, so they matter as much as any wholesaler. Inter Cars is the dominant aftermarket distributor: 242 branches in the parent company and 455 in subsidiaries (697 at 30 June 2026), its own Q Service Castrol workshop network (636 in its locator) and the Motointegrator.pl online shop, with H1 2026 sales of PLN 11.4bn, of which tyres, batteries and oils are PLN 2.4bn; a relationship here has reach across the wider CEE region, but its tyre units are not disclosed. Handlopex (revenue PLN 771M in 2025; 500,000+ tyres in stock, warehouses in 18 cities) and JMK are established secondary wholesalers. Fast-fit and workshop networks (Premio 160+, Euromaster 100+, Bosch Car Service 400+) and fleet networks (Pneuhage 170+) reach leasing and company customers, but no Polish source gives their tyre volumes or the private versus commercial split. The manufacturers' own Polish sales entities (Michelin, Continental, Goodyear, Pirelli) also supply the trade directly.",
       "territoryDefs": [
         {
           "code": "R1",
@@ -3017,6 +3030,11 @@
           "code": "R4",
           "name": "West & Southwest"
         }
+      ],
+      "noteShort": [
+        "Scope: car, SUV/4x4, van and light-truck replacement tyres, RY2026, planning estimate of about 16.0M (range 14.5-17.5M).",
+        "Measured: ETRMA Pool Market Data, 11.49M (RY2026, +0.55%).",
+        "Estimated: imports (Polish customs data for China via WITS / Comtrade, 7.03M in 2025, not re-opened), re-export and channel shares (Oponeo and Enis company reports, PZPO as context). Private versus commercial: no source yet."
       ]
     }
   ],
