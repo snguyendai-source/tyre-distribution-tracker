@@ -1,43 +1,34 @@
 {
-  "runAt": "2026-10-28T12:24:07.644193+00:00",
-  "totalNew": 4,
+  "runAt": "2026-10-29T12:33:24.737081+00:00",
+  "totalNew": 3,
   "entitiesChecked": 118,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Kwik Fit": [
+    "Vergölst": [
       {
-        "title": "Kwik Fit helps fleets with increasing tyre complexity - Fleet News",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYlJpdC1IWWoxbVNLZWVaWk9ZWDdDMmI3czE1VWhGRk1QWFVVQm1yZFUtbW9hTWFiSHJnNzZkM2ZObmRxOGJzTHBOUG9Ld2pMU25rdnJCU0F6VFVVS3JOTVR1MWVOMGJaLVlMNDdZTkttOGd1clNTakI1UlBhM3MzYnZBSU40MXFBazBsVW5zUQ?oc=5",
-        "pubDate": "Wed, 28 Oct 2026 11:01:42 GMT",
-        "country": "UK",
-        "cluster": "North-West"
+        "title": "Conti-buying-Austrian-tire-dealership-Reifen-John - Tire Business",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRXN3OXQ3cGJRaldyWjJnNHVJQ2Y5MGxXbnBTOWMtMDF6NmdvVjJLbEdJT1VrR1g2R1BFWmRobFdDekF4a0p2UmdDR1M4Wkc3cmRCbnM2cXpNcDdKdHl1ZHdzcG5vdTEwME9DNXJsRTFQV3pmUGU4OVdNUmdLRGl1QzBlVTJ4S3JhMUxNLVFEOEtFVU9hbGdfaVZQTXRZUDlmNG85anFpeWg3d1JSUWJ0Qw?oc=5",
+        "pubDate": "Mon, 03 Dec 2018 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
       }
     ],
-    "HiQ Tyres": [
+    "Hedin Group": [
       {
-        "title": "Continental, Halfords and HiQ among the winners at NTDA’s Tyre Industry Awards 2026 - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSGhrcWRDWnFrWlhfNWtKOFdPRUtveE5wYXUtV3R2LUw3QXJlT2dwVS1LNWdtYUdxS0o5Z2lpUVp0c0V5eUhSbzVQRkhkOXROdS1oUnY2X29oaEVnejRObDh3RjctMzBQOGluUnc0b0ZGXzRERW9sd01Sc3NldHpnMTNWMG1tR1FPYVR0Y292TWY5cHBRY0k2MmtaSkwyem95NU5sSUdjang2N0pLLWtLbHp1ZEdlU28?oc=5",
-        "pubDate": "Fri, 16 Oct 2026 07:00:00 GMT",
-        "country": "UK",
-        "cluster": "North-West"
+        "title": "Hedin Mobility Group publishes Annual Report and Sustainability Report for 2025 - Cision News",
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNakV5V1kxWDFKd1VHOVVVOVRtZUdqbXdieXhzZWV0VTNEN2VEcy1paXVMOGRQeU1XS0J1Q1JCQVBBMjZIcUlHUmJLVDJQZk9DdmFQelpRRm5zRVJOSlJicTRVLThuOXhBQ0VCNDV2TW9mdWpLYi11UXRmQTZsVl9NM3RNbkZwRFdveTdnZ3VhbzBJQzlpZzdfQ0tUMHB0WGF5dXF6Y01pOVNFcURTUUZhT2x4Q1BvdDB3bVRvMVRNdi1yekU5Rjk1V0VPdXBGaU1ZSGFnUUU0elEwR3d1X0E?oc=5",
+        "pubDate": "Thu, 23 Apr 2026 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
       }
     ],
-    "Blackcircles": [
+    "Feu Vert": [
       {
-        "title": "Tyre industry must adapt stock to reflect changing vehicles, warns Blackcircles.com - Motor Trade News",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOFpHbTRDcnJDQnFsSkFma2k3bFBLUXdBSlFHdXphckJWaVZBaTJobkR0RmQ1V3dlcHZoZDNmNXZLOXp5S21OZi1haWJKV0tTTldGV2thT1RPbUVPWlZQWmtkcU40Q0hJTU56NHNPbnhTejhxXzBRbW5DYjNXS0pBWE4wWUZUUkR5S3dqd1BSOWRrRklkRHQtVUxYd0lmaVpjN2FSWlUyY1BPYnlLRk1pSHZpTmo4YnppLWpkZ3Q5VG1YZEhPVm9xazFUQ3hLSHRl?oc=5",
-        "pubDate": "Wed, 28 Oct 2026 09:31:11 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ],
-    "Vianor": [
-      {
-        "title": "Nokian Renkaat Oyj (TYRES.HE) | Stock Price & Latest News - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE40MUlTZ1RHUDZUbkRKa3pYcS1yTWpZNW5NeFkwVENJMnRubC1WVXdWWFRlMmpxdEVJbDdfRVM3TXE5WTA5UDBfcFExandwdUJmN0V6dEhycWRxZXhIXzBHZ0ZxSTdwckhFZmZZODJuTmU?oc=5",
-        "pubDate": "Fri, 23 Oct 2026 16:38:58 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
+        "title": "Mercato OM : L’OM mise sur la post-formation en attendant le feu vert de la DNCG - Coeur Marseillais",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUjdKR0ZEQWRVWklodlRNbjRBN3lSUnlPZC1fUS0wRG83b1NJTEhEOHFxZXkwUXRJd1c0MGptR2xpUlhpV1JmRWVrOUY2Y3JURkxzVVQ4bDJsenVISDQ4Ymw4QUotMU5NQ1h4WWdSZm1rWExDR0pSWk9pV0RSZFVHTzIwNWdEeUg1Uzh1OHNDaHpibzBycGVKZ2VxMUw4M0toSDMtQkhrQUUzMDl0LWYw?oc=5",
+        "pubDate": "Mon, 22 Jun 2026 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
       }
     ]
   }
