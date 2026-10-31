@@ -1,16 +1,25 @@
 {
-  "runAt": "2026-10-30T12:25:13.693400+00:00",
-  "totalNew": 1,
+  "runAt": "2026-10-31T11:55:03.036445+00:00",
+  "totalNew": 2,
   "entitiesChecked": 118,
-  "entitiesWithNews": 1,
+  "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Norauto": [
+    "Premio": [
       {
-        "title": "Norauto is selling its new summer tyre: the Prevensys 4. - Flottes Automobiles",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13eHBmWWJFOXM1ZHlSd01HSUY4QUZFaFZZMVFOd21pRjJWSlY5SUYwaWJRY2tfc2gzOEJjaUI5b09Odndkb1BFVUVRZGJYaGI3enJTVjhFRGIySG1QbGFGT25uYTJkZlJTdVdjR0x3?oc=5",
-        "pubDate": "Wed, 24 Mar 2021 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
+        "title": "Bridgestone prepares F1 return bid to challenge Pirelli for 2029 tyre contract - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWDdSVDNNQlk0dFQxZnZDX3VldGZaS2RqQ2VXblVvdmdva3V5eUlBQkUyMl96Q1JZVF9aVHNaUnhtdzZGcHJPT1ZkS0ZpZF9VdFBscXBYNmhZWVpEblJTQ1ZWQjY3cENId1AtbnJkdWNtNjVkQzhITU5iajdSazV4cWEyVU05bTZuNmx3aE1iOFNydnEwUGpTamlzYWUtWUJFcG9tN2VvTTFUZjl1SkVwNkRUWkVZUFk?oc=5",
+        "pubDate": "Mon, 26 Oct 2026 14:30:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Blackcircles": [
+      {
+        "title": "Blackcircles.com expands mobile tyre fitting service with new fleet - Fleet World",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNR2MzMHVNUnZKdEc2dmVndUhkRjR3ZlNLc0Q2WDZlYU9pSlVaaV9sRjZocXVUWWpybnN1djhSRVNFVzdValNkQ1JYUGJ3cVlUeDZneVRSbzBqM3V6VU1qQkU5NUtwbHdDdVFrbVVzdDFFeGY3Y0hyUWlOV3J3bjhEYlVXRXFzRlVhT2M5WWIxZERONzRoS0M4Rg?oc=5",
+        "pubDate": "Mon, 19 Oct 2026 06:01:55 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ]
   }

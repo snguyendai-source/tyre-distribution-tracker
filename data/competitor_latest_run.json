@@ -1,69 +1,15 @@
 {
-  "runAt": "2026-10-30T12:25:13.693400+00:00",
-  "totalNew": 8,
+  "runAt": "2026-10-31T11:55:03.036445+00:00",
+  "totalNew": 1,
   "entitiesChecked": 26,
-  "entitiesWithNews": 7,
+  "entitiesWithNews": 1,
   "newItemsByEntity": {
-    "Goodyear": [
+    "Giti Tire": [
       {
-        "title": "Investigation: Tire manufacturer Goodyear faces global blowout scandal - Le Monde.fr",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNaTRHN1dJZ2s5enJZMGFld2lNZE9Db0Z2QlhVUllneDBKLXpCZ2lzYzdGNXZzV2NEcUM2cm5iQXRyTWEyLW5jbXNZLUg2YktfWjRDZjRmakNRUjVhT2FTdmRxVzNnb0pVWHprclNZR0tkU0czaDFra3p3VE1rRXZwcWpVekRVZXNhanYydnBTSVcxZkdEV0UtNkR5OVgxV203UksxMXdoTkRCdHNjeThmeFVWbksxc1VzeFVjMjY0UHJmMHhnZ3dxcldaRUptUUlaQmc?oc=5",
-        "pubDate": "Tue, 26 Mar 2024 07:00:00 GMT",
-        "category": "Premium global"
-      },
-      {
-        "title": "Goodyear Tire's transformation plan is underway — in the sky and on the ground - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQc0xVZk1OTkJQNE9QOWkzc1M2UHhKUkd2ZEp3M1lFVVN4emQyRkhNRDFmY08zTllkRVhERlVxbFhoRDl1SXltR244M2NKRmEyWWNfUlB0ZWVmSzU2U1VlVFpYT2FwbjdiRkdYNWE5X3ZBWC1IRFBlQWUyTFNYU0l0N2R2a2Itc2fSAYwBQVVfeXFMT2x3SzlZbl9udG82TlYxclNIUy1CTzY2bTNQNzVUUmJxV2RVVVFIazhnZi1rcWRnZUxMX3BZUHRWeV9fdU8yTFZ2U0cyVm1kQkE2XzVucFBXOURaV2gxZzF6ei1ZOXNUWktJTkd4MWxiRzVMU3NGUHF0TTN1ZkswTjd2NHdVX002a3o3RTE?oc=5",
-        "pubDate": "Sat, 08 Mar 2025 08:00:00 GMT",
-        "category": "Premium global"
-      }
-    ],
-    "Continental": [
-      {
-        "title": "Expert Insights: Q&A with Continental Tyres managing director Mitchell Golledge - CarExpert",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOa2Y3elUzYnoxZ3lqY1M3T0lxcVdKb2R1NXdRUlJ0UE52YmlvQTVIcWRRS3RraFJjczRqVW1EamF4azNjTDRHTXdxVHktSWtOMFhWMWxHMHEtSkI2VGlxQlRCMU0yMEItcmdVSlZNQlVvU2xsWWtmXzZET2tYcnNwNUlibDRYSmNXQmwxbUlWWkg1NEpVTTBadkRLaE5wUnZndzliNGR1anlhZElvOXpwT0lmMFhpd1FxTFE?oc=5",
-        "pubDate": "Sat, 24 Oct 2026 21:00:00 GMT",
-        "category": "Premium global"
-      }
-    ],
-    "Yokohama Rubber": [
-      {
-        "title": "Yokohama Rubber names new CEO in major management reshuffle - European Rubber Journal",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeXZ1WGprRGRZSVhEOFBBMmpBRFQzTzZ2YzFqQ1V1X2o1aWw4Y0xwNzhRcGdsbzRHX2lpWUs3RVAxd0dDbXdDVWZMX2VHREhoaG9LdXhrbUZsMFZucUIwRTRPLXByUUlfZ013RERDNXhPaWVnMjJkbG5Db29ieWh6MjZKcU9Va2I2WmR0c3NkNnFxZ2VTalV4VlRWbjNGcDhfb3pTU3VrY25DNHNkUXZZc0R1cXA3dw?oc=5",
-        "pubDate": "Thu, 01 Feb 2024 08:00:00 GMT",
-        "category": "Japanese"
-      }
-    ],
-    "Sailun Tire": [
-      {
-        "title": "Sailun kicks off production, to produce 35k tires per day - Khmer Times",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOb1BOaFdRcVNtNGhNeUdPd0NsWWhIUHVSdG1LbnpPQ2lZLVdFaWM0OVNTcHNiSkFZenMza1BWa2stWXpmS1JjU0o4UlNmYl9MZFFlMDE1dlRONXBqWkgyYUU1M3F3cV9uN0ZueWtIWE9uRFhoUHdKSTJ6VlZManlyX0FvR3RUd2sxZ0ZiVlljWHJaREtpRzVkSkUtTzQ?oc=5",
-        "pubDate": "Tue, 06 Feb 2024 08:00:00 GMT",
+        "title": "Giti Tire asks EU court to annul dumping tariffs on Chinese tires - MLex",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOEpfY3hEazNGSE14UUZoWGhObi0ySTQ0X1pwa3ZubGhFTjZPLVF0YkZKQTEzSnpMbGZ3LVpXXzNXZFZsVUQ1SFNydlJuSmdnVDVIMi04UTlZWjllU3MzRjRaMHJlRnJOdHZFQ1Jyb3Zvd1htOC1WQTRMUHRqei1SUG1pOXcwNUNnS2l3LUlyMEpvOEhaNTZZNl9MeUtfekVqMDlPSnJwalIzblVD0gFaQVVfeXFMTk11M0VpRy1Jc1NPNS1TZlREaEFzU2U4bnZlVEdOaFQ2anl4a3I4WXRCNjdHbDN3TUxnZ2x3Z1N4ampmaUhkb2ttZ0gxMXp5Y0J6ZlJpZmJNRkFR?oc=5",
+        "pubDate": "Tue, 06 Oct 2026 07:00:00 GMT",
         "category": "Chinese"
-      }
-    ],
-    "Double Coin": [
-      {
-        "title": "FALKEN's AZENIS FK520 (R0) Tires Are Now Original Equipment on the Audi Q7 and Q9 - Traction News",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNTU3TDNuVDJ6a0RFbWFHNXJ0OUd4N05oMEJxZm9pMVEwY3BnN0ZySnZhUVdnYlFwWDZHb0pONlp0aUIwVkxVX2xEd1g3NTJpTVE4WmN4ell6X2tGSWN4MUwxeDdaVHNHd3oyN3Z4MWxFNmxiQWk0T1I0OXNyUzFUWXlNTnFwMlVIWjZWM1VFVmtIUQ?oc=5",
-        "pubDate": "Tue, 27 Oct 2026 10:14:49 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "Maxxis Tyres": [
-      {
-        "title": "Maxxis releases all-new semi-slick Receptor gravel tyre (with trendy tan-wall options to come) - BikeRadar",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBGdEZVT3ZJdVE2TTNYVmRHdWtMcjFkRGJ1YVJZRllDQjRFejd3STVzaHppRm91Zjh1c1ctOC1meXpoc2N6U1p4N1MtNEdQNWxzMlhpM1FqbGpmV2w5VU5vZzJUSUozTnFJY3c?oc=5",
-        "pubDate": "Mon, 15 Feb 2021 08:00:00 GMT",
-        "category": "Taiwanese"
-      }
-    ],
-    "Prometeon Tyre Group": [
-      {
-        "title": "Prometeon in tie-up to advance tire inspection automation - European Rubber Journal",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONk5DaVhjSkpHUk1SM3Nzc1RfY0o5OEpmVmY1NVpibFN6M1VyQnBhcV9YNkMtRnhkQWZnYjVqVW5nSEFCb2tYOWlub3c2MVQwa2d5dG5jc3JTbEdzQUlwWHY1cDB4YmRNN2VLd0gyWUFjUFBTRFpZVkt5ZjNJX2w5NC1Nbm5XQmVqRWw2X1Z0OVVsbzlxc3dvUF9kV1dlSUp4ZTZMTlZRV0JQbThzazlISm5wLVdSRTZLSXh4Uk82SQ?oc=5",
-        "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT",
-        "category": "Industrial/TBR"
       }
     ]
   }
