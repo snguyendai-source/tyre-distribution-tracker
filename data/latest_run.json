@@ -1,23 +1,23 @@
 {
-  "runAt": "2026-10-31T11:55:03.036445+00:00",
+  "runAt": "2026-11-01T12:54:13.453809+00:00",
   "totalNew": 2,
   "entitiesChecked": 118,
   "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Premio": [
+    "Speedy": [
       {
-        "title": "Bridgestone prepares F1 return bid to challenge Pirelli for 2029 tyre contract - Grande Prêmio",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWDdSVDNNQlk0dFQxZnZDX3VldGZaS2RqQ2VXblVvdmdva3V5eUlBQkUyMl96Q1JZVF9aVHNaUnhtdzZGcHJPT1ZkS0ZpZF9VdFBscXBYNmhZWVpEblJTQ1ZWQjY3cENId1AtbnJkdWNtNjVkQzhITU5iajdSazV4cWEyVU05bTZuNmx3aE1iOFNydnEwUGpTamlzYWUtWUJFcG9tN2VvTTFUZjl1SkVwNkRUWkVZUFk?oc=5",
-        "pubDate": "Mon, 26 Oct 2026 14:30:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
+        "title": "Bridgestone gathers its three French tyre retailers under First Stop banner - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRzBCbEpaLXZqV0dMUzhab2dld19pU3RKRHNxSEt4akQ0SWJQcHl4bTdLNWl5R0tDOGFkNzRHSmpWbS11LVRtRjZrWGM2UlFzVkdOd0dnZmFfRWdYWnk1SzlCZEhuNnQ3WC1VMk5WYlRpVVFnQ1VCRFUtbXlQS0pFLWZ3Z0ZmbnVRa29GZy1pTW1QRHNKeGVza0VDVHQtNkh6UjdVNEdtOHV5LTRwMDFV?oc=5",
+        "pubDate": "Wed, 22 Jul 2020 07:00:00 GMT",
+        "country": "France",
+        "cluster": "South-West"
       }
     ],
-    "Blackcircles": [
+    "Bandvulc": [
       {
-        "title": "Blackcircles.com expands mobile tyre fitting service with new fleet - Fleet World",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNR2MzMHVNUnZKdEc2dmVndUhkRjR3ZlNLc0Q2WDZlYU9pSlVaaV9sRjZocXVUWWpybnN1djhSRVNFVzdValNkQ1JYUGJ3cVlUeDZneVRSbzBqM3V6VU1qQkU5NUtwbHdDdVFrbVVzdDFFeGY3Y0hyUWlOV3J3bjhEYlVXRXFzRlVhT2M5WWIxZERONzRoS0M4Rg?oc=5",
-        "pubDate": "Mon, 19 Oct 2026 06:01:55 GMT",
+        "title": "Bandvulc release new long haul and waste tyre - Commercial Motor",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPa1BlSkF0Wkh3VkgwU0FOblRzbXlURWdNVEYxMXQ0U3d1T1BhVm96d3BLd01ITUVucE9FSzVWSHhQOVlkcm9fWHdLX2l1YmJ5RDNmOXZMQ25OX2pCM0xEUnB4aVpPSGFZOHl0aXN1WWI4N05BeU5oeWlVMmU1S0RJWGdwckJISjRUbk50RjVTZ3BTWGVtc3J0eGFpa0k?oc=5",
+        "pubDate": "Wed, 05 Jul 2023 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
