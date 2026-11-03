@@ -1,44 +1,7 @@
 {
-  "runAt": "2026-11-02T15:08:56.048772+00:00",
-  "totalNew": 4,
+  "runAt": "2026-11-03T13:52:14.796580+00:00",
+  "totalNew": 0,
   "entitiesChecked": 118,
-  "entitiesWithNews": 4,
-  "newItemsByEntity": {
-    "Pneuhage": [
-      {
-        "title": "Successful restructuring: creditors approve Grasdorf Group insolvency plan - PLUTA Rechtsanwalts GmbH",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaXVaVEtkem43VEVoQWw5WDluTEZhWEd0b2dhVnE4T0FJNVhUSEEyNFptSElpNWVtN1JPamQ4eGFDT0xKajVfeEpCUUJHMEl6LUpPbG5LOWJoQmRKZTdEVkQzWXo3X24xV2lJdEtUZXAtM1ROdEFXSy00cmw3V3FRc2RmRzRMYkhKNHhUQTJXLTRTVzZFM3BmOHVWcFdRY0UtVDZHcE1ETktRNWpjN0dMTm1B?oc=5",
-        "pubDate": "Wed, 11 Dec 2024 08:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Reifen24": [
-      {
-        "title": "Taylor Wessing advises Gundlach Automotive Corporation on the sale of online retailer Goodwheel - Taylor Wessing",
-        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQdDlITHFOTnNIdVZvc2pFb29uTzJoWFg0WHN3UHFDUFNVclU1c1FXVTB6Qld1RVlyZUVUZy1oY0ZZaWlWRzN2LXl0eUEwbW1yNUZrd2lwRUszZjJLQXpuWDFxeGRuZW9ueE5NQWxsSUo1VG5ON3RiYWtmVDlJU1JZTTFUaTZ3WUV1Qkw0dUVyUU9JOFhVa3dmRGJEVnlKWUdfRkZvSmxfcWYybUQyZ01nSlpodlhWNnZvOWxEWGZXLWRLaU9XWlBnTGNuTmllMWZJWXIwUTBUczZEejl3TFV6Mg?oc=5",
-        "pubDate": "Wed, 22 Jul 2020 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Feu Vert": [
-      {
-        "title": "Winter tires: there are no more seasons - Flottes Automobiles",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1rV2dxZWpCTkl4SEpfV1pXbUpSWTlObkFzN3dGcnBDVkZTZkh0SmdYSnFVOW9XYkplQTl2QTEwTHgtalhDR1ZhR09uaXBDVU03a1JUY2d6RFhlSExuTmRxSmNYNVJaeHFaQlAw?oc=5",
-        "pubDate": "Mon, 02 Nov 2026 09:05:04 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      }
-    ],
-    "HiQ Tyres": [
-      {
-        "title": "Strategic focus and operational excellence earn HiQ Tyres & Autocare 2026 Tyre Industry Award - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNm93UmxHakFGaWh1ekpVdG1FbVcteXJ3U2UwUkNod1FVOEhET0VWeVVpRHJBSTdWcHRVYWszeEV1OWV5bE8zMkhNa0p2dl9yZGhfQ2NoTV9ETmRvQmNxOC1FTHBYSEtNQmNpT2JRWWEzMTQ3YTBqQ29YbjFKNXVyb00tTlZGU3Q2ZnlfaVdIaGNySjlzNFZlVDliZnpCNm04N1RZQ2FYN1RPOHRNaGhKNjBQaHc0Zk1DTnFOUHVyUDhlYnlr?oc=5",
-        "pubDate": "Mon, 02 Nov 2026 10:54:33 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ]
-  }
+  "entitiesWithNews": 0,
+  "newItemsByEntity": {}
 }

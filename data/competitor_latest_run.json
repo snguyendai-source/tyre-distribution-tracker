@@ -1,45 +1,31 @@
 {
-  "runAt": "2026-11-02T15:08:56.048772+00:00",
-  "totalNew": 5,
+  "runAt": "2026-11-03T13:52:14.796580+00:00",
+  "totalNew": 3,
   "entitiesChecked": 26,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Michelin": [
+    "Goodyear": [
       {
-        "title": "Michelin Continues as ELMS Tyre Partner for LMP3 - European Le Mans Series",
-        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVGFkQlJoVE5uWHhOVkZTd0c4ajhoSDNpWU1KY0ZwSk1fdnl5X0hVdnE0S0kyVGRoQWlZZWVSZzg0Uy1NeGdKbEtjaFQtbThscEF4OEVxa2F1RGFMTHBacUZLSi1Ic0FCMDlSMm91TFdROWlqQmlTU2U3c0MyXzNWOVVTeC1YU0xJaTJSS3NIa3ZfNEFxSFJfaHFTT2hrQkFkN2pDNjRPVW9fdXR4bkxxYXcwVHJ5RU1pSTgtUUZiN09vTjNZbk9JSjlZeHJVeGM0Y2dYME1qb1dDSXpO?oc=5",
-        "pubDate": "Thu, 13 Jun 2024 07:00:00 GMT",
+        "title": "Goodyear unveils expanded 2026 UltraGrip winter tire portfolio for snow, ice and slush - https://news.goodyear.eu/",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOX3ZFNGNLX2JiQkNrbVpfWlhiR01sUEJ3a3Yzem4zbTBVOVZDUGZVcU5TR1JVVmRhTFEtQlFtOFkzV2pIb1A3elVrWF9ZV2Y0S3d3QVAzMWV0OXVUNEg4aVRjRWNBT3llNTFpMGlfSDltWUtVVzZyZ3RuRDBQc3ZJQ0ZadGYzTklaMEZQTXAzVHh4bmR6a1Zfakx4NERWLWktdmprUkExT0oxUmh2M0ZKcA?oc=5",
+        "pubDate": "Tue, 29 Sep 2026 07:00:00 GMT",
         "category": "Premium global"
       }
     ],
-    "Nexen Tire": [
+    "Pirelli": [
       {
-        "title": "Nexen Tire benefitting from expanded warehousing at Czechia site - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPT0dSSkRTRTVpZERndVllYnlKSXdZSTJkYjZ5NVpvS0FFWUlqeTdtcEtsY2pRczlDN1BsM1JhU1oyQ3dHUUNucER5S2ZSUkRmdGcyOG1Ub2d4c0R1UHBuQ01QVk9ISTR4WXhVc3FsOXV5NjV3MS1mU2ktYzVBNEsxYnhDYXZqNFMwY3d1LWhOWU1udXNsc0Y0ZkNtNmtSYjdt?oc=5",
-        "pubDate": "Thu, 18 Jun 2026 07:00:00 GMT",
-        "category": "Korean"
+        "title": "PIRELLI: FIRST STANDARD PRODUCTION TYRE WITH OVER 70% BIO-BASED AND RECYCLED MATERIALS - Pirelli",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOd3NPeU5EVE9jWEc4WnNaaUJPRnhJN1V0NzhpSmRGbzd4LWFsdndRMDFTYW5oQURkRWQ1SmJFRFhQa3hFblJ5dmt2QW5iaUtNSkhhMERXY3AzcVpabXB5OTJHZTg0VUs1RUtpbVdlYmdfeGZuZmQ4MU9aZVhNWlY0Z1UwYU12eUxYQ2VhTGZ1TktQRHh5Sm14dFRScUxfU0phRGw4RXhUS3R3cVZDRHZIaw?oc=5",
+        "pubDate": "Wed, 09 Jul 2025 07:00:00 GMT",
+        "category": "Premium global"
       }
     ],
-    "Toyo Tires": [
+    "Falken Tyres": [
       {
-        "title": "Structural, management changes at Toyo Tires - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQk9zWmpvYVdxUEtXWFM1M1BoMVN4eFlDRG8yV0lVaXRZY0pzUXdkM2lVYkR6VUxTQnUwVVVVRFd5ZS1Ta3ZwNlVqM2NlX09qamllaEgtVUZGNmx1d0FoM1VtRXgyNy1FbFJvbjV0dWhiUWpEUVdQdVhlZENaUENvZUpGY1Y?oc=5",
-        "pubDate": "Mon, 01 Jul 2024 07:00:00 GMT",
+        "title": "Falken support for Jake Archer's Gymkhana Grid bid - Cision News",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcHZzM1BlTXlWMkZIczB3b1RfN3JlR1RtNDJzekI4OHlRdWhseVo5dG10dFRvcHZIR1lNck9EeWtPZXpzanRQX2VSaGdwd3hvR181dmZzQnF2d0NRb21HWkJ2NjVFdXE2VmNXa0hCRV96T0NRNHJzSjZCTy0wdjljS1F0TlhEdjh6bl9BM1FvcnVXa3p5ZUE0ZG5LNDBwSHE0ZUs1bDRGRDJYRUU?oc=5",
+        "pubDate": "Mon, 29 Sep 2014 07:00:00 GMT",
         "category": "Japanese"
-      },
-      {
-        "title": "Toyo joins ETRMA - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5OOEllT0dlMW1BWkdEXzlKTjJOSERKZC1jc1JYYTVjbVhpc2NmSXU1ejQ4ekFvb25JTkh5amItMUs1Nmk5Y3ZnaTlQc2NPc3VxNFpGNGxzRWlWMERIVXllUA?oc=5",
-        "pubDate": "Tue, 14 Nov 2023 08:00:00 GMT",
-        "category": "Japanese"
-      }
-    ],
-    "Aeolus Tyre": [
-      {
-        "title": "First giant tire rolls off new line at Aeolus plant - European Rubber Journal",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRjRLeGN3QlpaYmFha3d4Z0NBNmMzLW43ZHB6NmNEamR4Zlh5SXVjVWEzVHdnTURQaVVETUt3Z1h5ZnJRT2tjRGJldnR1NUJQRWoxaGgxdDQyWkpkX29PaDFVczBqV2dLSXFsN193Q1dhZ3VlNGxZbUFnR1ZNd3h2S3VMakI0MHlpYnJreGNXUXZFbUM4UnJ5WHNtYjFKdEYteVZV?oc=5",
-        "pubDate": "Thu, 16 Oct 2025 07:00:00 GMT",
-        "category": "Chinese"
       }
     ]
   }
