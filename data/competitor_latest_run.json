@@ -1,31 +1,21 @@
 {
-  "runAt": "2026-11-03T13:52:14.796580+00:00",
-  "totalNew": 3,
+  "runAt": "2026-11-04T13:59:31.327772+00:00",
+  "totalNew": 2,
   "entitiesChecked": 26,
-  "entitiesWithNews": 3,
+  "entitiesWithNews": 1,
   "newItemsByEntity": {
-    "Goodyear": [
+    "Nokian Tyres": [
       {
-        "title": "Goodyear unveils expanded 2026 UltraGrip winter tire portfolio for snow, ice and slush - https://news.goodyear.eu/",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOX3ZFNGNLX2JiQkNrbVpfWlhiR01sUEJ3a3Yzem4zbTBVOVZDUGZVcU5TR1JVVmRhTFEtQlFtOFkzV2pIb1A3elVrWF9ZV2Y0S3d3QVAzMWV0OXVUNEg4aVRjRWNBT3llNTFpMGlfSDltWUtVVzZyZ3RuRDBQc3ZJQ0ZadGYzTklaMEZQTXAzVHh4bmR6a1Zfakx4NERWLWktdmprUkExT0oxUmh2M0ZKcA?oc=5",
-        "pubDate": "Tue, 29 Sep 2026 07:00:00 GMT",
-        "category": "Premium global"
-      }
-    ],
-    "Pirelli": [
+        "title": "Where Are Nokian Tires Made & Who Owns The Company? - SlashGear",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT3BjQUdoN2ZIcnYxcmlkazY1R1BzZ3B6VV92d2pITkotY3JWTkpXTi15NURpRVYtVmpYaWo1Nm1hbTV5YjYySE1QYnFkQW5zSTNVSmJLekE5dnFyWTVUY1VMUEcyVGFleGNCdkRQR0pNR2hobXVNZlF6RTN4aVlrZzIwM0tPSFVsdFNwR1hB?oc=5",
+        "pubDate": "Fri, 07 Mar 2025 08:00:00 GMT",
+        "category": "Nordic"
+      },
       {
-        "title": "PIRELLI: FIRST STANDARD PRODUCTION TYRE WITH OVER 70% BIO-BASED AND RECYCLED MATERIALS - Pirelli",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOd3NPeU5EVE9jWEc4WnNaaUJPRnhJN1V0NzhpSmRGbzd4LWFsdndRMDFTYW5oQURkRWQ1SmJFRFhQa3hFblJ5dmt2QW5iaUtNSkhhMERXY3AzcVpabXB5OTJHZTg0VUs1RUtpbVdlYmdfeGZuZmQ4MU9aZVhNWlY0Z1UwYU12eUxYQ2VhTGZ1TktQRHh5Sm14dFRScUxfU0phRGw4RXhUS3R3cVZDRHZIaw?oc=5",
-        "pubDate": "Wed, 09 Jul 2025 07:00:00 GMT",
-        "category": "Premium global"
-      }
-    ],
-    "Falken Tyres": [
-      {
-        "title": "Falken support for Jake Archer's Gymkhana Grid bid - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcHZzM1BlTXlWMkZIczB3b1RfN3JlR1RtNDJzekI4OHlRdWhseVo5dG10dFRvcHZIR1lNck9EeWtPZXpzanRQX2VSaGdwd3hvR181dmZzQnF2d0NRb21HWkJ2NjVFdXE2VmNXa0hCRV96T0NRNHJzSjZCTy0wdjljS1F0TlhEdjh6bl9BM1FvcnVXa3p5ZUE0ZG5LNDBwSHE0ZUs1bDRGRDJYRUU?oc=5",
-        "pubDate": "Mon, 29 Sep 2014 07:00:00 GMT",
-        "category": "Japanese"
+        "title": "Tennessee-based Nokian Tyres stays confident despite Trump tariff uncertainty - The Tennessean",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRzd1V0JFY05yX1Joc0RiTC1UV0VFbzNqdnR2UmdlUldMWENpRGFLSzdlRjFBekZ2ck9vU3NiNTFsVm9QalYyUVpXcFBuYnRvdFJaZ0RxbkhOX2R0OE5XYXhUbmlsWldfclZiaTVNM0lpel9yclJpLVY2T2JDRjJ1UjV0UkE2dVE3UGtUYXBVX0o5SnFMUVBsQ1FOWU81N1hQV2R5Z2pfNDRFOVBFUEIweXhiMjhBSEo1NE5jbzRGUkJiS3da?oc=5",
+        "pubDate": "Fri, 28 Mar 2025 07:00:00 GMT",
+        "category": "Nordic"
       }
     ]
   }
