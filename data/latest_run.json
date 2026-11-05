@@ -1,43 +1,16 @@
 {
-  "runAt": "2026-11-04T13:59:31.327772+00:00",
-  "totalNew": 4,
+  "runAt": "2026-11-05T14:20:45.612046+00:00",
+  "totalNew": 1,
   "entitiesChecked": 118,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 1,
   "newItemsByEntity": {
-    "Premio": [
+    "Emil Frey": [
       {
-        "title": "Mexico City Grand Prix: Driver Tyre Strategies - Pitpass",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNS19JV0N5eXJxT1FRc2tPb01lTzhWZUViZHMzRHByYTJKNVdmdnpqdE1XM1BTZUo1aTBRR0JnMUg2SGJVVnVKZm5ld3VwdkhXNTF5NE9pLVc0MWlqQ19ySXlMaHR1TDZLUV9QZXlOeXltNjBnTjFDc0pBSkg1M21JTw?oc=5",
-        "pubDate": "Mon, 02 Nov 2026 14:56:17 GMT",
+        "title": "Pierre Guignot, Managing Director of Import Activities for Emil Frey France - Flottes Automobiles",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1FVEJHNXJBNlJIeURTTGtDNzFBM2pqeDJONzJXUW5xVVk1SXlRVnZMbTE4UF9sdjloVW9LUF9ETkJDbGsxRkhVSFR1ckZYVUpIWGd4NVdUcHNYNE5QbnBYcGdwaEpjR1BINHZ0M0c3NzJPT2NCTkZtUjNWdw?oc=5",
+        "pubDate": "Tue, 05 Mar 2024 08:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
-      }
-    ],
-    "Speedy": [
-      {
-        "title": "Hakkapeliitta's 75-year history online: The story of the world's most famous winter tyre - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUjRiZzZndXVrNmI2cENqdnV4eFpmM2ZFdjZJbDE2WjBkaG8wM0h2bVdIMDFwd0RIV2dacjJ3LXBsdDYtU1ExckpjTHpLRGhaeXRjRGNMZ0RQRjlTRHlPQ3EzSFctcXp2aW5UQXpLSTRjSXkwUmhUU3NRM2lTY0FPYmlZYzNKVGhzN0tsOXk3c2RCTnliVHI5Y2U0T0E0NHlEUXROTnNuYjhobHJsbHhHSndvbWVCOEp1MEE1aTM1cmNXRm1jMDBlR2NjOWFQaDhlZ2tZdk1Tdw?oc=5",
-        "pubDate": "Tue, 22 Nov 2011 08:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      }
-    ],
-    "Midas France": [
-      {
-        "title": "Midas opens its first Midas City centre in Paris - Flottes Automobiles",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA0THFXZkN3elJ2QzlnMENHdkRKVTdfVXdFSi1aZjdHTHI1SWw1YmhPaWRmdGxwR3RDZy03MGtTTFQ3RmdfREJRbFdhYVl1ZXQ0YTBsaXpfNThCYTNEdmZ1UTE2S3hNYlB6bmg0UkEzNA?oc=5",
-        "pubDate": "Wed, 05 Jun 2024 07:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
-      }
-    ],
-    "Bandvulc": [
-      {
-        "title": "10 Years of retread innovation: Continental celebrates Bandvulc acquisition anniversary - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPU2JkdG1oaTFRTkwyMmxZeDZYaFp6TVduWEdGYTlRWXhHYmNEdnZsblRtZUE1OVhENFNFU3o4aWh0OVUtWWhyQ1NZTHhRZkNqbFl1Y1A3MURTTEkyWnNfMGlNcWFObVppbklMaEdoSFAyRW5nS2pmblo5cC1RdnZGUHpZUzlfalpOZEozNll3bEZtQl9SMk5VT3dERWVlLWUwQkFwazZ3OW5SQzlWWkQtblJTZjFNQjlzb0lhRGhB?oc=5",
-        "pubDate": "Tue, 03 Nov 2026 13:53:28 GMT",
-        "country": "UK",
-        "cluster": "North-West"
       }
     ]
   }
