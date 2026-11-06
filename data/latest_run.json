@@ -1,17 +1,7 @@
 {
-  "runAt": "2026-11-05T14:20:45.612046+00:00",
-  "totalNew": 1,
+  "runAt": "2026-11-06T13:57:20.703025+00:00",
+  "totalNew": 0,
   "entitiesChecked": 118,
-  "entitiesWithNews": 1,
-  "newItemsByEntity": {
-    "Emil Frey": [
-      {
-        "title": "Pierre Guignot, Managing Director of Import Activities for Emil Frey France - Flottes Automobiles",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1FVEJHNXJBNlJIeURTTGtDNzFBM2pqeDJONzJXUW5xVVk1SXlRVnZMbTE4UF9sdjloVW9LUF9ETkJDbGsxRkhVSFR1ckZYVUpIWGd4NVdUcHNYNE5QbnBYcGdwaEpjR1BINHZ0M0c3NzJPT2NCTkZtUjNWdw?oc=5",
-        "pubDate": "Tue, 05 Mar 2024 08:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ]
-  }
+  "entitiesWithNews": 0,
+  "newItemsByEntity": {}
 }
