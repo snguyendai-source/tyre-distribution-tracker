@@ -1,7 +1,17 @@
 {
-  "runAt": "2026-11-06T13:57:20.703025+00:00",
-  "totalNew": 0,
+  "runAt": "2026-11-07T12:41:54.886610+00:00",
+  "totalNew": 1,
   "entitiesChecked": 118,
-  "entitiesWithNews": 0,
-  "newItemsByEntity": {}
+  "entitiesWithNews": 1,
+  "newItemsByEntity": {
+    "Marangoni": [
+      {
+        "title": "G&S Tyres – retreading professionalism and the personal touch - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNTZrZ2ZVajJiVGZNem9IY05wdFBwZ0hXZ2V6YmFleUQ1Q1pjdy1ZbUVFT0lweFBIQ2lfU1AwVXcyaldtQWxrWU9NLWw4emt5S0oxOXJDTHRCZEExaC1nNFdJSlBqeVRRTG1MTWtUN0gwa2FBeWRlaWp3VzVFd2pvbVNwN25vRXU4dU1uV1RMSW9EQ2g2WUZYdA?oc=5",
+        "pubDate": "Tue, 03 Nov 2026 16:47:27 GMT",
+        "country": "Italy",
+        "cluster": "South-West"
+      }
+    ]
+  }
 }

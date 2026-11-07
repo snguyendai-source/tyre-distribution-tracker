@@ -1,24 +1,7 @@
 {
-  "runAt": "2026-11-06T13:57:20.703025+00:00",
-  "totalNew": 2,
+  "runAt": "2026-11-07T12:41:54.886610+00:00",
+  "totalNew": 0,
   "entitiesChecked": 26,
-  "entitiesWithNews": 2,
-  "newItemsByEntity": {
-    "Aeolus Tyre": [
-      {
-        "title": "Tire makers invested nearly $13 billion in capital projects in 2025 - Tire Business",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQR1NkMTdmRkl0RUFzdjRzQTBBZmtlR3pac2hQa0puS3hJTDEwb3BncTNJY3phUWhKQ1JfQXlLcEpYM1RIZmVCaWtuaTFab3VZUFJUa1pOblpiRHNjOWhIODY4dk9BQXJPU0Ztdk1QZjVNdXdHREYzZTRBMzVNR1hzQkV3?oc=5",
-        "pubDate": "Wed, 26 Aug 2026 07:00:00 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "JK Tyre": [
-      {
-        "title": "JK Tyre profits plunge as raw-material costs rise 30% - European Rubber Journal",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYkpSSXl2YURZT1dVOWRFM05FQ2gtMWNoMzVoZTBzb2V2S0RiV0lkcnpoQTN3aDhHVDVtQ0R6bjU2ZHhicUtTTE5SU1ZlRzI5ZFkxeHpDdHZtMEo3UWVDYkx6TC1iazBZb3VqMlEzR01ZcWVSVVpVSXdQYm9jbkMxZlFlMVpCUUxac21TWXo1UWdEN3RxdG1JbTRzTFJsRjlhcmxuTmpReDhOZm9V?oc=5",
-        "pubDate": "Fri, 06 Nov 2026 07:59:57 GMT",
-        "category": "Indian"
-      }
-    ]
-  }
+  "entitiesWithNews": 0,
+  "newItemsByEntity": {}
 }
