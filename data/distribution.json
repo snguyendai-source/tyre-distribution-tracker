@@ -485,39 +485,30 @@
           "share": "23.2%",
           "volume": "8.6M",
           "sourceBadge": "modeled",
-          "source": "Source: Syndicat du Pneu / GfK 2024 panel (8.86M TC4) × ~97% passenger car  · Modeled; the networks' volumes are scaled to the channel total, and the wholesalers sit here only to be listed once",
+          "source": "Source: Syndicat du Pneu / GfK 2024 panel (8.86M TC4) × ~97% passenger car  · Modeled; the chains are listed at their own estimates and are not scaled to the channel total (the named chains add up to 10.8-12.1M against 8.6M, see the note); the wholesalers sit here only to be listed once",
           "flowBox": "auto",
           "entities": [
             {
               "name": "Distri Cash",
               "owner": "Family-owned (research, not checked)",
-              "volume": null,
+              "volume": "6.5M tyres in 2024",
               "model": "Wholesaler / distributor",
               "territories": [
                 "__NATIONWIDE__"
               ],
               "scale": {
-                "value": 600,
+                "value": 573,
                 "metric": "M EUR group revenue 2024",
-                "label": "group revenue about EUR 600M in 2024 incl. parts (+20%; research, not checked); J2R (Jan 2024, checked) reported 5.5M tyres and EUR 480M revenue for 2022 and 27 locations; est. 4-5M tyres (research); direct from manufacturers plus exclusive Asian brands (Sailun, Rovelo, Tracmax, Evergreen, Westlake, Roadking) and CEAT. Wholesale check (Oct 2026): the 5.5M tyres for 2022 was re-checked in J2R, 15 Jul 2023. Later figures from the research run, not re-opened: 6.5M tyres and €573M (Zepros), or 6M and €625M including €90M of parts; an older Auto Infos item said 3.5M, about 10% share."
+                "label": "EUR 573M of revenue for 2024 including EUR 90M of parts, and 6.5M tyres (Zepros, early 2025; another Zepros item says 6.0M and EUR 625M; research run, not re-opened). EUR 700M including EUR 110M of parts for 2025, 95% of it tyres for cars (Journal du Pneumatique, 2 Jan 2026; research run). J2R (15 Jul 2023, checked): more than 5.5M tyres sold in 2022; J2R (9 Jan 2024, checked): EUR 480M revenue and 27 locations (the research says 28 sites). Sells to nearly 10,000 garages, independent repairers, dealers, auto-centres, traders and marketplaces; Asian brands about 35% of activity (research). Direct from manufacturers plus exclusive Asian brands (Sailun, Rovelo, Tracmax, Evergreen, Westlake, Roadking) and CEAT. Includes some exports (a Spain office since 2024) and own retail. An older Auto Infos item (about 2019-20) said 3.5M tyres, about 10% share; it is out of date."
               },
               "est": {
-                "lo": 5.5,
-                "hi": 5.5,
-                "basis": "Published",
-                "scope": "all tyre types",
-                "year": "2022",
-                "note": "J2R, checked. Later figures of 6.0–6.5M were not re-opened."
+                "lo": 6.5,
+                "hi": 6.5,
+                "basis": "Team input",
+                "scope": "all tyre types (95% of revenue is cars)",
+                "year": "2024",
+                "note": "Your French market contacts gave 6.5M. Zepros reports the same figure for 2024 (research run, not re-opened); other Zepros items give 6.0M and 6.4M. Checked: more than 5.5M in 2022 (J2R, 15 Jul 2023). Sales to professionals, so the same tyres as in the channel totals: do not add."
               }
-            },
-            {
-              "name": "Alliance Automotive Group (AAG)",
-              "owner": null,
-              "volume": null,
-              "model": "Wholesaler / distributor",
-              "territories": [
-                "__NATIONWIDE__"
-              ]
             },
             {
               "name": "Doyen Auto France / Autodis (API, 1,2,3 AutoService, Requal)",
@@ -582,18 +573,9 @@
               ]
             },
             {
-              "name": "Exadis (Mobivia)",
-              "owner": null,
-              "volume": "wholesale arm of Mobivia (research, not checked)",
-              "model": "Wholesaler / distributor",
-              "territories": [
-                "__NATIONWIDE__"
-              ]
-            },
-            {
               "name": "Speedy",
-              "owner": "Bridgestone",
-              "volume": "1.0-1.2M",
+              "owner": "Bridgestone EMEA (100% since July 2016; never part of Mobivia)",
+              "volume": "0.6M (sales team)",
               "model": "Fast-fit / auto-centre chain",
               "territories": [
                 "__NATIONWIDE__"
@@ -601,63 +583,22 @@
               "scale": {
                 "value": 500,
                 "metric": "branches",
-                "label": "~480-500 centres; over 1M tyres and a 4.5% share in 2016, EUR 281M revenue in 2018 (research, not checked); est. 1.0-1.2M passenger-car tyres (research estimate, medium-low confidence)"
+                "label": "Close to 500 centres, 306 franchised (Speedy press release of 21 Mar 2025, via Franchise Magazine; research run). Tyrepress (5 Aug 2016, checked): Bridgestone EMEA completed the 100% purchase after approvals on 28 July 2016, close to 500 retail points. Last published volume: 1.2M tyres in 2015 (Bridgestone, Auto Infos 2016, as quoted by the research run, not re-opened); network revenue EUR 283M in 2015. 0.6M would mean the volume halved since 2015 (about 1,250 tyres a centre against 2,500); plausible with online and budget tyres, but unverified. Outside Mobivia's 6.94M."
               },
               "buyingGroup": "Eurofleet (with First Stop & Côté Route) — Bridgestone B2B fleet accounts",
               "est": {
-                "lo": 1.0,
-                "hi": 1.2,
-                "basis": "Estimate",
-                "scope": "passenger-car tyres",
-                "note": "Medium-low confidence."
-              }
-            },
-            {
-              "name": "Norauto",
-              "owner": "Mobivia",
-              "volume": "2.0-2.4M",
-              "model": "Fast-fit / auto-centre chain",
-              "territories": [
-                "__NATIONWIDE__"
-              ],
-              "scale": {
-                "value": 410,
-                "metric": "branches",
-                "label": "410 French centres; Mobivia has about 2,000 sites and EUR 4bn of activity (research, not checked); est. 2.0-2.4M passenger-car tyres, scaled to the channel (research estimate, low confidence)"
-              },
-              "est": {
-                "lo": 2.0,
-                "hi": 2.4,
-                "basis": "Estimate",
-                "scope": "passenger-car tyres",
-                "note": "Low confidence."
-              }
-            },
-            {
-              "name": "Midas",
-              "owner": "Mobivia",
-              "volume": "0.4-0.6M",
-              "model": "Fast-fit / auto-centre chain",
-              "territories": [
-                "__NATIONWIDE__"
-              ],
-              "scale": {
-                "value": 360,
-                "metric": "branches",
-                "label": "~350-370 French centres, maintenance-led; Mobivia's since 2004 (research, not checked). Mavis's 2025 purchase of Midas covers the US and Canada only (checked). Est. 0.4-0.6M tyres (low confidence)"
-              },
-              "est": {
-                "lo": 0.4,
+                "lo": 0.6,
                 "hi": 0.6,
-                "basis": "Estimate",
-                "scope": "tyres",
-                "note": "Low confidence."
+                "basis": "Team input",
+                "scope": "passenger-car tyres, own sell-out",
+                "year": "current, year not stated",
+                "note": "Your French market contacts: about 600K a year, Speedy's own sell-out. Not published. The research range is 0.6-1.0M; the last published figure is 1.2M for 2015."
               }
             },
             {
               "name": "Feu Vert",
               "owner": "Bassac (100% since 24 Feb 2026)",
-              "volume": "1.4-1.8M",
+              "volume": "1.9-2.6M",
               "model": "Fast-fit / auto-centre chain",
               "territories": [
                 "__NATIONWIDE__"
@@ -665,37 +606,39 @@
               "scale": {
                 "value": 350,
                 "metric": "branches",
-                "label": "350 French centres, 167 owned and 183 franchised (research, not checked); Bassac bought 100% of the holding company from Alpha Private Equity on 24 Feb 2026 (checked); group revenue EUR 663M for the year to Sep 2025 (checked), EUR 935M under the banner (research); est. 1.4-1.8M tyres (low confidence); FleetPartner member for leasing"
+                "label": "350 French centres, 167 owned and 183 franchised (research, not checked); Bassac bought 100% of the holding company from Alpha Private Equity on 24 Feb 2026 (checked); group revenue EUR 663M for the year to Sep 2025 (checked), EUR 935M under the banner (research); est. 1.9-2.6M tyres (derived from revenue, low confidence; was 1.4-1.8M); FleetPartner member for leasing"
               },
               "buyingGroup": "FleetPartner (leasing only, with BestDrive, Eurotyre and Siligom)",
               "est": {
-                "lo": 1.4,
-                "hi": 1.8,
-                "basis": "Estimate",
-                "scope": "tyres",
-                "note": "Low confidence."
+                "lo": 1.9,
+                "hi": 2.6,
+                "basis": "Derived",
+                "scope": "tyres, in France",
+                "year": "2025",
+                "note": "France banner revenue EUR 765M excluding VAT (EUR 935M including) × 22-30% tyre share ÷ EUR 88 a tyre (research, low confidence). Was 1.4-1.8M. Some of its fitting is online sellers' sell-out (Allopneus fits at 162 Feu Vert centres)."
               }
             },
             {
               "name": "Roady",
               "owner": "Independent (ITM Mobilité/Mousquetaires)",
-              "volume": "0.5-0.8M",
+              "volume": "0.6-0.75M",
               "model": "Fast-fit / auto-centre chain",
               "territories": [
                 "__NATIONWIDE__"
               ],
               "scale": {
-                "value": 230,
+                "value": 118,
                 "metric": "branches",
-                "label": "~230 centres, franchise extension since 2025 (ITM Mobilité); not verified by the research; est. 0.5-0.8M tyres (low confidence)"
+                "label": "118 centres in France plus 37 in Portugal (the earlier ~230 could not be confirmed); France revenue EUR 209M in 2025, EUR 263M in total (Roady, research run). Derived: EUR 209M × 25-30% tyre share ÷ EUR 85 = 0.6-0.75M (low confidence)."
               },
               "buyingGroup": "PRODY (with Profil+) — created 2018",
               "est": {
-                "lo": 0.5,
-                "hi": 0.8,
-                "basis": "Estimate",
-                "scope": "tyres",
-                "note": "Low confidence."
+                "lo": 0.6,
+                "hi": 0.75,
+                "basis": "Derived",
+                "scope": "tyres, in France",
+                "year": "2025",
+                "note": "Revenue × assumed tyre share ÷ price a tyre (research, low confidence). Was 0.5-0.8M."
               }
             },
             {
@@ -706,7 +649,7 @@
               "scale": {
                 "value": 250,
                 "metric": "branches",
-                "label": "~250 centres in the hypermarket auto departments; not verified by the research; est. 0.8-1.2M tyres (low confidence)"
+                "label": "~250 centres in the hypermarket auto departments; not verified by the research; est. 0.8-1.2M tyres (low confidence). No figure found in the November 2026 research."
               },
               "territories": [],
               "est": {
@@ -720,20 +663,137 @@
             {
               "name": "Rapid Pare-Brise",
               "owner": null,
-              "volume": null,
-              "model": "Buying group / cooperative",
-              "scale": null,
+              "volume": "no tyre role found",
+              "model": "Windscreen chain (no tyre activity found)",
+              "scale": {
+                "value": null,
+                "metric": "",
+                "label": "Windscreen chain of Les Mousquetaires: 152 centres plus 91 in Roady sites. Not a tyre player (research, not re-opened)."
+              },
               "buyingGroup": "PRODY (with Profil+) — ITM Mobilité windshield/glazing network",
               "territories": []
+            },
+            {
+              "name": "Dipropneu",
+              "owner": "Mazzacurati family (Bruno, Axel, Ronan and Hugo)",
+              "volume": "2.35M tyres in 2025",
+              "model": "Wholesaler / importer",
+              "territories": [
+                "__NATIONWIDE__"
+              ],
+              "scale": {
+                "value": 115,
+                "metric": "M EUR revenue 2025",
+                "label": "EUR 115M of revenue in 2025 (+2%) and 2.35M tyres, all types including exports, about EUR 49 a tyre; truck is 5% of revenue (Auto Infos, 9 Feb 2026; research run, not re-opened). The research estimates 2.0-2.3M for French passenger cars (derived, medium-low confidence). Apollo Tyres' exclusive French partner for passenger, van and SUV tyres (Apollo press release, 12 May 2022, via Auto Infos; research run). Vredestein is not mentioned. 15 brands, 12 as exclusive importer: best sellers Leao, Triangle and Toyo; Apollo and Linglong in the quality tier; Dunlop, Goodyear and Pirelli added from 2023 (research run). J2R (2 Jun 2023, checked): Toyo, Kumho, Marangoni, Leao and Triangle; agreements with Pirelli and Dunlop for passenger cars; a EUR 14M, 12,000 m² platform; about 50 employees; the old warehouse handled about 1M tyres a year with a 2M goal, including about 700,000 delivered directly by manufacturers; the family bought out relatives' shares in 2019. Customers named by the research run: the AAG repair networks (Dipro-connect catalogue and the Solupneus ordering site), Autodistribution (exclusive Leao for AD garages) and Alternative Autoparts; no split by customer type is published. One depot at Bondoufle (Essonne), second building planned for 2027."
+              },
+              "est": {
+                "lo": 2.35,
+                "hi": 2.35,
+                "basis": "Company claim",
+                "scope": "all tyre types, incl. exports",
+                "year": "2025",
+                "note": "Auto Infos, 9 Feb 2026, as quoted by the research run (page not re-opened). J2R (2 Jun 2023, checked) had it at about 1M a year with a 2M target. France passenger-car estimate 2.0-2.3M (research, derived). Sales to professionals, so the same tyres as in the channel totals: do not add."
+              }
+            },
+            {
+              "name": "Mobivia France (Norauto, Midas, Carter-Cash)",
+              "owner": "Mobivia group",
+              "volume": "6.94M (Data Report)",
+              "model": "Fast-fit / auto-centre chain",
+              "territories": [
+                "__NATIONWIDE__"
+              ],
+              "scale": {
+                "value": 878,
+                "metric": "centres",
+                "label": "Norauto 417 (146 franchised, L'Officiel de la Franchise 2026; 413 in the 2024 DPEF), Midas 375 (2025; 367 in 2024) and Carter-Cash 86. Mobivia has about 2,000 sites in 16 countries and EUR 4bn of revenue including franchises in 2025 (DPEF and Auto Infos; research run). Fiscal year ends 30 September. Data Report 2025 (sales team, not published): France 6,940,429 tyres (summer 68%, winter 5%, all-season 27%) and 11,456,844 for the group. The market's 2025 mix was 49% summer, 9% winter and 42% all-season (research), so check how seasons are coded. Speedy is not part of Mobivia."
+              },
+              "est": {
+                "lo": 6.94,
+                "hi": 6.94,
+                "basis": "Team input",
+                "scope": "tyres, all banners",
+                "year": "2025",
+                "note": "Mobivia Data Report 2025, passed on by your sales team; not published and not verified. It is 78% of the 8.861M TC4 sold by auto-centres in the GfK panel (2025), which leaves little room for Feu Vert, Speedy, Roady and the hypermarkets. Ask who supplied the report how it is defined: it may include Carter-Cash counter sales, fleet (B2B) or online sales that GfK books elsewhere, sell-in to franchisees, or an October-September year."
+              }
+            },
+            {
+              "name": "Norauto (Mobivia France)",
+              "owner": "Mobivia",
+              "volume": "3.9-4.6M",
+              "model": "Fast-fit / auto-centre chain",
+              "territories": [
+                "__NATIONWIDE__"
+              ],
+              "scale": {
+                "value": 417,
+                "metric": "branches",
+                "label": "417 centres, 146 franchised (2026; 413 in 2024). Revenue about EUR 1.25bn: Norauto France SAS EUR 989.6M for the year to September 2025 plus 146 franchised centres at about EUR 1.8M. Tyre units are not published. Derived: EUR 1.25bn × 28-32% tyre share (assumed) ÷ EUR 85-90 a tyre = 3.9-4.6M, central 4.2M, about 10,000 tyres a centre. Older, undated: « 7 % des ventes de pneus … environ 2 millions d'unités » (LSA). Low confidence. Part of Mobivia France's 6.94M: do not add."
+              },
+              "est": {
+                "lo": 3.9,
+                "hi": 4.6,
+                "basis": "Derived",
+                "scope": "tyres, in France",
+                "year": "2025",
+                "incl": "Mobivia France",
+                "note": "Revenue × assumed tyre share ÷ price a tyre; central 4.2M. The research's own estimate, not published. About 55-65% of Mobivia France."
+              }
+            },
+            {
+              "name": "Carter-Cash (Mobivia France)",
+              "owner": "Mobivia",
+              "volume": "1.5-2.3M",
+              "model": "Fast-fit / auto-centre chain",
+              "territories": [
+                "__NATIONWIDE__"
+              ],
+              "scale": {
+                "value": 86,
+                "metric": "branches",
+                "label": "86 centres (2024 DPEF map; 85 in Dec 2023). Carter-Cash SAS revenue EUR 394.9M for the year to September 2025, operating profit EUR 35.6M. « Nous montons 9 pneus sur 10 vendus »: nine of ten tyres sold are fitted there. Derived: 35-45% tyre share at EUR 60-70 a tyre gives 2.0-3.0M, cut to 1.5-2.3M after a check against fitting revenue (central 1.9M). Low confidence. Part of Mobivia France's 6.94M: do not add."
+              },
+              "est": {
+                "lo": 1.5,
+                "hi": 2.3,
+                "basis": "Derived",
+                "scope": "tyres, in France",
+                "year": "2025",
+                "incl": "Mobivia France",
+                "note": "The research's own estimate from revenue, not published; central 1.9M. About 20-30% of Mobivia France."
+              }
+            },
+            {
+              "name": "Midas (Mobivia France)",
+              "owner": "Mobivia",
+              "volume": "0.65-0.9M",
+              "model": "Fast-fit / auto-centre chain",
+              "territories": [
+                "__NATIONWIDE__"
+              ],
+              "scale": {
+                "value": 375,
+                "metric": "branches",
+                "label": "375 centres in 2025 (367 in 2024), about 97% franchised; maintenance-led. Revenue EUR 245-320M (375 centres at EUR 0.65-0.85M). Tyres are 25% of centre revenue (older franchise data, published). Derived: 25% at EUR 88-95 a tyre = 0.65-0.9M, central 0.75M. Mobivia's since 2004 (research); Mavis's 2025 purchase of Midas covers the US and Canada only (checked). Part of Mobivia France's 6.94M: do not add."
+              },
+              "est": {
+                "lo": 0.65,
+                "hi": 0.9,
+                "basis": "Derived",
+                "scope": "tyres, in France",
+                "year": "2025",
+                "incl": "Mobivia France",
+                "note": "Revenue × 25% tyre share ÷ price a tyre; central 0.75M. About 10-13% of Mobivia France."
+              }
             }
           ]
         },
         {
           "name": "Car dealers & independent repairers",
-          "share": "37.7%",
-          "volume": "14.0M",
+          "share": "30.0%",
+          "volume": "11.13M",
           "sourceBadge": "estimate",
-          "source": "Source: research residual, not in the Syndicat's panel  · Estimate; the biggest uncertainty (8.3M on the Syndicat's pool-only convention). Networks named only, no per-entity volume",
+          "source": "Source: your French market contacts, about 30% of the 37.1M market, not in the Syndicat's panel  · Estimate; not published (the Syndicat puts all non-panel channels at 8-9M). Networks named only, no per-entity volume",
           "flowBox": "deal",
           "entities": [
             {
@@ -790,15 +850,43 @@
               "territories": [
                 "__NATIONWIDE__"
               ]
+            },
+            {
+              "name": "Alliance Automotive Group (AAG)",
+              "owner": "Genuine Parts Company (research, not checked)",
+              "volume": "counted under Dipropneu",
+              "model": "Parts group serving independent repairers",
+              "territories": [
+                "__NATIONWIDE__"
+              ],
+              "scale": {
+                "value": null,
+                "metric": "",
+                "label": "Not a tyre wholesaler. Networks Groupauto, Précisium and Pièces Auto; the Top Garage and Précisium Garage repairers have had the Solupneus sourcing platform, built with Dipropneu, since 2021 (J2R, as quoted by the research run, not re-opened). Auto Infos: AAG « a pris un sérieux retard » in tyres."
+              }
+            },
+            {
+              "name": "Exadis (Renault Group, GCR, Mobivia)",
+              "owner": "Renault Group, GCR and Mobivia",
+              "volume": "no tyre activity found",
+              "model": "Parts logistics platform (no tyre activity found)",
+              "territories": [
+                "__NATIONWIDE__"
+              ],
+              "scale": {
+                "value": null,
+                "metric": "",
+                "label": "8 platforms, about 150 staff, Saint-Priest. It says it is independent. Removed from the tyre wholesale layer until tyre volumes are confirmed (research, not re-opened)."
+              }
             }
           ]
         },
         {
           "name": "Tyre specialists (pneumaticiens)",
-          "share": "18.6%",
-          "volume": "6.9M",
-          "sourceBadge": "modeled",
-          "source": "Source: Syndicat du Pneu / GfK 2024 panel (8.35M TC4) × ~80% passenger car  · Modeled; the networks' volumes are scaled to the channel total",
+          "share": "30.0%",
+          "volume": "11.13M",
+          "sourceBadge": "estimate",
+          "source": "Source: your French market contacts, about 30% of the 37.1M market  · Estimate; the published GfK 2025 figure is 7.89M TC4 (about 7.4M cars). The named networks add up to 6.0-7.3M, the rest are independents",
           "flowBox": "spec",
           "entities": [
             {
@@ -1066,16 +1154,16 @@
         },
         {
           "name": "Foreign online sellers & marketplaces",
-          "share": "6.7%",
-          "volume": "2.5M",
+          "share": "3.1%",
+          "volume": "1.14M",
           "sourceBadge": "estimate",
-          "source": "Source: research residual split, not panelled  · Estimate; an allocation, not a measurement",
+          "source": "Source: balancing figure to the 37.1M market  · Estimate; an allocation, not a measurement (was 2.5M)",
           "flowBox": "fon",
           "entities": [
             {
               "name": "123pneus.fr (Delticom)",
               "owner": "Delticom",
-              "volume": "inside the 2.5M",
+              "volume": "inside the 1.14M",
               "model": "Online retailer (Delticom)",
               "territories": [
                 "__NATIONWIDE__"
@@ -1091,8 +1179,8 @@
       ],
       "flatEntities": [],
       "noteBadge": "caution",
-      "note": "Caveat The earlier 17.2M is not the French market: it is the Syndicat du Pneu/GfK 2024 sell-out of auto-centres and pneumaticiens only, in TC4 units (the sell-in the Syndicat publishes is 31.74M TC4, checked). The model now shows the research's total passenger-car replacement sell-in of 37.1M (range 35.3-39.2M): Europool sell-in of 28.9M (published, derived) plus about 8.2M of non-pool imports (estimate, low-medium confidence). The three panelled channels are measured; dealers and independent repairers (14.0M) and foreign online (2.5M) are a residual and the biggest uncertainty. Wholesale versus direct, private versus commercial and every player volume are estimates; several network figures were not verified by the research itself.",
-      "marketAccessNote": "The measured channels are mostly manufacturer-owned: Michelin (Euromaster, Allopneus), Bridgestone (Speedy, First Stop, Côté Route) and Continental (BestDrive, Eurotyre). The largest and least-locked pool is outside the panel, the roughly 14-17M tyres at dealers, independent repairers and foreign online sellers, which is reached mainly through wholesalers. Distri Cash is the research's number one tyre wholesaler and was missing from the earlier model; AAG, Autodis and Copadex follow. Four buying groups bundle the networks: Viasso (Point S only since 1 January 2024), Eurofleet (Speedy, First Stop, Côté Route; Bridgestone fleet accounts), FleetPartner (BestDrive, Eurotyre, Feu Vert for leasing, and Siligom since 1 January 2024) and PRODY (Profil Plus, Roady; not verified). The independent doors for a challenger brand are Point S/Viasso, Siligom/FleetPartner, Feu Vert (bought 100% by Bassac on 24 February 2026) and Mobivia (Norauto, Midas, Exadis). Mavis bought Midas in the United States and Canada only, so Midas France stays with Mobivia.",
+      "note": "Caveat The earlier 17.2M is not the French market: it is the Syndicat du Pneu/GfK 2024 sell-out of auto-centres and pneumaticiens only, in TC4 units (the sell-in the Syndicat publishes is 31.74M TC4, checked). The model now shows the research's total passenger-car replacement sell-in of 37.1M (range 35.3-39.2M): Europool sell-in of 28.9M (published, derived) plus about 8.2M of non-pool imports (estimate, low-medium confidence). Auto-centres and French pure players come from the panel. Since the 8 Nov 2026 update, car dealers & independent repairers and tyre specialists are set at 30% of the market each (11.13M each), from your French market contacts; neither share is published, and the published 2025 figure for specialists is lower (7.89M TC4). Foreign online (1.14M, was 2.5M) is what is left to reach 37.1M. Mobivia France is 6.94M from your Data Report, which is 78% of the whole GfK auto-centre channel, so the named auto-centre chains add up to 10.8-12.1M against 8.6M in the model. Wholesale versus direct, private versus commercial and every player volume are estimates, and several network figures were not verified by the research itself. Wholesaler volumes are sales to retailers, the same tyres as in the channel totals, so they are never added to them.",
+      "marketAccessNote": "The measured channels are mostly manufacturer-owned: Michelin (Euromaster, Allopneus), Bridgestone (Speedy, First Stop, Côté Route) and Continental (BestDrive, Eurotyre). A large, less-locked pool is outside the panel: the 11.1M tyres at dealers and independent repairers (your contacts' 30%), reached mainly through wholesalers. Distri Cash (6.5M tyres in 2024) and Dipropneu (2.35M in 2025, Apollo's exclusive French partner for passenger, van and SUV tyres) are the two largest named wholesalers; Autodis, Copadex, Chrono SLPA and Massa follow. AAG is not a tyre wholesaler but a route into independent repairers, mostly with Dipropneu stock. Four buying groups bundle the networks: Viasso (Point S only since 1 January 2024), Eurofleet (Speedy, First Stop, Côté Route; Bridgestone fleet accounts), FleetPartner (BestDrive, Eurotyre, Feu Vert for leasing, and Siligom since 1 January 2024) and PRODY (Profil Plus, Roady; not verified). The independent doors for a challenger brand are Point S/Viasso, Siligom/FleetPartner, Feu Vert (bought 100% by Bassac on 24 February 2026) and Mobivia (Norauto, Midas, Carter-Cash). Mavis bought Midas in the United States and Canada only, so Midas France stays with Mobivia.",
       "territoryDefs": [
         {
           "code": "NE",
@@ -1117,8 +1205,8 @@
       ],
       "noteShort": [
         "Scope: car and 4x4/SUV replacement sell-in, 2024, about 37.1M (range 35.3-39.2M; vans left out).",
-        "Measured: Europool sell-in of 31.74M tyres including vans (Syndicat du Pneu / GfK, 2024), which gives 28.9M for cars and 4x4; the three panelled channels.",
-        "Estimated: about 8.2M non-pool imports, dealers and independents (14.0M, a residual), foreign online, wholesale versus direct and player volumes."
+        "Measured: Europool sell-in of 31.74M tyres including vans (Syndicat du Pneu / GfK, 2024), which gives 28.9M for cars and 4x4; auto-centres and French pure players from the GfK panel.",
+        "Estimated: about 8.2M non-pool imports, wholesale versus direct and player volumes. Dealers and tyre specialists are 30% each, from your French market contacts (not published); foreign online (1.14M) is the balance."
       ]
     },
     {
