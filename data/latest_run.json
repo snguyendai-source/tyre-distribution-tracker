@@ -1,23 +1,23 @@
 {
-  "runAt": "2026-11-08T12:58:48.315010+00:00",
+  "runAt": "2026-11-09T15:39:32.117536+00:00",
   "totalNew": 2,
   "entitiesChecked": 118,
   "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Hedin Group": [
+    "Bandvulc": [
       {
-        "title": "Today Hedin Bil and Bavaria consolidates under the common brand name Hedin Automotive - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUno0cUZ0VERUVlFaek9EdW5Pb2dqVkVkMjVKRjJSMnd6RmJQdGZNQlh5dDlXclhDcjVqek5pNENzcm1pbG44bk9MejV5VGdYN21mcnNhNXlWNlJjRHAyenlBX0ZEVFhwaW9NcWhFLVJ3aW9yZktjVl8xX0tzaUNrUTZIRFZCSGFheTQ4NktjcEI2MjVnR3IyamxmVDJsdWpPdVJvc1NNVHVtWUVmcHpzbWFuRDF5RUNmcFZIc2lLUDhodHhldUdvUXp6cmRwSk1PMl9ucHhIaGJ1SVVKSzhQQ1BZVFh5Zw?oc=5",
-        "pubDate": "Tue, 01 Oct 2024 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
+        "title": "10 Years of retread innovation: Continental celebrates Bandvulc acquisition anniversary - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBVOW85alNpUjhEcHlPaDRKMXY0TU50cDZBaFBhRVUwOUVMeHZ2SmJtbm9FZnZFSVFjeE11OUN3M2dVQVFyM1lYby03RQ?oc=5",
+        "pubDate": "Tue, 03 Nov 2026 13:53:28 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ],
-    "Marangoni": [
+    "Fintyre": [
       {
-        "title": "California Retread Business Pete’s Road Service Converts to Marangoni Operation - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9MVnF5bXhXejhjNzBSLVc3dy1qR0NoS3A0aVlYbE53Y1M5UE1GUGlkRFpyQ2VZdGlZVEJnSlBzZEx5VGZKbDJ5Z05DTVJKT2F4S2poRWxOMFNzVmFha2E3TlhJckdBTjRuTHdoQ0pIU2hFeVE?oc=5",
-        "pubDate": "Fri, 20 Sep 2019 07:00:00 GMT",
+        "title": "Fintyre rolls to profitability on a transformed supply chain - NTT Data",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSXZ1SURzSmtzdkpJUWhpWmN3aEp2VS1qUTFGd1hBcjA2bHFIQkg5R3k4R1Nhc1hMX2t4dllUM2xDMlNkNGRjUndoTjhud2Zld0tac0lsRnlzRlZicTlCZ1hsbmRvZkt4eDlXOV9CTlhwbHM2cl9IT3lGYjNzcVFLVmJqVlRuT2ItSWFpZHZvM3h3OVpXUUt2Y0hwUzh0dGtiWmI5Wk9lQXZadTVMLVMyOGtR?oc=5",
+        "pubDate": "Sat, 27 Jun 2026 17:15:52 GMT",
         "country": "Italy",
         "cluster": "South-West"
       }
