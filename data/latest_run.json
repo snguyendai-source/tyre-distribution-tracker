@@ -1,25 +1,16 @@
 {
-  "runAt": "2026-11-09T15:39:32.117536+00:00",
-  "totalNew": 2,
+  "runAt": "2026-11-10T14:34:16.495068+00:00",
+  "totalNew": 1,
   "entitiesChecked": 118,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 1,
   "newItemsByEntity": {
-    "Bandvulc": [
+    "Premio": [
       {
-        "title": "10 Years of retread innovation: Continental celebrates Bandvulc acquisition anniversary - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBVOW85alNpUjhEcHlPaDRKMXY0TU50cDZBaFBhRVUwOUVMeHZ2SmJtbm9FZnZFSVFjeE11OUN3M2dVQVFyM1lYby03RQ?oc=5",
-        "pubDate": "Tue, 03 Nov 2026 13:53:28 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ],
-    "Fintyre": [
-      {
-        "title": "Fintyre rolls to profitability on a transformed supply chain - NTT Data",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSXZ1SURzSmtzdkpJUWhpWmN3aEp2VS1qUTFGd1hBcjA2bHFIQkg5R3k4R1Nhc1hMX2t4dllUM2xDMlNkNGRjUndoTjhud2Zld0tac0lsRnlzRlZicTlCZ1hsbmRvZkt4eDlXOV9CTlhwbHM2cl9IT3lGYjNzcVFLVmJqVlRuT2ItSWFpZHZvM3h3OVpXUUt2Y0hwUzh0dGtiWmI5Wk9lQXZadTVMLVMyOGtR?oc=5",
-        "pubDate": "Sat, 27 Jun 2026 17:15:52 GMT",
-        "country": "Italy",
-        "cluster": "South-West"
+        "title": "Sao Paulo Grand Prix: Driver Tyre Strategies - Pitpass",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5ycUFGSGllS1hTdGZLcW5DcGFTU1FZblJkSUpYRmNyQmQ4b3VoR1BsS0VFdWFVQm51TGo3OTBvaFZZd29LekplWnQ1LVBpNWpwUnZBeERMNERLbWZGTDNTbl9FWm5CbkJqbk45bE5sMF93ZUdmQ0k0NldiaE13QQ?oc=5",
+        "pubDate": "Sun, 08 Nov 2026 08:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
       }
     ]
   }
