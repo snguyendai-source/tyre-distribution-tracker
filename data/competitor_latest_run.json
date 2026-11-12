@@ -1,53 +1,45 @@
 {
-  "runAt": "2026-11-11T13:49:15.355177+00:00",
-  "totalNew": 6,
+  "runAt": "2026-11-12T14:51:52.973072+00:00",
+  "totalNew": 5,
   "entitiesChecked": 26,
-  "entitiesWithNews": 5,
+  "entitiesWithNews": 4,
   "newItemsByEntity": {
-    "Goodyear": [
+    "Bridgestone": [
       {
-        "title": "Goodyear Tire's transformation plan is underway — in the sky and on the ground - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQc0xVZk1OTkJQNE9QOWkzc1M2UHhKUkd2ZEp3M1lFVVN4emQyRkhNRDFmY08zTllkRVhERlVxbFhoRDl1SXltR244M2NKRmEyWWNfUlB0ZWVmSzU2U1VlVFpYT2FwbjdiRkdYNWE5X3ZBWC1IRFBlQWUyTFNYU0l0N2R2a2Itc2c?oc=5",
-        "pubDate": "Sat, 08 Mar 2025 08:00:00 GMT",
+        "title": "Bridgestone Debuts Two New Truck Tyres for Mild On/Off Segment, Delivering Lasting Performance on Any Terrain - Bridgestone EMEA newsroom",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZXBiX2ZDY2U5OUZVVkkzaGplWGc5VTFFaG1zc3FvZTY4TXp1OEtxY3RuWFRjb1lfYUFzU3UyNG9fWVFnTUNwaW5Fc29lRDAxMXpXay1YN2s0ZzY1TTNZcEhhZkhDeDBpR3BFUEY0ckVnbVVXTVF6dTgtcEdseW11YW9xdEtpbTg0WVRQcWxlNVJEbUNwcVM3Sldyd2ItYVJBNENKQkJNYXkyVXpwbjhSUGpjWU5PUXNZQl9qNWhETm5menp3QlV2bEh6VUp1cHF0aG1oVFdXZ0lRSTA?oc=5",
+        "pubDate": "Tue, 03 Dec 2024 08:00:00 GMT",
         "category": "Premium global"
-      }
-    ],
-    "Continental": [
+      },
       {
-        "title": "Continental Tyres ‘BestDrive’ retail chain set to open across Australia - www.drive.com.au",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTU9GVmZYQXJMQzVEQk16djhVdTY2VEdtTXZQendLVGd5amVYX0ZyZzhORlpUd2E4RGJpU3liTDFRSWZIYjI1eHJjRmwxNjlmNk9EUjdONW5hSGxZc2RESEpPMUpfUWI5VkJmUHV1MzVaUi1yUEJWd1I2cTZXZ2gtX1NzSFlPUExXUERCUk83NnpiZ2VYZVlvOXFueUoySTB3WEE?oc=5",
-        "pubDate": "Fri, 13 Aug 2021 01:54:07 GMT",
-        "category": "Premium global"
-      }
-    ],
-    "Pirelli": [
-      {
-        "title": "Pirelli retains Tyre Manufacturers’ Title in 2026 FIA European Rally Championship - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVTVEWVdqaUluME4yWXNCQ3lKSkdKZlpUTHBUVl9Ta3hjUUVVc0hDSktMM3FUY0VxTk1UVnl3RDd0dmpqSnBVTXFuSXA0ZVFRRExaTFplb0Mwemg2SkFyZWRuWEtRRFZNZTBpVEdyU0Q5VGZKS0d0aTBJWUxISXZvYWZUblNYX3ZEUF9VVW4wVW15SzhJNk1Dem9aaUNteEJCUG80WFFMX3FPRDFWbmJqc3FhZURUdw?oc=5",
-        "pubDate": "Tue, 03 Nov 2026 08:00:00 GMT",
+        "title": "Bridgestone Launches Potenza Sport A Tyre Incorporating 55% ISCC PLUS Certified Recycled and Renewable Materials - Bridgestone EMEA newsroom",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZXRZZWlLNlJmV2FCZGhwbWpKSXppVWJneTk0QXk1cEg3c2JON2hjc0lNX2VQR19aTXJTUHNPc3BuRHM2UkRUVVhtRnZMMmE4bUl4U1Z3Z3RNNDVtMmVwSzZLbHluN0hmTWlRZDhNQ0ZzdS0xa1l4alVYNDZmWkNfWXU5Y09Wd2RxVnVYRUFsSU9HRll5QWZveUVNQ3FQMzktV1N2RlhiZkQ1d2xyTnd6MTlzZE1iTk5HQlNqMmdVTTRka3NMQ05rVENrWm9BckNYZmRNT2pKVVBqMnkwalA1cw?oc=5",
+        "pubDate": "Tue, 03 Sep 2024 07:00:00 GMT",
         "category": "Premium global"
       }
     ],
     "Hankook": [
       {
-        "title": "Greater efficiency and comfort during the winter season: the new Hankook Winter i*cept evo 4 sets new standards - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPZnpPYU1idEZCYXh2Q25kdS10VVBpSWYxaXYtYWVyMnVrbEkxVTJOUGh1QXVScTVfYXIycDhyM256a0FyTkk1MFY2U2JjQm1aUWlpd0g2Nm9rTi15cWlBTU1jbDVhRUVabWZJbGd0YzVIdXh4clI4WnRuajltS05zRGR2MGZnUkVTZjlxd3JOZUd0cnlxckNsNE1wTlRCbEEzZnBGV0ctR2d1ZWNZa2NlQ3c0Z0lKVmJwQkdpcHJGdTRkZVIyclZIMm9wRHdCX1VkeTVCOVJPZGhDeWU2cS1CN2NxdEJKOUNFNkYtcFBYRjBWdTVsUl9TVC10N0s5dVdvWlRtQ0dTZ3MtandoV1dWa3NoU3czR09FalJyZnNmajZlX25MdlFjM2NTNUk?oc=5",
-        "pubDate": "Tue, 23 Jun 2026 07:00:00 GMT",
-        "category": "Korean"
-      },
-      {
-        "title": "Hankook Smart Work AM11+: Designed for waste management companies - Hankook Media Center",
-        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNYURXRzYybWtTVTM5OXRxeFBHR3lHTXM1elc1blJSNnE0MDFzNWxoNlNPY2JYUE80YTRSeWxTNjBzQXJLQmRFSjk2QWFTbzFxTW1xZl9ic29WbVJ4OFBZcFkxSkpoa2l5azBiOHhpamxtMzczZmZleWVCUjMxY0VXcFF4b2J2MzVEeUNJSHRsSzZNRUpiN09QbGp1Z00xTDVOYWlHeGlIWmNOdV84b0FZM0Zrb3Rmd2oxOVFBRFRkU3NuNFBHS2p5djVXajg3T2p1NEtDRlA1SmxqcG44cXgzSnFfVGFGMDdhdXFSWTdVVG1xenpGZGplOEFnN05qZw?oc=5",
-        "pubDate": "Tue, 30 Jun 2026 07:00:00 GMT",
+        "title": "Hankook presents new Smart Flex TH51 trailer tyre at IAA Transportation 2026 - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNUWdkb3pBS3dwUndXbGtXNnUxU2VXUHBxa05oUk9wa1ZMS2h1aG5oaUQ3dE55azJNbkRJTDlVVTNkcXZnc2RudC1zd2FVQk10bkxpRjJxS3RDR2lZcktEWHd2dGVEa25KZS0waVB0S2NGR2NRUDhFSGtqT29iNEFPNXl0NnRFaVByVDhlUjlZeUszOFVELUdKZ2FVeC1TVUZ3RkZuQXRVdnNRR0I0YzVPWlRCUWdOVWlLbTdUbU9RTXpBdHVCdHJTbFJ1Y0RwSHpqR1RoRDBkUXMzZE9EemlCYm5ZbVJlWi1HTFpwb3RBNl95cGE1RkhZajhpc2NTdw?oc=5",
+        "pubDate": "Mon, 14 Sep 2026 07:00:00 GMT",
         "category": "Korean"
       }
     ],
     "Nexen Tire": [
       {
-        "title": "Billion-dollar factory opens in Žatec as Nexen Tire launches production in Europe - Radio Prague International",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUnFHSTJ5MlZnRnI5ZEFzVmNMb3Z5RGJfdDktSlQxb1RSZWRqeVBmejdjUGgwZTVPbko2ZTMxTlpzQlhXTFZlTXJCdGhya3l4Z0VIVjU4U1hOcHpmbzAxbjlMSy03bTU5YjBMaHk5RDVaYkpaTXl6XzJkSXkzVU5fM1gwemRFaEdQZ1A2bHJxYXJfdEtnSVF2aDZUSEVqeng0YzUtTWc0R08?oc=5",
-        "pubDate": "Thu, 29 Aug 2019 07:00:00 GMT",
+        "title": "Nexen Tire setting up winter test centre in Finland - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVnhVQlNFcUJUc3NEZm9oeUtCS3dWMUtMMHNJcnp3YXVITHRYTlVCZjNnWnJGY0ZmdEpGbVl2TlE2LTlKSWR5WlVmeXpZQ2ZQRnpFUkFiSGxsbGFwdlJrc1pwVEFsUlk3QlE4elBvWHJEU0pUbUZ1TDFJVFBUZ0hQcHNEVVdQYkh1ZXZpQWw2NA?oc=5",
+        "pubDate": "Wed, 09 Apr 2025 07:00:00 GMT",
         "category": "Korean"
+      }
+    ],
+    "Landsail Tyre": [
+      {
+        "title": "Sentury Tire intends to build 523m euro Spanish tyre plant - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUjVqN1BnUlhKOTdrNFB1US1XYmVhRnBmRTlWUVFlM1d4c0piRWpCb0d6Wk4tNWNBSDNVWXUzRTNkZFY0OWotaVJDTmxtd0tGckllUGZ4c0I3ZWFLMV9nbUNyWkYwNlNCWkxqYThaN1dEZnhUWTJhMU1Ga0V2ZXV4UGc0cVlMVXV6Nk54VGJYN3NuTmN5bFlaSjQteHJDVVdFeUxGag?oc=5",
+        "pubDate": "Wed, 12 Jan 2022 08:00:00 GMT",
+        "category": "Chinese"
       }
     ]
   }
