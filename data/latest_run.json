@@ -1,43 +1,43 @@
 {
-  "runAt": "2026-11-12T14:51:52.973072+00:00",
+  "runAt": "2026-11-13T14:15:03.824556+00:00",
   "totalNew": 4,
   "entitiesChecked": 118,
   "entitiesWithNews": 4,
   "newItemsByEntity": {
-    "Allopneus": [
+    "Speedy": [
       {
-        "title": "Europe's largest verified tyre reviews platform | DriverReviews - DriverReviews",
-        "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBDazNzNnlHaUd5QmJKaFpQbTBZQ0hhc2dtWXZiSmRhRzktdy1WOU1IWFlIc0ZnQ3dfem9nTUt1LTRGSG82?oc=5",
-        "pubDate": "Thu, 15 Jul 2021 05:50:51 GMT",
+        "title": "2023 Scott Lumen eRIDE Review | A seriously speedy & stealthy lightweight e-MTB - Flow Mountain Bike",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5uRTR5Qml1VjlCQ0p4NzZNWVJMWkxVUmdGUmp5bnZBZ1Y1TGVYYjVWbUhnVm1WN3o4QnhVZXZ3ZmtCNzRnVUtnQmN6MTZia1F3SmQwZ2dVaENPbEkyM1hubVN0MWdHMVlUalU0RzRucUlmVXZqbHRXag?oc=5",
+        "pubDate": "Wed, 23 Aug 2023 07:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
       }
     ],
-    "Bandvulc": [
+    "Tructyre": [
       {
-        "title": "Continental Tyres commemorates a decade of Bandvulc brand ownership - Fleet Transport",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQV0VKcndfRVRMRWppX0huZXBlVV96TjZyNHc4YVAxLXFIbmJQSXZ3aGdUWkVOWVFhd0JqQmJHZXhpYjZjMEk2Y01JTzVkVnVHaGlueWc3cmQ0dk1sc0xwNGp6UG96VkRlUU1mNTdtWm1MTHRodWRIOFhEOEozQWw1VXZFWElmWWVsLXFKRGRmVUYxcDjSAZMBQVVfeXFMUFdFSnJ3X0VUTEVqaV9IbmVwZVVfek42cjR3OGFQMS1xSG5iUEl2d2hnVFpFTllRYXdCakJiR2V4aWI2YzBJNmNNSU81ZFZ1R2hpbnlnN3JkNHZNbHNMcDRqelBvelZEZVFNZjU3bVptTEx0aHVkSDhYRDhKM0FsNVV2RVhJZlllbC1xSkRkZlVGMXA4?oc=5",
-        "pubDate": "Wed, 11 Nov 2026 12:33:37 GMT",
+        "title": "Tructyre managing director, Elizabeth Nagel talks to Tyres & Accessories - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdGk0STJlVEkyT3NhNFhlVk1hRkQ2a213eURwNnZXVFk2LWZ6c3pGRXJiMEVGUTVxcUszMndHa2x1SS1oOWo1X2NLRW9Da0VYbHphbWd1c3VlTnpIX0JFS3puQ3hnSFdFRzJEVEZpT1RQbkpBNGpVcjRzT0FqaXFpcExmbUxabzhZQ3k4b0MweGhhOXBlWkJBcWx4TlR4eTdvRXZfUjZHaw?oc=5",
+        "pubDate": "Thu, 12 Nov 2026 17:57:09 GMT",
         "country": "UK",
         "cluster": "North-West"
       }
     ],
-    "Grupo Andrés": [
+    "Marangoni": [
       {
-        "title": "Marangoni Iberia manager retires - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9kSC05RXo2eER4b2hHM2xfQWhJaXg3UWFqRG5ReE9zRWxPRE53c1pJTnJEcHJvUk5WYm5qTHBwUXRYRDhrZW1PM3F3VUZEd2tYazU0Yl8xVXhNMFE2ME9XV2hub3ZUN3FvY19CSzZOQ0xoaGtfZFE?oc=5",
-        "pubDate": "Wed, 11 Nov 2026 16:45:41 GMT",
-        "country": "Spain",
+        "title": "Marangoni Releases New Extreme Performance Ringtread - Tire Review Magazine",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNR2VfLXBwN1VCczhTVUMtQU1ydHBZN1lxQm9na1U3TDVXNUFtb0xlZDMwWFlGRS1Bak84Uk9JNjNMVU9QUDNIdmViNWt5cVBBa2pkbDBlMHB0Q0o0SWtDRmlacnNDMGNPMXg2YUYtN3JXNkEzZkxobnpZXzByRFFvUDdlcmk5QWM?oc=5",
+        "pubDate": "Wed, 03 May 2017 07:00:00 GMT",
+        "country": "Italy",
         "cluster": "South-West"
       }
     ],
-    "Fintyre": [
+    "Vianor": [
       {
-        "title": "Fintyre rolls to profitability on a transformed supply chain - NTT Data",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYzFVU3pXaXNod0VGbWprbE5Xakc1XzBOc1gwNXhNclJCZmdjQzYzaFQ0bTc5dkhzcW1ZNWdNaExCX29NZjUzdWEySWx3RllxekJndGdYeW0wbktPelFxWVBtS3h4ZS11TEV5b0QwSWZVSGxmV2w5NkF5Zm5tdDd5ZnN0b3FjUE5DekhLeG04R0Z5XzM2eDlDMUVrWjFwR3YwbUxXQjNlQUVoWlJIN1JPcTdn?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
-        "country": "Italy",
-        "cluster": "South-West"
+        "title": "Giti Tire extends Vianor Nordic distribution agreement to 2024 - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbVliVTJJWGtXSUpjcEJ4U2JGUW91UzMwR21yRjFiSzRHMTlRUEJZanh2NnpNc1FPUlFteUgxZGNTUWN1M21nWDVlVEtzTjJ0S3hxME12ckFwR1U0ak96cUVuUTk5dHQ0cTRFQi1ETXFEZmZhekpPWklxeTdITVpjZUJydGhsV08zR2FtMnh3VDRSbndrNkV5XzItdTR0QQ?oc=5",
+        "pubDate": "Thu, 16 Jun 2022 07:00:00 GMT",
+        "country": "Hungary",
+        "cluster": "South-East"
       }
     ]
   }
