@@ -1,5 +1,10 @@
 [
   {
+    "runAt": "2026-11-14T13:12:48.283511+00:00",
+    "totalNew": 2,
+    "entitiesWithNews": 2
+  },
+  {
     "runAt": "2026-11-13T14:15:03.824556+00:00",
     "totalNew": 4,
     "entitiesWithNews": 4
@@ -293,10 +298,5 @@
     "runAt": "2026-09-16T11:08:06.051448+00:00",
     "totalNew": 3,
     "entitiesWithNews": 3
-  },
-  {
-    "runAt": "2026-09-15T11:23:40.825005+00:00",
-    "totalNew": 1,
-    "entitiesWithNews": 1
   }
 ]

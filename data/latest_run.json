@@ -1,43 +1,25 @@
 {
-  "runAt": "2026-11-13T14:15:03.824556+00:00",
-  "totalNew": 4,
+  "runAt": "2026-11-14T13:12:48.283511+00:00",
+  "totalNew": 2,
   "entitiesChecked": 118,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Speedy": [
+    "A.T.U Auto-Teile-Unger": [
       {
-        "title": "2023 Scott Lumen eRIDE Review | A seriously speedy & stealthy lightweight e-MTB - Flow Mountain Bike",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5uRTR5Qml1VjlCQ0p4NzZNWVJMWkxVUmdGUmp5bnZBZ1Y1TGVYYjVWbUhnVm1WN3o4QnhVZXZ3ZmtCNzRnVUtnQmN6MTZia1F3SmQwZ2dVaENPbEkyM1hubVN0MWdHMVlUalU0RzRucUlmVXZqbHRXag?oc=5",
-        "pubDate": "Wed, 23 Aug 2023 07:00:00 GMT",
+        "title": "ATU hit by cyber attack - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2Vm5ZRFVtLXJoZjJqOEpHNjRMRFVtcTlxWkd3RGNVVm12dllhZWRmUFplaHZJVllxcHFoNmRKenpab1NtelFzSkNSSHc4blR3di11TVNzcHVxNi1uSkJqY2xiZ0xrUW1CWEE?oc=5",
+        "pubDate": "Thu, 29 Jun 2023 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "BestDrive France": [
+      {
+        "title": "Conti in talks to sell French retail arm to equity firm - European Rubber Journal",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOODhLNEVzb092eGpSN2lMeWxjazVIZFlwMHJnWjYyQi1nQjFhY0ZaUTN1TFlyWGdDMWdsYkEwZ1RkT1BhTmY3cHc5Zk0wdU9kdTFkWXhTbFduSjZ2bXljNzE1UVhSb3JvTEZ4NkgzZWp5bVU1akpxM0VVNkNMOGVVa0VmclZBdWRldEVGMmh1Y0pCV3ZMX3hMUWxxY3VxQjFiVjFwU0hsSzBMbG94RkE?oc=5",
+        "pubDate": "Fri, 12 Dec 2025 08:00:00 GMT",
         "country": "France",
         "cluster": "South-West"
-      }
-    ],
-    "Tructyre": [
-      {
-        "title": "Tructyre managing director, Elizabeth Nagel talks to Tyres & Accessories - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdGk0STJlVEkyT3NhNFhlVk1hRkQ2a213eURwNnZXVFk2LWZ6c3pGRXJiMEVGUTVxcUszMndHa2x1SS1oOWo1X2NLRW9Da0VYbHphbWd1c3VlTnpIX0JFS3puQ3hnSFdFRzJEVEZpT1RQbkpBNGpVcjRzT0FqaXFpcExmbUxabzhZQ3k4b0MweGhhOXBlWkJBcWx4TlR4eTdvRXZfUjZHaw?oc=5",
-        "pubDate": "Thu, 12 Nov 2026 17:57:09 GMT",
-        "country": "UK",
-        "cluster": "North-West"
-      }
-    ],
-    "Marangoni": [
-      {
-        "title": "Marangoni Releases New Extreme Performance Ringtread - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNR2VfLXBwN1VCczhTVUMtQU1ydHBZN1lxQm9na1U3TDVXNUFtb0xlZDMwWFlGRS1Bak84Uk9JNjNMVU9QUDNIdmViNWt5cVBBa2pkbDBlMHB0Q0o0SWtDRmlacnNDMGNPMXg2YUYtN3JXNkEzZkxobnpZXzByRFFvUDdlcmk5QWM?oc=5",
-        "pubDate": "Wed, 03 May 2017 07:00:00 GMT",
-        "country": "Italy",
-        "cluster": "South-West"
-      }
-    ],
-    "Vianor": [
-      {
-        "title": "Giti Tire extends Vianor Nordic distribution agreement to 2024 - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbVliVTJJWGtXSUpjcEJ4U2JGUW91UzMwR21yRjFiSzRHMTlRUEJZanh2NnpNc1FPUlFteUgxZGNTUWN1M21nWDVlVEtzTjJ0S3hxME12ckFwR1U0ak96cUVuUTk5dHQ0cTRFQi1ETXFEZmZhekpPWklxeTdITVpjZUJydGhsV08zR2FtMnh3VDRSbndrNkV5XzItdTR0QQ?oc=5",
-        "pubDate": "Thu, 16 Jun 2022 07:00:00 GMT",
-        "country": "Hungary",
-        "cluster": "South-East"
       }
     ]
   }

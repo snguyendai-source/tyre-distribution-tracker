@@ -1,23 +1,21 @@
 {
-  "runAt": "2026-11-13T14:15:03.824556+00:00",
+  "runAt": "2026-11-14T13:12:48.283511+00:00",
   "totalNew": 2,
   "entitiesChecked": 26,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 1,
   "newItemsByEntity": {
-    "Yokohama Rubber": [
+    "Maxxis Tyres": [
       {
-        "title": "Yokohama European replacement volumes rise 15 per cent, OHT revenue up 13 per cent - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdzFxcnJFVnRlMl9yaUtnVkt2WG5xVWJfM294T2I1QmRPSUZDMVY4VmJxRWxaRUJfQ3N0WHktOXY1NGw4THdIT2czV3VKal94bC11YkRyMkx6aDRCeTJxeEZCckdRd0tJNW51cW5uM1lOSjV4bW5HM2NIR1lmaDlmYmlyaUI0OXNZa1NJNlNSN2xaZDNvZUE1M2VhQkFtcFRhWmFuVFo1Q2FpTkpvenhHRGpBZVBxR3c?oc=5",
-        "pubDate": "Fri, 13 Nov 2026 13:48:10 GMT",
-        "category": "Japanese"
-      }
-    ],
-    "Falken Tyres": [
+        "title": "Maxxis Victra Sport 5 set for Cologne launch - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUkFGUUV5TFBJMk0zQUhjaERURWNyMjdLcEtXRzVXRC1fb0V5RVVwT0ZfWVBlcnBOVVNzb2dqLWp0d2JBQUw3QWVMYzhzWXYtRkdybGt5Mnd4NW1iQXMzbVFzTTB6bHZUSllJRmVyeC0td0JRd2tRdGFIbkhJckFMcGg3Ny0tUQ?oc=5",
+        "pubDate": "Wed, 11 Apr 2018 07:00:00 GMT",
+        "category": "Taiwanese"
+      },
       {
-        "title": "FALKEN has beaten off stiff competition from leading industry players to win the award for best car tyre distributor in Austria. Günther Riepl collected the honour on behalf for Falken Tyres - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNaUw5V091S256Y1N5OWR3aGVpRktNZGdLQkstS0lTMzBJSEFfamRLcV9icXl2bW9EeXpKVmNucWhON1pyVEd3R19GanlLeGstVG90N01iSVN5TEw1SVJBNWZTZFY0V01NTWF1QXFZTUZTUUpVZ0dhOG9CMGIxTjJVbldFWkV5WWNNMmEwZThpcU9id2N6TUJZUU9vaGxfek9lN1hVR3U4TUpMMUZUaFRiWVVFZ0NzUnp0dmVpb2pBWU5zQmFWZXNGVHBTNUk3SUZONmhIQkxCaGx0aHdpZEN6V2U0dUt1a3k0SEZEMXZR?oc=5",
-        "pubDate": "Fri, 30 Jan 2015 08:00:00 GMT",
-        "category": "Japanese"
+        "title": "Liam Everts switches to Maxxis for 2020 - TMX News",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRjZGQ25vbDItNDB2anpGR09ZSTZ6a0EtUEdMNk8wVTBQODRZZGM4ZjVXZjd3ejQzd3ZkcEQ0aHh2WjRxQjlQUldzM0h3Xy14TnJieTZ0bHdZYVk3a0NhQXdCTWhaaG9jTXQxNDNTbWRXY09yOGVMVkJ4LUphY1Y3ZjJUU1lEb2tmSE1NeA?oc=5",
+        "pubDate": "Thu, 07 Nov 2019 08:00:00 GMT",
+        "category": "Taiwanese"
       }
     ]
   }
