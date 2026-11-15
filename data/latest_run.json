@@ -1,25 +1,25 @@
 {
-  "runAt": "2026-11-14T13:12:48.283511+00:00",
+  "runAt": "2026-11-15T13:41:02.277996+00:00",
   "totalNew": 2,
   "entitiesChecked": 118,
   "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "A.T.U Auto-Teile-Unger": [
+    "HiQ Tyres": [
       {
-        "title": "ATU hit by cyber attack - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2Vm5ZRFVtLXJoZjJqOEpHNjRMRFVtcTlxWkd3RGNVVm12dllhZWRmUFplaHZJVllxcHFoNmRKenpab1NtelFzSkNSSHc4blR3di11TVNzcHVxNi1uSkJqY2xiZ0xrUW1CWEE?oc=5",
-        "pubDate": "Thu, 29 Jun 2023 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
+        "title": "HiQ partners with Carsa ‘to strengthen dealership and aftersales offering’ - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWWpfczZGakFFbG0xVGE1VmZLNXN6UDJEZU5PTTljdDBzbWp4dUc1Vkp6TXozc29mN3J4LWVJZ0RXQXJzcElScDJOalVvWEtDbmNvX3E2d1BHQ2JsVzNSeXBYcy1jTlNpOFpBU19MbV8yR3Rncl9pdHZjZUlBOS0zT1pwdlFBYS1QaUxJY3I1Y0dYVXc1bFNmSmpyTm1fZmtzWDU5aUY0UGhGZFk?oc=5",
+        "pubDate": "Fri, 20 Sep 2024 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ],
-    "BestDrive France": [
+    "Genan Holding": [
       {
-        "title": "Conti in talks to sell French retail arm to equity firm - European Rubber Journal",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOODhLNEVzb092eGpSN2lMeWxjazVIZFlwMHJnWjYyQi1nQjFhY0ZaUTN1TFlyWGdDMWdsYkEwZ1RkT1BhTmY3cHc5Zk0wdU9kdTFkWXhTbFduSjZ2bXljNzE1UVhSb3JvTEZ4NkgzZWp5bVU1akpxM0VVNkNMOGVVa0VmclZBdWRldEVGMmh1Y0pCV3ZMX3hMUWxxY3VxQjFiVjFwU0hsSzBMbG94RkE?oc=5",
-        "pubDate": "Fri, 12 Dec 2025 08:00:00 GMT",
-        "country": "France",
-        "cluster": "South-West"
+        "title": "Top 25 Companies in Global Tire Recycling Downstream Products Market Size - Spherical Insights",
+        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNU3J1aVpFMnBfd2d5MjlIOU5MT3dUNl9keVltZ01tNlNxN1FHVFVyNVB1SG1MZW0teTZQaEZWN1RXVjd3NHREMVJCU0RibURYWDRmNzJONW1nVW9QZUUxanh5bTNIb1JKaXdDV3BXT04td2hvVU1GRGl5eXA5Mjdya05Dd0hXWlhvRDhWbU02REhGaW1ZUll2MFRrWjVYOGRkRTIwTVJORWRlYmhPMktOTU8xN0Ixa0dvemJLdHZsWWppWU1zakxBZkZUZUloN0Y1d3llak5fM2VkM0NuWXhiQll5a2tGOGc?oc=5",
+        "pubDate": "Fri, 10 Jul 2026 12:03:08 GMT",
+        "country": "Denmark",
+        "cluster": "Central"
       }
     ]
   }
