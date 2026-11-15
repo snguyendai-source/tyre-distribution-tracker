@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-08T12:00:00Z",
+  "generatedAt": "2026-11-13T08:30:00Z",
   "dealers": [
     {
       "id": "de-a-t-u",
@@ -4475,35 +4475,35 @@
           "by": "research",
           "source": "Benchmark estimate: 12% of the consumer market. See notes",
           "tier": "Estimate",
-          "value": 3.48
+          "value": 4.2
         },
         "ch.onl.tot": {
           "asOf": "2024",
           "by": "research",
           "source": "Benchmark estimate: 14% of the consumer market. See notes",
           "tier": "Estimate",
-          "value": 4.06
+          "value": 4.9
         },
         "ch.ret.tot": {
           "asOf": "2024",
           "by": "research",
           "source": "Benchmark estimate: 4% of the consumer market. See notes",
           "tier": "Estimate",
-          "value": 1.16
+          "value": 1.4
         },
         "ch.spec.tot": {
           "asOf": "2024",
           "by": "research",
           "source": "Benchmark estimate: 70% of the consumer market. See notes",
           "tier": "Estimate",
-          "value": 20.3
+          "value": 24.5
         },
         "market": {
           "asOf": "2024",
           "by": "research",
-          "source": "Estimate: 36.2M licensed cars (DfT, end-2024) x about 0.80 tyres per car per year. An older GfK/NTDA study put the market at 28.4M",
+          "source": "Estimate, rebased 13 Nov 2026: midpoint of two routes. (1) DfT end-2024 vehicles: 33.97M cars x 0.80 tyres plus 4.79M vans at the same tyres per mile = 33.4M. (2) HMRC customs data: 2024-25 car and van/light-truck tyre imports less exports less about 5M for new-vehicle fitment and other non-consumer use = about 38-41M, an upper bound. Range 31-39. Earlier figure 29.0M (cars only x 0.80); an older GfK/NTDA study put the market at 28.4M",
           "tier": "Estimate",
-          "value": 29
+          "value": 35.0
         },
         "industry": {
           "asOf": "2024",
@@ -4515,7 +4515,7 @@
         "direct": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research: about 28% of the market goes from manufacturers or their brand organisations straight to the channels. Counted by physical flow, so stock held and delivered by Bond, Stapleton's or Micheldever is via wholesale. Range 6.5-9.0.",
+          "source": "Research: 8.0M goes from manufacturers or their brand organisations straight to the channels (about 28% of the earlier 29.0M market, about 23% of 35.0M). Kept in volume terms because direct sales come from the pool volume, which did not change. Counted by physical flow, so stock held and delivered by Bond, Stapleton's or Micheldever is via wholesale. Range 6.5-9.0.",
           "tier": "Estimate",
           "value": 8.0
         },
@@ -4529,23 +4529,23 @@
         "import": {
           "asOf": "2024",
           "by": "research",
-          "source": "Modelled gross non-pool supply for the replacement market, not customs imports. Net of the export balancing item it is about 10.3M, the gap between the 29.0M market and the 18.7M pool. Range 9.5-12.5.",
+          "source": "Modelled gross non-pool supply for the replacement market, not customs imports. The gap between the 35.0M market and the 18.7M pool is 16.3M; adding the 1.0M re-exported gives 17.3M. HMRC cross-check: China alone supplied 23.8M car tyres in 2025 and Asia 65% of car tyre imports. Range 13.3-21.3.",
           "tier": "Estimate",
-          "value": 11.0
+          "value": 17.3
         },
         "export": {
           "asOf": "2024",
           "by": "research",
-          "source": "Balancing assumption for re-exports out of the wholesale layer. Not a published statistic, lowest confidence. Range 0.2-1.5.",
+          "source": "Balancing assumption for re-exports out of the wholesale layer, raised from 0.7M after the HMRC check: car tyre exports to Ireland (0.91M at GBP 54 a tyre) and Germany (0.32M at GBP 68) look like trade re-exports, 1.2M in 2025. Exports at GBP 70+ a tyre look like UK-made or OE. Not a published statistic, lowest confidence. Range 0.5-1.5.",
           "tier": "Estimate",
-          "value": 0.7
+          "value": 1.0
         },
         "ch.spec.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, about 82% of the channel via wholesale, inferred from market structure. No UK source reports this.",
+          "source": "Research estimate, about 85% of the channel via wholesale, inferred from market structure and set so the channels add up to the 27.0M wholesale layer. No UK source reports this.",
           "tier": "Estimate",
-          "value": 16.6
+          "value": 20.8
         },
         "ch.spec.dir": {
           "asOf": "2024",
@@ -4559,21 +4559,21 @@
           "by": "research",
           "source": "Passenger car proxy: channel total minus the LCV proxy. Based on car versus van mileage, not an observed split.",
           "tier": "Estimate",
-          "value": 15.9
+          "value": 19.2
         },
         "ch.spec.com": {
           "asOf": "2024",
           "by": "research",
-          "source": "LCV (commercial) proxy: about 18.6% of car plus van mileage (DfT 2024), placed mostly in the specialist channel by judgement. The overall 5.4M is firmer than this channel placement.",
+          "source": "LCV (commercial) proxy: about 18.6% of car plus van mileage (DfT 2024), placed mostly in the specialist channel by judgement. The overall 6.5M is firmer than this channel placement.",
           "tier": "Estimate",
-          "value": 4.4
+          "value": 5.3
         },
         "ch.deal.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, about 54% of the channel via wholesale, inferred from market structure. No UK source reports this.",
+          "source": "Research estimate, about 62% of the channel via wholesale, inferred from market structure and set so the channels add up to the 27.0M wholesale layer. No UK source reports this.",
           "tier": "Estimate",
-          "value": 1.9
+          "value": 2.6
         },
         "ch.deal.dir": {
           "asOf": "2024",
@@ -4587,21 +4587,21 @@
           "by": "research",
           "source": "Passenger car proxy: channel total minus the LCV proxy. Based on car versus van mileage, not an observed split.",
           "tier": "Estimate",
-          "value": 3.1
+          "value": 3.7
         },
         "ch.deal.com": {
           "asOf": "2024",
           "by": "research",
           "source": "LCV (commercial) proxy: about 18.6% of car plus van mileage (DfT 2024), placed mostly in the specialist channel by judgement.",
           "tier": "Estimate",
-          "value": 0.4
+          "value": 0.5
         },
         "ch.ret.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, about 75% of the channel via wholesale, inferred from market structure. No UK source reports this.",
+          "source": "Research estimate, about 79% of the channel via wholesale, inferred from market structure and set so the channels add up to the 27.0M wholesale layer. No UK source reports this.",
           "tier": "Estimate",
-          "value": 0.9
+          "value": 1.1
         },
         "ch.ret.dir": {
           "asOf": "2024",
@@ -4615,7 +4615,7 @@
           "by": "research",
           "source": "Passenger car proxy: channel total minus the LCV proxy. Based on car versus van mileage, not an observed split.",
           "tier": "Estimate",
-          "value": 1.1
+          "value": 1.3
         },
         "ch.ret.com": {
           "asOf": "2024",
@@ -4627,30 +4627,30 @@
         "ch.onl.ws": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, about 39% of the channel via wholesale, inferred from market structure. No UK source reports this. Lowest-confidence split; 50:50 is also defensible.",
+          "source": "Research estimate, about 51% of the channel via wholesale, inferred from market structure and set so the channels add up to the 27.0M wholesale layer. No UK source reports this. Lowest-confidence split; 50:50 is also defensible.",
           "tier": "Estimate",
-          "value": 1.6
+          "value": 2.5
         },
         "ch.onl.dir": {
           "asOf": "2024",
           "by": "research",
           "source": "Research estimate: channel total minus via wholesale.",
           "tier": "Estimate",
-          "value": 2.5
+          "value": 2.4
         },
         "ch.onl.prv": {
           "asOf": "2024",
           "by": "research",
           "source": "Passenger car proxy: channel total minus the LCV proxy. Based on car versus van mileage, not an observed split.",
           "tier": "Estimate",
-          "value": 3.6
+          "value": 4.3
         },
         "ch.onl.com": {
           "asOf": "2024",
           "by": "research",
           "source": "LCV (commercial) proxy: about 18.6% of car plus van mileage (DfT 2024), placed mostly in the specialist channel by judgement.",
           "tier": "Estimate",
-          "value": 0.5
+          "value": 0.6
         }
       },
       "channels": [
@@ -4679,13 +4679,13 @@
       "groups": [],
       "iso": "UK",
       "meta": {
-        "boxNote": "No channel split is published for the UK, so the four channel totals are benchmark estimates. The import box is modelled non-pool supply, not customs imports, and export is a balancing item. Red and blue show where the tyre is physically stocked and delivered, so a tyre bought on a manufacturer contract but delivered by a distributor counts as via wholesale. Private and commercial are a car versus van mileage proxy, so read them as passenger and LCV. Finer boxes can be added in the editor.",
-        "scopeNote": "The card header's 28.4M is an older GfK/NTDA estimate; this model's 29.0M is an estimate from the number of cars on the road. The wholesale, direct, import and export figures are research estimates anchored on BTMA's H1 2024 EuroPool sales.",
+        "boxNote": "No channel split is published for the UK, so the four channel totals are benchmark estimates. The import box is modelled non-pool supply, not customs imports, and export is a balancing item. Red and blue show where the tyre is physically stocked and delivered, so a tyre bought on a manufacturer contract but delivered by a distributor counts as via wholesale. Private and commercial are a car versus van mileage proxy, so read them as passenger and LCV. Finer boxes can be added in the editor. The import and export boxes were checked against HMRC customs data in November 2026.",
+        "scopeNote": "The card header's 28.4M is an older GfK/NTDA estimate; this model's 35.0M (rebased in November 2026) sits between a vehicle-count estimate (33.4M) and what HMRC customs data imply (about 38-41M). The wholesale, direct, import and export figures are research estimates anchored on BTMA's H1 2024 EuroPool sales.",
         "seasons": {},
         "walkNote": "Red and blue show where the tyre is physically stocked and delivered, not who holds the contract. No UK channel split is published, so the four channel totals are benchmark shares. Private and commercial mean cars and vans.",
         "walkWhy": {
           "channels": {
-            "v": 29.0,
+            "v": 35.0,
             "why": "No UK channel split is published, so the four shares come from the German BRV split and the French panel, adjusted only for what Mintel says qualitatively: independents dominate, franchised dealers are losing share, online is growing.",
             "val": "Replace with GfK/NTDA or your own UK channel data. The research allows about ±6 points per channel."
           }
@@ -4694,41 +4694,45 @@
       "refs": [
         "Method: no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them.",
         "UK: independent garages dominate and fast-fit networks are stable or growing, while franchised dealers have been losing share (Mintel, qualitative; the numbers are paywalled). Online is a growing but smaller channel.",
-        "Market size: Estimate: 36.2M licensed cars (DfT, end-2024) x about 0.80 tyres per car per year. An older GfK/NTDA study put the market at 28.4M",
+        "Market size: Estimate, rebased 13 Nov 2026 from 29.0M to 35.0M. Midpoint of 33.4M (DfT end-2024: 33.97M cars x 0.80 tyres plus 4.79M vans at the same tyres per mile) and about 38-41M (HMRC 2024-25 car and van/light-truck tyre imports less exports less about 5M for new-vehicle fitment and non-consumer use, an upper bound). Range 31-39M. The earlier 29.0M was 36.2M cars x 0.80 and left vans out. An older GfK/NTDA study put the market at 28.4M.",
         "BTMA/EuroPool: members sold 9.330M UK consumer replacement tyres (passenger car, SUV, light commercial) in H1 2024, as reported by European Rubber Journal. Doubled to 18.7M for the year; seasonality and stock timing are why the range is 18.2-19.3M. The research also quotes 4.786M for Q2 2024 (not checked).",
-        "Pool versus market: 29.0M less 18.7M leaves about 10.3M (35%) outside the EuroPool members. BTMA links member volumes to low-cost imports, particularly from China and Vietnam (European Rubber Journal). The research also quotes extra-EU passenger and light-truck imports up 10% in 2024 and well above 30M tyres a year, and GfK's 2023 UK mix of 33% premium, 22% mid-range and 45% budget. None of that was checked here, and customs imports cannot go in the import box because they include pool brands, OE supply and stock.",
+        "Pool versus market: 35.0M less 18.7M leaves about 16.3M (47%) outside the EuroPool members. BTMA links member volumes to low-cost imports, particularly from China and Vietnam (European Rubber Journal). The research also quotes extra-EU passenger and light-truck imports well above 30M tyres a year; HMRC confirms it (non-EU origin car and van/light-truck tyres: 32.0M in 2025). GfK's 2023 UK mix of 33% premium, 22% mid-range and 45% budget was not checked here. Customs imports cannot go in the import box because they include pool brands, OE supply and stock; HMRC is used as a cross-check (see below).",
         "Wholesale structure: Micheldever supplies about 6.0M tyres a year (Sumitomo Rubber Industries agreed to buy it in January 2017). Stapleton's calls itself the UK's largest distributor, with 11 locations, and has been owned by Itochu since 1994. The research also cites more than 7,000 independent customers for Stapleton's and more than 6,000 retailers for Micheldever (not checked). Do not add these up: they include own retail and overlapping customers.",
         "Halfords sold its Viking distribution business to Bond International in FY2024, expecting savings of about 5M GBP a year while keeping the margin benefits of direct sourcing (Tyrepress). It shows why direct versus wholesale is blurry: sourcing can be direct while stock and delivery run through a distributor.",
-        "Wholesale versus direct is an inference from market structure, about 72 / 28 with a range of 67-78% wholesale, not a reported percentage. Channel routing has the lowest confidence of all: specialists about 82% via wholesale, dealers 54%, other retail 75%, online 39%.",
+        "Wholesale versus direct is an inference from market structure, about 77 / 23 after the rebase (range 74-81% wholesale), not a reported percentage. Channel routing has the lowest confidence of all: specialists about 85% via wholesale, dealers 62%, other retail 79%, online 51%.",
         "Ownership (research, not checked): Micheldever and Protyre belong to Sumitomo Rubber, Stapleton's and Kwik Fit sit within Itochu's European Tyre Enterprise, and Blackcircles is Michelin-owned. The large UK wholesalers are therefore not independent in the ownership sense.",
-        "Private versus commercial is a mileage proxy. The research quotes DfT 2024 Great Britain vehicle miles of 256.1bn for cars and taxis and 58.5bn for vans, which puts vans at about 18.6% of the total and about 5.4M of the 29.0M tyres. Not checked here.",
-        "Wholesale cross-check (October 2026): Micheldever and Bond together handle roughly 11.5–14.5M tyres, about 55–70% of the 21.0M layer. Part of that layer is manufacturer-owned. See the Wholesale check tab for the figures, sources and caveats."
+        "Private versus commercial is a mileage proxy. The research quotes DfT 2024 Great Britain vehicle miles of 256.1bn for cars and taxis and 58.5bn for vans, which puts vans at about 18.6% of the total and about 6.5M of the 35.0M tyres. Not checked here.",
+        "Wholesale cross-check (October 2026): Micheldever and Bond together handle roughly 11.5–14.5M tyres, about 43–54% of the 27.0M layer. Part of that layer is manufacturer-owned. See the Wholesale check tab for the figures, sources and caveats.",
+        "HMRC cross-check (UK Trade Info overseas trade statistics, pulled 13 Nov 2026, data to September 2026): car tyres (CN 40111000) imported 41.9M (2022), 44.3M (2023), 46.7M (2024) and 44.9M (2025), with 3.2M exported in 2025; van and light-truck tyres (40112010) 1.6M imported in 2025; truck and bus (40112090) 2.1M. Origin of 2025 car tyre imports: China 53%, other Asia 12%, EU countries 30% (country of dispatch). January-September 2026 car tyre imports were 37.3M, up 12% on 33.2M, with China at 55%. First-half car and van tyre imports: 24.5M (2024), 22.5M (2025), 26.4M (2026), which tracks BTMA pool volumes. HMRC counts pool brands, OE and stock, so it checks the market, import and export boxes but does not replace them. Data quality: Portugal 2025 (1.6M at 5 kg a tyre) looks mis-declared; September 2026 is a first release."
       ],
       "scope": "Consumer replacement tyres (car, van, 4x4)",
       "unit": "million tyres",
       "year": 2024,
       "explain": {
         "market": {
-          "v": 29,
-          "short": "An estimate from the number of cars on the road, not a published sales figure.",
+          "v": 35.0,
+          "short": "A rebased estimate (35.0M): midway between a vehicle-count estimate and what HMRC customs data imply.",
           "how": [
             "No official UK total for replacement tyres sold was found.",
-            "The research used 36.2M licensed cars at the end of 2024 × about 0.80 tyres per car per year = 29.0M.",
-            "An older GfK/NTDA study put the market at 28.4M, so 29.0M is in the same range."
+            "Route 1, vehicles on the road (DfT, end-2024): 33.97M cars × 0.80 tyres a year = 27.2M, plus 4.79M vans at the same tyres per mile (about 1.3 a van) = 6.2M. Total 33.4M.",
+            "Route 2, HMRC customs data: in 2025 the UK imported 44.9M car tyres and 1.6M van and light-truck tyres and exported 3.2M. Taking off about 5M for tyres fitted to new vehicles and other non-consumer use leaves about 38M (about 41M on 2024 figures). This is an upper bound because it also counts stock changes.",
+            "35.0M sits between the two, nearer the lower route. The earlier 29.0M applied the 0.80 only to cars and left vans out, although the scope includes them."
           ],
-          "src": "Research estimate. The 0.80 tyres per car is a benchmark ratio.",
+          "src": "Research estimate with an HMRC cross-check (13 Nov 2026). The 0.80 tyres per car is a benchmark ratio.",
           "q": [
-            "dft_cars"
+            "dft_cars",
+            "hmrc_ots"
           ],
           "sure": {
             "l": "Low",
-            "w": "An estimate, and the car count behind it does not match the official figure (see the heads-up)."
+            "w": "Two routes bracket it at about 33-41M, but neither is a measured sales figure. Range 31-39M."
           },
-          "check": "The Department for Transport shows 33.97M licensed cars at the end of 2024 (plus 4.79M vans), not 36.2M. At 0.80 tyres per car, 33.97M cars give 27.2M, about 1.8M below the 29.0M used here. The number has not been changed. Tell me if you want it rebased.",
-          "why": "With no UK sales statistic, the number of cars times a typical tyres-per-car rate is the standard way to size a market. 0.8 a year is the research's benchmark, and an older GfK/NTDA study landed nearby.",
-          "val": "Sanity check on DfT's own table (33.967M cars, quote kept): 0.85 tyres per car, still in the normal range (Germany 0.83, Austria 0.86). An older GfK/NTDA study put the market at 28.4M, close to 29.0M. See the heads-up: the 36.2M car count itself does not match DfT.",
+          "check": "Rebased from 29.0M on 13 Nov 2026. HMRC customs data imply a larger market than the vehicle-count estimate: 2025 car and van tyre imports less exports were about 43M. The deduction for new-vehicle fitment and non-consumer use (about 5M) is our assumption, not a published figure. If you prefer the old basis, 29.0M is the upload before this one.",
+          "why": "With no UK sales statistic, two independent routes are used: vehicle numbers times a tyre-use rate, and customs imports less exports. They bracket the market, and the estimate sits between them.",
+          "val": "Sanity check: 35.0M ÷ 38.76M vehicles (DfT 2024: 33.97M cars + 4.79M vans) = 0.90 tyres a vehicle, against 0.83 per car in Germany and 0.86 in Austria. The older GfK/NTDA figure (28.4M) is not dated here and may not include vans. Best check: a BTMA or GfK/NTDA update for the UK. HMRC figures are in the quote.",
           "vq": [
-            "dft_cars"
+            "dft_cars",
+            "hmrc_ots"
           ]
         },
         "industry": {
@@ -4749,13 +4753,13 @@
             "w": "The half-year figure is published; doubling it is an assumption. The article credits BTMA citing Astutus Research and does not use the word EuroPool."
           },
           "why": "The only hard UK pool number found is a half-year figure from BTMA/EuroPool members, so doubling it is the simplest way to get a full year. The range allows for seasonality.",
-          "val": "The half-year figure is published (quote kept). The doubling is the assumption: fitting peaks mean H1 is not exactly half a year. Check against BTMA's full-year figure when it is available."
+          "val": "The half-year figure is published (quote kept). The doubling is the assumption: fitting peaks mean H1 is not exactly half a year. Check against BTMA's full-year figure when it is available. BTMA's July 2026 newsletter says the 2025 baseline was restated downward, so confirm that the 2024 half-year figure was not restated too."
         },
         "direct": {
           "v": 8,
-          "short": "About 28% of the market (8.0M) is assumed to go straight from manufacturers to the channels.",
+          "short": "About 8.0M (23% of the market) is assumed to go straight from manufacturers to the channels.",
           "how": [
-            "The research estimates about 28% of the market goes from manufacturers or their brand organisations straight to the channels (range 6.5–9.0M).",
+            "The earlier research put it at about 28% of a 29.0M market (range 6.5-9.0M). The volume is kept at 8.0M after the market was rebased to 35.0M, because direct sales come from the pool's own 18.7M, which did not change. As a share of the market it is now about 23%.",
             "It counts physical flow: a tyre bought on a manufacturer contract but stocked and delivered by Bond, Stapleton's or Micheldever counts as via wholesale.",
             "Halfords selling its Viking distribution business to Bond shows why the line is blurry: sourcing can be direct while stock and delivery run through a distributor."
           ],
@@ -4764,7 +4768,7 @@
             "l": "Low",
             "w": "No UK source reports a direct versus wholesale split."
           },
-          "why": "The research counts a tyre as direct only if it is stocked and delivered by the manufacturer's own organisation. Stock held by distributors (Micheldever, Stapleton's, Bond) counts as wholesale, which keeps direct to about 28%.",
+          "why": "The research counts a tyre as direct only if it is stocked and delivered by the manufacturer's own organisation. Stock held by distributors (Micheldever, Stapleton's, Bond) counts as wholesale, which keeps direct to about 8.0M.",
           "val": "Not published, and the research rates routing as its lowest-confidence area. Tyrepress (as quoted by the research) reports Halfords selling its Viking distribution arm to Bond while keeping direct-sourcing benefits, which shows how blurred \"direct\" and \"wholesale\" are. Best check: your own UK sell-in by account type."
         },
         "toWs": {
@@ -4778,66 +4782,81 @@
             "l": "Low",
             "w": "Both inputs are estimates."
           },
-          "why": "The research counts a tyre as direct only if it is stocked and delivered by the manufacturer's own organisation. Stock held by distributors (Micheldever, Stapleton's, Bond) counts as wholesale, which keeps direct to about 28%.",
+          "why": "The research counts a tyre as direct only if it is stocked and delivered by the manufacturer's own organisation. Stock held by distributors (Micheldever, Stapleton's, Bond) counts as wholesale, which keeps direct to about 8.0M.",
           "val": "Not published, and the research rates routing as its lowest-confidence area. Tyrepress (as quoted by the research) reports Halfords selling its Viking distribution arm to Bond while keeping direct-sourcing benefits, which shows how blurred \"direct\" and \"wholesale\" are. Best check: your own UK sell-in by account type."
         },
         "import": {
-          "v": 11,
-          "short": "Modelled non-pool supply (11.0M) that fills the gap between the market and the pool.",
+          "v": 17.3,
+          "short": "Modelled non-pool supply (17.3M) that fills the gap between the market and the pool.",
           "how": [
-            "The market (29.0M) is bigger than the pool (18.7M). The difference, about 10.3M (35% of the market), must come from outside the BTMA members.",
-            "The research adds the 0.7M that is re-exported to get a gross 11.0M of non-pool supply (range 9.5–12.5M).",
+            "The market (35.0M) is bigger than the pool (18.7M). The difference, about 16.3M (47% of the market), must come from outside the BTMA members.",
+            "The research adds the 1.0M that is re-exported to get a gross 17.3M of non-pool supply (range 13.3-21.3M).",
             "BTMA links member volumes to low-cost imports, particularly from China and Vietnam (European Rubber Journal).",
+            "HMRC shows why a bigger figure than the earlier 11.0M is plausible: China alone supplied 23.8M car tyres in 2025 (53% of car tyre imports) and Asia 65%. Some of those are pool brands made in Asia, so the customs figure is not used directly.",
             "It is not the customs import figure, which also counts pool brands, original equipment and stock."
           ],
-          "src": "Research model. Not a published figure.",
+          "src": "Research model, cross-checked against HMRC origin data. Not a published figure.",
           "sure": {
             "l": "Low",
-            "w": "It depends on the 29.0M market, which is itself an estimate."
+            "w": "It depends on the 35.0M market, which is itself an estimate."
           },
-          "why": "If the pool sold 18.7M and the market is 29.0M, somebody else supplied the rest. the trade press ties that gap to low-cost imports.",
-          "val": "BTMA links its members' volumes to low-cost imports, particularly from China and Vietnam (European Rubber Journal). GfK's 2023 UK mix of 45% budget tyres (research, not checked) points the same way."
+          "why": "If the pool sold 18.7M and the market is 35.0M, somebody else supplied the rest. The trade press ties that gap to low-cost imports, and HMRC shows Asian-origin tyres at about two thirds of UK car tyre imports.",
+          "val": "BTMA links its members' volumes to low-cost imports, particularly from China and Vietnam (European Rubber Journal). GfK's 2023 UK mix of 45% budget tyres (research, not checked) is close to the 47% non-pool share here. HMRC: China was 55% of car tyre imports in January-September 2026, up from 46% in 2022.",
+          "q": [
+            "hmrc_ots"
+          ],
+          "vq": [
+            "hmrc_ots"
+          ],
+          "check": "Raised from 11.0M on 13 Nov 2026 because the market was rebased from 29.0M to 35.0M. HMRC cannot measure this box directly: it has no brand split."
         },
         "export": {
-          "v": 0.7,
-          "short": "A balancing assumption (0.7M). The lowest-confidence figure in the flow.",
+          "v": 1.0,
+          "short": "A balancing assumption (1.0M), checked against HMRC exports. The lowest-confidence figure in the flow.",
           "how": [
             "Re-exports out of the wholesale layer are not published anywhere.",
-            "The research uses 0.7M as a balancing item (range 0.2–1.5M)."
+            "The research now uses 1.0M (range 0.5-1.5M), up from 0.7M.",
+            "HMRC shows 3.2M car tyres exported in 2025. About 1.2M went at under £70 a tyre, mainly to Ireland (0.91M at £54) and Germany (0.32M at £68), which looks like trade re-exports. Exports at £70 or more a tyre (US, Netherlands, Slovakia) look like UK-made or original-equipment tyres and are left out."
           ],
-          "src": "Balancing assumption.",
+          "src": "Balancing assumption, informed by HMRC export data.",
           "sure": {
             "l": "Low",
-            "w": "Not a published statistic."
+            "w": "Not a published statistic; HMRC exports include factory and original-equipment flows, so only part of them counts."
           },
-          "why": "A small balancing item so the flow closes. Nobody publishes UK re-exports.",
-          "val": "Not a published statistic, lowest confidence. Customs figures cannot be used because they include factory and original-equipment flows."
+          "why": "A small balancing item so the flow closes. HMRC export prices separate cheap trade re-exports from higher-value factory flows, which supports about 1.0M.",
+          "val": "Not a published statistic. HMRC car tyre exports were 2.8M in 2024 and 3.2M in 2025; Ireland is the largest destination at 0.9M.",
+          "q": [
+            "hmrc_ots"
+          ],
+          "vq": [
+            "hmrc_ots"
+          ]
         },
         "wsDom": {
-          "v": 21,
+          "v": 27.0,
           "short": "Calculated: pool to wholesale + imports − exports.",
           "how": [
-            "Wholesalers sold 21.0M in the UK: 10.7M from the pool + 11.0M imports − 0.70M exports.",
-            "From the other side: market 29.0M − direct 8.0M = 21.0M. The two agree."
+            "Wholesalers sold 27.0M in the UK: 10.7M from the pool + 17.3M imports − 1.0M exports.",
+            "From the other side: market 35.0M − direct 8.0M = 27.0M. The two agree."
           ],
-          "src": "Calculated from the figures above. The research puts wholesale at about 72% of the market (range 67–78%).",
+          "src": "Calculated from the figures above. After the rebase wholesale is about 77% of the market (range 74-81%); it was 72% of 29.0M.",
           "sure": {
             "l": "Low",
             "w": "Built from estimates."
           },
-          "val": "Cross-check with the biggest wholesalers (October 2026): Micheldever handles 6.5M tyres a year and Bond about 5–8M (derived from £417M turnover), together 11.5–14.5M, or 55–70% of these 21.0M. Micheldever is owned by Sumitomo, so part of this layer is manufacturer-owned.",
+          "val": "Cross-check with the biggest wholesalers (October 2026): Micheldever handles 6.5M tyres a year and Bond about 5-8M (derived from £417M turnover), together 11.5-14.5M, or 43-54% of these 27.0M. Micheldever is owned by Sumitomo, so part of this layer is manufacturer-owned.",
           "vq": [
             "ws_mich"
           ]
         },
         "ch.spec.tot": {
-          "v": 20.3,
-          "short": "20.3M = 70% of the market. A benchmark share, not a measurement.",
+          "v": 24.5,
+          "short": "24.5M = 70% of the market. A benchmark share, not a measurement.",
           "how": [
-            "The market is 29.0M.",
+            "The market is 35.0M.",
             "No channel split is published for United Kingdom, so each channel gets a benchmark share. For Specialists, fast-fit and independent garages that is 70%.",
             "The benchmark starts from the published German split (BRV 2024: 71 / 20 / 3 / 6%) and the French split, then is adjusted for United Kingdom: independent garages dominate in the UK and fast-fit networks are stable or growing (Mintel, qualitative; the numbers are paywalled).",
-            "70% × 29.0M = 20.3M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
+            "70% × 35.0M = 24.5M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
           ],
           "src": "Benchmark estimate: no UK channel split is published.",
           "sure": {
@@ -4849,26 +4868,26 @@
           "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether the United Kingdom follows them cannot: the research allows an error of about ±6 points. Replace with your own United Kingdom channel data when you have it. Mintel's UK report is qualitative only; its numbers are behind a paywall."
         },
         "ch.spec.ws": {
-          "v": 16.6,
-          "short": "About 82% of this channel's tyres arrive via wholesalers (modelled).",
+          "v": 20.8,
+          "short": "About 85% of this channel's tyres arrive via wholesalers (modelled).",
           "how": [
-            "Specialists, fast-fit and independent garages gets 20.3M tyres in total.",
-            "Assumed: about 82% of them (16.6M) arrive through wholesalers. Independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Inferred from market structure.",
-            "The via-wholesale figures of all channels are set so they add up to the 21.0M that wholesalers sold in the United Kingdom, and the direct figures to 8.0M."
+            "Specialists, fast-fit and independent garages gets 24.5M tyres in total.",
+            "Assumed: about 85% of them (20.8M) arrive through wholesalers. Independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Inferred from market structure.",
+            "The via-wholesale figures of all channels are set so they add up to the 27.0M that wholesalers sold in the United Kingdom, and the direct figures to 8.0M."
           ],
           "src": "Research estimate inferred from market structure. No UK source reports this.",
           "sure": {
             "l": "Low",
             "w": "Channel routing has the lowest confidence of all the UK figures."
           },
-          "why": "Inferred from market structure: independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Share via wholesale: specialists 82%, dealers 55%, other retail 78%, online 39%. The figures are set so all channels add up to 21.0M via wholesale and 8.0M direct.",
+          "why": "Inferred from market structure: independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Share via wholesale: specialists 85%, dealers 62%, other retail 79%, online 51%. The figures are set so all channels add up to 27.0M via wholesale and 8.0M direct.",
           "val": "No UK source reports it. 50:50 for online is also defensible (research). Micheldever's 6.0M a year is the research's figure (Sumitomo Rubber agreed to buy it in 2017)."
         },
         "ch.spec.dir": {
           "v": 3.7,
-          "short": "Channel total minus via wholesale (18% of the channel).",
+          "short": "Channel total minus via wholesale (15% of the channel).",
           "how": [
-            "20.3M total − 16.6M via wholesale = 3.7M direct."
+            "24.5M total − 20.8M via wholesale = 3.7M direct."
           ],
           "src": "Calculated by the research as the channel total minus the via-wholesale figure. Not published.",
           "sure": {
@@ -4878,12 +4897,12 @@
           "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
         },
         "ch.spec.prv": {
-          "v": 15.9,
+          "v": 19.2,
           "short": "About 78% private (modelled).",
           "how": [
-            "Of Specialists, fast-fit and independent garages's 20.3M tyres, about 78% (15.9M) are assumed to go to private owners.",
-            "Private versus commercial is a mileage proxy, not an observed split: DfT's 2024 vehicle miles for Great Britain are 256.1bn for cars and taxis and 58.5bn for vans, so vans are about 18.6% of the total (about 5.4M of the 29.0M tyres; figures quoted by the research, not checked). Read “private” as cars and “commercial” as vans.",
-            "Across all channels that adds up to 23.7M private and 5.4M commercial."
+            "Of Specialists, fast-fit and independent garages's 24.5M tyres, about 78% (19.2M) are assumed to go to private owners.",
+            "Private versus commercial is a mileage proxy, not an observed split: DfT's 2024 vehicle miles for Great Britain are 256.1bn for cars and taxis and 58.5bn for vans, so vans are about 18.6% of the total (about 6.5M of the 35.0M tyres; figures quoted by the research, not checked). Read “private” as cars and “commercial” as vans.",
+            "Across all channels that adds up to 28.5M private and 6.5M commercial."
           ],
           "src": "Mileage proxy (DfT 2024 vehicle miles, quoted by the research).",
           "sure": {
@@ -4894,10 +4913,10 @@
           "val": "DfT 2024 vehicle miles: 256.1bn for cars and taxis, 58.5bn for vans (as quoted by the research, not checked). Company cars sit inside \"cars\", so true commercial demand is higher."
         },
         "ch.spec.com": {
-          "v": 4.4,
+          "v": 5.3,
           "short": "About 22% commercial (channel total minus private).",
           "how": [
-            "20.3M total − 15.9M private = 4.4M for companies, leasing firms and fleets."
+            "24.5M total − 19.2M private = 5.3M for companies, leasing firms and fleets."
           ],
           "src": "Mileage proxy (DfT 2024 vehicle miles, quoted by the research).",
           "sure": {
@@ -4907,13 +4926,13 @@
           "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
         },
         "ch.deal.tot": {
-          "v": 3.48,
-          "short": "3.48M = 12% of the market. A benchmark share, not a measurement.",
+          "v": 4.2,
+          "short": "4.2M = 12% of the market. A benchmark share, not a measurement.",
           "how": [
-            "The market is 29.0M.",
+            "The market is 35.0M.",
             "No channel split is published for United Kingdom, so each channel gets a benchmark share. For Car dealers / brand workshops that is 12%.",
             "The benchmark starts from the published German split (BRV 2024: 71 / 20 / 3 / 6%) and the French split, then is adjusted for United Kingdom: franchised dealers have been losing share (Mintel, qualitative; the numbers are paywalled).",
-            "12% × 29.0M = 3.48M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
+            "12% × 35.0M = 4.2M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
           ],
           "src": "Benchmark estimate: no UK channel split is published.",
           "sure": {
@@ -4925,26 +4944,26 @@
           "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether the United Kingdom follows them cannot: the research allows an error of about ±6 points. Replace with your own United Kingdom channel data when you have it. Mintel's UK report is qualitative only; its numbers are behind a paywall."
         },
         "ch.deal.ws": {
-          "v": 1.9,
-          "short": "About 55% of this channel's tyres arrive via wholesalers (modelled).",
+          "v": 2.6,
+          "short": "About 62% of this channel's tyres arrive via wholesalers (modelled).",
           "how": [
-            "Car dealers / brand workshops gets 3.48M tyres in total.",
-            "Assumed: about 55% of them (1.9M) arrive through wholesalers. Inferred from market structure: dealers buy partly through distributors and partly through manufacturer programmes.",
-            "The via-wholesale figures of all channels are set so they add up to the 21.0M that wholesalers sold in the United Kingdom, and the direct figures to 8.0M."
+            "Car dealers / brand workshops gets 4.2M tyres in total.",
+            "Assumed: about 62% of them (2.6M) arrive through wholesalers. Inferred from market structure: dealers buy partly through distributors and partly through manufacturer programmes.",
+            "The via-wholesale figures of all channels are set so they add up to the 27.0M that wholesalers sold in the United Kingdom, and the direct figures to 8.0M."
           ],
           "src": "Research estimate inferred from market structure. No UK source reports this.",
           "sure": {
             "l": "Low",
             "w": "Channel routing has the lowest confidence of all the UK figures."
           },
-          "why": "Inferred from market structure: independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Share via wholesale: specialists 82%, dealers 55%, other retail 78%, online 39%. The figures are set so all channels add up to 21.0M via wholesale and 8.0M direct.",
+          "why": "Inferred from market structure: independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Share via wholesale: specialists 85%, dealers 62%, other retail 79%, online 51%. The figures are set so all channels add up to 27.0M via wholesale and 8.0M direct.",
           "val": "No UK source reports it. 50:50 for online is also defensible (research). Micheldever's 6.0M a year is the research's figure (Sumitomo Rubber agreed to buy it in 2017)."
         },
         "ch.deal.dir": {
           "v": 1.6,
-          "short": "Channel total minus via wholesale (46% of the channel).",
+          "short": "Channel total minus via wholesale (38% of the channel).",
           "how": [
-            "3.48M total − 1.9M via wholesale = 1.6M direct."
+            "4.2M total − 2.6M via wholesale = 1.6M direct."
           ],
           "src": "Calculated by the research as the channel total minus the via-wholesale figure. Not published.",
           "sure": {
@@ -4954,12 +4973,12 @@
           "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
         },
         "ch.deal.prv": {
-          "v": 3.1,
-          "short": "About 89% private (modelled).",
+          "v": 3.7,
+          "short": "About 88% private (modelled).",
           "how": [
-            "Of Car dealers / brand workshops's 3.48M tyres, about 89% (3.1M) are assumed to go to private owners.",
-            "Private versus commercial is a mileage proxy, not an observed split: DfT's 2024 vehicle miles for Great Britain are 256.1bn for cars and taxis and 58.5bn for vans, so vans are about 18.6% of the total (about 5.4M of the 29.0M tyres; figures quoted by the research, not checked). Read “private” as cars and “commercial” as vans.",
-            "Across all channels that adds up to 23.7M private and 5.4M commercial."
+            "Of Car dealers / brand workshops's 4.2M tyres, about 88% (3.7M) are assumed to go to private owners.",
+            "Private versus commercial is a mileage proxy, not an observed split: DfT's 2024 vehicle miles for Great Britain are 256.1bn for cars and taxis and 58.5bn for vans, so vans are about 18.6% of the total (about 6.5M of the 35.0M tyres; figures quoted by the research, not checked). Read “private” as cars and “commercial” as vans.",
+            "Across all channels that adds up to 28.5M private and 6.5M commercial."
           ],
           "src": "Mileage proxy (DfT 2024 vehicle miles, quoted by the research).",
           "sure": {
@@ -4970,10 +4989,10 @@
           "val": "DfT 2024 vehicle miles: 256.1bn for cars and taxis, 58.5bn for vans (as quoted by the research, not checked). Company cars sit inside \"cars\", so true commercial demand is higher."
         },
         "ch.deal.com": {
-          "v": 0.4,
-          "short": "About 11% commercial (channel total minus private).",
+          "v": 0.5,
+          "short": "About 12% commercial (channel total minus private).",
           "how": [
-            "3.48M total − 3.1M private = 0.40M for companies, leasing firms and fleets."
+            "4.2M total − 3.7M private = 0.5M for companies, leasing firms and fleets."
           ],
           "src": "Mileage proxy (DfT 2024 vehicle miles, quoted by the research).",
           "sure": {
@@ -4983,13 +5002,13 @@
           "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
         },
         "ch.ret.tot": {
-          "v": 1.16,
-          "short": "1.16M = 4% of the market. A benchmark share, not a measurement.",
+          "v": 1.4,
+          "short": "1.4M = 4% of the market. A benchmark share, not a measurement.",
           "how": [
-            "The market is 29.0M.",
+            "The market is 35.0M.",
             "No channel split is published for United Kingdom, so each channel gets a benchmark share. For Other retail (parts stores, hypermarkets, petrol) that is 4%.",
             "The benchmark starts from the published German split (BRV 2024: 71 / 20 / 3 / 6%) and the French split, then is adjusted for United Kingdom: no UK-specific information was found, so the benchmark is kept as is.",
-            "4% × 29.0M = 1.16M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
+            "4% × 35.0M = 1.4M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
           ],
           "src": "Benchmark estimate: no UK channel split is published.",
           "sure": {
@@ -5001,26 +5020,26 @@
           "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether the United Kingdom follows them cannot: the research allows an error of about ±6 points. Replace with your own United Kingdom channel data when you have it."
         },
         "ch.ret.ws": {
-          "v": 0.9,
-          "short": "About 78% of this channel's tyres arrive via wholesalers (modelled).",
+          "v": 1.1,
+          "short": "About 79% of this channel's tyres arrive via wholesalers (modelled).",
           "how": [
-            "Other retail (parts stores, hypermarkets, petrol) gets 1.16M tyres in total.",
-            "Assumed: about 78% of them (0.90M) arrive through wholesalers. Inferred from market structure.",
-            "The via-wholesale figures of all channels are set so they add up to the 21.0M that wholesalers sold in the United Kingdom, and the direct figures to 8.0M."
+            "Other retail (parts stores, hypermarkets, petrol) gets 1.4M tyres in total.",
+            "Assumed: about 79% of them (1.1M) arrive through wholesalers. Inferred from market structure.",
+            "The via-wholesale figures of all channels are set so they add up to the 27.0M that wholesalers sold in the United Kingdom, and the direct figures to 8.0M."
           ],
           "src": "Research estimate inferred from market structure. No UK source reports this.",
           "sure": {
             "l": "Low",
             "w": "Channel routing has the lowest confidence of all the UK figures."
           },
-          "why": "Inferred from market structure: independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Share via wholesale: specialists 82%, dealers 55%, other retail 78%, online 39%. The figures are set so all channels add up to 21.0M via wholesale and 8.0M direct.",
+          "why": "Inferred from market structure: independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Share via wholesale: specialists 85%, dealers 62%, other retail 79%, online 51%. The figures are set so all channels add up to 27.0M via wholesale and 8.0M direct.",
           "val": "No UK source reports it. 50:50 for online is also defensible (research). Micheldever's 6.0M a year is the research's figure (Sumitomo Rubber agreed to buy it in 2017)."
         },
         "ch.ret.dir": {
           "v": 0.3,
-          "short": "Channel total minus via wholesale (26% of the channel).",
+          "short": "Channel total minus via wholesale (21% of the channel).",
           "how": [
-            "1.16M total − 0.90M via wholesale = 0.30M direct."
+            "1.4M total − 1.1M via wholesale = 0.3M direct."
           ],
           "src": "Calculated by the research as the channel total minus the via-wholesale figure. Not published.",
           "sure": {
@@ -5030,12 +5049,12 @@
           "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
         },
         "ch.ret.prv": {
-          "v": 1.1,
-          "short": "About 95% private (modelled).",
+          "v": 1.3,
+          "short": "About 93% private (modelled).",
           "how": [
-            "Of Other retail (parts stores, hypermarkets, petrol)'s 1.16M tyres, about 95% (1.1M) are assumed to go to private owners.",
-            "Private versus commercial is a mileage proxy, not an observed split: DfT's 2024 vehicle miles for Great Britain are 256.1bn for cars and taxis and 58.5bn for vans, so vans are about 18.6% of the total (about 5.4M of the 29.0M tyres; figures quoted by the research, not checked). Read “private” as cars and “commercial” as vans.",
-            "Across all channels that adds up to 23.7M private and 5.4M commercial."
+            "Of Other retail (parts stores, hypermarkets, petrol)'s 1.4M tyres, about 93% (1.3M) are assumed to go to private owners.",
+            "Private versus commercial is a mileage proxy, not an observed split: DfT's 2024 vehicle miles for Great Britain are 256.1bn for cars and taxis and 58.5bn for vans, so vans are about 18.6% of the total (about 6.5M of the 35.0M tyres; figures quoted by the research, not checked). Read “private” as cars and “commercial” as vans.",
+            "Across all channels that adds up to 28.5M private and 6.5M commercial."
           ],
           "src": "Mileage proxy (DfT 2024 vehicle miles, quoted by the research).",
           "sure": {
@@ -5047,9 +5066,9 @@
         },
         "ch.ret.com": {
           "v": 0.1,
-          "short": "About 9% commercial (channel total minus private).",
+          "short": "About 7% commercial (channel total minus private).",
           "how": [
-            "1.16M total − 1.1M private = 0.10M for companies, leasing firms and fleets."
+            "1.4M total − 1.3M private = 0.1M for companies, leasing firms and fleets."
           ],
           "src": "Mileage proxy (DfT 2024 vehicle miles, quoted by the research).",
           "sure": {
@@ -5059,13 +5078,13 @@
           "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
         },
         "ch.onl.tot": {
-          "v": 4.06,
-          "short": "4.06M = 14% of the market. A benchmark share, not a measurement.",
+          "v": 4.9,
+          "short": "4.9M = 14% of the market. A benchmark share, not a measurement.",
           "how": [
-            "The market is 29.0M.",
+            "The market is 35.0M.",
             "No channel split is published for United Kingdom, so each channel gets a benchmark share. For Online that is 14%.",
             "The benchmark starts from the published German split (BRV 2024: 71 / 20 / 3 / 6%) and the French split, then is adjusted for United Kingdom: online is a growing but smaller channel (Mintel, qualitative).",
-            "14% × 29.0M = 4.06M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
+            "14% × 35.0M = 4.9M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
           ],
           "src": "Benchmark estimate: no UK channel split is published.",
           "sure": {
@@ -5077,26 +5096,26 @@
           "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether the United Kingdom follows them cannot: the research allows an error of about ±6 points. Replace with your own United Kingdom channel data when you have it. Mintel's UK report is qualitative only; its numbers are behind a paywall."
         },
         "ch.onl.ws": {
-          "v": 1.6,
-          "short": "About 39% of this channel's tyres arrive via wholesalers (modelled).",
+          "v": 2.5,
+          "short": "About 51% of this channel's tyres arrive via wholesalers (modelled).",
           "how": [
-            "Online gets 4.06M tyres in total.",
-            "Assumed: about 39% of them (1.6M) arrive through wholesalers. The lowest-confidence split: 50 / 50 is also defensible.",
-            "The via-wholesale figures of all channels are set so they add up to the 21.0M that wholesalers sold in the United Kingdom, and the direct figures to 8.0M."
+            "Online gets 4.9M tyres in total.",
+            "Assumed: about 51% of them (2.5M) arrive through wholesalers. The lowest-confidence split: 50 / 50 is also defensible.",
+            "The via-wholesale figures of all channels are set so they add up to the 27.0M that wholesalers sold in the United Kingdom, and the direct figures to 8.0M."
           ],
           "src": "Research estimate inferred from market structure. No UK source reports this.",
           "sure": {
             "l": "Low",
             "w": "Channel routing has the lowest confidence of all the UK figures."
           },
-          "why": "Inferred from market structure: independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Share via wholesale: specialists 82%, dealers 55%, other retail 78%, online 39%. The figures are set so all channels add up to 21.0M via wholesale and 8.0M direct.",
+          "why": "Inferred from market structure: independent garages mostly buy from distributors such as Micheldever (about 6.0M tyres a year) and Stapleton's. Share via wholesale: specialists 85%, dealers 62%, other retail 79%, online 51%. The figures are set so all channels add up to 27.0M via wholesale and 8.0M direct.",
           "val": "No UK source reports it. 50:50 for online is also defensible (research). Micheldever's 6.0M a year is the research's figure (Sumitomo Rubber agreed to buy it in 2017)."
         },
         "ch.onl.dir": {
-          "v": 2.5,
-          "short": "Channel total minus via wholesale (62% of the channel).",
+          "v": 2.4,
+          "short": "Channel total minus via wholesale (49% of the channel).",
           "how": [
-            "4.06M total − 1.6M via wholesale = 2.5M direct."
+            "4.9M total − 2.5M via wholesale = 2.4M direct."
           ],
           "src": "Calculated by the research as the channel total minus the via-wholesale figure. Not published.",
           "sure": {
@@ -5106,12 +5125,12 @@
           "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
         },
         "ch.onl.prv": {
-          "v": 3.6,
-          "short": "About 89% private (modelled).",
+          "v": 4.3,
+          "short": "About 88% private (modelled).",
           "how": [
-            "Of Online's 4.06M tyres, about 89% (3.6M) are assumed to go to private owners.",
-            "Private versus commercial is a mileage proxy, not an observed split: DfT's 2024 vehicle miles for Great Britain are 256.1bn for cars and taxis and 58.5bn for vans, so vans are about 18.6% of the total (about 5.4M of the 29.0M tyres; figures quoted by the research, not checked). Read “private” as cars and “commercial” as vans.",
-            "Across all channels that adds up to 23.7M private and 5.4M commercial."
+            "Of Online's 4.9M tyres, about 88% (4.3M) are assumed to go to private owners.",
+            "Private versus commercial is a mileage proxy, not an observed split: DfT's 2024 vehicle miles for Great Britain are 256.1bn for cars and taxis and 58.5bn for vans, so vans are about 18.6% of the total (about 6.5M of the 35.0M tyres; figures quoted by the research, not checked). Read “private” as cars and “commercial” as vans.",
+            "Across all channels that adds up to 28.5M private and 6.5M commercial."
           ],
           "src": "Mileage proxy (DfT 2024 vehicle miles, quoted by the research).",
           "sure": {
@@ -5122,10 +5141,10 @@
           "val": "DfT 2024 vehicle miles: 256.1bn for cars and taxis, 58.5bn for vans (as quoted by the research, not checked). Company cars sit inside \"cars\", so true commercial demand is higher."
         },
         "ch.onl.com": {
-          "v": 0.5,
+          "v": 0.6,
           "short": "About 12% commercial (channel total minus private).",
           "how": [
-            "4.06M total − 3.6M private = 0.50M for companies, leasing firms and fleets."
+            "4.9M total − 4.3M private = 0.6M for companies, leasing firms and fleets."
           ],
           "src": "Mileage proxy (DfT 2024 vehicle miles, quoted by the research).",
           "sure": {
@@ -5135,10 +5154,10 @@
           "why": "No separate assumption: this is the channel total minus the private figure, so it carries the same uncertainty as that split."
         },
         "prvAll": {
-          "v": 23.7,
-          "short": "Cars: about 82% of the market (mileage proxy).",
+          "v": 28.5,
+          "short": "Cars: about 81% of the market (mileage proxy).",
           "how": [
-            "The channels' private figures add up to 23.7M."
+            "The channels' private figures add up to 28.5M."
           ],
           "src": "Sum of the channel proxies.",
           "sure": {
@@ -5149,10 +5168,10 @@
           "val": "DfT 2024 vehicle miles: 256.1bn for cars and taxis, 58.5bn for vans (as quoted by the research, not checked). Company cars sit inside \"cars\", so true commercial demand is higher."
         },
         "comAll": {
-          "v": 5.4,
+          "v": 6.5,
           "short": "Vans: about 19% of the market (mileage proxy).",
           "how": [
-            "Vans are about 18.6% of car-plus-van mileage (DfT 2024, as quoted by the research), which is about 5.4M of the market.",
+            "Vans are about 18.6% of car-plus-van mileage (DfT 2024, as quoted by the research), which is about 6.5M of the 35.0M market.",
             "The overall figure is firmer than its placement in each channel."
           ],
           "src": "Sum of the channel proxies.",
@@ -5190,6 +5209,14 @@
           "u": "https://www.fleetnews.co.uk/features/micheldever-takes-on-the-big-two-with-fleet-first-smr-push",
           "role": "check",
           "note": "All tyre types. The same article says its own Protyre centres fit 1.35M a year, so about 5.2M goes to other trade customers."
+        },
+        "hmrc_ots": {
+          "q": "Car tyres 40111000, 2025: imports 44.90M tyres (GBP 1,661m), exports 3.16M (GBP 247m); China 23.80M (53%). Van/light truck 40112010: imports 1.63M.",
+          "by": "HMRC Overseas Trade Statistics via the UK Trade Info API (api.uktradeinfo.com), pulled 13 Nov 2026. Units are HMRC's supplementary unit (number of tyres).",
+          "u": "https://api.uktradeinfo.com/OTS?$apply=filter((CommodityId%20eq%2040111000%20or%20CommodityId%20eq%2040112010)%20and%20MonthId%20ge%20202501%20and%20MonthId%20le%20202512)/groupby((FlowTypeId,CommodityId),aggregate(SuppUnit%20with%20sum%20as%20U,Value%20with%20sum%20as%20V))",
+          "role": "check",
+          "kind": "table",
+          "note": "Gross customs figures: they include pool brands, original-equipment tyres and stock changes, and EU countries show where a tyre was dispatched from, not necessarily where it was made. Portugal's 2025 figure (1.6M at 5 kg a tyre) looks mis-declared. September 2026 is a first release. Series: car tyre imports 41.9M (2022), 44.3M (2023), 46.7M (2024), 44.9M (2025); Jan-Sep 2026 37.3M against 33.2M a year earlier."
         }
       }
     },

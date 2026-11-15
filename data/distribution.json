@@ -1403,8 +1403,8 @@
         }
       ],
       "noteShort": [
-        "Scope: car, van and 4x4 replacement tyres, 2024, about 28.4M (GfK / NTDA); the flow model uses 29.0M.",
-        "Sources: DfT licensing 2024 (36.2M cars x 0.8 tyres per car); BTMA / EuroPool H1 2024 sales for the pool.",
+        "Scope: car, van and 4x4 replacement tyres, 2024, about 28.4M (GfK / NTDA); the flow model now uses 35.0M (rebased in November 2026 after an HMRC customs cross-check).",
+        "Sources: DfT licensing 2024 (33.97M cars and 4.79M vans); HMRC overseas trade statistics (UK Trade Info); BTMA / EuroPool H1 2024 sales for the pool.",
         "Not found: no published channel or entity volumes, so none is shown."
       ]
     },
