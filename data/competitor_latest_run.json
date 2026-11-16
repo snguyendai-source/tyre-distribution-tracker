@@ -1,23 +1,47 @@
 {
-  "runAt": "2026-11-15T13:41:02.277996+00:00",
-  "totalNew": 2,
+  "runAt": "2026-11-16T15:14:27.437787+00:00",
+  "totalNew": 5,
   "entitiesChecked": 26,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 5,
   "newItemsByEntity": {
-    "Toyo Tires": [
+    "Bridgestone": [
       {
-        "title": "Toyo Tires – Serbia plant key to supporting business strategies - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNDdXRFgxR0tLUHNMeWw1bVVwTXpBbVFKbWl6STlKeDN1MTZ6NDR3Sy01THgwYjM2STVsZ0p0QmlnblhPX3QwR1NCeEhjdkYwZF9lQ1prZ043NDQydlI4OEY1azJxOUxmbE5QNFhkMWU3dERMcXItUWR1c2F4c3R5Nk9rUEdrTi10ajQ2TDB0c3k1N2pOaF9NRkpLb2c?oc=5",
-        "pubDate": "Thu, 22 Aug 2024 07:00:00 GMT",
-        "category": "Japanese"
+        "title": "Bridgestone grows European replacement tyre sales as OE volumes fall - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTG9sR0ZtQlkxSUlxWFJtbUFEQlNsNWZ1ZktmSmJ3bWdzYzA3cFlvOVZKNVpHMnpSOVRhdW5lUG0yOUdMdzNPZmZSeHVra0dYRXNsOU9BMkdvTXJCbE52d2VhVGh3WUw1NXhQXy1xdkRLUWgta2doR0Jva1h1QjhuRjlYcldLTjh0ZEtTdk5QVzQwLWEyeHQ2M0Ruc24xYnFzTkxCYzhn?oc=5",
+        "pubDate": "Mon, 16 Nov 2026 10:59:06 GMT",
+        "category": "Premium global"
       }
     ],
-    "Giti Tire": [
+    "Goodyear": [
       {
-        "title": "VW ID. Buzz gives Giti Tire first European electric vehicle OE fitment - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaHlTU1BhSW9RTDBaR2sxbEhYN1JEVExjVE9tQm9aZ3kwVDhOMjNzSHBnSElLWWpzNEdSY3Q0dFl1UnhBUi02SjREdnVIaEhLVDVSNE9NODViaS1wVl9sZXlEb1Y0cFR3Zkg1V1FqQnFyWXVTZkRjOGM2aW1MTXpsSG1KemotdGxfZURULVN4a25kZUZIbUE4WkJTZFNiVnFVRG9JQWxsNA?oc=5",
-        "pubDate": "Tue, 05 Sep 2023 07:00:00 GMT",
-        "category": "Chinese"
+        "title": "World’s largest agricultural tyre now coming to EU & UK - Agriland",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYzJHS2JjUVlWYk85Q0hOcGhtMHZjdi1fU0RzSlFYQWN2YmVGRUlUTWxVczN0UEk5VXdLUm1hTmdUNG85X0xIS2hBeVJEVkMwOC16VDNKYlUybmwyb2duRG5qSlk0TDcyaEhhZkpuVkdyelhaVmxKcGJodGp0UGx4ZTVfTGhnLUxsaXlKdU5RYTk0bFI2?oc=5",
+        "pubDate": "Wed, 18 Feb 2026 08:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Pirelli": [
+      {
+        "title": "Pirelli replaces Russian tyres for export to Europe with ones from Romania, Turkey - SeeNews",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORVFXQVcwaWNWN3BRTUhKcGhuWHNqaFlvUmFHSTY5OGxXNjlfOXd5aGxUdU1xcTNGOVBmSzRNTmFKVXN5b3prV21KWUR5cVBxX09UaHBIUUdFcDZzR0RocTVtRkMwMlRHN3VHaE54RTMteV80T2NJTkZEYmFlR1NWUF9qOEpxblZuWGhLUzdRZVIwdUtaTmRQVkFhUUNtX1Iza2J5WEtVTjJSSldwSzlDaERHcXM?oc=5",
+        "pubDate": "Wed, 11 May 2022 07:00:00 GMT",
+        "category": "Premium global"
+      }
+    ],
+    "Kumho Tire": [
+      {
+        "title": "Kumho Tire reaches long-delayed deal on factory relocation - The Korea Times",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZTdSYmhXekpBQzV0bTk1SlBpLTNNNEVJUTVRQ2o5V19fdnlMUmhxMklBYWpJaHlrZ2FRUmJNLUJXck12RUJ2cHlYRGJrQkVFZWZjRW1TNm9aVWdxOV90NWpGNG5aLTBnbGZWMDZNRy0tazBtZjVWQl82SVFqLXBPeFZyQ09iS0oxR1RBNFlUYkNaa0NGNFdvVWxSb2p6ZTZhT1NVTzg5OTByWXZOb0x2TjhUR3dHUdIBuwFBVV95cUxPcm1xNGtUMzhWLUhSbXR1MXhSMHBuU3F2N1BvbmllSWVCX1FLSFRwcnlIWm5nWlF6VUdXWGVQVGZkUm11U05PWWgzVGFJNkxUd3V1NzJGX1p3NmJvNXlVNnozVXU5eTZFdTNBTzA4VXhmaXlZUVFzY3lBTVB3NXVSYmhVdWE1YzBKWndQck9qSTVkamhyaHZ1Y2d5RTlkalpTS0tBTWpoZ0Rua3hITGkwMGlrR3hZZnpRNjNv?oc=5",
+        "pubDate": "Wed, 30 Jul 2025 07:00:00 GMT",
+        "category": "Korean"
+      }
+    ],
+    "Yokohama Rubber": [
+      {
+        "title": "Yokohama posts record earnings as European tire sales grow - European Rubber Journal",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbzA1eEFEcGl1aEwyaU1lWjZIbXZFOFoyV0dlVmE2Vm00M2Joa1BwQmxLb2wtWUpOV0dMbzlSV3djRTFyb2VmRUNuc1hDQVUwNlV5cU14SHJDN2FrOV9jOGFWeEFERkJ3bVBRazVNc1JkbmJ4SXZDVkx2SXlBSllWVnkweWZQV24zbmZiWmxXdlpCdVFnR0JvaHhfa01uVUU0Y1ZIZlF2VVFyNXM4S0Y5MG92UVU?oc=5",
+        "pubDate": "Mon, 16 Nov 2026 05:08:46 GMT",
+        "category": "Japanese"
       }
     ]
   }
