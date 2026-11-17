@@ -89,6 +89,15 @@
   details.country[open] > summary::before{ transform:rotate(90deg); }
   .country-name{ font-size:16px; font-weight:700; color:var(--navy); }
   .country-meta{ font-size:12px; color:var(--ink-soft); margin-top:2px; }
+  details.country.europe{ border-left:5px solid var(--teal); }
+  .eu-cap{ font-size:10.5px; font-weight:800; letter-spacing:.4px; text-transform:uppercase; color:var(--teal-ink); margin:14px 0 4px; }
+  .eu-go{ appearance:none; border:none; background:none; padding:0; font:inherit; font-weight:700; color:var(--teal-ink); cursor:pointer; text-decoration:underline dotted; text-underline-offset:3px; text-align:left; }
+  .eu-go:hover{ text-decoration:underline; }
+  .fv-tbl.eu-tbl{ min-width:700px; }
+  .fv-tbl th.n{ text-align:right; }
+  .fv-tbl tr.eu-tot td{ background:#EAF4EF; border-top:2px solid #2F6F62; }
+  .fv-tbl tr.eu-out td{ color:#6B7487; }
+  .fv-tbl td.eu-pct{ color:#6B7487; font-weight:600; }
   .country-total{ margin-left:auto; text-align:right; }
   .country-total .num2{ font-family:var(--mono); font-size:18px; font-weight:700; color:var(--teal-ink); }
   .country-total .lbl2{ font-size:10.5px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.4px; }
@@ -734,7 +743,8 @@ async function init(){
     window.__distData = dist;
     try{ window.__sellin = await loadJSON('data/sellin.json'); }catch(e){ window.__sellin = null; } // optional file
     try{ window.__wsc = await loadJSON('data/wholesale_check.json'); }catch(e){ window.__wsc = null; } // optional file
-    document.getElementById('sub-pc').innerHTML = renderDistSegment(dist.pc, 'PCR');
+    let euCard=''; try{ euCard = renderEuropeCard(); }catch(err){ console.error('Europe overview failed',err); }
+    document.getElementById('sub-pc').innerHTML = euCard + renderDistSegment(dist.pc, 'PCR');
     document.getElementById('sub-tbr').innerHTML = renderDistSegment(dist.tbr, 'TBR');
     renderWholesaleCheck();
   }catch(e){
@@ -1323,14 +1333,14 @@ function fvSankeyHtml(c, flow, R, nameOf){
   add('ind',0,'Industry (ETRMA pool)',v('industry'),'#1B3A8C','industry');
   add('imp',0,'Wholesale import (non-pool)',v('import'),'#B5701E','import');
   add('dir',1,'Direct from the manufacturers',v('direct'),BLUE,'direct');
-  add('ws',1,'Wholesale sold in '+c.country,v('wsDom'),RED,'wsDom');
+  add('ws',1,'Wholesale sold in '+(flow.europe?(flow.cname||'Europe'):c.country),v('wsDom'),RED,'wsDom');
   chs.forEach(ch=>add('c'+ch.id,2,nameOf(ch),v(T(ch.id)),'#3B4A6B',T(ch.id)));
   if(v('export')>0) add('exp',2,'Export',v('export'),GREY,'export');
   const chSum=chs.reduce((a,ch)=>a+v(T(ch.id)),0);
   add('fin',3,'Final consumers',has('market')?v('market'):chSum,'#2F6F62','market');
   // click-through to the By channel tab: same targets as the boxes diagram (wholesale, direct, channels)
-  N.ws.jump='ws'; N.dir.jump='direct';
-  chs.forEach(ch=>{ N['c'+ch.id].jump=(((c.channels||[]).some(x=>x.flowBox===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel))?'ch:'+ch.id:'retail'); });
+  if(!flow.europe){ N.ws.jump='ws'; N.dir.jump='direct';
+  chs.forEach(ch=>{ N['c'+ch.id].jump=(((c.channels||[]).some(x=>x.flowBox===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel))?'ch:'+ch.id:'retail'); }); }
   // a middle bar whose own figure is missing stays a dashed "needs input" placeholder, and no ribbon is drawn into or out of it
   ['ws','dir'].forEach(id=>{ if(!has(N[id].fid)) N[id].gap=true; });
   const link=(a,b,value,color,fid)=>{ if(!(value>0)||N[a].gap||N[b].gap) return; const l={a:N[a],b:N[b],value,color,fid}; L.push(l); N[a].out.push(l); N[b].inn.push(l); };
@@ -1375,6 +1385,7 @@ function fvSankeyHtml(c, flow, R, nameOf){
 }
 function renderFlowView(c, flow){
   const R=flowSolve(flow), val=R.val, tier=R.tier, esc=escapeHtml;
+  const EU=!!flow.europe, cn=EU?(flow.cname||'Europe'):c.country, SH=EU?52:0; // Europe overview: no click-through, no private/commercial block
   const nameOf=ch=>{ const dc=(c.channels||[]).find(x=>x.flowBox===ch.id); return dc?dc.name:ch.name; };
   // Native width is about 1000px (with the stage labels), so the diagram fits the page box without sideways scrolling; CSS scales it down further on narrower screens.
   const n=flow.channels.length, GAP=10, CW=n<=4?192:(n===5?150:(n<=8?116:90));
@@ -1384,7 +1395,7 @@ function renderFlowView(c, flow){
   const RED='#C0392B', BLUE='#2B5BD9', GREY='#9AA3B5', INK='#1B2333';
   const has=id=>id in val;
   const T0=i=>'ch.'+i+'.tot', W0=i=>'ch.'+i+'.ws', D0=i=>'ch.'+i+'.dir', P0=i=>'ch.'+i+'.prv', C0=i=>'ch.'+i+'.com';
-  const LB={market:'Replacement market',industry:'Industry (ETRMA pool)',toWs:'Industry sold to wholesale',direct:'Direct from the manufacturers to the channels',import:'Wholesale import (non-pool)',export:'Export',wsDom:'Wholesale sold in '+c.country,prvAll:'Private demand, all channels',comAll:'Commercial demand, all channels'};
+  const LB={market:'Replacement market',industry:'Industry (ETRMA pool)',toWs:'Industry sold to wholesale',direct:'Direct from the manufacturers to the channels',import:'Wholesale import (non-pool)',export:'Export',wsDom:'Wholesale sold in '+cn,prvAll:'Private demand, all channels',comAll:'Commercial demand, all channels'};
   flow.channels.forEach(ch=>{ const nm=nameOf(ch); LB[T0(ch.id)]=nm+' \u00b7 total'; LB[W0(ch.id)]=nm+' \u00b7 via wholesale'; LB[D0(ch.id)]=nm+' \u00b7 direct'; LB[P0(ch.id)]=nm+' \u00b7 private'; LB[C0(ch.id)]=nm+' \u00b7 commercial'; });
   (flow.groups||[]).forEach(g=>{ LB['g.'+g.id]=g.name; });
   const FE={};
@@ -1416,7 +1427,8 @@ function renderFlowView(c, flow){
   const indW=250, indX=60, impW=250, impX=W-60-250, wsW=300, wsX=W/2-150, wsY=170, wsH=78, wsA=wsX+80, wsB=wsX+wsW-80;
   s+=node(indX,24,indW,60,'#E8EEFB',BLUE,'Industry (ETRMA pool)','industry');
   s+=node(impX,24,impW,60,'#FBE6D2','#B5701E','Wholesale import (non-pool)','import');
-  s+=`<g class="fv-jump" data-jump="ws" data-jump-target="ws">`+node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+c.country,'wsDom','to wholesale + imports − exports')+`<text x="${wsX+10}" y="${wsY+wsH-9}" style="font-size:10px;fill:#9A5B1E;text-decoration:underline">who? ›</text></g>`;
+  s+=EU?node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+cn,'wsDom','to wholesale + imports − exports')
+    :`<g class="fv-jump" data-jump="ws" data-jump-target="ws">`+node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+c.country,'wsDom','to wholesale + imports − exports')+`<text x="${wsX+10}" y="${wsY+wsH-9}" style="font-size:10px;fill:#9A5B1E;text-decoration:underline">who? ›</text></g>`;
   s+=node(wsX+wsW+40,wsY+14,150,50,'#F2F3F7',GREY,'Export','export');
   const indCx=indX+indW/2, impCx=impX+impW/2;
   s+=line(`M${indCx} 84 V127 H${wsA} V${wsY-4}`,RED,'toWs',true);
@@ -1425,7 +1437,7 @@ function renderFlowView(c, flow){
   s+=`<g class="fv-tip-t" data-fid="toWs"><text x="${(indCx+wsA)/2}" y="120" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${RED}">to wholesale ${has('toWs')?fvFmt(val.toWs)+'M':'—'}</text></g>`;
   s+=`<g class="fv-tip-t" data-fid="import"><text x="${(impCx+wsB)/2}" y="120" text-anchor="middle" style="font-size:11px;font-weight:700;fill:${RED}">imports ${has('import')?fvFmt(val.import)+'M':'—'}</text></g>`;
   const dirX=Math.max(indX+10,mid(0)-OFF-26);
-  s+=`<g class="fv-jump fv-tip-t" data-fid="direct" data-jump="direct" data-jump-target="direct"><rect x="${dirX-8}" y="186" width="150" height="46" fill="transparent"/>`
+  s+=`<g class="${EU?'':'fv-jump '}fv-tip-t" data-fid="direct"${EU?'':' data-jump="direct" data-jump-target="direct"'}><rect x="${dirX-8}" y="186" width="150" height="46" fill="transparent"/>`
     +line(`M${dirX} 84 V294`,BLUE,'direct',false)
     +`<text x="${dirX+10}" y="200" style="font-size:11px;font-weight:700;fill:${BLUE}">direct ${has('direct')?fvFmt(val.direct)+'M':'—'}</text>`
     +`<text x="${dirX+10}" y="214" style="font-size:10px;fill:#6B7487">industry to channels</text></g>`;
@@ -1438,7 +1450,7 @@ function renderFlowView(c, flow){
     s+=line(`M${rx(i)} ${redY} V${topY-4}`,RED,Wc(ch.id),true);
     s+=line(`M${bx(i)} ${bluY} V${topY-4}`,BLUE,D(ch.id),true);
     const x=lx(i), known=has(T(ch.id));
-    s+=`<g class="fv-jump" data-jump="${((c.channels||[]).some(x=>x.flowBox===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel))?'ch:'+esc(ch.id):'retail'}" data-jump-target="ch:${esc(ch.id)}">`;
+    s+=EU?'<g>':`<g class="fv-jump" data-jump="${((c.channels||[]).some(x=>x.flowBox===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel===ch.id)||(c.flatEntities||[]).some(e=>e.flowChannel))?'ch:'+esc(ch.id):'retail'}" data-jump-target="ch:${esc(ch.id)}">`;
     s+=`<rect x="${x}" y="${topY}" width="${CW}" height="118" rx="8" fill="#fff" stroke="${BLUE}" ${known?'':'stroke-dasharray="4 3"'}/>`;
     fvWrap(nameOf(ch),Math.max(13,Math.floor((CW-12)/6.3))).slice(0,3).forEach((t,k)=>{ s+=`<text x="${x+CW/2}" y="${topY+16+k*12}" text-anchor="middle" style="font-size:10.5px;font-weight:700;fill:${INK}">${esc(t)}</text>`; });
     [['Total',T(ch.id),INK,86],['via wholesale',Wc(ch.id),RED,88],['direct',D(ch.id),BLUE,90]].forEach(([lab,id,col],k)=>{
@@ -1446,14 +1458,14 @@ function renderFlowView(c, flow){
       s+=`<text x="${x+7}" y="${y}" style="font-size:9.5px;fill:${col}">${lab}</text>`;
       s+=`<text x="${x+CW-17}" y="${y}" text-anchor="end" style="font-size:12px;font-weight:700;fill:${has(id)?INK:'#9AA3B5'}">${has(id)?fvFmt(val[id]):'—'}</text>`+dot(x+CW-9,y-4,id);
     });
-    s+=`<rect x="${x}" y="${topY+128}" width="${CW}" height="42" rx="8" fill="#F5F6FA" stroke="#D5D9E4"/>`;
-    [['Private',P(ch.id)],['Commercial',Cm(ch.id)]].forEach(([lab,id],k)=>{
+    if(!EU) s+=`<rect x="${x}" y="${topY+128}" width="${CW}" height="42" rx="8" fill="#F5F6FA" stroke="#D5D9E4"/>`;
+    if(!EU) [['Private',P(ch.id)],['Commercial',Cm(ch.id)]].forEach(([lab,id],k)=>{
       const y=topY+146+k*15;
       s+=`<text x="${x+7}" y="${y}" style="font-size:9.5px;fill:#5B6478">${lab}</text><text x="${x+CW-17}" y="${y}" text-anchor="end" style="font-size:11px;font-weight:700;fill:${has(id)?INK:'#9AA3B5'}">${has(id)?fvFmt(val[id]):'—'}</text>`+dot(x+CW-9,y-4,id);
     });
     s+=hr(x,topY,CW,48,T(ch.id));
     [T(ch.id),Wc(ch.id),D(ch.id)].forEach((id,k)=>{ s+=hr(x,topY+55+k*17,CW,16,id); });
-    [P(ch.id),Cm(ch.id)].forEach((id,k)=>{ s+=hr(x,topY+136+k*15,CW,15,id); });
+    if(!EU) [P(ch.id),Cm(ch.id)].forEach((id,k)=>{ s+=hr(x,topY+136+k*15,CW,15,id); });
     s+='</g>';
   });
   const gy=topY+184;
@@ -1475,8 +1487,8 @@ function renderFlowView(c, flow){
   let H=(flow.groups||[]).length?gy+100:topY+196, svgW=W;
   const vc=!(flow.groups||[]).length; // value-chain view: stage labels + final consumers bar
   if(vc){
-    const GUT=118, FULL=W+GUT, barY=topY+226, barH=48, MID='#4A5A6A';
-    const bands=[[10,88,'#F3F6FC','1',['MANUFACTURERS','AND IMPORTERS'],'who makes the tyres'],[150,112,'#FFF8EA','2',['WHOLESALE'],'importers, distributors'],[322,198,'#F2F7FD','3',['CHANNELS'],'where the tyres are sold'],[barY-18,barH+36,'#EAF4EF','4',['FINAL CONSUMERS'],'drivers and fleets']];
+    const GUT=118, FULL=W+GUT, barY=topY+226-SH, barH=48, MID='#4A5A6A';
+    const bands=[[10,88,'#F3F6FC','1',['MANUFACTURERS','AND IMPORTERS'],'who makes the tyres'],[150,112,'#FFF8EA','2',['WHOLESALE'],'importers, distributors'],[322,198-SH,'#F2F7FD','3',['CHANNELS'],'where the tyres are sold'],[barY-18,barH+36,'#EAF4EF','4',['FINAL CONSUMERS'],'drivers and fleets']];
     let b='';
     bands.forEach(([y,h,fill,num,t,sub])=>{
       b+=`<rect x="4" y="${y}" width="${FULL-8}" height="${h}" rx="10" fill="${fill}"/>`;
@@ -1484,9 +1496,9 @@ function renderFlowView(c, flow){
       t.forEach((l,k)=>{ b+=`<text x="36" y="${y+20+k*12}" style="font-size:9.5px;font-weight:700;letter-spacing:.4px;fill:${INK}">${l}</text>`; });
       b+=`<text x="36" y="${y+22+t.length*12}" style="font-size:9.5px;fill:#6B7487">${sub}</text>`;
     });
-    [[98,150],[262,322],[520,barY-18]].forEach(([a,z])=>{ const m=(a+z)/2; b+=`<path d="M14 ${m-4} L20 ${m+3} L26 ${m-4}" fill="none" stroke="#9AA3B5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>`; });
+    [[98,150],[262,322],[520-SH,barY-18]].forEach(([a,z])=>{ const m=(a+z)/2; b+=`<path d="M14 ${m-4} L20 ${m+3} L26 ${m-4}" fill="none" stroke="#9AA3B5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>`; });
     let arr='';
-    flow.channels.forEach((ch,i)=>{ arr+=`<path d="M${mid(i)} ${topY+172} V${barY-3} M${mid(i)-6} ${barY-10} L${mid(i)} ${barY-2} L${mid(i)+6} ${barY-10}" fill="none" stroke="${MID}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`; });
+    flow.channels.forEach((ch,i)=>{ arr+=`<path d="M${mid(i)} ${topY+172-SH} V${barY-3} M${mid(i)-6} ${barY-10} L${mid(i)} ${barY-2} L${mid(i)+6} ${barY-10}" fill="none" stroke="${MID}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`; });
     const mv=has('market')?fvFmt(val.market)+'M tyres a year':'—';
     const bar=`<g class="fv-tip-t" data-fid="market"><rect x="${X0}" y="${barY}" width="${rowW}" height="${barH}" rx="8" fill="#D9EDE4" stroke="#2F6F62" stroke-width="1.4"/>`
       +`<text x="${X0+18}" y="${barY+21}" style="font-size:13px;font-weight:700;fill:${INK}">Final consumers</text>`
@@ -1497,7 +1509,7 @@ function renderFlowView(c, flow){
     svgW=FULL; H=barY+barH+34;
   }
   const coreIds=['market','industry','toWs','direct','import','export','wsDom','prvAll','comAll'];
-  const allIds=[...coreIds,...flow.channels.flatMap(ch=>[T(ch.id),Wc(ch.id),D(ch.id),P(ch.id),Cm(ch.id)])];
+  const allIds=EU?[...coreIds.filter(i=>i!=='prvAll'&&i!=='comAll'),...flow.channels.flatMap(ch=>[T(ch.id),Wc(ch.id),D(ch.id)])]:[...coreIds,...flow.channels.flatMap(ch=>[T(ch.id),Wc(ch.id),D(ch.id),P(ch.id),Cm(ch.id)])];
   const missing=allIds.filter(id=>!has(id)).length;
   const se=flow.meta&&flow.meta.seasons, sp=[];
   if(se){ if(se.allSeason!=null) sp.push('all-season '+se.allSeason+'%'); if(se.winter!=null) sp.push('winter '+se.winter+'%'); if(se.summer!=null) sp.push('summer '+se.summer+'%'); }
@@ -1505,19 +1517,19 @@ function renderFlowView(c, flow){
   const mk=has('market')?` Replacement market: <b>${fvFmt(val.market)}M</b>.`:'';
   const scopeNote=(flow.meta&&flow.meta.scopeNote)?` ${esc(flow.meta.scopeNote)}`:'';
   const hasEst=Object.values(tier).includes('Estimate');
-  const legend=[['Published','#2F6F62'],['Derived','#B5701E'],...(hasEst?[['Estimate (not published)','#2B6CB0']]:[]),['Team input','#5B3E96']].map(([l,col])=>`<span class="fv-dot" style="background:${col}"></span>${l}`).join(' &nbsp; ');
+  const legend=(EU?[['Derived (added up from the country models)','#B5701E']]:[['Published','#2F6F62'],['Derived','#B5701E'],...(hasEst?[['Estimate (not published)','#2B6CB0']]:[]),['Team input','#5B3E96']]).map(([l,col])=>`<span class="fv-dot" style="background:${col}"></span>${l}`).join(' &nbsp; ');
   const estNote=hasEst?' Blue dots are benchmark estimates, not published figures; the method is under Sources and notes.':'';
   const chip=(id,lab)=>has(id)?`<span class="fv-chip fv-tip-t" data-fid="${id}">${lab} <b>${fvFmt(val[id])}M</b><span class="fv-dot" style="background:${FV_COL[tier[id]]||'#999'};margin:0"></span></span>`:'';
   const strip=[['market','Replacement market'],['prvAll','Private'],['comAll','Commercial']].map(([id,l])=>chip(id,l)).join('');
   const sk=fvSankeyHtml(c,flow,R,nameOf); // Sankey view of the flow model, shown through a toggle
   const QN=fvQuoteNums(flow,R,LB), walkHtml=fvWalkHtml(c,flow,R,nameOf,QN), basis=fvBasisHtml(c,flow,R,LB,nameOf,QN);
-  return `<div class="fv-wrap" data-fcountry="${esc(c.country)}" data-mode="boxes">${(c.noteShort&&c.noteShort.length)?countryNoteHtml(c):''}<p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels.${vc?' Read the diagram from top to bottom: manufacturers and importers, wholesale, the channels that sell the tyres, and the final consumers who buy them.':''} <b>Hover any box, line or figure to see how that number was reached.</b> The step-by-step walk-through is just below, and a table of every figure with its source quotes sits under the diagram.${seasons}</p>
+  return `<div class="fv-wrap" data-fcountry="${esc(c.country)}" data-mode="boxes">${(c.noteShort&&c.noteShort.length)?countryNoteHtml(c):''}<p class="lv-intro"><b>${esc(flow.scope||'')}, ${esc(String(flow.year||''))}, ${esc(flow.unit||'million tyres')}.</b>${mk}${scopeNote} Red lines are tyres that go through wholesale, blue lines go straight from the manufacturers to the channel, and line thickness shows volume. ${EU?'':'Dashes mean nobody has published or entered that number yet. Click the wholesale box, the direct line or a channel box to see who is behind it in the By channel tab. Scroll sideways to see all channels.'}${vc?' Read the diagram from top to bottom: manufacturers and importers, wholesale, the channels that sell the tyres, and the final consumers who buy them.':''} <b>Hover any box, line or figure to see how that number was reached.</b> The step-by-step walk-through is just below, and a table of every figure ${EU?'':'with its source quotes '}sits under the diagram.${EU?' Every figure here is a sum of the country models; the By country tab shows the country behind each number.':''}${seasons}</p>
     ${strip?`<div class="fv-strip">${strip}</div>`:''}
     ${walkHtml}
     ${sk?`<div class="fv-modes" role="group" aria-label="Diagram style"><button type="button" class="on" data-mode="boxes">Boxes and lines</button><button type="button" data-mode="sankey">Sankey</button></div>`:''}
     <div class="fv-scroll fv-boxes"><svg width="${svgW}" height="${H}" viewBox="0 0 ${svgW} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
-    ${sk?`<div class="fv-scroll fv-sankey">${sk}<p class="tv-note">Ribbon width shows volume. Red goes through wholesale, blue goes straight from the manufacturers to the channel, grey leaves each channel for the final consumers. Hover a ribbon or a bar to see how that number was reached. Click the Wholesale bar, the Direct bar or a channel bar to see who is behind it in the By channel tab.</p></div>`:''}
-    <p class="tv-note">Dot colour: ${legend}.${estNote} <b>${missing}</b> of ${allIds.length} figures still need input${R.conflicts.length?`; <b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}. ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
+    ${sk?`<div class="fv-scroll fv-sankey">${sk}<p class="tv-note">Ribbon width shows volume. Red goes through wholesale, blue goes straight from the manufacturers to the channel, grey leaves each channel for the final consumers. Hover a ribbon or a bar to see how that number was reached.${EU?'':' Click the Wholesale bar, the Direct bar or a channel bar to see who is behind it in the By channel tab.'}</p></div>`:''}
+    <p class="tv-note">Dot colour: ${legend}.${estNote} ${EU?'':`<b>${missing}</b> of ${allIds.length} figures still need input`}${R.conflicts.length?`${EU?'':'; '}<b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}${EU&&!R.conflicts.length?'':'.'} ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
     ${basis.table}${basis.qlist}
     ${(flow.refs&&flow.refs.length)?`<details class="lv-more"><summary>Sources and notes</summary><ul class="fv-refs">${flow.refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></details>`:''}</div>`;
 }
@@ -1690,7 +1702,7 @@ function fvTipHtml(country,id,clickable){
   if(checks.length){
     h+=`<div class="tip-opt" data-p="3"><div class="tip-sec">Does it add up?</div><ul>`+checks.slice(0,3).map(([ok,txt,res])=>`<li class="${ok?'ok':'bad'}"><span class="ck">${ok?'✓':'!'}</span>${esc(txt)}${ok?'':' (off by '+fvFmt(Math.abs(res))+')'}</li>`).join('')+`</ul></div>`;
   }
-  h+=`<div class="tip-foot tip-opt" data-p="1">${clickable?'Click to see who is behind this number in the By channel tab. ':''}Every figure, with its source quotes, is in the table below the diagram.</div>`;
+  h+=`<div class="tip-foot tip-opt" data-p="1">${clickable?'Click to see who is behind this number in the By channel tab. ':''}${flow.europe?'Every figure is in the table below the diagram, and the By country tab shows the country behind each number.':'Every figure, with its source quotes, is in the table below the diagram.'}</div>`;
   return h;
 }
 /* ---------- flow model: step-by-step walk-through and figure-by-figure table ---------- */
@@ -1727,7 +1739,7 @@ function fvWalkHtml(c,flow,R,nameOf,QN){
     const id=list.find(i=>tier[i]==='Estimate')||list[0];
     return wyH(fvExpl(flow,id,val),tier[id]==='Published',tag);
   };
-  const cty=esc(fvThe(c.country)), steps=[];
+  const cty=esc(flow.europe?(flow.cname||'Europe'):fvThe(c.country)), steps=[];
   if(has('market')) steps.push(`<b>The market.</b> About ${f('market')} replacement tyres were fitted in ${cty} (${esc(flow.scope||'')}, ${esc(String(flow.year||''))}).${sh('market')}${wy('market')}`);
   if(has('industry')) steps.push(`<b>What the big brands supplied.</b> The manufacturers that report to ETRMA (the “pool”) sold about ${f('industry')} into ${cty}. This is sell-in: manufacturer to trade, not trade to drivers.${sh('industry')}${wy('industry')}`);
   const routes=[];
@@ -1749,7 +1761,7 @@ function fvWalkHtml(c,flow,R,nameOf,QN){
     const p=[]; if(has('prvAll')) p.push(`${f('prvAll')} goes to private owners`); if(has('comAll')) p.push(`${f('comAll')} to companies, leasing firms and fleets`);
     steps.push(`<b>Private or commercial?</b> ${p.join(' and ')}.${sh('prvAll')}${sh('comAll')}${wy(['comAll','prvAll'])}`);
   }
-  const open=[['industry','the pool volume'],['direct','direct deliveries'],['toWs','sales to wholesale'],['import','imports'],['export','exports'],['wsDom','wholesale sold'],['prvAll','private demand'],['comAll','commercial demand']].filter(([id])=>!has(id)).map(x=>x[1]);
+  const open=[['industry','the pool volume'],['direct','direct deliveries'],['toWs','sales to wholesale'],['import','imports'],['export','exports'],['wsDom','wholesale sold'],['prvAll','private demand'],['comAll','commercial demand']].filter(([id])=>!has(id)&&!(flow.europe&&(id==='prvAll'||id==='comAll'))).map(x=>x[1]);
   if(open.length) steps.push(`<span class="fw-openmark"></span><b>Still open.</b> No figure yet for ${open.join(', ')}. They need ETRMA or national data; nothing is guessed in the meantime.`);
   const note=(flow.meta&&flow.meta.walkNote)?`<p class="fw-note"><b>Good to know.</b> ${esc(flow.meta.walkNote)}</p>`:'';
   return `<details class="lv-more fv-walk" open><summary>How the numbers fit together, step by step</summary><ol class="fw-list">${steps.map((s,i)=>`<li${/fw-openmark/.test(s)?' class="fw-open"':''}>${s}</li>`).join('')}</ol>`
@@ -1822,6 +1834,157 @@ document.addEventListener('click',e=>{
   document.addEventListener('keydown',e=>{ if(e.key==='Escape') hide(); });
 })();
 
+
+/* ---------- Europe overview: adds up the country flow models that are complete ----------
+   Nothing here is typed in by hand. Every figure is the sum of the country figures, so it moves when a country card is updated.
+   Countries that only have a market total (no wholesale / direct split yet) are listed in the By country table but kept out of the flow. */
+const EU_CHMAP={DE:{fach:'ret'},FR:{auto:'spec',fon:'onl'}}; // country channel ids that map to a different Europe channel
+const EU_CH=[['spec','Specialists, fast-fit and independent garages'],['deal','Car dealers / brand workshops'],['ret','Other retail (parts stores, hypermarkets, petrol)'],['onl','Online']];
+function euChan(iso,id){ const m=EU_CHMAP[iso]; return (m&&m[id])||id; }
+function euR1(x){ return Math.round(x*10)/10; }
+function euBasis(f){
+  const y=/RY(\d{4})/.exec(String(f.year||'')), yr=y?'rolling year to '+y[1]:String(f.year||'');
+  const vans=/excludes (vans|light commercial)/i.test(f.scope||'')?'excl. vans':'incl. vans';
+  return {year:yr, short:(y?'RY'+y[1]:String(f.year||''))+' · '+vans, vans:vans, rolling:!!y};
+}
+function buildEuropeFlow(){
+  const fl=(window.__sellin&&window.__sellin.flows)||[], dist=(window.__distData&&window.__distData.pc)||[];
+  if(!fl.length||!dist.length) return null;
+  const CORE=['market','industry','direct','toWs','import','wsDom'], rows=[];
+  dist.forEach(card=>{
+    const f=fl.find(x=>x.country===card.country&&x.channels&&x.channels.length); if(!f) return;
+    const R=flowSolve(f), v=R.val; if(!('market' in v)) return;
+    const full=CORE.every(k=>k in v)&&f.channels.every(ch=>['tot','ws','dir'].every(s=>('ch.'+ch.id+'.'+s) in v));
+    const chm={spec:null,deal:null,ret:null,onl:null};
+    f.channels.forEach(ch=>{ const t=euChan(f.iso,ch.id), x=v['ch.'+ch.id+'.tot']; if(x!=null) chm[t]=(chm[t]||0)+x; });
+    rows.push({country:card.country,iso:f.iso,f:f,R:R,v:v,full:full,chm:chm,basis:euBasis(f)});
+  });
+  const inc=rows.filter(r=>r.full).sort((a,b)=>b.v.market-a.v.market), out=rows.filter(r=>!r.full).sort((a,b)=>b.v.market-a.v.market);
+  if(inc.length<2) return null;
+  const S={}, K={}; // sums, and who contributed what
+  const add=(id,r,x,src)=>{ S[id]=(S[id]||0)+x; const L=K[id]=K[id]||[]; let e=L.find(q=>q.r===r); if(!e){ e={r:r,v:0,parts:[]}; L.push(e); } e.v+=x; e.parts.push({v:x,src:src}); };
+  inc.forEach(r=>{
+    CORE.forEach(k=>add(k,r,r.v[k],k));
+    add('export',r,r.v.export||0,'export');
+    r.f.channels.forEach(ch=>{ const t=euChan(r.f.iso,ch.id); ['tot','ws','dir'].forEach(s=>add('ch.'+t+'.'+s,r,r.v['ch.'+ch.id+'.'+s],'ch.'+ch.id+'.'+s)); });
+  });
+  const ids=['market','industry','direct','toWs','import','export','wsDom'];
+  EU_CH.forEach(([t])=>['tot','ws','dir'].forEach(s=>ids.push('ch.'+t+'.'+s)));
+  const nC=inc.length, cname='the '+nC+' countries', val={};
+  ids.forEach(id=>{ val[id]=euR1(S[id]||0); });
+  const prvRows=inc.filter(r=>'prvAll' in r.v&&'comAll' in r.v);
+  const extra=out.reduce((a,r)=>a+r.v.market,0), all12=S.market+extra;
+  const noVans=inc.filter(r=>r.basis.vans==='excl. vans'), withVans=inc.filter(r=>r.basis.vans!=='excl. vans');
+  const rolling=inc.filter(r=>r.basis.rolling), cal=inc.filter(r=>!r.basis.rolling);
+  const names=a=>a.map(r=>r.country).join(', ');
+  const LVL=(id)=>{
+    const t={High:0,Medium:0,Low:0,none:0}; let tot=0;
+    (K[id]||[]).forEach(e=>e.parts.forEach(p=>{ const ex=fvExpl(e.r.f,p.src,e.r.v), l=ex&&!ex.stale&&ex.sure&&ex.sure.l; t[(l&&l in t)?l:'none']+=p.v; tot+=p.v; }));
+    if(!(tot>0)) return {l:'Medium',w:'The sum is exact arithmetic on the country figures.'};
+    const pc=k=>Math.round(100*t[k]/tot), l=t.Low/tot>=0.4?'Low':(t.High/tot>=0.6?'High':'Medium');
+    const bits=[['High',pc('High')],['Medium',pc('Medium')],['Low',pc('Low')]].filter(x=>x[1]>0).map(x=>x[1]+'% from figures the country cards rate '+x[0]);
+    if(pc('none')>0) bits.push(pc('none')+'% from figures with no rating');
+    return {l:l==='High'?'Medium':l,w:'The addition itself is exact, but the countries use different years and scopes. By volume: '+bits.join(', ')+'.'};
+  };
+  const nameOfId=id=>{ const m=/^ch\.([^.]+)\.(tot|ws|dir)$/.exec(id); if(!m) return id; const c=EU_CH.find(x=>x[0]===m[1]); return (c?c[1]:m[1])+' · '+({tot:'total',ws:'via wholesale',dir:'direct'})[m[2]]; };
+  const cells={}, explain={};
+  const whatMap={
+    market:'How many replacement tyres consumers in '+cname+' fit in a year, each country at its own latest year.',
+    industry:'What the big manufacturers that report to ETRMA (the “pool”) sold into '+cname+' in a year. This is sell-in: manufacturer to trade, not trade to drivers.',
+    toWs:'The part of the pool’s sales that goes to wholesalers and distributors rather than straight to workshops, dealers or online sellers, added up over '+cname+'.',
+    direct:'Tyres that go straight from the manufacturer (or its own networks) to the sales channel, with no independent wholesaler in between, added up over '+cname+'.',
+    import:'Tyres that wholesalers buy from outside the pool, mostly non-pool brands and parallel imports, added up country by country.',
+    export:'Tyres that wholesalers or hubs sell on abroad, added up country by country. They are in the supply figures but are not fitted where they were sold.',
+    wsDom:'Everything wholesalers sold inside '+cname+': what they receive from the pool plus imports, minus exports.'};
+  ids.forEach(id=>{
+    const L=(K[id]||[]).slice().sort((a,b)=>b.v-a.v), nz=L.filter(e=>e.v>0);
+    const list=nz.map(e=>e.r.country+' '+euR1(e.v).toFixed(1)).join(' + ');
+    const isCh=/^ch\./.test(id), m=/^ch\.([^.]+)\./.exec(id), chn=m?(EU_CH.find(x=>x[0]===m[1])||[])[1]:'';
+    let src='Calculated here from the country flow models in this dashboard. No single source publishes it, and each country’s own figure and source are in its card below.';
+    if(isCh&&m){
+      const maps=[]; if(inc.some(r=>r.iso==='DE')) maps.push('Germany’s Fachmärkte count as other retail'); if(inc.some(r=>r.iso==='FR')) maps.push('France’s auto-centres and tyre specialists both count as specialists, and its pure-play and foreign online sellers both count as online');
+      src+=' Country channel names differ, so they are matched to four groups.'+(maps.length?' '+maps.join('; ')+'.':'');
+    }
+    cells[id]={value:val[id],tier:'Derived',by:'dashboard',asOf:'latest year per country',source:'Sum of the '+nC+' country flow models: '+(list||'no contribution')+'.'};
+    const chk=[];
+    if(id==='market'){
+      chk.push('The countries are not on the same basis. '+(noVans.length?names(noVans)+' exclude'+(noVans.length===1?'s':'')+' vans and light trucks'+(withVans.length?'; '+names(withVans)+' include them':'')+'. ':'')+(cal.length?names(cal)+': 2024. ':'')+(rolling.length?names(rolling)+': rolling year to 2026.':''));
+      if(out.length) chk.push(names(out)+' ('+out.map(r=>fvFmt(r.v.market)+'M').join(' and ')+') have a market figure but no wholesale / direct split yet, so they are not in this flow. With '+(out.length===1?'it':'them')+' the market of all '+(nC+out.length)+' countries is '+euR1(all12).toFixed(1)+'M.');
+    }
+    if(id==='import'||id==='export') chk.push('These are gross figures per country. A tyre that one country exports and another imports counts once on each side, so do not read the Europe import figure as “imports from outside Europe”.');
+    if(id==='direct'||id==='toWs') chk.push('How the pool splits between direct and wholesale is calculated or estimated country by country in most cards, so treat this split as indicative.');
+    const nm=whatMap[id]||undefined;
+    explain[id]={v:val[id],short:id==='market'?'Sum of the '+nC+' country models.':undefined,
+      how:['Take each country’s own figure from its card.','Add them: '+(list||'—')+' = '+euR1(val[id]).toFixed(1)+'M (each country is rounded to one decimal, the total is rounded after adding).'],
+      src:src,
+      why:id==='market'?'No source publishes one comparable replacement-tyre figure for these countries, so adding the country models is the only consistent way to get a Europe view. Read it as the size and the mix, not as a precise annual total.':undefined,
+      val:id==='market'?'The By country table lists every country’s figure and the column adds up to this number. Each country card shows how its own figure was reached.':undefined,
+      sure:LVL(id), check:chk.length?chk.join(' '):undefined, what:nm};
+    ['check','what','short','why','val'].forEach(k=>{ if(!explain[id][k]) delete explain[id][k]; });
+  });
+  // identities after rounding: the displayed numbers should still add up
+  const resid=[val.industry-val.toWs-val.direct, val.wsDom-val.toWs-val.import+val.export, val.market-val.wsDom-val.direct,
+    EU_CH.reduce((a,c)=>a+val['ch.'+c[0]+'.tot'],0)-val.market, EU_CH.reduce((a,c)=>a+val['ch.'+c[0]+'.ws'],0)-val.wsDom, EU_CH.reduce((a,c)=>a+val['ch.'+c[0]+'.dir'],0)-val.direct,
+    ...EU_CH.map(c=>val['ch.'+c[0]+'.tot']-val['ch.'+c[0]+'.ws']-val['ch.'+c[0]+'.dir'])].map(x=>Math.round(x*100)/100);
+  const flow={europe:true,cname:cname,iso:'EU',country:'Europe',scope:'Passenger-car replacement tyres, sum of '+nC+' country models',unit:'million tyres',year:'latest year per country, 2024 or the rolling year to 2026',
+    groups:[],channels:EU_CH.map(([id,name])=>({id:id,name:name})),cells:cells,explain:explain,quotes:{},
+    refs:inc.map(r=>r.country+' ('+r.basis.year+', '+r.basis.vans+'): market '+fvFmt(r.v.market)+'M. See the '+r.country+' card below for the sources.').concat(out.map(r=>r.country+' ('+r.basis.year+'): market '+fvFmt(r.v.market)+'M, no wholesale / direct split yet, so it is not part of this flow.')),
+    meta:{scopeNote:'Scopes differ by country: '+(noVans.length?names(noVans)+' exclude vans and light trucks, ':'')+(withVans.length?'the other '+withVans.length+' include them.':'')+' Years differ too.',
+      mappingNote:'Channel names differ a little by country, so they are matched to four groups. '+(inc.some(r=>r.iso==='DE')?'Germany’s Fachmärkte count as other retail. ':'')+(inc.some(r=>r.iso==='FR')?'France’s auto-centres and tyre specialists count as specialists, and its two online groups count as online.':''),
+      boxNote:'Private and commercial demand are not shown here: only '+prvRows.length+' of the '+nC+' countries publish that split, and adding a partial set would understate commercial demand. The By country tab shows it where it exists.',
+      walkNote:'This is a sum of country models, not a published European figure. The countries are on different years and scopes (see the notes at the top), imports and exports are gross, and private / commercial demand is left out because only '+prvRows.length+' countries have it.'}};
+  const card={country:'Europe',europe:true,meta:'Overview · '+nC+' of '+(nC+out.length)+' countries with a full flow model',total:euR1(val.market).toFixed(1)+'M',totalLabel:'replacement tyres a year',
+    noteBadge:'modeled',
+    noteShort:['Basis: the sum of the '+nC+' country flow models ('+inc.map(r=>r.iso).join(', ')+'). It is not a published European figure.',
+      'Years: '+(cal.length?cal.map(r=>r.iso).join(', ')+' 2024':'')+(cal.length&&rolling.length?'; ':'')+(rolling.length?rolling.map(r=>r.iso).join(', ')+' rolling year to 2026':'')+'.',
+      'Vans: '+(noVans.length?noVans.map(r=>r.iso).join(', ')+' exclude vans and light trucks':'all countries include vans')+(noVans.length&&withVans.length?'; the other '+withVans.length+' include them':'')+'.',
+      out.length?'Left out: '+out.map(r=>r.country+' '+fvFmt(r.v.market)+'M').join(' and ')+' (market total only, no wholesale / direct split yet). All '+(nC+out.length)+' countries together: '+euR1(all12).toFixed(1)+'M.':''].filter(Boolean),
+    note:'Each Europe figure is the sum of the same figure in the country cards below, rounded to one decimal. Channels are matched to four groups. Imports and exports are gross, so trade between these countries is counted on both sides. Private and commercial demand is not added because only '+prvRows.length+' of the '+nC+' countries publish it.'};
+  return {flow:flow,card:card,inc:inc,out:out,S:S,val:val,all12:all12,resid:resid,nC:nC,prvRows:prvRows};
+}
+function renderEuropeTable(E){
+  const esc=escapeHtml, f1=x=>(x==null||isNaN(x))?'—':euR1(x).toFixed(1), pct=(a,b)=>(a==null||!(b>0))?'—':Math.round(100*a/b)+'%';
+  const go=r=>`<button type="button" class="eu-go" data-eu-go="${esc(r.country)}" title="Open the ${esc(r.country)} card below">${esc(r.country)}</button>`;
+  const rowHtml=(r,partial)=>{ const v=r.v;
+    return `<tr${partial?' class="eu-out"':''}><td>${go(r)}</td><td class="w">${esc(r.basis.short)}</td><td class="n">${f1(v.market)}</td><td class="n">${partial?'—':f1(v.industry)}</td><td class="n">${partial?'—':f1(v.direct)}</td><td class="n">${partial?'—':f1(v.wsDom)}</td><td class="n">${partial?'—':f1(v.import)}</td><td class="n">${partial?'—':f1(v.export||0)}</td><td class="n">${partial?'—':pct(v.direct,v.market)}</td><td class="n">${'prvAll' in v?f1(v.prvAll):'—'}</td><td class="n">${'comAll' in v?f1(v.comAll):'—'}</td></tr>`; };
+  const S=E.val, tot=`<tr class="eu-tot"><td><b>Europe, ${E.nC} countries</b></td><td class="w">mixed</td><td class="n">${f1(S.market)}</td><td class="n">${f1(S.industry)}</td><td class="n">${f1(S.direct)}</td><td class="n">${f1(S.wsDom)}</td><td class="n">${f1(S.import)}</td><td class="n">${f1(S.export)}</td><td class="n">${pct(S.direct,S.market)}</td><td class="n">—</td><td class="n">—</td></tr>`;
+  const t1=`<div class="fv-tbl-wrap"><table class="fv-tbl eu-tbl"><thead><tr><th>Country</th><th>Basis</th><th class="n">Market</th><th class="n">Industry (pool)</th><th class="n">Direct</th><th class="n">Wholesale sold</th><th class="n">Imports</th><th class="n">Exports</th><th class="n">Direct share</th><th class="n">Private</th><th class="n">Commercial</th></tr></thead><tbody>`
+    +E.inc.map(r=>rowHtml(r,false)).join('')+tot+(E.out.length?`<tr class="sec"><td colspan="11">Not in the flow: market total only</td></tr>`+E.out.map(r=>rowHtml(r,true)).join(''):'')+`</tbody></table></div>`;
+  const mixRow=(r,t)=>`<tr${t?' class="eu-tot"':''}><td>${t?`<b>${esc(r.label)}</b>`:go(r)}</td>${EU_CH.map(([id])=>{ const x=t?r.chm[id]:r.chm[id]; return `<td class="n">${f1(x)}</td><td class="n eu-pct">${pct(x,t?r.market:r.v.market)}</td>`; }).join('')}</tr>`;
+  const totMix={label:'Europe, '+E.nC+' countries',market:S.market,chm:{}}; EU_CH.forEach(([id])=>{ totMix.chm[id]=S['ch.'+id+'.tot']; });
+  const t2=`<div class="fv-tbl-wrap"><table class="fv-tbl eu-tbl"><thead><tr><th rowspan="2">Country</th>${EU_CH.map(([id,name])=>`<th class="n" colspan="2">${esc(id==='spec'?'Specialists & garages':id==='deal'?'Car dealers':id==='ret'?'Other retail':'Online')}</th>`).join('')}</tr><tr>${EU_CH.map(()=>'<th class="n">M</th><th class="n">share</th>').join('')}</tr></thead><tbody>`
+    +E.inc.map(r=>mixRow(r,false)).join('')+mixRow(totMix,true)+(E.out.length?`<tr class="sec"><td colspan="9">Not in the flow: channel totals only</td></tr>`+E.out.map(r=>mixRow(r,false)).join(''):'')+`</tbody></table></div>`;
+  return `<p class="lv-intro"><b>Country by country.</b> The Europe figures are these rows added up. Click a country name to open its card below. Private and commercial demand is shown only where a country has it, and is not added up.</p>`
+    +`<div class="eu-cap">Supply and demand, million tyres</div>${t1}`
+    +`<div class="eu-cap">Channel mix, million tyres and share of the market</div>${t2}`
+    +`<p class="tv-note">Figures are rounded to one decimal, so a column can differ from its total by 0.1. Basis: RY2026 = rolling year to 2026; “excl. vans” means vans and light trucks are not in that country’s market. ${E.out.length?esc(E.out.map(r=>r.country).join(' and '))+' are listed for completeness, but they are not part of the Europe totals. ':''}Channel names are matched to four groups: ${E.inc.some(r=>r.iso==='DE')?'Germany’s Fachmärkte count as other retail; ':''}${E.inc.some(r=>r.iso==='FR')?'France’s auto-centres and tyre specialists count as specialists, and its two online groups count as online.':''}</p>`;
+}
+function renderEuropeCard(){
+  const E=buildEuropeFlow(); if(!E) return '';
+  const c=E.card, esc=escapeHtml, flowHtml=renderFlowView(c,E.flow), tblHtml=renderEuropeTable(E);
+  if(E.resid.some(x=>Math.abs(x)>0.051)) console.warn('Europe overview: rounded figures do not add up exactly',E.resid);
+  window.__europe={flow:E.flow,val:E.val,resid:E.resid,countries:E.inc.map(r=>r.iso),left:E.out.map(r=>r.iso),all12:E.all12};
+  return `<details class="country europe" open>
+      <summary>
+        <div><div class="country-name">Europe</div><div class="country-meta">${esc(c.meta)}</div></div>
+        <div class="country-total"><div class="num2">${esc(c.total)}</div><div class="lbl2">${esc(c.totalLabel)}</div></div>
+      </summary>
+      <div class="country-body">
+        <div class="view-toggle" data-country-idx="eu"><button class="active" data-view="flow">Flow model</button><button data-view="countries">By country</button></div>
+        <div class="territory-view-block active" data-view-panel="flow" data-country-idx="eu">${flowHtml}</div>
+        <div class="territory-view-block" data-view-panel="countries" data-country-idx="eu">${tblHtml}</div>
+      </div>
+    </details>`;
+}
+// "By country" table: a country name opens that country's card further down the page
+document.addEventListener('click',e=>{
+  const b=e.target.closest&&e.target.closest('[data-eu-go]'); if(!b) return;
+  e.preventDefault();
+  const nm=b.dataset.euGo, d=Array.from(document.querySelectorAll('#sub-pc details.country:not(.europe)')).find(x=>{ const n=x.querySelector('.country-name'); return n&&n.textContent.trim()===nm; });
+  if(!d) return;
+  d.open=true;
+  requestAnimationFrame(()=>{ try{ d.scrollIntoView({behavior:'smooth',block:'start'}); }catch(_){} d.classList.add('jump-flash'); setTimeout(()=>d.classList.remove('jump-flash'),2400); });
+});
 
 function treeFor(countryName){
   const ts = (window.__sellin && window.__sellin.trees) || [];
