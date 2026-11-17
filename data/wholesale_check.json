@@ -380,17 +380,12 @@
       "country": "Belgium",
       "verdict": "insufficient data",
       "vclass": "gap",
-      "headline": "Deldo is mostly an export business, so it says little about the Belgian layer. The flow has no wholesale figure yet; the research run's indication is shown for reference only.",
+      "headline": "Deldo trades just under 8 million tyres a year (revenue €506M in 2024, €530M in 2025). That is about the size of all of Belgium's recorded car-tyre exports (8.2M items in 2024), so Deldo is an export and trading hub and says little about the Belgian layer. The flow has no wholesale figure yet, and the earlier indicative layer (built on the old 4.6M market) has been withdrawn.",
       "sumLo": null,
       "sumHi": null,
       "sumNote": "",
       "confidence": "Low",
-      "indicative": {
-        "lo": 2.0,
-        "hi": 3.0,
-        "of": 4.6,
-        "note": "Research run's indicative layer, built on assumptions, not entered in the flow."
-      },
+      "indicative": null,
       "named": [
         {
           "name": "Deldo Autobanden",
@@ -405,12 +400,20 @@
           "src": "Company accounts and press (research run)",
           "chk": false,
           "quote": "net geen 8 miljoen autobanden",
-          "en": "just under 8 million car tyres"
+          "en": "just under 8 million car tyres",
+          "caveat": "Export and trading hub: its volume equals Belgium's recorded car-tyre exports (8.23M items in 2024, UN Comtrade via WITS, as quoted by the research, not opened). The 0.4–0.7M domestic range rests on Belgium being about 8% of revenue in 2021."
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "t": "Customs",
+          "x": "Belgium recorded 14.48M car-tyre imports and 8.23M exports in 2024 (UN Comtrade via WITS, as quoted by the research). Exports are about 57% of imports by items, so most of the flow is re-export. No source says how much is consumed in Belgium.",
+          "chk": false
+        }
+      ],
       "gaps": [
-        "Forrez: no data. Deldo's annual accounts and the Traxio channel data are the next best sources."
+        "Forrez: no data. Deldo's annual accounts and the Traxio channel data are the next best sources.",
+        "Recytyre's members' declarations by member type (manufacturers, importers only, exporters) would show the non-pool layer and the export volume. Ask Recytyre or Traxio."
       ],
       "iso": "BE"
     },
