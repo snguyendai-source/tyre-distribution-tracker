@@ -6036,7 +6036,7 @@
           "by": "research",
           "tier": "Estimate",
           "value": 10.64,
-          "source": "Balancing figure, not published: market 5.93M - industry 3.52M + export 8.23M = 10.64M. It is the non-pool tyres (mostly Asian brands, private labels and parallel imports) that wholesalers bring into Belgium, including those they sell on abroad. Cross-check: Belgian customs imports of car tyres were 14.48M in 2024 (UN Comtrade via WITS); taking off the pool's 3.52M, which arrives as imports, leaves 10.96M, within about 3% of this figure. That check is not independent of the export figure, because net customs imports (6.24M) also match the market."
+          "source": "Balancing figure, not published: market 5.93M - industry 3.52M + export 8.23M = 10.64M. It is the non-pool tyres (mostly Asian brands, private labels and parallel imports) that wholesalers bring into Belgium, including those they sell on abroad. The pool (ETRMA) is not part of this figure: it is the Industry box. Rough cross-check only: customs counts every tyre that crosses the border, pool brands included, so Belgian customs imports of car tyres (14.48M in 2024, UN Comtrade via WITS) are not comparable with this box directly. If all of the pool's 3.52M had crossed the border, non-pool imports would be about 10.96M, within about 3% of this figure; in practice part of the pool volume may be made or stocked inside BELUX, so the check is loose. It is also not independent of the export figure, because net customs imports (6.24M) also match the market."
         },
         "export": {
           "asOf": "2024",
@@ -6336,7 +6336,7 @@
           "how": [
             "Import closes the flow: market 5.93M − industry 3.52M + export 8.23M = 10.64M.",
             "It is the non-pool tyres (mostly Asian brands, private labels and parallel imports) that wholesalers bring into Belgium, including the part they sell on abroad.",
-            "Cross-check: Belgian customs imports of car tyres were 14.48M in 2024. The pool's 3.52M arrives as imports too, which leaves 10.96M, within about 3% of the balancing figure."
+            "The pool (ETRMA) is not in this box: it is the Industry box, and it is subtracted above. Rough cross-check only: customs counts every tyre that crosses the border, pool brands included, so the customs figure (14.48M car-tyre imports in 2024) cannot be compared with this box directly. If all of the pool's 3.52M had crossed the border, non-pool imports would be about 10.96M, within about 3% of 10.64M. The pool may be partly made or stocked inside BELUX, so treat this as a loose check."
           ],
           "src": "A balancing figure, not published. Cross-checked against UN Comtrade (WITS) 2024 imports.",
           "q": [
@@ -6347,7 +6347,7 @@
             "w": "A balancing figure that inherits the uncertainty of the export proxy. The customs cross-check is not independent, because net customs imports also match the market."
           },
           "why": "Imports are the other side of the export figure: the market is smaller than the pool, so the tyres that are re-exported have to have come in from somewhere.",
-          "val": "Customs imports of 14.48M (2024, HS 4011.10) minus the pool's 3.52M minus first-fit supply of roughly 0.35M leaves about 10.6M, which matches. The match is partly built in, because net customs imports (6.24M) are close to the market, so it supports the net (imports minus exports), not the split.",
+          "val": "Loose check, not a measurement. Customs imports (14.48M in 2024, HS 4011.10) include pool brands as well as non-pool ones. If all of the pool's 3.52M and roughly 0.35M of first-fit supply had crossed the border, about 10.6M would be non-pool imports, which matches 10.64M. The match is partly built in, because net customs imports (6.24M) are close to the market, so it supports the net (imports minus exports), not the split, and part of the pool may be made or stocked inside BELUX rather than imported.",
           "vq": [
             "wits_in24",
             "wits_out24"
