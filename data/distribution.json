@@ -1785,9 +1785,9 @@
     },
     {
       "country": "Belgium",
-      "meta": "Recytyre 2025 + ETRMA Europool RY2026 · consumer replacement tyres: cars, vans, light trucks, 4x4 (Traxio publishes no unit total)",
-      "total": "~5.5M",
-      "totalLabel": "units, 2025 (Recytyre; cars, vans, light trucks, 4x4)",
+      "meta": "Recytyre 2025 + Luxembourg estimate + ETRMA Europool RY2026 · consumer replacement tyres: cars, vans, light trucks, 4x4 (Traxio publishes no unit total)",
+      "total": "~5.9M",
+      "totalLabel": "units, Belgium 2025 + Luxembourg estimate (cars, vans, light trucks, 4x4)",
       "channels": [],
       "flatEntities": [
         {
@@ -1808,6 +1808,11 @@
         {
           "name": "Profile Tyrecenter Belgium",
           "model": "Buying group / cooperative",
+          "flowChannel": "spec"
+        },
+        {
+          "name": "Auto 5 (Mobivia)",
+          "model": "Fast-fit / auto-centre chain",
           "flowChannel": "spec"
         },
         {
@@ -1841,14 +1846,14 @@
           "scale": {
             "value": 2,
             "metric": "M+ tyres in stock",
-            "label": "2M+ tyres in stock, sells to 64 countries. Wholesale check (Oct 2026), research run, not re-opened: revenue €506M (2024) and €530M (2025); “net geen 8 miljoen autobanden” a year; Belgium is about 8% of revenue (€30M of €386M in 2021), so about 0.4–0.7M tyres a year domestically. The research (November 2026) reads Deldo as an export and trading hub: its volume of just under 8M tyres a year is about the size of all of Belgium's recorded car-tyre exports (8.23M items in 2024, UN Comtrade via WITS, as quoted by the research)."
+            "label": "2M+ tyres in stock, sells to 64 countries. Wholesale check (Oct 2026), research run, not re-opened: revenue €506M (2024) and €530M (2025); “net geen 8 miljoen autobanden” a year; Belgium is about 8% of revenue (€30M of €386M in 2021), so about 0.4–0.7M tyres a year domestically. Deldo sells about 8M tyres a year (8.5M through its Antwerp wholesaler per Tyrepress, 2023), about the size of all of Belgium's recorded car-tyre exports (8.23M items in 2024, UN Comtrade via WITS), so it is an export and trading hub; Germany is its largest market."
           },
           "est": {
             "lo": 0.4,
             "hi": 0.7,
             "basis": "Derived",
             "scope": "domestic, all tyre types",
-            "note": "Belgium is about 8% of its revenue; research run, not re-opened. Deldo is mainly an export and trading hub."
+            "note": "Belgium is about 8% of its revenue (2021); research run, not re-opened. Deldo is mainly an export and trading hub."
           }
         },
         {
@@ -1862,13 +1867,14 @@
         }
       ],
       "noteBadge": "caution",
-      "note": "Caveat The market (5.53M) is Recytyre's count of replacement tyres in the passenger category for 2025 (5,525,590, 89.88% of all replacement tyres), as reported by Weibold; the Recytyre 2025 report itself could not be opened. For 2024 Recytyre gives 5,729,829. The category includes cars, 4x4, SUVs, vans and light commercial vehicles (so vans and light trucks are in scope, as in the ETRMA PV scope) and also caravans and trailers, which cannot be separated. Recytyre counts what its members declare as imports minus exports, so it is sell-in to the Belgian market, and tyres that foreign webshops send straight to Belgian drivers are probably not in it. The industry figure (3.52M) is ETRMA's Europool pool sell-in for Belgium and Luxembourg together, rolling year 2026 (RY2025 3.70M, -4.8%), supplied by you; it is gross and includes Luxembourg. The pool is about 64% of the market; the remaining 2.01M is net non-pool supply, which cannot be split into imports and exports. The earlier 4.6M estimate (5.8M cars x 0.80 tyres) is replaced. Traxio publishes no unit total. The $1,016M TechSci market value (2024, all tyres including original equipment) is a paid-report figure that could not be checked and is no longer shown in the header. Customs data are not a guide to Belgian sales: Belgium recorded 14.48M car-tyre imports and 8.23M exports in 2024 (UN Comtrade via WITS, as quoted by the research), because it is a trading and transit hub. No Belgian channel split is published; the only datapoint is online at 7 to 8% of tyres in 2018 (Traxio Magazine).",
-      "marketAccessNote": "Deldo Autobanden stands out as a major European wholesaler that already stocks Vredestein: an existing relationship worth deepening rather than a new door to open. But Deldo trades just under 8M tyres a year, about the size of all Belgium's recorded car-tyre exports, so it is mainly an export and trading house and not a measure of the Belgian domestic layer. For domestic reach the main routes are the independent groupings (Profile, Point S, Eurotyre, Qteam) and fleet and lease buyers: 61.6% of new passenger cars registered in Belgium in 2024 were company cars (FEBIAC). Euromaster, First Stop and Vulco are linked to Michelin, Bridgestone and Goodyear.",
+      "note": "Caveat The market (5.93M) is Recytyre's count for Belgium, 5.53M of replacement tyres in the passenger category in 2025 (5,525,590, 89.88% of all replacement tyres, as reported by Weibold; the Recytyre 2025 report itself could not be opened; 2024: 5,729,829), plus an estimated 0.40M for Luxembourg (0.90 tyres per car × 447,643 cars, SNCA June 2023). Recytyre's category includes cars, 4x4, SUVs, vans, light commercial vehicles, caravans and trailers, which cannot be separated, and counts what members declare as imports minus exports, so it is sell-in, and tyres that foreign webshops send straight to Belgian drivers are probably not in it. The industry figure (3.52M) is ETRMA's Europool pool sell-in for Belgium and Luxembourg together, rolling year 2026 (RY2025 3.70M, -4.8%), supplied by you; it is gross. The pool is about 59% of the market, and the 2.41M gap is net non-pool supply (imports minus exports). Belgium is a trading and transit hub: customs recorded 14.48M car-tyre imports and 8.23M exports in 2024 (9.22M exports in 2023; UN Comtrade via WITS, HS 4011.10, car tyres only). The model takes the 2024 export as the re-export business of Belgian wholesalers such as Deldo (about 8M tyres a year, mainly export) and lets import balance it at 10.64M, so wholesalers handle 12.75M tyres and sell 4.52M in BELUX. Direct sales (1.41M, 40% of the pool) are an assumption next to the Netherlands (36%); the channel totals are German and French benchmarks, supported only by a 2026 GiPA survey for Auto5 (autocentres and independents 70% of tyre changes; 24% of drivers buy tyres online; no methodology given); and the commercial share (about 25%) follows the Dutch pattern, although Belgium has about 627,000 company cars. The earlier 4.6M estimate (5.8M cars × 0.80 tyres) is replaced. Traxio publishes no unit total (about 5.6M tyres a year in 2018). The $1,016M TechSci market value (2024, all tyres including original equipment) is a paid-report figure that could not be checked and is no longer shown in the header.",
+      "marketAccessNote": "Deldo Autobanden stands out as a major European wholesaler that already stocks Vredestein: an existing relationship worth deepening rather than a new door to open. But Deldo sells about 8M tyres a year, about the size of all Belgium's recorded car-tyre exports, so it is mainly an export and trading house: its Belgian volume is estimated at only 0.4M to 0.7M, a small slice of the 4.52M that wholesalers sell in BELUX. For domestic reach the main routes are the independent groupings and chains (Point S with more than 120 centres, Profile, Eurotyre, Qteam, Auto 5), the manufacturer-linked networks (Euromaster, First Stop, Vulco), and fleet and lease buyers: 61.6% of new passenger cars registered in Belgium in 2024 were company cars (FEBIAC). Autocentres and independents hold about 70% of tyre changes (GiPA for Auto5, 2026).",
       "noteShort": [
-        "Market: Recytyre, the Belgian tyre-recycling scheme, counts 5.53M replacement tyres placed on the market in 2025 (5.73M in 2024); the 2025 figure is second-hand.",
-        "Industry: ETRMA Europool, Belgium + Luxembourg, 3.52M in the rolling year 2026 (supplied by you).",
-        "Estimated: the channel shares are a German and French benchmark. Wholesale, direct, imports, exports and private versus commercial are not published."
-      ]
+        "Market: Recytyre counts 5.53M replacement tyres in Belgium in 2025 (second-hand); an estimated 0.40M for Luxembourg makes 5.93M. Industry: ETRMA Europool, BELUX, 3.52M (rolling year 2026).",
+        "Trade: Belgium is an import and re-export hub. Export is the 2024 customs figure (8.23M car tyres) and import balances it (10.64M), so customs flows are far larger than the market.",
+        "Estimated: direct sales (40% of the pool), the channel splits and private versus commercial. A 2026 GiPA survey supports the 71% specialist share."
+      ],
+      "label": "BELUX"
     },
     {
       "country": "Spain",
@@ -3356,9 +3362,9 @@
     },
     {
       "country": "Belgium",
-      "meta": "Recytyre heavy-duty category · truck & bus replacement",
+      "meta": "Recytyre 'heavy-duty' category (Belgium only; Luxembourg not added) · truck & bus replacement",
       "total": "~0.36M",
-      "totalLabel": "units, 2025 (Recytyre 'heavy-duty' category, second-hand)",
+      "totalLabel": "units, Belgium 2025 (Recytyre 'heavy-duty' category, second-hand); Luxembourg not added",
       "channels": [],
       "flatEntities": [
         {
@@ -3379,7 +3385,8 @@
         }
       ],
       "noteBadge": "caution",
-      "note": "Caveat Recytyre's 2025 report, as reported by Weibold and quoted by the research (not opened by us), puts replacement tyres in its 'heavy-duty' category at 358,095 units, 5.82% of all replacement tyres. That is Recytyre's own category: the source does not say how it treats agricultural and industrial tyres, so it is not a clean truck-and-bus figure. No new versus retread split was found. One report estimates the retread import market growing at +10.34% CAGR 2020-24, an import-volume proxy, not a market-size or split figure. Truck-tyre service in Belgium is a niche served by a handful of players (Qteam, Profile Truck, Euromaster fleet; Traxio Magazine, 2018)."
+      "note": "Caveat Recytyre's 2025 report, as reported by Weibold and quoted by the research (not opened by us), puts replacement tyres in its 'heavy-duty' category at 358,095 units, 5.82% of all replacement tyres. That is Recytyre's own category: the source does not say how it treats agricultural and industrial tyres, so it is not a clean truck-and-bus figure. No new versus retread split was found. One report estimates the retread import market growing at +10.34% CAGR 2020-24, an import-volume proxy, not a market-size or split figure. Truck-tyre service in Belgium is a niche served by a handful of players (Qteam, Profile Truck, Euromaster fleet; Traxio Magazine, 2018). This card is labelled BELUX like the passenger-car card, but the figure is Belgium only: no Luxembourg truck-tyre figure was found, and Luxembourg had 11,223 heavy vehicles and road tractors in June 2023 (SNCA, via Lexio), many of them international hauliers that replace tyres abroad, so Luxembourg is probably a small addition. No Belgian heavy-vehicle count was found to scale it.",
+      "label": "BELUX"
     },
     {
       "country": "Spain",

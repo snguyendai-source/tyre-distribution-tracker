@@ -378,9 +378,9 @@
     },
     {
       "country": "Belgium",
-      "verdict": "insufficient data",
-      "vclass": "gap",
-      "headline": "Deldo trades just under 8 million tyres a year (revenue €506M in 2024, €530M in 2025). That is about the size of all of Belgium's recorded car-tyre exports (8.2M items in 2024), so Deldo is an export and trading hub and says little about the Belgian layer. The flow has no wholesale figure yet, and the earlier indicative layer (built on the old 4.6M market) has been withdrawn.",
+      "verdict": "cannot be tested",
+      "vclass": "flag",
+      "headline": "Company data cannot test the 4.52M domestic figure, but they fit the export box. Deldo, the largest Belgian wholesaler, sells just under 8 million tyres a year (revenue €506M in 2024), about the size of the model's 8.23M export, and only about 0.4M to 0.7M of it is Belgian. Belgium is an import and re-export hub, so domestic wholesale is a small part of what its wholesalers handle.",
       "sumLo": null,
       "sumHi": null,
       "sumNote": "",
@@ -401,21 +401,27 @@
           "chk": false,
           "quote": "net geen 8 miljoen autobanden",
           "en": "just under 8 million car tyres",
-          "caveat": "Export and trading hub: its volume equals Belgium's recorded car-tyre exports (8.23M items in 2024, UN Comtrade via WITS, as quoted by the research, not opened). The 0.4–0.7M domestic range rests on Belgium being about 8% of revenue in 2021."
+          "caveat": "Export and trading hub: its volume (just under 8M tyres a year; 8.5M through the Antwerp wholesaler per Tyrepress, 2023) is about the size of the model's export (8.23M, Belgian customs 2024). The 0.4M to 0.7M Belgian range rests on Belgium being about 8% of revenue in 2021."
         }
       ],
       "evidence": [
         {
+          "t": "What the dashboard figure means",
+          "x": "The 4.52M is domestic: tyres wholesalers sell in BELUX, after taking off the 8.23M they send abroad. Company revenue is mostly export, so it cannot confirm or reject the domestic figure.",
+          "chk": false
+        },
+        {
           "t": "Customs",
-          "x": "Belgium recorded 14.48M car-tyre imports and 8.23M exports in 2024 (UN Comtrade via WITS, as quoted by the research). Exports are about 57% of imports by items, so most of the flow is re-export. No source says how much is consumed in Belgium.",
+          "x": "Belgium recorded 14.48M car-tyre imports and 8.23M exports in 2024, and 9.22M exports in 2023 (UN Comtrade via WITS). The net, 6.24M, is close to Recytyre's replacement count plus first-fit tyres, so the flows hang together. How much of the gross passes through wholesalers is not known.",
           "chk": false
         }
       ],
       "gaps": [
         "Forrez: no data. Deldo's annual accounts and the Traxio channel data are the next best sources.",
-        "Recytyre's members' declarations by member type (manufacturers, importers only, exporters) would show the non-pool layer and the export volume. Ask Recytyre or Traxio."
+        "Recytyre's members' declarations by member type (manufacturers, importers only, exporters) would show the non-pool layer and the export volume directly. Ask Recytyre or Traxio."
       ],
-      "iso": "BE"
+      "iso": "BE",
+      "label": "BELUX"
     },
     {
       "country": "Spain",

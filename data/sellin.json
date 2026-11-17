@@ -6020,9 +6020,9 @@
         "market": {
           "asOf": "2025",
           "by": "research",
-          "tier": "Published",
-          "value": 5.53,
-          "source": "Recytyre (the Belgian end-of-life tyre scheme), annual report 2025, as reported by Weibold and quoted by the research (not opened by us; the Recytyre PDFs could not be opened): passenger and tourism-related replacement tyres 5,525,590 units in 2025, 89.88% of all replacement tyres (6,147,721, -2.9% on 2024); rounded to 5.53M. The 2024 report, quoted by the research from search extracts, gives 5,729,829 (+5.3% on 5,441,728 in 2023). The category counts cars, 4x4, SUVs, vans, light commercial vehicles, caravans and trailers, so vans and light trucks are in scope (as in the ETRMA PV scope) and a small caravan and trailer volume cannot be taken out. The figures are Recytyre members' import and export declarations for the replacement market, net of exports: sell-in to the Belgian market, not sell-out. Replaces the earlier 4.6M estimate (5.8M cars x 0.80 tyres)."
+          "tier": "Estimate",
+          "value": 5.93,
+          "source": "Belgium: Recytyre (the Belgian end-of-life tyre scheme), annual report 2025, as reported by Weibold (not opened by us; the Recytyre PDFs could not be opened): passenger and tourism-related replacement tyres 5,525,590 units in 2025 (89.88% of all replacement tyres, 6,147,721, -2.9% on 2024), rounded to 5.53M. The 2024 report gives 5,729,829. Net of exports, so sell-in. The category counts cars, 4x4, SUVs, vans, light commercial vehicles, caravans and trailers. Luxembourg: no count is published, so 0.40M is estimated as 0.90 tyres per car (Belgium: 5.53M / about 6.14M cars) x 447,643 Luxembourg cars (SNCA, June 2023). 5.53M + 0.40M = 5.93M, so Luxembourg is in the market because ETRMA Europool reports Belgium and Luxembourg together. About 93% of the figure is published (second-hand); Luxembourg is an estimate of roughly +/-0.1M."
         },
         "industry": {
           "asOf": "RY2026",
@@ -6031,33 +6031,166 @@
           "value": 3.52,
           "source": "ETRMA Europool Market Data (View by Country, PV, rolling year, header 'October - 2026'), supplied by you: BE - Belgium + Luxembourg RY2026 3,518,131 tyres, against 3,695,958 in RY2025 (-4.8%); rounded to 3.52M. This is pool members' sell-in, so it is gross: it includes tyres invoiced to Belgian and Luxembourg customers that are sold on abroad, and it is not domestic sales. Europool reports Belgium and Luxembourg together, so Luxembourg is inside the figure. Scope: ETRMA PV, which you confirm includes 4x4 and light trucks, i.e. cars, SUV/4x4, vans and light trucks. To confirm: that RY2026 means the 12 months to October 2026; how much of the figure is Luxembourg; and whether the table allocates volume by invoice-to or ship-to country. The dashboard had no industry figure for Belgium before."
         },
+        "import": {
+          "asOf": "2024",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 10.64,
+          "source": "Balancing figure, not published: market 5.93M - industry 3.52M + export 8.23M = 10.64M. It is the non-pool tyres (mostly Asian brands, private labels and parallel imports) that wholesalers bring into Belgium, including those they sell on abroad. Cross-check: Belgian customs imports of car tyres were 14.48M in 2024 (UN Comtrade via WITS); taking off the pool's 3.52M, which arrives as imports, leaves 10.96M, within about 3% of this figure. That check is not independent of the export figure, because net customs imports (6.24M) also match the market."
+        },
+        "export": {
+          "asOf": "2024",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 8.23,
+          "source": "Belgian customs exports of new car tyres (HS 4011.10) in 2024: 8,233,320 items (2023: 9,222,080), UN Comtrade via WITS; the 2024 figure as quoted by the research, not opened by us, the 2023 figure read by us on the WITS page. Used as the size of the re-export business of Belgian wholesalers and hubs such as Deldo (just under 8M tyres a year). Gross, a different year from the market, and car tyres only (vans and light-truck tyres are mostly in a separate code). It can include production exports and tyres that never pass through a Belgian wholesaler, so read it as an upper bound of the model's export. Luxembourg's recorded exports (0.40M items in 2023) are left out."
+        },
+        "direct": {
+          "asOf": "RY2026",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 1.41,
+          "source": "Estimate, not published for Belgium: 40% of the pool's 3.52M = 1.41M (24% of the market) goes from the manufacturers to the channels without a wholesaler. For comparison, the dashboard's other country models give direct as a share of pool sell-in of 36% in the Netherlands, 43% in the UK and Spain, 48% in Poland, 53% in Germany and 75% in France; 40% sits next to the Netherlands, the closest structure. Equals the sum of the channel direct figures."
+        },
         "ch.spec.tot": {
           "asOf": "2025",
           "by": "research",
           "tier": "Estimate",
-          "value": 3.93,
-          "source": "Benchmark estimate: 71% of the consumer market. See notes"
+          "value": 4.21,
+          "source": "Benchmark estimate: 71% of the market. Cross-check: a 2026 GiPA survey for Auto5 gives autocentres and independents a 70% share of tyre changes."
+        },
+        "ch.spec.ws": {
+          "asOf": "RY2026",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 3.29,
+          "source": "Estimate: channel total minus direct. Not published. See the direct figure."
+        },
+        "ch.spec.dir": {
+          "asOf": "RY2026",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 0.92,
+          "source": "Estimate, not published: the 1.41M of direct volume is shared across the channels using the Dutch pattern (specialists 32%, dealers 33%, other retail 22%, online 56% of each channel's tyres) scaled down so the channels add up to 1.41M, which gives about 22% / 22% / 17% / 38%. Chains tied to manufacturers (Euromaster, First Stop, Vulco), the central purchasing of the big groups and fleet programmes buy direct; independent garages mostly buy through wholesalers."
+        },
+        "ch.spec.prv": {
+          "asOf": "2025",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 3.16,
+          "source": "Estimate: channel total minus commercial. Not published."
+        },
+        "ch.spec.com": {
+          "asOf": "2025",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 1.05,
+          "source": "Estimate, not published: the Dutch commercial share by channel (25% / 41% / 11% / 6%, anchored on lease-fleet and mileage data) applied to Belgium, about 25% of the market in total. Belgium has about 627,000 company cars (8.9% of the vehicle fleet, 2024), so the true share may be higher."
         },
         "ch.deal.tot": {
           "asOf": "2025",
           "by": "research",
           "tier": "Estimate",
-          "value": 0.83,
-          "source": "Benchmark estimate: 15% of the consumer market. See notes"
+          "value": 0.89,
+          "source": "Benchmark estimate: 15% of the market. No Belgian dealer figure was found."
+        },
+        "ch.deal.ws": {
+          "asOf": "RY2026",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 0.69,
+          "source": "Estimate: channel total minus direct. Not published. See the direct figure."
+        },
+        "ch.deal.dir": {
+          "asOf": "RY2026",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 0.2,
+          "source": "Estimate, not published: the 1.41M of direct volume is shared across the channels using the Dutch pattern (specialists 32%, dealers 33%, other retail 22%, online 56% of each channel's tyres) scaled down so the channels add up to 1.41M, which gives about 22% / 22% / 17% / 38%. Chains tied to manufacturers (Euromaster, First Stop, Vulco), the central purchasing of the big groups and fleet programmes buy direct; independent garages mostly buy through wholesalers."
+        },
+        "ch.deal.prv": {
+          "asOf": "2025",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 0.53,
+          "source": "Estimate: channel total minus commercial. Not published."
+        },
+        "ch.deal.com": {
+          "asOf": "2025",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 0.36,
+          "source": "Estimate, not published: the Dutch commercial share by channel (25% / 41% / 11% / 6%, anchored on lease-fleet and mileage data) applied to Belgium, about 25% of the market in total. Belgium has about 627,000 company cars (8.9% of the vehicle fleet, 2024), so the true share may be higher."
         },
         "ch.ret.tot": {
           "asOf": "2025",
           "by": "research",
           "tier": "Estimate",
+          "value": 0.12,
+          "source": "Benchmark estimate: 2% of the market. No Belgian figure was found."
+        },
+        "ch.ret.ws": {
+          "asOf": "RY2026",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 0.1,
+          "source": "Estimate: channel total minus direct. Not published. See the direct figure."
+        },
+        "ch.ret.dir": {
+          "asOf": "RY2026",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 0.02,
+          "source": "Estimate, not published: the 1.41M of direct volume is shared across the channels using the Dutch pattern (specialists 32%, dealers 33%, other retail 22%, online 56% of each channel's tyres) scaled down so the channels add up to 1.41M, which gives about 22% / 22% / 17% / 38%. Chains tied to manufacturers (Euromaster, First Stop, Vulco), the central purchasing of the big groups and fleet programmes buy direct; independent garages mostly buy through wholesalers."
+        },
+        "ch.ret.prv": {
+          "asOf": "2025",
+          "by": "research",
+          "tier": "Estimate",
           "value": 0.11,
-          "source": "Benchmark estimate: 2% of the consumer market. See notes"
+          "source": "Estimate: channel total minus commercial. Not published."
+        },
+        "ch.ret.com": {
+          "asOf": "2025",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 0.01,
+          "source": "Estimate, not published: the Dutch commercial share by channel (25% / 41% / 11% / 6%, anchored on lease-fleet and mileage data) applied to Belgium, about 25% of the market in total. Belgium has about 627,000 company cars (8.9% of the vehicle fleet, 2024), so the true share may be higher."
         },
         "ch.onl.tot": {
           "asOf": "2025",
           "by": "research",
           "tier": "Estimate",
-          "value": 0.66,
-          "source": "Benchmark estimate: 12% of the consumer market. See notes"
+          "value": 0.71,
+          "source": "Benchmark estimate: 12% of the market. Belgian datapoints: 7 to 8% of tyres in 2018 (Traxio, an executive's estimate) and, in a 2026 GiPA survey for Auto5, 24% of drivers who buy tyres online (a share of drivers, not of tyres)."
+        },
+        "ch.onl.ws": {
+          "asOf": "RY2026",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 0.44,
+          "source": "Estimate: channel total minus direct. Not published. See the direct figure."
+        },
+        "ch.onl.dir": {
+          "asOf": "RY2026",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 0.27,
+          "source": "Estimate, not published: the 1.41M of direct volume is shared across the channels using the Dutch pattern (specialists 32%, dealers 33%, other retail 22%, online 56% of each channel's tyres) scaled down so the channels add up to 1.41M, which gives about 22% / 22% / 17% / 38%. Chains tied to manufacturers (Euromaster, First Stop, Vulco), the central purchasing of the big groups and fleet programmes buy direct; independent garages mostly buy through wholesalers."
+        },
+        "ch.onl.prv": {
+          "asOf": "2025",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 0.67,
+          "source": "Estimate: channel total minus commercial. Not published."
+        },
+        "ch.onl.com": {
+          "asOf": "2025",
+          "by": "research",
+          "tier": "Estimate",
+          "value": 0.04,
+          "source": "Estimate, not published: the Dutch commercial share by channel (25% / 41% / 11% / 6%, anchored on lease-fleet and mileage data) applied to Belgium, about 25% of the market in total. Belgium has about 627,000 company cars (8.9% of the vehicle fleet, 2024), so the true share may be higher."
         }
       },
       "channels": [
@@ -6087,60 +6220,64 @@
       "iso": "BE",
       "meta": {
         "seasons": {},
-        "scopeNote": "Period: industry is the ETRMA Europool rolling year RY2026 (I read it as the 12 months to October 2026), supplied by you: Belgium + Luxembourg 3,518,131 tyres (RY2025 3,695,958, -4.8%); it covers cars, SUV/4x4, vans and light trucks together (ETRMA PV). The market is Recytyre's calendar-year 2025 count, 5.53M (second-hand; 2024: 5.73M), the latest published, so the two periods differ by about ten months. Recytyre's category also includes a small volume of caravan and trailer tyres that cannot be separated. Everything below the industry figure is not published for Belgium. For comparison, the earlier version of this flow had a 4.6M market (5.8M cars x 0.80 tyres) and no industry figure.",
-        "boxNote": "Industry is ETRMA Europool pool sell-in (3.52M, rolling year 2026, Belgium + Luxembourg), which is gross: it includes tyres invoiced to Belgian and Luxembourg customers that are sold on abroad. The market is Recytyre's 5.53M. The pool is therefore about 64% of the market, and the 2.01M gap is what the model treats as net non-pool supply (imports minus exports), which cannot be split into the two. No wholesale, direct, import or export figure is published for Belgium, so those boxes stay blank and nothing is guessed. The four channel totals are benchmark shares (German and French) applied to the market (see Sources and notes); the 12% online share is above the only Belgian datapoint (7 to 8% in 2018).",
-        "walkNote": "Market (Recytyre, 2025), industry (ETRMA Europool, rolling year 2026) and the four channel totals (benchmark estimates) are filled. Wholesale, direct, imports and exports are not published for Belgium, so they stay blank. The 2.01M gap between market and industry is net non-pool supply, but it cannot be split into imports and exports. Nothing is guessed.",
+        "scopeNote": "Scope: Belgium and Luxembourg together, because ETRMA Europool reports them together. Period: industry is the Europool rolling year RY2026 (I read it as the 12 months to October 2026), supplied by you: 3,518,131 tyres (RY2025 3,695,958, -4.8%); cars, SUV/4x4, vans and light trucks together (ETRMA PV). The market is Recytyre's calendar-year 2025 count for Belgium, 5.53M (second-hand; 2024: 5.73M), plus an estimated 0.40M for Luxembourg. Export is the Belgian customs figure for 2024 and import balances it. Recytyre's category also includes a small volume of caravan and trailer tyres that cannot be separated. Direct sales, the channel splits and private versus commercial demand are estimates; nothing is published for them in Belgium.",
+        "boxNote": "Industry is ETRMA Europool pool sell-in (3.52M, rolling year 2026, BELUX), which is gross: it includes tyres invoiced to customers here and sold on abroad. The market is 5.93M: Recytyre's 5.53M for Belgium plus an estimated 0.40M for Luxembourg. Belgium is an import and re-export hub: export (8.23M) is the 2024 customs figure for car tyres, and import (10.64M) closes the flow, so imports minus exports equal the 2.41M gap between market and pool. Direct (1.41M) assumes 40% of the pool reaches the channels without a wholesaler, which leaves 2.11M for wholesalers; wholesalers sell 4.52M in BELUX. The four channel totals are benchmark shares (German and French; a 2026 GiPA survey supports the 71% for specialists), their direct split follows the Dutch pattern scaled to the total, and the commercial share (about 25%) follows the Dutch pattern. Only industry, the Belgian part of the market and the customs export are measured; the rest is modelled.",
+        "walkNote": "Market (Recytyre Belgium 2025 plus a Luxembourg estimate) and industry (ETRMA Europool, BELUX, rolling year 2026) are the anchors. Export is Belgian customs (2024) and import balances it, because Belgium re-exports far more tyres than it consumes. Direct, the channel splits and private versus commercial are estimates, so overwrite them with your own sell-in when you can.",
         "walkWhy": {
           "channels": {
-            "v": 5.53,
-            "why": "No Belgian channel split is published, so the four shares come from the German BRV split and the French panel, lightly adjusted (structure close to the Netherlands and France, dealers slightly above the Dutch level).",
-            "val": "Nothing published to test it against. The only Belgian datapoint is online: 7 to 8% of tyres in 2018 (Traxio Magazine), below the 12% used here. Replace with your own Belgian channel data; the research allows about ±6 points per channel.",
+            "v": 5.93,
+            "why": "No Belgian channel split is published, so the four shares come from the German BRV split and the French panel, lightly adjusted (structure close to the Netherlands and France, dealers slightly above the Dutch level). A 2026 GiPA survey for Auto5 gives autocentres and independents a 70% share of tyre changes, close to the 71% used for specialists.",
+            "val": "The 70% share of tyre changes (GiPA for Auto5, 2026; Auto5's own release, no methodology) supports the specialist share. Online: 7 to 8% of tyres in 2018 (Traxio) against 24% of drivers who buy online in 2026 (GiPA); the 12% used sits between them. Replace with your own Belgian channel data; the research allows about ±6 points per channel.",
             "vq": [
+              "gipa_ind",
+              "gipa_onl",
               "traxio_online"
             ]
           }
         }
       },
       "refs": [
-        "Market size (November 2026): Recytyre annual report 2024 (Jaarverslag 2024, July 2025): 5,729,829 replacement tyres in the passenger category, +5.3% on 2023. For 2025: 5,525,590, as reported by Weibold (26 July 2026) citing Recytyre's 2025 report. Both as quoted by the research; the Recytyre PDFs could not be opened, so the 2024 quote comes from search extracts and the 2025 figure is second-hand. A Belga report of 23 July 2026 confirms that the 2025 report exists (743 members placed 108,697 tonnes of new tyres on the Belgian market) but gives no unit count.",
-        "Industry (November 2026): ETRMA Europool Market Data, View by Country, PV, rolling year, header 'October - 2026', supplied by you (screenshot): BE - Belgium + Luxembourg RY2026 3,518,131; RY2025 3,695,958 (-4.8%). For comparison the same table shows the Netherlands at 9,252,422 (RY2026) against 9,486,355 (RY2025), which differs from the NL figure in this dashboard (9,406,575, taken from an earlier release).",
-        "Method (channels): no channel split is published for this country, so each channel share is a benchmark estimate anchored on the published German (BRV 2024: 71 / 20 / 3 / 6%) and French splits and adjusted for the country context noted below. Treat the shares as placeholders with an error of roughly +/-6 points until your team replaces them. The only Belgian datapoint is online: about 7 to 8% of tyres in 2018 (Traxio Magazine, an executive's estimate).",
-        "Belgium: structure close to the Netherlands and France; dealer share slightly above the Dutch level.",
-        "Context: car-tyre customs trade (UN Comtrade via WITS, as quoted by the research, not opened): imports 14.48M and exports 8.23M items in 2024, far above domestic sales because Belgium is a trading and transit hub. FEBIAC: 61.6% of new passenger cars registered in 2024 were company cars (68.9% in 2023). Statbel: 6,089,564 passenger cars on 1 August 2024.",
-        "Wholesale cross-check (November 2026): Deldo trades just under 8M tyres a year, about the size of all of Belgium's recorded car-tyre exports, so it is an export and trading hub and says little about the Belgian layer. The flow has no wholesale figure yet. See the Wholesale check tab."
+        "Market size (November 2026): Belgium: Recytyre annual report 2024 (Jaarverslag 2024, July 2025): 5,729,829 replacement tyres in the passenger category, +5.3% on 2023. For 2025: 5,525,590, as reported by Weibold (26 July 2026) citing Recytyre's 2025 report; both quoted by the research, the Recytyre PDFs could not be opened. Luxembourg: estimated at 0.40M (0.90 tyres per car × 447,643 cars, SNCA June 2023, via Lexio). Traxio estimated about 5.6M tyres a year in Belgium in 2018.",
+        "Industry (November 2026): ETRMA Europool Market Data, View by Country, PV, rolling year, header 'October - 2026', supplied by you (screenshot): BE - BELUX RY2026 3,518,131; RY2025 3,695,958 (-4.8%). For comparison the same table shows the Netherlands at 9,252,422 (RY2026) against 9,486,355 (RY2025), which differs from the NL figure in this dashboard (9,406,575, taken from an earlier release).",
+        "Imports and exports (November 2026): UN Comtrade via WITS, HS 4011.10 (new car tyres). Belgium exported 9,222,080 items in 2023 (read by us) and 8,233,320 in 2024, and imported 14,476,900 items in 2024 (2024 figures quoted by the research, not opened by us). Luxembourg exported 403,780 in 2023. The model uses the 2024 export as the size of the re-export business and lets import balance it. The customs figures are gross and cover car tyres only; vans and light-truck tyres are mostly in another code.",
+        "Direct and channels: nothing Belgian is published. Direct is 40% of the pool, next to the Netherlands (36% in the dashboard's own country model); the channel direct split follows the Dutch propensities scaled to the total. Channel totals: German (BRV 2024: 71 / 20 / 3 / 6%) and French benchmarks. Cross-check: GiPA study for Auto5 (press release 16 October 2026; no methodology): autocentres and independents 70% of tyre changes, 29% the most popular channel for buying new tyres, 24% of drivers buy tyres via the internet. Traxio Magazine (March 2018): 7 to 8% of tyres online, about 5.6M tyres a year.",
+        "Private versus commercial: the Dutch pattern (about 24% commercial, anchored on VNA lease-fleet and CBS mileage data) applied to Belgium. Belgium had 626,645 company vehicles in 2024, 8.9% of the vehicle fleet (Ministry of Mobility via The Brussels Times, 4 November 2024); FEBIAC: 61.6% of new passenger cars registered in 2024 were company cars (68.9% in 2023). The true commercial share may be higher.",
+        "Wholesale cross-check (November 2026): Deldo (Antwerp) had revenue of €506M in 2024 (Trends) and expects about 8.5M tyres a year through its Antwerp wholesaler (Tyrepress, 2023); Germany is its largest market. That is about the size of Belgium's recorded car-tyre exports, so Deldo is an export and trading hub and its Belgian volume (0.4M to 0.7M, about 8% of revenue in 2021) is a small slice of domestic wholesale. See the Wholesale check tab.",
+        "Belgium: structure close to the Netherlands and France; dealer share slightly above the Dutch level. Point S Belux alone has more than 120 centres in Belgium."
       ],
-      "scope": "Consumer replacement tyres (cars, SUV/4x4, vans and light trucks; includes a small volume of caravan and trailer tyres)",
+      "scope": "Consumer replacement tyres, BELUX = Belgium + Luxembourg (cars, SUV/4x4, vans and light trucks; includes a small volume of caravan and trailer tyres)",
       "unit": "million tyres",
       "year": "RY2026 (rolling year)",
       "explain": {
         "market": {
-          "v": 5.53,
-          "short": "Recytyre's published count of replacement tyres placed on the Belgian market: 5.53M in 2025 (5.73M in 2024).",
+          "v": 5.93,
+          "short": "Recytyre's count for Belgium (5.53M, 2025) plus an estimated 0.40M for Luxembourg.",
           "how": [
-            "Recytyre, the Belgian end-of-life tyre scheme, records the tyres its members place on the Belgian replacement market, from their import and export declarations (net of exports).",
-            "Its 2025 report, as reported by Weibold and quoted by the research (not opened by us), shows 5,525,590 replacement tyres in the passenger category, 89.88% of all replacement tyres (6,147,721, -2.9% on 2024).",
-            "The 2024 report shows 5,729,829 (2023: 5,441,728, +5.3%). Its table and scope footnote were quoted by the research from search extracts.",
-            "The category includes cars, 4x4, SUVs, vans, light commercial vehicles, caravans and trailers, so vans and light trucks are in scope. Rounded to 5.53M. It replaces the earlier 4.6M (5.8M cars × 0.80)."
+            "Belgium: Recytyre, the Belgian end-of-life tyre scheme, records the tyres its members place on the Belgian replacement market, from their import and export declarations (net of exports). Its 2025 report, as reported by Weibold (not opened by us), shows 5,525,590 replacement tyres in the passenger category (cars, 4x4, SUVs, vans, light commercial vehicles, caravans and trailers), 89.88% of all replacement tyres. 2024: 5,729,829.",
+            "Luxembourg: no count was found. Estimated at 0.40M: Belgium uses about 0.90 tyres per car (5.53M ÷ 6.14M cars), and Luxembourg had 447,643 cars (SNCA, June 2023), so 0.90 × 447,643 ≈ 0.40M.",
+            "5.53M + 0.40M = 5.93M. Luxembourg is included because ETRMA Europool reports Belgium and Luxembourg together, so the market has to cover the same area as the industry figure."
           ],
-          "src": "Recytyre annual reports: 2025 second-hand (Weibold), 2024 quoted from search extracts.",
+          "src": "Recytyre annual reports (2025 second-hand via Weibold; 2024 quoted from search extracts) plus the Luxembourg estimate.",
           "q": [
             "recy25",
             "recy24",
-            "recy24scope"
+            "recy24scope",
+            "snca_lu"
           ],
           "sure": {
             "l": "Medium",
-            "w": "A published count and customs data point to the same size, but the 2025 value is second-hand and Recytyre measures members' declared sell-in, not sell-out."
+            "w": "About 93% of the figure is a published count (second-hand), and Recytyre measures members' declared sell-in, not sell-out. The Luxembourg 0.40M is an estimate of about ±0.1M."
           },
-          "why": "Recytyre's members declare every tyre they place on the Belgian replacement market, so it is the closest thing to a full count that exists for Belgium. Traxio publishes no unit total. The earlier 4.6M was a fleet-based estimate (cars only, 0.80 tyres a car) and understated a market that includes vans and light trucks.",
-          "val": "Cross-check: net customs imports of car tyres (imports minus exports, UN Comtrade via WITS, as quoted by the research) were 14.48M − 8.23M = 6.24M in 2024, in the same range as Recytyre's 5.73M, though they include original-equipment supply and stock changes. Sanity check: 5.53M ÷ about 6.14M passenger cars (Statbel, 1 August 2025) = 0.90 tyres per car (2024: 5.73M ÷ 6.09M = 0.94). Vans and light trucks are in the tyre count but not in the car count, so the like-for-like figure is lower.",
+          "why": "Recytyre's members declare every tyre they place on the Belgian replacement market, so it is the closest thing to a full count that exists for Belgium. Luxembourg is small, and the Europool industry figure covers both countries, so a Luxembourg estimate is added to keep the boxes on the same footing.",
+          "val": "Belgium cross-checks: Traxio estimated about 5.6M tyres a year in 2018; net customs imports of car tyres (imports minus exports, UN Comtrade via WITS, as quoted by the research) were 14.48M − 8.23M = 6.24M in 2024, close to Recytyre's 5.73M plus about 0.35M of first-fit tyres (Recytyre's first-fit count was 366,586 in 2025); and 5.53M ÷ 6.14M cars (Statbel, 1 August 2025) = 0.90 tyres per car. For Luxembourg nothing could be checked: the 0.40M rests on the Belgian tyres-per-car ratio, and Luxembourg's drivers, company cars and cross-border traffic may differ.",
           "vq": [
             "statbel",
             "statbel25",
             "wits_in24",
-            "wits_out24"
+            "wits_out24",
+            "traxio_total"
           ],
-          "check": "Keep in mind: (1) the 2025 figure is second-hand, because the Recytyre 2025 report could not be opened; (2) caravan and trailer tyres are included and cannot be separated, so the market is slightly high against a strict cars-and-vans scope; (3) Recytyre counts what members declare, so tyres that foreign webshops send straight to Belgian drivers without a declaration are not in it; (4) it is calendar 2025, while the industry figure is the rolling year to October 2026."
+          "check": "Keep in mind: (1) the Belgian 2025 figure is second-hand, because the Recytyre 2025 report could not be opened; (2) caravan and trailer tyres are included and cannot be separated; (3) tyres that foreign webshops send straight to Belgian drivers are probably not in Recytyre's declarations; (4) the market is calendar 2025, while the industry figure is the rolling year to October 2026; (5) the Luxembourg part is an estimate."
         },
         "industry": {
           "v": 3.52,
@@ -6161,34 +6298,212 @@
           },
           "why": "It is ETRMA's own published pool figure for Belgium and Luxembourg, supplied by you, so nothing is assumed.",
           "val": "The table row is in the quotes kept. Still to confirm with ETRMA: that RY2026 means the 12 months to October 2026, how much of the figure is Luxembourg, and whether volumes are allocated by invoice-to or ship-to country.",
-          "check": "Europool reports Belgium and Luxembourg together, so Belgium alone is somewhat lower. The pool is about 64% of the 5.53M market. The remaining 2.01M is what the model treats as net non-pool supply (imports minus exports of non-pool and parallel brands), but the two figures cover different periods and geographies, so read that gap as indicative."
+          "check": "Europool reports Belgium and Luxembourg together, which is why the market above also covers both. The pool is about 59% of the 5.93M market. The remaining 2.41M is net non-pool supply (imports minus exports of non-pool and parallel brands); the two figures cover different periods, so read that gap as indicative."
+        },
+        "export": {
+          "v": 8.23,
+          "short": "Belgian customs exports of car tyres, 8.23M items in 2024 (gross).",
+          "how": [
+            "Belgium recorded exports of 8,233,320 new car tyres (HS 4011.10) in 2024 and 9,222,080 in 2023 (UN Comtrade via WITS). The model uses the 2024 figure as the size of the re-export business of Belgian wholesalers and trading hubs.",
+            "It fits the company evidence: Deldo, a trading house in Antwerp, sells just under 8M tyres a year, and its largest markets are outside Belgium (Germany first; then the Benelux, France, Italy and Poland).",
+            "Without it, the whole 2.41M gap between the market and the pool would have to sit in 'imports' and Belgium's role as an import and re-export hub would disappear from the picture.",
+            "Luxembourg's recorded exports (0.40M items in 2023) are left out."
+          ],
+          "src": "UN Comtrade via WITS, HS 401110, 2024 (quoted by the research, not opened by us) and 2023 (read by us).",
+          "q": [
+            "wits_out24",
+            "wits_out23",
+            "deldo_trends",
+            "deldo_tp23"
+          ],
+          "sure": {
+            "l": "Low",
+            "w": "A real customs figure used as a proxy: it is gross, it is for 2024, it covers car tyres only, and it may include production exports and tyres that never pass through a Belgian wholesaler."
+          },
+          "why": "Belgium is a trading and transit hub: far more tyres cross its border than are fitted in it. Customs gives the only published measure of the size of that re-export flow.",
+          "val": "Cross-check on the net: customs imports minus exports, 14.48M − 8.23M = 6.24M in 2024, is close to Recytyre's 5.73M replacement tyres plus roughly 0.35M of first-fit tyres, so the two flows are consistent with each other. What cannot be checked is how much of the 8.23M passed through wholesalers and how much is production or transit.",
+          "vq": [
+            "wits_in24",
+            "wits_out24",
+            "wits_out23",
+            "deldo_tp23"
+          ],
+          "check": "Keep in mind: the figure is for 2024 and moves by about 1M items a year (9.22M in 2023); HS 4011.10 leaves out most van and light-truck tyres, so the true flow is probably higher for that scope; and any tyres that Belgian plants export are counted here but are not wholesale. If your team has Recytyre's export declarations, replace it."
+        },
+        "import": {
+          "v": 10.64,
+          "short": "The balancing figure that closes the flow: 5.93 − 3.52 + 8.23.",
+          "how": [
+            "Import closes the flow: market 5.93M − industry 3.52M + export 8.23M = 10.64M.",
+            "It is the non-pool tyres (mostly Asian brands, private labels and parallel imports) that wholesalers bring into Belgium, including the part they sell on abroad.",
+            "Cross-check: Belgian customs imports of car tyres were 14.48M in 2024. The pool's 3.52M arrives as imports too, which leaves 10.96M, within about 3% of the balancing figure."
+          ],
+          "src": "A balancing figure, not published. Cross-checked against UN Comtrade (WITS) 2024 imports.",
+          "q": [
+            "wits_in24"
+          ],
+          "sure": {
+            "l": "Low",
+            "w": "A balancing figure that inherits the uncertainty of the export proxy. The customs cross-check is not independent, because net customs imports also match the market."
+          },
+          "why": "Imports are the other side of the export figure: the market is smaller than the pool, so the tyres that are re-exported have to have come in from somewhere.",
+          "val": "Customs imports of 14.48M (2024, HS 4011.10) minus the pool's 3.52M minus first-fit supply of roughly 0.35M leaves about 10.6M, which matches. The match is partly built in, because net customs imports (6.24M) are close to the market, so it supports the net (imports minus exports), not the split.",
+          "vq": [
+            "wits_in24",
+            "wits_out24"
+          ],
+          "check": "Only the net (import minus export = 2.41M) is tied to the market and the pool. If the true export is lower than 8.23M, import is lower by the same amount."
+        },
+        "direct": {
+          "v": 1.41,
+          "short": "About 24% of the market (1.41M): 40% of the pool is assumed to reach the channels without a wholesaler.",
+          "how": [
+            "No Belgian source publishes the routes to market. In the dashboard's other country models, direct is 36% of pool sell-in in the Netherlands, 43% in the UK and Spain, 48% in Poland, 53% in Germany and 75% in France.",
+            "The model takes 40%, next to the Netherlands, the closest structure (fitting chains and franchise concepts, a strong independent trade).",
+            "40% × 3.52M = 1.41M. It buys direct because the manufacturer-linked chains (Euromaster with Michelin, First Stop with Bridgestone, Vulco with Goodyear), the central purchasing of the big groups (Auto 5, Point S with more than 120 centres, Profile, Eurotyre, Qteam) and the fleet and lease programmes order from the manufacturers.",
+            "It equals the sum of the channel direct figures: 0.92 + 0.20 + 0.02 + 0.27 = 1.41M."
+          ],
+          "src": "Estimate from the dashboard's own country models; nothing Belgian is published.",
+          "q": [
+            "pointS"
+          ],
+          "sure": {
+            "l": "Low",
+            "w": "An assumed share. Plausible range 36% to 50% of the pool (1.3M to 1.8M)."
+          },
+          "why": "Direct sales are the part of the pool that skips the wholesaler. Belgium has the same mix of manufacturer-linked chains, buying groups and independents as its neighbours, so its direct share should sit within the range of the others.",
+          "val": "No Belgian source publishes it. Best check: your own Belgian sell-in by account type (chains and fleets versus wholesalers).",
+          "vq": [
+            "pointS"
+          ]
+        },
+        "toWs": {
+          "v": 2.11,
+          "short": "Calculated: industry 3.52M − direct 1.41M.",
+          "how": [
+            "The pool's 3.52M minus the 1.41M that goes direct leaves 2.11M for wholesalers.",
+            "It carries the uncertainty of the direct share: each 5 points of the pool is about 0.18M."
+          ],
+          "src": "Calculated from the industry and direct figures.",
+          "sure": {
+            "l": "Low",
+            "w": "The industry figure is published; the direct share is an assumption."
+          },
+          "why": "What the pool does not sell direct goes to wholesalers and distributors.",
+          "val": "No Belgian source publishes it. Best check: your own Belgian sell-in by account type."
+        },
+        "wsDom": {
+          "v": 4.52,
+          "short": "Calculated: pool to wholesale + imports − exports.",
+          "how": [
+            "Wholesalers sold 4.52M in BELUX: 2.11M from the pool + 10.64M imports − 8.23M exports.",
+            "From the other side: market 5.93M − direct 1.41M = 4.52M. The two agree. It is about 76% of the market.",
+            "The wholesale layer handles 12.75M tyres in all (2.11M + 10.64M); 8.23M of them go on abroad."
+          ],
+          "src": "Calculated from the figures above.",
+          "sure": {
+            "l": "Low",
+            "w": "Built from the direct share and the customs proxy."
+          },
+          "val": "Cross-check with company data (November 2026): not possible. Deldo, the largest Belgian wholesaler, sells just under 8M tyres a year but is mainly an export house; its Belgian volume is estimated at 0.4M to 0.7M (about 8% of revenue, 2021), a small slice of the 4.52M. Its total is close to the 8.23M export, which supports the size of the export box."
         },
         "ch.spec.tot": {
-          "v": 3.93,
-          "short": "3.93M = 71% of the market. A benchmark share, not a measurement.",
+          "v": 4.21,
+          "short": "4.21M = 71% of the market. A benchmark share, not a measurement.",
           "how": [
-            "The market is 5.53M.",
+            "The market is 5.93M (Belgium and Luxembourg).",
             "No channel split is published for Belgium, so each channel gets a benchmark share. For Specialists, fast-fit and independent garages that is 71%.",
             "The benchmark starts from the published German split (BRV 2024: 71 / 20 / 3 / 6%) and the French split, then is adjusted for Belgium: the structure is close to the Netherlands and France.",
-            "71% × 5.53M = 3.93M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
+            "71% × 5.93M = 4.21M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
           ],
           "src": "Benchmark estimate: no Belgian channel split is published.",
           "sure": {
-            "l": "Low",
-            "w": "A placeholder share with an error of about ±6 points."
+            "l": "Medium",
+            "w": "A benchmark share, but a 2026 GiPA survey for Auto5 gives autocentres and independents a 70% share of tyre changes, close to the 71% used."
           },
           "what": "Tyre specialists, fast-fit chains and independent garages.",
           "why": "There is no published channel split for Belgium, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. The structure is close to the Netherlands and France.",
-          "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Belgium follows them cannot: the research allows an error of about ±6 points. Replace with your own Belgium channel data when you have it."
+          "val": "The German shares are published by BRV and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. The only Belgian check is the 70% share of tyre changes that autocentres and independents hold in the 2026 GiPA survey (Auto5's own release, no methodology given). Replace with your own Belgium channel data when you have it.",
+          "q": [
+            "gipa_ind"
+          ],
+          "vq": [
+            "gipa_ind"
+          ]
+        },
+        "ch.spec.ws": {
+          "v": 3.29,
+          "short": "About 78% of this channel arrives via wholesalers (modelled).",
+          "how": [
+            "Specialists, fast-fit and independent garages gets 4.21M tyres in total.",
+            "Assumed: about 78% of them (3.29M) arrive through wholesalers, the rest direct. No Belgian source publishes how channels buy.",
+            "The via-wholesale figures of all channels add up to the 4.52M that wholesalers sold in BELUX, and the direct figures to 1.41M."
+          ],
+          "src": "Modelled split: channel total minus direct. Not published.",
+          "sure": {
+            "l": "Low",
+            "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
+          },
+          "why": "Not published. The direct volume is shared across channels in proportion to how much each buys direct in the Netherlands, then scaled to Belgium's total.",
+          "val": "No Belgian source publishes how channels buy. Ask your Belgium sales team."
+        },
+        "ch.spec.dir": {
+          "v": 0.92,
+          "short": "Channel total minus via wholesale (22% of the channel).",
+          "how": [
+            "4.21M total − 3.29M via wholesale = 0.92M direct.",
+            "Manufacturer-linked chains (Euromaster, First Stop, Vulco), the central purchasing of the big groups (Auto 5, Point S, Profile, Eurotyre, Qteam) and fleet programmes buy direct; independent garages buy mostly through wholesalers."
+          ],
+          "src": "Calculated as the channel total minus the via-wholesale figure. Not published.",
+          "sure": {
+            "l": "Low",
+            "w": "Only as good as the via-wholesale assumption it is built from."
+          },
+          "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
+        },
+        "ch.spec.com": {
+          "v": 1.05,
+          "short": "About 25% commercial (modelled).",
+          "how": [
+            "Of Specialists, fast-fit and independent garages's 4.21M tyres, about 25% (1.05M) are assumed to go to companies, leasing firms and fleets.",
+            "The Dutch commercial share by channel (25% / 41% / 11% / 6%, anchored on lease-fleet and mileage data) is applied to Belgium; in total about 25% of the market (1.46M). Belgium has about 627,000 company cars (8.9% of the vehicle fleet in 2024) and 61.6% of new cars in 2024 were company cars (FEBIAC), so the true share may be higher.",
+            "Across all channels that adds up to 4.47M private and 1.46M commercial."
+          ],
+          "src": "No source publishes private versus commercial demand by channel. Modelled on the Dutch pattern.",
+          "q": [
+            "bt_company"
+          ],
+          "sure": {
+            "l": "Low",
+            "w": "The Dutch pattern is anchored on checked lease-fleet data, but Belgium has more company cars and the split by channel is not published."
+          },
+          "why": "About 25% commercial: company, lease and fleet cars plus vans. The Dutch pattern is used because it is the only anchored one; Belgium probably sits above it.",
+          "val": "No Belgian source publishes it. Best check: your Belgian fleet and lease sell-in.",
+          "vq": [
+            "bt_company"
+          ]
+        },
+        "ch.spec.prv": {
+          "v": 3.16,
+          "short": "About 75% private (channel total minus commercial).",
+          "how": [
+            "4.21M total − 1.05M commercial = 3.16M for private drivers."
+          ],
+          "src": "Calculated as the channel total minus the commercial figure. Not published.",
+          "sure": {
+            "l": "Low",
+            "w": "Carries the uncertainty of the commercial split."
+          },
+          "why": "No separate assumption: this is the channel total minus the commercial figure."
         },
         "ch.deal.tot": {
-          "v": 0.83,
-          "short": "0.83M = 15% of the market. A benchmark share, not a measurement.",
+          "v": 0.89,
+          "short": "0.89M = 15% of the market. A benchmark share, not a measurement.",
           "how": [
-            "The market is 5.53M.",
+            "The market is 5.93M (Belgium and Luxembourg).",
             "No channel split is published for Belgium, so each channel gets a benchmark share. For Car dealers / brand workshops that is 15%.",
             "The benchmark starts from the published German split (BRV 2024: 71 / 20 / 3 / 6%) and the French split, then is adjusted for Belgium: the dealer share is slightly above the Dutch level.",
-            "15% × 5.53M = 0.83M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
+            "15% × 5.93M = 0.89M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
           ],
           "src": "Benchmark estimate: no Belgian channel split is published.",
           "sure": {
@@ -6199,14 +6514,79 @@
           "why": "There is no published channel split for Belgium, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. The dealer share is slightly above the Dutch level.",
           "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Belgium follows them cannot: the research allows an error of about ±6 points. Replace with your own Belgium channel data when you have it."
         },
-        "ch.ret.tot": {
-          "v": 0.11,
-          "short": "0.11M = 2% of the market. A benchmark share, not a measurement.",
+        "ch.deal.ws": {
+          "v": 0.69,
+          "short": "About 78% of this channel arrives via wholesalers (modelled).",
           "how": [
-            "The market is 5.53M.",
+            "Car dealers / brand workshops gets 0.89M tyres in total.",
+            "Assumed: about 78% of them (0.69M) arrive through wholesalers, the rest direct. No Belgian source publishes how channels buy.",
+            "The via-wholesale figures of all channels add up to the 4.52M that wholesalers sold in BELUX, and the direct figures to 1.41M."
+          ],
+          "src": "Modelled split: channel total minus direct. Not published.",
+          "sure": {
+            "l": "Low",
+            "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
+          },
+          "why": "Not published. The direct volume is shared across channels in proportion to how much each buys direct in the Netherlands, then scaled to Belgium's total.",
+          "val": "No Belgian source publishes how channels buy. Ask your Belgium sales team."
+        },
+        "ch.deal.dir": {
+          "v": 0.2,
+          "short": "Channel total minus via wholesale (22% of the channel).",
+          "how": [
+            "0.89M total − 0.69M via wholesale = 0.20M direct.",
+            "Brand workshops and dealer groups order mostly through their importers and wholesalers; some of the large groups buy direct."
+          ],
+          "src": "Calculated as the channel total minus the via-wholesale figure. Not published.",
+          "sure": {
+            "l": "Low",
+            "w": "Only as good as the via-wholesale assumption it is built from."
+          },
+          "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
+        },
+        "ch.deal.com": {
+          "v": 0.36,
+          "short": "About 40% commercial (modelled).",
+          "how": [
+            "Of Car dealers / brand workshops's 0.89M tyres, about 40% (0.36M) are assumed to go to companies, leasing firms and fleets.",
+            "The Dutch commercial share by channel (25% / 41% / 11% / 6%, anchored on lease-fleet and mileage data) is applied to Belgium; in total about 25% of the market (1.46M). Belgium has about 627,000 company cars (8.9% of the vehicle fleet in 2024) and 61.6% of new cars in 2024 were company cars (FEBIAC), so the true share may be higher.",
+            "Across all channels that adds up to 4.47M private and 1.46M commercial."
+          ],
+          "src": "No source publishes private versus commercial demand by channel. Modelled on the Dutch pattern.",
+          "q": [
+            "bt_company"
+          ],
+          "sure": {
+            "l": "Low",
+            "w": "The Dutch pattern is anchored on checked lease-fleet data, but Belgium has more company cars and the split by channel is not published."
+          },
+          "why": "About 25% commercial: company, lease and fleet cars plus vans. The Dutch pattern is used because it is the only anchored one; Belgium probably sits above it.",
+          "val": "No Belgian source publishes it. Best check: your Belgian fleet and lease sell-in.",
+          "vq": [
+            "bt_company"
+          ]
+        },
+        "ch.deal.prv": {
+          "v": 0.53,
+          "short": "About 60% private (channel total minus commercial).",
+          "how": [
+            "0.89M total − 0.36M commercial = 0.53M for private drivers."
+          ],
+          "src": "Calculated as the channel total minus the commercial figure. Not published.",
+          "sure": {
+            "l": "Low",
+            "w": "Carries the uncertainty of the commercial split."
+          },
+          "why": "No separate assumption: this is the channel total minus the commercial figure."
+        },
+        "ch.ret.tot": {
+          "v": 0.12,
+          "short": "0.12M = 2% of the market. A benchmark share, not a measurement.",
+          "how": [
+            "The market is 5.93M (Belgium and Luxembourg).",
             "No channel split is published for Belgium, so each channel gets a benchmark share. For Other retail (parts stores, hypermarkets, petrol) that is 2%.",
-            "The benchmark starts from the published German split (BRV 2024: 71 / 20 / 3 / 6%) and the French split, then is adjusted for Belgium: no Belgian-specific information was found, so the benchmark is kept as is.",
-            "2% × 5.53M = 0.11M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
+            "The benchmark starts from the published German split (BRV 2024: 71 / 20 / 3 / 6%) and the French split. No Belgian-specific information was found, so the benchmark is kept as is.",
+            "2% × 5.93M = 0.12M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
           ],
           "src": "Benchmark estimate: no Belgian channel split is published.",
           "sure": {
@@ -6217,27 +6597,204 @@
           "why": "There is no published channel split for Belgium, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. No Belgian-specific information was found, so the benchmark is kept as is.",
           "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Belgium follows them cannot: the research allows an error of about ±6 points. Replace with your own Belgium channel data when you have it."
         },
-        "ch.onl.tot": {
-          "v": 0.66,
-          "short": "0.66M = 12% of the market. A benchmark share, not a measurement.",
+        "ch.ret.ws": {
+          "v": 0.1,
+          "short": "About 83% of this channel arrives via wholesalers (modelled).",
           "how": [
-            "The market is 5.53M.",
+            "Other retail (parts stores, hypermarkets, petrol) gets 0.12M tyres in total.",
+            "Assumed: about 83% of them (0.10M) arrive through wholesalers, the rest direct. No Belgian source publishes how channels buy.",
+            "The via-wholesale figures of all channels add up to the 4.52M that wholesalers sold in BELUX, and the direct figures to 1.41M."
+          ],
+          "src": "Modelled split: channel total minus direct. Not published.",
+          "sure": {
+            "l": "Low",
+            "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
+          },
+          "why": "Not published. The direct volume is shared across channels in proportion to how much each buys direct in the Netherlands, then scaled to Belgium's total.",
+          "val": "No Belgian source publishes how channels buy. Ask your Belgium sales team."
+        },
+        "ch.ret.dir": {
+          "v": 0.02,
+          "short": "Channel total minus via wholesale (17% of the channel).",
+          "how": [
+            "0.12M total − 0.10M via wholesale = 0.02M direct.",
+            "A very small channel; no information, so the Dutch propensity is used."
+          ],
+          "src": "Calculated as the channel total minus the via-wholesale figure. Not published.",
+          "sure": {
+            "l": "Low",
+            "w": "Only as good as the via-wholesale assumption it is built from."
+          },
+          "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
+        },
+        "ch.ret.com": {
+          "v": 0.01,
+          "short": "About 8% commercial (modelled).",
+          "how": [
+            "Of Other retail (parts stores, hypermarkets, petrol)'s 0.12M tyres, about 8% (0.01M) are assumed to go to companies, leasing firms and fleets.",
+            "The Dutch commercial share by channel (25% / 41% / 11% / 6%, anchored on lease-fleet and mileage data) is applied to Belgium; in total about 25% of the market (1.46M). Belgium has about 627,000 company cars (8.9% of the vehicle fleet in 2024) and 61.6% of new cars in 2024 were company cars (FEBIAC), so the true share may be higher.",
+            "Across all channels that adds up to 4.47M private and 1.46M commercial."
+          ],
+          "src": "No source publishes private versus commercial demand by channel. Modelled on the Dutch pattern.",
+          "q": [
+            "bt_company"
+          ],
+          "sure": {
+            "l": "Low",
+            "w": "The Dutch pattern is anchored on checked lease-fleet data, but Belgium has more company cars and the split by channel is not published."
+          },
+          "why": "About 25% commercial: company, lease and fleet cars plus vans. The Dutch pattern is used because it is the only anchored one; Belgium probably sits above it.",
+          "val": "No Belgian source publishes it. Best check: your Belgian fleet and lease sell-in.",
+          "vq": [
+            "bt_company"
+          ]
+        },
+        "ch.ret.prv": {
+          "v": 0.11,
+          "short": "About 92% private (channel total minus commercial).",
+          "how": [
+            "0.12M total − 0.01M commercial = 0.11M for private drivers."
+          ],
+          "src": "Calculated as the channel total minus the commercial figure. Not published.",
+          "sure": {
+            "l": "Low",
+            "w": "Carries the uncertainty of the commercial split."
+          },
+          "why": "No separate assumption: this is the channel total minus the commercial figure."
+        },
+        "ch.onl.tot": {
+          "v": 0.71,
+          "short": "0.71M = 12% of the market. A benchmark share, not a measurement.",
+          "how": [
+            "The market is 5.93M (Belgium and Luxembourg).",
             "No channel split is published for Belgium, so each channel gets a benchmark share. For Online that is 12%.",
-            "The benchmark starts from the published German split (BRV 2024: 71 / 20 / 3 / 6%) and the French split, then is adjusted for Belgium: no Belgian-specific information was found, so the benchmark is kept as is.",
-            "12% × 5.53M = 0.66M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
+            "The benchmark starts from the published German split (BRV 2024: 71 / 20 / 3 / 6%) and the French split. Belgian online datapoints exist but are weak (see the note), so the benchmark is kept.",
+            "12% × 5.93M = 0.71M. Treat it as a placeholder with an error of about ±6 points until your team replaces it."
           ],
           "src": "Benchmark estimate: no Belgian channel split is published.",
           "sure": {
             "l": "Low",
-            "w": "A placeholder share with an error of about ±6 points."
+            "w": "A benchmark share between a 2018 estimate and a 2026 driver survey."
           },
           "what": "Online sellers, counted by the seller of record (wherever the tyre is then fitted).",
           "why": "There is no published channel split for Belgium, so the best guide is how these channels split in Germany (BRV 2024: 71 / 20 / 3 / 6%) and France, where data exist. No Belgian-specific information was found, so the benchmark is kept as is.",
           "val": "The German shares are published by BRV (quotes in the Germany flow) and the French ones by the Syndicat du Pneu/GfK, so the benchmark itself can be checked. Whether Belgium follows them cannot: the research allows an error of about ±6 points. Replace with your own Belgium channel data when you have it.",
           "q": [
-            "traxio_online"
+            "traxio_online",
+            "gipa_onl"
           ],
-          "check": "The 12% online share is above the only Belgian datapoint, 7 to 8% in 2018 (Traxio Magazine, an industry executive's estimate). Online has grown since, but no later Belgian figure was found. At 7 to 8% the online total would be about 0.4M instead of 0.66M."
+          "check": "Belgian datapoints disagree in kind: 7 to 8% of tyres online in 2018 (Traxio, an executive's estimate) and 24% of drivers who buy tyres online in 2026 (GiPA for Auto5; a share of drivers, not of tyres). The 12% sits between them. At 8% the online total would be about 0.47M instead of 0.71M.",
+          "vq": [
+            "traxio_online",
+            "gipa_onl"
+          ]
+        },
+        "ch.onl.ws": {
+          "v": 0.44,
+          "short": "About 62% of this channel arrives via wholesalers (modelled).",
+          "how": [
+            "Online gets 0.71M tyres in total.",
+            "Assumed: about 62% of them (0.44M) arrive through wholesalers, the rest direct. No Belgian source publishes how channels buy.",
+            "The via-wholesale figures of all channels add up to the 4.52M that wholesalers sold in BELUX, and the direct figures to 1.41M."
+          ],
+          "src": "Modelled split: channel total minus direct. Not published.",
+          "sure": {
+            "l": "Low",
+            "w": "A modelled split. Nothing published confirms it, so overwrite it if you know better."
+          },
+          "why": "Not published. The direct volume is shared across channels in proportion to how much each buys direct in the Netherlands, then scaled to Belgium's total.",
+          "val": "No Belgian source publishes how channels buy. Ask your Belgium sales team."
+        },
+        "ch.onl.dir": {
+          "v": 0.27,
+          "short": "Channel total minus via wholesale (38% of the channel).",
+          "how": [
+            "0.71M total − 0.44M via wholesale = 0.27M direct.",
+            "Large online sellers buy from manufacturers and from German and Belgian wholesalers; the Dutch propensity (56%) is scaled down to 38%."
+          ],
+          "src": "Calculated as the channel total minus the via-wholesale figure. Not published.",
+          "sure": {
+            "l": "Low",
+            "w": "Only as good as the via-wholesale assumption it is built from."
+          },
+          "why": "No separate assumption: this is the channel total minus the via-wholesale figure, so it carries the same uncertainty as that split."
+        },
+        "ch.onl.com": {
+          "v": 0.04,
+          "short": "About 6% commercial (modelled).",
+          "how": [
+            "Of Online's 0.71M tyres, about 6% (0.04M) are assumed to go to companies, leasing firms and fleets.",
+            "The Dutch commercial share by channel (25% / 41% / 11% / 6%, anchored on lease-fleet and mileage data) is applied to Belgium; in total about 25% of the market (1.46M). Belgium has about 627,000 company cars (8.9% of the vehicle fleet in 2024) and 61.6% of new cars in 2024 were company cars (FEBIAC), so the true share may be higher.",
+            "Across all channels that adds up to 4.47M private and 1.46M commercial."
+          ],
+          "src": "No source publishes private versus commercial demand by channel. Modelled on the Dutch pattern.",
+          "q": [
+            "bt_company"
+          ],
+          "sure": {
+            "l": "Low",
+            "w": "The Dutch pattern is anchored on checked lease-fleet data, but Belgium has more company cars and the split by channel is not published."
+          },
+          "why": "About 25% commercial: company, lease and fleet cars plus vans. The Dutch pattern is used because it is the only anchored one; Belgium probably sits above it.",
+          "val": "No Belgian source publishes it. Best check: your Belgian fleet and lease sell-in.",
+          "vq": [
+            "bt_company"
+          ]
+        },
+        "ch.onl.prv": {
+          "v": 0.67,
+          "short": "About 94% private (channel total minus commercial).",
+          "how": [
+            "0.71M total − 0.04M commercial = 0.67M for private drivers."
+          ],
+          "src": "Calculated as the channel total minus the commercial figure. Not published.",
+          "sure": {
+            "l": "Low",
+            "w": "Carries the uncertainty of the commercial split."
+          },
+          "why": "No separate assumption: this is the channel total minus the commercial figure."
+        },
+        "prvAll": {
+          "v": 4.47,
+          "short": "About 75% of the market is private.",
+          "how": [
+            "The channels' private figures add up to 4.47M, about 75% of 5.93M.",
+            "Commercial is the rest. Belgium has many company cars, so private is probably a little overstated."
+          ],
+          "src": "Sum of the channel estimates.",
+          "q": [
+            "bt_company"
+          ],
+          "vq": [
+            "bt_company"
+          ],
+          "sure": {
+            "l": "Low",
+            "w": "The Dutch pattern applied to Belgium; see the commercial figure."
+          },
+          "why": "About 25% commercial, from the Dutch pattern. Belgium has about 627,000 company cars (8.9% of the fleet, 2024).",
+          "val": "Rough check: if Belgium had the same company-car mileage ratio as the Netherlands, the 8.9% company-car share (against 12.3% of Dutch cars owned by companies) would point to a lower commercial share, but the definitions differ and Belgian company cars are a younger, high-mileage fleet. The share is a placeholder."
+        },
+        "comAll": {
+          "v": 1.46,
+          "short": "About 25% of the market is commercial (company, lease, fleet, vans).",
+          "how": [
+            "The channels' commercial figures add up to 1.46M, about 25% of 5.93M.",
+            "It is the Dutch pattern applied to Belgium. Vans and light trucks lean commercial and are in the scope, so the true share may be higher."
+          ],
+          "src": "Sum of the channel estimates.",
+          "q": [
+            "bt_company"
+          ],
+          "vq": [
+            "bt_company"
+          ],
+          "sure": {
+            "l": "Low",
+            "w": "The Dutch pattern applied to Belgium."
+          },
+          "why": "About 25% commercial, from the Dutch pattern.",
+          "val": "Rough check: 626,645 company vehicles in 2024 (8.9% of the fleet, Ministry of Mobility via The Brussels Times). Not enough to size the commercial share on its own."
         }
       },
       "quotes": {
@@ -6245,7 +6802,7 @@
           "q": "Passenger and tourism-related tires accounted for 5,525,590 units, or 89.88% of the replacement market by units",
           "by": "Weibold (tyre-recycling consultancy, 26 July 2026), citing Recytyre's 2025 annual report. Quoted by the research; page not opened by us, and the Recytyre 2025 PDF could not be opened",
           "u": "https://weibold.com/recytyre-report-highlights-high-material-recovery-for-used-tires-in-belgium",
-          "note": "The same page gives total replacement tyres of 6,147,721 units, down 2.9% from 2024. The ratio checks: 5,525,590 / 0.8988 = 6.15M."
+          "note": "The same page gives total replacement tyres of 6,147,721 units, down 2.9% from 2024; the ratio checks: 5,525,590 / 0.8988 = 6.15M. It also gives first-fit (original equipment) tyres of 366,586 units (+4.4%) and 743 members placing 108,697 tonnes on the Belgian market. It does not report import and export declarations."
         },
         "recy24": {
           "q": "Personenwagen** | 5.729.829 | 90,48% | 5.441.728 | 5,3%",
@@ -6300,8 +6857,82 @@
           "u": "https://www.traxio.be/artikels/bandenspecialisten-veiligheidsaspect-van-banden-is-onze-troef",
           "en": "At the moment about 7 to 8% of tyres are sold via the internet.",
           "role": "context"
+        },
+        "snca_lu": {
+          "q": "Voitures particulières : 447 643 · Camionnettes et utilitaires légers : 41 919 · Poids lourds et tracteurs routiers : 11 223",
+          "by": "SNCA, file \"Types de véhicules par localité\" (June 2023), as reported by Lexio (lexio.rent)",
+          "u": "https://lexio.rent/blog/parc-vehicules-luxembourg-donnees-snca",
+          "en": "Luxembourg, June 2023: 447,643 passenger cars; 41,919 vans and light utility vehicles; 11,223 heavy vehicles and road tractors.",
+          "role": "context",
+          "kind": "table",
+          "note": "The fleet counts are read from a secondary page. The cars-per-tyre ratio used for Luxembourg comes from Belgium (5.53M tyres / 6.14M cars = 0.90)."
+        },
+        "wits_out23": {
+          "q": "Belgium | 742,160.66 (1000 USD) | 9,222,080 items   ·   Luxembourg | 42,563.07 | 403,780",
+          "by": "World Bank WITS / UN Comtrade, exports of HS 401110 by reporter, 2023 (read by us on the WITS page)",
+          "u": "https://wits.worldbank.org/trade/comtrade/en/country/ALL/year/2023/tradeflow/Exports/partner/WLD/product/401110",
+          "en": "Exports of new pneumatic tyres of a kind used on motor cars, 2023: Belgium 9,222,080 items; Luxembourg 403,780.",
+          "role": "check",
+          "kind": "table",
+          "note": "Shows that the Belgian export level moves by about 1M items from year to year (9.22M in 2023, 8.23M in 2024)."
+        },
+        "deldo_trends": {
+          "q": "Exacte cijfers over verkoopvolumes en merken geven we, om commerciële redenen, liever niet.",
+          "by": "Trends Business Information, \"Stille fortuinen van Vlaanderen: de autobandenfamilie Delcroix\" (Deldo)",
+          "u": "https://trends-business-information.be/nieuws/stille-fortuinen-van-vlaanderen-de-autobandenfamilie-delcroix",
+          "en": "We prefer not to give exact figures on sales volumes and brands, for commercial reasons.",
+          "role": "context",
+          "note": "The article gives Deldo's turnover of €506M in 2024 (operating profit €87M), 70 countries, and main markets Germany, the Benelux, France, Italy and Poland; it does not give a Belgian share or a volume."
+        },
+        "deldo_tp23": {
+          "q": "Deldo expects upwards of 10 million tyres a year for the family business in total, including about 8.5 million through the Antwerp wholesaler.",
+          "by": "Tyrepress, \"50 years of Deldo\" (October 2023), as summarised by a page reader (wording not verbatim)",
+          "u": "https://tyrepress.com/2023/10/50-years-of-deldo-from-niche-business-to-global-expansion",
+          "en": "About 8.5M tyres a year through the Antwerp wholesaler (2023 expectation). Germany is its largest market; its private labels sell in about 70 countries.",
+          "role": "context",
+          "note": "An earlier Tyrepress article (February 2019) gave \"more than 7 million tyres per annum\". Neither gives a split between Belgium and exports."
+        },
+        "bt_company": {
+          "q": "626,645 company vehicles, 8.9% of the total vehicle fleet (2024).",
+          "by": "The Brussels Times, 4 November 2024, citing the Ministry of Mobility and Transport (summarised by a page reader; wording not verbatim)",
+          "u": "https://brusselstimes.com/1294936/almost-one-in-ten-vehicles-on-belgian-roads-are-company-cars",
+          "en": "Belgium had 626,645 company vehicles in 2024, 8.9% of the vehicle fleet (271,949, or 4.7%, in 2007).",
+          "role": "context",
+          "note": "FEBIAC puts company cars at 61.6% of new passenger cars registered in 2024. The Dutch data used to anchor the commercial share (12.3% of cars owned by companies) are not defined in the same way."
+        },
+        "gipa_ind": {
+          "q": "Autocentra en andere onafhankelijke spelers blijven met 29% het populairste aankoopkanaal voor nieuwe banden. Voor bandenwissels hebben ze zelfs een marktaandeel van 70%.",
+          "by": "Auto5 press release on a GiPA study, 16 October 2026. Auto5 is itself a tyre retailer and gives no sample size, fieldwork dates or definition of the 70%",
+          "u": "https://auto5.prezly.com/onderzoek-auto5-prijs-primeert-boven-veiligheid-bij-keuze-autobanden",
+          "en": "Autocentres and other independents remain the most popular channel for buying new tyres, at 29%. For tyre changes they even hold a 70% market share.",
+          "role": "check",
+          "note": "The 70% is described as a share of tyre changes (fitting), which is close to the 71% used for specialists, fast-fit and independent garages. The 29% is a share of respondents."
+        },
+        "gipa_onl": {
+          "q": "Dat 33% van de automobilisten bandenprijzen online vergelijkt en 24% banden koopt via het internet.",
+          "by": "Auto5 press release on a GiPA study, 16 October 2026 (same release; methodology not disclosed)",
+          "u": "https://auto5.prezly.com/onderzoek-auto5-prijs-primeert-boven-veiligheid-bij-keuze-autobanden",
+          "en": "33% of motorists compare tyre prices online and 24% buy tyres via the internet.",
+          "role": "context",
+          "note": "Read as a share of drivers, not of tyres, so the share of tyres sold online is lower. It is the first Belgian online figure since the 7 to 8% of 2018."
+        },
+        "traxio_total": {
+          "q": "About 5.6 million tyres are traded in Belgium per year (about 6 million vehicles, about 15,000 km each).",
+          "by": "Traxio Magazine, 5 March 2018 (interview with Qteam), as summarised by a page reader (wording not verbatim)",
+          "u": "https://www.traxio.be/artikels/bandenspecialisten-veiligheidsaspect-van-banden-is-onze-troef",
+          "en": "About 5.6 million tyres are traded per year in Belgium.",
+          "role": "check",
+          "note": "An industry estimate from 2018, in the same range as Recytyre (5.44M in 2023, 5.73M in 2024, 5.53M in 2025)."
+        },
+        "pointS": {
+          "q": "plus de 120 centres en Belgique",
+          "by": "Point S Belux, network page",
+          "u": "https://www.point-s.be/point-s-reseau",
+          "en": "More than 120 centres in Belgium (Point S Belux was created in 2009 for Belgium and Luxembourg).",
+          "role": "context"
         }
-      }
+      },
+      "cname": "BELUX"
     },
     {
       "cells": {
