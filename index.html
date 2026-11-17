@@ -957,7 +957,7 @@ function renderWholesaleCheck(){
     const named=(k.sumLo!=null)?`<span class="nb">${wscRange(k.sumLo,k.sumHi)}</span><small>${esc(k.sumNote||'')}</small>`:(k.indicative?`<small>${esc(k.indicative.note)} ${wscRange(k.indicative.lo,k.indicative.hi)} of ${fvFmt(k.indicative.of)}M.</small>`:'—');
     let cov='—';
     if(L&&k.sumLo!=null){ const a=Math.round(100*k.sumLo/L.ws), b=Math.round(100*k.sumHi/L.ws); cov=(a===b)?a+'%':a+'–'+b+'%'; }
-    return `<tr class="wsc-row" data-wsc="${esc(k.iso)}"><td><b>${esc(k.country)}</b></td><td class="n">${layer}</td><td class="n">${named}</td><td class="n"><span class="nb">${cov}</span></td><td><span class="wv wv-${esc(k.vclass)}">${esc(k.verdict)}</span></td><td>${esc(k.confidence||'')}</td></tr>`;
+    return `<tr class="wsc-row" data-wsc="${esc(k.iso)}"><td><b>${esc(k.label||k.country)}</b></td><td class="n">${layer}</td><td class="n">${named}</td><td class="n"><span class="nb">${cov}</span></td><td><span class="wv wv-${esc(k.vclass)}">${esc(k.verdict)}</span></td><td>${esc(k.confidence||'')}</td></tr>`;
   }).join('');
   h+=`<div class="card"><h2>At a glance</h2><div class="fv-tbl-wrap"><table class="wsc-tbl"><thead><tr><th>Country</th><th>Wholesale layer in the dashboard (live)</th><th>Named wholesalers, tyres a year</th><th>Share of the layer</th><th>Verdict</th><th>Evidence</th></tr></thead><tbody>${rows}</tbody></table></div><p style="margin-top:8px;color:var(--ink-soft)">Click a row to open that country below. Company figures cover all tyre types and include exports and some own retail, so read them as ceilings, not exact matches.</p></div>`;
   // corrections
@@ -973,7 +973,7 @@ function renderWholesaleCheck(){
     }).join('');
     const ev=(k.evidence||[]).map(e=>`<li>${mk(e.chk)} <b>${esc(e.t)}.</b> ${esc(e.x)}</li>`).join('');
     const gaps=(k.gaps||[]).map(g=>`<li>${esc(g)}</li>`).join('');
-    return `<details class="wsc-c" id="wsc-${esc(k.iso)}"><summary><span class="wsc-name">${esc(k.country)}</span><span class="wv wv-${esc(k.vclass)}">${esc(k.verdict)}</span><span class="wsc-live">${L?`dashboard layer ${fvFmt(L.ws)}M of ${fvFmt(L.mk)}M`:'no wholesale figure in the flow yet'}</span></summary><div class="wsc-body"><p>${esc(k.headline)}</p>${k.sumLo!=null?`<p style="color:var(--ink-soft)">Named group: ${wscRange(k.sumLo,k.sumHi)} a year. ${esc(k.sumNote||'')}</p>`:''}${k.indicative?`<p style="color:var(--ink-soft)">Indicative layer from the research run: ${wscRange(k.indicative.lo,k.indicative.hi)} of the ${fvFmt(k.indicative.of)}M market. ${esc(k.indicative.note)}</p>`:''}${named?`<div class="fv-tbl-wrap"><table class="wsc-tbl"><thead><tr><th>Wholesaler</th><th>What was found</th><th>Tyres a year</th><th>Year</th><th>Label</th><th>Basis, source and quote</th></tr></thead><tbody>${named}</tbody></table></div>`:''}${ev?`<p style="margin-top:10px"><b>Other evidence</b></p><ul>${ev}</ul>`:''}${gaps?`<p style="margin-top:10px"><b>Not found</b></p><ul>${gaps}</ul>`:''}</div></details>`;
+    return `<details class="wsc-c" id="wsc-${esc(k.iso)}"><summary><span class="wsc-name">${esc(k.label||k.country)}</span><span class="wv wv-${esc(k.vclass)}">${esc(k.verdict)}</span><span class="wsc-live">${L?`dashboard layer ${fvFmt(L.ws)}M of ${fvFmt(L.mk)}M`:'no wholesale figure in the flow yet'}</span></summary><div class="wsc-body"><p>${esc(k.headline)}</p>${k.sumLo!=null?`<p style="color:var(--ink-soft)">Named group: ${wscRange(k.sumLo,k.sumHi)} a year. ${esc(k.sumNote||'')}</p>`:''}${k.indicative?`<p style="color:var(--ink-soft)">Indicative layer from the research run: ${wscRange(k.indicative.lo,k.indicative.hi)} of the ${fvFmt(k.indicative.of)}M market. ${esc(k.indicative.note)}</p>`:''}${named?`<div class="fv-tbl-wrap"><table class="wsc-tbl"><thead><tr><th>Wholesaler</th><th>What was found</th><th>Tyres a year</th><th>Year</th><th>Label</th><th>Basis, source and quote</th></tr></thead><tbody>${named}</tbody></table></div>`:''}${ev?`<p style="margin-top:10px"><b>Other evidence</b></p><ul>${ev}</ul>`:''}${gaps?`<p style="margin-top:10px"><b>Not found</b></p><ul>${gaps}</ul>`:''}</div></details>`;
   }).join('');
   // method + labels + next best
   h+=`<div class="card"><h2>How to read this</h2><ul>${(W.method||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p style="margin-top:10px"><b>Labels</b></p><ul>${(W.labels||[]).map(l=>`<li>${lab(l.label)} ${esc(l.text)}</li>`).join('')}</ul><p style="margin-top:10px"><b>Next best sources</b></p><ul>${(W.nextBest||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`;
@@ -1101,7 +1101,7 @@ function renderChannelLayers(c, flow, ci){
   const formula=(flow&&has('wsDom')&&has('toWs')&&has('import')&&has('export'))
     ? `<div class="layer-formula">${fvFmt(val.toWs)}M sold to wholesale by the industry (ETRMA pool) + ${fvFmt(val.import)}M imports (non-pool) − ${fvFmt(val.export)}M export = ${fvFmt(val.wsDom)}M</div>` : '';
   if(flow || wsEnts.length) h+=`<div class="layer-block layer-ws" data-jump-target="ws">
-    <div class="layer-head"><div class="layer-title">Wholesale sold in ${esc(c.country)}</div>${flow?`<div class="layer-vol">${volHtml('wsDom')}</div>`:''}${goto('ws')}</div>
+    <div class="layer-head"><div class="layer-title">Wholesale sold in ${esc((flow&&flow.cname)||c.country)}</div>${flow?`<div class="layer-vol">${volHtml('wsDom')}</div>`:''}${goto('ws')}</div>
     ${formula}
     ${flow?wscChipHtml(c.country):''}
     <p class="layer-sub">Distributors that buy from the manufacturers and importers and resell to the channels below${wsEnts.length?` (${wsEnts.length} named)`:''}.</p>
@@ -1226,7 +1226,7 @@ function renderDistSegment(countries, segKey){
 
     return `<details class="country">
       <summary>
-        <div><div class="country-name">${escapeHtml(c.country)}</div><div class="country-meta">${escapeHtml(c.meta||'')}</div></div>
+        <div><div class="country-name">${escapeHtml(c.label||c.country)}</div><div class="country-meta">${escapeHtml(c.meta||'')}</div></div>
         <div class="country-total">${totalHtml}</div>
       </summary>
       <div class="country-body">
@@ -1333,7 +1333,7 @@ function fvSankeyHtml(c, flow, R, nameOf){
   add('ind',0,'Industry (ETRMA pool)',v('industry'),'#1B3A8C','industry');
   add('imp',0,'Wholesale import (non-pool)',v('import'),'#B5701E','import');
   add('dir',1,'Direct from the manufacturers',v('direct'),BLUE,'direct');
-  add('ws',1,'Wholesale sold in '+(flow.europe?(flow.cname||'Europe'):c.country),v('wsDom'),RED,'wsDom');
+  add('ws',1,'Wholesale sold in '+(flow.cname||(flow.europe?'Europe':c.country)),v('wsDom'),RED,'wsDom');
   chs.forEach(ch=>add('c'+ch.id,2,nameOf(ch),v(T(ch.id)),'#3B4A6B',T(ch.id)));
   if(v('export')>0) add('exp',2,'Export',v('export'),GREY,'export');
   const chSum=chs.reduce((a,ch)=>a+v(T(ch.id)),0);
@@ -1381,11 +1381,11 @@ function fvSankeyHtml(c, flow, R, nameOf){
       s+=n.ph?`<text x="${n.x+NW+10}" y="${ty+13+lines.length*lh+3}" style="font-size:12px;fill:#8A93A8">needs input</text></g>`:`<text x="${n.x+NW+10}" y="${ty+13+lines.length*lh+3}" style="font-size:13px;font-weight:700;fill:${INK}">${fvFmt(n.value)}M</text></g>`;
     });
   });
-  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.country)} tyre flow as a Sankey diagram">${s}</svg>`;
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.label||c.country)} tyre flow as a Sankey diagram">${s}</svg>`;
 }
 function renderFlowView(c, flow){
   const R=flowSolve(flow), val=R.val, tier=R.tier, esc=escapeHtml;
-  const EU=!!flow.europe, cn=EU?(flow.cname||'Europe'):c.country, SH=EU?52:0; // Europe overview: no click-through, no private/commercial block
+  const EU=!!flow.europe, cn=flow.cname||(EU?'Europe':c.country), SH=EU?52:0; // Europe overview: no click-through, no private/commercial block
   const nameOf=ch=>{ const dc=(c.channels||[]).find(x=>x.flowBox===ch.id); return dc?dc.name:ch.name; };
   // Native width is about 1000px (with the stage labels), so the diagram fits the page box without sideways scrolling; CSS scales it down further on narrower screens.
   const n=flow.channels.length, GAP=10, CW=n<=4?192:(n===5?150:(n<=8?116:90));
@@ -1428,7 +1428,7 @@ function renderFlowView(c, flow){
   s+=node(indX,24,indW,60,'#E8EEFB',BLUE,'Industry (ETRMA pool)','industry');
   s+=node(impX,24,impW,60,'#FBE6D2','#B5701E','Wholesale import (non-pool)','import');
   s+=EU?node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+cn,'wsDom','to wholesale + imports − exports')
-    :`<g class="fv-jump" data-jump="ws" data-jump-target="ws">`+node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+c.country,'wsDom','to wholesale + imports − exports')+`<text x="${wsX+10}" y="${wsY+wsH-9}" style="font-size:10px;fill:#9A5B1E;text-decoration:underline">who? ›</text></g>`;
+    :`<g class="fv-jump" data-jump="ws" data-jump-target="ws">`+node(wsX,wsY,wsW,wsH,'#FFF1D6','#C98A3B','Wholesale sold in '+cn,'wsDom','to wholesale + imports − exports')+`<text x="${wsX+10}" y="${wsY+wsH-9}" style="font-size:10px;fill:#9A5B1E;text-decoration:underline">who? ›</text></g>`;
   s+=node(wsX+wsW+40,wsY+14,150,50,'#F2F3F7',GREY,'Export','export');
   const indCx=indX+indW/2, impCx=impX+impW/2;
   s+=line(`M${indCx} 84 V127 H${wsA} V${wsY-4}`,RED,'toWs',true);
@@ -1527,7 +1527,7 @@ function renderFlowView(c, flow){
     ${strip?`<div class="fv-strip">${strip}</div>`:''}
     ${walkHtml}
     ${sk?`<div class="fv-modes" role="group" aria-label="Diagram style"><button type="button" class="on" data-mode="boxes">Boxes and lines</button><button type="button" data-mode="sankey">Sankey</button></div>`:''}
-    <div class="fv-scroll fv-boxes"><svg width="${svgW}" height="${H}" viewBox="0 0 ${svgW} ${H}" role="img" aria-label="${esc(c.country)} tyre flow model">${s}</svg></div>
+    <div class="fv-scroll fv-boxes"><svg width="${svgW}" height="${H}" viewBox="0 0 ${svgW} ${H}" role="img" aria-label="${esc(c.label||c.country)} tyre flow model">${s}</svg></div>
     ${sk?`<div class="fv-scroll fv-sankey">${sk}<p class="tv-note">Ribbon width shows volume. Red goes through wholesale, blue goes straight from the manufacturers to the channel, grey leaves each channel for the final consumers. Hover a ribbon or a bar to see how that number was reached.${EU?'':' Click the Wholesale bar, the Direct bar or a channel bar to see who is behind it in the By channel tab.'}</p></div>`:''}
     <p class="tv-note">Dot colour: ${legend}.${estNote} ${EU?'':`<b>${missing}</b> of ${allIds.length} figures still need input`}${R.conflicts.length?`${EU?'':'; '}<b>${R.conflicts.length}</b> balance check${R.conflicts.length===1?'':'s'} do not add up`:''}${EU&&!R.conflicts.length?'':'.'} ${esc((flow.meta&&flow.meta.mappingNote)||'')} ${esc((flow.meta&&flow.meta.boxNote)||'')}</p>
     ${basis.table}${basis.qlist}
@@ -1572,7 +1572,7 @@ function fvExpl(flow,id,val){
 function fvLvPill(s){ if(!s||!s.l) return ''; return `<span class="fv-lv" style="color:${FV_LV[s.l]||'#555'};background:${FV_LVBG[s.l]||'#eee'}">${escapeHtml(s.l)}</span>`; }
 function fvWhat(flow,id,L,country0){
   const e=(flow.explain||{})[id]; if(e&&e.what) return e.what;
-  const country=fvThe(country0);
+  const country=flow.cname||fvThe(country0);
   const nm=String(L[id]||id).replace(/ · [^·]+$/,'');
   const m=/^ch\.[^.]+\.(tot|ws|dir|prv|com)$/.exec(id);
   if(m) return {tot:`All tyres sold through ${nm}, wholesale and direct together.`,ws:`The part of ${nm}'s tyres that reaches it through wholesalers (red line).`,dir:`The part of ${nm}'s tyres that reaches it straight from the manufacturer (blue line).`,prv:`The part of ${nm}'s tyres bought by private owners.`,com:`The part of ${nm}'s tyres bought by companies, leasing firms and fleets.`}[m[1]];
@@ -1739,7 +1739,7 @@ function fvWalkHtml(c,flow,R,nameOf,QN){
     const id=list.find(i=>tier[i]==='Estimate')||list[0];
     return wyH(fvExpl(flow,id,val),tier[id]==='Published',tag);
   };
-  const cty=esc(flow.europe?(flow.cname||'Europe'):fvThe(c.country)), steps=[];
+  const cty=esc(flow.cname||(flow.europe?'Europe':fvThe(c.country))), steps=[];
   if(has('market')) steps.push(`<b>The market.</b> About ${f('market')} replacement tyres were fitted in ${cty} (${esc(flow.scope||'')}, ${esc(String(flow.year||''))}).${sh('market')}${wy('market')}`);
   if(has('industry')) steps.push(`<b>What the big brands supplied.</b> The manufacturers that report to ETRMA (the “pool”) sold about ${f('industry')} into ${cty}. This is sell-in: manufacturer to trade, not trade to drivers.${sh('industry')}${wy('industry')}`);
   const routes=[];
@@ -1857,7 +1857,7 @@ function buildEuropeFlow(){
     const full=CORE.every(k=>k in v)&&f.channels.every(ch=>['tot','ws','dir'].every(s=>('ch.'+ch.id+'.'+s) in v));
     const chm={spec:null,deal:null,ret:null,onl:null};
     f.channels.forEach(ch=>{ const t=euChan(f.iso,ch.id), x=v['ch.'+ch.id+'.tot']; if(x!=null) chm[t]=(chm[t]||0)+x; });
-    rows.push({country:card.country,iso:f.iso,f:f,R:R,v:v,full:full,chm:chm,basis:euBasis(f)});
+    rows.push({country:card.label||card.country,iso:f.iso,f:f,R:R,v:v,full:full,chm:chm,basis:euBasis(f)});
   });
   const inc=rows.filter(r=>r.full).sort((a,b)=>b.v.market-a.v.market), out=rows.filter(r=>!r.full).sort((a,b)=>b.v.market-a.v.market);
   if(inc.length<2) return null;
