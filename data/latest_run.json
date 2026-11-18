@@ -1,23 +1,32 @@
 {
-  "runAt": "2026-11-17T15:42:18.520632+00:00",
-  "totalNew": 2,
+  "runAt": "2026-11-18T15:22:06.185105+00:00",
+  "totalNew": 3,
   "entitiesChecked": 118,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "A.T.U Auto-Teile-Unger": [
+    "Interpneu": [
       {
-        "title": "Licensable picture: ATU, Auto-Teile-Unger Handels GmbH & Co. KG, Tires, Rims, And Auto Parts; Automotive Services; Advertising Sign At A Branch - Reuters Connect",
-        "link": "https://news.google.com/rss/articles/CBMitANBVV95cUxNNXJHRF9iWnZHWURJWTVETTRlcEdoNGUzLW1jbUtoM2thdjViQkxUZkJEQWozc28tQ0h5aUp0clliT0xKTnh1dG54MExqdzVjVUNBS0ZsRjhXZ1d3UF9jWmpETnJnenZWR1JmcVoyRENidU52QzVrZDgtQk5abWlQTEJqUFlObnRNRVlaR2taemVnU21Oa3R3Nm5za0MzZHdvZlFNT1NSdjJCVmtqZHh3ZHlvcjJhcVFvQ0VCUHRMUFNES3hGWmVTWVVDWmxqQ0JCMldSRWFZVkdjY1JYeGdHNUlVVW44a3pTMkRhdnVHTDB4Zk5oVGhJWkpuU29hX2syaWhnamwxbTV3MlZQU1VzNEo0MC1RcnVRUk9Qbk1CSG9NTzYtWjBiMUdrY0QxV01uZ3NZRVA4dHdWMm1VMEN6X0h1S2Q2NVRta1huY0FhaXpRa2Z0eHN3VnpMNmU3M2pXNnlod1NQYS1Ia2h2SXNtMmE2dzlkd3FBMlJoVjB6LTZTc3ZsclhDdUI0NUR5WVkzSGZ3cFQ2Uk1VYXl4UFRGMmg3aFVPQWx0X2EtN0w1cDZCcTZI?oc=5",
-        "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+        "title": "Fiege expands operations to Britain - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE45RWhXOTB1MmpScGFqbHl5UVlkaDJBWTNMTEFDSkQ1QnhlZGZ4em13dDQtT3lmMFJ6Z3RmdWhxeHR2aTVnLXBfOXNRMzQyQ0pieFNXeTRITVp5RUpuTUxfOS1RSi0wNkt5eWlEcUdhdW1HeW9wSEtmRTdR?oc=5",
+        "pubDate": "Wed, 08 Oct 2025 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Halfords Autocentres": [
+    "Emil Frey": [
       {
-        "title": "Halfords: Sales up, pre-tax profits down, ‘major restructuring of tyre supply chain’ in 2024 - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOGpoYncwX3ZKejBOSVdLVUgzNlZUenNJNFctbGlGemJ5TlN6WUdfNFh0cGJNV2t4NUtxOUFseGNEd003R3BXNXdVTy1WZjNvNGYwUU5BR2FMY09peHFSYXowSDdKZXNMTHBiZ1RUN3RtR05WSlQ4eGZNREhVZjR3TE1zeC14OGxTWVRQa0lzeG1CcVlfZnJoX1d3NDh1NURjcnBrWWJkUU45bUVSY1lJcnFyYTVIajNoSEMwa3IwUQ?oc=5",
-        "pubDate": "Tue, 02 Jul 2024 07:00:00 GMT",
+        "title": "Emil Frey To Debut Lexus RC F GT3 In Blancpain At Nürbugring - dailysportscar.com",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMGpTeS1zMUFTa2J5Z044UlhTeks0Mm5Qa1RidlI4UndSeWRpTG5qTTg1bFVsMjh1RnBiQjZJem5wQzl4cU9KS1Y3T2pfaWx1MDFEaG5wU0hiTTJ1ZDBsdGxIb1BrNU9EQzNLRTBQbi1POWh1THdTdjBhdG5xMW5QdHY0WTBUQlM4NzJydzNZVHNrM1l1UFFaWnFTQkJfQjctX0VYX1VKUG01Nm8?oc=5",
+        "pubDate": "Wed, 06 Sep 2017 07:00:00 GMT",
+        "country": "Germany",
+        "cluster": "Central"
+      }
+    ],
+    "Bandvulc": [
+      {
+        "title": "Bibby goes for Bandvulc tyre management - Motor Transport",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbEdFTGNTSExZdXlVR04xQ181Wlhka2lwYk9ZVUNhUmpNcC1YSkNaNE9oQnc2X29fbjhjaTVleEtPTG85aHh3MkZSLVFVVXNvaGh0UEZQZEJlQmljVk96Z3FxcXUxNlYzemFVSkhkYTJ1eGg5U0VyQldpb1JScnh6SEppNzFSanZs?oc=5",
+        "pubDate": "Fri, 22 Feb 2013 08:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }

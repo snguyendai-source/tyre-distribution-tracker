@@ -1,23 +1,37 @@
 {
-  "runAt": "2026-11-17T15:42:18.520632+00:00",
-  "totalNew": 2,
+  "runAt": "2026-11-18T15:22:06.185105+00:00",
+  "totalNew": 4,
   "entitiesChecked": 26,
-  "entitiesWithNews": 2,
+  "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Toyo Tires": [
+    "Hankook": [
       {
-        "title": "Toyo’s European replacement tyre sales decline eases in Q3 2026 - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE51em9HSkhQay03dVFfSTVHWVEwTnJXR0loTkJpSjNwaWQxYTdZX3RUMTJ2RWZjWkVvamlFMC1rY25XN1B5VDNHWVVlZnB6SEJEb09V?oc=5",
-        "pubDate": "Mon, 16 Nov 2026 15:46:50 GMT",
-        "category": "Japanese"
+        "title": "Hankook Reports 2026 Q1 Revenue of EUR ~3,100.7 Million and Operating Profit of EUR ~295.8 Million - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNbXQycHNKU0ZncXppRlVlUjYwNUVTQk5YUlI5ZzNIZ0VZRVdBdVhCVXNUcTlycUVTWm03b3lkZF9QcEZfX0lIVlUycXprY2dLSi1YcXVzWWpyWEM4YVNhbzBWeHBPS2MxX3dWXzF1Uk9vUF8zZEdmVHF6aEtYVjhBUzAwanlXQVRpemkxX1NrYUJ4bjRPS1lPa0MwOFpHalNjcnlrMy1sOV8wU3c0NW9TUHZuNmJaT01jVGEwT1VPR1YzVm9hZC1fcWRLQjdSQlY0RnlpTGpyZWVDUXZTSkwxeFpNaGNvaThPVHV1RjN6X1pjNGtxazFGcTQwRHJmR2hUWGVFSzZqTXNOWEp3aDR5RHc3WWI?oc=5",
+        "pubDate": "Wed, 05 Aug 2026 07:00:00 GMT",
+        "category": "Korean"
+      },
+      {
+        "title": "Hankook Winter i*cept evo 4 wins Auto Bild Allrad winter tyre test for SUVs and crossovers - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOd1BtQUtRT1ZKUDdLUWxnNjhuYzlxbXhvNlVFaXl2Wi1ZZXpwLWZiSFl4T09YT3dvS0dBRnM3UzV5Q0o2TzNsSy10d2dBRlRLX3BIOHl6YmxlZmJPWTRVUDk2ZlZTOTdhOGd6a003VzZiMGRFSU1fMWhLV01XOE1MaVJadUxuR3F0alBnbngxRUQ3SDdMdVdweDdwbEtaYWhQcnlhYWpyeVFHak1ZbXducWt2dlpXcUhWZGVsNVdPZXgtT2gxSGJ0OXc5bmtGeE9oV1JhT2VRY1dKTEttam1tM09LeUdIU0dsNTNjQWRCU2p0LWUw?oc=5",
+        "pubDate": "Thu, 01 Oct 2026 07:00:00 GMT",
+        "category": "Korean"
       }
     ],
-    "Triangle Tyre": [
+    "Kumho Tire": [
       {
-        "title": "Triangle EffeXSport range developments designed to balance compound and construction - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaW1QeGwtY3ppNzVuYndBWEZ5RzZaYmtSWGx1RWxQSEFrSW9FTEhwN2drdkhmek9EU3JCRkl4SFlNX0otUHdyYmJvUE1fSXlCTXFiNkZ5X2NSYS1kel81WG5Sa0RUVV9QSFRNUU96SDgzM01VQURFcVpsNHptVHBNQlgwVVZGZVVWRkZ1aGRQNjQ3VG9HMlgwSG9BMnBqQnR0U0pMV2w1XzBPcmVvaDk0eFl2Q1NrTklTOXQw?oc=5",
-        "pubDate": "Wed, 19 Jul 2023 07:00:00 GMT",
-        "category": "Chinese"
+        "title": "S.Korea’s Kumho Tire to invest $751 mn to build plant in Europe - KED Global",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBUeHlFZTBsM1ZoeWxkTUtwNjNSTGlUXzllaTB2Y2t4N3lWME9XaXVFUXF6bEJYVVZVblZkNTJsWk4zblRua3Q4X1RkOTRHSVJ1S19Ib2pfUDJOTnF2MVFOR085TGd6SDJYWFVDSTVSRQ?oc=5",
+        "pubDate": "Sun, 17 Mar 2024 07:00:00 GMT",
+        "category": "Korean"
+      }
+    ],
+    "MRF Tyres": [
+      {
+        "title": "Team MRF will compete in the 2020 FIA European Rally Championship - EVO India",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSkVXR3ZNVml6SFphaWQ5OXlKNjhhaG5nSzBLUnlhMkpGWElUaTJHRjFCRGxIaVp5Sy1yY29zTGx3SThad3Bobi1Ga0pyc2hXVEhtRWJxdTBndWs2Z1NuMElWQzZnZzRpaG5BWkJhTW9LdXZOZU5zdXBTdlZmR2hIbHMwLTE2dkl0M3pR0gGYAUFVX3lxTE9XTXdtUmdJa3ZDS1d3OWk1QU5hYmF6YTZEdldNdGdoOFZ5SkZTVFBPTnZzbmp5V2pYd295Y2w4Zmwya3FJYXl3bzFWcjVuWVRvRjFIc3VhV1F0NFhfc1B1TW05ay1ZdmJqT1RIOC1KbGpCTy1HcUJLaGU4blptdURkZW1wQ1YzVnpBeVk5d1pFTW9LOG9lbTdh?oc=5",
+        "pubDate": "Wed, 05 Feb 2020 08:00:00 GMT",
+        "category": "Indian"
       }
     ]
   }
