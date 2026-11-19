@@ -1,34 +1,25 @@
 {
-  "runAt": "2026-11-18T15:22:06.185105+00:00",
-  "totalNew": 3,
+  "runAt": "2026-11-19T15:28:13.474138+00:00",
+  "totalNew": 2,
   "entitiesChecked": 118,
-  "entitiesWithNews": 3,
+  "entitiesWithNews": 2,
   "newItemsByEntity": {
-    "Interpneu": [
+    "Premio": [
       {
-        "title": "Fiege expands operations to Britain - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE45RWhXOTB1MmpScGFqbHl5UVlkaDJBWTNMTEFDSkQ1QnhlZGZ4em13dDQtT3lmMFJ6Z3RmdWhxeHR2aTVnLXBfOXNRMzQyQ0pieFNXeTRITVp5RUpuTUxfOS1RSi0wNkt5eWlEcUdhdW1HeW9wSEtmRTdR?oc=5",
-        "pubDate": "Wed, 08 Oct 2025 07:00:00 GMT",
+        "title": "Norris fears Las Vegas tyre nightmare as Verstappen warns F1 rubber turns 'like a rock' - Grande Prêmio",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOY2RkSmpKM3JnUmRzMndNQW1hLVhWOEtVbVRCZ1ZhWUNwZXRWekFvaG1JU2dMSGtBSVUwejg2V1hGNV9HeEpaZHl4dWVVQ0dNQ0gzWnd2ZXRYYVV4MlMtaElOc1duNkdIVHN6TE9hdkY1RGZwMFI3NkxRQjV0STI2NEJrOWFERVlUMG5XaGlRclEwYTB2MHJReDJ3em1YQjl3dzc0Y1lzM3hJdw?oc=5",
+        "pubDate": "Mon, 09 Nov 2026 08:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Emil Frey": [
+    "Grupo Andrés": [
       {
-        "title": "Emil Frey To Debut Lexus RC F GT3 In Blancpain At Nürbugring - dailysportscar.com",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMGpTeS1zMUFTa2J5Z044UlhTeks0Mm5Qa1RidlI4UndSeWRpTG5qTTg1bFVsMjh1RnBiQjZJem5wQzl4cU9KS1Y3T2pfaWx1MDFEaG5wU0hiTTJ1ZDBsdGxIb1BrNU9EQzNLRTBQbi1POWh1THdTdjBhdG5xMW5QdHY0WTBUQlM4NzJydzNZVHNrM1l1UFFaWnFTQkJfQjctX0VYX1VKUG01Nm8?oc=5",
-        "pubDate": "Wed, 06 Sep 2017 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
-      }
-    ],
-    "Bandvulc": [
-      {
-        "title": "Bibby goes for Bandvulc tyre management - Motor Transport",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbEdFTGNTSExZdXlVR04xQ181Wlhka2lwYk9ZVUNhUmpNcC1YSkNaNE9oQnc2X29fbjhjaTVleEtPTG85aHh3MkZSLVFVVXNvaGh0UEZQZEJlQmljVk96Z3FxcXUxNlYzemFVSkhkYTJ1eGg5U0VyQldpb1JScnh6SEppNzFSanZs?oc=5",
-        "pubDate": "Fri, 22 Feb 2013 08:00:00 GMT",
-        "country": "UK",
-        "cluster": "North-West"
+        "title": "‘Thank you for this journey together in the tyre sector’ – Yokohama's Cañizares reflects on 30-year career - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONC1UaHBOZ21lblRKV3o4N2ZMMUdwcXpwb3dWQkVsdTBnOGZTaV9jaHVLZ2p0WWlINUlwU1BFWmdOX1ZhMEkxaFcwZ3VmeVFGbnVMdHN5aFl1VXBxWTJOajZiWDZtWTIyYTU2aVdwMFpIeFhoYWhoWGZUd1dJc25MQW9VRUYxZEVrTDBsM2hKU2tzM2FPZE1kakRXUDlIWkdWdFFweUoyQUtMd0g2djlObFV5MUdOVzFGSGU0V2UwTXBwV084Y3dncQ?oc=5",
+        "pubDate": "Thu, 27 Nov 2025 08:00:00 GMT",
+        "country": "Spain",
+        "cluster": "South-West"
       }
     ]
   }
