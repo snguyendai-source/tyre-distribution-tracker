@@ -1,31 +1,31 @@
 {
-  "runAt": "2026-11-19T15:28:13.474138+00:00",
+  "runAt": "2026-11-20T15:05:21.989840+00:00",
   "totalNew": 3,
   "entitiesChecked": 26,
   "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Yokohama Rubber": [
+    "Michelin": [
       {
-        "title": "Yokohama’s Advan Sport V105 tires will be OE for Subaru Impreza in Europe, Latin America - Tire Review Magazine",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9wRzFCenZ4U1VZOHpnc1o5M2JFX0t5TEYzaFQzNFpROGpXRU5iZm1Xc2FBYmpadHlOOE1rYUthSlZrWU9TNFVvT2R6b3NaN3E1dUpSblhhUmp4bHZBWGJPeXY2amtxVlhr?oc=5",
-        "pubDate": "Wed, 10 Apr 2024 07:00:00 GMT",
-        "category": "Japanese"
+        "title": "Michelin sees further truck tire OE recovery into 2027 - European Rubber Journal",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbHdINy1mdTlxbWZmcVRpOEhteDkzbjk1Q1dxaVEzS1pJU0wwZ2t6bzdsOTd0Skx5U05oeVhzYUozSElWYy0yNlFMV3h5UHNjdDFzcFZ2NXNpa2xmWk85b2piS1lNcE5pdS10VGVtWlBWaS1WbjlzSWRwTE5VY203Y0ZyeTdBaEtPWGJ5djgzZ0FGQms5d1JrMEo5REdFeld2QThPQWhKcEw4RWdHSVhr?oc=5",
+        "pubDate": "Fri, 20 Nov 2026 08:41:57 GMT",
+        "category": "Premium global"
       }
     ],
-    "Nankang Rubber": [
+    "Hankook": [
       {
-        "title": "Tire Business ranks Top 75 global tire makers in 2022 - Tire Business",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQldialJ0RC1WVndrWWVINll6d2FSbE10T3ZnZDl1MWxhZV9ibzZHcnlLZjdqZUV2YlJfYTZ6SVZWdE5PQmRHa2RWSk1BYVJ3enR6bFdIUklDeHE5UGR1LWRlaU9xa0xOZGZpTlZtZm5wbDZWNmhma090Ny1yVnVLSmpDbjJjb2oydHNNZTROcDFxanl5aS1ZeGs3N0ZwZGVv?oc=5",
-        "pubDate": "Fri, 26 Aug 2022 07:00:00 GMT",
-        "category": "Taiwanese"
+        "title": "China exposure set to widen profit gap among Korean tire makers - The Korea Times",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVGRBaTctd254T2xqdUtadFlac2Zub0syNHNmRzlvNUpxWXdjUEZJZmpiUU0wTlpRakV1Uno0eF95cUdYck0xRXFaMVJ5MW5VRmhfdXN4XzdXQkE1QVl0WVk5NDAwMldwZEZIVFVWaFB5d2FrNHYwdzBseVhSNHBjUE9jc19jYVBZRDFYU0R3NE9zVXoyV2ZxaWNIbXBLMnU2cDBvN21FV3RkUkNoZUVOcnkyblUwX0pEMl9Mb9IBwgFBVV95cUxQWmlfS2FmNUl2LVAyOUFTRkxMN1FJVk12bG5WUVJpNW02RFpla29QY09TR1pydXRGYVZ2ZHdhdFNwME9jbkhOeGlFSnZxX1VQdl9ZZUt6LS0xbGxGSUx0aXQ3NHZtVkR5NnlVX3hFQTQzUXVneDlKTWxnRy1sSkFsdTVrMnR4NVRvZS12UUlIM1NSdE9jVTNDbTJWQmRhZnJCLXp2Qm5yRmJnanlKZ2xoOWQySGFGdEM0TmlMNjZDaGtKdw?oc=5",
+        "pubDate": "Thu, 19 Nov 2026 22:00:00 GMT",
+        "category": "Korean"
       }
     ],
-    "CEAT": [
+    "Sailun Tire": [
       {
-        "title": "CEAT expands Chennai plant to make premium tyres for India, global markets - ET Auto",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNN3hVYnRjeklqeVEzRW5zLWhOcVFYY1l0eDhQMDBuN0ZUNGN0ZTNZN3daLWJUaHlnLXJlRm1qYkpVWl9mODJCSi1XT0ZBNWk0bUtXcGU5R2RUTkJ4clVWdkszZDZBTkFZdDU5SXRFWFhXc1FnXzQtTU5qY1JPeWl2YzVKWDdwWmRydWNPUGRYVkdoanV2aEMxdVUxN1R0anlfZTIyNjQ3WFNGaFBObmh6cE1mV1JEaEd0aDJnSG1jeU1FeU5PcnlXLVpqZ1NmcXZfN0HSAdYBQVVfeXFMTmlHcGdZNlZFVXVhbDNoVkRmOUtFYlFiUUFnNm50S2RhRFE4NVlDb3JVVDdCNkRRdmYyQW5HX0tJTDk4UjhpN215c1VwNlFUUVpXcHZwdzB0MmZzNk42ZlA5WVJKZ0pyZ25GbXdDSGhtUE9VZDI2ZDVtOVVUSDBubjRTV0FiTThnd2JkblQ0bEUtYm56STNYYW40bDJwTER3LW5mYmZya1N3V3oyM1R5TDJldG5fbGZZd0Z1anctS0hQVzJXWWFzbThSM1pEV3ZlZEktcnFOQQ?oc=5",
-        "pubDate": "Fri, 02 Oct 2026 07:00:00 GMT",
-        "category": "Indian"
+        "title": "Global tire investments increase by $2 billion - Rubber News",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNWGdQQW5fNGw2UjJaLU5HYXNwSHZSclladmpHWXV4REJwR1g3WWJ2c1VTcEpPQVh3a3RDcUJ0Yzg3a0xWZlY1NkpaNk9abWUwTEpGU1o2Sm9zeVRURzVPLXdEWVlQWThkd3RMemxBbHc3ZDBzejgtY3lKRElWQU5Idg?oc=5",
+        "pubDate": "Mon, 13 Sep 2021 07:00:00 GMT",
+        "category": "Chinese"
       }
     ]
   }
