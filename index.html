@@ -90,6 +90,7 @@
   .country-name{ font-size:16px; font-weight:700; color:var(--navy); }
   .country-meta{ font-size:12px; color:var(--ink-soft); margin-top:2px; }
   details.country.europe{ border-left:5px solid var(--teal); }
+  .td-fold{ margin-top:12px; } .td-fold > summary{ font-size:12px; color:var(--teal-ink); }
   .eu-cap{ font-size:10.5px; font-weight:800; letter-spacing:.4px; text-transform:uppercase; color:var(--teal-ink); margin:14px 0 4px; }
   .eu-go{ appearance:none; border:none; background:none; padding:0; font:inherit; font-weight:700; color:var(--teal-ink); cursor:pointer; text-decoration:underline dotted; text-underline-offset:3px; text-align:left; }
   .eu-go:hover{ text-decoration:underline; }
@@ -1847,6 +1848,138 @@ function euBasis(f){
   const vans=/excludes (vans|light commercial)/i.test(f.scope||'')?'excl. vans':'incl. vans';
   return {year:yr, short:(y?'RY'+y[1]:String(f.year||''))+' · '+vans, vans:vans, rolling:!!y};
 }
+// ---- Europe: top-down cross-check (research run, 23 Nov 2026) --------------------------------
+// Every input is a constant here so it can be replaced when better data arrive. Million tyres unless stated.
+// Tier of each input: Published (read in an official source), Derived (arithmetic on published figures), Estimate (assumption, basis given).
+const EU_TD={
+  asOf:'26 Nov 2026',
+  band:{lo:0.23,mid:0.30,hi:0.37}, // research run's judgement band for the EU27 non-pool share of replacement; centre = midpoint
+  eu27:{ // EU27, 2024, new car and light-lorry tyres (CN 4011 10 00 + 4011 20 10), OE and replacement, all brands
+    prod:251.768971, impChina:92.988175, impOther:64.303756, korea:19.365770,
+    expCar:68.600930, expLt:5.766938, cons:335.932482 },
+  inputs:{ // ranges are assumptions, not sourced figures
+    oe:[50,65], china:[0.75,0.90], korea:[0.15,0.35], other:[0.30,0.60], reexp:[5,15], oeNp:[2,5], stock:[5,10] },
+  pool:{y2024:227.741,y2025:224.133}, // Europool consumer replacement, Tyres Europe Q4 2025 update, million
+  gross:{ ukImp:46.83, ukFromEu:13.06, chImp:7.15, chFromEu:6.22, npShare:[0.60,0.75], weight:[0.75,0.80] },
+  // customs, 2024, new car tyres, million pieces: [imports, exports, flag]. UK and CH from UN Comtrade (flagged estimated by the reporter).
+  customs:{DE:[87.96,53.13],FR:[55.14,20.28],NL:[37.21,26.44],IT:[35.74,18.47],ES:[31.56,21.82],PL:[21.74,31.68],BE:[15.85,8.91],HU:[8.71,33.17],AT:[7.37,1.13],UK:[46.83,2.86,'est'],CH:[7.15,0.27,'est']},
+  expBasis:{DE:'closing figure of the flow (pool − market + imports)',UK:'balancing assumption, informed by HMRC exports',NL:'estimate: fee refunds plus the closing figure',BE:'Belgian customs exports, 2024',IT:'estimate: independent distributors only',AT:'closing figure of the flow',HU:'estimate',CH:'estimate',PL:'scenario: no Polish statistic exists'}
+};
+function euTdModel(V){
+  const T=EU_TD, e=T.eu27, I=T.inputs, B=T.band, mk=V.market, ind=V.industry, net=euR1(V.import-V.export);
+  const oth=e.impOther-e.korea;
+  const npLo=I.china[0]*e.impChina+I.korea[0]*e.korea+I.other[0]*oth, npHi=I.china[1]*e.impChina+I.korea[1]*e.korea+I.other[1]*oth;
+  const dedLo=I.reexp[0]+I.oeNp[0]+I.stock[0], dedHi=I.reexp[1]+I.oeNp[1]+I.stock[1];
+  const repLo=e.cons-I.oe[1], repHi=e.cons-I.oe[0], netLo=npLo-dedHi, netHi=npHi-dedLo;
+  const apparent=e.prod+e.impChina+e.impOther-e.expCar-e.expLt;
+  const pos=net<B.lo*mk?'below the band':(net>B.hi*mk?'above the band':'inside the band'), ctr=net<B.mid*mk?'below':'above';
+  return {T:T,e:e,I:I,B:B,mk:mk,ind:ind,net:net,share:net/mk,oth:oth,npLo:npLo,npHi:npHi,dedLo:dedLo,dedHi:dedHi,repLo:repLo,repHi:repHi,netLo:netLo,netHi:netHi,
+    wide:{lo:netLo/repHi,hi:netHi/repLo},apparent:apparent,pos:pos,ctr:ctr,
+    at:s=>({share:s,net:s*mk,pool:mk-s*mk})};
+}
+function renderEuropeTopDown(E){
+  const esc=escapeHtml, M=euTdModel(E.val), T=M.T, e=M.e, I=M.I, B=M.B, V=E.val;
+  const f1=x=>(x==null||isNaN(x))?'—':euR1(x).toFixed(1), p0=x=>Math.round(100*x)+'%', pill=t=>tierPill(t);
+  const pr=a=>f1(a[0])+'–'+f1(a[1]), rng=a=>Math.round(100*a[0])+'–'+Math.round(100*a[1])+'%';
+  // customs against the model
+  let cI=0,cX=0; const crow=E.inc.map(r=>{
+    const c=T.customs[r.iso]; if(!c) return ''; cI+=c[0]; cX+=c[1];
+    const bas=(r.v.export===0||r.v.export==null)?'set to zero by convention':(T.expBasis[r.iso]||'estimate');
+    return `<tr><td>${esc(r.country)}${r.iso==='BE'?' <span style="color:#6B7487">(Belgium only)</span>':''}${c[2]?' <span style="color:#6B7487">*</span>':''}</td><td class="n">${f1(c[0])}</td><td class="n">${f1(c[1])}</td><td class="n">${f1(r.v.import)}</td><td class="n">${f1(r.v.export||0)}</td><td class="w" style="white-space:normal">${esc(bas)}</td></tr>`; }).join('');
+  const ctbl=`<div class="fv-tbl-wrap"><table class="fv-tbl td-tbl" style="min-width:600px"><thead><tr><th>Country</th><th class="n">Customs import</th><th class="n">Customs export</th><th class="n">Model import</th><th class="n">Model export</th><th>How the model’s export is set</th></tr></thead><tbody>${crow}<tr class="eu-tot"><td><b>Total</b></td><td class="n">${f1(cI)}</td><td class="n">${f1(cX)}</td><td class="n">${f1(V.import)}</td><td class="n">${f1(V.export)}</td><td></td></tr></tbody></table></div>`;
+  // band table
+  const cols=[['Low',B.lo],['Centre',B.mid],['High',B.hi]].map(([n,s])=>[n,M.at(s)]);
+  const btbl=`<div class="fv-tbl-wrap"><table class="fv-tbl td-tbl" style="min-width:520px"><thead><tr><th></th>${cols.map(c=>`<th class="n">${c[0]}</th>`).join('')}<th class="n">This model</th></tr></thead><tbody>
+    <tr><td>Non-pool share of replacement</td>${cols.map(c=>`<td class="n">${p0(c[1].share)}</td>`).join('')}<td class="n"><b>${p0(M.share)}</b></td></tr>
+    <tr><td>Net non-pool supply, M (model: import − export)</td>${cols.map(c=>`<td class="n">${f1(c[1].net)}</td>`).join('')}<td class="n"><b>${f1(M.net)}</b></td></tr>
+    <tr><td>Pool sell-in implied, M (market − net)</td>${cols.map(c=>`<td class="n">${f1(c[1].pool)}</td>`).join('')}<td class="n"><b>${f1(M.ind)}</b></td></tr></tbody></table></div>`;
+  // mass balance
+  const mb=(lbl,v,t,src,b)=>`<tr><td>${b?`<b>${lbl}</b>`:lbl}</td><td class="n">${f1(v)}</td><td>${pill(t)}</td><td class="w" style="white-space:normal">${src}</td></tr>`;
+  const mtbl=`<div class="fv-tbl-wrap"><table class="fv-tbl td-tbl" style="min-width:560px"><thead><tr><th>EU27, 2024</th><th class="n">M tyres</th><th>Type</th><th>Source</th></tr></thead><tbody>
+    ${mb('EU production',e.prod,'Published','Regulation (EU) 2026/1540, Table 5 (Tyres Europe, Eurostat)')}
+    ${mb('+ imports from China',e.impChina,'Published','Table 3 (Eurostat)')}
+    ${mb('+ imports from other third countries',e.impOther,'Published','Table 17 (Eurostat)')}
+    ${mb('− exports outside the EU, CN 4011 10 00',e.expCar,'Published','Eurostat Comext, read by the research run')}
+    ${mb('− exports outside the EU, CN 4011 20 10',e.expLt,'Published','Eurostat Comext, read by the research run')}
+    ${mb('= apparent consumption',M.apparent,'Derived','Arithmetic',true)}
+    ${mb('EU consumption in the Regulation',e.cons,'Published','Table 2 (source: Europool / Tyres Europe)',true)}
+    <tr><td>Gap</td><td class="n">${f1(M.apparent-e.cons)}</td><td>${pill('Derived')}</td><td class="w" style="white-space:normal">${(100*(M.apparent-e.cons)/e.cons).toFixed(1)}% of consumption</td></tr></tbody></table></div>`;
+  // band build
+  const row=(lbl,a,b,t,why)=>`<tr><td>${lbl}</td><td class="n">${f1(a)}</td><td class="n">${f1(b)}</td><td>${pill(t)}</td><td class="w" style="white-space:normal">${why}</td></tr>`;
+  const btb=`<div class="fv-tbl-wrap"><table class="fv-tbl td-tbl" style="min-width:640px"><thead><tr><th>Step (EU27, 2024)</th><th class="n">Low case</th><th class="n">High case</th><th>Type</th><th>Basis</th></tr></thead><tbody>
+    ${row('EU27 consumption, OE and replacement',e.cons,e.cons,'Published','Table 2 of the Regulation')}
+    ${row('− OE tyres',I.oe[0],I.oe[1],'Estimate','About 4–5 tyres per light vehicle built. No source figure was found.')}
+    ${row('= replacement market',M.repHi,M.repLo,'Derived','Low case keeps the smaller OE figure')}
+    ${row(`Non-pool imports from China (${rng(I.china)} of ${f1(e.impChina)})`,I.china[0]*e.impChina,I.china[1]*e.impChina,'Estimate','The complainant said under 10% of Chinese imports were Hankook tier 1–2; pool members’ Chinese plants are the rest')}
+    ${row(`Non-pool imports from South Korea (${rng(I.korea)} of ${f1(e.korea)})`,I.korea[0]*e.korea,I.korea[1]*e.korea,'Estimate','Mostly Kumho; Hankook and Nexen are pool')}
+    ${row(`Non-pool imports from other origins (${rng(I.other)} of ${f1(M.oth)})`,I.other[0]*M.oth,I.other[1]*M.oth,'Estimate','Japan, Thailand, Türkiye, Serbia, India, Vietnam, Indonesia, Taiwan')}
+    ${row('− re-exports, non-pool OE use and stock build',M.dedHi,M.dedLo,'Estimate',`Re-exports ${pr(I.reexp)}, non-pool OE ${pr(I.oeNp)}, stock build ${pr(I.stock)}`)}
+    <tr class="eu-tot"><td><b>= net non-pool supply to replacement</b></td><td class="n">${f1(M.netLo)}</td><td class="n">${f1(M.netHi)}</td><td>${pill('Derived')}</td><td class="w" style="white-space:normal"></td></tr>
+    <tr class="eu-tot"><td><b>Share of replacement</b></td><td class="n">${p0(M.wide.lo)}</td><td class="n">${p0(M.wide.hi)}</td><td>${pill('Derived')}</td><td class="w" style="white-space:normal">Low case: smallest supply over the largest market. High case: the reverse.</td></tr></tbody></table></div>`;
+  // gross frame
+  const G=T.gross, ukNon=G.ukImp-G.ukFromEu, chNon=G.chImp-G.chFromEu, outside=e.impChina+e.impOther+ukNon+chNon;
+  const npA=outside*G.npShare[0], npB=outside*G.npShare[1], inA=npA*G.weight[0], inB=npB*G.weight[1];
+  const grow=(lbl,v,t,why)=>`<tr><td>${lbl}</td><td class="n">${v}</td><td>${pill(t)}</td><td class="w" style="white-space:normal">${why}</td></tr>`;
+  const gtbl=`<div class="fv-tbl-wrap"><table class="fv-tbl td-tbl" style="min-width:560px"><thead><tr><th>Rough sizing, 2024</th><th class="n">M tyres</th><th>Type</th><th>Basis</th></tr></thead><tbody>
+    ${grow('Imports into the EU27 from outside',f1(e.impChina+e.impOther),'Published','China plus other third countries (Regulation, Tables 3 and 17)')}
+    ${grow('+ UK imports not coming from the EU',f1(ukNon),'Derived',`UK imports ${f1(G.ukImp)} (UN Comtrade, flagged estimated) minus EU exports to the UK ${f1(G.ukFromEu)} (Comext)`)}
+    ${grow('+ Swiss imports not coming from the EU',f1(chNon),'Derived',`Swiss imports ${f1(G.chImp)} minus EU exports to Switzerland ${f1(G.chFromEu)}`)}
+    ${grow('= imports from outside EU27, UK and Switzerland',f1(outside),'Derived','Sum')}
+    ${grow(`Non-pool part (${rng(G.npShare)})`,pr([npA,npB]),'Estimate','Follows from the origin splits above')}
+    ${grow(`Share that reaches these ${E.nC} countries (${rng(G.weight)})`,pr([inA,inB]),'Estimate','Their weight in Europe’s replacement market; not sourced')}
+    ${grow('This model’s net non-pool supply',f1(M.net),'Derived','Import minus export')}
+    ${grow('Left over: re-exported beyond these countries, stocked, or used as OE',pr([inA-M.net,inB-M.net]),'Estimate','Difference of the two lines above')}</tbody></table></div>`;
+  const src=[
+    ['Regulation (EU) 2026/1540, Tables 2, 3, 5, 6, 17','EU27 consumption, production, industry sales and imports, 2021–2024','Published. Figures checked against the Official Journal text.'],
+    ['Eurostat Comext DS-045409, EU27 total','Exports outside the EU, CN 4011 10 00: 72.2, 68.6 and 68.3M in 2023, 2024, 2025; CN 4011 20 10: 5.8M in 2024','Published. Read from the Eurostat API by the research run; not re-opened here.'],
+    ['Eurostat Comext via Radial Insights','Imports from outside the EU, CN 4011 10 00: 125.4, 144.9 and 155.8M in 2023, 2024, 2025; China 59–61%','Secondary. Cites Comext; consistent with the Regulation.'],
+    ['Eurostat Comext, member states, partner world','Country customs, 2024 (table above)','Published. Read by the research run. Intra-EU and extra-EU not split; Luxembourg not pulled.'],
+    ['UN Comtrade, UK and Switzerland','UK 46.8M imports and 2.9M exports; Switzerland 7.2M and 0.3M, 2024','Published, but flagged as estimated by the reporters. Verify with HMRC and BAZG.'],
+    ['Tyres Europe quarterly updates (Europool)','Pool consumer replacement sales: 227.7M in 2024 (revised), 224.1M in 2025 (−2%)','Published. Q4 2025 update read by the research run.'],
+    ['Tyres Europe import series, via ERJ, Tyrepress, Astutus','Imports into the EU27 and UK by origin, monthly (timing section)','Secondary. Trade-press reports of Tyres Europe data.'],
+    ['Europneus via Latin Tire News','Spain 2019: about 15M Europool and about 7M non-pool (32%)','Estimate. Trade press.'],
+    ['Not used','IndexBox UK and EU trade figures (model-based and internally inconsistent); generic market reports giving “wholesalers 58.6%” (all automotive parts, not tyres)','Excluded on purpose.']];
+  const stbl=`<div class="fv-tbl-wrap"><table class="fv-tbl td-tbl" style="min-width:600px"><thead><tr><th>Source</th><th>Used for</th><th>How far it was checked</th></tr></thead><tbody>${src.map(s=>`<tr><td class="w" style="white-space:normal">${esc(s[0])}</td><td class="w" style="white-space:normal">${esc(s[1])}</td><td class="w" style="white-space:normal">${esc(s[2])}</td></tr>`).join('')}</tbody></table></div>`;
+  const nxt=['Comext by partner for all 12 reporters, both CN codes, units, 2023–2025 and monthly. Split each country’s flows into partners inside and outside these countries; the inside flows cancel, leaving a customs-based import and export for the whole bloc.',
+    'Europool country-level pool sell-in for these countries, with the exact Europool geography and how vans and light trucks are treated in Germany, France and Switzerland. This tests the pool figure and its '+p0(M.ind/T.pool.y2024)+' share of the Europe-wide total.',
+    'End-of-life tyre scheme declarations of new tyres placed on the market, all brands (ADEME in France, Ecopneus in Italy, SIGNUS in Spain, MOHU in Hungary, plus RecyBEM and Recytyre). The best independent check on each country’s market.',
+    'National-concept trade for Belgium (NBB) and the Netherlands (CBS), and country of consignment against country of origin. This sizes the quasi-transit and re-export business of the two hubs.',
+    'HMRC (uktradeinfo) and Swiss-Impex (BAZG) for CN 4011 10 00 and 4011 20 10 by partner, 2023–2026, to replace the estimate-flagged Comtrade records.',
+    'PRODCOM 22.11.11 by country in units. Production in these countries plus customs net imports must equal replacement plus OE plus stock change, which tests the market and pool figures together.',
+    'Astutus European Tire Trade Database (paid): monthly origin-level series aligned to Tyres Europe, for an origin-weighted non-pool coefficient.',
+    'Sell-out panels (GfK, NIQ) by brand tier for Germany, France, Italy, Spain and the UK, to set a country-specific non-pool share.'];
+  const zeroL=E.inc.filter(r=>!(r.v.export>0)).map(r=>r.country), zeroTxt=zeroL.length>1?zeroL.slice(0,-1).join(', ')+' and '+zeroL[zeroL.length-1]:(zeroL[0]||''), deR=E.inc.find(r=>r.iso==='DE'), deX=deR&&deR.v.export>0?deR.v.export:0;
+  const gapTxt=M.net<B.lo*M.mk?` It would take ${f1(B.lo*M.mk-M.net)}M of pool tyres sold out of these countries to bring it into the band. Europool’s pool figure is gross, so tyres sold on abroad sit in the pool total but not in the market.`:'';
+  const es=E.inc.find(r=>r.iso==='ES'), esShare=es?(es.v.market-es.v.industry)/es.v.market:null;
+  return `<div id="eu-topdown">
+    <p class="lv-intro"><b>Top-down check.</b> The flow model adds up country estimates. This tab tests it from the other side, with EU customs, EU production and the pool’s own sales. Nothing here changes a figure in the flow model. Million tyres; EU27 and 2024 unless stated. Updated ${esc(T.asOf)}.</p>
+    <div class="note-box">
+      <div class="ns-line"><b>${M.pos==='inside the band'?'The net holds.':'The net is outside the band.'}</b> Import minus export is ${f1(M.net)}M, ${p0(M.share)} of the ${f1(M.mk)}M market. The EU-level band is ${f1(B.lo*M.mk)}–${f1(B.hi*M.mk)}M (${p0(B.lo)}–${p0(B.hi)}, centre ${f1(B.mid*M.mk)}M). The model is ${esc(M.pos)} and ${esc(M.ctr)} the centre.${gapTxt}</div>
+      <div class="ns-line"><b>The gross pair cannot be checked.</b> Customs counts every tyre that crosses a border, pool plants and trade between these countries included: ${f1(cI)}M imports and ${f1(cX)}M exports in 2024, against ${f1(V.import)}M and ${f1(V.export)}M here. Export is set on different bases (zero by convention in ${esc(zeroTxt)}, a closing figure in Germany, customs in Belgium, estimates elsewhere) and import closes each flow, so the pair is a convention, not a measurement. The research run put the shortfall at roughly 15–35M each, a rough Estimate${deX?`; Germany’s closing export (${f1(deX)}M) now closes part of it`:''}. The net does not move with this, because every extra tyre of export adds the same to import.</div>
+      <div class="ns-line"><b>Quote the net, with care.</b> Import minus export always equals market minus pool, in every country, so it does not depend on how export is set. But Europool’s pool figure is gross, so the net is non-pool supply minus any pool tyres sold out of these countries.</div>
+      <div class="ns-line"><b>Timing.</b> Imports were front-loaded in 2025 ahead of the EU duties and fall in 2026, so the rolling year to October 2026 may show a temporarily low non-pool share.</div>
+    </div>
+    <div class="eu-cap">Net non-pool supply: this model against the EU-level band</div>${btbl}
+    <p class="tv-note">The band is the research run’s judgement range for the EU27, built from unsourced ranges (see “How the band is built”), so it is an Estimate. The centre is its midpoint. Taking the extremes of every input together widens it to ${p0(M.wide.lo)}–${p0(M.wide.hi)}, which is ${f1(M.wide.lo*M.mk)}–${f1(M.wide.hi*M.mk)}M here. An EU average applied to these ${E.nC} countries pulls both ways. Premium-heavy markets (Germany, France, Switzerland, Austria, Belgium) and the exclusion of vans in Germany, France and Switzerland push the share down. The UK, outside the EU duties, and budget-heavy Spain and Italy push it up (judgement, not measured).${esShare!=null?` Spain gives ${p0(esShare)} in the model, against about 32% in a 2019 trade-press estimate (Europneus).`:''} Pool coverage: the pool sell-in of ${f1(M.ind)}M is ${p0(M.ind/T.pool.y2024)} of the ${f1(T.pool.y2024)}M Europool consumer replacement total for 2024 and ${p0(M.ind/T.pool.y2025)} of the ${f1(T.pool.y2025)}M for 2025.</p>
+    <div class="eu-cap">Customs against the model, country by country (gross, 2024)</div>${ctbl}
+    <p class="tv-note">Customs = new car tyres, CN 4011 10 00, every brand, every partner, so it includes pool plants’ shipments, OE and stock moves, and mostly leaves out van tyres (CN 4011 20 10). The model’s export is the re-export of non-pool tyres by wholesalers. The two are not like for like: read this as a size check, not a reconciliation. Belgium is Belgium only (Luxembourg not pulled). Belgian national customs, used in the BELUX card, give about 14.5M imports and 8.2M exports; Eurostat is 8–10% higher, which fits its counting of goods cleared in Belgium for non-resident importers. * UK and Switzerland come from UN Comtrade, flagged estimated by the reporters. Luxembourg customs were not pulled, and Denmark is not in the flow.</p>
+    <details class="lv-more td-fold"><summary>The frame: EU27 production, trade and consumption, 2024</summary>${mtbl}
+      <p class="tv-note">The balance closes within ${Math.abs(100*(M.apparent-e.cons)/e.cons).toFixed(1)}%, so customs, production and Europool data agree at EU level. The Regulation labels its consumption figure Europool, so this supports it rather than proving it independently. Car tyres fitted to wheels, mostly OE assemblies, sit in HS 8708 70 and are not in these codes. Definitive anti-dumping duties of 4.3–45.3% on Chinese car and light-lorry tyres apply from July 2026; imports were under registration from July 2025.</p></details>
+    <details class="lv-more td-fold"><summary>How the band is built, with every assumption</summary>${btb}
+      <p class="tv-note">Only the Regulation figures are published. The OE volume, the non-pool share by origin and the three deductions are assumptions of the research run, shown so you can replace them. The research run quoted a narrower range of 65–100M (${p0(B.lo)}–${p0(B.hi)} of replacement); the full span of these inputs is wider. The non-pool shares by origin are for 2024: ETRMA admitted Linglong as a full member on 4 November 2024 (Tyrepress, ERJ; not re-opened here), so its Chinese and Serbian volume moves from non-pool to pool and later years are not comparable unless restated.</p></details>
+    <details class="lv-more td-fold"><summary>Gross flows: a rough sizing of what is missing</summary>${gtbl}
+      <p class="tv-note">This is why the gross pair looks low: roughly ${f1(inA-M.net)}–${f1(inB-M.net)}M of non-pool tyres must leave these countries as re-exports, go into stock or be fitted as OE for the net to be ${f1(M.net)}M. The 60–75% and 75–80% are assumptions, so the size is soft. The direction is the finding. A formal fix would balance each country’s import, export and market estimate by source quality (customs, then end-of-life scheme data, then estimates) with two bloc constraints: net supply inside the band, and pool sell-in equal to the Europool total.</p></details>
+    <details class="lv-more td-fold"><summary>Timing: 2025 stock build, 2026 destocking</summary>
+      <ul class="fv-refs">
+        <li>Imports of car and light-truck tyres into the EU27 and UK rose about 25% in the first quarter of 2025, as wholesalers front-loaded Chinese tyres ahead of expected duties, and 5% over January to November 2025 (Tyres Europe, via ERJ).</li>
+        <li>In January and February 2026 they fell 21.6%; imports from China fell 45% and China’s share dropped from 74% to 52% (Tyres Europe, via ERJ).</li>
+        <li>For January to May 2026, imports from China fell 24% and China’s share went from 72% to 58%, while ASEAN suppliers rose from 7.4% to 19.9% (Tyres Europe, via Tyrepress).</li>
+        <li>January to August 2026: 108M imports, down 7%, China’s share 53% (Tyres Europe via ERJ, reported by the research run; not re-opened).</li>
+        <li>What it means for this model (Estimate): the rolling year to October 2026 follows a stock build and runs through destocking, so the non-pool share of sell-in may be temporarily low. A customs year and a sell-in year can differ by 5–15M either way. A stock-change line in the flow would stop the market absorbing that timing.</li></ul></details>
+    <details class="lv-more td-fold"><summary>Sources and how far each was checked</summary>${stbl}</details>
+    <details class="lv-more td-fold"><summary>Next data pulls, in order of value</summary><ol class="fw-list">${nxt.map(x=>`<li>${esc(x)}</li>`).join('')}</ol></details>
+  </div>`;
+}
 function buildEuropeFlow(){
   const fl=(window.__sellin&&window.__sellin.flows)||[], dist=(window.__distData&&window.__distData.pc)||[];
   if(!fl.length||!dist.length) return null;
@@ -1911,7 +2044,11 @@ function buildEuropeFlow(){
       chk.push('The countries are not on the same basis. '+(noVans.length?names(noVans)+' exclude'+(noVans.length===1?'s':'')+' vans and light trucks'+(withVans.length?'; '+names(withVans)+' include them':'')+'. ':'')+(cal.length?names(cal)+': 2024. ':'')+(rolling.length?names(rolling)+': rolling year to 2026.':''));
       if(out.length) chk.push(names(out)+' ('+out.map(r=>fvFmt(r.v.market)+'M').join(' and ')+') have a market figure but no wholesale / direct split yet, so they are not in this flow. With '+(out.length===1?'it':'them')+' the market of all '+(nC+out.length)+' countries is '+euR1(all12).toFixed(1)+'M.');
     }
-    if(id==='import'||id==='export') chk.push('These are gross figures per country. A tyre that one country exports and another imports counts once on each side, so do not read the Europe import figure as “imports from outside Europe”.');
+    if(id==='import'||id==='export'){
+      chk.push('These are gross figures per country. A tyre that one country exports and another imports counts once on each side, so do not read the Europe figure as “imports from outside Europe”.');
+      const zero=inc.filter(r=>!(r.v.export>0)).map(r=>r.country);
+      chk.push('Export is set on different bases'+(zero.length?': zero by convention in '+(zero.length>1?zero.slice(0,-1).join(', ')+' and '+zero[zero.length-1]:zero[0])+',':':')+' customs in Belgium, estimates elsewhere. Import closes each flow, so the pair is a convention, not a measurement, and the top-down check suggests both are understated by roughly 15–35M (an Estimate). The figure to rely on is import minus export, '+euR1(val.import-val.export).toFixed(1)+'M, which equals market minus pool. See the Top-down check tab.');
+    }
     if(id==='direct'||id==='toWs') chk.push('How the pool splits between direct and wholesale is calculated or estimated country by country in most cards, so treat this split as indicative.');
     const nm=whatMap[id]||undefined;
     explain[id]={v:val[id],short:id==='market'?'Sum of the '+nC+' country models.':undefined,
@@ -1938,7 +2075,8 @@ function buildEuropeFlow(){
     noteShort:['Basis: the sum of the '+nC+' country flow models ('+inc.map(r=>r.iso).join(', ')+'). It is not a published European figure.',
       'Years: '+(cal.length?cal.map(r=>r.iso).join(', ')+' 2024':'')+(cal.length&&rolling.length?'; ':'')+(rolling.length?rolling.map(r=>r.iso).join(', ')+' rolling year to 2026':'')+'.',
       'Vans: '+(noVans.length?noVans.map(r=>r.iso).join(', ')+' exclude vans and light trucks':'all countries include vans')+(noVans.length&&withVans.length?'; the other '+withVans.length+' include them':'')+'.',
-      out.length?'Left out: '+out.map(r=>r.country+' '+fvFmt(r.v.market)+'M').join(' and ')+' (no wholesale / direct split yet). All '+(nC+out.length)+' countries together: '+euR1(all12).toFixed(1)+'M.':''].filter(Boolean),
+      out.length?'Left out: '+out.map(r=>r.country+' '+fvFmt(r.v.market)+'M').join(' and ')+' (no wholesale / direct split yet). All '+(nC+out.length)+' countries together: '+euR1(all12).toFixed(1)+'M.':'',
+      (()=>{ const TD=euTdModel(val); return 'Top-down check: net non-pool supply (import minus export) is '+TD.net.toFixed(1)+'M, '+TD.pos+' of '+euR1(TD.B.lo*TD.mk).toFixed(1)+'–'+euR1(TD.B.hi*TD.mk).toFixed(1)+'M implied by EU customs and production data. Europool’s pool figure is gross, so pool tyres sold out of these countries also lower it. The gross import and export cannot be checked this way; see the Top-down check tab.'; })()].filter(Boolean),
     note:'Each Europe figure is the sum of the same figure in the country cards below, rounded to one decimal. Channels are matched to four groups. Imports and exports are gross, so trade between these countries is counted on both sides. Private and commercial demand is not added because only '+prvRows.length+' of the '+nC+' countries publish it.'};
   return {flow:flow,card:card,inc:inc,out:out,S:S,val:val,all12:all12,resid:resid,nC:nC,prvRows:prvRows};
 }
@@ -1962,6 +2100,7 @@ function renderEuropeTable(E){
 function renderEuropeCard(){
   const E=buildEuropeFlow(); if(!E) return '';
   const c=E.card, esc=escapeHtml, flowHtml=renderFlowView(c,E.flow), tblHtml=renderEuropeTable(E);
+  let tdHtml=''; try{ tdHtml=renderEuropeTopDown(E); }catch(err){ console.error('Europe top-down check failed',err); }
   if(E.resid.some(x=>Math.abs(x)>0.051)) console.warn('Europe overview: rounded figures do not add up exactly',E.resid);
   window.__europe={flow:E.flow,val:E.val,resid:E.resid,countries:E.inc.map(r=>r.iso),left:E.out.map(r=>r.iso),all12:E.all12};
   return `<details class="country europe" open>
@@ -1970,9 +2109,10 @@ function renderEuropeCard(){
         <div class="country-total"><div class="num2">${esc(c.total)}</div><div class="lbl2">${esc(c.totalLabel)}</div></div>
       </summary>
       <div class="country-body">
-        <div class="view-toggle" data-country-idx="eu"><button class="active" data-view="flow">Flow model</button><button data-view="countries">By country</button></div>
+        <div class="view-toggle" data-country-idx="eu"><button class="active" data-view="flow">Flow model</button><button data-view="countries">By country</button>${tdHtml?'<button data-view="topdown">Top-down check</button>':''}</div>
         <div class="territory-view-block active" data-view-panel="flow" data-country-idx="eu">${flowHtml}</div>
         <div class="territory-view-block" data-view-panel="countries" data-country-idx="eu">${tblHtml}</div>
+        ${tdHtml?`<div class="territory-view-block" data-view-panel="topdown" data-country-idx="eu">${tdHtml}</div>`:''}
       </div>
     </details>`;
 }
