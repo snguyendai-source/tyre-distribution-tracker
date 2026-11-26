@@ -1,48 +1,50 @@
 {
-  "runAt": "2026-11-25T16:57:46.930043+00:00",
+  "runAt": "2026-11-26T16:37:00.075337+00:00",
   "totalNew": 5,
   "entitiesChecked": 118,
-  "entitiesWithNews": 4,
+  "entitiesWithNews": 5,
   "newItemsByEntity": {
-    "Pneuhage": [
+    "ReifenDirekt": [
       {
-        "title": "Yokohama and Interpneu renew strategic partnership to expand sales - ET Auto",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQemdBTWkwRmFoVDhkV0xkQWtFMGdBUE1jeEFsU1BmejVTa1VyOG1lZl9jaUFmbzJwVmZSRldPZnRzWXNEQnNHUl9vemt6ZUtiUnhnYjVpS0p3TVp3MTdtOVJDMkRQSnNrSXFaLWJjdGVCdHJnbHJRak5GOWRpeGxoaktCOWE4QzdkZE5LclJuTU1vMVBDRDBFdDl6YUFvWWkwN0lxekxSSTlRa01mV0pPRDF5Q3FHaFdXT1ZZREF2UWIwcWJTT20xbHNvSmlxTWtTLWfSAcwBQVVfeXFMTjc2VW9UZi1OU2NudGx1aVBtckVEdjZNbWpKdk43NjRJNlI4cC1JbmotLVU4SXBETGZqTGxuaHR5UjdRZnFHMi1XbHdFNTlBdTY5dzZHMnZSeGU4REJCZnNjVXZJeUZTNDg4NXk3ZVhCSGY0ak83azVHYXZ1UVRFMVU0NzRtRFlZNkg5T3F2TTZHM3JWTVEwdjMwRUF4Yk1Zay1XbFBlRUZtVVlQNnFTR2Z6VXFrZ0o4SUZYUlBZbW4zTjVoMWczck85ckFE?oc=5",
-        "pubDate": "Fri, 23 Feb 2024 08:00:00 GMT",
+        "title": "Delticom AG: AGM Approves Dividend - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPc0dGMXZ3TE5iN3ROZlpQNS1Zc0JQOFFyQ3JlZnk3eURIU0pIVmVkVF9WNm5HVTNBSXpQTG1xdmx0UWZMb0xTVWxPUXF1UmZ4U2M0TEdzYjVhZmtmUENoUjh3eTFqSHY0bTAyRVpmMFlNTWhEd01OaXd2U0dlcl9qOEp0ZU5jQQ?oc=5",
+        "pubDate": "Wed, 09 Jul 2025 07:00:00 GMT",
         "country": "Germany",
         "cluster": "Central"
       }
     ],
-    "Interpneu": [
+    "Halfords Autocentres": [
       {
-        "title": "Michelin, Antin and Enviro JV to build end- of- life tyre recycling plant in Sweden - ET Auto",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQQzgyRUZ0QXBiamE4clFSb0NXRnZnMjEyeEUxUzc1RmtNU1dad3QtOXhmY1duRzJ0Q2FvOUZPY0tUY2FKQXJSNVo5VEdPU2h6NlBZaW1sczI5dlU0ZmQxakhvQ0hsWVBYcXVtRUQyelRGV0xURzNjdy1GZEJ4SlBTVzhuOGhnclVYSnRGU1R3QlN4WXBNaVJGRWF1dGZOZGJ4c0lzenZlWDJsbHBQUVlBcUlMenJCMlFGOTdhbC15RWN0dExqakNTbXBHZUlqdm1rMUlzTTR2Z2psMUHSAeABQVVfeXFMT1k4RFR6cjVFZzNhRTNRUnVnNFo4aXJLU3R5VVM5RlFKbGVPVmhiTUtfanJvUXllZU9ZN3hXWDdPc0tkZXBfSnE4RkhvVC1UUi0zbm5LU2FEMzhHRGk0cm1PdkdKQkRyb3YwMlBSY0VjRklZUjF0MllwQjVxS2tOZkN6TjNzRV9yVENaRURqQzdDWElWSS1ZcHJMMmRJVUVTNG5pTGV4LWtyaVU4bHlNQWRLRy1lbGhuZjFDcUNzd2ZvMkZ5QlZFaXNjRXZxcklhcGpqMm50eXNwYkpRck53T2U?oc=5",
-        "pubDate": "Sat, 24 Feb 2024 08:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
+        "title": "Halfords points to strong tyre performance within HY27 results, announces new national distribution centre - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUFhZbFRaTlNjWFhRTWVQcHRPWDBZenZhOTROdVItN1Zrb3ZBYlNWVnBmUWlHLXN0Q3NfY3V0UWZmYWJRTzRZTkNlemwxNnAyaWYzLTdXVFRXN2x1dWQ0ZUtfbTd4SGw2VXV5QVFhLUkwa090ejY5M2NTb0JSMWlFdDJpd0RCanR6MkpUYmZWUUo0OVF1R3BLNXdXdXVKTkZvZkphdVZQaE5TbXkwUHJNdTZobE00N1dHNjk4V0Y1Q2VRNUt0ZzJLQmZDZ21DLXh6Ylo2UVFRMA?oc=5",
+        "pubDate": "Thu, 26 Nov 2026 11:21:56 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ],
-    "Emil Frey": [
+    "HiQ Tyres": [
       {
-        "title": "Lucid plans French entry with Emil Frey partnership - Automotive World",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQOUtEQXBBZURmeHppZjUyQkx1a1VTWFhnQlVrZllXWFJWTU92b3J4Z0xvME5oSTEzcFE4dVo0dHZRQ1R1akNxNjNVcVdNYldYZE9vcWpZZGY1RlQ0LW1oWkhmZ3VsV19RTmtaS3ZTN2hTbjNqQ3I2YVNQLUxZVTVDTkdOV1lod29mdHVYS0NHM01ENGJzNlZXMDZ4MnNSY25fdlh3Vg?oc=5",
-        "pubDate": "Fri, 04 Sep 2026 07:00:00 GMT",
-        "country": "Germany",
-        "cluster": "Central"
+        "title": "New vans expand HiQ mobile fitting fleet - Tyrepress",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQ1ZJel9rdEZTdnBmeEE5eE4yaGdSRVhVWE1sakVWQUlsOU9fcHlaM0k1TTU2SWZ3R3U1T2tqeG85Tnp4aE5OMWlTSXZrclBVVVQ4UlVEalpWbW1ObXBzZGxGVFdMN0VRV05FM1EyUEwxRnJlVXdOQ1AtUXBJMmk1bg?oc=5",
+        "pubDate": "Thu, 25 Jul 2024 07:00:00 GMT",
+        "country": "UK",
+        "cluster": "North-West"
       }
     ],
     "Blackcircles": [
       {
-        "title": "Blackcircles opens first Edinburgh PitStop site in Corstorphine - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOXRZdVlFMlpyRlJ3RC1weEp0Z216NElQYmpCM2xUa3RpVGRUYXRwZjJ6SV9HTUlfX29DY01RMUlybTBiYkdQZGZKN3U2SGtlUlU4QnpYUzJsYmV1Z193b3l0eGt2Y2l0Tl9QcG4xNUMzUjZKMnZFTHUwN0NfOWF1YzBvQ3AzWmUycXlPZG1QZzJNWWJqYk1qZTZIUVdPUTQ?oc=5",
-        "pubDate": "Wed, 25 Nov 2026 14:19:08 GMT",
+        "title": "Blackcircles opens first Edinburgh PitStop at Tesco Extra in Corstorphine - The Herald",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQT3dSNWR4ZnQwMGYxdnV5Q3BWMHRuYVRmak1LMFJnS0NjZnp4ZWJfdlQ5UEE4NEtsMmMzLUwwbXhicG94UmI4RDZ0XzcybWg3bEZrNWNUZTJHUExhNXFDcmgzOWNUOXpJUlZCSWdnTXB3dWZYSkpMMndnWE1RVmZBcnJCTGEtUmY1VzVWU2tNQ0kyMnRiVUlpYkxyOFZHMjVT?oc=5",
+        "pubDate": "Wed, 25 Nov 2026 17:06:43 GMT",
         "country": "UK",
         "cluster": "North-West"
-      },
+      }
+    ],
+    "Bandvulc": [
       {
-        "title": "Blackcircles to open PitStop at Edinburgh Tesco Extra - Motor Trade News",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVHp4d1VnT3hiVnducnZYcm5oRjYzbnJpZE9lVlphVWl1dmN5ekhUTXdKbVY2bFFKaDJnQ1BwbWtaVXJVWlE2OGhRY01KWjdHVS1rcUpjMWtZOWRMbFM2OG9PV0Rubm16a3RwNkhYM3QzVEwwbi1YZ1Myb0ZFanJNZ2FRVWRHM0tFRUFfbGd6WmtpeVFlRXFqcklCeWt6NmNEM1BtVUNtNXdDZw?oc=5",
-        "pubDate": "Wed, 25 Nov 2026 10:42:30 GMT",
+        "title": "Profits and turnover fall at long-established manufacturer of retreaded tyres - part of the huge Continental Group - Insider Media Ltd",
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPaHNDa3gzV1RMQk9wTVk2dVpKSjFRLU50NHFIc0hNUERpRXVQQ3p4S1FBeWtpbXRuaDJNSjR1Wm5CSnJ3dHlfalpkUkc2N2loNERVOVB1ZGpPeHNNSXFHbGdwbWFCdWNoNEZhTWRyVFkzQW03YWs2eXZVbVljNTJETVR5Mi1RY0ZMNFdNVVpqa3B3VGJMS3J0Z2JrRVozSE1IUHltMFZjV29YVVlkU2RCNjVRVk93bFVzdjg5VnV4T0l3bDJseDRtRkVwYzNhVktUQUZhMEtRZEkxWk9xNXRDYkpYUXhvR3RnRTJPTlhn?oc=5",
+        "pubDate": "Mon, 07 Sep 2026 07:00:00 GMT",
         "country": "UK",
         "cluster": "North-West"
       }

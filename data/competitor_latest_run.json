@@ -1,31 +1,31 @@
 {
-  "runAt": "2026-11-25T16:57:46.930043+00:00",
+  "runAt": "2026-11-26T16:37:00.075337+00:00",
   "totalNew": 3,
   "entitiesChecked": 26,
   "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Nokian Tyres": [
+    "Continental": [
       {
-        "title": "Nokian Tyres Seasonproof 2 all-season tire is designed for Central European conditions - Cision News",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQODJ1Z180MnhST2QtemJva1VzNjV2SWNwZkt5anJTSjE3MDRlaGdPOEJBbmlDcDNLWl9UOV90ZTRJWTg1UF9PZ1lZeUxyT28tWmJYbFRWMUt0SUZYU1NFR1VWSENYVVd0RHJYdjNpQk1EUFhaM3lZQm5OTWJoLVlBUXQtd09zRXBjQ09vLTlpX2N1MlZoOTBzZXlacm5iLTRKdjhwYzI5anJJMVRGakcyaV9URjdQVW9tU3N4VGlUYzl1R1FjVmNKLVVNMzAwXzQ?oc=5",
-        "pubDate": "Wed, 05 Mar 2025 08:00:00 GMT",
-        "category": "Nordic"
+        "title": "How we tested Continental's new tyres - CarExpert",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9vc0lIX2JiQVR4N2h3LUg0S3NUdHJOSTl5V3Q1dHJkc3NMLTVWZGpZN0tqUkVSYWpvZlJTZ2YtOS1JYnI4N0ZkQlZxdkpyWDNWU2VmXzJ5RGgtLVdNZlpnemQxc1RmSnlIZlZKUzRnUUk2MmRoWTA3WGdtNmNpSjg?oc=5",
+        "pubDate": "Sat, 13 Apr 2024 07:00:00 GMT",
+        "category": "Premium global"
       }
     ],
-    "Triangle Tyre": [
+    "Double Coin": [
       {
-        "title": "Triangle moving to make its mark in Europe - Tyrepress",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNRU9xYU5ZQmdTc2REQ1JGdWJEUjM4UlFUbDBuTGpRbnlKRTRhS19DbDRCcGNYa3lkLUY4ZUJqTDl6U2tJSFJucHVuYzRsR1B2T0NjUGVjWDI5bUpjVjZoNWJvVm95M1lTYkNBOUF5TEo2MnVvaHZPbkQ2QXFLckhsN253Yw?oc=5",
-        "pubDate": "Thu, 27 Jun 2019 07:00:00 GMT",
+        "title": "Leading Mountain Off-Road Tire Manufacturers in China 2026: Driving Off-Road Tire Innovation - Lohud",
+        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNTXU4Rl81NUh3YzVEWjF3Qk5MMU84TFJvTUdaZlJvcWdwakpPb2FFdjJoTHZEdmEtdVZiRFNmeEpvYktXUnNrVXhrc2trM0hFVjJ1MXlTWFVKWmxyNHp1ay1sRUgtQV9udmtmY0c4ckI3S1poSWhKQmlEXzNtY1NTRW9nS1pGZjBnSG0yS0c4emhMOVN5a1c2amdnZmFRVGRSdzAzLW1FeU55elRTbkZySlAxLWRiNEhXNElZU1FHMDFVLVBtVWZxMTFGbnp1MVlXdWNTMXNHRVM?oc=5",
+        "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
         "category": "Chinese"
       }
     ],
-    "Giti Tire": [
+    "Prometeon Tyre Group": [
       {
-        "title": "Video: Giti Tires setting new Guinness World Record with the ID.Buzz! - AutoBuzz.my",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPYjdwLXFCVlBmWkRKbl84UTk0SUhEd2U0NXFLUHNKNTNwU2h3QlJxZG1KdTU5bG9UM29tRU1OamYzc21TVFlXSHJ3bE1CbGVsX2E2UVhycEJodmlfZWVtQVNnemw1SFlEdGpWOVVUb2luZG0zanlieWZBU0lEZHV6Zm1yWG5Ca3RzbzQwTUI3TEFIMWZCeW14bnFuWEIxNWZ1?oc=5",
-        "pubDate": "Tue, 23 Dec 2025 08:00:00 GMT",
-        "category": "Chinese"
+        "title": "Wang Feng joins Pirelli board - Tire Business",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5zWHU1eXl1YlV5VnRlenIxbU85YWh1V1U3Mk1EUUkwaW5fb1hVM0pKR2JvUHB5aHkydFJ0TFVXMGI5a3I2ajRLakxrUmVrWmNiNVV1eHlCajh0RTljZldWUG5ERWd3RzAyeUZtZDNuYk9QME5fY3ZlcHRn?oc=5",
+        "pubDate": "Fri, 03 Mar 2023 08:00:00 GMT",
+        "category": "Industrial/TBR"
       }
     ]
   }
