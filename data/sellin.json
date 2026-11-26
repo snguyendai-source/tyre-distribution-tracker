@@ -2732,25 +2732,25 @@
           "value": 41.0
         },
         "industry": {
-          "asOf": "2024",
-          "by": "research",
-          "source": "Research estimate, low confidence: domestic passenger-car sell-in by industry (ETRMA pool) members, about 31M with a range of 29-33M; the research puts the pool for cars and vans together at 32-36M. Replaces the earlier 51.5M, which the research calls a balancing figure: wdk says the 2024 changes in sell-in and sell-out were 'eng beieinander' (close together), which points to domestic sell-in near sell-out, not 59.5M of supply for 45.1M of sales. wdk compares percentage changes, not volumes, so the level is an assumption. Check it against your own pool data.",
-          "tier": "Estimate",
-          "value": 31.0
+          "asOf": "RY2025",
+          "by": "Simon",
+          "tier": "Published",
+          "value": 47.66,
+          "source": "ETRMA Europool Market Data (View by Country, passenger vehicles, rolling year), supplied by you as a screenshot: DE - Germany RY 2025 = 47,658,247 tyres; rounded to 47.66M. This is pool members' sell-in, so it is gross: it counts tyres invoiced to customers in Germany, including those that are sold on abroad, and is not domestic sales. It is more than BRV's whole consumer market (44.1M cars and vans in 2025, 45.1M in 2024). Only the RY 2025 column was visible; RY 2026 was cut off. Replaces the earlier research estimate of 31.0M, which assumed that sell-in equals sell-out."
         },
         "import": {
           "asOf": "2024",
           "by": "research",
-          "source": "Research estimate, low-medium confidence: non-pool importers, about 10M of the 41.0M (range 8-12M), about 24% of the market. wdk says the market shares of the mostly Asian importers reach 'bis zu 30 Prozent' depending on the tyre segment, so 30% is a ceiling by segment, not a published average. Replaces the earlier 8.0M.",
           "tier": "Estimate",
-          "value": 10.0
+          "value": 15.4,
+          "source": "Built from customs data, with the non-pool shares estimated. (1) Published: Destatis (via Hans-Böckler WP 348) records 11M new car tyres imported from China in 2022; the Commission's Regulation (EU) 2026/1540 (Table 3) records EU imports from China of 67.0M in 2022 and 93.0M in 2024. (2) Derived: holding Germany's share of those imports at 11 / 67.0 = 16.4%, German imports from China in 2024 are about 15.3M. The same share of the 64.3M tyres the EU imported from other third countries in 2024 (the Commission's figure) is about 10.6M. (3) Estimated: about 80% of the Chinese tyres and about 30% of the other third-country tyres come from outside the pool (the research's ranges, not verified). 15.3M x 80% + 10.6M x 30% = 12.2M + 3.2M = 15.4M, about 38% of the 41.0M market. It is gross: it includes non-pool tyres that wholesalers then sell on abroad, and it leaves out non-pool tyres made inside the EU. Range about 11-21M. Replaces the earlier 10.0M, which was a share of the market (24%) and sat below what the customs data allow. Not used: the direct Comext or Comtrade pull for 2024 by origin, which could not be reached from here."
         },
         "export": {
           "asOf": "2024",
           "by": "research",
-          "source": "Convention. The earlier 14.4M was a balancing residual with no source and is removed, as the research recommends. Cross-border wholesale flows (Göggel to Austria, Switzerland and France, Interpneu Polska, Delticom across Europe) exist but are not quantified, so they are not netted. Customs data show very large gross flows (for example 87.8M passenger tyres imported in 2024 per UN Comtrade, quoted earlier, not checked) because they include original-equipment and intra-group plant flows.",
           "tier": "Estimate",
-          "value": 0.0
+          "value": 22.06,
+          "source": "Balancing figure, not published: pool 47.66M - market 41.0M + imports 15.4M = 22.06M. It is the pool's sell-in that is invoiced in Germany but consumed, stocked or fitted elsewhere, mainly tyres German wholesalers sell on abroad (for example Göggel to Austria, Switzerland and France, Interpneu Polska, Delticom across Europe), plus non-pool imports that are re-exported. It also contains any van tyres in the Europool figure (the market here is cars and 4x4 only), up to about 4M, and any stock build. Customs exports of new car tyres were 53.1M in 2024 (Comext, read by the research run), but they include factory and original-equipment flows, so they cannot be used as the figure. Every 1M added to the import adds 1M here."
         },
         "direct": {
           "asOf": "2024",
@@ -2940,15 +2940,15 @@
       "groups": [],
       "iso": "DE",
       "meta": {
-        "boxNote": "Boxes are the channels as named under \"By channel\". Only the market and the channel shares are published (BRV 2024). The supply figures (pool, importers, wholesale versus direct) are modelled assumptions, and cross-border wholesale flows are not netted. Finer boxes, for example group versus independent, can be added in the editor.",
-        "scopeNote": "BRV's channel shares are for cars and 4x4, so the model now uses BRV's 41.0M for cars and 4x4 and leaves out the 4.1M vans, which removes the earlier stretch of the car shares over vans. Vans are mostly commercial (trades, courier and delivery services) and can be added separately. The season mix below is BRV's for cars and vans together.",
+        "boxNote": "Boxes are the channels as named under \"By channel\". The market and the channel shares are published (BRV 2024), and so is the pool's sell-in (Europool, RY 2025). The import is built from customs data with an estimated non-pool share; the wholesale versus direct split is modelled. Export is the closing figure and carries every error. Finer boxes, for example group versus independent, can be added in the editor.",
+        "scopeNote": "BRV's channel shares are for cars and 4x4, so the model now uses BRV's 41.0M for cars and 4x4 and leaves out the 4.1M vans, which removes the earlier stretch of the car shares over vans. Vans are mostly commercial (trades, courier and delivery services) and can be added separately. The season mix below is BRV's for cars and vans together. The Europool figure is a passenger-vehicle category that may include vans and light trucks. If it does, up to about 4M of the export figure is van tyres that this cars-only market leaves out.",
         "seasons": {
           "allSeason": 36,
           "source": "BRV 2024 via AUTOHAUS, March 2025 (cars and vans together)",
           "summer": 26,
           "winter": 38
         },
-        "walkNote": "Only the market and the channel shares are published (BRV). The pool, imports, direct and wholesale boxes are modelled. Cross-border wholesale trade is not netted, so exports are set to zero.",
+        "walkNote": "The market and channel shares (BRV) and the pool (Europool) are published. The import is built from customs data (Destatis, the Commission) and an estimated non-pool share; the direct share is modelled. Export closes the flow, so it carries all the error.",
         "walkWhy": {
           "channels": {
             "v": 41.0,
@@ -2969,7 +2969,7 @@
         "Roland Berger, 2018 (context only): about 50 German tyre wholesalers, top 7 hold about 75%",
         "ETRMA publishes members' (pool) replacement sales; Germany-level pool and non-pool figures were not found publicly",
         "Scope (changed in this version): the research recommends the 41.0M for cars and 4x4 as the headline, because BRV's channel shares are for cars; they had been applied to cars and vans together (45.1M). Channel totals are now the BRV share times 41.0M (29.2 / 8.1 / 1.4 / 2.3M). Adding the 4.1M vans at 75% specialists, 20% dealers, 1% Fachmärkte and 4% online (the research's assumption) gives back the earlier 32.3 / 8.9 / 1.45 / 2.4M, so those earlier figures are the cars-and-vans equivalent. Vans are mostly commercial (the research assumes about 85%), which lowers the commercial share of car tyres from about 29% to about 24%.",
-        "Supply side rebuilt, replacing the earlier 51.5M pool, 8.0M imports and 14.4M export. wdk's annual report for 2024 (checked) says: 'Bei Pkw-Reifen konnten die Industrielieferungen um mehr als 7 Prozent gesteigert werden'; the percentage changes of sell-in and sell-out were 'eng beieinander'; the market shares of the mostly Asian importers reach 'je nach Reifensegment schon bis zu 30 Prozent'; and 'Der größte Abnehmer ist dabei mittlerweile der Reifengroßhandel'. From this the research infers consumer sell-in close to sell-out (about 45M for cars and vans), with pool members at 32-36M and importers at 9-13M; for cars and 4x4 alone about 41M, with the pool at 29-33M, importers at 8-12M and wholesale about 24.7M. The model uses the midpoints, a pool of 31M and importers of 10M. Caution: wdk compares percentage changes, not volumes, and the 30% is a ceiling by segment, so the split is an assumption. The earlier 51.5M came from an ETRMA / Europool car-tyre figure of 46.8M (up 7%), cited through Pirelli Germany's reporting, which I could not verify; if it is genuine it probably includes deliveries to German-registered pan-European distributors. The 14.4M export was a balancing item, which made the earlier balance circular.",
+        "Supply side rebuilt, replacing the earlier 51.5M pool, 8.0M imports and 14.4M export. wdk's annual report for 2024 (checked) says: 'Bei Pkw-Reifen konnten die Industrielieferungen um mehr als 7 Prozent gesteigert werden'; the percentage changes of sell-in and sell-out were 'eng beieinander'; the market shares of the mostly Asian importers reach 'je nach Reifensegment schon bis zu 30 Prozent'; and 'Der größte Abnehmer ist dabei mittlerweile der Reifengroßhandel'. From this the research infers consumer sell-in close to sell-out (about 45M for cars and vans), with pool members at 32-36M and importers at 9-13M; for cars and 4x4 alone about 41M, with the pool at 29-33M, importers at 8-12M and wholesale about 24.7M. That version used the midpoints, a pool of 31M and importers of 10M; both were replaced on 26 Nov 2026 (the pool by the published Europool figure, the import by a customs-based build; see the entries below). Caution: wdk compares percentage changes, not volumes, and the 30% is a ceiling by segment, so the split is an assumption. The earlier 51.5M came from an ETRMA / Europool car-tyre figure of 46.8M (up 7%), cited through Pirelli Germany's reporting, which I could not verify; if it is genuine it probably includes deliveries to German-registered pan-European distributors. The 14.4M export was a balancing item, which made the earlier balance circular.",
         "Trade data (quoted, not checked): UN Comtrade / WITS 2024, HS 401110, shows Germany with gross imports of 87.8M and exports of 53.1M passenger tyres. The research adds Destatis flows from a Hans-Böckler-Stiftung study: 85.4M imports of new car tyres in 2022, German car-tyre production of about 31.1M in 2023 (extrapolated from Q1-Q3), about 25M imports from South-East Asia in 2024 (wdk), 10-11M exports to non-European countries and an estimated 17-18M consumer original-equipment deliveries. These include original-equipment and intra-group plant flows, so they cannot validate the wholesale, import or export boxes.",
         "Wholesale infrastructure examples (research file): Best4Tires serves more than 33,000 dealers and workshops with more than 20 manufacturers; Reifen Müller stocks about 500,000 tyres.",
         "Later Germany research files (October 2026) reached different splits: about 75 / 25 of sell-in (delivered earlier and then replaced), about 70-75 / 25-30 by treating the whole tyre-trade channel as wholesale (not applied), then a file that repeated the 60 / 40 flow of 33.5M + 8.0M - 14.4M = 27.1M. The latest file, a validation of the whole model, keeps 60 / 40 (range 55-65% wholesale) but rebuilds the supply side from wdk as described above. No source publishes a wholesale versus direct split for Germany.",
@@ -2979,7 +2979,9 @@
         "Ownership and list corrections. First Stop in Germany is run by Pneuhage: in 2016 Bridgestone agreed a joint venture in which Pneuhage takes 75% (Tyrepress), and Pneuhage was to run the 47 First Stop branches from 2017 (Eurotransport); I could not confirm whether Bridgestone still holds a stake. Reifen Ehrhardt is a Pneuhage brand (27 branches in 2017). Neither is listed here as Bridgestone. Reifen Burkhardt, a family wholesaler in south-west Germany with storage for 250,000 tyres and wheels, was bought by Goodyear (announced 27 July 2022, Tyrepress; a law-firm news item of October 2022 suggests it closed, not checked). It was missing from the card and is now listed as a Goodyear-owned wholesaler. Ihle: Tyrepress reported Michelin's takeover in September 2014 (merger review pending then); the research cites 2015, which matches Michelin's purchase of a second wholesaler, Meyer Lissendorf near Cologne, in July 2015, so 2014 stands for Ihle. Tyre24 / Alzura, Saitow and Gettygo are B2B platforms, not stocking wholesalers, so their volume is counted through the wholesalers behind them. Other wholesaler names from the NRZ ranking tags (the ranks are behind a paywall): Bohnenkamp (mostly agricultural and industrial), Baierlacher, Meyer Lissendorf, Gamma, Rad-Center Derkum, Reifenvertrieb24, Grasdorf. Not checked: Pneuhage group revenue of EUR 1.15bn in 2024 and wholesale growth of 32% in 2023, and Reifen1+ with 687 dealers and 721 locations and First Stop with 200+ franchisees.",
         "Online: BRV counts 5.5% of car tyres (2.3M) at the point of sale. The research quotes Delticom's annual report for 2024 as saying experts put the online share of tyres sold in Germany at just under 13% (the same figure is given for Europe and the experts are not named); I could not open the report to check. Delticom's Germany segment revenue of EUR 241.4M in 2023 (Montega, via the research, not checked) would, at EUR 75-95 a tyre, be 2.5-3.2M tyres on its own, more than BRV's whole online channel. The research's explanation is that BRV records tyres bought online but fitted at a workshop under the specialist channel, so online-originated demand could be 4-5M (research estimate). The model keeps BRV's point-of-sale 2.3M.",
         "Trade policy and concentration (quoted by the research; I confirmed only that the regulation exists): Commission Implementing Regulation (EU) 2026/1540 sets definitive anti-dumping duties on passenger-car and light-lorry tyres from China; the research gives 4.3% to 45.3%, in force from 8 July 2026 for five years, with a parallel anti-subsidy investigation due to conclude in December 2026, and quotes Agence Europe on nearly 93M Chinese units in 2024, a 28% share of EU consumption. These measures could shift volume between pool and non-pool brands. Wholesale concentration: Roland Berger (2018) counted about 50 wholesalers, with the top 7 holding about 75%; the research puts Pneuhage, Göggel and Best4Tires at about 20M tyres combined across all types and countries.",
-        "Wholesale cross-check (October 2026): The five biggest names plausibly carry about 60% of the 24.7M wholesale layer. Nothing points to the layer being too high. See the Wholesale check tab for the figures, sources and caveats."
+        "Wholesale cross-check (October 2026): The five biggest names plausibly carry about 60% of the 24.7M wholesale layer. Nothing points to the layer being too high. See the Wholesale check tab for the figures, sources and caveats.",
+        "ETRMA Europool Market Data, Germany: RY 2025 = 47,658,247 tyres (screenshot supplied by you on 26 Nov 2026; the RY 2026 column and the start of the header month were cut off). It is pool members' sell-in, so it is gross. BRV's 2025 consumer market (cars and vans) is about 44.1M, which is below the pool figure.",
+        "Germany import re-based on customs data (26 Nov 2026), replacing the 24%-of-market estimate of 10.0M. Anchors: Destatis 2022 (11M new car tyres from China, via Hans-Böckler WP 348); Commission Implementing Regulation (EU) 2026/1540, Table 3 (EU imports from China 66,992,782 in 2022 and 92,988,175 in 2024) and the 2024 import table (64.3M from other third countries); UN Comtrade values as a direction check. The 2024 German customs split by origin (Destatis GENESIS 51000-0015, Eurostat Comext, UN Comtrade) could not be queried from this workspace; if you pull Germany's 2024 imports of CN 4011 10 00 by origin, in units, the derived step can be replaced with the published figure. The 80% and 30% non-pool shares are the research's ranges and were not verified."
       ],
       "scope": "Passenger-car replacement tyres (cars and 4x4, excludes vans)",
       "unit": "million tyres",
@@ -3008,60 +3010,66 @@
           ]
         },
         "industry": {
-          "v": 31,
-          "short": "An estimate: about 31M of the 41M comes from the pool brands (range 29–33M).",
+          "v": 47.66,
+          "short": "Published: pool members sold 47.66M tyres in Germany in RY 2025 (Europool). This is gross sell-in, not German consumption.",
           "how": [
-            "No public figure exists for what the ETRMA pool brands sold in Germany (not found).",
-            "The research reasoned from the wdk annual report: manufacturers' deliveries and sales to consumers grew by about the same in 2024 (“eng beieinander”), so deliveries ≈ consumer sales.",
-            "Importers outside the pool hold up to 30% of some tyre segments, about 10M of the 41M here. That leaves about 31M for the pool.",
-            "Check: 31.0M pool + 10.0M imports = 41.0M market."
+            "ETRMA's Europool Market Data (View by Country, passenger vehicles, rolling year), which you supplied, shows DE - Germany RY 2025 = 47,658,247 tyres.",
+            "It is the pool members' sell-in. It counts every tyre invoiced to a customer in Germany, including tyres that German wholesalers then sell on abroad.",
+            "It is more than BRV's whole German consumer market (44.1M cars and vans in 2025) and 6.7M more than the 41.0M cars-and-4x4 market used here, so part of it has to leave the German market. That is the export box.",
+            "It replaces the earlier research estimate of 31.0M, which assumed that sell-in equals sell-out. Europool shows it does not."
           ],
-          "src": "Research estimate based on the wdk annual report 2024 (quotes checked). The level is an assumption.",
+          "src": "ETRMA Europool Market Data, supplied by you (screenshot). Only the RY 2025 column was visible.",
           "q": [
-            "wdk_close",
-            "wdk_deliv"
+            "etrma_de",
+            "brv_2025"
           ],
           "sure": {
-            "l": "Low",
-            "w": "wdk compares percentage changes, not volumes, so the level is an assumption. Replace it with your own ETRMA Germany pool figure if you have one."
+            "l": "Medium",
+            "w": "A published figure, but it is RY 2025 set against a 2024 market, the RY 2026 column was cut off, and I could not confirm that Europool's Germany line covers vans and light trucks, as it does for the Netherlands, Poland, Austria and Hungary."
           },
-          "why": "If manufacturers' deliveries and consumer sales move together (wdk says they did in 2024), the pool's volume is the market minus what importers outside the pool supply. Neither part is published, so both are judgements.",
-          "val": "Quickest check: ETRMA's Germany pool figure, as you supplied for the Netherlands. Until then the only test is that pool 31.0M + imports 10.0M = BRV's 41.0M, which holds by construction, so it is not independent proof."
+          "why": "It is the pool's own sales figure, so nothing is assumed. The earlier 31M was an inference from percentage changes in the wdk report; a measured figure replaces it.",
+          "val": "Test: pool brands cannot sell more tyres to German consumers than German consumers bought. 47.66M pool sell-in against 44.1M of all consumer tyres (cars and vans, BRV 2025) means at least 3.6M left the market or went into stock, and the real figure is higher because importers outside the pool also supply it. Still to confirm: the RY 2026 column, that the header month is October 2026 (it was cut off), and whether Germany's line includes vans and light trucks.",
+          "check": "Pool 47.66M against a 41.0M cars-and-4x4 market: market minus pool is -6.66M, which equals imports 15.4M minus export 22.06M. The pool is gross, so market minus pool is no longer the non-pool volume."
         },
         "import": {
-          "v": 10,
-          "short": "About 24% of the market (10M, range 8–12M) is bought from importers outside the pool.",
+          "v": 15.4,
+          "short": "About 15.4M tyres a year come in from outside the pool (range about 11–21M): customs data for the volume, an estimated non-pool share.",
           "how": [
-            "Importers outside the pool, mostly Asian brands, bring tyres to German wholesalers.",
-            "wdk says their market share is already up to 30% in some tyre segments. That is a ceiling for the biggest segment, not an average.",
-            "The research takes about 24% of the 41.0M, which is about 10M (range 8–12M)."
+            "Published: Destatis counts 11M new car tyres imported from China in 2022 (Hans-Böckler study). The Commission's regulation counts EU imports from China at 67.0M in 2022 and 93.0M in 2024.",
+            "Derived: if Germany keeps its 16.4% share of those imports, it brought in about 15.3M Chinese car tyres in 2024, and about 10.6M from other third countries (16.4% of the EU's 64.3M).",
+            "Estimated: about 80% of the Chinese tyres and about 30% of the others are bought outside the pool. That is 12.2M + 3.2M = 15.4M.",
+            "This is gross, so it includes non-pool tyres that wholesalers sell on abroad."
           ],
-          "src": "Research estimate based on the wdk annual report 2024 (quote checked).",
+          "src": "Destatis 2022 via Hans-Böckler WP 348; Commission Implementing Regulation (EU) 2026/1540, Table 3; non-pool shares are the research's estimates.",
           "q": [
-            "wdk_30"
+            "destatis_cn",
+            "eu_cn_series",
+            "comtrade_cn"
           ],
           "sure": {
             "l": "Low",
-            "w": "The 30% is a ceiling by segment, not a published average, so the 10M is a judgement call."
+            "w": "The volumes rest on government data, but the 80% and 30% non-pool shares are estimates, Germany's share is held at its 2022 level, and the 2024 German customs split by origin was not available."
           },
-          "why": "Wdk says importers outside the pool already take up to 30% of some segments. That is a ceiling for the busiest segments, so the research uses a lower overall share of 24%.",
-          "val": "wdk's 30% is a ceiling for some segments, not an average, so the 24% cannot be confirmed from published data. Check: ETRMA's pool volume for Germany; market minus pool is the non-pool volume."
+          "why": "Customs data are a better base than a share of the market. Germany alone imported 11M Chinese car tyres in 2022, and the Commission shows Chinese imports into the EU rising 39% by 2024, so about 10M in total from outside the pool would be too low for a gross import figure.",
+          "val": "Checks: (1) wdk says importers reach up to 30% of some segments. 30% of 41.0M is 12.3M, and 15.4M is higher because the import is gross and includes tyres sold on abroad, so the two are not in conflict. (2) The EU-wide top-down band for the non-pool share is 23-37% of replacement; 15.4M is 38% of the German market, at the top of that band, which fits a country that re-exports a lot. (3) Mirror values in the UN Comtrade database (all new tyre types, so not a volume) show Chinese tyres sold to Germany at $483M in 2023, $753M in 2024 and $983M in 2025. That looks faster than the EU volume (up 18% in 2024), although the 2023 figure comes from China's side of the trade, so holding Germany's share at the 2022 level is probably conservative. (4) Germany's customs imports of new car tyres were 87.96M in 2024 (Comext, read by the research run), so the non-pool import here is about 17% of them. Best test: the Comext or Destatis 2024 import volume from China, Korea and the other Asian origins, which would replace the derived step.",
+          "check": "Not a net figure: the pool figure is gross too, so more import means more export, one for one. A Chinese share above 80% non-pool, or a rise in Germany's share since 2022, would lift the import above 15.4M; the new EU anti-dumping duties (from July 2026) could move volume between pool and non-pool brands."
         },
         "export": {
-          "v": 0,
-          "short": "Set to zero. Cross-border wholesale trade exists but is not measured.",
+          "v": 22.06,
+          "short": "The closing figure: pool 47.66M - market 41.0M + imports 15.4M. Not published.",
           "how": [
-            "No German figure for wholesalers re-exporting replacement tyres was found.",
-            "Customs shows very large gross flows (87.8M tyres imported, 53.1M exported in 2024, UN Comtrade as quoted, not checked), but they include factory and original-equipment flows, so they cannot be used here.",
-            "The model therefore sets export to 0.0M. Real cross-border wholesale (for example Göggel selling to Austria, Switzerland and France) is not netted."
+            "The pool sold 47.66M tyres into Germany. German consumers bought 41.0M cars-and-4x4 tyres, and importers outside the pool supplied about 15.4M of them (a gross figure that includes some re-exports).",
+            "So about 25.6M pool tyres reach German consumers (41.0M - 15.4M). The other 22.06M of pool sell-in goes somewhere else: sold on to customers abroad, put into stock, or vans that this cars-only market leaves out.",
+            "The model books that 22.06M as export: 47.66M - 41.0M + 15.4M = 22.06M."
           ],
-          "src": "Model convention. An earlier 14.4M was a balancing figure with no source and was removed.",
+          "src": "Balancing figure, not published. Customs cannot be used: 53.1M exported in 2024 (Comext, read by the research run) includes factory and original-equipment flows.",
           "sure": {
             "l": "Low",
-            "w": "A convention, not a measurement."
+            "w": "It carries the error of every other input, above all the import: each 1M more import is 1M more export. It also carries any van tyres in the Europool figure (up to about 4M), any stock build, and the one-year gap between RY 2025 and the 2024 market."
           },
-          "why": "A figure with no source is safer left at zero than guessed. The cost is that cross-border wholesale, for example sales to Austria or Switzerland, is not netted.",
-          "val": "Customs data (87.8M tyres imported and 53.1M exported in 2024, UN Comtrade as quoted, not checked) are mostly factory and original-equipment flows, far too big to be this box. Ask your German distributors how much they re-export."
+          "why": "Pool sell-in is counted where the tyre is invoiced, not where it is used. Tyres invoiced in Germany and used elsewhere (Göggel to Austria, Switzerland and France, Interpneu Polska, Delticom across Europe) show up as the gap between pool sell-in and the German market, and the same goes for non-pool tyres that come in and go out again. Keeping export at zero, as before, would force pool sell-in to equal consumption, which the Europool figure contradicts.",
+          "val": "Size check only: Germany's customs exports of new car tyres were 53.1M in 2024 (Comext, read by the research run, and including factory and OE shipments), so 22.06M of re-exports is possible, but nothing confirms it. Germany ships about 60M car tyres a year to other countries (Destatis 2022), with France the largest buyer at 11M. Best tests: your German distributors' re-export share, and the RY 2026 column.",
+          "check": "Because export closes the flow, any error in the market, the imports or the pool lands here. If the Europool Germany line includes vans, up to about 4M of this figure is van tyres."
         },
         "direct": {
           "v": 16.3,
@@ -3087,15 +3095,16 @@
           ]
         },
         "toWs": {
-          "v": 14.7,
-          "short": "Calculated: industry 31.0M − direct 16.3M.",
+          "v": 31.36,
+          "short": "Calculated: industry 47.66M - direct 16.3M.",
           "how": [
-            "The pool's 31.0M goes one of two ways. 16.3M goes direct, so what is left, 14.7M, goes to wholesalers."
+            "The pool's 47.66M goes one of two ways. 16.3M goes direct, so what is left, 31.36M, goes to wholesalers.",
+            "That is about 66% of the pool's sell-in, against the 60% wholesale share assumed for the German market. The difference follows from the closing export figure."
           ],
           "src": "Calculated from the industry and direct figures.",
           "sure": {
             "l": "Low",
-            "w": "Both inputs are estimates."
+            "w": "The pool figure is published, but the direct figure is an estimate."
           },
           "why": "Wholesalers are now the manufacturers' biggest customer (wdk), but chains, dealer networks and online sellers also buy direct, and manufacturers are pushing direct sales (Roland Berger). A split of about 60% wholesale and 40% direct reflects both.",
           "val": "Both quotes support the direction, neither gives a percentage. The research range is 55–65% via wholesale. Best check: your own German sell-in split between wholesalers and direct accounts.",
@@ -3108,8 +3117,8 @@
           "v": 24.7,
           "short": "Calculated: pool to wholesale + imports − exports.",
           "how": [
-            "Wholesalers sold 24.7M in Germany: 14.7M from the pool + 10.0M imports − 0.00M exports.",
-            "The same figure comes out from the other side: market 41.0M − direct 16.3M = 24.7M. That is the check that the flow closes."
+            "Wholesalers sold 24.7M in Germany: 31.36M from the pool + 15.4M imports - 22.06M exports.",
+            "The same figure comes out from the other side: market 41.0M - direct 16.3M = 24.7M. That is the check that the flow closes."
           ],
           "src": "Calculated from the figures above.",
           "q": [
@@ -3568,6 +3577,41 @@
           "en": "Experts estimate that in 2022 just under 13% of tyres across Europe were sold online to end consumers.",
           "role": "check",
           "note": "The experts are not named. Europe-wide and by where the order was placed, so not the same measure as BRV's German point-of-sale share."
+        },
+        "etrma_de": {
+          "q": "DE - Germany | 47,658,247 (RY 2025)",
+          "by": "ETRMA Europool Market Data, View by Country, passenger vehicles, rolling year, header '…er - 2026' (the screenshot you supplied, 26 Nov 2026)",
+          "note": "Pool members' sales. Only the RY 2025 column was visible; the RY 2026 column was cut off, and so was the start of the header month, so the end of the twelve months is not confirmed.",
+          "kind": "table"
+        },
+        "brv_2025": {
+          "q": "knapp 44,1 Mio. Reifen für Pkw und Transporter",
+          "by": "BRV press release 'Reifenhandel trotzt der Krise' on 2025 sales (read on verbaende.com and bundesverband-reifenhandel.de)",
+          "u": "https://bundesverband-reifenhandel.de/presse/pressemitteilungen/reifenhandel-trotzt-der-krise",
+          "en": "just under 44.1 million tyres for cars and vans",
+          "note": "BRV 2025: 46.6M tyres in total (-1.9%), about 44.1M for cars and vans (-2.1%), 2.52M for trucks. Cars about 40M (-1.9%) and vans 3.9M (-4.2%), per auto.news. BRV measures sales to consumers (sell-out)."
+        },
+        "destatis_cn": {
+          "q": "Einfuhr Pkw-Reifen (neu) 2022: insgesamt 85 Mio. Stück, davon China 11, Polen 9, Tschechien 7, Rumänien 6, Frankreich 6",
+          "by": "Hans-Böckler-Stiftung, Working Paper 348 'Branchenanalyse Reifenindustrie' (2024), Abbildung 14, citing Destatis foreign-trade tables 51000-0013 and 51000-0015",
+          "u": "https://boeckler.de/fpdf/HBS-008931/p_fofoe_WP_348_2024.pdf",
+          "note": "Numbers as the PDF reader returned them from the study text; I did not see the printed figure itself, so please check them against Destatis table 51000-0015 if you can. Covers new car tyres only (vans are a separate line: 9M imports in 2022, China and Slovakia about 1.3M each). By country of origin, so tyres cleared at Rotterdam or Antwerp and sent on to Germany are included.",
+          "kind": "table"
+        },
+        "eu_cn_series": {
+          "q": "Imports from China (units): 2021 57,295,850 | 2022 66,992,782 | 2023 78,917,144 | 2024 92,988,175 (market share 18% | 21% | 25% | 28%)",
+          "by": "Commission Implementing Regulation (EU) 2026/1540 of 6 July 2026, Table 3 (recital 438), Official Journal 7 July 2026, read in the Spanish edition on boe.es",
+          "u": "https://eur-lex.europa.eu/eli/reg/2026/1540/oj",
+          "note": "Covers passenger-car and light-lorry tyres with a load index up to 121. Other third countries in 2024: 64,303,756 tyres, of which South Korea 19,365,770 (Table 5, read in the earlier check). These are EU-border imports, not German ones.",
+          "kind": "table"
+        },
+        "comtrade_cn": {
+          "q": "Germany imports from China of new pneumatic tyres of rubber: 2023 $482.75M (China's reported exports) | 2024 $753.38M | 2025 $982.56M",
+          "by": "UN Comtrade, as shown by Trading Economics (2024 and 2025 are Germany's reported imports; 2023 is China's reported exports to Germany)",
+          "u": "https://tradingeconomics.com/germany/imports/china/rubbers",
+          "note": "Values in US dollars for all new tyre types, so it shows direction only, not volume. Not checked in Comtrade itself.",
+          "role": "check",
+          "kind": "table"
         }
       }
     },

@@ -444,7 +444,7 @@
       ],
       "flatEntities": [],
       "noteBadge": "caution",
-      "note": "Caveat Market and channel shares are BRV 2024 figures for cars and 4x4: about 41.0M tyres, with channel shares of 71.3 / 19.8 / 3.4 / 5.5%. Vans (4.1M) are left out. The supply side is modelled: no source publishes the wholesale versus direct split, imports or exports for Germany. The model assumes a pool of about 31M and importers of about 10M (wdk says importers reach up to 30% by segment and wholesale is the largest customer), and a 60 / 40 split (24.7M wholesale, 16.3M direct). Wholesaler figures are 2022 revenues, not tyre volumes, and cover all tyre types. Chain volumes (Vergölst, Euromaster, Driver, REIFF) are research estimates with low confidence. BRV may undercount online: Delticom's German revenue alone looks bigger than BRV's online channel.",
+      "note": "Caveat Market and channel shares are BRV 2024 figures for cars and 4x4: about 41.0M tyres, with channel shares of 71.3 / 19.8 / 3.4 / 5.5%. Vans (4.1M) are left out. The pool is published: Europool shows 47.66M tyres sold in by pool members in Germany in RY 2025. That is gross, and more than BRV's whole consumer market, so a large part is sold on abroad. The rest of the supply side is modelled: no source publishes the wholesale versus direct split, imports or exports for Germany. The import (about 15.4M, range about 11-21M) is built from customs data: Destatis counted 11M Chinese car tyres in 2022, and the Commission's regulation shows EU imports from China up 39% to 93M in 2024; the non-pool shares (about 80% of Chinese tyres, 30% of other third-country tyres) are estimates, and wdk's up to 30% by segment is a cross-check. The model also assumes a 60 / 40 split (24.7M wholesale, 16.3M direct), and an export of 22.06M that closes the flow. Wholesaler figures are 2022 revenues, not tyre volumes, and cover all tyre types. Chain volumes (Vergölst, Euromaster, Driver, REIFF) are research estimates with low confidence. BRV may undercount online: Delticom's German revenue alone looks bigger than BRV's online channel.",
       "marketAccessNote": "Wholesaler-led market. The Pneuhage Group (Interpneu, Reifen Center Wolf, Gewe, with its own outlets, the Reifen1+ dealers and the First Stop franchise) and Reifen Göggel are the main independent wholesalers, with Best4Tires next, and are the fastest single-relationship route to volume. Michelin (Ihle, Euromaster), Continental (Vergölst), Hankook (Reifen Müller) and Goodyear (Reifen Burkhardt) already control their own downstream, so they are not viable access routes for a competing brand.",
       "territoryDefs": [
         {
@@ -470,8 +470,8 @@
       ],
       "noteShort": [
         "Scope: car and 4x4 replacement tyres, 2024, 41.0M (vans left out).",
-        "Measured: market and channel shares, BRV, the German tyre trade association (March 2025).",
-        "Estimated: pool, imports and wholesale versus direct (research model, wdk annual report as context); wholesaler and chain volumes are revenue-based and low confidence."
+        "Measured: market and channel shares, BRV, the German tyre trade association (March 2025); pool sell-in, Europool RY 2025 (gross, includes tyres sold on abroad).",
+        "Estimated: import (customs data from Destatis and the Commission, with an estimated non-pool share), export (closing figure) and wholesale versus direct (research model); wholesaler and chain volumes are revenue-based and low confidence."
       ]
     },
     {
