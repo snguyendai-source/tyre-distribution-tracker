@@ -1,31 +1,31 @@
 {
-  "runAt": "2026-11-26T16:37:00.075337+00:00",
+  "runAt": "2026-11-27T16:22:32.438692+00:00",
   "totalNew": 3,
   "entitiesChecked": 26,
   "entitiesWithNews": 3,
   "newItemsByEntity": {
-    "Continental": [
+    "Hankook": [
       {
-        "title": "How we tested Continental's new tyres - CarExpert",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9vc0lIX2JiQVR4N2h3LUg0S3NUdHJOSTl5V3Q1dHJkc3NMLTVWZGpZN0tqUkVSYWpvZlJTZ2YtOS1JYnI4N0ZkQlZxdkpyWDNWU2VmXzJ5RGgtLVdNZlpnemQxc1RmSnlIZlZKUzRnUUk2MmRoWTA3WGdtNmNpSjg?oc=5",
-        "pubDate": "Sat, 13 Apr 2024 07:00:00 GMT",
+        "title": "Hankook iON FlexClimate wins the 2026 Auto Bild EV all-season tyre test - Hankook Media Center",
+        "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxOVzNIblpVbGpzTkVEbG1yd3Q0dk5JNkwyQlpEUnUyNDR4QTJ1TXVWT0FxbFV2RnBZQ3otdlF0NE02eWlOLWVrdXN0RHVWREpFeGR6d3k2ak5lN2hMWG5oU3JnZGY0QzN1ZzR2dlphYktSUXVUb0lwbXFsZW14aDZhZllONnJ5WWF1VWJXa09TT0Ztclg0VEY2SXNqdHFFZS0zb1dvR01BS1NTOTdyRzg5X0pnMm0td2R0RDB2UHpIc09mU3dHd1dYMVBPd2FSbTFjVnNfNGhtV29fejJHT3NaR2kzV1hGN1pPTGpnSV9rV1k1ZEt4dkhzZVVlWXhoZi1xQUczR0JTcGdpSUpLY0JXdGFtS3hlUXhsWV96Rm5xYTQ?oc=5",
+        "pubDate": "Thu, 28 May 2026 07:00:00 GMT",
+        "category": "Korean"
+      }
+    ],
+    "Michelin": [
+      {
+        "title": "Compagnie Générale des Établissements Michelin Société en commandite par actions (ML.PA) - Yahoo Finance Singapore",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA5VE9UVVVyMmUzcFV2TEVTNzl1b2NKTEFhY3JaeVhzYzBMQzhscjlBSXE3Vm9BRzNreUxWRzB5RWpwWFRqTmk4SkxsSUtBYTA4dFhN?oc=5",
+        "pubDate": "Thu, 26 Nov 2026 10:35:57 GMT",
         "category": "Premium global"
       }
     ],
-    "Double Coin": [
+    "Toyo Tires": [
       {
-        "title": "Leading Mountain Off-Road Tire Manufacturers in China 2026: Driving Off-Road Tire Innovation - Lohud",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNTXU4Rl81NUh3YzVEWjF3Qk5MMU84TFJvTUdaZlJvcWdwakpPb2FFdjJoTHZEdmEtdVZiRFNmeEpvYktXUnNrVXhrc2trM0hFVjJ1MXlTWFVKWmxyNHp1ay1sRUgtQV9udmtmY0c4ckI3S1poSWhKQmlEXzNtY1NTRW9nS1pGZjBnSG0yS0c4emhMOVN5a1c2amdnZmFRVGRSdzAzLW1FeU55elRTbkZySlAxLWRiNEhXNElZU1FHMDFVLVBtVWZxMTFGbnp1MVlXdWNTMXNHRVM?oc=5",
-        "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
-        "category": "Chinese"
-      }
-    ],
-    "Prometeon Tyre Group": [
-      {
-        "title": "Wang Feng joins Pirelli board - Tire Business",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5zWHU1eXl1YlV5VnRlenIxbU85YWh1V1U3Mk1EUUkwaW5fb1hVM0pKR2JvUHB5aHkydFJ0TFVXMGI5a3I2ajRLakxrUmVrWmNiNVV1eHlCajh0RTljZldWUG5ERWd3RzAyeUZtZDNuYk9QME5fY3ZlcHRn?oc=5",
-        "pubDate": "Fri, 03 Mar 2023 08:00:00 GMT",
-        "category": "Industrial/TBR"
+        "title": "Toyo Tires evaluating construction of new factory - European Rubber Journal",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONkc1enNSSm02M2tJdGVkVDhZNkI5ZDl4MDg3U0NsRXBPcHV6SW9Uc3I1UFNMcEVKdGJkay0yZUZicUJGZXdXdjlyN1VNZVVVVHhUSW53LVBpSE9XTlY4T2FNS01vTVdNTDI2bWdYYTR4WDlEQVlQcGNZZll1M1RVV0NNak9kZlNSU0RBajUtSkl1UERMRUhHb1hSWFUxVUVrN2dfWUpER1E?oc=5",
+        "pubDate": "Wed, 29 Oct 2025 07:00:00 GMT",
+        "category": "Japanese"
       }
     ]
   }
